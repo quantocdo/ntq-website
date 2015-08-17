@@ -29,7 +29,8 @@ exports._factory = function(ect, minifier, path, app, cache, profile) {
 	app.set('views', viewDir);
 
 	app.engine('ect', function(filePath, options, callback) {
-		var useCache = options._locals._environment === 'production' && options._locals._useCache;
+		var useCache = options._locals._environment === 'production' &&
+				options._locals._useCache;
 
 		var html;
 		var min;

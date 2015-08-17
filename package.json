@@ -1,6 +1,6 @@
 {
   "name": "ntq-website",
-  "version": "0.0.1",
+  "version": "2.0.1",
   "description": "Source code for website http://ntq-solution.com.vn",
   "main": "index.js",
   "private": true,

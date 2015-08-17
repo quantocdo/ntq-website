@@ -2,6 +2,10 @@
 
 module.exports = function(grunt) {
 	grunt.initConfig({
+		clean: {
+			out: 'build/out',
+			css: 'build/out/css',
+		},
 		jscs: {
 			options: {
 				config: 'build/rules/.jscsrc',
@@ -33,6 +37,36 @@ module.exports = function(grunt) {
 				src: '<%= jscs.server.src %>',
 			},
 		},
+		stylus: {
+			options: {
+				use: [
+					require('kouto-swiss'),
+				],
+			},
+			dev: {
+				files: [{
+					src: [
+						'*.styl',
+						'!_*.styl',
+					],
+					cwd: 'app/public/stylus',
+					dest: 'build/out/css',
+					ext: '.css',
+					expand: true,
+				}, {
+					src: [
+						'pages/*.styl',
+						'!**/_*.styl',
+					],
+					cwd: 'app/public/stylus',
+					dest: 'build/out/css',
+					ext: '.page.css',
+					extDot: 'first',
+					flatten: true,
+					expand: true,
+				}],
+			},
+		},
 		develop: {
 			dev: {
 				file: 'index.js',
@@ -59,14 +93,26 @@ module.exports = function(grunt) {
 					'develop:dev',
 				],
 			},
+			stylus: {
+				files: [
+					'app/public/stylus/**/*.styl',
+				],
+				tasks: [
+					'clean:css',
+					'stylus:dev',
+					'develop:dev',
+				],
+			},
 		},
 	});
 
 	require('load-grunt-tasks')(grunt);
 
 	grunt.registerTask('default', [
+		'clean:out',
 		'jscs',
 		'jshint',
+		'stylus:dev',
 		'develop:dev',
 		'watch',
 	]);
