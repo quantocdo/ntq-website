@@ -1,7 +1,9 @@
 _SUPPORTED_GRID_SYSTEMS = 12 16
+_COL_WIDTH = 80px
+_GUTTER = 20px
 
-_grid_system(__TYPE, __TOTAL_COLS)
-	gs(__TYPE, __TOTAL_COLS)
+_grid_system(__TYPE, __TOTAL_COLS, __COL_WIDTH = null, __GUTTER = null)
+	gs(__TYPE, __TOTAL_COLS, __COL_WIDTH, __GUTTER)
 
 	.row
 		clearfix()
@@ -21,7 +23,7 @@ _grid_system(__TYPE, __TOTAL_COLS)
 
 for __GRID_SYSTEM in _SUPPORTED_GRID_SYSTEMS
 	.gs-{__GRID_SYSTEM}
-		_grid_system('fixed', __GRID_SYSTEM)
+		_grid_system('fixed', __GRID_SYSTEM, _COL_WIDTH, _GUTTER)
 
 		&.gs-fluid
 			_grid_system('fluid', __GRID_SYSTEM)

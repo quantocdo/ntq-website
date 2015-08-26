@@ -11,7 +11,7 @@ exports._factory = function(Promise, Article) {
 	self.render = function(req, res, next) {
 		var query = Article
 				.find()
-				.limit(5);
+				.limit(6);
 
 		var find = Promise.promisify(query.exec, query);
 

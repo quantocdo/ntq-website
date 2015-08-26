@@ -1,0 +1,26 @@
+_CONTAINER_WIDTH = 1200px
+_CONTAINER_PADDING = 20px
+
+_HEADER_HEIGHT = 90px
+
+_FOOTER_HEIGHT = 495px
+
+.container
+	width _CONTAINER_WIDTH
+	margin 0 auto
+
+.header
+	@extend .bg-white
+	position fixed
+	top 0
+	left 0
+	right 0
+	height _HEADER_HEIGHT
+	border-bottom 1px solid color-fallback(rgba(0, 0, 0, .1))
+
+.main
+	padding _HEADER_HEIGHT 0 0 0
+
+.footer
+	@extend .bg-black
+	height _FOOTER_HEIGHT
