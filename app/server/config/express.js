@@ -7,6 +7,7 @@ exports._requires = [
 ];
 exports._activations = [
 	'/config/view-engine',
+	'/config/locale',
 ];
 exports._factory = function(express, reverseRoute) {
 	var app = express();

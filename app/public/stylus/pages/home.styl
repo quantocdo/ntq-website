@@ -1,13 +1,7 @@
 @import '../_main'
 
 .section
-	min-height 800px
-
-	&.section-landing
-		min-height 770px
-
-	&.padding-top
-		padding-top 80px
+	height 800px
 
 	.section-heading
 		font-size 42px
@@ -23,3 +17,27 @@
 	.section-description
 		margin-top 28px
 		font-size 18px
+
+	&.section-landing
+		height 770px
+
+	&.padding-top
+		padding-top 80px
+
+	&.section-articles
+		.article
+			@extend .pull-left
+			size 33.33% 50%
+			position relative
+			overflow hidden
+
+			.article-avatar-wrapper
+				@extend .text-center
+				position absolute
+				top 0
+				left -9999px
+				right -9999px
+				bottom 0
+
+				.article-avatar
+					height 100%

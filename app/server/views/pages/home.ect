@@ -82,3 +82,15 @@ NTQ Solution
 		</div>
 	</div>
 </div>
+<div class="section bg-white section-articles">
+	<div class="full-height">
+		<% for article in @_highlightedArticles : %>
+			<div class="article">
+				<div class="article-avatar-wrapper">
+					<img class="article-avatar" src="/upload/img/<%= article.avatar %>"
+						alt="<%= article.heading %>">
+				</div>
+			</div>
+		<% end %>
+	</div>
+</div>

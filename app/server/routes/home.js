@@ -3,8 +3,11 @@
 exports._ = '/routes/home';
 exports._requires = [
 	'/app',
-	'/middlewares/home',
+	'/middlewares/articles',
+	'/routes/shortcut'
 ];
-exports._factory = function(app, home) {
-	app._get('home', '/', home.render);
+exports._factory = function(app, articles, shortcut) {
+	app._get('home', '/',
+			articles.highlightedArticles(6),
+			shortcut.render('pages/home'));
 };
