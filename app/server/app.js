@@ -13,6 +13,7 @@ exports._activations = [
 ];
 exports._factory = function(_, app, profile) {
 	app.use(function(req, res, next) {
+		res.locals._profile = profile;
 		res.locals._environment = profile._environment;
 		next();
 	});

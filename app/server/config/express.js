@@ -4,12 +4,14 @@ exports._ = '/config/express';
 exports._requires = [
 	'@express',
 	'@reverse-route',
+	'@path',
 ];
 exports._activations = [
+	'/config/assets/manager',
 	'/config/view-engine',
 	'/config/locale',
 ];
-exports._factory = function(express, reverseRoute) {
+exports._factory = function(express, reverseRoute, path) {
 	var app = express();
 
 	// use reverse-route

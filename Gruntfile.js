@@ -100,7 +100,6 @@ module.exports = function(grunt) {
 				tasks: [
 					'clean:css',
 					'stylus:dev',
-					'develop:dev',
 				],
 			},
 		},

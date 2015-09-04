@@ -1,6 +1,6 @@
-<% extend 'layout' %>
+<% extend '_base' %>
 
-<% block 'head-end' : %>
+<% block 'head_end' : %>
 <link rel="stylesheet" href="/css/home.page.css">
 <% end %>
 
@@ -8,75 +8,359 @@
 NTQ Solution
 <% end %>
 
-<div class="section bg-gray">
+<div class="section section-landing bg-white">
+	<div class="landing-background">
+
+	</div>
+	<div class="landing-overlay">
+		<div class="landing-logo text-center">
+			<img src="<%= @__assets.img('/logo_l.png') %>" alt="">
+		</div>
+	</div>
 </div>
-<div class="section bg-white">
-</div>
-<div class="section padding-top bg-blue">
+<div class="section section-about bg-white">
 	<div class="gs-12">
 		<div class="row">
-			<div class="col-12">
-				<div class="section-heading text-center text-blue-light">
-					<span>domains</span>
+			<div class="col-5">
+				<div class="section-heading">
+					<span class="text-green">who</span>
+					<span>is NTQ Solution?</span>
 				</div>
-				<div class="section-sub-heading text-center text-white">
-					<span>turn your ideas into reality</span>
+				<div class="paragraph text-justify">
+					<span>NTQ Solution is a Vietnamese software development company providing offshore development services such as mobile and web applications as well as other essential software services for businesses.</span>
+				</div>
+			</div>
+			<div class="col-6-offset-1">
+				<div class="video-container">
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="section padding-top bg-green">
+<div class="section section-domains bg-blue text-white">
 	<div class="gs-12">
 		<div class="row">
-			<div class="col-12">
+			<div class="col">
+				<div class="section-heading text-center">
+					<span><%= @__('page-home.page-services.domains.title') %></span>
+				</div>
+				<div class="section-sub-heading text-center">
+					<span><%= @__('page-home.page-services.domains.description') %></span>
+				</div>
+			</div>
+		</div>
+		<div class="row services">
+			<div class="col-4">
+				<div class="service-logo bg-blue-light">
+				</div>
+				<div class="section-sub-heading text-center">
+					<span><%- @__('page-home.page-services.services.box1.title.text1') %></span>
+				</div>
+				<div class="service-description paragraph text-center">
+					<span><%- @__('page-home.page-services.services.box1.description') %></span>
+				</div>
+				<div class="text-center text-yellow">
+					<a href="#">Learn more &gt;</a>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="service-logo bg-blue-light">
+				</div>
+				<div class="section-sub-heading text-center">
+					<span><%- @__('page-home.page-services.services.box2.title.text1') %></span>
+				</div>
+				<div class="service-description paragraph text-center">
+					<span><%- @__('page-home.page-services.services.box2.description') %></span>
+				</div>
+				<div class="text-center text-yellow">
+					<a href="#">Learn more &gt;</a>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="service-logo bg-blue-light">
+				</div>
+				<div class="section-sub-heading text-center">
+					<span><%- @__('page-home.page-services.services.box3.title.text1') %></span>
+				</div>
+				<div class="service-description paragraph text-center">
+					<span><%- @__('page-home.page-services.services.box3.description') %></span>
+				</div>
+				<div class="text-center text-yellow">
+					<a href="#">Learn more &gt;</a>
+				</div>
+			</div>
+		</div>
+		<div class="row domains">
+			<div class="col-3">
+				<div class="domain-logo pull-left bg-blue-light">
+				</div>
+				<div class="domain-description">
+					<div class="section-sub-heading">
+						<span><%- @__('page-home.page-services.domains.box1.title.text1') %></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="domain-logo pull-left bg-blue-light">
+				</div>
+				<div class="domain-description">
+					<div class="section-sub-heading">
+						<span><%- @__('page-home.page-services.domains.box2.title.text1') %></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="domain-logo pull-left bg-blue-light">
+				</div>
+				<div class="domain-description">
+					<div class="section-sub-heading">
+						<span><%- @__('page-home.page-services.domains.box3.title.text1') %></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="domain-logo pull-left bg-blue-light">
+				</div>
+				<div class="domain-description">
+					<div class="section-sub-heading">
+						<span><%- @__('page-home.page-services.domains.box4.title.text1') %></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row domains">
+			<div class="col-3">
+				<div class="domain-logo pull-left bg-blue-light">
+				</div>
+				<div class="domain-description">
+					<div class="section-sub-heading">
+						<span><%- @__('page-home.page-services.domains.box5.title.text1') %></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="domain-logo pull-left bg-blue-light">
+				</div>
+				<div class="domain-description">
+					<div class="section-sub-heading">
+						<span><%- @__('page-home.page-services.domains.box6.title.text1') %></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="domain-logo pull-left bg-blue-light">
+				</div>
+				<div class="domain-description">
+					<div class="section-sub-heading">
+						<span><%- @__('page-home.page-services.domains.box7.title.text1') %></span>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="domain-logo pull-left bg-blue-light">
+				</div>
+				<div class="domain-description">
+					<div class="section-sub-heading">
+						<span><%- @__('page-home.page-services.domains.box8.title.text1') %></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="section section-customer-reviews bg-green text-white">
+	<div class="gs-12">
+		<div class="row">
+			<div class="col">
 				<div class="section-heading text-center text-white">
 					<span>customer reviews</span>
 				</div>
 			</div>
 		</div>
+		<div class="row customer-reviews">
+			<div class="col-4 text">
+				<div class="customer-picture bg-blue">
+				</div>
+				<div class="customer-name text-center">
+					<span>Masahiro Okabe</span>
+				</div>
+				<div class="customer-position text-italic text-center">
+					<span>Manager, ilovex Co., Ltd., Japan.</span>
+				</div>
+				<div class="customer-review paragraph text-justify">
+					<span>NTQ helped us identify clear specifications for our project and carried out testing after implemetation. NTQ possessed high technological and communication skills while maintaining a very low mistake rate. When I have had technical problems NTQ are always there to give a helping hand and always propose alternative and unique ideas. I have never seen or heard of such a cooperative company.</span>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="customer-picture bg-blue">
+				</div>
+				<div class="customer-name text-center">
+					<span>Linh Nguyen</span>
+				</div>
+				<div class="customer-position text-italic text-center">
+					<span>Technical Manager, ROI Marketing Solutions Ltd, UK.</span>
+				</div>
+				<div class="customer-review paragraph text-justify">
+					<span>ROI Marketing Solutions Ltd has worked with NTQ Solutions to develop an online marketing application over the past 1 year. During this time, NTQ has demonstrated good technical and communication skills over different parts of the software development cycle such requirement gathers and development. I would not hesitate recommending NTQ.</span>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="customer-picture bg-blue">
+				</div>
+				<div class="customer-name text-center">
+					<span>Yusuke Akinaga</span>
+				</div>
+				<div class="customer-position text-italic text-center">
+					<span>Account Manager, ITSherpa - Japan</span>
+				</div>
+				<div class="customer-review paragraph text-justify">
+					<span>NTQ helped us identify clear specifications for our project and carried out testing after implemetation. NTQ possessed high technological and communication skills while maintaining a very low mistake rate. When I have had technical problems NTQ are always there to give a helping hand and always propose alternative and unique ideas. I have never seen or heard of such a cooperative company.</span>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
-<div class="section padding-top bg-blue">
+<div class="section section-technologies bg-blue text-white">
 	<div class="gs-12">
 		<div class="row">
-			<div class="col-12">
-				<div class="section-heading text-center text-white">
-					<span>technologies</span>
+			<div class="col">
+				<div class="section-heading text-center">
+					<span><%= @__('page-home.page-technologies.title') %></span>
 				</div>
-				<div class="section-sub-heading text-center text-white">
-					<span>technology is the key to our success</span>
+				<div class="section-sub-heading text-center">
+					<span><%= @__('page-home.page-technologies.box5.title') %></span>
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-10-offset-1">
-				<div class="section-description text-center text-white">
-					<span>NTQ Solution is keeping updated with latest technologies and continuously enhancing our depth knowledge of every technology that we consult or support our customers in our projects.</span>
+			<div class="col">
+				<div class="section-description text-center paragraph">
+					<span><%= @__('page-home.page-technologies.box5.description.paragraph') %></span>
+				</div>
+			</div>
+		</div>
+		<div class="row technologies">
+			<div class="col-2-offset-1">
+				<div class="technology-logo bg-white">
+				</div>
+				<div class="technology-logo bg-white">
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="technology-logo bg-white">
+				</div>
+				<div class="technology-logo bg-white">
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="technology-logo bg-white">
+				</div>
+				<div class="technology-logo bg-white">
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="technology-logo bg-white">
+				</div>
+				<div class="technology-logo bg-white">
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="technology-logo bg-white">
+				</div>
+				<div class="technology-logo bg-white">
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="section bg-white">
-</div>
-<div class="section padding-top bg-blue">
+<div class="section section-why-ntq bg-white">
 	<div class="gs-12">
 		<div class="row">
-			<div class="col-12">
-				<div class="section-heading text-center text-white">
+			<div class="col-3-offset-1">
+				<div class="promote-pictures-container">
+				</div>
+			</div>
+			<div class="col-6-offset-1">
+				<div class="section-heading">
+					<span class="text-green">Why</span>
+					<span>NTQ?</span>
+				</div>
+				<div class="reason first">
+					<div class="reason-brief section-sub-heading">
+						<span>technical capabilities</span>
+					</div>
+					<div class="reason-description paragraph text-gray-dark">
+						<span>Our expert knowledge and capabilities in software development stems from our members of staff who have graduated from top universities around the world.</span>
+					</div>
+				</div>
+				<div class="reason-break">
+				</div>
+				<div class="reason">
+					<div class="reason-brief section-sub-heading">
+						<span>STRONG RELATIONSHIPS</span>
+					</div>
+					<div class="reason-description paragraph text-gray-dark">
+						<span>While the yearly rate of employees leaving jobs is 20% per Vietnamese company, our company only loses 5% of our employees annually. This is due to our ability to facilitate a fun and rewarding environment to work in.</span><br>
+						<span>We also have strong relationships with our customers and implement bilateral communications with them to enhance project effectiveness and efficiency.</span>
+					</div>
+				</div>
+				<div class="reason-break">
+				</div>
+				<div class="reason">
+					<div class="reason-brief section-sub-heading">
+						<span>GLOBAL PORTFOLIO</span>
+					</div>
+					<div class="reason-description paragraph text-gray-dark">
+						<span>NTQ is striving to expand our business to serve clients on a global scale. We believe that our experience in dealing with a culturally diverse portfolio of customers will enable us to serve future clients more effectively.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="section section-partners bg-blue text-white">
+	<div class="gs-12">
+		<div class="row">
+			<div class="col">
+				<div class="section-heading text-center">
 					<span>our partners</span>
 				</div>
+				<div class="section-sub-heading text-center">
+					<span>ntq solution we are a part of you</span>
+				</div>
+			</div>
+		</div>
+		<div class="row partner-map text-center">
+			<div class="col">
+				<img src="<%= @__assets.img('/partner_map.png') %>">
 			</div>
 		</div>
 	</div>
 </div>
-<div class="section padding-top bg-green">
+<div class="section section-rd bg-green text-white">
 	<div class="gs-12">
-		<div class="row">
-			<div class="col-12">
-				<div class="section-heading text-center text-white">
+		<div class="row rd-info">
+			<div class="col">
+				<div class="section-heading text-center">
 					<span>research & development</span>
+				</div>
+				<div class="section-description text-center paragraph">
+					<span>We also have an extremely innovative research & development department.</span><br>
+					<span>We are currently looking for a partner who we can collaborate with and can provide support for our present, and future, projects.</span>
+				</div>
+			</div>
+		</div>
+		<div class="row rd-video-container">
+			<div class="col-2-offset-3">
+				<div class="rd-video bg-black">
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="rd-video bg-black">
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="rd-video bg-black">
 				</div>
 			</div>
 		</div>
@@ -93,4 +377,6 @@ NTQ Solution
 			</div>
 		<% end %>
 	</div>
+</div>
+<div class="section bg-blue section-ending">
 </div>

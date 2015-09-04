@@ -8,8 +8,11 @@ exports._requires = [
 	'/config/profile/' + environment
 ];
 exports._factory = function(_, path, target) {
-	return _.assign(target, {
+	var defaults = {
 		_root: path.resolve(__dirname, '../..'),
-		_environment: environment
-	});
+		_environment: environment,
+		debug: true,
+	};
+
+	return _.assign(target, defaults);
 };

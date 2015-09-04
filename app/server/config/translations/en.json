@@ -7,7 +7,7 @@
         "career": "Career",
         "news": "News",
         "contact": "Contact",
-        "success-story": "Success Stories",
+        "success-story": "Success stories",
         "download": "Downloads",
         "about": "About us",
         "domains": "Development Domains",
@@ -40,7 +40,7 @@
             },
             "japan": {
                 "title": "Representative in Japan",
-                "address": "〒150-0043<br>Tōkyō to Shibuya ku Dōgenzaka 1 - 20 - 2<br>Araiansubiru Shibuya Ichi Bandate 5F",
+                "address": "〒150-0043 Tōkyō to Shibuya ku<br>Dōgenzaka 1 - 20 - 2 Araiansubiru<br>Shibuya Ichi Bandate 5F",
                 "name": "Hironori Miyata",
                 "position": "Representative",
                 "tel": "Tel",
@@ -113,6 +113,7 @@
         }
     },
     "footer": {
+        "about": "About us",
         "contact": "Contact us",
         "or": "Or",
         "enter-your-email": "Enter your email…",
@@ -238,7 +239,7 @@
             "box5": {
                 "title": "Technology is the key to our success",
                 "description": {
-                    "paragraph": "NTQ Solution is keeping updated with latest technologies and continuously enhancing our depth knowledge of every technology that we consult or support our customers in our projects."
+                    "paragraph": "We keep updated with the latest technologies and are continually expanding the amount of technologies we can offer our clients."
                 }
             }
         },

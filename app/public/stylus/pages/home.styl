@@ -1,4 +1,4 @@
-@import '../_main'
+@import '../main'
 
 .section
 	height 800px
@@ -18,11 +18,147 @@
 		margin-top 28px
 		font-size 18px
 
-	&.section-landing
-		height 770px
-
 	&.padding-top
 		padding-top 80px
+
+	&.section-landing
+		height 770px
+		position relative
+
+		.landing-background
+			position absolute
+			top 0
+			left 0
+			size 100%
+			background-image url('../_img/bg_home_1.jpg')
+			background-repeat no-repeat
+			background-size cover
+			background-position-y bottom
+			position relative
+			opacity 0.45
+
+		.landing-overlay
+			position absolute
+			top 0
+			left 0
+			size 100%
+
+			.landing-logo
+				margin-top 260px
+
+	&.section-about
+		padding-top 192px
+
+		.video-container
+			background-image url('../_img/frame_imac.png')
+			background-repeat no-repeat
+			background-position center center
+			size false 447px
+
+	&.section-domains
+		padding-top 79px
+
+		.services
+			padding-top 52px
+			padding-bottom 74px
+
+			.service-logo
+				border-radius 50%
+				border 1px solid COLOR_WHITE
+				size 140px
+				margin 0 auto 30px
+
+			.service-description
+				padding-top 20px
+				padding-bottom 20px
+
+		.domains
+			margin-bottom 50px
+
+			.domain-logo
+				border-radius 50%
+				border 1px solid COLOR_WHITE
+				size 80px
+
+			.domain-description
+				margin-left 100px
+				height 80px
+				display table
+
+				& > div
+					line-height 19px
+					display table-cell
+					vertical-align middle
+
+	&.section-customer-reviews
+		padding-top 78px
+
+		.customer-reviews
+			padding-top 110px
+
+			.customer-picture
+				border-radius 50%
+				border 2px solid COLOR_WHITE
+				size 134px
+				margin 0 auto 22px
+
+			.customer-position
+				padding 5px 30px
+				height 65px
+
+	&.section-technologies
+		padding-top 78px
+
+		.technologies
+			padding-top 130px
+
+			.technology-logo
+				height 126px
+				margin-bottom 20px
+
+	&.section-why-ntq
+		padding-top 130px
+
+		.promote-pictures-container
+			background-image url('../_img/frame_iphone.png')
+			background-repeat no-repeat
+			background-size cover
+			height 557px
+
+		.reason
+
+			&.first
+				padding-top 30px
+
+			.reason-brief
+				padding-bottom 10px
+
+		.reason-break
+			margin 30px 0 40px
+			border-bottom 1px solid COLOR_GRAY_LIGHT
+			width 235px
+
+	&.section-partners
+		padding-top 78px
+
+		.partner-map
+			padding-top 100px
+
+	&.section-rd
+		padding-top 78px
+
+		.rd-info
+			height 242px
+
+		.rd-video-container
+			padding 37px 0 40px
+			background-image url('../_img/frame_film.png')
+			background-repeat no-repeat
+			background-position center center
+
+			.rd-video
+				border-radius 10px
+				height 130px
 
 	&.section-articles
 		.article
@@ -41,3 +177,6 @@
 
 				.article-avatar
 					height 100%
+
+	&.section-ending
+		size false 505px

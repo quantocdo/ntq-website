@@ -1,0 +1,65 @@
+<% extend '_base' %>
+
+<% block 'title' : %>
+<%= @__('title-website.contact') %>
+<% end %>
+
+<% block 'head_end' : %>
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="<%= @_profile.staticAsset %>/css/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="<%= @_profile.staticAsset %>/css/header.css">
+<link rel="stylesheet" href="<%= @_profile.staticAsset %>/css/footer.css">
+<link rel="stylesheet" href="<%= @_profile.staticAsset %>/css/common.css">
+<link rel="stylesheet" href="<%= @_profile.staticAsset %>/css/menu-black.css">
+<link rel="stylesheet" href="<%= @_profile.staticAsset %>/css/contact.css">
+<% end %>
+
+<% block 'body_end' : %>
+<script src="<%= @_profile.staticAsset %>/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="<%= @_profile.staticAsset %>/js/main-nav.js"></script>
+<% end %>
+
+<div class="container-fluid page-top-container-fluid contact-page-top-container-fluid">
+    <div class="container">
+        <h1 class="text-center"><%= @__('page-contact.title') %></h1>
+    </div>
+</div><!-- /contact-page-top-container-fluid -->
+<div class="container-fluid page-bottom-container-fluid contact-page-bottom-container-fluid">
+    <div class="container">
+        <div class="form-contact page-bottom-container">
+            <div class="form-contact-content page-bottom-content">
+                <h2><%= @__('page-contact.form.title.text1') %> <strong><%= @__('page-contact.form.title.text2') %></strong> <%= @__('page-contact.form.title.text3') %></h2>
+
+            </div>
+        </div><!-- /form-contact -->
+        <div class="contact-address clearfix">
+            <div class="contact-address-box pull-left">
+                <h3><%= @__('common.address.hanoi.title') %></h3>
+                <p class="address"><%= @__('common.address.hanoi.address') %></p>
+                <p><strong><%= @__('common.address.hanoi.name') %></strong><span><%= @__('common.address.hanoi.position') %></span></p>
+                <p><%= @__('common.address.hanoi.tel') %>: (+84) 4 6297 5613</p>
+                <p><%= @__('common.address.hanoi.email') %>: son.pham@ntq-solution.com.vn</p>
+                <div class="map">
+                    <img src="<%= @_profile.staticAsset %>/img/map-contact-vn.png" alt="map company" width="465" height="259">
+                    <div class="img-company">
+                        <img src="<%= @_profile.staticAsset %>/img/img-hh3building.png" alt="map company" width="193" height="268">
+                    </div>
+                </div>
+            </div><!-- /contact-address-box -->
+            <div class="contact-address-box pull-right">
+                <h3><%= @__('common.address.japan.title') %></h3>
+                <p class="address"><%= @__('common.address.japan.address') %></p>
+                <p><strong><%= @__('common.address.japan.name') %></strong><span><%= @__('common.address.japan.position') %></span></p>
+                <p><%= @__('common.address.japan.tel') %>: (+81) 80 3409 8663</p>
+                <p><%= @__('common.address.japan.email') %>: cong.to@ntq-solution.com.vn</p>
+                <div class="map">
+                    <img src="<%= @_profile.staticAsset %>/img/map-contact-jp.png" alt="map company" width="465" height="259">
+                    <div class="img-company">
+                        <img src="<%= @_profile.staticAsset %>/img/img-japan.png" alt="map company" width="193" height="268">
+                    </div>
+                </div>
+            </div><!-- /contact-address-box -->
+        </div><!-- /contact-address -->
+    </div>
+</div><!-- /contact-page-bottom-container-fluid -->
+<div class="clear"></div>
