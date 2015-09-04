@@ -6,22 +6,22 @@
 
 <% block 'head_end' : %>
 <link rel="stylesheet" href="/css/main.css">
-<link rel="stylesheet" href="<%= @_profile.staticAsset %>/css/bootstrap/bootstrap.css">
-<link rel="stylesheet" href="<%= @_profile.staticAsset %>/css/header.css">
-<link rel="stylesheet" href="<%= @_profile.staticAsset %>/css/footer.css">
-<link rel="stylesheet" href="<%= @_profile.staticAsset %>/css/common.css">
-<link rel="stylesheet" href="<%= @_profile.staticAsset %>/css/menu-white.css">
-<link rel="stylesheet" href="<%= @_profile.staticAsset %>/css/submenu-common.css">
-<link rel="stylesheet" href="<%= @_profile.staticAsset %>/css/success-stories.css">
+<link rel="stylesheet" href="<%= @__assets.css('/bootstrap/bootstrap.css', true) %>">
+<link rel="stylesheet" href="<%= @__assets.css('/header.css', true) %>">
+<link rel="stylesheet" href="<%= @__assets.css('/footer.css', true) %>">
+<link rel="stylesheet" href="<%= @__assets.css('/common.css', true) %>">
+<link rel="stylesheet" href="<%= @__assets.css('/menu-white.css', true) %>">
+<link rel="stylesheet" href="<%= @__assets.css('/submenu-common.css', true) %>">
+<link rel="stylesheet" href="<%= @__assets.css('/success-stories.css', true) %>">
 <% end %>
 
 <% block 'body_end' : %>
-<script src="<%= @_profile.staticAsset %>/bower_components/jquery/dist/jquery.min.js"></script>
-<script src="<%= @_profile.staticAsset %>/bower_components/jquery-ui/ui/jquery-ui.js"></script>
-<script src="<%= @_profile.staticAsset %>/js/libs/jquery.nav.js"></script>
-<script src="<%= @_profile.staticAsset %>/js/main-nav.js"></script>
-<script src="<%= @_profile.staticAsset %>/js/max-height-element.js"></script>
-<script src="<%= @_profile.staticAsset %>/js/success-stories.js"></script>
+<script src="<%= @__assets.bower('/jquery/dist/jquery.min.js', true) %>"></script>
+<script src="<%= @__assets.bower('/jquery-ui/ui/jquery-ui.js', true) %>"></script>
+<script src="<%= @__assets.js('/libs/jquery.nav.js', true) %>"></script>
+<script src="<%= @__assets.js('/main-nav.js', true) %>"></script>
+<script src="<%= @__assets.js('/max-height-element.js', true) %>"></script>
+<script src="<%= @__assets.js('/success-stories.js', true) %>"></script>
 <% end %>
 
 <div class="container-fluid page-top-container-fluid success-stories-page-top-container-fluid">
@@ -188,7 +188,7 @@
                                         <p><%= @__('page-success-stories.box4.result.paragraph1') %></p>
                                         <p><%= @__('page-success-stories.box4.result.paragraph2') %></p>
                                     </div>
-                                    <div class="image"><img src="<%= @_profile.staticAsset %>/img/certificate.png" alt="Spicy Cinnamon Pte. Ltd." /></div>
+                                    <div class="image"><img src="<%= @__assets.img('/certificate.png', true) %>" alt="Spicy Cinnamon Pte. Ltd." /></div>
                                 </div><!-- /text-image -->
                             </div>
                         </div>

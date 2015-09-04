@@ -67,6 +67,16 @@ module.exports = function(grunt) {
 				}],
 			},
 		},
+		copy: {
+			img: {
+				files: [{
+					expand: true,
+					cwd: 'app/public/img',
+					src: '**/*',
+					dest: 'build/out/img',
+				}],
+			}
+		},
 		develop: {
 			dev: {
 				file: 'index.js',
@@ -112,6 +122,7 @@ module.exports = function(grunt) {
 		'jscs',
 		'jshint',
 		'stylus:dev',
+		'copy:img',
 		'develop:dev',
 		'watch',
 	]);

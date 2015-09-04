@@ -51,10 +51,12 @@ NTQ Solution
 		</div>
 		<div class="row services">
 			<div class="col-4">
-				<div class="service-logo bg-blue-light">
+				<% softwareOutsourcing = @__('page-home.page-services.services.box1.title.text1') %>
+				<div class="service-logo bg-blue-light text-center">
+					<img src="<%= @__assets.img('/icon-outsource-services.png', true) %>" alt="<%- softwareOutsourcing %>">
 				</div>
 				<div class="section-sub-heading text-center">
-					<span><%- @__('page-home.page-services.services.box1.title.text1') %></span>
+					<span><%- softwareOutsourcing %></span>
 				</div>
 				<div class="service-description paragraph text-center">
 					<span><%- @__('page-home.page-services.services.box1.description') %></span>
@@ -64,10 +66,12 @@ NTQ Solution
 				</div>
 			</div>
 			<div class="col-4">
-				<div class="service-logo bg-blue-light">
+				<% solutionConsultancy = @__('page-home.page-services.services.box2.title.text1') %>
+				<div class="service-logo bg-blue-light text-center">
+					<img src="<%= @__assets.img('/icon-solution-consultion.png', true) %>" alt="<%- solutionConsultancy %>">
 				</div>
 				<div class="section-sub-heading text-center">
-					<span><%- @__('page-home.page-services.services.box2.title.text1') %></span>
+					<span><%- solutionConsultancy %></span>
 				</div>
 				<div class="service-description paragraph text-center">
 					<span><%- @__('page-home.page-services.services.box2.description') %></span>
@@ -77,7 +81,9 @@ NTQ Solution
 				</div>
 			</div>
 			<div class="col-4">
-				<div class="service-logo bg-blue-light">
+				<% graphicDesign = @__('page-home.page-services.services.box3.title.text1') %>
+				<div class="service-logo bg-blue-light text-center">
+					<img src="<%= @__assets.img('/icon-graphic-design.png', true) %>" alt="<%- graphicDesign %>">
 				</div>
 				<div class="section-sub-heading text-center">
 					<span><%- @__('page-home.page-services.services.box3.title.text1') %></span>
@@ -92,76 +98,92 @@ NTQ Solution
 		</div>
 		<div class="row domains">
 			<div class="col-3">
-				<div class="domain-logo pull-left bg-blue-light">
+				<% mobileApp = @__('page-home.page-services.domains.box1.title.text1') %>
+				<div class="domain-logo pull-left bg-blue-light text-center">
+					<img src="<%= @__assets.img('/domains/mobile-app.png', true) %>" alt="<%- mobileApp %>">
 				</div>
 				<div class="domain-description">
 					<div class="section-sub-heading">
-						<span><%- @__('page-home.page-services.domains.box1.title.text1') %></span>
+						<span><%- mobileApp %></span>
 					</div>
 				</div>
 			</div>
 			<div class="col-3">
-				<div class="domain-logo pull-left bg-blue-light">
+				<% webApp = @__('page-home.page-services.domains.box2.title.text1') %>
+				<div class="domain-logo pull-left bg-blue-light text-center">
+					<img src="<%= @__assets.img('/domains/web-app.png', true) %>" alt="<%- webApp %>">
 				</div>
 				<div class="domain-description">
 					<div class="section-sub-heading">
-						<span><%- @__('page-home.page-services.domains.box2.title.text1') %></span>
+						<span><%- webApp %></span>
 					</div>
 				</div>
 			</div>
 			<div class="col-3">
-				<div class="domain-logo pull-left bg-blue-light">
+				<% embedded = @__('page-home.page-services.domains.box3.title.text1') %>
+				<div class="domain-logo pull-left bg-blue-light text-center">
+					<img src="<%= @__assets.img('/domains/embed-sofware.png', true) %>" alt="<%- embedded %>">
 				</div>
 				<div class="domain-description">
 					<div class="section-sub-heading">
-						<span><%- @__('page-home.page-services.domains.box3.title.text1') %></span>
+						<span><%- embedded %></span>
 					</div>
 				</div>
 			</div>
 			<div class="col-3">
-				<div class="domain-logo pull-left bg-blue-light">
+				<% healthCare = @__('page-home.page-services.domains.box4.title.text1') %>
+				<div class="domain-logo pull-left bg-blue-light text-center">
+					<img src="<%= @__assets.img('/domains/healthcare.png', true) %>" alt="<%- healthCare %>">
 				</div>
 				<div class="domain-description">
 					<div class="section-sub-heading">
-						<span><%- @__('page-home.page-services.domains.box4.title.text1') %></span>
+						<span><%- healthCare %></span>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row domains">
 			<div class="col-3">
-				<div class="domain-logo pull-left bg-blue-light">
+				<% systemIntergration = @__('page-home.page-services.domains.box5.title.text1') %>
+				<div class="domain-logo pull-left bg-blue-light text-center">
+					<img src="<%= @__assets.img('/domains/system-integration.png', true) %>" alt="<%- systemIntergration %>">
 				</div>
 				<div class="domain-description">
 					<div class="section-sub-heading">
-						<span><%- @__('page-home.page-services.domains.box5.title.text1') %></span>
+						<span><%- systemIntergration %></span>
 					</div>
 				</div>
 			</div>
 			<div class="col-3">
-				<div class="domain-logo pull-left bg-blue-light">
+				<% enterprise = @__('page-home.page-services.domains.box6.title.text1') %>
+				<div class="domain-logo pull-left bg-blue-light text-center">
+					<img src="<%= @__assets.img('/domains/enterprise.png', true) %>" alt="<%- enterprise %>">
 				</div>
 				<div class="domain-description">
 					<div class="section-sub-heading">
-						<span><%- @__('page-home.page-services.domains.box6.title.text1') %></span>
+						<span><%- enterprise %></span>
 					</div>
 				</div>
 			</div>
 			<div class="col-3">
-				<div class="domain-logo pull-left bg-blue-light">
+				<% cloudBased = @__('page-home.page-services.domains.box7.title.text1') %>
+				<div class="domain-logo pull-left bg-blue-light text-center">
+					<img src="<%= @__assets.img('/domains/cloud-base.png', true) %>" alt="<%- cloudBased %>">
 				</div>
 				<div class="domain-description">
 					<div class="section-sub-heading">
-						<span><%- @__('page-home.page-services.domains.box7.title.text1') %></span>
+						<span><%- cloudBased %></span>
 					</div>
 				</div>
 			</div>
 			<div class="col-3">
-				<div class="domain-logo pull-left bg-blue-light">
+				<% ecommence = @__('page-home.page-services.domains.box8.title.text1') %>
+				<div class="domain-logo pull-left bg-blue-light text-center">
+					<img src="<%= @__assets.img('/domains/e-commerce.png', true) %>" alt="<%- ecommence %>">
 				</div>
 				<div class="domain-description">
 					<div class="section-sub-heading">
-						<span><%- @__('page-home.page-services.domains.box8.title.text1') %></span>
+						<span><%- ecommence %></span>
 					</div>
 				</div>
 			</div>
