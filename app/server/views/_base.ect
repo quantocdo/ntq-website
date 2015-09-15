@@ -15,17 +15,17 @@
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:locale:alternate" content="ja_JP">
 		<meta property="og:title" content="NTQ Solution JSC">
-		<meta property="og:image" content="http://www.<%= @_domain %>{{assets._('/img/NTQ_S.png')}}">
+		<meta property="og:image" content="<%= @__assets.img('/logo/logo_og.png') %>">
 		<meta property="og:site_name" content="NTQ Solution JSC">
 		<meta property="og:description" content="NTQ Solution is a collective of passionate and creative young talents. We aim to deliver the best software development services to enable businesses achieving excellence through software intelligence.">
-		<meta property="og:url" content="http://www.<%= @_domain %>">
+		<meta property="og:url" content="<%= @_profile.domain.protocol %><%= @_profile.domain.base %>">
 
 		<title><% content 'title' %></title>
 
 		<!--<link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
 		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=vietnamese' rel='stylesheet' type='text/css'>-->
-		<link rel="alternate" href="//jp.<%= @_domain %>" hreflang="ja">
-		<link rel="alternate" href="//www.<%= @_domain %>" hreflang="x-default">
+		<link rel="alternate" href="//jp.<%= @_profile.domain.base %>" hreflang="ja">
+		<link rel="alternate" href="//www.<%= @_profile.domain.base %>" hreflang="x-default">
 		<!-- stylesheet imports -->
 		<% content 'head_end' %>
 	</head>
@@ -35,9 +35,10 @@
 				<div class="row">
 					<div class="col">
 						<div class="logo-container pull-left">
-							<img src="<%= @__assets.img('/logo_s.png') %>" alt="NTQ Solution">
+							<img src="<%= @__assets.img('/logo/logo_s.png') %>" alt="NTQ Solution">
 						</div>
-						<div class="language-switch pull-right">
+						<div class="language-switch pull-right text-center">
+							<img src="<%= @__assets.img('/flags/japan.png') %>" alt="Japanese" width="14" height="14">
 						</div>
 						<nav class="top-nav pull-right">
 							<ul class="text-bold cf">

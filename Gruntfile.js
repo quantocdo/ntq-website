@@ -41,6 +41,7 @@ module.exports = function(grunt) {
 			options: {
 				use: [
 					require('kouto-swiss'),
+					require('bootstrap-styl'),
 				],
 			},
 			dev: {
@@ -118,12 +119,12 @@ module.exports = function(grunt) {
 	require('load-grunt-tasks')(grunt);
 
 	grunt.registerTask('default', [
-		'clean:out',
-		'jscs',
-		'jshint',
-		'stylus:dev',
-		'copy:img',
-		'develop:dev',
-		'watch',
+		'clean:out',	// clean last ouput
+		'jscs',			// check code style
+		'jshint',		// check static code
+		'stylus:dev',	// generate CSS
+		// 'copy:img',		// copy image
+		'develop:dev',	// start application
+		'watch',		// watch file changes
 	]);
 };

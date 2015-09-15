@@ -14,9 +14,9 @@ exports._factory = function(_, path, target) {
 		debug: true,
 		assets: {
 			cdn: '//ntq.local/o',
-			default: false
+			default: false,
 		},
 	};
 
-	return _.assign(target, defaults);
+	return _.assign(defaults, target);
 };

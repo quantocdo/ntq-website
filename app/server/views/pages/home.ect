@@ -1,7 +1,7 @@
 <% extend '_base' %>
 
 <% block 'head_end' : %>
-<link rel="stylesheet" href="/css/home.page.css">
+<link rel="stylesheet" href="<%= @__assets.css('/home.page.css') %>">
 <% end %>
 
 <% block 'title' : %>
@@ -14,7 +14,7 @@ NTQ Solution
 	</div>
 	<div class="landing-overlay">
 		<div class="landing-logo text-center">
-			<img src="<%= @__assets.img('/logo_l.png') %>" alt="">
+			<img src="<%= @__assets.img('/logo/logo_l.png') %>" alt="">
 		</div>
 	</div>
 </div>
@@ -53,7 +53,7 @@ NTQ Solution
 			<div class="col-4">
 				<% softwareOutsourcing = @__('page-home.page-services.services.box1.title.text1') %>
 				<div class="service-logo bg-blue-light text-center">
-					<img src="<%= @__assets.img('/icon-outsource-services.png', true) %>" alt="<%- softwareOutsourcing %>">
+					<img src="<%= @__assets.img('/services_outsource.png') %>" alt="<%- softwareOutsourcing %>" width="61" height="61">
 				</div>
 				<div class="section-sub-heading text-center">
 					<span><%- softwareOutsourcing %></span>
@@ -68,7 +68,7 @@ NTQ Solution
 			<div class="col-4">
 				<% solutionConsultancy = @__('page-home.page-services.services.box2.title.text1') %>
 				<div class="service-logo bg-blue-light text-center">
-					<img src="<%= @__assets.img('/icon-solution-consultion.png', true) %>" alt="<%- solutionConsultancy %>">
+					<img src="<%= @__assets.img('/services_consultancy.png') %>" alt="<%- solutionConsultancy %>" width="77" height="76">
 				</div>
 				<div class="section-sub-heading text-center">
 					<span><%- solutionConsultancy %></span>
@@ -83,7 +83,7 @@ NTQ Solution
 			<div class="col-4">
 				<% graphicDesign = @__('page-home.page-services.services.box3.title.text1') %>
 				<div class="service-logo bg-blue-light text-center">
-					<img src="<%= @__assets.img('/icon-graphic-design.png', true) %>" alt="<%- graphicDesign %>">
+					<img src="<%= @__assets.img('/services_graphical_design.png') %>" alt="<%- graphicDesign %>" width="70" height="67">
 				</div>
 				<div class="section-sub-heading text-center">
 					<span><%- @__('page-home.page-services.services.box3.title.text1') %></span>
@@ -100,7 +100,7 @@ NTQ Solution
 			<div class="col-3">
 				<% mobileApp = @__('page-home.page-services.domains.box1.title.text1') %>
 				<div class="domain-logo pull-left bg-blue-light text-center">
-					<img src="<%= @__assets.img('/domains/mobile-app.png', true) %>" alt="<%- mobileApp %>">
+					<img src="<%= @__assets.img('/domains_mobile.png') %>" alt="<%- mobileApp %>" width="22" height="42">
 				</div>
 				<div class="domain-description">
 					<div class="section-sub-heading">
@@ -111,7 +111,7 @@ NTQ Solution
 			<div class="col-3">
 				<% webApp = @__('page-home.page-services.domains.box2.title.text1') %>
 				<div class="domain-logo pull-left bg-blue-light text-center">
-					<img src="<%= @__assets.img('/domains/web-app.png', true) %>" alt="<%- webApp %>">
+					<img src="<%= @__assets.img('/domains_web.png') %>" alt="<%- webApp %>" width="41" height="31">
 				</div>
 				<div class="domain-description">
 					<div class="section-sub-heading">
@@ -122,7 +122,7 @@ NTQ Solution
 			<div class="col-3">
 				<% embedded = @__('page-home.page-services.domains.box3.title.text1') %>
 				<div class="domain-logo pull-left bg-blue-light text-center">
-					<img src="<%= @__assets.img('/domains/embed-sofware.png', true) %>" alt="<%- embedded %>">
+					<img src="<%= @__assets.img('/domains_embed.png') %>" alt="<%- embedded %>" width="30" height="34">
 				</div>
 				<div class="domain-description">
 					<div class="section-sub-heading">
@@ -133,7 +133,7 @@ NTQ Solution
 			<div class="col-3">
 				<% healthCare = @__('page-home.page-services.domains.box4.title.text1') %>
 				<div class="domain-logo pull-left bg-blue-light text-center">
-					<img src="<%= @__assets.img('/domains/healthcare.png', true) %>" alt="<%- healthCare %>">
+					<img src="<%= @__assets.img('/domains_healthcare.png') %>" alt="<%- healthCare %>" width="31" height="32">
 				</div>
 				<div class="domain-description">
 					<div class="section-sub-heading">
@@ -146,7 +146,7 @@ NTQ Solution
 			<div class="col-3">
 				<% systemIntergration = @__('page-home.page-services.domains.box5.title.text1') %>
 				<div class="domain-logo pull-left bg-blue-light text-center">
-					<img src="<%= @__assets.img('/domains/system-integration.png', true) %>" alt="<%- systemIntergration %>">
+					<img src="<%= @__assets.img('/domains_integration.png') %>" alt="<%- systemIntergration %>" width="35" height="35">
 				</div>
 				<div class="domain-description">
 					<div class="section-sub-heading">
@@ -157,7 +157,7 @@ NTQ Solution
 			<div class="col-3">
 				<% enterprise = @__('page-home.page-services.domains.box6.title.text1') %>
 				<div class="domain-logo pull-left bg-blue-light text-center">
-					<img src="<%= @__assets.img('/domains/enterprise.png', true) %>" alt="<%- enterprise %>">
+					<img src="<%= @__assets.img('/domains_enterprise.png') %>" alt="<%- enterprise %>" width="38" height="38">
 				</div>
 				<div class="domain-description">
 					<div class="section-sub-heading">
@@ -168,7 +168,7 @@ NTQ Solution
 			<div class="col-3">
 				<% cloudBased = @__('page-home.page-services.domains.box7.title.text1') %>
 				<div class="domain-logo pull-left bg-blue-light text-center">
-					<img src="<%= @__assets.img('/domains/cloud-base.png', true) %>" alt="<%- cloudBased %>">
+					<img src="<%= @__assets.img('/domains_cloud.png') %>" alt="<%- cloudBased %>" width="44" height="34">
 				</div>
 				<div class="domain-description">
 					<div class="section-sub-heading">
@@ -179,7 +179,7 @@ NTQ Solution
 			<div class="col-3">
 				<% ecommence = @__('page-home.page-services.domains.box8.title.text1') %>
 				<div class="domain-logo pull-left bg-blue-light text-center">
-					<img src="<%= @__assets.img('/domains/e-commerce.png', true) %>" alt="<%- ecommence %>">
+					<img src="<%= @__assets.img('/domains_ecommerce.png') %>" alt="<%- ecommence %>" width="37" height="35">
 				</div>
 				<div class="domain-description">
 					<div class="section-sub-heading">
@@ -263,33 +263,43 @@ NTQ Solution
 		</div>
 		<div class="row technologies">
 			<div class="col-2-offset-1">
-				<div class="technology-logo bg-white">
+				<div class="technology-logo bg-white text-center">
+					<img src="<%= @__assets.img('/tech_mysql.png') %>" width="148" height="77">
 				</div>
-				<div class="technology-logo bg-white">
-				</div>
-			</div>
-			<div class="col-2">
-				<div class="technology-logo bg-white">
-				</div>
-				<div class="technology-logo bg-white">
+				<div class="technology-logo bg-white text-center">
+					<img src="<%= @__assets.img('/tech_android.png') %>" width="110" height="101">
 				</div>
 			</div>
 			<div class="col-2">
-				<div class="technology-logo bg-white">
+				<div class="technology-logo bg-white text-center">
+					<img src="<%= @__assets.img('/tech_java.png') %>" width="156" height="109">
 				</div>
-				<div class="technology-logo bg-white">
-				</div>
-			</div>
-			<div class="col-2">
-				<div class="technology-logo bg-white">
-				</div>
-				<div class="technology-logo bg-white">
+				<div class="technology-logo bg-white text-center">
+					<img src="<%= @__assets.img('/tech_ios.png') %>" width="134" height="78">
 				</div>
 			</div>
 			<div class="col-2">
-				<div class="technology-logo bg-white">
+				<div class="technology-logo bg-white text-center">
+					<img src="<%= @__assets.img('/tech_dotnet.png') %>" width="166" height="88">
 				</div>
-				<div class="technology-logo bg-white">
+				<div class="technology-logo bg-white text-center">
+					<img src="<%= @__assets.img('/tech_gae.png') %>" width="126" height="126">
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="technology-logo bg-white text-center">
+					<img src="<%= @__assets.img('/tech_aws.png') %>" width="160" height="58">
+				</div>
+				<div class="technology-logo bg-white text-center">
+					<img src="<%= @__assets.img('/tech_php.png') %>" width="140" height="90">
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="technology-logo bg-white text-center">
+					<img src="<%= @__assets.img('/tech_mongodb.png') %>" width="106" height="93">
+				</div>
+				<div class="technology-logo bg-white text-center">
+					<img src="<%= @__assets.img('/tech_html5.png') %>" width="160" height="100">
 				</div>
 			</div>
 		</div>
