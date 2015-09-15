@@ -1,0 +1,75 @@
+.site-footer
+	height $layout_footer_h
+
+	background $color_black
+
+.site-content
+	transform-style preserve-3d
+
+	&.page-full
+		margin-top ($layout_header_h - 1)
+		position relative
+		overflow hidden
+		z-index 1
+
+		.page-section
+			position absolute
+			top 0
+			left 0
+			width 100%
+			height 100%
+			z-index 0
+
+			background $color_white
+
+			&.actived
+				z-index 1
+
+	&.page-remain
+		position absolute
+		top ($layout_header_h - 1)
+		left 0
+		right 0
+		z-index 0
+
+		&.actived
+			z-index 2
+
+	&.page-flow
+		position relative
+
+.site-container
+	margin 0 auto
+
+	&.fluid
+		max-width $layout_container_w
+
+	&.fixed
+		width $layout_container_w
+
+.scroll-y
+	overflow-y scroll
+
+.pull-left
+	float left
+
+.pull-right
+	float right
+
+.clearfix
+	clearfix()
+
+.hidden
+	display none!important
+
+.full-height
+	height 100%!important
+
+.vertical-middle
+	position relative
+	top 50%
+	transform translateY(-50%)
+
+.horizontal-center
+	margin-left auto
+	margin-right auto

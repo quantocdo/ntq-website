@@ -16,6 +16,10 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "2.1.4"
+    "bluebird": "2.10.0",
+    "jquery": "2.1.4",
+    "lodash": "3.10.1",
+    "ractive": "~0.7.3",
+    "tween.js": "tweenjs#*"
   }
 }

@@ -104,6 +104,13 @@ module.exports = function(grunt) {
 					'develop:dev',
 				],
 			},
+			client: {
+				files: '<%= jscs.client.src %>',
+				tasks: [
+					'jscs:client',
+					'jshint:client',
+				],
+			},
 			stylus: {
 				files: [
 					'app/public/stylus/**/*.styl',

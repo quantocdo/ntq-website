@@ -1,0 +1,40 @@
+<div class="site-header">
+	<div class="site-container fluid cf">
+		<div class="company-logo pull-left">
+			<a href="<%= @_url('home') %>">
+				<img src="<%= @__assets.img('/logo/logo_s.png') %>" alt="NTQ Solution" width="94" height="40">
+			</a>
+		</div>
+		<div class="pull-right">
+			<a href="<%= @_url('contact') %>" class="bg-blue"><%= @__('menu.contact') %></a>
+			<a href="/">
+				<img src="<%= @__assets.img('/flags/japan.png') %>" alt="Japanese" width="14" height="14">
+			</a>
+		</div>
+		<div class="top-nav pull-right">
+			<ul class="clearfix">
+				<li class="nav-item">
+					<a href="#"><%= @__('menu.business') %></a>
+				</li>
+				<li class="nav-item">
+					<a href="<%= @_url('success-stories') %>"><%= @__('menu.success-story') %></a>
+				</li>
+				<li class="nav-item">
+					<a href="<%= @_url('rd') %>"><%= @__('menu.rd') %></a>
+				</li>
+				<li class="nav-item">
+					<a href="<%= @_url('articles') %>"><%= @__('menu.news') %></a>
+				</li>
+				<li class="nav-item">
+					<a href="<%= @_url('career') %>"><%= @__('menu.career') %></a>
+				</li>
+				<li class="nav-item">
+					<a href="<%= @_url('download') %>"><%= @__('menu.download') %></a>
+				</li>
+				<li class="nav-item">
+					<a href="<%= @_url('about') %>"><%= @__('menu.about') %></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

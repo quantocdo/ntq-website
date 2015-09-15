@@ -20,14 +20,7 @@
     "globals": { // Globals variables.
     },
     "predef": [ // Extra globals.
-        "_",
-        "$",
-        "jQuery",
-        "angular",
-        "moment",
-        "window",
-        "io",
-        "APP"
+        "__"
     ],
     "indent": 4, // Specify indentation spacing
     "devel": true, // Allow development statements e.g. `console.log();`.
