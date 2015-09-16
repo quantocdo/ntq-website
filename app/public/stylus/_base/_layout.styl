@@ -1,6 +1,4 @@
-.site-footer
-	height $layout_footer_h
-
+body
 	background $color_black
 
 .site-content
@@ -18,12 +16,13 @@
 			left 0
 			width 100%
 			height 100%
-			z-index 0
-
-			background $color_white
+			z-index -1
+			overflow hidden
+			display none
 
 			&.actived
-				z-index 1
+			&.moving
+				display block
 
 	&.page-remain
 		position absolute

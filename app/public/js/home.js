@@ -170,6 +170,10 @@
 					}
 				});
 
+				_.forEach(self.sections, function(section, index) {
+					section.style.zIndex = self.sections.length - index;
+				}, self);
+
 				self.resize();
 				self.select();
 			};
@@ -202,6 +206,7 @@
 				new TWEEN.Tween(from)
 						.to(to, duration)
 						.onStart(function() {
+							target.classList.add('moving');
 							target.style.top = from.y + 'px';
 						})
 						.onUpdate(function() {
@@ -213,7 +218,9 @@
 						})
 						.start();
 
-				return defer.promise;
+				return defer.promise.finally(function() {
+					target.classList.remove('moving');
+				});
 			};
 
 			return self;

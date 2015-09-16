@@ -5,13 +5,11 @@
 				<img src="<%= @__assets.img('/logo/logo_s.png') %>" alt="NTQ Solution" width="94" height="40">
 			</a>
 		</div>
-		<div class="pull-right">
-			<a href="<%= @_url('contact') %>" class="bg-blue"><%= @__('menu.contact') %></a>
-			<a href="/">
-				<img src="<%= @__assets.img('/flags/japan.png') %>" alt="Japanese" width="14" height="14">
-			</a>
+		<div class="top-actions pull-right clearfix">
+			<a href="/" class="language-switch ja pull-right"></a>
+			<a href="<%= @_url('contact') %>" class="contact pull-right"><%= @__('menu.contact') %></a>
 		</div>
-		<div class="top-nav pull-right">
+		<div class="top-nav">
 			<ul class="clearfix">
 				<li class="nav-item">
 					<a href="#"><%= @__('menu.business') %></a>
