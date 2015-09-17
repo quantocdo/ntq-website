@@ -40,8 +40,7 @@ module.exports = function(grunt) {
 		stylus: {
 			options: {
 				use: [
-					require('kouto-swiss'),
-					require('bootstrap-styl'),
+					require('kouto-swiss')
 				],
 			},
 			dev: {
@@ -76,6 +75,14 @@ module.exports = function(grunt) {
 					src: '**/*',
 					dest: 'build/out/img',
 				}],
+			},
+			fontawesome: {
+				files: [{
+					expand: true,
+					cwd: 'bower_components/font-awesome-stylus/fonts',
+					src: '**/*',
+					dest: 'build/out/fonts'
+				}]
 			}
 		},
 		develop: {
@@ -126,12 +133,13 @@ module.exports = function(grunt) {
 	require('load-grunt-tasks')(grunt);
 
 	grunt.registerTask('default', [
-		'clean:out',	// clean last ouput
-		'jscs',			// check code style
-		'jshint',		// check static code
-		'stylus:dev',	// generate CSS
-		// 'copy:img',		// copy image
-		'develop:dev',	// start application
-		'watch',		// watch file changes
+		'clean:out',			// clean last ouput
+		'jscs',					// check code style
+		'jshint',				// check static code
+		'stylus:dev',			// generate CSS
+		'copy:fontawesome',		// copy font-awesome
+		// 'copy:img',			// copy image
+		'develop:dev',			// start application
+		'watch',				// watch file changes
 	]);
 };

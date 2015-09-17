@@ -2,7 +2,7 @@
 
 <% block 'head_end': %>
 <link rel="stylesheet" href="<%= @__assets.css('/home.page.css') %>">
-<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Raleway'>
 <% end %>
 
 <% block 'body_end': %>
@@ -15,9 +15,10 @@
 <% end %>
 
 <% block 'page_full': %>
+
 <div class="page-section section-landing">
 	<div class="landing-background full-height">
-		<video autoplay loop class="video-background vertical-middle">
+		<video autoplay loop muted class="video-background vertical-middle">
 			<source src="<%= @__assets.img('/videos/bg_home.mp4') %>" type="video/mp4">
 		</video>
 	</div>
@@ -46,7 +47,7 @@
 						<p>NTQ Solution is a Vietnamese software development company providing offshore development services such as mobile and web applications as well as other essential software services for businesses.</p>
 					</div>
 					<div class="about-us">
-						<a href="<%= @_url('about') %>" class="text-white text-upper">About us</a>
+						<a href="<%= @_url('about') %>" class="text-white text-upper">About us<i class="fa fa-arrow-right icon-see-more"></i></a>
 					</div>
 				</div>
 				<div class="col-6-offset-1">
@@ -79,7 +80,7 @@
 						<span>Gain advantages through outsourcing a part or a whole software development work</span>
 					</div>
 					<div class="service-learn-more text-center text-yellow">
-						<a href="/">Learn more</a>
+						<a href="/">Learn more<i class="fa fa-angle-right icon-see-more"></i></a>
 					</div>
 				</div>
 				<div class="col-4">
@@ -93,7 +94,7 @@
 						<span>We provide a solutions consultancy service to you totally COST FREE</span>
 					</div>
 					<div class="service-learn-more text-center text-yellow">
-						<a href="/">Learn more</a>
+						<a href="/">Learn more<i class="fa fa-angle-right icon-see-more"></i></a>
 					</div>
 				</div>
 				<div class="col-4">
@@ -107,7 +108,7 @@
 						<span>Complete your software with our most trendy mobile and web app graphic design</span>
 					</div>
 					<div class="service-learn-more text-center text-yellow">
-						<a href="/">Learn more</a>
+						<a href="/">Learn more<i class="fa fa-angle-right icon-see-more"></i></a>
 					</div>
 				</div>
 			</div>
@@ -205,6 +206,66 @@
 			<span>Customer reviews</span>
 		</div>
 		<div class="gs">
+			<div class="row customers">
+				<div class="col-2 clearfix">
+					<div class="customer-pic pull-right"></div>
+				</div>
+				<div class="col-4 text-white">
+					<div class="customer-name">
+						<span>Masahiro Okabe</span>
+					</div>
+					<div class="customer-position">
+						<span class="text-italic">Manager, ilovex Co., Ltd., Japan</span>
+					</div>
+					<div class="customer-review">
+						<p>iMyVenue has worked with NTQ on some projects. I have found NTQ technically sound, and reliable. The quality of work is of a standard that matches our expectation, and is equal to that of local developers in Australia. They are cost effective and efficient solution for our needs.</p>
+					</div>
+				</div>
+				<div class="col-2 clearfix">
+					<div class="customer-pic pull-right"></div>
+				</div>
+				<div class="col-4 text-white">
+					<div class="customer-name">
+						<span>Masahiro Okabe</span>
+					</div>
+					<div class="customer-position">
+						<span class="text-italic">Manager, ilovex Co., Ltd., Japan</span>
+					</div>
+					<div class="customer-review">
+						<p>iMyVenue has worked with NTQ on some projects. I have found NTQ technically sound, and reliable. The quality of work is of a standard that matches our expectation, and is equal to that of local developers in Australia. They are cost effective and efficient solution for our needs.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row customers">
+				<div class="col-2 clearfix">
+					<div class="customer-pic pull-right"></div>
+				</div>
+				<div class="col-4 text-white">
+					<div class="customer-name">
+						<span>Masahiro Okabe</span>
+					</div>
+					<div class="customer-position">
+						<span class="text-italic">Manager, ilovex Co., Ltd., Japan</span>
+					</div>
+					<div class="customer-review">
+						<p>iMyVenue has worked with NTQ on some projects. I have found NTQ technically sound, and reliable. The quality of work is of a standard that matches our expectation, and is equal to that of local developers in Australia. They are cost effective and efficient solution for our needs.</p>
+					</div>
+				</div>
+				<div class="col-2 clearfix">
+					<div class="customer-pic pull-right"></div>
+				</div>
+				<div class="col-4 text-white">
+					<div class="customer-name">
+						<span>Masahiro Okabe</span>
+					</div>
+					<div class="customer-position">
+						<span class="text-italic">Manager, ilovex Co., Ltd., Japan</span>
+					</div>
+					<div class="customer-review">
+						<p>iMyVenue has worked with NTQ on some projects. I have found NTQ technically sound, and reliable. The quality of work is of a standard that matches our expectation, and is equal to that of local developers in Australia. They are cost effective and efficient solution for our needs.</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -257,7 +318,7 @@
 			</div>
 		</div>
 		<div class="see-more-tech text-center">
-			<a href="/" class="text-blue text-upper">See more technologies</a>
+			<a href="/" class="text-blue text-upper">See more technologies<i class="fa fa-arrow-right icon-see-more"></a>
 		</div>
 	</div>
 </div>
@@ -313,8 +374,7 @@
 		<div class="sub-heading text-center text-white text-upper">
 			<span>NTQ Solution we are a part of you</span>
 		</div>
-		<div class="partner-map">
-		</div>
+		<div class="partner-map"></div>
 	</div>
 </div>
 
@@ -334,7 +394,7 @@
 			</div>
 		</div>
 		<div class="rd-how-it-work text-center">
-			<a href="/" class="text-green text-upper">See how they work</a>
+			<a href="/" class="text-green text-upper">See how they work<i class="fa fa-arrow-right icon-see-more"></a>
 		</div>
 	</div>
 </div>
@@ -369,7 +429,7 @@
 			<span>We offer a free consultancy service and are eagerly awaiting any questions, estimations or propositions that you may have.</span>
 		</div>
 		<div class="contact-us text-center">
-			<a href="" class="text-blue text-upper">Contact us</a>
+			<a href="" class="text-blue text-upper">Contact us<i class="fa fa-arrow-right icon-see-more"></a>
 		</div>
 		<div class="download-materials text-center">
 			<a href="" class="text-white text-underline">Download Materials</a>
