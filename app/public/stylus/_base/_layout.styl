@@ -23,6 +23,7 @@ body
 			&.actived
 			&.moving
 				display block
+				z-index 99
 
 	&.page-remain
 		position absolute
@@ -36,6 +37,45 @@ body
 
 	&.page-flow
 		position relative
+
+.view-navigator
+	position fixed
+	top ($layout_header_h + 30px)
+	right 15px
+	z-index $zindex_topmost
+
+	.view-section
+		margin-top 10px
+		position relative
+		width 16px
+		height 16px
+		background $color_black
+		border-radius 50%
+		cursor pointer
+		opacity .6
+		transition opacity .2s, background .2s, box-shadow .2s
+
+		&.selected
+			background $color_blue_light
+			box-shadow 0px 0px 10px 3px $color_blue_light
+
+		.view-section-title
+			position absolute
+			background color-fallback(rgba(0, 0, 0, .6))
+			top -7px
+			right 20px
+			display none
+			color $color_white
+			border-radius 3px
+			white-space nowrap
+			line-height 30px
+			padding 0 10px
+
+		&:hover
+			opacity 1
+
+			.view-section-title
+				display block
 
 .site-container
 	margin 0 auto

@@ -10,13 +10,23 @@
 <script src="<%= @__assets.lib('/bluebird/js/browser/bluebird.min.js') %>"></script>
 <script src="<%= @__assets.lib('/jquery/dist/jquery.min.js') %>"></script>
 <script src="<%= @__assets.lib('/tween.js/build/tween.min.js') %>"></script>
+<script src="<%= @__assets.lib('/ractive/ractive.min.js') %>"></script>
 <script src="<%= @__assets.js('/di.js') %>"></script>
 <script src="<%= @__assets.js('/home.js') %>"></script>
+<script id="home-navigator" type="text/ractive">
+	<div class="view-navigator">
+		{{#each sections}}
+		<div class="view-section{{index == selected ? ' selected' : ''}}" on-click="select(this)">
+			<div class="view-section-title">{{title}}</div>
+		</div>
+		{{/each}}
+	</div>
+</script>
 <% end %>
 
 <% block 'page_full': %>
 
-<div class="page-section section-landing">
+<div class="page-section section-landing" data-title="NTQ Solution">
 	<div class="landing-background full-height">
 		<video autoplay loop muted class="video-background vertical-middle">
 			<source src="<%= @__assets.img('/videos/bg_home.mp4') %>" type="video/mp4">
@@ -35,7 +45,7 @@
 	</div>
 </div>
 
-<div class="page-section section-whois">
+<div class="page-section section-whois" data-title="Who is NTQ Solution?">
 	<div class="site-container fluid vertical-middle">
 		<div class="gs">
 			<div class="row">
@@ -59,7 +69,7 @@
 	</div>
 </div>
 
-<div class="page-section section-domains">
+<div class="page-section section-domains" data-title="Domains">
 	<div class="site-container fluid vertical-middle">
 		<div class="heading text-center text-white text-upper">
 			<span>Domains</span>
@@ -200,7 +210,7 @@
 	</div>
 </div>
 
-<div class="page-section section-reviews">
+<div class="page-section section-reviews" data-title="Customer reviews">
 	<div class="site-container fluid vertical-middle">
 		<div class="heading text-center text-white text-upper">
 			<span>Customer reviews</span>
@@ -218,7 +228,7 @@
 						<span class="text-italic">Manager, ilovex Co., Ltd., Japan</span>
 					</div>
 					<div class="customer-review">
-						<p>iMyVenue has worked with NTQ on some projects. I have found NTQ technically sound, and reliable. The quality of work is of a standard that matches our expectation, and is equal to that of local developers in Australia. They are cost effective and efficient solution for our needs.</p>
+						<p class="text-justify">iMyVenue has worked with NTQ on some projects. I have found NTQ technically sound, and reliable. The quality of work is of a standard that matches our expectation, and is equal to that of local developers in Australia. They are cost effective and efficient solution for our needs.</p>
 					</div>
 				</div>
 				<div class="col-2 clearfix">
@@ -232,7 +242,7 @@
 						<span class="text-italic">Manager, ilovex Co., Ltd., Japan</span>
 					</div>
 					<div class="customer-review">
-						<p>iMyVenue has worked with NTQ on some projects. I have found NTQ technically sound, and reliable. The quality of work is of a standard that matches our expectation, and is equal to that of local developers in Australia. They are cost effective and efficient solution for our needs.</p>
+						<p class="text-justify">iMyVenue has worked with NTQ on some projects. I have found NTQ technically sound, and reliable. The quality of work is of a standard that matches our expectation, and is equal to that of local developers in Australia. They are cost effective and efficient solution for our needs.</p>
 					</div>
 				</div>
 			</div>
@@ -248,7 +258,7 @@
 						<span class="text-italic">Manager, ilovex Co., Ltd., Japan</span>
 					</div>
 					<div class="customer-review">
-						<p>iMyVenue has worked with NTQ on some projects. I have found NTQ technically sound, and reliable. The quality of work is of a standard that matches our expectation, and is equal to that of local developers in Australia. They are cost effective and efficient solution for our needs.</p>
+						<p class="text-justify">iMyVenue has worked with NTQ on some projects. I have found NTQ technically sound, and reliable. The quality of work is of a standard that matches our expectation, and is equal to that of local developers in Australia. They are cost effective and efficient solution for our needs.</p>
 					</div>
 				</div>
 				<div class="col-2 clearfix">
@@ -262,7 +272,7 @@
 						<span class="text-italic">Manager, ilovex Co., Ltd., Japan</span>
 					</div>
 					<div class="customer-review">
-						<p>iMyVenue has worked with NTQ on some projects. I have found NTQ technically sound, and reliable. The quality of work is of a standard that matches our expectation, and is equal to that of local developers in Australia. They are cost effective and efficient solution for our needs.</p>
+						<p class="text-justify">iMyVenue has worked with NTQ on some projects. I have found NTQ technically sound, and reliable. The quality of work is of a standard that matches our expectation, and is equal to that of local developers in Australia. They are cost effective and efficient solution for our needs.</p>
 					</div>
 				</div>
 			</div>
@@ -270,7 +280,7 @@
 	</div>
 </div>
 
-<div class="page-section section-tech">
+<div class="page-section section-tech" data-title="Technologies">
 	<div class="site-container fluid vertical-middle">
 		<div class="heading text-center text-upper text-white">
 			<span>Technologies</span>
@@ -323,7 +333,7 @@
 	</div>
 </div>
 
-<div class="page-section section-why-ntq">
+<div class="page-section section-why-ntq" data-title="Why NTQ?">
 	<div class="site-container fluid vertical-middle">
 		<div class="gs">
 			<div class="row">
@@ -366,7 +376,7 @@
 	</div>
 </div>
 
-<div class="page-section section-partners">
+<div class="page-section section-partners" data-title="Our partners">
 	<div class="site-container fluid">
 		<div class="heading text-center text-white text-upper">
 			<span>Our partners</span>
@@ -378,7 +388,7 @@
 	</div>
 </div>
 
-<div class="page-section section-rd">
+<div class="page-section section-rd" data-title="Research & Developement">
 	<div class="site-container fluid vertical-middle">
 		<div class="heading text-center text-upper text-white">
 			<span>Research & Development</span>
@@ -399,7 +409,7 @@
 	</div>
 </div>
 
-<div class="page-section section-articles">
+<div class="page-section section-articles" data-title="Articles">
 	<div class="articles clearfix full-height">
 	<% for article in @_highlightedArticles: %>
 		<div class="article pull-left"

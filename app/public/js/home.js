@@ -1,10 +1,34 @@
 ;(function(di) {
 	'use strict';
 
+	di.register('/home/navigator', [
+		'@ractive',
+		function(Ractive) {
+			var container = document.createElement('div');
+			document.body.appendChild(container);
+
+			var view = new Ractive({
+				el: container,
+				template: '#home-navigator',
+				data: {
+					sections: [],
+					selected: 0
+				},
+				select: function(section) {
+					view.fire('section.selected', section.index);
+				}
+			});
+
+			return view;
+		}
+	]);
+
 	di.register('/home', [
+		'@lodash',
 		'@jquery',
 		'/view',
-		function($, View) {
+		'/home/navigator',
+		function(_, $, View, navigator) {
 			$(document).ready(function() {
 				var view = new View({
 					paddingTop: $('.site-header').height(),
@@ -14,6 +38,24 @@
 				});
 
 				view.live();
+
+				var sections = _.map(view.sections, function(section, index) {
+					return {
+						index: index,
+						title: section.getAttribute('data-title')
+					};
+				});
+
+				sections.push({
+					index: sections.length,
+					title: 'Footer'
+				});
+
+				navigator.set('sections', sections);
+
+				navigator.on('section.selected', function(index) {
+					view.select(index);
+				});
 			});
 		}
 	], true);
@@ -23,7 +65,8 @@
 		'@jquery',
 		'@bluebird',
 		'/animation',
-		function(_, $, Promise, animation) {
+		'/home/navigator',
+		function(_, $, Promise, animation, navigator) {
 			var View = function(options) {
 				this.paddingTop = options.paddingTop;
 				this.sections = options.sections;
@@ -43,6 +86,8 @@
 				var moveUp = this.index > index;
 
 				this.index = index;
+
+				navigator.set('selected', this.index);
 
 				if (this.current) {
 					var self = this;
@@ -79,10 +124,12 @@
 
 			proto.activeRemain = function() {
 				var self = this;
-				self.index++;
+				self.index = self.sections.length;
 				self.transition = true;
 				self.remainActived = true;
 				self.remain.classList.remove('hidden');
+
+				navigator.set('selected', self.index);
 
 				Promise.all([
 					animation.move(self.current, {
@@ -102,7 +149,7 @@
 				});
 			};
 
-			proto.deactiveRemain = function() {
+			proto.deactiveRemain = function(index) {
 				var self = this;
 				self.transition = true;
 				self.remainActived = false;
@@ -116,7 +163,7 @@
 					self.remain.classList.remove('actived');
 				});
 
-				self.go(self.sections.length - 1);
+				self.go(index);
 			};
 
 			proto.select = function(index) {
@@ -129,7 +176,11 @@
 				}
 
 				if (index >= 0 && index < this.sections.length) {
-					this.go(index);
+					if (this.index === this.sections.length) {
+						this.deactiveRemain(index);
+					} else {
+						this.go(index);
+					}
 				} else if (index >= this.sections.length && !this.remainActived) {
 					this.activeRemain();
 				}
@@ -156,7 +207,7 @@
 					if (oEvent.deltaY < 0) {
 						if (self.remainActived) {
 							if (window.scrollY === 0) {
-								self.deactiveRemain();
+								self.deactiveRemain(self.sections.length - 1);
 							}
 						} else {
 							self.select(self.index - 1);
@@ -250,6 +301,7 @@
 	di.register('@jquery', window.jQuery)
 			.register('@lodash', window._)
 			.register('@bluebird', window.Promise)
-			.register('@tween', window.TWEEN);
+			.register('@tween', window.TWEEN)
+			.register('@ractive', window.Ractive);
 })(__('ntq'));
 
