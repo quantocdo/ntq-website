@@ -36,7 +36,36 @@ body
 			z-index 2
 
 	&.page-flow
+		margin-top ($layout_header_h - 1)
 		position relative
+
+		.page-header-container
+			background $color_white
+			height 390px
+			position relative
+
+			.header-mask
+			.page-header
+				position absolute
+				top 0
+				left 0
+				right 0
+				bottom 0
+
+			.header-mask
+				background url('../img/frames/frame_header.png') no-repeat left center
+				background-size contain
+
+			.page-header
+				background-size cover
+				background-repeat no-repeat
+				background-position center top
+
+		.page-content
+			padding-top 75px
+
+			.page-title
+				font-size 42px
 
 .view-navigator
 	position fixed
@@ -56,8 +85,8 @@ body
 		transition opacity .2s, background .2s, box-shadow .2s
 
 		&.selected
-			background $color_blue_light
-			box-shadow 0px 0px 10px 3px $color_blue_light
+			background $color_gray
+			box-shadow 0px 0px 10px 1px $color_gray
 
 		.view-section-title
 			position absolute

@@ -1,0 +1,178 @@
+@import '../main'
+
+.page-header
+	background-image url('../img/bg/about.jpg')
+
+.page-content
+	background $color_white
+
+	.section-introduction
+		margin-top 90px
+
+		.ntq-info-container
+			margin-top 80px
+
+			.ntq-info-icon
+				width 45px
+				height 100px
+				background-repeat no-repeat
+				background-position left top
+
+				&.icon-who
+					background-image url('../img/icons/anonymous_actor.png')
+
+				&.icon-what
+					background-image url('../img/icons/male.png')
+
+				&.icon-why
+					background-image url('../img/icons/globe_pin.png')
+
+			.ntq-info
+				margin-left 45px
+
+				.heading
+					font-size 18px
+
+				.ntq-info-paragraph
+					margin-top 35px
+					line-height 22px
+
+	.section-ntq-members
+		margin-top 130px
+
+		.heading
+			font-size 42px
+
+		.member-container
+			position relative
+			height 580px
+
+			.member
+				position absolute
+				width 200px
+				text-align center
+				bottom 0
+
+				&.first
+					left 0
+
+				&.second
+					left 25%
+					margin-left -50px
+
+				&.third
+					left 50%
+					margin-left -100px
+
+				&.fourth
+					right 25%
+					margin-right -50px
+
+				&.fifth
+					right 0
+
+				.member-picture
+					vertical-align middle
+
+
+	.section-video
+		background $color_green
+		padding-top 135px
+		padding-bottom 120px
+
+		.heading
+			font-size 42px
+
+		.explain
+			margin-top 50px
+			font-size 25px
+			line-height 40px
+
+		.video-container
+			height 284px
+			border 2px solid $color_white
+			border-radius 3px
+			background $color_blue_light
+
+	.section-goals
+		padding-top 100px
+		padding-bottom 95px
+
+		.heading
+			font-size 42px
+
+		.sub-heading
+			font-size 18px
+			margin-top 15px
+
+		.goals
+			margin-top 120px
+
+			.goal-icon
+				background $color_blue
+				overflow hidden
+				border-radius 50%
+				background-repeat no-repeat
+				background-position center center
+				width 116px
+				height 116px
+
+				&.revenue
+					background-image url('../img/icons/money_bag.png')
+
+				&.human-resource
+					background-image url('../img/icons/group.png')
+
+			.goal-explain
+				margin-left 135px
+
+				.target-name
+					margin-top 20px
+					font-size 30px
+
+				.target
+					margin-top 10px
+					font-size 40px
+
+		.sub-goals
+			margin-top 60px
+
+			.heading
+				margin-top 30px
+				font-size 30px
+
+			.items
+				li
+					margin-top 22px
+
+					.fa
+						line-height 22px
+
+					p
+						line-height 22px
+						display block
+						margin-left 25px
+
+	.section-press-releases
+		background $color_blue
+		padding-top 90px
+		padding-bottom 100px
+
+		.heading
+			font-size 42px
+
+		.sub-heading
+			font-size 20px
+			margin-top 10px
+
+		.description
+			line-height 22px
+			margin-top 60px
+
+		.video
+			margin 100px auto 0
+			width 450px
+			height 280px
+			border-radius 3px
+			border 2px solid $color_white
+			background $color_blue_light
