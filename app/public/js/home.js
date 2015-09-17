@@ -64,9 +64,10 @@
 		'@lodash',
 		'@jquery',
 		'@bluebird',
+		'@hammer',
 		'/animation',
 		'/home/navigator',
-		function(_, $, Promise, animation, navigator) {
+		function(_, $, Promise, Hammer, animation, navigator) {
 			var View = function(options) {
 				this.paddingTop = options.paddingTop;
 				this.sections = options.sections;
@@ -187,6 +188,22 @@
 			};
 
 			proto.live = function() {
+				function down() {
+					if (!self.remainActived) {
+						self.select(self.index + 1);
+					}
+				}
+
+				function up() {
+					if (self.remainActived) {
+						if (window.scrollY === 0) {
+							self.deactiveRemain(self.sections.length - 1);
+						}
+					} else {
+						self.select(self.index - 1);
+					}
+				}
+
 				var self = this;
 				self.$window = $(window);
 				var delay;
@@ -197,6 +214,38 @@
 					delay = setTimeout(self.resize.bind(self), 100);
 				});
 
+				var hammer = new Hammer(self.container[0]);
+
+				hammer.get('swipe').set({
+					direction: Hammer.DIRECTION_VERTICAL
+				});
+
+				hammer.on('swipe', function(event) {
+					if (self.transition) {
+						return;
+					}
+
+					if (event.offsetDirection === 16) {
+						// swipe up
+						down();
+					} else if (event.offsetDirection === 8) {
+						// swipe down
+						up();
+					}
+				});
+
+				self.$window.on('keydown', function(event) {
+					if (self.transition) {
+						return;
+					}
+
+					if (event.keyCode === 40 || event.keyCode === 34) {
+						down();
+					} else if (event.keyCode === 38 || event.keyCode === 33) {
+						up();
+					}
+				});
+
 				self.$window.on('mousewheel', function(event) {
 					var oEvent = event.originalEvent;
 
@@ -205,19 +254,11 @@
 					}
 
 					if (oEvent.deltaY < 0) {
-						if (self.remainActived) {
-							if (window.scrollY === 0) {
-								self.deactiveRemain(self.sections.length - 1);
-							}
-						} else {
-							self.select(self.index - 1);
-						}
+						up();
 					}
 
 					if (oEvent.deltaY > 0) {
-						if (!self.remainActived) {
-							self.select(self.index + 1);
-						}
+						down();
 					}
 				});
 
@@ -302,6 +343,7 @@
 			.register('@lodash', window._)
 			.register('@bluebird', window.Promise)
 			.register('@tween', window.TWEEN)
-			.register('@ractive', window.Ractive);
+			.register('@ractive', window.Ractive)
+			.register('@hammer', window.Hammer);
 })(__('ntq'));
 
