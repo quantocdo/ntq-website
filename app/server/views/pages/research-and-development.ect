@@ -1,7 +1,9 @@
 <% extend '_flow' %>
 
 <% block 'head_end': %>
+
 <link rel="stylesheet" href="<%= @__assets.css('/research-and-development.page.css') %>"
+
 <% end %>
 
 <% block 'page_flow': %>
@@ -95,7 +97,7 @@
 			<p>For those interested in our R&D, feel free to contact us.</p>
 		</div>
 		<div class="contact text-center">
-			<a href="" class="text-blue text-upper">
+			<a href="<%= @_url('contact') %>" class="text-blue text-upper">
 				<span>Contact us</span>
 				<i class="fa fa-arrow-right icon-see-more"></i>
 			</a>
