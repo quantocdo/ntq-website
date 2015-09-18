@@ -7,6 +7,7 @@ exports._requires = [
 ];
 exports._factory = function(app, shortcut) {
 	var render = shortcut.render;
+
 	app._get('about', '/about', render('pages/about'));
 
 	app._get('career', '/career', render('pages/career'));
@@ -20,7 +21,7 @@ exports._factory = function(app, shortcut) {
 
 	app._get('download', '/download', render('pages/download'));
 
-	app._get('rd', '/research-and-development', render('pages/rd'));
+	app._get('rd', '/research-and-development', render('pages/research-and-development'));
 
 	app._get('services', '/services', render('pages/services'));
 
