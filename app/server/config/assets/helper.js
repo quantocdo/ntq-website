@@ -24,6 +24,7 @@ exports._factory = function(_, profile) {
 	self.css = factory('/css');
 	self.js = factory('/js');
 	self.lib = factory('/lib');
+	self.video = factory('/video');
 
 	return self;
 };

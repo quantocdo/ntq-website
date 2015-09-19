@@ -85,6 +85,16 @@ module.exports = function(grunt) {
 				}]
 			}
 		},
+		imagemin: {
+			static: {
+				files: [{
+					expand: true,
+					cwd: 'app/public/img',
+					src: '**/*.{png,jpg,gif}',
+					dest: 'build/out/img'
+				}]
+			}
+		},
 		develop: {
 			dev: {
 				file: 'index.js',
@@ -133,12 +143,13 @@ module.exports = function(grunt) {
 	require('load-grunt-tasks')(grunt);
 
 	grunt.registerTask('default', [
-		'clean:out',			// clean last ouput
+		'clean:css',			// clean last ouput
 		'jscs',					// check code style
 		'jshint',				// check static code
 		'stylus:dev',			// generate CSS
-		'copy:fontawesome',		// copy font-awesome
+		// 'copy:fontawesome',		// copy font-awesome
 		// 'copy:img',			// copy image
+		// 'imagemin:static',		// optimize images
 		'develop:dev',			// start application
 		'watch',				// watch file changes
 	]);
