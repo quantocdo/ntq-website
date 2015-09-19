@@ -1,19 +1,13 @@
 <% extend '_full' %>
 
 <% block 'head_end': %>
+
 <link rel="stylesheet" href="<%= @__assets.css('/home.page.css') %>">
-<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Raleway'>
+
 <% end %>
 
 <% block 'body_end': %>
-<script src="<%= @__assets.lib('/lodash/lodash.min.js') %>"></script>
-<script src="<%= @__assets.lib('/bluebird/js/browser/bluebird.min.js') %>"></script>
-<script src="<%= @__assets.lib('/jquery/dist/jquery.min.js') %>"></script>
-<script src="<%= @__assets.lib('/tween.js/build/tween.min.js') %>"></script>
-<script src="<%= @__assets.lib('/ractive/ractive.min.js') %>"></script>
-<script src="<%= @__assets.lib('/hammerjs/hammer.min.js') %>"></script>
-<script src="<%= @__assets.js('/di.js') %>"></script>
-<script src="<%= @__assets.js('/home.js') %>"></script>
+
 <script id="home-navigator" type="text/ractive">
 	<div class="view-navigator">
 		{{#each sections}}
@@ -23,6 +17,15 @@
 		{{/each}}
 	</div>
 </script>
+<script src="<%= @__assets.lib('/lodash/lodash.min.js') %>"></script>
+<script src="<%= @__assets.lib('/bluebird/js/browser/bluebird.min.js') %>"></script>
+<script src="<%= @__assets.lib('/ractive/ractive.min.js') %>"></script>
+<script src="<%= @__assets.js('/di.js') %>"></script>
+<script src="<%= @__assets.lib('/jquery/dist/jquery.min.js') %>"></script>
+<script src="<%= @__assets.lib('/tween.js/build/tween.min.js') %>"></script>
+<script src="<%= @__assets.lib('/hammerjs/hammer.min.js') %>"></script>
+<script src="<%= @__assets.js('/home.js') %>"></script>
+
 <% end %>
 
 <% block 'page_full': %>
@@ -63,6 +66,10 @@
 				</div>
 				<div class="col-6-offset-1">
 					<div class="video-container">
+						<div class="video">
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/qOVTouFSJEs?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -339,7 +346,9 @@
 		<div class="gs">
 			<div class="row">
 				<div class="col-3-offset-1">
-					<div class="image-container"></div>
+					<div class="image-container">
+						<img src="<%= @__assets.img('/home_why_ntq.png') %>" alt="Global NTQ">
+					</div>
 				</div>
 				<div class="col-7-offset-1">
 					<div class="heading text-upper">
@@ -390,22 +399,30 @@
 </div>
 
 <div class="page-section section-rd" data-title="Research & Developement">
-	<div class="site-container fluid vertical-middle">
-		<div class="heading text-center text-upper text-white">
-			<span>Research & Development</span>
-		</div>
-		<div class="description text-center text-white">
-			<p>We also have an extremely innovative research & development department.<br>We are currently looking for a partner who we can collaborate with and can provide support for our present, and future, projects.</p>
-		</div>
-		<div class="gs">
-			<div class="row rd-film">
-				<div class="col-2-offset-3 rd-block"></div>
-				<div class="col-2 rd-block"></div>
-				<div class="col-2 rd-block"></div>
+	<div class="vertical-middle">
+		<div class="site-container fluid">
+			<div class="heading text-center text-upper text-white">
+				<span>Research & Development</span>
+			</div>
+			<div class="description text-center text-white">
+				<p>We also have an extremely innovative research & development department.<br>We are currently looking for a partner who we can collaborate with and can provide support for our present, and future, projects.</p>
 			</div>
 		</div>
-		<div class="rd-how-it-work text-center">
-			<a href="/" class="text-green text-upper">See how they work<i class="fa fa-arrow-right icon-see-more"></i></a>
+		<div class="rd-film">
+			<div class="site-container fluid">
+				<div class="gs">
+					<div class="row">
+						<div class="col-2-offset-3 rd-block"></div>
+						<div class="col-2 rd-block"></div>
+						<div class="col-2 rd-block"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="site-container fluid">
+			<div class="rd-how-it-work text-center">
+				<a href="/" class="text-green text-upper">See how they work<i class="fa fa-arrow-right icon-see-more"></i></a>
+			</div>
 		</div>
 	</div>
 </div>

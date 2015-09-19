@@ -18,8 +18,13 @@
 			position relative
 
 			.picture
+				margin-left -999px
+				margin-right -999px
+				text-align center
+
 				img
 					vertical-align middle
+
 
 			.picture-frame
 				position absolute
@@ -62,7 +67,19 @@
 			.video-frame
 				margin 0 30px
 				height 280px
-				background $color_blue_light
+				overflow hidden
+				background-position center center
+				background-size cover
+				background-repeat no-repeat
+
+				&.guidebot
+					background-image url('../img/rd_guidebot.png')
+
+				&.air-drone
+					background-image url('../img/rd_air_drone.png')
+
+				&.gecko
+					background-image url('../img/rd_gecko.png')
 
 			.heading
 				margin-top 55px
@@ -84,6 +101,10 @@
 		.explain
 			font-size 30px
 			margin-top 65px
+
+		.team-picture
+			vertical-align middle
+			max-width 100%
 
 	.section-contact
 		background $color_blue

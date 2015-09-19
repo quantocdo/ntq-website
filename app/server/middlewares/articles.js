@@ -75,5 +75,24 @@ exports._factory = function(Promise, Article) {
 		};
 	};
 
+	self.get = function(req, res, next) {
+		var language = res.locals.locale;
+		var limit = req.query.limit;
+		var skip = req.query.skip;
+
+		var query = Article.find({
+			enabled: true,
+			languages: language
+		}).sort({
+			time: 'desc'
+		}).skip(skip).limit(limit);
+
+		Promise.resolve(query.exec()).then(function(articles) {
+			res.locals._articles = articles;
+
+			next();
+		});
+	};
+
 	return self;
 };

@@ -1,0 +1,108 @@
+<% extend '_base' %>
+
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__assets.css('/articles.page.css') %>">
+
+
+
+<% end %>
+
+<body>
+	<% include 'partials/header' %>
+
+	<div class="site-content page-flow">
+		<div class="site-container fluid highlighted-articles">
+			<div class="gs">
+				<div class="row">
+					<div class="col-7">
+						<% mainArticle = @_highlightedArticles.shift() %>
+						<div class="main-article">
+							<div class="avatar-container">
+								<div class="avatar">
+									<img src="/upload/img/<%= mainArticle.avatar %>" alt="<%= mainArticle.heading %>">
+								</div>
+							</div>
+							<div class="heading">
+								<span><%= mainArticle.heading %></span>
+							</div>
+							<div class="bulletin">
+								<p><%= mainArticle.bulletin %></p>
+							</div>
+							<div class="date">
+								<span><%= mainArticle.date %></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-2">
+						<% for article in @_highlightedArticles: %>
+							<div class="recent-article">
+								<div class="avatar-container">
+									<div class="avatar">
+										<img src="/upload/img/<%= article.avatar %>" alt="<%= article.heading %>">
+									</div>
+								</div>
+							</div>
+						<% end %>
+					</div>
+					<div class="col-3">
+						<% for article in @_highlightedArticles: %>
+						<div class="recent-article">
+							<div class="heading">
+								<span><%= article.heading %></span>
+							</div>
+							<p class="bulletin"><%= article.bulletin %></p>
+							<div class="date">
+								<span><%= article.date %></span>
+							</div>
+						</div>
+						<% end %>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="articles"></div>
+	</div>
+
+	<% include 'partials/footer' %>
+
+	<script id="articles-tpl" type="text/ractive">
+		<div class="site-container fluid">
+			<div class="articles">
+				{{#rows}}
+				<div class="gs">
+					<div class="row">
+						{{#articles}}
+							<div class="col-6">
+								<div class="article">
+									<div class="avatar-container">
+										<div class="avatar">
+											<img src="/upload/img/{{avatar}}" alt="{{heading}}">
+										</div>
+									</div>
+									<div class="heading">
+										<span>{{heading}}</span>
+									</div>
+									<p class="bulletin">{{bulletin}}</p>
+									<div class="date">
+										<span>{{date}}</span>
+									</div>
+								</div>
+							</div>
+						{{/articles}}
+					</div>
+				</div>
+				{{/rows}}
+			</div>
+			<div class="load-more text-upper">
+				<a href="#" on-click="articles.loadmore"><i class="fa fa-angle-left icon"></i>Older Posts</a>
+			</div>
+		</div>
+	</script>
+	<script src="<%= @__assets.lib('/lodash/lodash.min.js') %>"></script>
+	<script src="<%= @__assets.lib('/bluebird/js/browser/bluebird.min.js') %>"></script>
+	<script src="<%= @__assets.lib('/ractive/ractive.min.js') %>"></script>
+	<script src="<%= @__assets.js('/di.js') %>"></script>
+	<script src="<%= @__assets.lib('/jquery/dist/jquery.min.js') %>"></script>
+	<script src="<%= @__assets.js('/articles.js') %>"></script>
+</body>

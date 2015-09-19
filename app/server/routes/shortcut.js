@@ -10,5 +10,11 @@ exports._factory = function() {
 		};
 	};
 
+	self.json = function(property) {
+		return function(req, res, next) {
+			res.json(res.locals[property]);
+		};
+	};
+
 	return self;
 };

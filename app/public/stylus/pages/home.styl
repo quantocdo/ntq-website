@@ -73,6 +73,10 @@
 		background url('../img/frames/frame_imac.png') no-repeat center center
 		width 567px
 		height 447px
+		padding 19px
+
+		.video
+			height 296px
 
 .section-domains
 	background $color_blue
@@ -93,6 +97,7 @@
 
 		.logo-container
 			border-radius 50%
+			overflow hidden
 			border 1px solid $color_white
 			background $color_blue_light
 			width 80px
@@ -137,6 +142,7 @@
 			width 134px
 			height 134px
 			border-radius 50%
+			overflow hidden
 			border 1px solid $color_white
 			background $color_blue
 			overflow hidden
@@ -196,7 +202,11 @@
 
 	.image-container
 		height 565px
-		background url('../img/frames/frame_iphone.png') no-repeat center center
+		// background url('../img/frames/frame_iphone.png') no-repeat center center
+
+		img
+			vertical-align middle
+			max-width 100%
 
 	.heading
 		font-size 42px
@@ -264,7 +274,7 @@
 		margin-top 112px
 		padding-top 38px
 		padding-bottom 42px
-		background url('../img/frames/frame_film.png') no-repeat center center
+		background url('../img/frames/frame_film.png') repeat-x center center
 
 		.rd-block
 			border-radius 8px

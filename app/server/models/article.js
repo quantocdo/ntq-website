@@ -3,8 +3,9 @@
 exports._ = '/server/models/article';
 exports._requires = [
 	'/server/config/db',
+	'@moment'
 ];
-exports._factory = function(db) {
+exports._factory = function(db, moment) {
 	var ArticleSchema = new db.Schema({
 		heading: {
 			type: String,
@@ -41,6 +42,20 @@ exports._factory = function(db) {
 		highlighted: Boolean,
 		avatar: String
 	});
+
+	ArticleSchema.virtual('date').get(function() {
+		return moment(this.time).format('MMM Do, YYYY');
+	});
+
+	ArticleSchema.methods = {
+		toJSON: function() {
+			var raw = this.toObject();
+
+			raw.date = this.date;
+
+			return raw;
+		}
+	};
 
 	return db.model('Article', ArticleSchema);
 };

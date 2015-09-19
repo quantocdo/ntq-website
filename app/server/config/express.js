@@ -3,6 +3,7 @@
 exports._ = '/config/express';
 exports._requires = [
 	'@express',
+	'@body-parser',
 	'@reverse-route',
 	'@path',
 ];
@@ -11,8 +12,12 @@ exports._activations = [
 	'/config/view-engine',
 	'/config/locale',
 ];
-exports._factory = function(express, reverseRoute, path) {
+exports._factory = function(express, bodyParser, reverseRoute, path) {
 	var app = express();
+
+	app.use(bodyParser.urlencoded({
+		extended: false
+	}));
 
 	// use reverse-route
 	reverseRoute(app);
