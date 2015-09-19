@@ -16,5 +16,11 @@ exports._factory = function() {
 		};
 	};
 
+	self.redirect = function(routeName, params) {
+		return function(req, res, next) {
+			res._redirect(routeName, params);
+		};
+	};
+
 	return self;
 };
