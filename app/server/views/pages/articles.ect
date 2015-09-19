@@ -4,8 +4,6 @@
 
 <link rel="stylesheet" href="<%= @__assets.css('/articles.page.css') %>">
 
-
-
 <% end %>
 
 <body>
@@ -99,10 +97,7 @@
 			</div>
 		</div>
 	</script>
-	<script src="<%= @__assets.lib('/lodash/lodash.min.js') %>"></script>
-	<script src="<%= @__assets.lib('/bluebird/js/browser/bluebird.min.js') %>"></script>
-	<script src="<%= @__assets.lib('/ractive/ractive.min.js') %>"></script>
-	<script src="<%= @__assets.js('/di.js') %>"></script>
-	<script src="<%= @__assets.lib('/jquery/dist/jquery.min.js') %>"></script>
-	<script src="<%= @__assets.js('/articles.js') %>"></script>
+	<% for file in @__assets.files('/articles.js'): %>
+<script src="<%= @__assets.js(file) %>"></script>
+<% end %>
 </body>

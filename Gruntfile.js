@@ -1,10 +1,15 @@
 'use strict';
 
+var _ = require('lodash');
+var assets = require('./build/assets.json');
+var cache = null;
+
 module.exports = function(grunt) {
 	grunt.initConfig({
 		clean: {
 			out: 'build/out',
 			css: 'build/out/css',
+			tmp: 'build/.tmp'
 		},
 		jscs: {
 			options: {
@@ -66,6 +71,29 @@ module.exports = function(grunt) {
 					expand: true,
 				}],
 			},
+			prod: {
+				files: [{
+					src: [
+						'*.styl',
+						'!_*.styl',
+					],
+					cwd: 'app/public/stylus',
+					dest: 'build/.tmp/css',
+					ext: '.css',
+					expand: true,
+				}, {
+					src: [
+						'pages/*.styl',
+						'!**/_*.styl',
+					],
+					cwd: 'app/public/stylus',
+					dest: 'build/.tmp/css',
+					ext: '.page.css',
+					extDot: 'first',
+					flatten: true,
+					expand: true,
+				}]
+			}
 		},
 		copy: {
 			img: {
@@ -83,6 +111,48 @@ module.exports = function(grunt) {
 					src: '**/*',
 					dest: 'build/out/fonts'
 				}]
+			},
+			video: {
+				files: [{
+					expand: true,
+					cwd: 'app/public/video',
+					src: '**/*',
+					dest: 'build/out/video'
+				}]
+			},
+			replace: {
+				options: {
+					process: function(content, filePath) {
+						if (!cache) {
+							// create map
+							cache = [];
+
+							// console.log(grunt.filerev.summary);
+
+							_.forEach(grunt.filerev.summary, function(rev, orig) {
+								var origFile = orig.replace('build/out', '');
+								var revFile = rev.replace('build/out', '');
+
+								cache.push({
+									regex: new RegExp(origFile, 'g'),
+									value: revFile
+								});
+							});
+						}
+
+						_.forEach(cache, function(pattern) {
+							content = content.replace(pattern.regex, pattern.value);
+						});
+
+						return content;
+					}
+				},
+				files: [{
+					expand: true,
+					cwd: 'build/.tmp/css/',
+					src: '**/*',
+					dest: 'build/out/css'
+				}]
 			}
 		},
 		imagemin: {
@@ -93,6 +163,33 @@ module.exports = function(grunt) {
 					src: '**/*.{png,jpg,gif}',
 					dest: 'build/out/img'
 				}]
+			}
+		},
+		uglify: {
+			prod: {
+				files: assets.js
+			}
+		},
+		filerev: {
+			css: {
+				src: 'build/out/css/**/*.css'
+			},
+			img: {
+				src: 'build/out/img/**/*.{png,jpg,gif}'
+			},
+			js: {
+				src: 'build/out/js/**/*.js'
+			},
+			video: {
+				src: 'build/out/video/**/*'
+			}
+		},
+		filerev_assets: {
+			prod: {
+				options: {
+					cwd: 'build/out',
+					dest: 'build/out/rev.json'
+				}
 			}
 		},
 		develop: {
@@ -152,5 +249,27 @@ module.exports = function(grunt) {
 		// 'imagemin:static',		// optimize images
 		'develop:dev',			// start application
 		'watch',				// watch file changes
+	]);
+
+	grunt.registerTask('build', [
+		'clean:out',
+		'copy:fontawesome',
+		'imagemin:static',
+		// 'copy:img',				// save time
+		'filerev:img',
+		'stylus:prod',			// process css [begin]
+		'copy:replace',
+		'filerev:css',			// process css [end]
+		'uglify:prod',			// process js [begin]
+		'filerev:js',			// process js [end]
+		'copy:video',
+		'filerev:video',
+		'filerev_assets',
+		'clean:tmp'
+	]);
+
+	grunt.registerTask('test', [
+		'build',
+		'develop:nighty'
 	]);
 };

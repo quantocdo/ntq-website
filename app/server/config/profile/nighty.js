@@ -14,12 +14,13 @@ exports._factory = function() {
 		port: 4000,
 		db: 'mongodb://localhost/ntq-website',
 		assets: {
-			cdn: '//static.ntq-solution.com.vn',
+			cdn: '//static.indie.codes',
 			default: true,
 			purgeCache: false,
+			rev: true
 		},
 		upload: {
-			doc: '../../../ntq-website-v1/upload/doc'
+			doc: '/home/d/workspace/ntq/ntq-website-v1/upload/doc'
 		},
 		mail: {
 			to: 'dzung.nguyen@ntq-solution.com.vn',
