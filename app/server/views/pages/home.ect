@@ -98,7 +98,7 @@
 						<span>Gain advantages through outsourcing a part or a whole software development work</span>
 					</div>
 					<div class="service-learn-more text-center text-yellow">
-						<a href="/">Learn more<i class="fa fa-angle-right icon-see-more"></i></a>
+						<a href="<%= @_url('services') %>#out-source">Learn more<i class="fa fa-angle-right icon-see-more"></i></a>
 					</div>
 				</div>
 				<div class="col-4">
@@ -112,7 +112,7 @@
 						<span>We provide a solutions consultancy service to you totally COST FREE</span>
 					</div>
 					<div class="service-learn-more text-center text-yellow">
-						<a href="/">Learn more<i class="fa fa-angle-right icon-see-more"></i></a>
+						<a href="<%= @_url('services') %>#solution-consultancy">Learn more<i class="fa fa-angle-right icon-see-more"></i></a>
 					</div>
 				</div>
 				<div class="col-4">
@@ -126,7 +126,7 @@
 						<span>Complete your software with our most trendy mobile and web app graphic design</span>
 					</div>
 					<div class="service-learn-more text-center text-yellow">
-						<a href="/">Learn more<i class="fa fa-angle-right icon-see-more"></i></a>
+						<a href="<%= @_url('services') %>#graphic-design">Learn more<i class="fa fa-angle-right icon-see-more"></i></a>
 					</div>
 				</div>
 			</div>
@@ -347,7 +347,7 @@
 			<div class="row">
 				<div class="col-3-offset-1">
 					<div class="image-container">
-						<img src="<%= @__assets.img('/home_why_ntq.png') %>" alt="Global NTQ">
+						<img src="<%= @__assets.img('/home_why_ntq.png') %>" alt="Global NTQ" width="278" height="565">
 					</div>
 				</div>
 				<div class="col-7-offset-1">
@@ -421,7 +421,7 @@
 		</div>
 		<div class="site-container fluid">
 			<div class="rd-how-it-work text-center">
-				<a href="/" class="text-green text-upper">See how they work<i class="fa fa-arrow-right icon-see-more"></i></a>
+				<a href="<%= @_url('rd') %>" class="text-green text-upper">See how they work<i class="fa fa-arrow-right icon-see-more"></i></a>
 			</div>
 		</div>
 	</div>
@@ -457,10 +457,10 @@
 			<span>We offer a free consultancy service and are eagerly awaiting any questions, estimations or propositions that you may have.</span>
 		</div>
 		<div class="contact-us text-center">
-			<a href="" class="text-blue text-upper">Contact us<i class="fa fa-arrow-right icon-see-more"></i></a>
+			<a href="<%= @_url('contact') %>" class="text-blue text-upper">Contact us<i class="fa fa-arrow-right icon-see-more"></i></a>
 		</div>
 		<div class="download-materials text-center">
-			<a href="" class="text-white text-underline">Download Materials</a>
+			<a href="<%= @_url('download') %>" class="text-white text-underline">Download Materials</a>
 		</div>
 	</div>
 </div>
