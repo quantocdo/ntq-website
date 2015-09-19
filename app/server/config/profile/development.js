@@ -18,5 +18,8 @@ exports._factory = function() {
 			default: true,
 			purgeCache: true,
 		},
+		upload: {
+			doc: '../../../ntq-website-v1/upload/doc'
+		}
 	};
 };

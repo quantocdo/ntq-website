@@ -1,8 +1,8 @@
 'use strict';
 
-exports._ = '/server/models/article';
+exports._ = '/models/article';
 exports._requires = [
-	'/server/config/db',
+	'/config/db',
 	'@moment'
 ];
 exports._factory = function(db, moment) {

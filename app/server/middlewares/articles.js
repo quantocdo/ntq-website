@@ -3,7 +3,7 @@
 exports._ = '/middlewares/articles';
 exports._requires = [
 	'@bluebird',
-	'/server/models/article'
+	'/models/article'
 ];
 exports._factory = function(Promise, Article) {
 	var self = {};

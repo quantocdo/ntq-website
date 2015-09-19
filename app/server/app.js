@@ -9,6 +9,7 @@ exports._requires = [
 exports._activations = [
 	'/routes/home',
 	'/routes/articles',
+	'/routes/download',
 	'/routes/static',
 ];
 exports._factory = function(_, app, profile) {
