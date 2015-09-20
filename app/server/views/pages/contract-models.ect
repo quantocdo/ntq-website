@@ -1,81 +1,70 @@
-<% extend '_base' %>
+<% extend '_flow' %>
 
-<% block 'title' : %>
-<%= @__('title-website.contract-models') %>
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__assets.css('/contract-models.page.css') %>">
+
 <% end %>
 
-<% block 'head_end' : %>
-<link rel="stylesheet" href="/css/main.css">
-<link rel="stylesheet" href="<%= @_profile.staticAsset %>/css/bootstrap/bootstrap.css">
-<link rel="stylesheet" href="<%= @_profile.staticAsset %>/css/header.css">
-<link rel="stylesheet" href="<%= @_profile.staticAsset %>/css/footer.css">
-<link rel="stylesheet" href="<%= @_profile.staticAsset %>/css/common.css">
-<link rel="stylesheet" href="<%= @_profile.staticAsset %>/css/menu-white.css">
-<link rel="stylesheet" href="<%= @_profile.staticAsset %>/css/submenu-common.css">
-<link rel="stylesheet" href="<%= @_profile.staticAsset %>/css/contract-models.css">
-<% end %>
+<% block 'page_flow': %>
 
-<div class="container-fluid page-top-container-fluid contract-models-page-top-container-fluid">
-    <div class="container">
-        <h1 class="text-center"><%= @__('page-contract-models.title') %></h1>
-    </div>
-</div><!-- /contact-page-top-container-fluid -->
-<div class="container-fluid page-bottom-container-fluid contract-models-page-container-fluid">
-    <div class="container clearfix">
-        <div class="page-bottom-container contract-models-container clearfix">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th width="335px" class="bg-blue-light"><%= @__('page-contract-models.box1.title.text1') %><br/>
-                            <%= @__('page-contract-models.box1.title.text2') %></th>
-                        <th width="330px" class="bg-blue-medium"><%= @__('page-contract-models.box2.title') %></th>
-                        <th width="335px" class="bg-blue-light"><%= @__('page-contract-models.box3.title') %></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="bg-grey-light"><%= @__('page-contract-models.box1.description') %></td>
-                        <td class="bg-white"><%= @__('page-contract-models.box2.description') %></td>
-                        <td class="bg-grey-light"><%= @__('page-contract-models.box3.description') %></td>
-                    </tr>
-                    <tr>
-                        <td class="bg-grey-light"><strong><%= @__('page-contract-models.benefits') %></strong></td>
-                        <td class="bg-white"><strong><%= @__('page-contract-models.benefits') %></strong></td>
-                        <td class="bg-grey-light"><strong><%= @__('page-contract-models.benefits') %></strong></td>
-                    </tr>
-                    <tr>
-                        <td class="bg-grey-light">
-                            <ul>
-                                <li><%= @__('page-contract-models.box1.benefits.paragraph1') %></li>
-                                <li><%= @__('page-contract-models.box1.benefits.paragraph2') %></li>
-                                <li><%= @__('page-contract-models.box1.benefits.paragraph3') %></li>
-                                <li><%= @__('page-contract-models.box1.benefits.paragraph4') %></li>
-                                <li><%= @__('page-contract-models.box1.benefits.paragraph5') %></li>
-                                <li><%= @__('page-contract-models.box1.benefits.paragraph6') %></li>
-                            </ul>
-                        </td>
-                        <td class="bg-white">
-                            <ul>
-                                <li><%= @__('page-contract-models.box2.benefits.paragraph1') %></li>
-                                <li><%= @__('page-contract-models.box2.benefits.paragraph2') %></li>
-                            </ul>
-                        </td>
-                        <td class="bg-grey-light">
-                            <ul>
-                                <li><%= @__('page-contract-models.box3.benefits.paragraph1') %></li>
-                                <li><%= @__('page-contract-models.box3.benefits.paragraph2') %></li>
-                                <li><%= @__('page-contract-models.box3.benefits.paragraph3') %></li>
-                                <li><%= @__('page-contract-models.box3.benefits.paragraph4') %></li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="bg-grey-light"><a href="<%= @_url('download') %>" title="Download Contracts" class="download-constract"><%= @__('page-contract-models.download-constracts') %></a></td>
-                        <td class="bg-white"><a href="<%= @_url('download') %>" title="Download Contracts" class="download-constract"><%= @__('page-contract-models.download-constracts') %></a></td>
-                        <td class="bg-grey-light"><a href="<%= @_url('/download') %>" title="Download Contracts" class="download-constract"><%= @__('page-contract-models.download-constracts') %></a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div><!-- /page-bottom-container -->
-    </div>
+<div class="page-title text-center text-upper">
+    <span>Contract Models</span>
 </div>
+
+<div class="site-container fluid">
+    <div class="gs">
+        <div class="row contract">
+            <div class="col-5">
+                <img class="contract-illu" src="<%= @__assets.img('/cm_odc.jpg') %>" alt="Offshore Development Center">
+            </div>
+            <div class="col-7">
+                <div class="heading text-blue">
+                    <span>Offshore Development Center (Dedicated Team)</span>
+                </div>
+                <div class="explain">
+                    <p>The pricing strategy used in this model is based on the amount of time our development team will be contracted to a client's project.</p>
+                    <br>
+                    <span>This model is recommended to companies who:</span>
+                    <ul>
+                        <li><i class="fa fa-fw fa-caret-right text-blue"></i>Have devised specifications but plan to change or add to them throughout the project</li>
+                        <li><i class="fa fa-fw fa-caret-right text-blue"></i>Have not devised specifications and are looking to develop in a flexible manner</li>
+                    </ul>
+                    <br>
+                    <span class="text-upper text-bold">ADVANTAGES</span>
+                    <ul>
+                        <li><i class="fa fa-fw fa-caret-right text-blue"></i>Our clients have a dedicated team that are focused solely on their project</li>
+                        <li><i class="fa fa-fw fa-caret-right text-blue"></i>We create bilateral communications with our clients meaning information sharing is made easy throughout the duration of the project</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row contract">
+            <div class="col-5">
+                <img class="contract-illu" src="<%= @__assets.img('/cm_project_based.jpg') %>" alt="Project-Based Pricing">
+            </div>
+            <div class="col-7">
+                <div class="heading text-blue">
+                    <span>Project-Based Pricing</span>
+                </div>
+                <div class="explain">
+                    <p>The pricing strategy used in this model is calculated based on the effort required to complete each part of a project.</p>
+                    <br>
+                    <span>This model is recommended to companies who:</span>
+                    <ul>
+                        <li><i class="fa fa-fw fa-caret-right text-blue"></i>Have already devised clear specifications for the project</li>
+                        <li><i class="fa fa-fw fa-caret-right text-blue"></i>Plan to end the project within a short time period</li>
+                    </ul>
+                    <br>
+                    <span class="text-upper text-bold">ADVANTAGES</span>
+                    <ul>
+                        <li><i class="fa fa-fw fa-caret-right text-blue"></i>You only need to make a one-off payment which is calculated specifically for the project</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<% end %>
