@@ -11,11 +11,7 @@ exports._factory = function(_, path, target) {
 	var defaults = {
 		_root: path.resolve(__dirname, '../..'),
 		_environment: environment,
-		debug: true,
-		assets: {
-			cdn: '//ntq.local/o',
-			default: false,
-		},
+		debug: true
 	};
 
 	return _.assign(defaults, target);
