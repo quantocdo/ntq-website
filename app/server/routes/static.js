@@ -14,7 +14,7 @@ exports._factory = function(app, shortcut) {
 
 	app._get('contract-models', '/contract-models', render('pages/contract-models'));
 
-	app._get('domains', '/domains', render('pages/domains'));
+	app._get('domains', '/development-domains', render('pages/domains'));
 
 	app._get('rd', '/research-and-development', render('pages/research-and-development'));
 

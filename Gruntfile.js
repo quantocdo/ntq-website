@@ -244,9 +244,7 @@ module.exports = function(grunt) {
 		'jscs',					// check code style
 		'jshint',				// check static code
 		'stylus:dev',			// generate CSS
-		// 'copy:fontawesome',		// copy font-awesome
-		// 'copy:img',			// copy image
-		// 'imagemin:static',		// optimize images
+		'copy:fontawesome',		// copy font-awesome
 		'develop:dev',			// start application
 		'watch',				// watch file changes
 	]);
