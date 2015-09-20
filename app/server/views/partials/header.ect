@@ -7,37 +7,46 @@
 		</div>
 		<div class="top-actions pull-right clearfix">
 			<a href="http://jp.ntq-solution.com.vn" class="language-switch ja pull-right"></a>
-			<a href="<%= @_url('contact') %>" class="contact pull-right"><%= @__('menu.contact') %></a>
+			<a href="<%= @_url('contact') %>" class="contact pull-right">Contact</a>
 		</div>
 		<div class="top-nav">
 			<ul class="clearfix">
+				<li class="nav-item dropdown-menu">
+					<a href="#">Business&nbsp;<i class="fa fa-angle-down fw"></i></a>
+					<div class="dropdown">
+						<div class="arrow-up"></div>
+						<ul>
+							<li class="dropdown-item first">
+								<a href="<%= @_url('services') %>">Services</a>
+							</li>
+							<li class="dropdown-item">
+								<a href="<%= @_url('domains') %>">Development domain</a>
+							</li>
+							<li class="dropdown-item">
+								<a href="<%= @_url('contract-models') %>">Contract models</a>
+							</li>
+						</ul>
+					</div>
+				</li>
 				<li class="nav-item">
-					<a href="<%= @_url('services') %>"><%= @__('menu.services') %></i></a>
+					<a href="<%= @_url('success-stories') %>">Success stories</a>
+				</li>
+				<li class="nav-item">
+					<a href="<%= @_url('rd') %>">R&D</a>
+				</li>
+				<li class="nav-item">
+					<a href="<%= @_url('articles') %>">News</a>
 				</li>
 				<!--
 				<li class="nav-item">
-					<a href="#"><%= @__('menu.business') %><i class="fa fa-angle-down fw"></i></a>
+					<a href="<%= @_url('career') %>">Career</a>
 				</li>
 				-->
 				<li class="nav-item">
-					<a href="<%= @_url('success-stories') %>"><%= @__('menu.success-story') %></a>
+					<a href="<%= @_url('download') %>">Downloads</a>
 				</li>
 				<li class="nav-item">
-					<a href="<%= @_url('rd') %>"><%= @__('menu.rd') %></a>
-				</li>
-				<li class="nav-item">
-					<a href="<%= @_url('articles') %>"><%= @__('menu.news') %></a>
-				</li>
-				<!--
-				<li class="nav-item">
-					<a href="<%= @_url('career') %>"><%= @__('menu.career') %></a>
-				</li>
-				-->
-				<li class="nav-item">
-					<a href="<%= @_url('download') %>"><%= @__('menu.download') %></a>
-				</li>
-				<li class="nav-item">
-					<a href="<%= @_url('about') %>"><%= @__('menu.about') %></a>
+					<a href="<%= @_url('about') %>">About us</a>
 				</li>
 			</ul>
 		</div>
