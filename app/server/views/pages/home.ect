@@ -17,8 +17,9 @@
 		{{/each}}
 	</div>
 </script>
-<% for file in @__assets.scripts('/home.js'): %>
-<script src="<%= @__assets.js(file) %>"></script>
+<% scripts = @__assets.scripts('/home.js') %>
+<% for file in scripts: %>
+<script src="<%= @__assets.js(file) %>" <% if scripts.length == 1: %>async<% end %>></script>
 <% end %>
 
 <% block 'page_full': %>

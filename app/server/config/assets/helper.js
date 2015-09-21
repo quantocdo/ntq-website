@@ -58,7 +58,7 @@ exports._factory = function(_, path, profile, loader) {
 		self.js = factory('');
 
 		self.scripts = function(key) {
-			return assets['/js' + key];
+			return assets['/js' + key] || [];
 		};
 
 		return self;
