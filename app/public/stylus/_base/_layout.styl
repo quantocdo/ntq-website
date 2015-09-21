@@ -1,6 +1,19 @@
 body
 	background $color_black
 
+.page-full-disabled
+	.site-content
+		&.page-full
+			overflow visible
+
+			.page-section
+				position relative
+				display block
+
+		&.page-remain
+			position static
+			display block!important
+
 .site-content
 	transform-style preserve-3d
 

@@ -34,7 +34,8 @@
 					paddingTop: $('.site-header').height(),
 					sections: $('.page-full .page-section'),
 					container: $('.page-full'),
-					remain: $('.page-remain')[0]
+					remain: $('.page-remain')[0],
+					minHeight: 775
 				});
 
 				view.live();
@@ -74,6 +75,8 @@
 				this.container = options.container;
 				this.remain = options.remain;
 				this.speed = 400;
+				this.minHeight = options.minHeight;
+				this.enabled = false;
 			};
 
 			var proto = View.prototype;
@@ -189,12 +192,20 @@
 
 			proto.live = function() {
 				function down() {
+					if (!self.enabled) {
+						return;
+					}
+
 					if (!self.remainActived) {
 						self.select(self.index + 1);
 					}
 				}
 
 				function up() {
+					if (!self.enabled) {
+						return;
+					}
+
 					if (self.remainActived) {
 						if (window.scrollY === 0) {
 							self.deactiveRemain(self.sections.length - 1);
@@ -272,6 +283,22 @@
 
 			proto.resize = function() {
 				var vpHeight = this.$window.height();
+
+				if (vpHeight < this.minHeight) {
+					this.enabled = false;
+					$(document.body).addClass('page-full-disabled');
+					this.sections.height(this.minHeight);
+				} else {
+					this.enabled = true;
+					$(document.body).removeClass('page-full-disabled');
+					this.sections.height('100%');
+				}
+
+				navigator.set('enabled', this.enabled);
+
+				if (!this.enabled) {
+					return;
+				}
 
 				this.height = vpHeight - this.paddingTop;
 
