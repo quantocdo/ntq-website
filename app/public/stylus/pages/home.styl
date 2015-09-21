@@ -138,7 +138,7 @@
 	.customers
 		margin-top 60px
 
-		.customer-pic
+		.customer-pic-container
 			width 134px
 			height 134px
 			border-radius 50%
@@ -146,6 +146,15 @@
 			border 1px solid $color_white
 			background $color_blue
 			overflow hidden
+
+			.customer-pic
+				margin-left -999px
+				margin-right -999px
+				text-align center
+
+				img
+					vertical-align middle
+					height 100%
 
 		.customer-name
 			font-size 20px
