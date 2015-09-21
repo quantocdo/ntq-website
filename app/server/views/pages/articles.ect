@@ -71,7 +71,7 @@
 				<div class="gs">
 					<div class="row">
 						{{#articles}}
-							<div class="col-6">
+							<div class="col-4">
 								<div class="article">
 									<div class="avatar-container">
 										<div class="avatar">
@@ -97,7 +97,7 @@
 			</div>
 		</div>
 	</script>
-	<% for file in @__assets.files('/articles.js'): %>
-<script src="<%= @__assets.js(file) %>"></script>
-<% end %>
+	<% for file in @__assets.scripts('/articles.js'): %>
+	<script src="<%= @__assets.js(file) %>"></script>
+	<% end %>
 </body>

@@ -5,7 +5,8 @@
 		'@ractive',
 		'/article',
 		function(Ractive, Article) {
-			var pageSize = 10;
+			var rowSize = 3;
+			var pageSize = rowSize * 4;
 			var local = [];
 			var inProgress = false;
 
@@ -36,8 +37,8 @@
 					var rows = [];
 
 					local.forEach(function(article, index) {
-						var rowIndex = Math.floor(index / 2);
-						var colIndex = index % 2;
+						var rowIndex = Math.floor(index / rowSize);
+						var colIndex = index % rowSize;
 
 						rows[rowIndex] = rows[rowIndex] || {
 							articles: []

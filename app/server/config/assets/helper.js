@@ -3,56 +3,64 @@
 exports._ = '/config/assets/helper';
 exports._requires = [
 	'@lodash',
-	'/config/profile'
+	'@path',
+	'/config/profile',
+	'/config/assets/loader'
 ];
-exports._factory = function(_, profile) {
+exports._factory = function(_, path, profile, loader) {
 	var rev = {};
 	var assets = {};
 	if (profile.assets.rev) {
 		rev = this._require('./build/out/rev.json');
 	}
 
-	var config = this._require('./build/assets.json');
+	return loader.execute({
+		cwd: path.resolve(profile._root, '../..'),
+		assets: this._require('./build/assets.json').js,
+		prefix: '/'
+	}).then(function(result) {
+		_.forEach(result, function(files, key) {
+			key = key.replace('build/out', '');
 
-	_.forEach(config.js, function(files, key) {
-		key = key.replace('build/out', '');
-
-		assets[key] = (rev[key] && [rev[key]]) || _.map(files, function(file) {
-			return file.replace('app/public', '');
+			assets[key] = rev[key] ?
+					[rev[key]] :
+					_.map(files, function(file) {
+						return file.replace('app/public', '');
+					});
 		});
-	});
 
-	var getActualFileName = function(fileName) {
-		return rev[fileName] || fileName;
-	};
-
-	var self = {};
-
-	var factory = function(baseDir, startWithSlash) {
-		return function(assetPath, useCDN) {
-			if (startWithSlash && assetPath.indexOf('/') !== 0) {
-				assetPath = '/' + assetPath;
-			}
-
-			useCDN = useCDN || profile.assets.default;
-
-			var cdn = useCDN ? profile.assets.cdn : '';
-
-			var purgeCache = profile.assets.purgeCache ? '?' + Date.now() : '';
-
-			return cdn + getActualFileName(baseDir + assetPath) + purgeCache;
+		var getActualFileName = function(fileName) {
+			return rev[fileName] || fileName;
 		};
-	};
 
-	self.img = factory('/img');
-	self.css = factory('/css');
-	self.lib = factory('/bower_component');
-	self.video = factory('/video');
-	self.js = factory('', true);
+		var self = {};
 
-	self.files = function(key) {
-		return assets['/js' + key];
-	};
+		var factory = function(baseDir, startWithSlash) {
+			return function(assetPath, useCDN) {
+				if (startWithSlash && assetPath.indexOf('/') !== 0) {
+					assetPath = '/' + assetPath;
+				}
 
-	return self;
+				useCDN = useCDN || profile.assets.default;
+
+				var cdn = useCDN ? profile.assets.cdn : '';
+
+				var purgeCache = profile.assets.purgeCache ? '?' + Date.now() : '';
+
+				return cdn + getActualFileName(baseDir + assetPath) + purgeCache;
+			};
+		};
+
+		self.img = factory('/img');
+		self.css = factory('/css');
+		self.lib = factory('/bower_component');
+		self.video = factory('/video');
+		self.js = factory('');
+
+		self.scripts = function(key) {
+			return assets['/js' + key];
+		};
+
+		return self;
+	});
 };
