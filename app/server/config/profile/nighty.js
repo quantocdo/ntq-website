@@ -4,7 +4,7 @@ exports._ = '/config/profile/nighty';
 exports._factory = function() {
 	return {
 		domain: {
-			protocol: 'http://',
+			protocol: 'http',
 			base: 'ntq-solution.com.vn',
 			locales: {
 				en: 'www.ntq-solution.com.vn',

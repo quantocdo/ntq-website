@@ -4,7 +4,7 @@ exports._ = '/config/profile/test';
 exports._factory = function() {
 	return {
 		domain: {
-			protocol: 'http://',
+			protocol: 'http',
 			base: 'indie.codes',
 			locales: {
 				en: 'www.ntq-solution.com.vn',
