@@ -12,6 +12,7 @@ exports._activations = [
 	'/routes/download',
 	'/routes/contact',
 	'/routes/static',
+	'/routes/error'
 ];
 exports._factory = function(_, app, profile) {
 	app.use(function(req, res, next) {

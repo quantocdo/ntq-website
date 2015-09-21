@@ -49,7 +49,7 @@
 
 			.member
 				position absolute
-				width 200px
+				width 240px
 				text-align center
 				bottom 0
 
@@ -58,15 +58,15 @@
 
 				&.second
 					left 25%
-					margin-left -50px
+					margin-left -60px
 
 				&.third
 					left 50%
-					margin-left -100px
+					margin-left -120px
 
 				&.fourth
 					right 25%
-					margin-right -50px
+					margin-right -60px
 
 				&.fifth
 					right 0
@@ -74,6 +74,29 @@
 				.member-picture
 					vertical-align middle
 
+				.biography
+					transition opacity .2s
+					opacity 0
+					position absolute
+					bottom 35px
+					background color-fallback(rgba(0, 0, 0, .7))
+					padding 15px
+					border-radius 5px
+
+					.name
+						font-size 20px
+
+					.position
+						margin-top 5px
+
+					.intro
+						margin-top 25px
+						line-height 18px
+						font-size 14px
+
+				&:hover
+					.biography
+						opacity 1
 
 	.section-video
 		background $color_green
