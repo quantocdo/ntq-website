@@ -93,6 +93,4 @@
 			.register('@bluebird', window.Promise)
 			.register('@lodash', window._)
 			.register('@jquery', window.jQuery);
-
-	di.bootstrap();
-})(__('articles'));
+})(__('ntq'));

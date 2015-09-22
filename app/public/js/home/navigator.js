@@ -5,8 +5,6 @@
 		'@ractive',
 		function(Ractive) {
 			var container = document.createElement('div');
-			document.body.appendChild(container);
-
 			var view = new Ractive({
 				el: container,
 				template: '#home-navigator',
@@ -19,7 +17,9 @@
 				}
 			});
 
+			document.body.appendChild(container);
+
 			return view;
 		}
 	]);
-})(__('ntq.home'));
+})(__('ntq'));

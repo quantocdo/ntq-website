@@ -85,7 +85,7 @@
 						y: self.height + self.paddingTop
 					}, {
 						y: self.paddingTop
-					}, self.speed)
+					}, self.speed, true)
 				]).then(function() {
 					self.remain.classList.add('actived');
 				}).finally(function() {
@@ -252,4 +252,4 @@
 			return Layout;
 		}
 	]);
-})(__('ntq.home'));
+})(__('ntq'));

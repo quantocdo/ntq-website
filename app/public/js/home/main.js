@@ -37,8 +37,4 @@
 		}
 	], true);
 
-	window.addEventListener('load', function() {
-		di.bootstrap();
-	});
-
-})(__('ntq.home'));
+})(__('ntq'));

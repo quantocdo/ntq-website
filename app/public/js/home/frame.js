@@ -13,4 +13,4 @@
 			animate();
 		}
 	], true);
-})(__('ntq.home'));
+})(__('ntq'));
