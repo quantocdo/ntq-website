@@ -11,10 +11,10 @@ exports._factory = function(app, articles, shortcut) {
 			articles.highlightedArticles(5),
 			shortcut.render('pages/articles'));
 
-	app._get('articles-detail', '/articles/:id',
+	app._get('articles.detail', '/articles/:id',
 			articles.identify('id'),
 			articles.relatedArticles,
-			shortcut.render('article-detail'));
+			shortcut.render('pages/article-detail'));
 
-	app.get('/api/articles', articles.get, shortcut.json('_articles'));
+	app.get('/api/articles', articles.query, shortcut.json('_articles'));
 };

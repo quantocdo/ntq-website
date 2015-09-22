@@ -75,7 +75,7 @@ exports._factory = function(Promise, Article) {
 		};
 	};
 
-	self.get = function(req, res, next) {
+	self.query = function(req, res, next) {
 		var language = res.locals.locale;
 		var limit = req.query.limit;
 		var skip = req.query.skip;

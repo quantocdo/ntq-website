@@ -474,7 +474,9 @@
 				<div class="article-heading"><%= article.heading %></div>
 				<div class="article-brief"><%= article.bulletin %></div>
 				<div class="article-readmore">
-					<a href="" class="text-upper">Read more</a>
+					<a href="<%= @_url('articles.detail', {
+						id: article._id
+					}) %>" class="text-upper">Read more</a>
 				</div>
 			</div>
 		</div>

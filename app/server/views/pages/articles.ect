@@ -22,7 +22,9 @@
 								</div>
 							</div>
 							<div class="heading">
-								<span><%= mainArticle.heading %></span>
+								<a href="<%= @_url('articles.detail', {
+									id: mainArticle._id
+								}) %>"><%= mainArticle.heading %></a>
 							</div>
 							<div class="bulletin">
 								<p><%= mainArticle.bulletin %></p>
@@ -47,7 +49,9 @@
 						<% for article in @_highlightedArticles: %>
 						<div class="recent-article">
 							<div class="heading">
-								<span><%= article.heading %></span>
+								<a href="<%= @_url('articles.detail', {
+									id: article._id
+								}) %>"><%= article.heading %></a>
 							</div>
 							<p class="bulletin"><%= article.bulletin %></p>
 							<div class="date">
@@ -79,7 +83,7 @@
 										</div>
 									</div>
 									<div class="heading">
-										<span>{{heading}}</span>
+										<a href="/articles/{{_id}}">{{heading}}</a>
 									</div>
 									<p class="bulletin">{{bulletin}}</p>
 									<div class="date">
