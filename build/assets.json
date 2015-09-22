@@ -16,7 +16,7 @@
 			"bower_components/ractive/ractive.min.js",
 			"bower_components/jquery/dist/jquery.min.js",
 			"app/public/js/di.js",
-			"app/public/js/articles.js"
+			"app/public/js/articles/**/*.js"
 		]
 	}
 }

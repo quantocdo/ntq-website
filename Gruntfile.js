@@ -228,6 +228,7 @@ module.exports = function(grunt) {
 				tasks: [
 					'jscs:client',
 					'jshint:client',
+					'develop:dev',
 				],
 			},
 			stylus: {

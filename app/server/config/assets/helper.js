@@ -25,7 +25,7 @@ exports._factory = function(_, path, profile, loader) {
 			assets[key] = rev[key] ?
 					[rev[key]] :
 					_.map(files, function(file) {
-						return file.replace('app/public', '');
+						return file.replace('app/public/', '');
 					});
 		});
 
@@ -35,12 +35,8 @@ exports._factory = function(_, path, profile, loader) {
 
 		var self = {};
 
-		var factory = function(baseDir, startWithSlash) {
+		var factory = function(baseDir) {
 			return function(assetPath, useCDN) {
-				if (startWithSlash && assetPath.indexOf('/') !== 0) {
-					assetPath = '/' + assetPath;
-				}
-
 				useCDN = useCDN || profile.assets.default;
 
 				var cdn = useCDN ? profile.assets.cdn : '';
