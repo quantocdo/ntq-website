@@ -3,7 +3,7 @@
 
 	di.register('/animation', [
 		'@tween',
-		'@bluebird',
+		'@promise',
 		function(TWEEN, Promise) {
 			var self = {};
 

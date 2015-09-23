@@ -4,7 +4,7 @@
 	di.register('/layout', [
 		'@lodash',
 		'@jquery',
-		'@bluebird',
+		'@promise',
 		'@hammer',
 		'/animation',
 		'/home/navigator',

@@ -61,7 +61,7 @@
 
 	di.register('/article', [
 		'@jquery',
-		'@bluebird',
+		'@promise',
 		function($, Promise) {
 			var self = {};
 
@@ -90,7 +90,5 @@
 	], true);
 
 	di.register('@ractive', window.Ractive)
-			.register('@bluebird', window.Promise)
-			.register('@lodash', window._)
 			.register('@jquery', window.jQuery);
 })(__('ntq'));

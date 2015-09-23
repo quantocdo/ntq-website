@@ -1,22 +1,18 @@
 {
 	"js": {
 		"build/out/js/home.js": [
-			"bower_components/lodash/lodash.min.js",
-			"bower_components/bluebird/js/browser/bluebird.min.js",
+			"bower_components/di-linker/browser/dist/di-linker.standalone.min.js",
 			"bower_components/ractive/ractive.min.js",
 			"bower_components/jquery/dist/jquery.min.js",
 			"bower_components/tween.js/build/tween.min.js",
 			"bower_components/hammerjs/hammer.min.js",
-			"app/public/js/di.js",
 			"app/public/js/home/**/*.js",
 			"app/public/js/bootstrap.js"
 		],
 		"build/out/js/articles.js": [
-			"bower_components/lodash/lodash.min.js",
-			"bower_components/bluebird/js/browser/bluebird.min.js",
+			"bower_components/di-linker/browser/dist/di-linker.standalone.min.js",
 			"bower_components/ractive/ractive.min.js",
 			"bower_components/jquery/dist/jquery.min.js",
-			"app/public/js/di.js",
 			"app/public/js/articles/**/*.js",
 			"app/public/js/bootstrap.js"
 		]
