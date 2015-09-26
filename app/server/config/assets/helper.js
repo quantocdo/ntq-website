@@ -4,17 +4,17 @@ exports._ = '/config/assets/helper';
 exports._requires = [
 	'@lodash',
 	'@path',
-	'/config/profile',
-	'/config/assets/loader'
+	'@assets-locator',
+	'/config/profile'
 ];
-exports._factory = function(_, path, profile, loader) {
+exports._factory = function(_, path, locator, profile) {
 	var rev = {};
 	var assets = {};
 	if (profile.assets.rev) {
 		rev = this._require('./build/out/rev.json');
 	}
 
-	return loader.execute({
+	return locator.execute({
 		cwd: path.resolve(profile._root, '../..'),
 		assets: this._require('./build/assets.json').js,
 		prefix: '/'
@@ -33,9 +33,7 @@ exports._factory = function(_, path, profile, loader) {
 			return rev[fileName] || fileName;
 		};
 
-		var self = {};
-
-		var factory = function(baseDir) {
+		return function(baseDir) {
 			return function(assetPath, useCDN) {
 				useCDN = useCDN || profile.assets.default;
 
@@ -46,6 +44,8 @@ exports._factory = function(_, path, profile, loader) {
 				return cdn + getActualFileName(baseDir + assetPath) + purgeCache;
 			};
 		};
+	}).then(function(factory) {
+		var self = {};
 
 		self.img = factory('/img');
 		self.css = factory('/css');
