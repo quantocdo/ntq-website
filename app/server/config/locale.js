@@ -23,6 +23,11 @@ exports._factory = function(_, i18n, path, moment, app, profile) {
 	app.use(i18n.init);
 
 	app.use(function(req, res, next) {
+		req.setLocale('en');
+		next();
+	});
+
+	app.use(function(req, res, next) {
 		moment.locale('en');
 		next();
 	});
