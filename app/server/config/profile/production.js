@@ -24,7 +24,7 @@ exports._factory = function() {
 			doc: '/home/ubuntu/sites/ntq-website-v1/upload/doc'
 		},
 		mail: {
-			to: 'sale@ntq-solution.com.vn',
+			to: 'sales@ntq-solution.com.vn',
 			from: 'no-reply@they.online',
 			region: 'us-west-2',
 			accessKeyId: 'AKIAI6W6J2H4K4W3OZKA',
