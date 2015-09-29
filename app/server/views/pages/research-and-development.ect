@@ -9,7 +9,7 @@
 <% block 'page_flow': %>
 
 <div class="page-title text-center text-upper">
-	<span>Research & Development</span>
+	<span><%- @__('RESEARCH_AND_DEVELOPMENT') %></span>
 </div>
 <div class="section-intro">
 	<div class="site-container fluid">
@@ -18,24 +18,24 @@
 				<div class="col-6 picture-container">
 					<div class="picture-frame"></div>
 					<div class="picture">
-						<img src="<%= @__assets.img('/rd/rd_room.jpg') %>" width="700" height="420">
+						<img src="<%= @__assets.img('/rd/rd_room.jpg') %>" alt="<%- @__('RESEARCH_AND_DEVELOPMENT') %>" width="700" height="420">
 					</div>
 				</div>
 				<div class="col-5-offset-1">
 					<div class="heading text-upper">
-						<span><span class="text-green">Why</span> R&D?</span>
+						<span><%- @__('WHY_R&D') %></span>
 					</div>
 					<div class="explain">
-						<p class="text-justify">We develop our robots from scratch and aim to make our innovative ideas come to life.</p>
+						<p class="text-justify"><%- @__('WHY_R&D_EXPLAIN') %></p>
 					</div>
 					<div class="reason first">
-						<span class="text-upper">TO GAIN FURTHER INSIGHT INTO THE TECHNOLOGIES WE USE</span>
-						<p class="text-gray-dark text-justify">Our R&D department aim to learn more about the technology NTQ operates with in order to enhance our technological capabilities.</p>
+						<span class="text-upper"><%- @__('WHY_R&D_REASON_1') %></span>
+						<p class="text-gray-dark text-justify"><%- @__('WHY_R&D_REASON_1_EXPLAIN') %></p>
 					</div>
 					<div class="reason-break"></div>
 					<div class="reason second">
-						<span class="text-upper">TO SUPPORT DEVELOPMENT TEAMS</span>
-						<p class="text-gray-dark text-justify">Our R&D department is not an independent department. The R&D team members are often asked to support our client’s projects. Their technological capabilities and knowledge have proven vital in the successful completion of some difficult projects.</p>
+						<span class="text-upper"><%- @__('WHY_R&D_REASON_2') %></span>
+						<p class="text-gray-dark text-justify"><%- @__('WHY_R&D_REASON_2_EXPLAIN') %></p>
 					</div>
 				</div>
 			</div>
@@ -52,25 +52,25 @@
 						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/uceRruHvlUk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div class="heading text-upper text-center">
-						<span>Air Drone</span>
+						<span><%- @__('AIR_DRONE') %></span>
 					</div>
-					<p class="explain text-center">This plane can fly and balance itself while streaming a live video to a computer using WiFi.</p>
+					<p class="explain text-center"><%- @__('AIR_DRONE_DESC') %></p>
 				</div>
 				<div class="col-4 video-container">
 					<div class="video-frame gecko">
 						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/zEtfTiVfth8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div class="heading text-upper text-center">
-						<span>Window washing robot</span>
+						<span><%- @__('GECKO') %></span>
 					</div>
-					<p class="explain text-center">This robot moves like a lizard to climb the walls of tall buildings in order to clean a skyscrapers windows.</p>
+					<p class="explain text-center"><%- @__('GECKO_DESC') %></p>
 				</div>
 				<div class="col-4 video-container">
 					<div class="video-frame guidebot"></div>
 					<div class="heading text-upper text-center">
-						<span>GUIDEBOT</span>
+						<span><%- @__('GUIDEBOT') %></span>
 					</div>
-					<p class="explain text-center">This robot leads visitors to the office from the main entrance.</p>
+					<p class="explain text-center"><%- @__('GUIDEBOT_DESC') %></p>
 				</div>
 			</div>
 		</div>
@@ -83,12 +83,12 @@
 			<div class="row">
 				<div class="col-6">
 					<div class="heading text-upper">
-						<span>Crazy Team</span>
+						<span><%- @__('CRAZY_TEAM') %></span>
 					</div>
-					<p class="explain">Our R&D employees are labeled the ‘Crazy Team’ due to their ability to think of innovative ideas for projects.</p>
+					<p class="explain"><%- @__('CRAZY_TEAM_DESC') %></p>
 				</div>
 				<div class="col-6">
-					<img class="team-picture" src="<%= @__assets.img('/rd_team.png') %>" alt="Crazy team">
+					<img class="team-picture" src="<%= @__assets.img('/rd_team.png') %>" alt="<%- @__('CRAZY_TEAM') %>">
 				</div>
 			</div>
 		</div>
@@ -98,13 +98,11 @@
 <div class="section-contact">
 	<div class="site-container fluid">
 		<div class="intro text-white text-center">
-			<p>We are currently looking for partners who we can collaborate with and who can support us with our present, and future, projects.<p>
-			<br>
-			<p>For those interested in our R&D, feel free to contact us.</p>
+			<p><%- @__('R&D_OFFER') %></p>
 		</div>
 		<div class="contact text-center">
 			<a href="<%= @_url('contact') %>" class="text-blue text-upper">
-				<span>Contact us</span>
+				<span><%- @__('CONTACT_US') %></span>
 				<i class="fa fa-arrow-right icon-see-more"></i>
 			</a>
 		</div>

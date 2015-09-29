@@ -591,3 +591,275 @@ msgstr "We will work with you to understand your business goals so we can accura
 msgid "ECOMMERCE_SOFTWARE_DEVELOPMENT_DESC"
 msgstr "Implement e-commerce softwares to bring success to your on-line business"
 
+#: 
+msgid "RESEARCH_AND_DEVELOPMENT"
+msgstr "Research & Development"
+
+#: 
+msgid "WHY_R&D"
+msgstr "<span class=\"text-green\">Why</span> R&D?"
+
+#: 
+msgid "WHY_R&D_EXPLAIN"
+msgstr "We develop our robots from scratch and aim to make our innovative ideas come to life."
+
+#: 
+msgid "WHY_R&D_REASON_1"
+msgstr "TO GAIN FURTHER INSIGHT INTO THE TECHNOLOGIES WE USE"
+
+#: 
+msgid "WHY_R&D_REASON_1_EXPLAIN"
+msgstr "Our R&D department aim to learn more about the technology NTQ operates with in order to enhance our technological capabilities."
+
+#: 
+msgid "WHY_R&D_REASON_2"
+msgstr "TO SUPPORT DEVELOPMENT TEAMS"
+
+#: 
+msgid "WHY_R&D_REASON_2_EXPLAIN"
+msgstr "Our R&D department is not an independent department. The R&D team members are often asked to support our client’s projects. Their technological capabilities and knowledge have proven vital in the successful completion of some difficult projects."
+
+#: 
+msgid "AIR_DRONE"
+msgstr "Air Drone"
+
+#: 
+msgid "AIR_DRONE_DESC"
+msgstr "This plane can fly and balance itself while streaming a live video to a computer using WiFi."
+
+#: 
+msgid "GECKO"
+msgstr "Window washing robot"
+
+#: 
+msgid "GECKO_DESC"
+msgstr "This robot moves like a lizard to climb the walls of tall buildings in order to clean a skyscrapers windows."
+
+#: 
+msgid "GUIDEBOT"
+msgstr "GUIDEBOT"
+
+#: 
+msgid "GUIDEBOT_DESC"
+msgstr "This robot leads visitors to the office from the main entrance."
+
+#: 
+msgid "CRAZY_TEAM"
+msgstr "Crazy Team"
+
+#: 
+msgid "CRAZY_TEAM_DESC"
+msgstr "Our R&D employees are labeled the ‘Crazy Team’ due to their ability to think of innovative ideas for projects."
+
+#: 
+msgid "R&D_OFFER"
+msgstr "We are currently looking for partners who we can collaborate with and who can support us with our present, and future, projects.<br><br>For those interested in our R&D, feel free to contact us."
+
+#: 
+msgid "SOFTWARE_OUTSOURCING_SERVICE"
+msgstr "Software outsourcing service"
+
+#: 
+msgid "SOFTWARE_OUTSOURCING_SERVICE_DESC"
+msgstr "Gain advantages by outsourcing your software development to us"
+
+#: 
+msgid "SOFTWARE_OUTSOURCING_SERVICE_EXPLAIN"
+msgstr "NTQ Solution is always updated with the latest development technologies which allows us to develop software which stands out from others therefore enabling our customers to compete and take advantages of economies of scale."
+
+#: 
+msgid "SOFTWARE_OUTSOURCING_SERVICE_LIST"
+msgstr "NTQ is here for you when:"
+
+#: 
+msgid "SOFTWARE_OUTSOURCING_SERVICE_ITEM_1"
+msgstr "You don't have enough engineering resources"
+
+#: 
+msgid "SOFTWARE_OUTSOURCING_SERVICE_ITEM_2"
+msgstr "No software engineers available to work your software development"
+
+#: 
+msgid "SOFTWARE_OUTSOURCING_SERVICE_ITEM_3"
+msgstr "You want to save costs by hiring offshore software developers at reasonable rates"
+
+#: 
+msgid "SOFTWARE_OUTSOURCING_SERVICE_ITEM_4"
+msgstr "You want to focus on your core business activities, therefore let us take care of your software development activities."
+
+#: 
+msgid "SOFTWARE_SOLUTIONS_CONSULTANCY_FOR_FREE"
+msgstr "SOFTWARE SOLUTIONS CONSULTANCY FOR FREE"
+
+#: 
+msgid "SOFTWARE_SOLUTIONS_CONSULTANCY_FOR_FREE_DESC"
+msgstr "We offer this service to you for NO COST at all"
+
+#: 
+msgid "SOFTWARE_SOLUTIONS_CONSULTANCY_FOR_FREE_EXPLAIN"
+msgstr "It is not always easy to find optimal software solutions or the answers to technical questions for your current software development needs. This is especially true when your questions involve the latest technologies.<br><br>We are here to help if you have any questions related to your future software development needs.<br><br>Please contact us and let our experts support you in solving all your concerns related to technical problems, or solutions, for your software projects."
+
+#: 
+msgid "WEB_APP_GRAPHIC_DESIGN"
+msgstr "WEB/APP GRAPHIC DESIGN"
+
+#: 
+msgid "WEB_APP_GRAPHIC_DESIGN_DESC"
+msgstr "Complete your software with our most trendy mobile and web app graphic design"
+
+#: 
+msgid "WEB_APP_GRAPHIC_DESIGN_EXPLAIN"
+msgstr "Our graphic designers have the ability to provide you with a complete software solution and development service pack which includes technical design and development as well as UI graphic design.<br><br>NTQ Solution recognizes the greater requirements that are placed on graphic design. Graphic design can bring exciting experiences for the users so our design team always strives to be as creative as possible when creating our products in order to satisfy our customers.Therefore we can guarantee to deliver quality products designed in accordance with modern trends.<br><br>Our graphic design service are for web, mobile and desktop applications.<br><br>In terms of web design, if you plan to have a web running on all screen sizes of different devices, you can request a responsive web design. Your responsive site will be easy to read or navigated with minimum resizing, panning and scrolling.<br><br>To optimize your manpower and communication time for the project, we recommend you choose the full service pack including graphic design so that we can give you a complete solution."
+
+#: 
+msgid "SYSTENA"
+msgstr "Systena"
+
+#: 
+msgid "SYSTENA_DESC"
+msgstr "Development of a cloud system for Systena Corporation from Japan"
+
+#: 
+msgid "SYSTENA_EXPLAIN"
+msgstr "Systena Corporation is a Japanese IT company listed in the First Section of the Tokyo Stock Exchange and was founded in 1983. This company covers business areas such as service solutions, quality designs, framework designs, cloud systems and so on. Systena Corporation was looking to extend their offshoring business and therefore proceeded to approach NTQ Solution."
+
+#: 
+msgid "THE_CHANLLENGE"
+msgstr "The chanllenges"
+
+#: 
+msgid "SYSTENA_CHANLLENGE_1"
+msgstr "The first challenge was technical requirement that we need to create a cloud system that is compatible with 100,000 users and 20,000 heavy accesses. Moreover, this system should be compatible with Google services and each screen should be dealt with within 1 second."
+
+#: 
+msgid "SYSTENA_CHANLLENGE_2"
+msgstr "The second challenge was how to maintain existing systems."
+
+#: 
+msgid "COMPETITION"
+msgstr "Competition"
+
+#: 
+msgid "SYSTENA_COMPETITION"
+msgstr "There were 5 competitors including our company."
+
+#: 
+msgid "SOLUTION"
+msgstr "Solution"
+
+#: 
+msgid "SYSTENA_SOLUTION"
+msgstr "We utilized cloud-based infrastructure such as AWS EC2, RDS, ElasticCache, ElasticBalancer and so on. Also, we improved performance using Redis and dealt with heavy traffic integrating NodeJS and Java."
+
+#: 
+msgid "RESULT"
+msgstr "Result"
+
+#: 
+msgid "SYSTENA_RESULT"
+msgstr "The company which successfully ended this pilot project was only our company among the 5 companies. Thanks to this achievement, Systena Corporation has ordered us more projects. Although we began to do business with the only 1-man-month project, now we are managing a 10-man-month project. In development filed, our company is in charge of almost all parts of development such as designs, technology, join tests, solutions, measure and in charge of all the projects of cloud system development from Systena Corporation."
+
+#: 
+msgid "ROI"
+msgstr "ROI MARKETING SOLUTION"
+
+#: 
+msgid "ROI_DESC"
+msgstr "Development of “Personalized marketing materials system” for ROI Marketing Solutions from UK."
+
+#: 
+msgid "ROI_EXPLAIN"
+msgstr "ROI marketing solutions owns a personalized marketing materials system which provides a comprehensive list of 37 million UK consumers and in-depth information for marketing purposes. Users of the system are business owners or marketers.<br><br>With a huge number of data, the existing system was very slow in returning search results to users (2 to 10 seconds). ROI marketing solutions by that time was therefore seeking a software company who could assess their existing system and improve the performance."
+
+#: 
+msgid "ROI_CHANLLENGE_1"
+msgstr "ROI marketing solutions owns a personalized marketing materials system which provides comprehensive list of 37 million UK consumers and in -depth information for marketing purpose. Users of the system are business owners or marketers."
+
+#: 
+msgid "ROI_CHANLLENGE_2"
+msgstr "With a huge number of data, the existing system was very slow in returning search results to users (2 to 10 seconds). ROI marketing solutions by that time was seeking for a software company who could assess their existing system and improve the performance."
+
+#: 
+msgid "ROI_COMPETITION"
+msgstr "NTQ Solution had to compete with 6 other companies: 5 companies from Vietnam and 1 company from the Czech republic."
+
+#: 
+msgid "ROI_SOLUTION"
+msgstr "NTQ Solution built our own complicated algorithms based on bitwise operators. More specifically we moved all data and store them in memory, implemented indexing for faster queries, after that we processed the data in bit-wise operators. And to improve disk I/O performance, simple cache file mechanics was implemented."
+
+#: 
+msgid "ROI_RESULT"
+msgstr "We completed the challenge by obtaining a speed of between 0.1-0.5 seconds from the time a search request was made to the results for that request appearing for the customer.<br>The results impressed customers as all other competitors produced slower systems. Thanks to that, NTQ Solution was selected and has been collaborating with ROI Marketing Solutions for a long period of time in the current OSDC contract."
+
+#: 
+msgid "LEARN_MORE_ABOUT_OUR_PROJECTS"
+msgstr "Learn more about our projects"
+
+#: 
+msgid "IT_SHERPA"
+msgstr "IT SHERPA LTD"
+
+#: 
+msgid "IT_SHERPA_DESC"
+msgstr "Development of a mobile social network system (SNS) for IT Sherpa Ltd a Japanese Company."
+
+#: 
+msgid "IT_SHERPA_EXPLAIN"
+msgstr "IT Sherpa is a software company based in Japan and was established in 2000. Their main focus is providing internet solutions, hosting & system consulting service, ASP (Application service provider) service and mobile/smartphone application development. NTQ Solution participated in a business matching conference in Japan and we became aware of IT Sherpa Company at the conference. After that NTQ Solution paid a visit to IT Sherpa's office."
+
+#: 
+msgid "IT_SHERPA_CHANLLENGE_1"
+msgstr "The customer required NTQ Solution to study an existing SNS in one month and after that we had created specifications for the customers. The project requires the newest technologies real-time video call and voice call functionalities."
+
+#: 
+msgid "IT_SHERPA_CHANLLENGE_2"
+msgstr "There were two time-consuming features of the project: the first one was a 'Chat' feature which required managing a huge amount of data at the same time between client and server. The second one was a 'Meet People' feature, ensuring access at a high speed with a large volume of data and complex search conditions. It requires a capability to support a huge number of users up to 100,000 users per day and up to 3 million chat messages every day."
+
+#: 
+msgid "IT_SHERPA_SOLUTION"
+msgstr "About the video and conference call, at the client side we used API of PortSIP and at the server side we used FreeSWITCH. For better performance at the client side we had to handle the image caching to ensure that the application is not slow at some screens which display a large number of images. For better performance of huge data being exchanged every day, we used 3 shading databases. And we also use our own algorithms based on bitwise operators to process data in memory."
+
+#: 
+msgid "IT_SHERPA_RESULT"
+msgstr "NTQ Solution built a complete state of the art Social Network System for IT Sherpa."
+
+#: 
+msgid "SPICY_CINNAMON"
+msgstr "SPICY CINNAMON PTE.LTD"
+
+#: 
+msgid "SPICY_CINNAMON_DESC"
+msgstr "Development of photo sharing iOS and Android applications for Spicy Cinnamon Pte. Ltd."
+
+#: 
+msgid "SPICY_CINNAMON_EXPLAIN"
+msgstr "Spicy Cinnamon is a software company based in Thailand specializing in the development of software for interactive digital media. The company was established in 2012 when they came up with the idea of a group photo sharing application. In order to produce this app Spicy Cinnamon needed a software development partner. NTQ Solution was recommended to Spicy Cinnamon who then came to our office in Vietnam and requested us to build the photo sharing app."
+
+#: 
+msgid "SPICY_CINNAMON_CHANLLENGE_1"
+msgstr "The first challenge that arose was a technical requirement related to the processing of continuous uploads of many high quality images.<br>The images were large in size and we had to ensure that the images wouldn't be lost in cases of slow or disconnected Internet connection."
+
+#: 
+msgid "SPICY_CINNAMON_CHANLLENGE_2"
+msgstr "The second challenge was to ensure the app users could view a large number of images on one screen and to make sure the screen worked smoothly without any memory overflow."
+
+#: 
+msgid "SPICY_CINNAMON_SOLUTION_1"
+msgstr "We divided the images into categories of low quality and high quality and prioritized the low quality images"
+
+#: 
+msgid "SPICY_CINNAMON_SOLUTION_2"
+msgstr "We used Core Data to handle caching: images are only deleted from cache when it is uploaded successfully"
+
+#: 
+msgid "SPICY_CINNAMON_SOLUTION_3"
+msgstr "We used process background uploading to avoid blocking other activities of users"
+
+#: 
+msgid "SPICY_CINNAMON_RESULT"
+msgstr "NTQ Solution successfully built for Spicy Cinnamon a complete state-of-the-art group photo sharing iOS and Android apps.<br>Seconds became one of the world's fastest and easiest ways to chat and share photos with friends and families. Seconds application got an Award from SONY at Mobile World Congress in Spain 2013."
+
+#: 
+msgid "SPICY_CINNAMON_SOLUTION_LIST"
+msgstr "We came up with the following solution:"
+
