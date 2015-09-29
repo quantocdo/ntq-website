@@ -9,29 +9,25 @@
 <% block 'page_flow': %>
 
 <div class="page-title text-center text-upper">
-	<span>Development Domain</span>
+	<span><%- @__('DEVELOPMENT_DOMAINS') %></span>
 </div>
 <div class="site-container fluid">
 	<div class="domain">
 		<div class="heading text-upper text-blue">
-			<span>Mobile Application Development</span>
+			<span><%- @__('MOBILE_APPLICATION_DEVELOPMENT') %></span>
 		</div>
 		<div class="sub-heading text-blue">
-			<span>Improve your business flexibility through Ipad/Iphone and Android Apps</span>
+			<span><%- @__('MOBILE_APPLICATION_DEVELOPMENT_DESC') %></span>
 		</div>
 		<div class="explain">
-			<p>NTQ Solution has successfully completed over 50 projects in various fields such as Social Network Systems (SNS), entertainment and utility apps. Our developers all have between 3-6 years experience while our senior developers have between 7-10 years experience.</p>
-			<br>
-			<p>Our experience has been key to the successful completion of our client’s projects. For instance, a Spanish composer was seeking a software development company to create an app for himself. His application ideas were deemed impossible and therefore were rejected by 50 companies before he finally found NTQ Solution.</p>
-			<br>
-			<p>We were able to complete this ‘impossible’ project using over 20 of our top engineers.</p>
+			<p><%- @__('MOBILE_APPLICATION_DEVELOPMENT_EXPLAIN') %></p>
 			<div class="gs">
 				<div class="row download-promotions">
 					<div class="col-6 text-right text-upper">
 						<div class="promotion text-center text-white text-bold">
 							<a href="<%= @_url('download') %>">
 								<img src="<%= @__assets.img('/icons/apple.png') %>" alt="iOS" width="43" height="52">
-								<span>Download iOS profile</span>
+								<span><%- @__('DOWNLOAD_IOS_PROFILE') %></span>
 							</a>
 						</div>
 					</div>
@@ -39,7 +35,7 @@
 						<div class="promotion text-center text-white text-bold">
 							<a href="<%= @_url('download') %>">
 								<img src="<%= @__assets.img('/icons/android.png') %>" alt="android" width="48" height="57">
-								<span>Download Android profile</span>
+								<span><%- @__('DOWNLOAD_ANDROID_PROFILE') %></span>
 							</a>
 						</div>
 					</div>
@@ -47,15 +43,12 @@
 			</div>
 		</div>
 		<div class="sub-heading text-blue">
-			<span>iPhone/ iPad development – One of the most secure and stable platforms of mobile app development</span>
+			<span><%- @__('MOBILE_APPLICATION_DEVELOPMENT_IOS_HEADING') %></span>
 		</div>
 		<div class="explain">
-			<p>Our highly qualified and experienced mobile app developers have an exceptional understanding of Apple development resources.</p>
-			<p>Our developers have the ability to help you from the beginning of the design process all the way through to training and advice after the product has been delivered.</p>
-			<p>A trial project can be arranged to allow you to see first hand our abilities before we embark on your real project.</p>
-			<p>We guarantee to create outstanding iPhone/iPad applications that will make your business stand out from others.</p>
+			<p><%- @__('MOBILE_APPLICATION_DEVELOPMENT_IOS_DESC') %></p>
 			<br>
-			<p>iPhone/iPad technologies and frameworks:</p>
+			<p><%- @__('MOBILE_APPLICATION_DEVELOPMENT_TECH') %></p>
 			<ul>
 				<li>
 					<i class="fa fa-fw fa-caret-right text-blue"></i>
@@ -76,14 +69,12 @@
 			</ul>
 		</div>
 		<div class="sub-heading text-blue">
-			<span>Android app development - One of the most popular platforms to create stylish utility apps</span>
+			<span><%- @__('MOBILE_APPLICATION_DEVELOPMENT_ANDROID_HEADING') %></span>
 		</div>
 		<div class="explain">
-			<p>The demand for Android applications is increasing. Android applications are essential if you want your company to reach a large number of customers besides iPhone/iPad users.</p>
-			<p>Our Android developers are experts in Android application technologies and will create Android applications that will delight you and your customers.</p>
-			<p>We focus on improving stability and improving responsiveness of Android apps by taking care to avoid memory leaks, moving long-running operations off the main thread to worker threads, minimizing complexity of layouts, etc.</p>
+			<p><%- @__('MOBILE_APPLICATION_DEVELOPMENT_ANDROID_DESC') %></p>
 			<br>
-			<p>Android technologies and frameworks:</p>
+			<p><%- @__('MOBILE_APPLICATION_DEVELOPMENT_ANDROID_TECH') %></p>
 			<ul>
 				<li>
 					<i class="fa fa-fw fa-caret-right text-blue"></i>
@@ -98,17 +89,15 @@
 	</div>
 	<div class="domain">
 		<div class="heading text-upper text-blue">
-			<span>WEB APPLICATION DEVELOPMENT</span>
+			<span><%- @__('WEB_APPLICATION_DEVELOPMENT') %></span>
 		</div>
 		<div class="sub-heading text-blue">
-			<span>Your expectations are delivered through every application you desire</span>
+			<span><%- @__('WEB_APPLICATION_DEVELOPMENT_DESC') %></span>
 		</div>
 		<div class="explain">
-			<p>Web application development is the most popular domain among our clients that have chosen our Offshore Development Contract. Currently, 60% of our engineers are part of a team that is meeting our clients web application needs.</p>
+			<p><%- @__('WEB_APPLICATION_DEVELOPMENT_EXPLAIN') %></p>
 			<br>
-			<p>We have developed over 40 web application projects in fields such as SNS and online services with a proven track record of completing long term projects which require many engineers. Compounded with this experience is the fact that all our web applications can be displayed on all browsers and devices.</p>
-			<br>
-			<p>The most popular programming languages for web that NTQ Solution have experience using are:</p>
+			<p><%- @__('WEB_APPLICATION_DEVELOPMENT_LANGUAGES') %></p>
 			<div class="gs">
 				<div class="row tech-icons">
 					<div class="col-2 text-center tech-icon">
@@ -132,7 +121,7 @@
 				</div>
 			</div>
 			<br>
-			<p>Popular frameworks & technologies for web user interface:</p>
+			<p><%- @__('WEB_APPLICATION_DEVELOPMENT_TECH') %></p>
 			<div class="gs">
 				<div class="row tech-icons">
 					<div class="col-2-offset-1 text-center tech-icon">
@@ -156,57 +145,52 @@
 	</div>
 	<div class="domain">
 		<div class="heading text-upper text-blue">
-			<span>CLOUD-BASED SOFTWARE DEVELOPMENT </span>
+			<span><%- @__('CLOUDBASED_SOFTWARE_DEVELOPMENT') %></span>
 		</div>
 		<div class="sub-heading text-blue">
-			<span>Make your business more effective by installing a cloud system</span>
+			<span><%- @__('CLOUDBASED_SOFTWARE_DEVELOPMENT_DESC') %></span>
 		</div>
 		<div class="explain">
-			<p>We are currently working on an ongoing project with Systena, a major Japanese company who are listed on the First Section of the Tokyo Stock Exchange. Systena employ us to carry out requirement definition, development, operations and maintenance of their cloud system.</p>
-			<br>
-			<p>Our experience has led us to become experts using Microsoft Azure, Google App Engine and other Platforms as a Service (PaaS).</p>
+			<p><%- @__('CLOUDBASED_SOFTWARE_DEVELOPMENT_EXPLAIN') %></p>
 		</div>
 	</div>
 	<div class="domain">
 		<div class="heading text-upper text-blue">
-			<span>ENTERPRISE APPLICATION DEVELOPMENT</span>
+			<span><%- @__('ENTERPRISE_APPLICATION_DEVELOPMENT') %></span>
 		</div>
 		<div class="sub-heading text-blue">
-			<span>Solve your customer's issues, adapt to unpredictable market demands and create a more efficient business</span>
+			<span><%- @__('ENTERPRISE_APPLICATION_DEVELOPMENT_DESC') %></span>
 		</div>
 		<div class="explain">
-			<p>So far, we have developed many enterprise applications in various fields such as finance, distribution, human resource and education. Innovative and comprehensive solutions deliver value by increasing business efficiency, enhancing workforce productivity, saving operating costs, boosting employee and customer satisfaction and providing support to make more informed decisions.</p>
+			<p><%- @__('ENTERPRISE_APPLICATION_DEVELOPMENT_EXPLAIN') %></p>
 		</div>
 	</div>
 	<div class="domain">
 		<div class="heading text-upper text-blue">
-			<span>E-COMMERCE SOFTWARE DEVELOPMENT</span>
+			<span><%- @__('ECOMMERCE_SOFTWARE_DEVELOPMENT') %></span>
 		</div>
 		<div class="sub-heading text-blue">
-			<span>Implement e-commerce softwares to bring success to your on-line business</span>
+			<span><%- @__('ECOMMERCE_SOFTWARE_DEVELOPMENT_DESC') %></span>
 		</div>
 		<div class="explain">
-			<p>In order to successfully develop e-commerce software, we focus on a full range of elements that relate to your online business. This includes choosing a Content Management System (CMS) to effectively manage your Blog, Articles and Press Releases as well as developing necessary features for your e-commerce business such as Marketing and Upsell features, Security, Online Payment and Performance and Scalability to manage a big volume of consumers.</p>
-			<br>
-			<p>We also offer you a mobile e-commerce app development when you want to access the huge number of mobile users who are using their phones to research and find products online.</p>
+			<p><%- @__('ECOMMERCE_SOFTWARE_DEVELOPMENT_EXPLAIN') %></p>
 		</div>
 	</div>
 	<div class="domain">
 		<div class="heading text-upper text-blue">
-			<span>HEALTHCARE SOFTWARE DEVELOPMENT</span>
+			<span><%- @__('HEALTHCARE_SOFTWARE_DEVELOPMENT') %></span>
 		</div>
 		<div class="sub-heading text-blue">
-			<span>We provide better analytical results in the health-care sector</span>
+			<span><%- @__('HEALTHCARE_SOFTWARE_DEVELOPMENT_DESC') %></span>
 		</div>
 		<div class="explain">
 			<div class="gs">
 				<div class="row">
 					<div class="col-8">
-						<p>We have staff with over five years of experience working with healthcare software projects. Our Healthcare software experts have participated in a number of healthcare software projects for a leading healthcare company in Japan.</p>
-						<p>The applications we have worked on enable quantitative analyses of medical images due to visualization enhancement.</p>
+						<p><%- @__('HEALTHCARE_SOFTWARE_DEVELOPMENT_EXPLAIN') %></p>
 					</div>
 					<div class="col-4 text-center">
-						<img src="<%= @__assets.img('/domains_healthcare_illu.jpg') %>" alt="healthcare" width="388" height="238" class="domain-illu">
+						<img src="<%= @__assets.img('/domains_healthcare_illu.jpg') %>" alt="<%- @__('HEALTHCARE_SOFTWARE_DEVELOPMENT') %>" width="388" height="238" class="domain-illu">
 					</div>
 				</div>
 			</div>
@@ -214,26 +198,24 @@
 	</div>
 	<div class="domain">
 		<div class="heading text-upper text-blue">
-			<span>EMBEDDED SOFTWARE AND SYSTEM DEVELOPMENT</span>
+			<span><%- @__('EMBEDDED_SOFTWARE_DEVELOPMENT') %></span>
 		</div>
 		<div class="sub-heading text-blue">
-			<span>Achieve business excellence through embedded intelligence</span>
+			<span><%- @__('EMBEDDED_SOFTWARE_DEVELOPMENT_DESC') %></span>
 		</div>
 		<div class="explain">
-			<p>At NTQ Solution we provide a full range of embedded software development services including concept development, design and implementation due to our expertise in 8but microchip, Intelligence sensor, LPF, Kalman Filter, PID controller as well as other embedded technologies.</p>
+			<p><%- @__('EMBEDDED_SOFTWARE_DEVELOPMENT_EXPLAIN') %></p>
 		</div>
 	</div>
 	<div class="domain">
 		<div class="heading text-upper text-blue">
-			<span>SYSTEM INTEGRATION</span>
+			<span><%- @__('SYSTEM_INTEGRATION') %></span>
 		</div>
 		<div class="sub-heading text-blue">
-			<span>Combine your existing computing systems together to create one large and complete system</span>
+			<span><%- @__('SYSTEM_INTEGRATION_DESC') %></span>
 		</div>
 		<div class="explain">
-			<p>We will work with you to understand your business goals so we can accurately devise a way to seamlessly integrate an accelerated solution to help you meet those goals. We help businesses achieve optimal performance levels at an accelerated rate due to our service.</p>
-			<br>
-			<p>Our system integration engineers have a broad range of skills including software engineering and interface protocols. Our engineers have had to use their intuition and adaptability to solve problems and difficulties that arise during integration projects.</p>
+			<p><%- @__('SYSTEM_INTEGRATION_EXPLAIN') %></p>
 		</div>
 	</div>
 </div>

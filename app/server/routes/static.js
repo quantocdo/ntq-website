@@ -22,5 +22,5 @@ exports._factory = function(app, shortcut) {
 
 	app._get('success-stories', '/success-stories', render('pages/success-stories'));
 
-	app._get('technologies', '/technologies', render('pages/tech'));
+	// app._get('technologies', '/technologies', render('pages/tech'));
 };
