@@ -1,0 +1,361 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: NTQ Website\n"
+"Language: en-us\n"
+
+#: 
+msgid "CONTACT"
+msgstr "Contact"
+
+#: 
+msgid "ABOUT_US"
+msgstr "About us"
+
+#: 
+msgid "DOWNLOADS"
+msgstr "Downloads"
+
+#: 
+msgid "NEWS"
+msgstr "News"
+
+#: 
+msgid "R&D"
+msgstr "R&D"
+
+#: 
+msgid "SUCCESS_STORIES"
+msgstr "Success stories"
+
+#: 
+msgid "BUSINESS"
+msgstr "Business"
+
+#: 
+msgid "SERVICES"
+msgstr "Services"
+
+#: 
+msgid "DEVELOPMENT_DOMAINS"
+msgstr "Development domains"
+
+#: 
+msgid "CONTRACT_MODELS"
+msgstr "Contract models"
+
+#: 
+msgid "CAREER"
+msgstr "Career"
+
+#: 
+msgid "CONTACT_US"
+msgstr "Contact us"
+
+#: 
+msgid "HANOI_OFFICE"
+msgstr "Head office in Hanoi:"
+
+#: 
+msgid "HANOI_OFFICE_ADDRESS"
+msgstr "6th Floor, Sudico Building (HH3)<br>Me Tri Street, Nam Tu Liem District<br>Hanoi City, Vietnam"
+
+#: 
+msgid "HANOI_REPRESENTATIVE"
+msgstr "Pham Thai Son"
+
+#: 
+msgid "HANOI_REPRESENTATIVE_POSITION"
+msgstr "Chief Executive Officer"
+
+#: 
+msgid "HANOI_REPRESENTATIVE_TEL"
+msgstr "Tel: (+84) 985 529 229"
+
+#: 
+msgid "HANOI_REPRESENTATIVE_EMAIL"
+msgstr "Email: son.pham@ntq-solution.com.vn"
+
+#: 
+msgid "JAPAN_OFFICE"
+msgstr "NTQ Japan:"
+
+#: 
+msgid "JAPAN_OFFICE_ADDRESS"
+msgstr "(Under Construction)"
+
+#: 
+msgid "N2LAB"
+msgstr "N2 Lab:"
+
+#: 
+msgid "N2LAB_ADDRESS"
+msgstr "〒106-0032<br>Tokyo to Minami ku Roppongi 4-2-35<br>Urban Style Roppongi Mikawadai 2F"
+
+#: 
+msgid "JAPAN_REPRESENTATIVE"
+msgstr "Hironori Miyata"
+
+#: 
+msgid "JAPAN_REPRESENTATIVE_POSITION"
+msgstr "Representative"
+
+#: 
+msgid "JAPAN_REPRESENTATIVE_TEL"
+msgstr "Tel: (+81) 80 3211 4662"
+
+#: 
+msgid "JAPAN_REPRESENTATIVE_EMAIL"
+msgstr "Email: miyata@ntq-solution.com.vn"
+
+#: 
+msgid "N2LAB_REPRESENTATIVE"
+msgstr "Tomohiro Takase"
+
+#: 
+msgid "N2LAB_REPRESENTATIVE_POSITION"
+msgstr "Representitive"
+
+#: 
+msgid "N2LAB_REPRESENTATIVE_TEL"
+msgstr "Tel: (+81) 3 5772 1414"
+
+#: 
+msgid "N2LAB_REPRESENTATIVE_EMAIL"
+msgstr "Email: takase@nadia.bz"
+
+#: 
+msgid "404_INFORM"
+msgstr "The page you’re looking for cannot be found"
+
+#: 
+msgid "TO_HOMEPAGE"
+msgstr "To homepage"
+
+#: 
+msgid "LANDING_HEADING"
+msgstr "Delivering<br>Next Top Quality"
+
+#: 
+msgid "LANDING_SUB_HEADING"
+msgstr "Viet Nam Software Outsourcing Company"
+
+#: 
+msgid "DOWNLOAD_MATERIALS"
+msgstr "Download Materials"
+
+#: 
+msgid "OFFER_MESSAGE_1"
+msgstr "We offer one man-month trial projects to showcase our abilities to you."
+
+#: 
+msgid "OFFER_MESSAGE_2"
+msgstr "We offer a free consultancy service and are eagerly awaiting any questions, estimations or propositions that you may have."
+
+#: 
+msgid "READ_MORE"
+msgstr "Read more"
+
+#: 
+msgid "SEE_HOW_THEY_WORK"
+msgstr "See how they work"
+
+#: 
+msgid "R&D_HEADING"
+msgstr "Research & Development"
+
+#: 
+msgid "R&D_SUB_HEADING"
+msgstr "We also have an extremely innovative research & development department.<br>We are currently looking for a partner who we can collaborate with and can provide support for our present, and future, projects."
+
+#: 
+msgid "OUR_PARTERNS"
+msgstr "Our partners"
+
+#: 
+msgid "OUR_PARTNERS_SLOGAN"
+msgstr "NTQ Solution we are a part of you"
+
+#: 
+msgid "SEE_MORE_TECHNOLOGIES"
+msgstr "See more technologies"
+
+#: 
+msgid "WHY_NTQ"
+msgstr "<span class=\"text-green\">Why</span> NTQ?"
+
+#: 
+msgid "TECHNICAL_CAPABILITIES"
+msgstr "Technical capabilities"
+
+#: 
+msgid "TECHNICAL_CAPABILITIES_DESC"
+msgstr "Our expert knowledge and capabilities in software development stems from our members of staff who have graduated from top universities around the world."
+
+#: 
+msgid "STRONG_RELATIONSHIPS"
+msgstr "STRONG RELATIONSHIPS"
+
+#: 
+msgid "STRONG_RELATIONSHIPS_DESC"
+msgstr "While the yearly rate of employees leaving jobs is 20% per Vietnamese company, our company only loses 5% of our employees annually. This is due to our ability to facilitate a fun and rewarding environment to work in.<br>We also have strong relationships with our customers and implement bilateral communications with them to enhance project effectiveness and efficiency."
+
+#: 
+msgid "GLOBAL_PORTFOLIO"
+msgstr "GLOBAL PORTFOLIO"
+
+#: 
+msgid "GLOBAL_PORTFOLIO_DESC"
+msgstr "NTQ is striving to expand our business to serve clients on a global scale. We believe that our experience in dealing with a culturally diverse portfolio of customers will enable us to serve future clients more effectively."
+
+#: 
+msgid "TECHNOLOGIES"
+msgstr "Technologies"
+
+#: 
+msgid "TECHNOLOGIES_HEADING"
+msgstr "TECHNOLOGY IS THE KEY TO OUR SUCCESS"
+
+#: 
+msgid "TECHNOLOGIES_SUB_HEADING"
+msgstr "We keep updated with the latest technologies and are continually expanding the amount of technologies we can offer our clients."
+
+#: 
+msgid "CUSTOMER_REVIEWS"
+msgstr "Customer reviews"
+
+#: 
+msgid "MARINAX_CUSTOMER_NAME"
+msgstr "Satoshi Kawai"
+
+#: 
+msgid "MARINAX_CUSTOMER_POSITION"
+msgstr "COO, Marinax Inc, Japan"
+
+#: 
+msgid "MARINAX_CUSTOMER_REVIEW"
+msgstr "Sometimes our projects require us to create deliverables and produce documents written in English. In Japan it is hard to find engineers who can understand English, making it difficult to control costs and the speed at which a project is completed. NTQ Solution solved this problem for us through their excellent English communication skills."
+
+#: 
+msgid "ROI_CUSTOMER_NAME"
+msgstr "Linh Nguyen"
+
+#: 
+msgid "ROI_CUSTOMER_POSITION"
+msgstr "Technical Manager, ROI Marketing Solutions Ltd, UK"
+
+#: 
+msgid "ROI_CUSTOMER_REVIEW"
+msgstr "ROI Marketing Solutions Ltd has worked with NTQ Solutions to develop an online marketing application over the past 1 year. During this time, NTQ has demonstrated good technical and communication skills over different parts of the software development cycle such requirement gathers and development."
+
+#: 
+msgid "ITSHERPA_CUSTOMER_NAME"
+msgstr "Yusuke Akinaga"
+
+#: 
+msgid "ITSHERPA_CUSTOMER_POSITION"
+msgstr "Account Manager, ITSherpa - Japan"
+
+#: 
+msgid "ITSHERPA_CUSTOMER_REVIEW"
+msgstr "The staff at NTQ are very dynamic as shown in their ability to simultaneously create a fun atmosphere while being productive. In terms of quality, they have captured the Japanese psyche and have produced good software products. Nowadays, many Japanese companies are looking for foreign partners in the software industry. Our company has luckily found a good partner in NTQ Solution."
+
+#: 
+msgid "BIT2BYTE_CUSTOMER_NAME"
+msgstr "Asuka Inoue"
+
+#: 
+msgid "BIT2BYTE_CUSTOMER_POSITION"
+msgstr "CEO, Bit2Byte Inc, Japan"
+
+#: 
+msgid "BIT2BYTE_CUSTOMER_REVIEW"
+msgstr "Before doing business with NTQ I felt very worried. However, they have proven to us that they can deliver our specifications to a high standard and NTQ has now become a reliable partner of ours. I have never had a problem with communication with NTQ because they understand the Japanese language and characteristics. I am very glad to have NTQ as a partner as they can provide easy to manage services at reasonable prices."
+
+#: 
+msgid "DOMAINS"
+msgstr "Domains"
+
+#: 
+msgid "DOMAINS_SLOGAN"
+msgstr "Turn your ideas into reality"
+
+#: 
+msgid "SOFTWARE_OUTSOURCING"
+msgstr "Software Outsourcing"
+
+#: 
+msgid "SOFTWARE_OUTSOURCING_DESC"
+msgstr "Gain advantages through outsourcing a part or a whole software development work"
+
+#: 
+msgid "LEARN_MORE"
+msgstr "Learn more"
+
+#: 
+msgid "SOLUTIONS_CONSULTANCY"
+msgstr "Solutions Consultancy"
+
+#: 
+msgid "SOLUTIONS_CONSULTANCY_DESC"
+msgstr "We provide a solutions consultancy service to you totally COST FREE"
+
+#: 
+msgid "GRAPHIC_DESIGN"
+msgstr "Graphic Design"
+
+#: 
+msgid "GRAPHIC_DESIGN_DESC"
+msgstr "Complete your software with our most trendy mobile and web app graphic design"
+
+#: 
+msgid "MOBILE_APP"
+msgstr "Mobile App"
+
+#: 
+msgid "WEB_APP"
+msgstr "Web App"
+
+#: 
+msgid "EMBEDDED_SOFTWARE"
+msgstr "Embedded Software"
+
+#: 
+msgid "HEALTHCARE_SOFTWARE"
+msgstr "Healcare Software"
+
+#: 
+msgid "SYSTEM_INTEGRATION"
+msgstr "System Integration"
+
+#: 
+msgid "ENTERPRISE_APPLICATION"
+msgstr "Enterprise Application"
+
+#: 
+msgid "CLOUDBASED_SOFTWARE"
+msgstr "Cloud-based Software"
+
+#: 
+msgid "ECOMMERCE_SOFTWARE"
+msgstr "E-commerce Software"
+
+#: 
+msgid "WHO_IS_NTQ"
+msgstr "<span class=\"text-green\">Who</span> is NTQ Solution?"
+
+#: 
+msgid "WHO_IS_NTQ_DESC"
+msgstr "NTQ Solution is a Vietnamese software development company providing offshore development services such as mobile and web applications as well as other essential software services for businesses."
+
+#: 
+msgid "WHY_NTQ_PLAIN"
+msgstr "Why NTQ?"
+
+#: 
+msgid "WHO_IS_NTQ_PLAIN"
+msgstr "Who is NTQ Solution?"
+

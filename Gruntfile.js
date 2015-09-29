@@ -197,6 +197,15 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		po2json_angular_translate: {
+			dist: {
+				files: {
+					'app/server/config/translations/': [
+						'app/server/config/translations/*.po'
+					]
+				}
+			}
+		},
 		develop: {
 			dev: {
 				file: 'index.js',
@@ -275,5 +284,9 @@ module.exports = function(grunt) {
 	grunt.registerTask('test', [
 		'build',
 		'develop:nighty'
+	]);
+
+	grunt.registerTask('translate', [
+		'po2json_angular_translate'
 	]);
 };

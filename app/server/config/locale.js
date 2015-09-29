@@ -10,14 +10,13 @@ exports._requires = [
 	'/config/profile',
 ];
 exports._factory = function(_, i18n, path, moment, app, profile) {
-
 	i18n.configure({
 		locales: ['en', 'ja'],
 		defaultLocale: 'en',
 		cookie: 'acceptLanguage',
 		directory: path.resolve(profile._root, 'config/translations'),
 		updateFiles: false,
-		objectNotation: true
+		objectNotation: false
 	});
 
 	app.use(i18n.init);

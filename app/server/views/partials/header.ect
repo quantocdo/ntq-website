@@ -5,50 +5,50 @@
 				<img src="<%= @__assets.img('/logo/logo_s.png') %>" alt="NTQ Solution" width="94" height="40">
 			</a>
 		</div>
-		<div class="top-actions pull-right clearfix">
-			<a href="http://jp.ntq-solution.com.vn" class="language-switch ja pull-right"></a>
-			<a href="<%= @_url('contact') %>" class="contact pull-right">Contact</a>
-		</div>
 		<div class="top-nav">
-			<ul class="clearfix">
+			<ul class="top-menu">
 				<li class="nav-item dropdown-menu">
-					<a href="#">Business&nbsp;<i class="fa fa-angle-down fw"></i></a>
+					<a href="#"><%- @__('BUSINESS') %>&nbsp;<i class="fa fa-angle-down fw"></i></a>
 					<div class="dropdown">
 						<div class="arrow-up"></div>
 						<ul>
 							<li class="dropdown-item first">
-								<a href="<%= @_url('services') %>">Services</a>
+								<a href="<%= @_url('services') %>"><%- @__('SERVICES') %></a>
 							</li>
 							<li class="dropdown-item">
-								<a href="<%= @_url('domains') %>">Development domain</a>
+								<a href="<%= @_url('domains') %>"><%- @__('DEVELOPMENT_DOMAINS') %></a>
 							</li>
 							<li class="dropdown-item">
-								<a href="<%= @_url('contract-models') %>">Contract models</a>
+								<a href="<%= @_url('contract-models') %>"><%- @__('CONTRACT_MODELS') %></a>
 							</li>
 						</ul>
 					</div>
 				</li>
 				<li class="nav-item">
-					<a href="<%= @_url('success-stories') %>">Success stories</a>
+					<a href="<%= @_url('success-stories') %>"><%- @__('SUCCESS_STORIES') %></a>
 				</li>
 				<li class="nav-item">
-					<a href="<%= @_url('rd') %>">R&D</a>
+					<a href="<%= @_url('rd') %>"><%- @__('R&D') %></a>
 				</li>
 				<li class="nav-item">
-					<a href="<%= @_url('articles') %>">News</a>
+					<a href="<%= @_url('articles') %>"><%- @__('NEWS') %></a>
 				</li>
 				<!--
 				<li class="nav-item">
-					<a href="<%= @_url('career') %>">Career</a>
+					<a href="<%= @_url('career') %>"><%- @__('CAREER') %></a>
 				</li>
 				-->
 				<li class="nav-item">
-					<a href="<%= @_url('download') %>">Downloads</a>
+					<a href="<%= @_url('download') %>"><%- @__('DOWNLOADS') %></a>
 				</li>
 				<li class="nav-item">
-					<a href="<%= @_url('about') %>">About us</a>
+					<a href="<%= @_url('about') %>"><%- @__('ABOUT_US') %></a>
 				</li>
 			</ul>
+			<div class="top-actions clearfix">
+				<a href="http://jp.ntq-solution.com.vn" class="language-switch ja pull-right"></a>
+				<a href="<%= @_url('contact') %>" class="contact pull-right"><%- @__('CONTACT') %></a>
+			</div>
 		</div>
 	</div>
 </div>

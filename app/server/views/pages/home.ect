@@ -34,28 +34,27 @@
 	</div>
 	<div class="landing-overlay">
 		<div class="heading text-upper">
-			<div>Delivering</div>
-			<div>Next Top Quality</div>
+			<span><%- @__('LANDING_HEADING') %></span>
 		</div>
 		<div class="sub-heading">
-			<span>Viet Nam Software Outsourcing Company</span>
+			<span><%- @__('LANDING_SUB_HEADING') %></span>
 		</div>
 	</div>
 </div>
 
-<div class="page-section section-whois" data-title="Who is NTQ Solution?">
+<div class="page-section section-whois" data-title="<%- @__('WHO_IS_NTQ_PLAIN') %>">
 	<div class="site-container fluid vertical-middle">
 		<div class="gs">
 			<div class="row">
 				<div class="col-5">
 					<div class="heading">
-						<span><span class="text-green">Who</span> is NTQ Solution?</span>
+						<span><%- @__('WHO_IS_NTQ') %></span>
 					</div>
 					<div class="paragraph text-justify">
-						<p>NTQ Solution is a Vietnamese software development company providing offshore development services such as mobile and web applications as well as other essential software services for businesses.</p>
+						<p><%- @__('WHO_IS_NTQ_DESC') %></p>
 					</div>
 					<div class="about-us">
-						<a href="<%= @_url('about') %>" class="text-white text-upper">About us<i class="fa fa-arrow-right icon-see-more"></i></a>
+						<a href="<%= @_url('about') %>" class="text-white text-upper"><%- @__('ABOUT_US') %><i class="fa fa-arrow-right icon-see-more"></i></a>
 					</div>
 				</div>
 				<div class="col-6-offset-1">
@@ -71,56 +70,56 @@
 	</div>
 </div>
 
-<div class="page-section section-domains" data-title="Domains">
+<div class="page-section section-domains" data-title="<%- @__('DOMAINS') %>">
 	<div class="site-container fluid vertical-middle">
 		<div class="heading text-center text-white text-upper">
-			<span>Domains</span>
+			<span><%- @__('DOMAINS') %></span>
 		</div>
 		<div class="sub-heading text-center text-white text-upper">
-			<span>Turn your ideas into reality</span>
+			<span><%- @__('DOMAINS_SLOGAN') %></span>
 		</div>
 		<div class="gs services">
 			<div class="row">
 				<div class="col-4">
 					<div class="logo-container large horizontal-center text-center">
-						<img src="<%= @__assets.img('/services/outsource.png') %>" alt="Software Outsourcing" width="61" height="61">
+						<img src="<%= @__assets.img('/services/outsource.png') %>" alt="<%- @__('SOFTWARE_OUTSOURCING') %>" width="61" height="61">
 					</div>
 					<div class="service-heading text-white text-center text-upper">
-						<span>Software Outsourcing</span>
+						<span><%- @__('SOFTWARE_OUTSOURCING') %></span>
 					</div>
 					<div class="service-description text-white text-center">
-						<span>Gain advantages through outsourcing a part or a whole software development work</span>
+						<span><%- @__('SOFTWARE_OUTSOURCING_DESC') %></span>
 					</div>
 					<div class="service-learn-more text-center text-yellow">
-						<a href="<%= @_url('services') %>#out-source">Learn more<i class="fa fa-angle-right icon-see-more"></i></a>
+						<a href="<%= @_url('services') %>#out-source"><%- @__('LEARN_MORE') %><i class="fa fa-angle-right icon-see-more"></i></a>
 					</div>
 				</div>
 				<div class="col-4">
 					<div class="logo-container large horizontal-center text-center">
-						<img src="<%= @__assets.img('/services/consultancy.png') %>" alt="Solutions Consultancy" width="77" height="76">
+						<img src="<%= @__assets.img('/services/consultancy.png') %>" alt="<%- @__('SOLUTIONS_CONSULTANCY') %>" width="77" height="76">
 					</div>
 					<div class="service-heading text-white text-center text-upper">
-						<span>Solutions Consultancy</span>
+						<span><%- @__('SOLUTIONS_CONSULTANCY') %></span>
 					</div>
 					<div class="service-description text-white text-center">
-						<span>We provide a solutions consultancy service to you totally COST FREE</span>
+						<span><%- @__('SOLUTIONS_CONSULTANCY_DESC') %></span>
 					</div>
 					<div class="service-learn-more text-center text-yellow">
-						<a href="<%= @_url('services') %>#solution-consultancy">Learn more<i class="fa fa-angle-right icon-see-more"></i></a>
+						<a href="<%= @_url('services') %>#solution-consultancy"><%- @__('LEARN_MORE') %><i class="fa fa-angle-right icon-see-more"></i></a>
 					</div>
 				</div>
 				<div class="col-4">
 					<div class="logo-container large horizontal-center text-center">
-						<img src="<%= @__assets.img('/services/graphical_design.png') %>" alt="Graphic Design" width="70" height="67">
+						<img src="<%= @__assets.img('/services/graphical_design.png') %>" alt="<%- @__('GRAPHIC_DESIGN') %>" width="70" height="67">
 					</div>
 					<div class="service-heading text-white text-center text-upper">
-						<span>Graphic Design</span>
+						<span><%- @__('GRAPHIC_DESIGN') %></span>
 					</div>
 					<div class="service-description text-white text-center">
-						<span>Complete your software with our most trendy mobile and web app graphic design</span>
+						<span><%- @__('GRAPHIC_DESIGN_DESC') %></span>
 					</div>
 					<div class="service-learn-more text-center text-yellow">
-						<a href="<%= @_url('services') %>#graphic-design">Learn more<i class="fa fa-angle-right icon-see-more"></i></a>
+						<a href="<%= @_url('services') %>#graphic-design"><%- @__('LEARN_MORE') %><i class="fa fa-angle-right icon-see-more"></i></a>
 					</div>
 				</div>
 			</div>
@@ -128,40 +127,40 @@
 				<div class="col-3">
 					<div class="clearfix">
 						<div class="logo-container pull-left text-center">
-							<img src="<%= @__assets.img('/domains/mobile.png') %>" alt="Mobile App" width="22" height="42">
+							<img src="<%= @__assets.img('/domains/mobile.png') %>" alt="<%- @__('MOBILE_APP') %>" width="22" height="42">
 						</div>
 						<div class="logo-description text-white text-upper">
-							<div class="vertical-middle">Mobile App</div>
+							<div class="vertical-middle"><%- @__('MOBILE_APP') %></div>
 						</div>
 					</div>
 				</div>
 				<div class="col-3">
 					<div class="clearfix">
 						<div class="logo-container pull-left text-center">
-							<img src="<%= @__assets.img('/domains/web.png') %>" alt="Web App" width="41" height="31">
+							<img src="<%= @__assets.img('/domains/web.png') %>" alt="<%- @__('WEB_APP') %>" width="41" height="31">
 						</div>
 						<div class="logo-description text-white text-upper">
-							<div class="vertical-middle">Web App</div>
+							<div class="vertical-middle"><%- @__('WEB_APP') %></div>
 						</div>
 					</div>
 				</div>
 				<div class="col-3">
 					<div class="clearfix">
 						<div class="logo-container pull-left text-center">
-							<img src="<%= @__assets.img('/domains/embed.png') %>" alt="Embedded Software" width="30" height="34">
+							<img src="<%= @__assets.img('/domains/embed.png') %>" alt="<%- @__('EMBEDDED_SOFTWARE') %>" width="30" height="34">
 						</div>
 						<div class="logo-description text-white text-upper">
-							<div class="vertical-middle">Embedded Software</div>
+							<div class="vertical-middle"><%- @__('EMBEDDED_SOFTWARE') %></div>
 						</div>
 					</div>
 				</div>
 				<div class="col-3">
 					<div class="clearfix">
 						<div class="logo-container pull-left text-center">
-							<img src="<%= @__assets.img('/domains/healthcare.png') %>" alt="Healcare Software" width="31" height="32">
+							<img src="<%= @__assets.img('/domains/healthcare.png') %>" alt="<%- @__('HEALTHCARE_SOFTWARE') %>" width="31" height="32">
 						</div>
 						<div class="logo-description text-white text-upper">
-							<div class="vertical-middle">Healcare Software</div>
+							<div class="vertical-middle"><%- @__('HEALTHCARE_SOFTWARE') %></div>
 						</div>
 					</div>
 				</div>
@@ -170,40 +169,40 @@
 				<div class="col-3">
 					<div class="clearfix">
 						<div class="logo-container pull-left text-center">
-							<img src="<%= @__assets.img('/domains/integration.png') %>" alt="System Integration" width="35" height="35">
+							<img src="<%= @__assets.img('/domains/integration.png') %>" alt="<%- @__('SYSTEM_INTEGRATION') %>" width="35" height="35">
 						</div>
 						<div class="logo-description text-white text-upper">
-							<div class="vertical-middle">System Integration</div>
+							<div class="vertical-middle"><%- @__('SYSTEM_INTEGRATION') %></div>
 						</div>
 					</div>
 				</div>
 				<div class="col-3">
 					<div class="clearfix">
 						<div class="logo-container pull-left text-center">
-							<img src="<%= @__assets.img('/domains/enterprise.png') %>" alt="Enterprise Application" width="38" height="38">
+							<img src="<%= @__assets.img('/domains/enterprise.png') %>" alt="<%- @__('ENTERPRISE_APPLICATION') %>" width="38" height="38">
 						</div>
 						<div class="logo-description text-white text-upper">
-							<div class="vertical-middle">Enterprise Application</div>
+							<div class="vertical-middle"><%- @__('ENTERPRISE_APPLICATION') %></div>
 						</div>
 					</div>
 				</div>
 				<div class="col-3">
 					<div class="clearfix">
 						<div class="logo-container pull-left text-center">
-							<img src="<%= @__assets.img('/domains/cloud.png') %>" alt="Cloud-based Software" width="44" height="34">
+							<img src="<%= @__assets.img('/domains/cloud.png') %>" alt="<%- @__('CLOUDBASED_SOFTWARE') %>" width="44" height="34">
 						</div>
 						<div class="logo-description text-white text-upper">
-							<div class="vertical-middle">Cloud-based Software</div>
+							<div class="vertical-middle"><%- @__('CLOUDBASED_SOFTWARE') %></div>
 						</div>
 					</div>
 				</div>
 				<div class="col-3">
 					<div class="clearfix">
 						<div class="logo-container pull-left text-center">
-							<img src="<%= @__assets.img('/domains/ecommerce.png') %>" alt="E-commerce Software" width="37" height="35">
+							<img src="<%= @__assets.img('/domains/ecommerce.png') %>" alt="<%- @__('ECOMMERCE_SOFTWARE') %>" width="37" height="35">
 						</div>
 						<div class="logo-description text-white text-upper">
-							<div class="vertical-middle">E-commerce Software</div>
+							<div class="vertical-middle"><%- @__('ECOMMERCE_SOFTWARE') %></div>
 						</div>
 					</div>
 				</div>
@@ -212,47 +211,47 @@
 	</div>
 </div>
 
-<div class="page-section section-reviews" data-title="Customer reviews">
+<div class="page-section section-reviews" data-title="<%- @__('CUSTOMER_REVIEWS') %>">
 	<div class="site-container fluid vertical-middle">
 		<div class="heading text-center text-white text-upper">
-			<span>Customer reviews</span>
+			<span><%- @__('CUSTOMER_REVIEWS') %></span>
 		</div>
 		<div class="gs">
 			<div class="row customers">
 				<div class="col-2 clearfix">
 					<div class="customer-pic-container pull-right">
 						<div class="customer-pic">
-							<img src="<%= @__assets.img('/customers/satoshi_kawai.jpg') %>" alt="Satoshi Kawai" width="134" height="134">
+							<img src="<%= @__assets.img('/customers/satoshi_kawai.jpg') %>" alt="<%- @__('MARINAX_CUSTOMER_NAME') %>" width="134" height="134">
 						</div>
 					</div>
 				</div>
 				<div class="col-4 text-white">
 					<div class="customer-name">
-						<span>Satoshi Kawai</span>
+						<span><%- @__('MARINAX_CUSTOMER_NAME') %></span>
 					</div>
 					<div class="customer-position">
-						<span class="text-italic">COO, Marinax inc., Japan.</span>
+						<span class="text-italic"><%- @__('MARINAX_CUSTOMER_POSITION') %></span>
 					</div>
 					<div class="customer-review">
-						<p class="text-justify">Sometimes our projects require us to create deliverables and produce documents written in English. In Japan it is hard to find engineers who can understand English, making it difficult to control costs and the speed at which a project is completed. NTQ Solution solved this problem for us through their excellent English communication skills.</p>
+						<p class="text-justify"><%- @__('MARINAX_CUSTOMER_REVIEW') %></p>
 					</div>
 				</div>
 				<div class="col-2 clearfix">
 					<div class="customer-pic-container pull-right">
 						<div class="customer-pic">
-							<img src="<%= @__assets.img('/customers/linh_nguyen.jpg') %>" alt="Linh Nguyen" width="134" height="134">
+							<img src="<%= @__assets.img('/customers/linh_nguyen.jpg') %>" alt="<%- @__('ROI_CUSTOMER_NAME') %>" width="134" height="134">
 						</div>
 					</div>
 				</div>
 				<div class="col-4 text-white">
 					<div class="customer-name">
-						<span>Linh Nguyen</span>
+						<span><%- @__('ROI_CUSTOMER_NAME') %></span>
 					</div>
 					<div class="customer-position">
-						<span class="text-italic">Technical Manager, ROI Marketing Solutions Ltd , UK.</span>
+						<span class="text-italic"><%- @__('ROI_CUSTOMER_POSITION') %></span>
 					</div>
 					<div class="customer-review">
-						<p class="text-justify">ROI Marketing Solutions Ltd has worked with NTQ Solutions to develop an online marketing application over the past 1 year. During this time, NTQ has demonstrated good technical and communication skills over different parts of the software development cycle such requirement gathers and development.</p>
+						<p class="text-justify"><%- @__('ROI_CUSTOMER_REVIEW') %></p>
 					</div>
 				</div>
 			</div>
@@ -260,37 +259,37 @@
 				<div class="col-2 clearfix">
 					<div class="customer-pic-container pull-right">
 						<div class="customer-pic">
-							<img src="<%= @__assets.img('/customers/yusuke_akinaga.jpg') %>" alt="Yusuke Akinaga" width="134" height="134">
+							<img src="<%= @__assets.img('/customers/yusuke_akinaga.jpg') %>" alt="<%- @__('ITSHERPA_CUSTOMER_NAME') %>" width="134" height="134">
 						</div>
 					</div>
 				</div>
 				<div class="col-4 text-white">
 					<div class="customer-name">
-						<span>Yusuke Akinaga</span>
+						<span><%- @__('ITSHERPA_CUSTOMER_NAME') %></span>
 					</div>
 					<div class="customer-position">
-						<span class="text-italic">Account Manager, ITSherpa - Japan.</span>
+						<span class="text-italic"><%- @__('ITSHERPA_CUSTOMER_POSITION') %></span>
 					</div>
 					<div class="customer-review">
-						<p class="text-justify">The staff at NTQ are very dynamic as shown in their ability to simultaneously create a fun atmosphere while being productive. In terms of quality, they have captured the Japanese psyche and have produced good software products. Nowadays, many Japanese companies are looking for foreign partners in the software industry. Our company has luckily found a good partner in NTQ Solution.</p>
+						<p class="text-justify"><%- @__('ITSHERPA_CUSTOMER_REVIEW') %></p>
 					</div>
 				</div>
 				<div class="col-2 clearfix">
 					<div class="customer-pic-container pull-right">
 						<div class="customer-pic">
-							<img src="<%= @__assets.img('/customers/asuka_inoue.jpg') %>" alt="Asuka Inoue" width="134" height="134">
+							<img src="<%= @__assets.img('/customers/asuka_inoue.jpg') %>" alt="<%- @__('BIT2BYTE_CUSTOMER_NAME') %>" width="134" height="134">
 						</div>
 					</div>
 				</div>
 				<div class="col-4 text-white">
 					<div class="customer-name">
-						<span>Asuka Inoue</span>
+						<span><%- @__('BIT2BYTE_CUSTOMER_NAME') %></span>
 					</div>
 					<div class="customer-position">
-						<span class="text-italic">CEO, Bit2Byte,Inc., Japan</span>
+						<span class="text-italic"><%- @__('BIT2BYTE_CUSTOMER_POSITION') %></span>
 					</div>
 					<div class="customer-review">
-						<p class="text-justify">Before doing business with NTQ I felt very worried. However, they have proven to us that they can deliver our specifications to a high standard and NTQ has now become a reliable partner of ours. I have never had a problem with communication with NTQ because they understand the Japanese language and characteristics. I am very glad to have NTQ as a partner as they can provide easy to manage services at reasonable prices.</p>
+						<p class="text-justify"><%- @__('BIT2BYTE_CUSTOMER_REVIEW') %></p>
 					</div>
 				</div>
 			</div>
@@ -298,16 +297,16 @@
 	</div>
 </div>
 
-<div class="page-section section-tech" data-title="Technologies">
+<div class="page-section section-tech" data-title="<%- @__('TECHNOLOGIES') %>">
 	<div class="site-container fluid vertical-middle">
 		<div class="heading text-center text-upper text-white">
-			<span>Technologies</span>
+			<span><%- @__('TECHNOLOGIES') %></span>
 		</div>
 		<div class="sub-heading text-center text-upper text-white">
-			<span>TECHNOLOGY IS THE KEY TO OUR SUCCESS</span>
+			<span><%- @__('TECHNOLOGIES_HEADING') %></span>
 		</div>
 		<div class="description text-center text-white">
-			<span>We keep updated with the latest technologies and are continually expanding the amount of technologies we can offer our clients.</span>
+			<span><%- @__('TECHNOLOGIES_SUB_HEADING') %></span>
 		</div>
 		<div class="gs">
 			<div class="row first-line">
@@ -346,12 +345,12 @@
 			</div>
 		</div>
 		<div class="see-more-tech text-center">
-			<a href="<%= @_url('download') %>" class="text-blue text-upper">See more technologies<i class="fa fa-arrow-right icon-see-more"></i></a>
+			<a href="<%= @_url('download') %>" class="text-blue text-upper"><%- @__('SEE_MORE_TECHNOLOGIES') %><i class="fa fa-arrow-right icon-see-more"></i></a>
 		</div>
 	</div>
 </div>
 
-<div class="page-section section-why-ntq" data-title="Why NTQ?">
+<div class="page-section section-why-ntq" data-title="<%- @__('WHY_NTQ_PLAIN') %>">
 	<div class="site-container fluid vertical-middle">
 		<div class="gs">
 			<div class="row">
@@ -362,32 +361,32 @@
 				</div>
 				<div class="col-7-offset-1">
 					<div class="heading text-upper">
-						<span><span class="text-green">Why</span> NTQ?</span>
+						<span><%- @__('WHY_NTQ') %></span>
 					</div>
 					<div class="reason first-reason">
 						<div class="reason-heading">
-							<span class="text-upper">technical capabilities</span>
+							<span class="text-upper"><%- @__('TECHNICAL_CAPABILITIES') %></span>
 						</div>
 						<div class="reason-explain">
-							<p class="text-gray-dark">Our expert knowledge and capabilities in software development stems from our members of staff who have graduated from top universities around the world.</p>
+							<p class="text-gray-dark"><%- @__('TECHNICAL_CAPABILITIES_DESC') %></p>
 						</div>
 					</div>
 					<div class="reason-break"></div>
 					<div class="reason second-reason">
 						<div class="reason-heading">
-							<span class="text-upper">STRONG RELATIONSHIPS</span>
+							<span class="text-upper"><%- @__('STRONG_RELATIONSHIPS') %></span>
 						</div>
 						<div class="reason-explain">
-							<p class="text-gray-dark">While the yearly rate of employees leaving jobs is 20% per Vietnamese company, our company only loses 5% of our employees annually. This is due to our ability to facilitate a fun and rewarding environment to work in.<br>We also have strong relationships with our customers and implement bilateral communications with them to enhance project effectiveness and efficiency.</p>
+							<p class="text-gray-dark"><%- @__('STRONG_RELATIONSHIPS_DESC') %></p>
 						</div>
 					</div>
 					<div class="reason-break"></div>
 					<div class="reason third-reason">
 						<div class="reason-heading">
-							<span class="text-upper">GLOBAL PORTFOLIO</span>
+							<span class="text-upper"><%- @__('GLOBAL_PORTFOLIO') %></span>
 						</div>
 						<div class="reason-explain">
-							<p class="text-gray-dark">NTQ is striving to expand our business to serve clients on a global scale. We believe that our experience in dealing with a culturally diverse portfolio of customers will enable us to serve future clients more effectively.</p>
+							<p class="text-gray-dark"><%- @__('GLOBAL_PORTFOLIO_DESC') %></p>
 						</div>
 					</div>
 				</div>
@@ -396,13 +395,13 @@
 	</div>
 </div>
 
-<div class="page-section section-partners" data-title="Our partners">
+<div class="page-section section-partners" data-title="<%- @__('OUR_PARTERNS') %>">
 	<div class="site-container fluid">
 		<div class="heading text-center text-white text-upper">
-			<span>Our partners</span>
+			<span><%- @__('OUR_PARTERNS') %></span>
 		</div>
 		<div class="sub-heading text-center text-white text-upper">
-			<span>NTQ Solution we are a part of you</span>
+			<span><%- @__('OUR_PARTNERS_SLOGAN') %></span>
 		</div>
 		<div class="partner-map"></div>
 	</div>
@@ -412,10 +411,10 @@
 	<div class="vertical-middle">
 		<div class="site-container fluid">
 			<div class="heading text-center text-upper text-white">
-				<span>Research & Development</span>
+				<span><%- @__('R&D_HEADING') %></span>
 			</div>
 			<div class="description text-center text-white">
-				<p>We also have an extremely innovative research & development department.<br>We are currently looking for a partner who we can collaborate with and can provide support for our present, and future, projects.</p>
+				<p><%- @__('R&D_SUB_HEADING') %></p>
 			</div>
 		</div>
 		<div class="rd-film">
@@ -458,13 +457,13 @@
 		</div>
 		<div class="site-container fluid">
 			<div class="rd-how-it-work text-center">
-				<a href="<%= @_url('rd') %>" class="text-green text-upper">See how they work<i class="fa fa-arrow-right icon-see-more"></i></a>
+				<a href="<%= @_url('rd') %>" class="text-green text-upper"><%- @__('SEE_HOW_THEY_WORK') %><i class="fa fa-arrow-right icon-see-more"></i></a>
 			</div>
 		</div>
 	</div>
 </div>
 
-<div class="page-section section-articles" data-title="Articles">
+<div class="page-section section-articles" data-title="<%- @__('NEWS') %>">
 	<div class="articles clearfix full-height">
 	<% for article in @_highlightedArticles: %>
 		<div class="article pull-left"
@@ -476,7 +475,7 @@
 				<div class="article-readmore">
 					<a href="<%= @_url('articles.detail', {
 						id: article._id
-					}) %>" class="text-upper">Read more</a>
+					}) %>" class="text-upper"><%- @__('READ_MORE') %></a>
 				</div>
 			</div>
 		</div>
@@ -490,16 +489,16 @@
 <div class="page-section section-offer">
 	<div class="site-container fluid">
 		<div class="offer text-center text-white">
-			<span>We offer one man-month trial projects to showcase our abilities to you.</span>
+			<span><%- @__('OFFER_MESSAGE_1') %></span>
 		</div>
 		<div class="offer-explain text-center text-white">
-			<span>We offer a free consultancy service and are eagerly awaiting any questions, estimations or propositions that you may have.</span>
+			<span><%- @__('OFFER_MESSAGE_2') %></span>
 		</div>
 		<div class="contact-us text-center">
-			<a href="<%= @_url('contact') %>" class="text-blue text-upper">Contact us<i class="fa fa-arrow-right icon-see-more"></i></a>
+			<a href="<%= @_url('contact') %>" class="text-blue text-upper"><%- @__('CONTACT_US') %><i class="fa fa-arrow-right icon-see-more"></i></a>
 		</div>
 		<div class="download-materials text-center">
-			<a href="<%= @_url('download') %>" class="text-white text-underline">Download Materials</a>
+			<a href="<%= @_url('download') %>" class="text-white text-underline"><%- @__('DOWNLOAD_MATERIALS') %></a>
 		</div>
 	</div>
 </div>

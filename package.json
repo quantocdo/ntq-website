@@ -49,6 +49,7 @@
     "grunt-filerev": "2.3.1",
     "grunt-filerev-assets": "0.3.2",
     "grunt-jscs": "2.0.0",
+    "grunt-po2json-angular-translate": "0.0.3",
     "kouto-swiss": "0.11.13",
     "load-grunt-tasks": "3.2.0"
   }
