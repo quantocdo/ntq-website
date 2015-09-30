@@ -1,7 +1,7 @@
 ;(function(di) {
 	'use strict';
 
-	di.register('/home/navigator', [
+	di.factory('/home/navigator', [
 		'@ractive',
 		function(Ractive) {
 			var container = document.createElement('div');

@@ -1,5 +1,5 @@
 ;(function(di) {
 	'use strict';
 
-	di.bootstrap();
+	di.bootstrap(['/main']);
 })(__('ntq'));

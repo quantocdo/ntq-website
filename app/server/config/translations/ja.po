@@ -1,0 +1,865 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: POEditor.com\n"
+"Project-Id-Version: NTQ Website\n"
+"Language: ja\n"
+
+#: 
+msgid "CONTACT"
+msgstr "お問い合わせ"
+
+#: 
+msgid "ABOUT_US"
+msgstr "企業情報"
+
+#: 
+msgid "DOWNLOADS"
+msgstr "ダウンロード"
+
+#: 
+msgid "NEWS"
+msgstr "ニュース"
+
+#: 
+msgid "R&D"
+msgstr "R&D"
+
+#: 
+msgid "SUCCESS_STORIES"
+msgstr "開発事例"
+
+#: 
+msgid "BUSINESS"
+msgstr "事業紹介"
+
+#: 
+msgid "SERVICES"
+msgstr "サービス"
+
+#: 
+msgid "DEVELOPMENT_DOMAINS"
+msgstr "開発分野"
+
+#: 
+msgid "CONTRACT_MODELS"
+msgstr "契約モデル"
+
+#: 
+msgid "CAREER"
+msgstr "採用情報"
+
+#: 
+msgid "CONTACT_US"
+msgstr "お問い合わせはこちら"
+
+#: 
+msgid "HANOI_OFFICE"
+msgstr "本社"
+
+#: 
+msgid "HANOI_OFFICE_ADDRESS"
+msgstr "6th Floor, Sudico Building (HH3)<br>Me Tri Street, Nam Tu Liem District<br>Hanoi City, Vietnam"
+
+#: 
+msgid "HANOI_REPRESENTATIVE"
+msgstr "ファム・タイ・ソン"
+
+#: 
+msgid "HANOI_REPRESENTATIVE_POSITION"
+msgstr "代表取締役社長"
+
+#: 
+msgid "HANOI_REPRESENTATIVE_TEL"
+msgstr "電話番号: (+84) 4 6297 5613"
+
+#: 
+msgid "HANOI_REPRESENTATIVE_EMAIL"
+msgstr "メール: son.pham@ntq-solution.com.vn"
+
+#: 
+msgid "JAPAN_OFFICE"
+msgstr "NTQ Japan"
+
+#: 
+msgid "JAPAN_OFFICE_ADDRESS"
+msgstr "（設立中）"
+
+#: 
+msgid "N2LAB"
+msgstr "N2 Lab:"
+
+#: 
+msgid "N2LAB_ADDRESS"
+msgstr "〒106-0032<br>東京都港区六本木4丁目2-35<br>アーバンスタイル六本木三河台 2F"
+
+#: 
+msgid "JAPAN_REPRESENTATIVE"
+msgstr "宮田啓里"
+
+#: 
+msgid "JAPAN_REPRESENTATIVE_POSITION"
+msgstr "代表者"
+
+#: 
+msgid "JAPAN_REPRESENTATIVE_TEL"
+msgstr "電話番号: (+81) 80 3211 4662"
+
+#: 
+msgid "JAPAN_REPRESENTATIVE_EMAIL"
+msgstr "メール: miyata@ntq-solution.com.vn"
+
+#: 
+msgid "N2LAB_REPRESENTATIVE"
+msgstr "高瀬智広"
+
+#: 
+msgid "N2LAB_REPRESENTATIVE_POSITION"
+msgstr "代表者"
+
+#: 
+msgid "N2LAB_REPRESENTATIVE_TEL"
+msgstr "電話番号: (+81) 3 5772 1414"
+
+#: 
+msgid "N2LAB_REPRESENTATIVE_EMAIL"
+msgstr "メール: takase@nadia.bz"
+
+#: 
+msgid "404_INFORM"
+msgstr "お探しのページが見つかりませんでした"
+
+#: 
+msgid "TO_HOMEPAGE"
+msgstr "ホームページへ"
+
+#: 
+msgid "LANDING_HEADING"
+msgstr "Delivering<br>the Next Top Quality Solution"
+
+#: 
+msgid "LANDING_SUB_HEADING"
+msgstr "Vietnam Offshore Development Company"
+
+#: 
+msgid "DOWNLOAD_MATERIALS"
+msgstr "資料のダウンロードはこちら"
+
+#: 
+msgid "OFFER_MESSAGE_1"
+msgstr "1人月未満でのご案件も喜んで承ります"
+
+#: 
+msgid "OFFER_MESSAGE_2"
+msgstr "お見積り、コンサルティング、無料でご提供させていただきます"
+
+#: 
+msgid "READ_MORE"
+msgstr ""
+
+#: 
+msgid "SEE_HOW_THEY_WORK"
+msgstr "詳しくはこちら"
+
+#: 
+msgid "R&D_HEADING"
+msgstr "Research & Development"
+
+#: 
+msgid "R&D_SUB_HEADING"
+msgstr "アウトソーシングサービスだけでなく、ゼロからの研究開発も行っております。<br>全てを自分たちで開発することで、開発者の夢を実現しているのです。"
+
+#: 
+msgid "OUR_PARTERNS"
+msgstr "各国のお取引先様"
+
+#: 
+msgid "OUR_PARTNERS_SLOGAN"
+msgstr "高い適応性で、グローバルに取引をしています。"
+
+#: 
+msgid "SEE_MORE_TECHNOLOGIES"
+msgstr "他の対応言語はこちら"
+
+#: 
+msgid "WHY_NTQ"
+msgstr "<span class=\"text-green\">NTQ</span> の強みとは？"
+
+#: 
+msgid "TECHNICAL_CAPABILITIES"
+msgstr "技術力"
+
+#: 
+msgid "TECHNICAL_CAPABILITIES_DESC"
+msgstr "NTQ（ナットク）の理由は<br>「ベトナムの東大」と呼ばれる大学出身のエリートたちから。"
+
+#: 
+msgid "STRONG_RELATIONSHIPS"
+msgstr "団結力"
+
+#: 
+msgid "STRONG_RELATIONSHIPS_DESC"
+msgstr "ベトナムの離職率が20％を超える中、NTQは5％未満。<br>最高の職場環境でラボ型開発に貢献します。"
+
+#: 
+msgid "GLOBAL_PORTFOLIO"
+msgstr "日本文化"
+
+#: 
+msgid "GLOBAL_PORTFOLIO_DESC"
+msgstr "取引先企業の8割が日系企業。数々の実績があり、<br>日系企業とのお取引には自信があります。"
+
+#: 
+msgid "TECHNOLOGIES"
+msgstr "技術"
+
+#: 
+msgid "TECHNOLOGIES_HEADING"
+msgstr "お客様のビジネスが成功するように、ビジネス全体に対してシステムや技術が及ぼす影響を把握し理解する努力を怠りません。そして私たちは最新の技術だけ追うのではなく、お客様のご要望に応えられるようあらゆる技術を広く深く把握する努力を心がけています。"
+
+#: 
+msgid "TECHNOLOGIES_SUB_HEADING"
+msgstr ""
+
+#: 
+msgid "CUSTOMER_REVIEWS"
+msgstr "お客様の声"
+
+#: 
+msgid "MARINAX_CUSTOMER_NAME"
+msgstr "Satoshi Kawai"
+
+#: 
+msgid "MARINAX_CUSTOMER_POSITION"
+msgstr "COO, Marinax inc., Japan"
+
+#: 
+msgid "MARINAX_CUSTOMER_REVIEW"
+msgstr "弊社のプロジェクトでは、英語での成果物やdocument作成を求められる事があります。日本国内で英語の理解できるエンジニアを手配するには、コストとスピードのバランスが難しいのですが、NTQ Solutionの皆さんとのお仕事では、その課題を解決する事ができました。"
+
+#: 
+msgid "ROI_CUSTOMER_NAME"
+msgstr "Linh Nguyen"
+
+#: 
+msgid "ROI_CUSTOMER_POSITION"
+msgstr "Technical Manager, ROI Marketing Solutions Ltd , UK."
+
+#: 
+msgid "ROI_CUSTOMER_REVIEW"
+msgstr "技術面やコミュニケーション能力など、他のソフト開発会社に比べてもNTQ Solutionは素晴らしかったです。1年間にわたって、オンラインマーケティングアプリの案件でNTQ Solutionと協業できたのも、NTQの能力の高さがあってこそでした。今後ソフト開発を委託する際NTQ Solutionを第一候補として、私は迷わず推薦します。"
+
+#: 
+msgid "ITSHERPA_CUSTOMER_NAME"
+msgstr "Yusuke Akinaga"
+
+#: 
+msgid "ITSHERPA_CUSTOMER_POSITION"
+msgstr "Account Manager, ITSherpa, Japan."
+
+#: 
+msgid "ITSHERPA_CUSTOMER_REVIEW"
+msgstr "日本人の習慣を熟知していることから、非常に仕事がしやすく、毎度素晴らしい製品を提供してくれています。私のオンサイト経験からも言えるのですが、NTQ Solutionのメンバーは非常に若くエネルギッシュです。これからより成長をしていく彼らと仕事ができ、すでに協業できていることに大変嬉しく思います。"
+
+#: 
+msgid "BIT2BYTE_CUSTOMER_NAME"
+msgstr "Asuka Inoue"
+
+#: 
+msgid "BIT2BYTE_CUSTOMER_POSITION"
+msgstr "CEO, Bit2Byte,Inc., Japan"
+
+#: 
+msgid "BIT2BYTE_CUSTOMER_REVIEW"
+msgstr "海外との取引は初めてで不安もありましたが、毎度納得するものをスピーディに提供していただく事で徐々に信頼度が増していきました。日本人独特の感覚にも合わせていただき、コミュニケーションでも不満を感じた事は一度もありません。コストも安く成果物には後々運用で苦労しないような細かな気配りが見えとても満足しています。"
+
+#: 
+msgid "DOMAINS"
+msgstr "NTQのサービス"
+
+#: 
+msgid "DOMAINS_SLOGAN"
+msgstr ""
+
+#: 
+msgid "SOFTWARE_OUTSOURCING"
+msgstr "ソフトウェアアウトソーシング"
+
+#: 
+msgid "SOFTWARE_OUTSOURCING_DESC"
+msgstr "コストが低いは当たり前。<br>NTQは品質で勝負しています。"
+
+#: 
+msgid "LEARN_MORE"
+msgstr "詳しくはこちら"
+
+#: 
+msgid "SOLUTIONS_CONSULTANCY"
+msgstr "ソリューションコンサルタント"
+
+#: 
+msgid "SOLUTIONS_CONSULTANCY_DESC"
+msgstr "最新技術とともに”無料”でお伺いします。"
+
+#: 
+msgid "GRAPHIC_DESIGN"
+msgstr "グラフィックデザイン"
+
+#: 
+msgid "GRAPHIC_DESIGN_DESC"
+msgstr "技術のみならずデザインも。<br>ワンストップサービスを実現しています。"
+
+#: 
+msgid "MOBILE_APP"
+msgstr "モバイルアプリ"
+
+#: 
+msgid "WEB_APP"
+msgstr "Webアプリ"
+
+#: 
+msgid "EMBEDDED_SOFTWARE"
+msgstr "組み込み<br>ソフトウェア"
+
+#: 
+msgid "HEALTHCARE_SOFTWARE"
+msgstr "医療系<br>ソフトウェア"
+
+#: 
+msgid "SYSTEM_INTEGRATION"
+msgstr "システム<br>インテグレーション"
+
+#: 
+msgid "ENTERPRISE_APPLICATION"
+msgstr "業務系アプリ"
+
+#: 
+msgid "CLOUDBASED_SOFTWARE"
+msgstr "クラウドベース<br>ソフトウェア"
+
+#: 
+msgid "ECOMMERCE_SOFTWARE"
+msgstr "Eコマース<br>ソフトウェア"
+
+#: 
+msgid "WHO_IS_NTQ"
+msgstr "<span class=\"text-green\">NTQ Solution</span>とは？"
+
+#: 
+msgid "WHO_IS_NTQ_DESC"
+msgstr "NTQ Solutionは、モバイルアプリやWebアプリなどのオフショア開発サービスを提供しているベトナムのソフトウェアアウトソーシング会社です。"
+
+#: 
+msgid "WHY_NTQ_PLAIN"
+msgstr "NTQの強みとは？"
+
+#: 
+msgid "WHO_IS_NTQ_PLAIN"
+msgstr "NTQとは？"
+
+#: 
+msgid "DOWNLOADS_HEADING"
+msgstr "登録不要でダウンロードいただけます。<br>プロファイルや過去の開発案件など、お気軽にご覧ください。"
+
+#: 
+msgid "RELATED_NEWS"
+msgstr "関連ニュース"
+
+#: 
+msgid "OLDER_POSTS"
+msgstr "過去のニュースはこちら"
+
+#: 
+msgid "CONTACT_IN_HANOI"
+msgstr "本社"
+
+#: 
+msgid "CONTACT_IN_HANOI_ADDRESS"
+msgstr "6th Floor, Sudico Building (HH3) Me Tri Street<br>Nam Tu Liem District Hanoi City, Vietnam"
+
+#: 
+msgid "CONTACT_IN_JAPAN"
+msgstr "在日の代表者"
+
+#: 
+msgid "CONTACT_IN_JAPAN_ADDRESS"
+msgstr "〒150-0043東京都渋谷区道玄坂1-20-2<br>アライアンスビル渋谷壱番館5F"
+
+#: 
+msgid "CONTACT_DESC"
+msgstr "弊社に関するご質問、お見積り、コンサルティング、全て無料で承っております。<br><br>どんなことでも結構ですので、お気軽にご連絡下さい。後日担当者よりご連絡させていただきます。"
+
+#: 
+msgid "NAME"
+msgstr "お名前"
+
+#: 
+msgid "EMAIL_ADDRESS"
+msgstr "メールアドレス"
+
+#: 
+msgid "SUBJECT"
+msgstr "件名"
+
+#: 
+msgid "MESSAGE_CONTENT"
+msgstr "内容"
+
+#: 
+msgid "ODC"
+msgstr "ラボ型契約（ODC契約）"
+
+#: 
+msgid "ODC_DESC"
+msgstr "お客様専用の開発チームを海外の開発会社内に作り、<br>その期間に対して費用が発生する契約です。"
+
+#: 
+msgid "RECOMMENDED"
+msgstr "こんな方におすすめ！"
+
+#: 
+msgid "ODC_RECOMMENDED_1"
+msgstr "・開発案件が複数あり、定期的に発注したい"
+
+#: 
+msgid "ODC_RECOMMENDED_2"
+msgstr "・仕様が定まっておらず、柔軟に開発をしたい"
+
+#: 
+msgid "ADVANTAGES"
+msgstr "メリット"
+
+#: 
+msgid "ODC_ADVANTAGE_1"
+msgstr "・優秀な人材（特にリーダー）の確保"
+
+#: 
+msgid "ODC_ADVANTAGE_2"
+msgstr "・ノウハウを蓄積しやすい"
+
+#: 
+msgid "PROJECT_BASED"
+msgstr "プロジェクトベース契約"
+
+#: 
+msgid "PROJECT_BASED_DESC"
+msgstr "開発案件にかかる時間及び対応工数に基づいて対価が発生する契約です。"
+
+#: 
+msgid "PROJECT_BASED_RECOMMENDED_1"
+msgstr "・要件や仕様がすでに定まっている"
+
+#: 
+msgid "PROJECT_BASED_RECOMMENDED_2"
+msgstr "・開発が短期間で終了する予定である"
+
+#: 
+msgid "PROJECT_BASED_ADVANTAGE_1"
+msgstr "・必要な実装に基づく費用で済み、コストや時間に無駄がない"
+
+#: 
+msgid "MOBILE_APPLICATION_DEVELOPMENT"
+msgstr "モバイルアプリケーション開発"
+
+#: 
+msgid "MOBILE_APPLICATION_DEVELOPMENT_DESC"
+msgstr "約50社が諦めたアイディアを実現したことも。"
+
+#: 
+msgid "MOBILE_APPLICATION_DEVELOPMENT_EXPLAIN"
+msgstr "現在までSNS、エンターテイメント、ユーティリティなど様々な分野において、50以上のご案件を担当して参りました。開発者のほとんどは3年から6年の開発経験があり、シニア開発者に関して7年から10年ほどの経験がございます。現在までには、50社が受注を断り続けたアイディアを実現したことや、20人以上の開発者をアサインし成し遂げたご案件もあり、モバイルアプリ開発は弊社の強みであると自負しております。"
+
+#: 
+msgid "DOWNLOAD_IOS_PROFILE"
+msgstr ""
+
+#: 
+msgid "DOWNLOAD_ANDROID_PROFILE"
+msgstr ""
+
+#: 
+msgid "MOBILE_APPLICATION_DEVELOPMENT_IOS_HEADING"
+msgstr ""
+
+#: 
+msgid "MOBILE_APPLICATION_DEVELOPMENT_IOS_DESC"
+msgstr ""
+
+#: 
+msgid "MOBILE_APPLICATION_DEVELOPMENT_TECH"
+msgstr ""
+
+#: 
+msgid "MOBILE_APPLICATION_DEVELOPMENT_ANDROID_HEADING"
+msgstr ""
+
+#: 
+msgid "MOBILE_APPLICATION_DEVELOPMENT_ANDROID_DESC"
+msgstr ""
+
+#: 
+msgid "MOBILE_APPLICATION_DEVELOPMENT_ANDROID_TECH"
+msgstr ""
+
+#: 
+msgid "WEB_APPLICATION_DEVELOPMENT"
+msgstr "Webアプリケーション開発"
+
+#: 
+msgid "WEB_APPLICATION_DEVELOPMENT_DESC"
+msgstr "ラボ契約数No.1の分野です。"
+
+#: 
+msgid "WEB_APPLICATION_DEVELOPMENT_EXPLAIN"
+msgstr "SNSやオンラインサービスなどをはじめとする様々な分野において、現在まで約40のご案件を開発して参りました。その中では20人のエンジニアがアサインされたご案件もあり、長期間のプロジェクトにおいても遂行する能力があると自負しております。また、全てのブラウザや希望のデバイスに対応出来るウェブアプリのデザインはもちろん、展開案の作成や開発計画などのサービスも提供しており、弊社のもう一つの強みであると考えております。"
+
+#: 
+msgid "WEB_APPLICATION_DEVELOPMENT_LANGUAGES"
+msgstr ""
+
+#: 
+msgid "WEB_APPLICATION_DEVELOPMENT_TECH"
+msgstr ""
+
+#: 
+msgid "CLOUDBASED_SOFTWARE_DEVELOPMENT"
+msgstr "クラウドベースアプリケーション開発"
+
+#: 
+msgid "CLOUDBASED_SOFTWARE_DEVELOPMENT_DESC"
+msgstr "大企業からのご案件を設計から運用まで。"
+
+#: 
+msgid "CLOUDBASED_SOFTWARE_DEVELOPMENT_EXPLAIN"
+msgstr "弊社では東証一部上場企業からのご案件を通して、多くのクラウドベースアプリ開発の設計からテスト、保守運用までを担当して参りました。これらの経験を活かし、Microsoft Azure、Google App Engine、サービス（PaaS）などの他のプラットフォームを用いて開発して参ります。"
+
+#: 
+msgid "ENTERPRISE_APPLICATION_DEVELOPMENT"
+msgstr "業務系アプリケーション開発"
+
+#: 
+msgid "ENTERPRISE_APPLICATION_DEVELOPMENT_DESC"
+msgstr "様々な業界のアプリに対応可能です。"
+
+#: 
+msgid "ENTERPRISE_APPLICATION_DEVELOPMENT_EXPLAIN"
+msgstr "現在まで、金融系、物流系、人材系、教育系、などをはじめとする、様々な分野におけるエンタープライズアプリを開発して参りました。ビジネスプロセスの効率性向上と運用コストの節約を実現し、従業員と顧客の満足度を高め、ビジネス上のより良い意思決定をサポート致します。"
+
+#: 
+msgid "ECOMMERCE_SOFTWARE_DEVELOPMENT"
+msgstr "Eコマースソフトウェア開発"
+
+#: 
+msgid "ECOMMERCE_SOFTWARE_DEVELOPMENT_EXPLAIN"
+msgstr "Blog管理のためにCMSを選ぶこと、記事とプレスリリースの作成といったことはもちろん、マーケティングとアップセル機能、SEO機能、セキュリティ、オンライン決済、などの必要な機能も開発できます。モバイルデバイスのユーザーをメインにアクセスを集めたい場合は、モバイルに特化したEコマースアプリの開発も可能です。"
+
+#: 
+msgid "HEALTHCARE_SOFTWARE_DEVELOPMENT"
+msgstr "医療系ソフトウェア開発"
+
+#: 
+msgid "HEALTHCARE_SOFTWARE_DEVELOPMENT_DESC"
+msgstr "あの大手日系カメラメーカーの案件開発経験があります。"
+
+#: 
+msgid "HEALTHCARE_SOFTWARE_DEVELOPMENT_EXPLAIN"
+msgstr "弊社のメンバーは医療業界のソフトウェアプロジェクト開発に関して、５年以上の経験があり、過去、日本の某一流企業の医療関係のソフトウェアプロジェクトに参加させていただきました。特に私たちは医療画像の処理、可視化、分析に精通しており、お客様の可視化へのご要望に基づいて、医療画像の定量的な分析ができます。"
+
+#: 
+msgid "EMBEDDED_SOFTWARE_DEVELOPMENT"
+msgstr "組み込みソフトウェア"
+
+#: 
+msgid "EMBEDDED_SOFTWARE_DEVELOPMENT_DESC"
+msgstr "他社では見られないR&D事業で技術力を培ってきました。"
+
+#: 
+msgid "EMBEDDED_SOFTWARE_DEVELOPMENT_EXPLAIN"
+msgstr "NTQソリューションでは、コンセプト開発、設計、実装を含めて組み込みソフトウェア開発サービスを提供しています。8ビットマイクロチップ、知能センサー、LPF、カルマンフィルタ、PIDコントローラやそのほか様々な組み込み開発の経験を活かして、完璧な機能を持ったシステムを目指しています。"
+
+#: 
+msgid "SYSTEM_INTEGRATION_DESC"
+msgstr "ハイスピードで高いパフォーマンスを実現することは私たちの使命です。"
+
+#: 
+msgid "SYSTEM_INTEGRATION_EXPLAIN"
+msgstr "システムインテグレーションにおける技術者たちは、ソフトウェア工学、インターフェースプロトコル、問題解決能力などのスキルを持ち、プロジェクトにおける困難な課題に対応できます。また、ITサービス管理システムアプリケーションの統合を可能にする、ミドルウェアも開発可能です。"
+
+#: 
+msgid "ECOMMERCE_SOFTWARE_DEVELOPMENT_DESC"
+msgstr "ユニークで持続可能なオンラインビジネスを。"
+
+#: 
+msgid "RESEARCH_AND_DEVELOPMENT"
+msgstr "Research & Development"
+
+#: 
+msgid "WHY_R&D"
+msgstr "<span class=\"text-green\">Why</span> R&D?"
+
+#: 
+msgid "WHY_R&D_EXPLAIN"
+msgstr "全てを自分たちで開発することで、開発者の夢を追いかけています。"
+
+#: 
+msgid "WHY_R&D_REASON_1"
+msgstr "技術を勉強することで、より技術に精通するため"
+
+#: 
+msgid "WHY_R&D_REASON_1_EXPLAIN"
+msgstr "NTQとしての技術力をより地盤から固めたい、という思いのもと、R&Dを行っています。そのためにNASAの設計図を研究するなど、開発を通してナレッジを蓄えております。"
+
+#: 
+msgid "WHY_R&D_REASON_2"
+msgstr "開発部門をサポートするため"
+
+#: 
+msgid "WHY_R&D_REASON_2_EXPLAIN"
+msgstr "完全に独立した部署ではなく、時にはR&Dメンバーが開発のサポートに入ることもあります。過去には持前の技術力を生かし、難易度の高いご案件を遂行したこともあります。"
+
+#: 
+msgid "AIR_DRONE"
+msgstr "高機能ラジコン飛行機"
+
+#: 
+msgid "AIR_DRONE_DESC"
+msgstr "自動バランス機能や自動操作機能、ビデオストリーミング機能などをゼロから開発しました。"
+
+#: 
+msgid "GECKO"
+msgstr "高層ビル清掃ロボット"
+
+#: 
+msgid "GECKO_DESC"
+msgstr "高層ビルの掃除には危険とコストが伴うことに注目し、ヤモリの動きを再現した清掃ロボットを開発しました。"
+
+#: 
+msgid "GUIDEBOT"
+msgstr "会社案内ロボット"
+
+#: 
+msgid "GUIDEBOT_DESC"
+msgstr "弊社のビルのエントランスからオフィスまで案内をしてくれるロボットを開発しました。"
+
+#: 
+msgid "CRAZY_TEAM"
+msgstr "Crazy Team"
+
+#: 
+msgid "CRAZY_TEAM_DESC"
+msgstr "R&Dのチームは“Crazy team”と社内では呼ばれています。大きな夢を抱き、時には突拍子もない発想で、面白いアイディアを出し続けることができるからです。"
+
+#: 
+msgid "R&D_OFFER"
+msgstr "現在、情報共有や研究活動のサポートをしていただけるパートナーを探しております。<br><br>ご興味をお持ちの方がおられましたら、お気軽にご連絡ください。"
+
+#: 
+msgid "SOFTWARE_OUTSOURCING_SERVICE"
+msgstr "ソフトウェア・アウトソーシング・サービス"
+
+#: 
+msgid "SOFTWARE_OUTSOURCING_SERVICE_DESC"
+msgstr "コストが低いは当たり前。NTQは品質で勝負しています。"
+
+#: 
+msgid "SOFTWARE_OUTSOURCING_SERVICE_EXPLAIN"
+msgstr ""
+
+#: 
+msgid "SOFTWARE_OUTSOURCING_SERVICE_LIST"
+msgstr ""
+
+#: 
+msgid "SOFTWARE_OUTSOURCING_SERVICE_ITEM_1"
+msgstr ""
+
+#: 
+msgid "SOFTWARE_OUTSOURCING_SERVICE_ITEM_2"
+msgstr ""
+
+#: 
+msgid "SOFTWARE_OUTSOURCING_SERVICE_ITEM_3"
+msgstr ""
+
+#: 
+msgid "SOFTWARE_OUTSOURCING_SERVICE_ITEM_4"
+msgstr ""
+
+#: 
+msgid "SOFTWARE_SOLUTIONS_CONSULTANCY_FOR_FREE"
+msgstr "ソフトウェア・ソリューション・コンサルタンティング・サービス"
+
+#: 
+msgid "SOFTWARE_SOLUTIONS_CONSULTANCY_FOR_FREE_DESC"
+msgstr "最新技術とともに”無料”でお伺いします。"
+
+#: 
+msgid "SOFTWARE_SOLUTIONS_CONSULTANCY_FOR_FREE_EXPLAIN"
+msgstr "過去には30社以上が受注を断り続けたアイディアを開発したこともあります。その背景には最新の技術を常に追い続け、学び続ける姿勢があったためです。何か実現したいアイディアはございませんか？無料でお客様の「困った」を解決致します。"
+
+#: 
+msgid "WEB_APP_GRAPHIC_DESIGN"
+msgstr "グラフィック・デザイン・サービス"
+
+#: 
+msgid "WEB_APP_GRAPHIC_DESIGN_DESC"
+msgstr "技術のみならずデザインも。ワンストップサービスを実現しています。"
+
+#: 
+msgid "WEB_APP_GRAPHIC_DESIGN_EXPLAIN"
+msgstr "グラフィックデザイナーチームは約10年間の経験を持ち、日本だけでなく海外向けのデザインも制作しています。ウェブ、モバイル、デスクトップアプリなど総合的なグラフィックデザインに対応しており、多様なデバイスに対応できるよう、レスポンシブウェブデザインにも対応可能です。"
+
+#: 
+msgid "SYSTENA"
+msgstr "東証一部上場企業のクラウド案件、成功の後、全てを担当することに"
+
+#: 
+msgid "SYSTENA_DESC"
+msgstr "日本の株式会社システナのクラウドシステムの開発事例"
+
+#: 
+msgid "SYSTENA_EXPLAIN"
+msgstr ""
+
+#: 
+msgid "THE_CHANLLENGE"
+msgstr "チャンレジ"
+
+#: 
+msgid "SYSTENA_CHANLLENGE_1"
+msgstr ""
+
+#: 
+msgid "SYSTENA_CHANLLENGE_2"
+msgstr ""
+
+#: 
+msgid "COMPETITION"
+msgstr ""
+
+#: 
+msgid "SYSTENA_COMPETITION"
+msgstr ""
+
+#: 
+msgid "SOLUTION"
+msgstr ""
+
+#: 
+msgid "SYSTENA_SOLUTION"
+msgstr ""
+
+#: 
+msgid "RESULT"
+msgstr ""
+
+#: 
+msgid "SYSTENA_RESULT"
+msgstr ""
+
+#: 
+msgid "ROI"
+msgstr ""
+
+#: 
+msgid "ROI_DESC"
+msgstr ""
+
+#: 
+msgid "ROI_EXPLAIN"
+msgstr ""
+
+#: 
+msgid "ROI_CHANLLENGE_1"
+msgstr ""
+
+#: 
+msgid "ROI_CHANLLENGE_2"
+msgstr ""
+
+#: 
+msgid "ROI_COMPETITION"
+msgstr ""
+
+#: 
+msgid "ROI_SOLUTION"
+msgstr ""
+
+#: 
+msgid "ROI_RESULT"
+msgstr ""
+
+#: 
+msgid "LEARN_MORE_ABOUT_OUR_PROJECTS"
+msgstr ""
+
+#: 
+msgid "IT_SHERPA"
+msgstr ""
+
+#: 
+msgid "IT_SHERPA_DESC"
+msgstr ""
+
+#: 
+msgid "IT_SHERPA_EXPLAIN"
+msgstr ""
+
+#: 
+msgid "IT_SHERPA_CHANLLENGE_1"
+msgstr ""
+
+#: 
+msgid "IT_SHERPA_CHANLLENGE_2"
+msgstr ""
+
+#: 
+msgid "IT_SHERPA_SOLUTION"
+msgstr ""
+
+#: 
+msgid "IT_SHERPA_RESULT"
+msgstr ""
+
+#: 
+msgid "SPICY_CINNAMON"
+msgstr ""
+
+#: 
+msgid "SPICY_CINNAMON_DESC"
+msgstr ""
+
+#: 
+msgid "SPICY_CINNAMON_EXPLAIN"
+msgstr ""
+
+#: 
+msgid "SPICY_CINNAMON_CHANLLENGE_1"
+msgstr ""
+
+#: 
+msgid "SPICY_CINNAMON_CHANLLENGE_2"
+msgstr ""
+
+#: 
+msgid "SPICY_CINNAMON_SOLUTION_1"
+msgstr ""
+
+#: 
+msgid "SPICY_CINNAMON_SOLUTION_2"
+msgstr ""
+
+#: 
+msgid "SPICY_CINNAMON_SOLUTION_3"
+msgstr ""
+
+#: 
+msgid "SPICY_CINNAMON_RESULT"
+msgstr ""
+
+#: 
+msgid "SPICY_CINNAMON_SOLUTION_LIST"
+msgstr ""
+

@@ -1,7 +1,7 @@
 {
 	"js": {
 		"build/out/js/home.js": [
-			"bower_components/di-linker/browser/dist/di-linker.standalone.min.js",
+			"bower_components/di-linker/dist/di-linker.standalone.min.js",
 			"bower_components/ractive/ractive.min.js",
 			"bower_components/jquery/dist/jquery.min.js",
 			"bower_components/tween.js/build/tween.min.js",
@@ -10,7 +10,7 @@
 			"app/public/js/bootstrap.js"
 		],
 		"build/out/js/articles.js": [
-			"bower_components/di-linker/browser/dist/di-linker.standalone.min.js",
+			"bower_components/di-linker/dist/di-linker.standalone.min.js",
 			"bower_components/ractive/ractive.min.js",
 			"bower_components/jquery/dist/jquery.min.js",
 			"app/public/js/articles/**/*.js",

@@ -1,12 +1,15 @@
 ;(function(di) {
 	'use strict';
 
-	di.register('/home', [
-		'@lodash',
-		'@jquery',
-		'/layout',
-		'/home/navigator',
-		function(_, $, Layout, navigator) {
+	di.register({
+		name: '/main',
+		requires: [
+			'@lodash',
+			'@jquery',
+			'/layout',
+			'/home/navigator'
+		],
+		factory: function(_, $, Layout, navigator) {
 			var layout = new Layout({
 				paddingTop: $('.site-header').height(),
 				sections: $('.page-full .page-section'),
@@ -34,7 +37,10 @@
 			navigator.on('section.selected', function(index) {
 				layout.select(index);
 			});
-		}
-	], true);
+		},
+		activations: [
+			'/frame'
+		]
+	});
 
 })(__('ntq'));

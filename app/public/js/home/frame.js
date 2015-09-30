@@ -1,7 +1,7 @@
 ;(function(di) {
 	'use strict';
 
-	di.register('/frame', [
+	di.factory('/frame', [
 		'@tween',
 		function(TWEEN) {
 			function animate(time) {
@@ -12,5 +12,5 @@
 
 			animate();
 		}
-	], true);
+	]);
 })(__('ntq'));

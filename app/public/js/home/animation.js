@@ -1,9 +1,9 @@
 ;(function(di) {
 	'use strict';
 
-	di.register('/animation', [
+	di.factory('/animation', [
 		'@tween',
-		'@promise',
+		'@bluebird',
 		function(TWEEN, Promise) {
 			var self = {};
 

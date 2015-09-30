@@ -1,10 +1,10 @@
 ;(function(di) {
 	'use strict';
 
-	di.register('/layout', [
+	di.factory('/layout', [
 		'@lodash',
 		'@jquery',
-		'@promise',
+		'@bluebird',
 		'@hammer',
 		'/animation',
 		'/home/navigator',

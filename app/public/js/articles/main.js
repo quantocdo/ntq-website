@@ -1,7 +1,7 @@
 ;(function(di) {
 	'use strict';
 
-	di.register('/view', [
+	di.factory('/view', [
 		'@ractive',
 		'/article',
 		function(Ractive, Article) {
@@ -59,9 +59,9 @@
 		}
 	]);
 
-	di.register('/article', [
+	di.factory('/article', [
 		'@jquery',
-		'@promise',
+		'@bluebird',
 		function($, Promise) {
 			var self = {};
 
@@ -82,13 +82,13 @@
 		}
 	]);
 
-	di.register('/main', [
+	di.factory('/main', [
 		'/view',
 		function(view) {
 			view.fire('articles.loadmore');
 		}
-	], true);
+	]);
 
-	di.register('@ractive', window.Ractive)
-			.register('@jquery', window.jQuery);
+	di.value('@ractive', window.Ractive)
+			.value('@jquery', window.jQuery);
 })(__('ntq'));
