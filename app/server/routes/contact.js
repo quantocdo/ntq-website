@@ -1,12 +1,12 @@
 'use strict';
 
-exports._ = '/routes/contact';
-exports._requires = [
+exports.name = '/routes/contact';
+exports.requires = [
 	'/app',
 	'/routes/shortcut',
 	'/middlewares/contact'
 ];
-exports._factory = function(app, shortcut, logic) {
+exports.factory = function(app, shortcut, logic) {
 	var render = shortcut.render;
 
 	app._route('contact', '/contact')

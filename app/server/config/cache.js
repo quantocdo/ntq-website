@@ -1,7 +1,7 @@
 'use strict';
 
-exports._ = '/config/cache';
-exports._factory = function() {
+exports.name = '/config/cache';
+exports.factory = function() {
 	var storage = {};
 	var self = {};
 

@@ -1,11 +1,11 @@
 'use strict';
 
-exports._ = '/routes/static';
-exports._requires = [
+exports.name = '/routes/static';
+exports.requires = [
 	'/app',
 	'/routes/shortcut',
 ];
-exports._factory = function(app, shortcut) {
+exports.factory = function(app, shortcut) {
 	var render = shortcut.render;
 
 	app._get('about', '/about', render('pages/about'));

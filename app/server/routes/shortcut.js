@@ -1,7 +1,7 @@
 'use strict';
 
-exports._ = '/routes/shortcut';
-exports._factory = function() {
+exports.name = '/routes/shortcut';
+exports.factory = function() {
 	var self = {};
 
 	self.render = function(template) {

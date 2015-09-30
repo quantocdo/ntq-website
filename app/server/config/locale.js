@@ -1,7 +1,7 @@
 'use strict';
 
-exports._ = '/config/locale';
-exports._requires = [
+exports.name = '/config/locale';
+exports.requires = [
 	'@lodash',
 	'@i18n',
 	'@path',
@@ -9,7 +9,7 @@ exports._requires = [
 	'/config/express',
 	'/config/profile',
 ];
-exports._factory = function(_, i18n, path, moment, app, profile) {
+exports.factory = function(_, i18n, path, moment, app, profile) {
 	i18n.configure({
 		locales: ['en', 'ja'],
 		defaultLocale: 'en',

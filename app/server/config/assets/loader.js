@@ -1,13 +1,13 @@
 'use strict';
 
-exports._ = '/config/assets/loader';
-exports._requires = [
+exports.name = '/config/assets/loader';
+exports.requires = [
 	'@lodash',
 	'@bluebird',
 	'@glob',
 	'@path'
 ];
-exports._factory = function(_, Promise, glob, path) {
+exports.factory = function(_, Promise, glob, path) {
 	function walk(cwd, pattern) {
 		var fullPath = path.resolve(cwd, pattern);
 

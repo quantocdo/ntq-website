@@ -1,10 +1,10 @@
 'use strict';
 
-exports._ = '/models/category';
-exports._requires = [
+exports.name = '/models/category';
+exports.requires = [
 	'/config/db'
 ];
-exports._factory = function(db) {
+exports.factory = function(db) {
 	var CategorySchema = new db.Schema({
 		name: {},
 		enabled: {

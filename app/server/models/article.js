@@ -1,11 +1,11 @@
 'use strict';
 
-exports._ = '/models/article';
-exports._requires = [
+exports.name = '/models/article';
+exports.requires = [
 	'/config/db',
 	'@moment'
 ];
-exports._factory = function(db, moment) {
+exports.factory = function(db, moment) {
 	var ArticleSchema = new db.Schema({
 		heading: {
 			type: String,

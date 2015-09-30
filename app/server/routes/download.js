@@ -1,12 +1,12 @@
 'use strict';
 
-exports._ = '/routes/download';
-exports._requires = [
+exports.name = '/routes/download';
+exports.requires = [
 	'/app',
 	'/routes/shortcut',
 	'/middlewares/download'
 ];
-exports._factory = function(app, shortcut, folder) {
+exports.factory = function(app, shortcut, folder) {
 	var render = shortcut.render;
 
 	app._get('download', '/download',

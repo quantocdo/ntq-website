@@ -1,12 +1,12 @@
 'use strict';
 
-exports._ = '/routes/articles';
-exports._requires = [
+exports.name = '/routes/articles';
+exports.requires = [
 	'/app',
 	'/middlewares/articles',
 	'/routes/shortcut',
 ];
-exports._factory = function(app, articles, shortcut) {
+exports.factory = function(app, articles, shortcut) {
 	app._get('articles', '/articles',
 			articles.highlightedArticles(5),
 			shortcut.render('pages/articles'));

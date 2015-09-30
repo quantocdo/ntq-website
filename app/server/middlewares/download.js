@@ -1,13 +1,13 @@
 'use strict';
 
-exports._ = '/middlewares/download';
-exports._requires = [
+exports.name = '/middlewares/download';
+exports.requires = [
 	'@path',
 	'@bluebird',
 	'/models/folder',
 	'/config/profile'
 ];
-exports._factory = function(path, Promise, Folder, profile) {
+exports.factory = function(path, Promise, Folder, profile) {
 	var self = {};
 	var uploadDir = path.resolve(profile._root, profile.upload.doc);
 

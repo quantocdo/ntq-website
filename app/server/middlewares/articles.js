@@ -1,11 +1,11 @@
 'use strict';
 
-exports._ = '/middlewares/articles';
-exports._requires = [
+exports.name = '/middlewares/articles';
+exports.requires = [
 	'@bluebird',
 	'/models/article'
 ];
-exports._factory = function(Promise, Article) {
+exports.factory = function(Promise, Article) {
 	var self = {};
 
 	self.identify = function(identifier) {

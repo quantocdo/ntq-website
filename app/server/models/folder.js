@@ -1,12 +1,12 @@
 'use strict';
 
-exports._ = '/models/folder';
-exports._requires = [
+exports.name = '/models/folder';
+exports.requires = [
 	'@path',
 	'/config/db'
 ];
 
-exports._factory = function(path, db) {
+exports.factory = function(path, db) {
 	var FileShema = new db.Schema({
 		name: {},
 		identifier: {

@@ -1,22 +1,23 @@
 'use strict';
 
-exports._ = '/config/assets/helper';
-exports._requires = [
+exports.name = '/config/assets/helper';
+exports.requires = [
 	'@lodash',
 	'@path',
 	'@assets-locator',
-	'/config/profile'
+	'/config/profile',
+	'#require'
 ];
-exports._factory = function(_, path, locator, profile) {
+exports.factory = function(_, path, locator, profile, require) {
 	var rev = {};
 	var assets = {};
 	if (profile.assets.rev) {
-		rev = this._require('./build/out/rev.json');
+		rev = require('./build/out/rev.json');
 	}
 
 	return locator.execute({
 		cwd: path.resolve(profile._root, '../..'),
-		assets: this._require('./build/assets.json').js,
+		assets: require('./build/assets.json').js,
 		prefix: '/'
 	}).then(function(result) {
 		_.forEach(result, function(files, key) {

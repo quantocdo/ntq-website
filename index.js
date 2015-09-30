@@ -6,6 +6,6 @@ var src = [
 	path.resolve(__dirname, 'app/server/**/*.js')
 ];
 
-linker(src, require)
-		.bootstrap('/')
-		.on('error', console.error.bind(console));
+linker(src, require).then(function(context) {
+	return context.bootstrap(['/']);
+}).catch(console.error.bind(console));

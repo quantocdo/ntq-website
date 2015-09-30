@@ -1,11 +1,11 @@
 'use strict';
 
-exports._ = '/middlewares/contact';
-exports._requires = [
+exports.name = '/middlewares/contact';
+exports.requires = [
 	'/models/message',
 	'/config/mail'
 ];
-exports._factory = function(Message, mail) {
+exports.factory = function(Message, mail) {
 	var self = {};
 
 	self.create = function(req, res, next) {

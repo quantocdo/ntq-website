@@ -1,10 +1,10 @@
 'use strict';
 
-exports._ = '/models/message';
-exports._requires = [
+exports.name = '/models/message';
+exports.requires = [
 	'@mongoose'
 ];
-exports._factory = function(db) {
+exports.factory = function(db) {
 	var MessageSchema = new db.Schema({
 		name: {
 			type: String,

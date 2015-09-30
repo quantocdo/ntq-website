@@ -1,12 +1,12 @@
 'use strict';
 
-exports._ = '/app';
-exports._requires = [
+exports.name = '/app';
+exports.requires = [
 	'@lodash',
 	'/config/express',
 	'/config/profile',
 ];
-exports._activations = [
+exports.activations = [
 	'/routes/home',
 	'/routes/articles',
 	'/routes/download',
@@ -14,7 +14,7 @@ exports._activations = [
 	'/routes/static',
 	'/routes/error'
 ];
-exports._factory = function(_, app, profile) {
+exports.factory = function(_, app, profile) {
 	app.use(function(req, res, next) {
 		res.locals._profile = profile;
 		res.locals._environment = profile._environment;
