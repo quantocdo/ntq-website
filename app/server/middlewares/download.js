@@ -28,7 +28,7 @@ exports.factory = function(path, Promise, Folder, profile) {
 	self.download = function(req, res, next) {
 		var folderId = req.params.folderId;
 		var fileId = req.params.fileId;
-		var locale = res.locals.locale;
+		var locale = res.locals._locale;
 
 		var query = Folder.findById(folderId);
 

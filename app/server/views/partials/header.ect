@@ -46,7 +46,7 @@
 				</li>
 			</ul>
 			<div class="top-actions clearfix">
-				<a href="http://jp.ntq-solution.com.vn" class="language-switch ja pull-right"></a>
+				<a href="<%= @_profile.domain.protocol %>://<%= @_anotherLocaleDomain %>" class="language-switch pull-right <%= @_anotherLocale %>"></a>
 				<a href="<%= @_url('contact') %>" class="contact pull-right"><%- @__('CONTACT') %></a>
 			</div>
 		</div>

@@ -4,8 +4,12 @@ exports.name = '/routes/shortcut';
 exports.factory = function() {
 	var self = {};
 
-	self.render = function(template) {
+	self.render = function(template, dependOnLocale) {
 		return function(req, res, next) {
+			if (dependOnLocale) {
+				return res.render(template + '_' + res.locals._locale);
+			}
+
 			res.render(template);
 		};
 	};

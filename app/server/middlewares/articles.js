@@ -11,7 +11,7 @@ exports.factory = function(Promise, Article) {
 	self.identify = function(identifier) {
 		return function(req, res, next) {
 			var id = req.params[identifier];
-			var language = res.locals.locale;
+			var language = res.locals._locale;
 
 			var query = Article.findOne({
 				_id: id,
@@ -35,7 +35,7 @@ exports.factory = function(Promise, Article) {
 
 	self.relatedArticles = function(req, res, next) {
 		var article = res.locals._article;
-		var language = res.locals.locale;
+		var language = res.locals._locale;
 
 		var query = Article.find({
 			_id: {
@@ -57,7 +57,7 @@ exports.factory = function(Promise, Article) {
 
 	self.highlightedArticles = function(take) {
 		return function(req, res, next) {
-			var language = res.locals.locale;
+			var language = res.locals._locale;
 
 			var query = Article.find({
 				enabled: true,
@@ -76,7 +76,7 @@ exports.factory = function(Promise, Article) {
 	};
 
 	self.query = function(req, res, next) {
-		var language = res.locals.locale;
+		var language = res.locals._locale;
 		var limit = req.query.limit;
 		var skip = req.query.skip;
 

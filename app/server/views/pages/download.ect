@@ -9,7 +9,7 @@
 <% block 'page_flow': %>
 
 <div class="page-title text-center text-upper">
-	<span><%- @__('DOWNLOADS') %>Downloads</span>
+	<span><%- @__('DOWNLOADS') %></span>
 </div>
 
 <div class="section-batch-download">
@@ -28,7 +28,7 @@
 				<div class="col-4">
 					<div class="folder <% if (index % 2 == 0): %>even<% else: %>odd<% end %>">
 						<div class="heading text-upper text-center">
-							<span><%= folder.name[@locale] %></span>
+							<span><%= folder.name[@_locale] %></span>
 						</div>
 						<ul class="files">
 							<% for file in folder.files: %>
@@ -47,7 +47,7 @@
 								<a href="<%= @_url('download.file', {
 									folderId: folder.id,
 									fileId: file.id
-								}) %>"><%= file.name[@locale] %></a>
+								}) %>"><%= file.name[@_locale] %></a>
 							</li>
 							<% end %>
 						</ul>

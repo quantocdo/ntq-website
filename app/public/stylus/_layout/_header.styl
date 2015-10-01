@@ -34,9 +34,14 @@ $_line_height = $layout_header_h - $_border_width
 			margin-left 15px
 			size 34px
 			margin-top (($layout_header_h - 34px) / 2)
+			background-position center center
+			background-repeat no-repeat
 
 			&.ja
-				background url('../img/flags/japan.png') no-repeat center center
+				background-image url('../img/flags/ja.png')
+
+			&.en
+				background-image url('../img/flags/en.png')
 
 		.contact
 			display block

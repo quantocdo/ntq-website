@@ -9,34 +9,34 @@
 <% block 'page_flow': %>
 
 <div class="page-title text-center text-upper">
-	<span><span class="text-blue">About</span> us</span>
+	<span><%- @__('ABOUT_US_TITLE') %></span>
 </div>
 <div class="site-container fluid section-introduction">
 	<div class="ntq-info-container clearfix">
 		<div class="ntq-info-icon icon-who pull-left"></div>
 		<div class="ntq-info">
 			<div class="heading text-upper">
-				<span><span class="text-blue">who</span> are we?</span>
+				<span><%- @__('ABOUT_US_HEADING_1') %></span>
 			</div>
-			<p class="ntq-info-paragraph">We were labeled 'crazy' when we decided to separate from a bigger firm to form NTQ Solution.<br>With a clear vision and passionate young workforce we have created a family atmosphere at NTQ which fosters innovation and allows us to strive for technological perfection.<br><br>The name NTQ Solution is a result of hours of deliberation:<br>To our honorable customers NTQ stands for 'Next Top Quality' because providing customers with perfection is our company belief.<br><br>To our workforce NTQ means 'Nha Toi Quan' which literally means 'My Family' because we are not just a company, we are one BIG family.</p>
+			<p class="ntq-info-paragraph"><%- @__('ABOUT_US_EXPLAIN_1') %></p>
 		</div>
 	</div>
 	<div class="ntq-info-container clearfix">
 		<div class="ntq-info-icon icon-what pull-left"></div>
 		<div class="ntq-info">
 			<div class="heading text-upper">
-				<span><span class="text-blue">What</span> we do?</span>
+				<span><%- @__('ABOUT_US_HEADING_2') %></span>
 			</div>
-			<p class="ntq-info-paragraph">Here at NTQ we love technology. We do not simply develop basic applications and software. Instead, we carry out thorough investigations and research to provide our customers with the best solutions, both technically and economically.<br><br>At the R&D Centre we have formed a team to develop our own embedded software projects.<br><br>Customers benefit from our services due to the value they will gain from our reasonable costs and the quality of our work. These benefits arise due to our enthusiastic technicians who operate under strict Japanese and Western style operating systems.</p>
+			<p class="ntq-info-paragraph"><%- @__('ABOUT_US_EXPLAIN_2') %></p>
 		</div>
 	</div>
 	<div class="ntq-info-container clearfix">
 		<div class="ntq-info-icon icon-why pull-left"></div>
 		<div class="ntq-info">
 			<div class="heading text-upper">
-				<span><span class="text-blue">Why</span> we are different?</span>
+				<span><%- @__('ABOUT_US_HEADING_3') %></span>
 			</div>
-			<p class="ntq-info-paragraph">Firstly, 'Smart Offshore Development' means that NTQ Solution not only provides coding services but also provides solutions, architectural design and detailed design.<br>By offering this array of services we allow our customers to focus on their business needs while we handle the technological aspect of their business.</p>
+			<p class="ntq-info-paragraph"><%- @__('ABOUT_US_EXPLAIN_3') %></p>
 		</div>
 	</div>
 </div>
@@ -45,70 +45,70 @@
 		<div class="row">
 			<div class="col-8-offset-2">
 				<div class="heading text-center">
-					<span>Each of us is completely different, that’s why we are the most versatile</span>
+					<span><%- @__('NTQ_MEMBER_INTRO') %></span>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="member-container">
 		<div class="member first">
-			<img src="<%= @__assets.img('/members/hoangtv.png') %>" alt="Tran Van Hoang" class="member-picture" width="189" height="441">
+			<img src="<%= @__assets.img('/members/hoangtv.png') %>" alt="<%- @__('TRAN_VAN_HOANG') %>" class="member-picture" width="189" height="441">
 			<div class="biography">
 				<div class="name text-white">
-					<span>Tran Van Hoang</span>
+					<span><%- @__('TRAN_VAN_HOANG') %></span>
 				</div>
 				<div class="position text-green">
-					<span>Sales Manager</span>
+					<span><%- @__('TRAN_VAN_HOANG_POSITION') %></span>
 				</div>
-				<p class="intro text-white text-justify">I received 3rd prize in an International Mathematical Olympiad when I was in high school. Due to this success I was sponsored by the government to study Computer Science in Australia. I then worked for Nokia in Finland for 3 years before joining NTQ.</p>
+				<p class="intro text-white text-justify"><%- @__('TRAN_VAN_HOANG_INFO') %></p>
 			</div>
 		</div>
 		<div class="member second">
-			<img src="<%= @__assets.img('/members/sonth.png') %>" alt="To Hai Son" class="member-picture" width="156" height="437">
+			<img src="<%= @__assets.img('/members/sonth.png') %>" alt="<%- @__('TO_HAI_SON') %>" class="member-picture" width="156" height="437">
 			<div class="biography">
 				<div class="name text-white">
-					<span>To Hai Son</span>
+					<span><%- @__('TO_HAI_SON') %></span>
 				</div>
 				<div class="position text-green">
-					<span>CTO</span>
+					<span><%- @__('TO_HAI_SON_POSITION') %></span>
 				</div>
-				<p class="intro text-white text-justify">I was sponsored by the Vietnamese government to study Computer Science in Russia. After graduation I worked as a technical leader for FPT Software where I managed projects that were ordered by major Japanese companies. I have over 10 years experience in the Japanese outsourcing market.</p>
+				<p class="intro text-white text-justify"><%- @__('TO_HAI_SON_INFO') %></p>
 			</div>
 		</div>
 		<div class="member third">
-			<img src="<%= @__assets.img('/members/sonpt.png') %>" alt="Pham Thai Son" class="member-picture" width="158" height="446">
+			<img src="<%= @__assets.img('/members/sonpt.png') %>" alt="<%- @__('PHAM_THAI_SON') %>" class="member-picture" width="158" height="446">
 			<div class="biography">
 				<div class="name text-white">
-					<span>Pham Thai Son</span>
+					<span><%- @__('PHAM_THAI_SON') %></span>
 				</div>
 				<div class="position text-green">
-					<span>CEO</span>
+					<span><%- @__('PHAM_THAI_SON_POSITION') %></span>
 				</div>
-				<p class="intro text-white text-justify">After graduating from Hanoi National University, one of the most prestigious universities in Vietnam, I joined FPT Software. At FPT I worked as a project manager, managing projects that exceeded 300 man months as ordered by major Japanese firms.</p>
+				<p class="intro text-white text-justify"><%- @__('PHAM_THAI_SON_INFO') %></p>
 			</div>
 		</div>
 		<div class="member fourth">
-			<img src="<%= @__assets.img('/members/soannk.png') %>" alt="Nguyen Kim Soan" class="member-picture" width="102" height="417">
+			<img src="<%= @__assets.img('/members/soannk.png') %>" alt="<%- @__('NGUYEN_KIM_SOAN') %>" class="member-picture" width="102" height="417">
 			<div class="biography">
 				<div class="name text-white">
-					<span>Nguyen Kim Soan</span>
+					<span><%- @__('NGUYEN_KIM_SOAN') %></span>
 				</div>
 				<div class="position text-green">
-					<span>CCO</span>
+					<span><%- @__('NGUYEN_KIM_SOAN_POSITION') %></span>
 				</div>
-				<p class="intro text-white text-justify">Having been sponsored by the Vietnamese government I decided to study Computer Science in Russia where I graduated as one of the top ten students on my course before finally gaining my MBA in 2011. I have almost 10 years experience working directly with Western and Japanese customers.</p>
+				<p class="intro text-white text-justify"><%- @__('NGUYEN_KIM_SOAN_INFO') %></p>
 			</div>
 		</div>
 		<div class="member fifth">
-			<img src="<%= @__assets.img('/members/duongtdq.png') %>" alt="Truong Dao Quy Duong" class="member-picture" width="143" height="445">
+			<img src="<%= @__assets.img('/members/duongtdq.png') %>" alt="<%- @__('TRUONG_DAO_QUY_DUONG') %>" class="member-picture" width="143" height="445">
 			<div class="biography">
 				<div class="name text-white">
-					<span>Truong Dao Quy Duong</span>
+					<span><%- @__('TRUONG_DAO_QUY_DUONG') %></span>
 				</div>
 				<div class="position text-green">
-					<span>Sales Manager</span>
+					<span><%- @__('TRUONG_DAO_QUY_DUONG_POSITION') %></span>
 				</div>
-				<p class="intro text-white text-justify">I lived in Japan for 11 years where I became fluent in Japanese. I graduated from a Japanese graduate school in Public Regional Management before working for a Japanese logistics company. I then began to work for NTQ where I am heavily involved in sales activities related to the Japanese market.</p>
+				<p class="intro text-white text-justify"><%- @__('TRUONG_DAO_QUY_DUONG_INFO') %></p>
 			</div>
 		</div>
 	</div>
@@ -119,9 +119,9 @@
 			<div class="row">
 				<div class="col-6">
 					<div class="heading text-upper text-white">
-						<span>We are a part of you</span>
+						<span><%- @__('ABOUT_US_VIDEO_INTRO') %></span>
 					</div>
-					<p class="explain text-white">Our mission is to become a leading software development company and globally recognized in the IT industry</p>
+					<p class="explain text-white"><%- @__('ABOUT_US_VIDEO_DESC') %></p>
 				</div>
 				<div class="col-5-offset-1">
 					<div class="video-container">
@@ -135,10 +135,10 @@
 <div class="section-goals">
 	<div class="site-container fluid">
 		<div class="heading text-upper">
-			<span>Goals</span>
+			<span><%- @__('GOALS') %></span>
 		</div>
 		<div class="sub-heading text-upper">
-			<span>STRATEGIC GOALS UNTIL END OF 2016</span>
+			<span><%- @__('GOALS_DESC') %></span>
 		</div>
 		<div class="gs">
 			<div class="row goals">
@@ -146,10 +146,10 @@
 					<div class="goal-icon revenue pull-left"></div>
 					<div class="goal-explain">
 						<div class="target-name">
-							<span>Total revenue</span>
+							<span><%- @__('TOTAL_REVENUE') %></span>
 						</div>
 						<div class="target">
-							<span>$2.5 Million</span>
+							<span><%- @__('REVENUE_VALUE') %></span>
 						</div>
 					</div>
 				</div>
@@ -157,10 +157,10 @@
 					<div class="goal-icon human-resource pull-left"></div>
 					<div class="goal-explain">
 						<div class="target-name">
-							<span>Human resources</span>
+							<span><%- @__('HUMAN_RESOURCES') %></span>
 						</div>
 						<div class="target">
-							<span>Over 100 staff</span>
+							<span><%- @__('HUMAN_RESOURCES_VALUE') %></span>
 						</div>
 					</div>
 				</div>
@@ -168,35 +168,35 @@
 			<div class="row sub-goals">
 				<div class="col-6">
 					<div class="heading text-upper">
-						<span>Policy</span>
+						<span><%- @__('POLICY') %></span>
 					</div>
 					<ul class="items">
 						<li class="clearfix">
 							<i class="fa fa-check fa-fw pull-left"></i>
-							<p>Being a family means “Solidarity”.</p>
+							<p><%- @__('POLICY_1') %></p>
 						</li>
 						<li class="clearfix">
 							<i class="fa fa-check fa-fw pull-left"></i>
-							<p>Being engineers, we are “Passionate”.</p>
+							<p><%- @__('POLICY_2') %></p>
 						</li>
 						<li class="clearfix">
 							<i class="fa fa-check fa-fw pull-left"></i>
-							<p>Being partners, we always “Share”.</p>
+							<p><%- @__('POLICY_3') %></p>
 						</li>
 					</ul>
 				</div>
 				<div class="col-6">
 					<div class="heading text-upper">
-						<span>Mission</span>
+						<span><%- @__('MISSION') %></span>
 					</div>
 					<ul class="items">
 						<li class="clearfix">
 							<i class="fa fa-check fa-fw pull-left"></i>
-							<p>We are committed to always providing high quality products and services, and are continuously improving to bring satisfaction to our customers.</p>
+							<p><%- @__('MISSION_1') %></p>
 						</li>
 						<li class="clearfix">
 							<i class="fa fa-check fa-fw pull-left"></i>
-							<p>We evoke passion and train programmers to a world class level.</p>
+							<p><%- @__('MISSION_2') %></p>
 						</li>
 					</ul>
 				</div>
@@ -207,13 +207,13 @@
 <div class="section-press-releases">
 	<div class="site-container fluid">
 		<div class="heading text-upper text-center text-white">
-			<span>Press releases</span>
+			<span><%- @__('PRESS_RELEASES') %></span>
 		</div>
 		<div class="sub-heading text-center text-white">
-			<span>We are so happy and proud of this achievement and it provides us with great motivation to continue moving forward</span>
+			<span><%- @__('PRESS_RELEASES_DESC') %></span>
 		</div>
 		<div class="description text-center text-white">
-			<p>On December 6th 2014 VTV4, a Vietnamese science and technology TV channel, interviewed NTQ Solution with regards to the Outsourcing sector. The interview was used as the focal point of the TV program which was broadcast to mark the 40th anniversary of the Vietnam-Japan relationship.<br>We were not chosen by VTV4 because we are a big company but rather because our working principles match both countries' diplomatic relationship standards.<br>We consider this coverage as a reward for the good work we have been doing in the Japanese market.</p>
+			<p><%- @__('PRESS_RELEASES_EXPLAIN') %></p>
 		</div>
 		<div class="video">
 			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/FbAQbe5dKrM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
