@@ -58,6 +58,10 @@ exports.factory = function(_, path, locator, profile, require) {
 			return assets['/js' + key] || [];
 		};
 
+		self.cdn = function(url) {
+			return profile.assets.cdn + url;
+		};
+
 		return self;
 	});
 };

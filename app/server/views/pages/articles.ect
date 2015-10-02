@@ -18,7 +18,7 @@
 						<div class="main-article">
 							<div class="avatar-container">
 								<div class="avatar">
-									<img src="/upload/img/<%= mainArticle.avatar %>" alt="<%= mainArticle.heading %>">
+									<img src="<%= @__assets.cdn('/upload/img/' + mainArticle.avatar) %>" alt="<%= mainArticle.heading %>">
 								</div>
 							</div>
 							<div class="heading">
@@ -39,7 +39,7 @@
 							<div class="recent-article">
 								<div class="avatar-container">
 									<div class="avatar">
-										<img src="/upload/img/<%= article.avatar %>" alt="<%= article.heading %>">
+										<img src="<%= @__assets.cdn('/upload/img/' + article.avatar) %>" alt="<%= article.heading %>">
 									</div>
 								</div>
 							</div>
@@ -79,7 +79,7 @@
 								<div class="article">
 									<div class="avatar-container">
 										<div class="avatar">
-											<img src="/upload/img/{{avatar}}" alt="{{heading}}">
+											<img src="<%= @__assets.cdn('') %>/upload/img/{{avatar}}" alt="{{heading}}">
 										</div>
 									</div>
 									<div class="heading">
