@@ -1059,3 +1059,43 @@ msgstr ""
 msgid "FOOTER_MENU_HEADER"
 msgstr "About us"
 
+#: 
+msgid "SYSTENA_CUSTOMER_NAME"
+msgstr ""
+
+#: 
+msgid "SYSTENA_CUSTOMER_POSITION"
+msgstr ""
+
+#: 
+msgid "SYSTENA_CUSTOMER_REVIEW"
+msgstr ""
+
+#: 
+msgid "ILOVEX_CUSTOMER_NAME"
+msgstr ""
+
+#: 
+msgid "ILOVEX_CUSTOMER_POSITION"
+msgstr ""
+
+#: 
+msgid "ILOVEX_CUSTOMER_REVIEW"
+msgstr ""
+
+#: 
+msgid "IMYVENUE_CUSTOMER_NAME"
+msgstr ""
+
+#: 
+msgid "IMYVENUE_CUSTOMER_POSITION"
+msgstr ""
+
+#: 
+msgid "IMYVENUE_CUSTOMER_REVIEW"
+msgstr ""
+
+#: 
+msgid "FOOTER_CONTACT_HEADER"
+msgstr "Contact us"
+

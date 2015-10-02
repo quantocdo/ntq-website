@@ -1095,3 +1095,7 @@ msgstr "CIO, iMyVenue, Australia"
 msgid "IMYVENUE_CUSTOMER_REVIEW"
 msgstr "NTQ Solutionの高い技術力は評判通りで、品質はオーストラリアの開発会社に劣らず、我々の期待を裏切りませんでした。いくつかの案件をお願いしましたが、どれも低コストかつ効果的なソリューションに大変満足しております。"
 
+#: 
+msgid "FOOTER_CONTACT_HEADER"
+msgstr "所在地・連絡先"
+
