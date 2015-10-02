@@ -9,5 +9,5 @@ exports.requires = [
 exports.factory = function(app, articles, shortcut) {
 	app._get('home', '/',
 			articles.highlightedArticles(6),
-			shortcut.render('pages/home'));
+			shortcut.render('pages/home', true));
 };

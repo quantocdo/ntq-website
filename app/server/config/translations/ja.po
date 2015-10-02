@@ -1055,3 +1055,43 @@ msgstr "<span class=\"text-bold\">ソリューションには自信がありま�
 msgid "SOFTWARE_OUTSOURCING_SERVICE_LIST_ITEM_3_DESC"
 msgstr "「お客様のご要望通りに開発する」は最低限のラインであると認識しています。最大限お客様にご満足いただくために、他のオフショア開発会社ではできない最高のソリューションを提供します。"
 
+#: 
+msgid "FOOTER_MENU_HEADER"
+msgstr "NTQ Solution"
+
+#: 
+msgid "SYSTENA_CUSTOMER_NAME"
+msgstr "Kazuyuki Takeyama"
+
+#: 
+msgid "SYSTENA_CUSTOMER_POSITION"
+msgstr "Manager, Systena Corporation, Japan"
+
+#: 
+msgid "SYSTENA_CUSTOMER_REVIEW"
+msgstr "詳細設計に基づく忠実な実装のみならず、ラフな仕様案の場合においても、サービスとしての使い勝手や操作性を検討のうえ、サービス仕様として提案していただいております。総じて高い技術力、ラボ開発チーム運営上のマネジメント力は群を抜いており、新機能の迅速な提供、問題発生時の速やかな対応なども充実しており、長年の信頼できるパートナーです。"
+
+#: 
+msgid "ILOVEX_CUSTOMER_NAME"
+msgstr "Masahiro Okabe"
+
+#: 
+msgid "ILOVEX_CUSTOMER_POSITION"
+msgstr "Manager, ilovex Co, Ltd, Japan"
+
+#: 
+msgid "ILOVEX_CUSTOMER_REVIEW"
+msgstr "実装前の仕様確認や実装後のテストを特に徹底しておられ、技術力、言語能力の高さも相まって、ミスの発生率が非常に低かったです。また、こちらの困っていることは何でも相談に乗っていただき、技術的に難しい場合でも代替案を必ず提示してくれる。このような働きかけはNTQならではだと思います。"
+
+#: 
+msgid "IMYVENUE_CUSTOMER_NAME"
+msgstr "Dean Sutcliffe"
+
+#: 
+msgid "IMYVENUE_CUSTOMER_POSITION"
+msgstr "CIO, iMyVenue, Australia"
+
+#: 
+msgid "IMYVENUE_CUSTOMER_REVIEW"
+msgstr "NTQ Solutionの高い技術力は評判通りで、品質はオーストラリアの開発会社に劣らず、我々の期待を裏切りませんでした。いくつかの案件をお願いしましたが、どれも低コストかつ効果的なソリューションに大変満足しております。"
+

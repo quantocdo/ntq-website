@@ -1055,3 +1055,7 @@ msgstr ""
 msgid "SOFTWARE_OUTSOURCING_SERVICE_LIST_ITEM_3_DESC"
 msgstr ""
 
+#: 
+msgid "FOOTER_MENU_HEADER"
+msgstr "About us"
+
