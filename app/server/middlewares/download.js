@@ -37,11 +37,7 @@ exports.factory = function(path, Promise, Folder, profile) {
 			var filePath = path.resolve(uploadDir, file.file);
 			var fileName = file.name[locale] + path.extname(filePath);
 
-			res.sendFile(filePath, {
-				headers: {
-					'Content-Disposition': 'attachment; filename="' + fileName + '"'
-				}
-			});
+			res.download(filePath, fileName);
 		});
 	};
 
