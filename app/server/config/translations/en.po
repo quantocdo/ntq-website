@@ -325,7 +325,7 @@ msgstr "Embedded Software"
 
 #: 
 msgid "HEALTHCARE_SOFTWARE"
-msgstr "Healcare Software"
+msgstr "Healthcare Software"
 
 #: 
 msgid "SYSTEM_INTEGRATION"
@@ -957,11 +957,11 @@ msgstr "I lived in Japan for 11 years where I became fluent in Japanese. I gradu
 
 #: 
 msgid "ABOUT_US_VIDEO_INTRO"
-msgstr "We are a part of you"
+msgstr "Company Introduction"
 
 #: 
 msgid "ABOUT_US_VIDEO_DESC"
-msgstr "Our mission is to become a leading software development company and globally recognized in the IT industry"
+msgstr "Established: 13-Jun-2011<br>Human resources: 106 staff<br>Legal Capital: $50,000<br><br>For more details, please check out this video."
 
 #: 
 msgid "GOALS"

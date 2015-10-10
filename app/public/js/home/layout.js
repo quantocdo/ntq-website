@@ -165,13 +165,13 @@
 					delay = setTimeout(self.resize.bind(self), 100);
 				});
 
-				var hammer = new Hammer(self.container[0]);
+				var hammer = new Hammer(document.body);
 
-				hammer.get('swipe').set({
+				hammer.get('pan').set({
 					direction: Hammer.DIRECTION_VERTICAL
 				});
 
-				hammer.on('swipe', function(event) {
+				hammer.on('pan', function(event) {
 					if (self.transition) {
 						return;
 					}

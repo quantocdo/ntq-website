@@ -201,7 +201,7 @@ msgstr "団結力"
 
 #: 
 msgid "STRONG_RELATIONSHIPS_DESC"
-msgstr "ベトナムの離職率が20％を超える中、NTQは5％未満。<br>最高の職場環境でラボ型開発に貢献します。"
+msgstr "ベトナムの離職率が20％を超える中、NTQは5％前後。<br>最高の職場環境でラボ型開発に貢献します。"
 
 #: 
 msgid "GLOBAL_PORTFOLIO"
@@ -605,7 +605,7 @@ msgstr "全てを自分たちで開発することで、開発者の夢を追い
 
 #: 
 msgid "WHY_R&D_REASON_1"
-msgstr "技術を勉強することで、より技術に精通するため"
+msgstr "1. 技術を勉強することで、より技術に精通するため"
 
 #: 
 msgid "WHY_R&D_REASON_1_EXPLAIN"
@@ -613,7 +613,7 @@ msgstr "NTQとしての技術力をより地盤から固めたい、という思
 
 #: 
 msgid "WHY_R&D_REASON_2"
-msgstr "開発部門をサポートするため"
+msgstr "2. 開発部門をサポートするため"
 
 #: 
 msgid "WHY_R&D_REASON_2_EXPLAIN"
@@ -697,7 +697,7 @@ msgstr "最新技術とともに”無料”でお伺いします。"
 
 #: 
 msgid "SOFTWARE_SOLUTIONS_CONSULTANCY_FOR_FREE_EXPLAIN"
-msgstr "過去には30社以上が受注を断り続けたアイディアを開発したこともあります。その背景には最新の技術を常に追い続け、学び続ける姿勢があったためです。何か実現したいアイディアはございませんか？無料でお客様の「困った」を解決致します。"
+msgstr "過去には50社以上が受注を断り続けたアイディアを開発したこともあります。その背景には最新の技術を常に追い続け、学び続ける姿勢があったためです。何か実現したいアイディアはございませんか？無料でお客様の「困った」を解決致します。"
 
 #: 
 msgid "WEB_APP_GRAPHIC_DESIGN"
@@ -901,7 +901,7 @@ msgstr "Tran Van Hoang"
 
 #: 
 msgid "TRAN_VAN_HOANG_POSITION"
-msgstr "営業推進部 課長"
+msgstr "NWB部 課長"
 
 #: 
 msgid "TRAN_VAN_HOANG_INFO"
@@ -957,7 +957,7 @@ msgstr "計11年の日本滞在経験がある帰国子女であり、日本語�
 
 #: 
 msgid "ABOUT_US_VIDEO_INTRO"
-msgstr "NTQは、ＩＴ業界において世界中で認められるリーディングカンパニーを目指しています。"
+msgstr "＜会社紹介＞<br><br>設立日：2011年6月13日<br>従業員：106名<br>資本金：50,000ドル<br><br>詳しくはこちらのビデオをご覧ください。"
 
 #: 
 msgid "ABOUT_US_VIDEO_DESC"
