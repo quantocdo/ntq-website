@@ -1099,3 +1099,15 @@ msgstr "NTQ Solutionの高い技術力は評判通りで、品質はオースト
 msgid "FOOTER_CONTACT_HEADER"
 msgstr "所在地・連絡先"
 
+#: 
+msgid "TO_EN_VERSION"
+msgstr "English"
+
+#: 
+msgid "TO_JA_VERSION"
+msgstr "日本語"
+
+#: 
+msgid "WEBSITE_TITLE"
+msgstr "NTQ Solution | 日本品質アプリ開発×ベトナムオフショア"
+

@@ -2,10 +2,10 @@
 	<div class="site-container fluid cf">
 		<div class="company-logo pull-left">
 			<a href="<%= @_url('home') %>">
-				<img src="<%= @__assets.img('/logo/logo_s.png') %>" alt="NTQ Solution" width="94" height="40">
+				<img src="<%= @__assets.img('/logo/logo_s.png') %>" alt="NTQ Solution" width="129" height="57">
 			</a>
 		</div>
-		<div class="top-nav">
+		<div class="top-nav <%= @_locale %>">
 			<ul class="top-menu">
 				<li class="nav-item dropdown-menu">
 					<a href="#"><%- @__('BUSINESS') %>&nbsp;<i class="fa fa-angle-down fw"></i></a>
@@ -46,7 +46,7 @@
 				</li>
 			</ul>
 			<div class="top-actions clearfix">
-				<a href="<%= @_profile.domain.protocol %>://<%= @_anotherLocaleDomain %>" class="language-switch pull-right <%= @_anotherLocale %>"></a>
+				<a href="<%= @_profile.domain.protocol %>://<%= @_anotherLocaleDomain %>" class="language-switch pull-right <%= @_anotherLocale %>" title="<%= @__('TO_' + @_anotherLocale.toUpperCase() + '_VERSION') %>"></a>
 				<a href="<%= @_url('contact') %>" class="contact pull-right"><%- @__('CONTACT') %></a>
 			</div>
 		</div>

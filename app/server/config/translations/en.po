@@ -1099,3 +1099,15 @@ msgstr ""
 msgid "FOOTER_CONTACT_HEADER"
 msgstr "Contact us"
 
+#: 
+msgid "TO_EN_VERSION"
+msgstr "Go to English site"
+
+#: 
+msgid "TO_JA_VERSION"
+msgstr "日本語"
+
+#: 
+msgid "WEBSITE_TITLE"
+msgstr "NTQ Solution | Viet Nam Software Outsourcing Company"
+

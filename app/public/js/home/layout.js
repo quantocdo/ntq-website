@@ -197,7 +197,7 @@
 					}
 				});
 
-				self.$window.on('mousewheel', function(event) {
+				$(document.body).on('mousewheel', function(event) {
 					var oEvent = event.originalEvent;
 
 					if (self.transition) {
