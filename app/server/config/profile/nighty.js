@@ -6,8 +6,8 @@ exports.value = {
 		protocol: 'http',
 		base: 'ntq-solution.com.vn',
 		locales: {
-			en: 'www.ntq-solution.com.vn',
-			ja: 'ja.ntq-solution.com.vn',
+			en: 'dev.ntq-solution.com.vn',
+			ja: 'dev-ja.ntq-solution.com.vn',
 		},
 	},
 	port: 4000,
