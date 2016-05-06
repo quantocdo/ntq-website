@@ -1,6 +1,6 @@
 'use strict';
 
-exports.name = '/config/profile/nighty';
+exports.name = '/config/profile/nightly';
 exports.value = {
 	domain: {
 		protocol: 'http',

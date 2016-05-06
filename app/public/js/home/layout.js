@@ -131,7 +131,7 @@
 			};
 
 			proto.live = function() {
-				function down() {
+				function down(self) {
 					if (!self.enabled) {
 						return;
 					}
@@ -141,7 +141,7 @@
 					}
 				}
 
-				function up() {
+				function up(self) {
 					if (!self.enabled) {
 						return;
 					}
@@ -178,10 +178,10 @@
 
 					if (event.offsetDirection === 16) {
 						// swipe up
-						down();
+						down(self);
 					} else if (event.offsetDirection === 8) {
 						// swipe down
-						up();
+						up(self);
 					}
 				});
 
@@ -191,9 +191,9 @@
 					}
 
 					if (event.keyCode === 40 || event.keyCode === 34) {
-						down();
+						down(self);
 					} else if (event.keyCode === 38 || event.keyCode === 33) {
-						up();
+						up(self);
 					}
 				});
 
@@ -205,11 +205,11 @@
 					}
 
 					if (oEvent.deltaY < 0) {
-						up();
+						up(self);
 					}
 
 					if (oEvent.deltaY > 0) {
-						down();
+						down(self);
 					}
 				});
 

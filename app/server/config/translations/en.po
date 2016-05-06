@@ -117,7 +117,7 @@ msgstr "Tomohiro Takase"
 
 #: 
 msgid "N2LAB_REPRESENTATIVE_POSITION"
-msgstr "Representitive"
+msgstr "Representative"
 
 #: 
 msgid "N2LAB_REPRESENTATIVE_TEL"
@@ -725,7 +725,7 @@ msgstr "Systena Corporation is a Japanese IT company listed in the First Section
 
 #: 
 msgid "THE_CHANLLENGE"
-msgstr "The chanllenges"
+msgstr "The challenges"
 
 #: 
 msgid "SYSTENA_CHANLLENGE_1"

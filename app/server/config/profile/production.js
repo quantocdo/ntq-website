@@ -14,7 +14,7 @@ exports.value = {
 	port: 4000,
 	db: 'mongodb://localhost/mean-dev',
 	assets: {
-		cdn: '//nighty.indie.codes',
+		cdn: '//static.indie.codes',
 		default: true,
 		purgeCache: false,
 		rev: true

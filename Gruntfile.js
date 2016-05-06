@@ -213,10 +213,10 @@ module.exports = function(grunt) {
 					NODE_ENV: 'development',
 				},
 			},
-			nighty: {
+			nightly: {
 				file: 'index.js',
 				env: {
-					NODE_ENV: 'nighty',
+					NODE_ENV: 'nightly',
 				},
 			},
 		},
@@ -283,7 +283,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('test', [
 		'build',
-		'develop:nighty'
+		'develop:nightly'
 	]);
 
 	grunt.registerTask('translate', [
