@@ -1,5 +1,7 @@
 'use strict';
 
+require('newrelic');
+
 var di = require('di-linker');
 var path = require('path');
 var src = [
