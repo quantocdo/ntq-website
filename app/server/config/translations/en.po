@@ -85,7 +85,7 @@ msgstr "NTQ Japan:"
 
 #: 
 msgid "JAPAN_OFFICE_ADDRESS"
-msgstr "(Under Construction)"
+msgstr "〒150-0043<br>Japan, Tokyo to, Shibuya ku, Dogenzaka, 1 Chome−20−2, Alliance building, 5th Floor"
 
 #: 
 msgid "N2LAB"
@@ -97,19 +97,19 @@ msgstr "〒106-0032<br>Tokyo to Minami ku Roppongi 4-2-35<br>Urban Style Roppong
 
 #: 
 msgid "JAPAN_REPRESENTATIVE"
-msgstr "Hironori Miyata"
+msgstr "Nguyen Si Thang"
 
 #: 
 msgid "JAPAN_REPRESENTATIVE_POSITION"
-msgstr "Representative"
+msgstr "NTQ Japan CEO"
 
 #: 
 msgid "JAPAN_REPRESENTATIVE_TEL"
-msgstr "Tel: (+81) 80 3211 4662"
+msgstr "Tel: (+81) 805 003 6406"
 
 #: 
 msgid "JAPAN_REPRESENTATIVE_EMAIL"
-msgstr "Email: miyata@ntq-solution.com.vn"
+msgstr "Email: thang.nguyen@ntq-solution.com.vn"
 
 #: 
 msgid "N2LAB_REPRESENTATIVE"
