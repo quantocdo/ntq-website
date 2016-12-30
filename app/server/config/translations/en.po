@@ -97,7 +97,7 @@ msgstr "〒106-0032<br>Tokyo to Minami ku Roppongi 4-2-35<br>Urban Style Roppong
 
 #: 
 msgid "JAPAN_REPRESENTATIVE"
-msgstr "Nguyen Si Thang"
+msgstr "Yoshi Ogawa"
 
 #: 
 msgid "JAPAN_REPRESENTATIVE_POSITION"
@@ -105,11 +105,11 @@ msgstr "NTQ Japan CEO"
 
 #: 
 msgid "JAPAN_REPRESENTATIVE_TEL"
-msgstr "Tel: (+81) 805 003 6406"
+msgstr "Tel: (+81) 901 118 8896"
 
 #: 
 msgid "JAPAN_REPRESENTATIVE_EMAIL"
-msgstr "Email: thang.nguyen@ntq-solution.com.vn"
+msgstr "Email: yoshi.ogawa@ntq-solution.com.vn"
 
 #: 
 msgid "N2LAB_REPRESENTATIVE"

@@ -97,7 +97,7 @@ msgstr "〒106-0032<br>東京都港区六本木4丁目2-35<br>アーバンスタ
 
 #: 
 msgid "JAPAN_REPRESENTATIVE"
-msgstr "グェン・シー・タン"
+msgstr "小川 義輝"
 
 #: 
 msgid "JAPAN_REPRESENTATIVE_POSITION"
@@ -105,11 +105,11 @@ msgstr "代表者"
 
 #: 
 msgid "JAPAN_REPRESENTATIVE_TEL"
-msgstr "電話番号: (+81) 805 003 6406"
+msgstr "電話番号:（+81）901 118 8896"
 
 #: 
 msgid "JAPAN_REPRESENTATIVE_EMAIL"
-msgstr "メール: thang.nguyen@ntq-solution.com.vn"
+msgstr "メール: yoshi.ogawa@ntq-solution.com.vn"
 
 #: 
 msgid "N2LAB_REPRESENTATIVE"
