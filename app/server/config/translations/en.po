@@ -85,7 +85,7 @@ msgstr "NTQ Japan:"
 
 #: 
 msgid "JAPAN_OFFICE_ADDRESS"
-msgstr "〒150-0043<br>Japan, Tokyo to, Shibuya ku, Dogenzaka, 1 Chome−20−2, Alliance building, 5th Floor"
+msgstr "6th Floor, YOKOHAMA WORLD PORTERS Building<br>2 Chome-2-1 Shinko, Naka Ward, Yokohama, Kanagawa Prefecture 231-0001, Japan"
 
 #: 
 msgid "N2LAB"
@@ -117,7 +117,7 @@ msgstr "Tomohiro Takase"
 
 #: 
 msgid "N2LAB_REPRESENTATIVE_POSITION"
-msgstr "Representative"
+msgstr "N2 Lab CEO"
 
 #: 
 msgid "N2LAB_REPRESENTATIVE_TEL"
@@ -377,7 +377,7 @@ msgstr "Head office in Hanoi"
 
 #: 
 msgid "CONTACT_IN_HANOI_ADDRESS"
-msgstr "6th Floor, Sudico Building (HH3) Me Tri Street<br>Nam Tu Liem District Hanoi City, Vietnam"
+msgstr "6th Floor, Sudico Building (HH3), Me Tri Street<br>Nam Tu Liem District, Hanoi City, Vietnam"
 
 #: 
 msgid "CONTACT_IN_JAPAN"
@@ -385,7 +385,7 @@ msgstr "Representative in Japan"
 
 #: 
 msgid "CONTACT_IN_JAPAN_ADDRESS"
-msgstr "〒150-0043 Tōkyō to Shibuya ku<br>Dōgenzaka 1 - 20 - 2 Araiansubiru Shibuya Ichi Bankan 5F"
+msgstr "6th Floor, YOKOHAMA WORLD PORTERS Building<br>2 Chome-2-1 Shinko, Naka Ward, Yokohama, Kanagawa Prefecture 231-0001, Japan"
 
 #: 
 msgid "CONTACT_DESC"
