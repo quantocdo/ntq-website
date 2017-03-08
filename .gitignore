@@ -28,3 +28,5 @@ node_modules
 bower_components
 build/.tmp
 build/out
+/app/server/config/translations/ja.json
+/app/server/config/translations/en.json
