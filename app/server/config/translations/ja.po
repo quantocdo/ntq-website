@@ -105,7 +105,7 @@ msgstr "代表者"
 
 #: 
 msgid "JAPAN_REPRESENTATIVE_TEL"
-msgstr "電話番号:（+81）901 118 8896"
+msgstr "電話番号:（+81）45 228 9010"
 
 #: 
 msgid "JAPAN_REPRESENTATIVE_EMAIL"

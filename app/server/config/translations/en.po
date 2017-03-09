@@ -85,7 +85,7 @@ msgstr "NTQ Japan:"
 
 #: 
 msgid "JAPAN_OFFICE_ADDRESS"
-msgstr "6th Floor, YOKOHAMA WORLD PORTERS Building<br>2 Chome-2-1 Shinko, Naka Ward, Yokohama, Kanagawa Prefecture 231-0001, Japan"
+msgstr "〒231-0001<br>6th Floor, YOKOHAMA WORLD PORTERS Building<br>2 Chome-2-1 Shinko, Naka Ward, Yokohama, Kanagawa Prefecture, Japan"
 
 #: 
 msgid "N2LAB"
@@ -105,7 +105,7 @@ msgstr "NTQ Japan CEO"
 
 #: 
 msgid "JAPAN_REPRESENTATIVE_TEL"
-msgstr "Tel: (+81) 901 118 8896"
+msgstr "Tel: (+81) 45 228 9010"
 
 #: 
 msgid "JAPAN_REPRESENTATIVE_EMAIL"
