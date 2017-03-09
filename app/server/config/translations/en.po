@@ -85,7 +85,7 @@ msgstr "NTQ Japan:"
 
 #: 
 msgid "JAPAN_OFFICE_ADDRESS"
-msgstr "〒231-0001<br>6th Floor, YOKOHAMA WORLD PORTERS Building<br>2 Chome-2-1 Shinko, Naka Ward, Yokohama, Kanagawa Prefecture, Japan"
+msgstr "〒231-0001<br>6F, Yokohama World Posters Building<br>2 Chome-2-1 Shinko, Naka Ward, Yokohama, Kanagawa Prefecture, Japan"
 
 #: 
 msgid "N2LAB"
@@ -385,7 +385,7 @@ msgstr "Representative in Japan"
 
 #: 
 msgid "CONTACT_IN_JAPAN_ADDRESS"
-msgstr "6th Floor, YOKOHAMA WORLD PORTERS Building<br>2 Chome-2-1 Shinko, Naka Ward, Yokohama, Kanagawa Prefecture 231-0001, Japan"
+msgstr "〒231-0001<br>6F, Yokohama World Posters Building<br>2 Chome-2-1 Shinko, Naka Ward, Yokohama, Kanagawa Prefecture, Japan"
 
 #: 
 msgid "CONTACT_DESC"
