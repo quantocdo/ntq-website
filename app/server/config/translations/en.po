@@ -1111,3 +1111,19 @@ msgstr "日本語"
 msgid "WEBSITE_TITLE"
 msgstr "NTQ Solution | Viet Nam Software Outsourcing Company"
 
+#: 
+msgid "RD_LIGHT_CONTROL"
+msgstr "Electronics Lightning System"
+
+#: 
+msgid "RD_LIGHT_CONTROL_DESC"
+msgstr "We have developed a mart system which controls home electrical appliances remotely as well as collect sensors' data via internet."
+
+#: 
+msgid "RD_SMART_CARD"
+msgstr "SmartCard"
+
+#: 
+msgid "RD_SMART_CARD_DESC"
+msgstr "NTQ Solution JSC and ACT Ltd have collaborated in developing a product call \"ILUTon\", which uses employees' IC cards to check their entrance & exit. It is also used to lock PCs' screens."
+

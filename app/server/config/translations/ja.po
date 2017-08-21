@@ -1111,3 +1111,19 @@ msgstr "日本語"
 msgid "WEBSITE_TITLE"
 msgstr "NTQ Solution | 日本品質アプリ開発×ベトナムオフショア"
 
+#: 
+msgid "RD_LIGHT_CONTROL"
+msgstr "エレクトロニクス・ライトニング・システム"
+
+#: 
+msgid "RD_LIGHT_CONTROL_DESC"
+msgstr "遠隔操作で家の電気デバイスをコントロールしたり、インターネットを通じてセンサーのデータを集めたりするスマートシステムを開発しました。"
+
+#: 
+msgid "RD_SMART_CARD"
+msgstr "スマートカード（ILUTon）"
+
+#: 
+msgid "RD_SMART_CARD_DESC"
+msgstr "NTQ Solution JSCと株式会社ACT様の共同開発の<br>下に生まれた「ILUTon」はスタッフの出退勤カードで会社の出入り確認や、パソコン画面をロック出来る製品です。"
+
