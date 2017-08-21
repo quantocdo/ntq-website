@@ -1,6 +1,14 @@
 'use strict';
 
-require('newrelic');
+var yargs = require('yargs');
+var profileArg = yargs.argv.p ||
+	yargs.argv.profile ||
+	process.env.NODE_ENV ||
+	'development';
+
+if (profileArg === 'production') {
+	require('newrelic');
+}
 
 var di = require('di-linker');
 var path = require('path');

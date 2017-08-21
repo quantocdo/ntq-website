@@ -15,7 +15,7 @@ exports.value = {
 	port: 4000,
 	db: 'mongodb://localhost/ntq-website',
 	assets: {
-		cdn: '//static.ntq-solution.com.vn',
+		cdn: 'http://example.com:4000',
 		default: true,
 		purgeCache: true,
 	},

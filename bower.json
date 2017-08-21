@@ -17,7 +17,7 @@
   ],
   "dependencies": {
     "bluebird": "2.10.0",
-    "di-linker": "~2.0.1",
+    "di-linker": "2.1.5",
     "font-awesome-stylus": "4.4.0",
     "hammerjs": "~2.0.4",
     "jquery": "2.1.4",
