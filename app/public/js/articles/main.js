@@ -66,16 +66,14 @@
 			var self = {};
 
 			self.get = function(limit, skip) {
-				var defer = Promise.defer();
-
-				$.get('/api/articles', {
-					limit: limit,
-					skip: skip
-				}).success(function(articles) {
-					defer.resolve(articles);
+				return new Promise(function(resolve, reject) {
+					$.get('/api/articles', {
+						limit: limit,
+						skip: skip
+					}).success(function(articles) {
+						resolve(articles);
+					});
 				});
-
-				return defer.promise;
 			};
 
 			return self;

@@ -8,11 +8,11 @@
 			var self = {};
 
 			self.move = function(target, from, to, duration, lock) {
-				var defer = Promise.defer();
-				var style = target.style;
 				var classList = target.classList;
+				var style = target.style;
 
-				new TWEEN.Tween(from)
+				return new Promise(function(resolve, reject) {
+					new TWEEN.Tween(from)
 						.to(to, duration)
 						.onStart(function() {
 							classList.add('moving');
@@ -26,11 +26,10 @@
 							}
 						})
 						.onComplete(function() {
-							defer.resolve();
+							resolve();
 						})
 						.start();
-
-				return defer.promise.finally(function() {
+				}).finally(function() {
 					classList.remove('moving');
 				});
 			};

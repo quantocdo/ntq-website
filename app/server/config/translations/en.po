@@ -149,11 +149,11 @@ msgstr "Download Materials"
 
 #: 
 msgid "OFFER_MESSAGE_1"
-msgstr "We offer one man-month trial projects to showcase our abilities to you."
+msgstr "We offer 2 man-month trial projects to showcase our abilities to you."
 
 #: 
 msgid "OFFER_MESSAGE_2"
-msgstr "We offer a free consultancy service and are eagerly awaiting any questions, estimations or propositions that you may have."
+msgstr "We offer a consultancy service and are eagerly awaiting any questions, estimations or propositions that you may have."
 
 #: 
 msgid "READ_MORE"
@@ -201,7 +201,7 @@ msgstr "STRONG RELATIONSHIPS"
 
 #: 
 msgid "STRONG_RELATIONSHIPS_DESC"
-msgstr "While the yearly rate of employees leaving jobs is 20% per Vietnamese company, our company only loses 5% of our employees annually. This is due to our ability to facilitate a fun and rewarding environment to work in.<br>We also have strong relationships with our customers and implement bilateral communications with them to enhance project effectiveness and efficiency."
+msgstr "While the yearly rate of employees leaving jobs is 25% per Vietnamese company, our company only loses 10% of our employees annually. This is due to our ability to facilitate a fun and rewarding environment to work in.<br>We also have strong relationships with our customers and implement bilateral communications with them to enhance project effectiveness and efficiency."
 
 #: 
 msgid "GLOBAL_PORTFOLIO"
@@ -301,7 +301,7 @@ msgstr "Solutions Consultancy"
 
 #: 
 msgid "SOLUTIONS_CONSULTANCY_DESC"
-msgstr "We provide a solutions consultancy service to you totally COST FREE"
+msgstr "We provide a solutions consultancy service"
 
 #: 
 msgid "GRAPHIC_DESIGN"
@@ -389,7 +389,7 @@ msgstr "〒231-0001<br>6F, Yokohama World Posters Building<br>2 Chome-2-1 Shinko
 
 #: 
 msgid "CONTACT_DESC"
-msgstr "If you have any questions regarding any of our services then please feel free to contact us. We offer a free consultancy service and are eagerly awaiting any questions, estimations or propositions that you may have."
+msgstr "If you have any questions regarding any of our services then please feel free to contact us. We offer a consultancy service and are eagerly awaiting any questions, estimations or propositions that you may have."
 
 #: 
 msgid "NAME"
@@ -689,11 +689,11 @@ msgstr "You want to focus on your core business activities, therefore let us tak
 
 #: 
 msgid "SOFTWARE_SOLUTIONS_CONSULTANCY_FOR_FREE"
-msgstr "SOFTWARE SOLUTIONS CONSULTANCY FOR FREE"
+msgstr "SOFTWARE SOLUTIONS CONSULTANCY"
 
 #: 
 msgid "SOFTWARE_SOLUTIONS_CONSULTANCY_FOR_FREE_DESC"
-msgstr "We offer this service to you for NO COST at all"
+msgstr "We offer this service to you for LOWEST COST"
 
 #: 
 msgid "SOFTWARE_SOLUTIONS_CONSULTANCY_FOR_FREE_EXPLAIN"
@@ -961,7 +961,7 @@ msgstr "Company Introduction"
 
 #: 
 msgid "ABOUT_US_VIDEO_DESC"
-msgstr "Established: 13-Jun-2011<br>Human resources: 106 staff<br>Legal Capital: $50,000<br><br>For more details, please check out this video."
+msgstr "Established: 13-Jun-2011<br>Human resources: 210 staff<br>Legal Capital: $250,000<br><br>For more details, please check out this video."
 
 #: 
 msgid "GOALS"
@@ -969,7 +969,7 @@ msgstr "Goals"
 
 #: 
 msgid "GOALS_DESC"
-msgstr "STRATEGIC GOALS UNTIL END OF 2016"
+msgstr "STRATEGIC GOALS UNTIL END OF 2021"
 
 #: 
 msgid "TOTAL_REVENUE"
@@ -977,7 +977,7 @@ msgstr "Total revenue"
 
 #: 
 msgid "REVENUE_VALUE"
-msgstr "$2.5 Million"
+msgstr "$12 Million"
 
 #: 
 msgid "HUMAN_RESOURCES"
@@ -985,7 +985,7 @@ msgstr "Human resources"
 
 #: 
 msgid "HUMAN_RESOURCES_VALUE"
-msgstr "Over 100 staff"
+msgstr "Over 650 staff"
 
 #: 
 msgid "POLICY"
