@@ -30,6 +30,10 @@ exports.factory = function(express, bodyParser, reverseRoute, path, profile) {
 		app.use('/img', express.static(path.resolve(__dirname, '../../public/img')));
 	}
 
+	app.get('/sw.js', function(req, res, next) {
+		res.sendFile(path.resolve(__dirname, '../../service-worker/sw.js'));
+	});
+
 	app.use(bodyParser.urlencoded({
 		extended: false
 	}));
