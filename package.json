@@ -52,6 +52,9 @@
     "grunt-filerev-assets": "1.0.0",
     "grunt-jscs": "3.0.1",
     "grunt-po2json-angular-translate": "0.0.3",
+    "imagemin-gifsicle": "5.2.0",
+    "imagemin-mozjpeg": "6.0.0",
+    "imagemin-pngquant": "5.0.1",
     "kouto-swiss": "0.12.0",
     "load-grunt-tasks": "3.5.2",
     "tween.js": "16.6.0"

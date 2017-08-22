@@ -156,6 +156,21 @@ module.exports = function(grunt) {
 			}
 		},
 		imagemin: {
+			options: {
+				use: [
+					require('imagemin-mozjpeg')({
+						quality: 80,
+						progressive: true
+					}),
+					require('imagemin-pngquant')({
+						quality: '65-80'
+					}),
+					require('imagemin-gifsicle')({
+						interlaced: true,
+						optimizationLevel: 3
+					})
+				]
+			},
 			static: {
 				files: [{
 					expand: true,
