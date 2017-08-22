@@ -4,7 +4,7 @@ exports.name = '/config/profile/production';
 exports.value = {
 	debug: false,
 	domain: {
-		protocol: 'http',
+		protocol: 'https',
 		base: 'ntq-solution.com.vn',
 		locales: {
 			en: 'www.ntq-solution.com.vn',
@@ -14,7 +14,7 @@ exports.value = {
 	port: 4000,
 	db: 'mongodb://localhost/mean-dev',
 	assets: {
-		cdn: '//static.indie.codes',
+		cdn: '//www.ntq-solution.com.vn',
 		default: true,
 		purgeCache: false,
 		rev: true

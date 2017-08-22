@@ -965,7 +965,7 @@ msgstr "　"
 
 #: 
 msgid "GOALS"
-msgstr "2016年度末までの戦略的目標"
+msgstr "2021年度末までの戦略的目標"
 
 #: 
 msgid "GOALS_DESC"

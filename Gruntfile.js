@@ -160,7 +160,7 @@ module.exports = function(grunt) {
 				files: [{
 					expand: true,
 					cwd: 'app/public/img',
-					src: '**/*.{png,jpg,gif}',
+					src: '**/*.{png,jpg,gif,ico}',
 					dest: 'build/out/img'
 				}]
 			}
@@ -180,7 +180,7 @@ module.exports = function(grunt) {
 				src: 'build/out/css/**/*.css'
 			},
 			img: {
-				src: 'build/out/img/**/*.{png,jpg,gif}'
+				src: 'build/out/img/**/*.{png,jpg,gif,ico}'
 			},
 			js: {
 				src: 'build/out/js/**/*.js'

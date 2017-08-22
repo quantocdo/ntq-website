@@ -4,8 +4,8 @@ exports.name = '/config/profile/development';
 exports.value = {
 	debug: true,
 	domain: {
-		protocol: 'http',
-		base: 'ntq-solution.com.vn',
+		protocol: 'https',
+		base: 'example.com',
 		locales: {
 			en: 'dev.ntq-solution.com.vn',
 			ja: 'dev-ja.ntq-solution.com.vn',
@@ -15,9 +15,10 @@ exports.value = {
 	port: 4000,
 	db: 'mongodb://localhost/ntq-website',
 	assets: {
-		cdn: 'http://example.com:4000',
+		cdn: 'https://example.com',
 		default: true,
 		purgeCache: true,
+		// rev: true
 	},
 	upload: {
 		doc: '../../../ntq-website-v1/upload/doc'
