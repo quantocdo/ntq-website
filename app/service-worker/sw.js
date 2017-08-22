@@ -1,8 +1,10 @@
-var CACHE_NAME = 'ntq-solution-cache-v1';
+var CACHE_NAME = 'ntq-solution-cache-v2';
 var ASSET_PREFIXES = [
 	'https://www.ntq-solution.com.vn',
 	'https://jp.ntq-solution.com.vn',
 	'https://example.com',
+	'https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2',
+	'https://fonts.googleapis.com/css?family=Raleway'
 ];
 
 self.addEventListener('install', function(event) {
