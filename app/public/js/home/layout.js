@@ -165,26 +165,6 @@
 					delay = setTimeout(self.resize.bind(self), 100);
 				});
 
-				var hammer = new Hammer(document.body);
-
-				hammer.get('pan').set({
-					direction: Hammer.DIRECTION_VERTICAL
-				});
-
-				hammer.on('pan', function(event) {
-					if (self.transition) {
-						return;
-					}
-
-					if (event.offsetDirection === 16) {
-						// swipe up
-						down(self);
-					} else if (event.offsetDirection === 8) {
-						// swipe down
-						up(self);
-					}
-				});
-
 				self.$window.on('keydown', function(event) {
 					if (self.transition) {
 						return;
@@ -219,6 +199,36 @@
 
 				self.resize();
 				self.select();
+
+				self.supportGesture(self, up, down);
+			};
+
+			proto.supportGesture = function(self, up, down) {
+				delete Hammer.defaults.cssProps.userSelect;
+
+				var hammer = new Hammer(document.body, {
+					inputClass: Hammer.SUPPORT_POINTER_EVENTS ?
+						Hammer.PointerEventInput :
+						Hammer.TouchInput
+				});
+
+				hammer.get('pan').set({
+					direction: Hammer.DIRECTION_VERTICAL
+				});
+
+				hammer.on('pan', function(event) {
+					if (self.transition) {
+						return;
+					}
+
+					if (event.offsetDirection === 16) {
+						// swipe up
+						down(self);
+					} else if (event.offsetDirection === 8) {
+						// swipe down
+						up(self);
+					}
+				});
 			};
 
 			proto.resize = function() {
