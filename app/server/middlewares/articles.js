@@ -77,8 +77,8 @@ exports.factory = function(Promise, Article) {
 
 	self.query = function(req, res, next) {
 		var language = res.locals._locale;
-		var limit = req.query.limit;
-		var skip = req.query.skip;
+		var limit = Number(req.query.limit) || 12;
+		var skip = Number(req.query.skip) || 0;
 
 		var query = Article.find({
 			enabled: true,

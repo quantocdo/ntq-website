@@ -465,7 +465,7 @@
 	<div class="articles clearfix full-height">
 	<% for article in @_highlightedArticles: %>
 		<div class="article pull-left"
-			style="background-image: url('<%= @__assets.cdn('/upload/img/' + article.avatar) %>');">
+			style="background-image: url('<%= @__assets.cdn('/upload/img/' + article.avatar) %>?w=634');">
 			<div class="article-overlay background"></div>
 			<div class="article-overlay info text-white">
 				<div class="article-heading"><%= article.heading %></div>
