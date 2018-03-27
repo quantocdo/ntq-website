@@ -73,7 +73,7 @@ msgstr "代表取締役社長"
 
 #: 
 msgid "HANOI_REPRESENTATIVE_TEL"
-msgstr "電話番号: (+84) 4 6297 5613"
+msgstr "電話番号: (+84) 243 200 8754"
 
 #: 
 msgid "HANOI_REPRESENTATIVE_EMAIL"

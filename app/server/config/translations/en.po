@@ -73,7 +73,7 @@ msgstr "Chief Executive Officer"
 
 #: 
 msgid "HANOI_REPRESENTATIVE_TEL"
-msgstr "Tel: (+84) 4 6297 5613"
+msgstr "Tel: (+84) 243 200 8754"
 
 #: 
 msgid "HANOI_REPRESENTATIVE_EMAIL"
