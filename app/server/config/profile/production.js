@@ -14,7 +14,8 @@ exports.value = {
 	port: 4000,
 	db: 'mongodb://localhost/mean-dev',
 	assets: {
-		cdn: '//www.ntq-solution.com.vn',
+		//cdn: '//www.ntq-solution.com.vn',
+		cdn: 'https://server1.mn-cdn.com/p/ntq',
 		default: true,
 		purgeCache: false,
 		rev: true
