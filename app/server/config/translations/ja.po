@@ -977,7 +977,7 @@ msgstr "売上"
 
 #: 
 msgid "REVENUE_VALUE"
-msgstr "12億円超"
+msgstr "20億円超"
 
 #: 
 msgid "HUMAN_RESOURCES"

@@ -977,7 +977,7 @@ msgstr "Total revenue"
 
 #: 
 msgid "REVENUE_VALUE"
-msgstr "Over $12 Million"
+msgstr "Over $20 Millions"
 
 #: 
 msgid "HUMAN_RESOURCES"
