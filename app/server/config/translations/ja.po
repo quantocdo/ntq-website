@@ -73,7 +73,7 @@ msgstr "代表取締役社長"
 
 #: 
 msgid "HANOI_REPRESENTATIVE_TEL"
-msgstr "電話番号: (+84) 4 6297 5613"
+msgstr "電話番号: (+84) 243 200 8754"
 
 #: 
 msgid "HANOI_REPRESENTATIVE_EMAIL"
@@ -957,7 +957,7 @@ msgstr "計11年の日本滞在経験がある帰国子女であり、日本語�
 
 #: 
 msgid "ABOUT_US_VIDEO_INTRO"
-msgstr "＜会社紹介＞<br><br>設立日：2011年6月13日<br>従業員：210名<br>資本金：250,000ドル<br><br>詳しくはこちらのビデオをご覧ください。"
+msgstr "＜会社紹介＞<br><br>設立日：2011年6月13日<br>従業員：300名<br>資本金：2,500万円<br><br>詳しくはこちらのビデオをご覧ください。"
 
 #: 
 msgid "ABOUT_US_VIDEO_DESC"
@@ -977,7 +977,7 @@ msgstr "売上"
 
 #: 
 msgid "REVENUE_VALUE"
-msgstr "12億円"
+msgstr "20億円超"
 
 #: 
 msgid "HUMAN_RESOURCES"
@@ -985,7 +985,7 @@ msgstr "人材"
 
 #: 
 msgid "HUMAN_RESOURCES_VALUE"
-msgstr "650名以上"
+msgstr "800名超"
 
 #: 
 msgid "POLICY"

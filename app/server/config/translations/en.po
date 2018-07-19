@@ -73,7 +73,7 @@ msgstr "Chief Executive Officer"
 
 #: 
 msgid "HANOI_REPRESENTATIVE_TEL"
-msgstr "Tel: (+84) 4 6297 5613"
+msgstr "Tel: (+84) 243 200 8754"
 
 #: 
 msgid "HANOI_REPRESENTATIVE_EMAIL"
@@ -961,7 +961,7 @@ msgstr "Company Introduction"
 
 #: 
 msgid "ABOUT_US_VIDEO_DESC"
-msgstr "Established: 13-Jun-2011<br>Human resources: 210 staff<br>Legal Capital: $250,000<br><br>For more details, please check out this video."
+msgstr "Established: 13-Jun-2011<br>Human resources: 300 staffs<br>Legal Capital: $250,000<br><br>For more details, please check out this video."
 
 #: 
 msgid "GOALS"
@@ -977,7 +977,7 @@ msgstr "Total revenue"
 
 #: 
 msgid "REVENUE_VALUE"
-msgstr "$12 Million"
+msgstr "Over $20 Millions"
 
 #: 
 msgid "HUMAN_RESOURCES"
@@ -985,7 +985,7 @@ msgstr "Human resources"
 
 #: 
 msgid "HUMAN_RESOURCES_VALUE"
-msgstr "Over 650 staff"
+msgstr "Over 800 staff"
 
 #: 
 msgid "POLICY"
