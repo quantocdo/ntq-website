@@ -7,6 +7,7 @@ services:
     working_dir: /usr/src
     ports:
       - "3100:3100"
+      - "3101:3101"
     volumes:
       - .:/usr/src
       - /usr/src/node_modules

@@ -1,7 +1,7 @@
 import express from 'express'
 import serialize from 'serialize-error'
 
-import lp from 'server/controllers/lp'
+import lp from 'controllers/lp'
 
 const dummy = (req, res, next) => {
   res.json({

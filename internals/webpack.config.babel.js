@@ -14,11 +14,12 @@ export default {
     ]
   },
   output: {
-    path: outDir
+    path: outDir,
+    publicPath: '/assets'
   },
   plugins: [
     new AssetsPlugin({
-      path: outDir,
+      path: path.resolve(__dirname, '../dist'),
       prettyPrint: true,
       update: true
     }),
@@ -45,7 +46,7 @@ export default {
         } ]
       })
     }, {
-      test: /\.(jpg|png|gif|svg|bmp|webp)$/,
+      test: /\.(jpg|png|gif|svg|bmp|webp|mp4)$/,
       use: [
         {
           loader: 'file-loader',

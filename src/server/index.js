@@ -1,8 +1,8 @@
 import express from 'express'
 import slash from 'express-slash'
 
-import initRoutes from 'server/bootstrap/routes'
-import initViewEngine from 'server/bootstrap/view-engine'
+import initRoutes from 'bootstrap/routes'
+import initViewEngine from 'bootstrap/view-engine'
 
 const app = express()
 
