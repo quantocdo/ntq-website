@@ -4,7 +4,7 @@ import path from 'path'
 import config from 'infrastructure/config'
 
 export default app => {
-  const viewDir = path.resolve(config._root, 'server/views')
+  const viewDir = path.resolve(config._root, 'views')
 
   const engine = ect({
     watch: true,

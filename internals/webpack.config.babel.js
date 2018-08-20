@@ -1,14 +1,19 @@
+import glob from 'glob'
 import path from 'path'
-import AssetsPlugin from 'assets-webpack-plugin'
 import CleanWebpackPlugin from 'clean-webpack-plugin'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
+import WebpackAssetsManifest from 'webpack-assets-manifest'
 
+const publicDir = path.resolve(__dirname, '../src/public')
 const outDir = path.resolve(__dirname, '../dist/assets')
+const pattern = `${ publicDir }/+(img|video)/**/*.*`
+const staticFiles = glob.sync(pattern)
 
 export default {
   mode: 'development',
   context: path.resolve(__dirname, '..'),
   entry: {
+    static: staticFiles,
     lp: [
       './src/public/stylus/pages/home.styl'
     ]
@@ -18,17 +23,17 @@ export default {
     publicPath: '/assets'
   },
   plugins: [
-    new AssetsPlugin({
-      path: path.resolve(__dirname, '../dist'),
-      prettyPrint: true,
-      update: true
-    }),
     new CleanWebpackPlugin([ outDir ], {
       verbose: true,
       watch: true,
       allowExternal: true
     }),
-    new ExtractTextPlugin('css/[name].[hash:5].css')
+    new ExtractTextPlugin('css/[name].[hash:5].css'),
+    new WebpackAssetsManifest({
+      output: path.resolve(__dirname, '../dist/manifest.json'),
+      publicPath: 'http://d-14:3101/assets/',
+      writeToDisk: true
+    })
   ],
   module: {
     rules: [ {
@@ -46,13 +51,14 @@ export default {
         } ]
       })
     }, {
-      test: /\.(jpg|png|gif|svg|bmp|webp|mp4)$/,
+      test: /\.(ico|jpg|png|gif|svg|bmp|webp|mp4)$/,
       use: [
         {
           loader: 'file-loader',
           options: {
-            name: 'img/[name].[hash:5].[ext]',
-            publicPath: '/assets/',
+            name: '[path][name].[hash:5].[ext]',
+            context: 'src/public',
+            publicPath: '/assets',
             emitFile: true
           }
         }

@@ -23,7 +23,7 @@ const error = (error, req, res, next) => {
 export const routes = [ {
   path: '/',
   methods: {
-    get: dummy || lp.get
+    get: lp.get
   }
 }, {
   path: '/posts/:page([0-9])?',

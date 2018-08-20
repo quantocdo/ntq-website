@@ -1,8 +1,7 @@
 import express from 'express'
 import slash from 'express-slash'
 
-import initRoutes from 'bootstrap/routes'
-import initViewEngine from 'bootstrap/view-engine'
+import bootstrap from './bootstrap'
 
 const app = express()
 
@@ -13,7 +12,6 @@ app.disable('x-powered-by')
 app.use(slash())
 
 // bootstrap
-initRoutes(app)
-initViewEngine(app)
+bootstrap(app)
 
 export default app
