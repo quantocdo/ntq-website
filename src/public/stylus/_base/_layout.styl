@@ -1,0 +1,159 @@
+body
+	background $color_black
+
+.page-full-disabled
+	.site-content
+		&.page-full
+			overflow visible
+
+			.page-section
+				position relative
+				display block
+				height 775px
+
+		&.page-remain
+			position static
+			display block!important
+
+.site-content
+	transform-style preserve-3d
+
+	&.page-full
+		margin-top ($layout_header_h - 1)
+		position relative
+		overflow hidden
+		z-index 1
+		transition height .2s
+
+		.page-section
+			position absolute
+			top 0
+			left 0
+			width 100%
+			height 100%
+			z-index -1
+			overflow hidden
+			display none
+
+			&.actived
+			&.moving
+				display block
+				// z-index 99
+
+	&.page-remain
+		position absolute
+		top ($layout_header_h - 1)
+		left 0
+		right 0
+		z-index 0
+
+		&.actived
+			z-index 2
+
+	&.page-flow
+		margin-top ($layout_header_h - 1)
+		position relative
+
+		.page-header-container
+			background $color_white
+			height 390px
+			position relative
+
+			.header-mask
+			.page-header
+				position absolute
+				top 0
+				left 0
+				right 0
+				bottom 0
+
+			.header-mask
+				background url('~img/frames/frame_header.png') no-repeat left center
+				background-size contain
+
+			.page-header
+				background-size cover
+				background-repeat no-repeat
+				background-position center top
+
+		.page-content
+			padding-top 75px
+
+			.page-title
+				font-size 42px
+
+.view-navigator
+	position fixed
+	top ($layout_header_h + 16px)
+	right 32px
+	z-index $zindex_topmost
+
+	.view-section
+		margin-top 32px
+		position relative
+		size 14px
+		background $color_blue_light
+		border-radius 50%
+		cursor pointer
+		border 1px solid $color_white
+		transition opacity .2s, background .2s, box-shadow .2s
+
+		&.selected
+			background $color_white
+			// box-shadow 0px 0px 10px 1px $color_gray_light
+			border 1px solid $color_blue_light
+
+		.view-section-title
+			transition opacity .2s
+			position absolute
+			background color-fallback(rgba(0, 0, 0, .7))
+			top -8px
+			right 20px
+			opacity 0
+			color $color_white
+			border-radius 3px
+			white-space nowrap
+			line-height 30px
+			padding 0 10px
+			display none
+
+		&:hover
+			.view-section-title
+				opacity 1
+				display block
+
+.site-container
+	margin 0 auto
+
+	&.fluid
+		max-width $layout_container_w
+
+	&.fixed
+		width $layout_container_w
+
+.scroll-y
+	overflow-y scroll
+
+.pull-left
+	float left
+
+.pull-right
+	float right
+
+.clearfix
+	clearfix()
+
+.hidden
+	display none
+
+.full-height
+	height 100%!important
+
+.vertical-middle
+	position relative
+	top 50%
+	transform translateY(-50%)
+
+.horizontal-center
+	margin-left auto
+	margin-right auto

@@ -1,0 +1,17 @@
+$_cols = 12
+
+.gs
+	gs('fluid', $_cols, (100% / $_cols) * 0.8, (100% / $_cols) * 0.2)
+
+	.row
+		clearfix()
+		row()
+
+		for $_width in (1..($_cols - 1))
+			.col-{$_width}
+				col($_width)
+
+			for $_offset in (1..($_cols - $_width))
+				.col-{$_width}-offset-{$_offset}
+					col($_width)
+					offset($_offset)

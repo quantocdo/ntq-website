@@ -1,0 +1,127 @@
+@import '../main'
+
+.page-header
+	background-image url('../img/bg/rd.jpg')
+	background-position center center!important
+
+.page-content
+	background $color_white
+
+	.section-intro
+		padding-top 85px
+		padding-bottom 110px
+
+		.heading
+			font-size $text_main_heading_size
+
+		.picture-container
+			img
+				width auto
+				height auto
+				max-width 100%
+
+		.explain
+			line-height $text_paragraph_line_height
+
+		.reason
+			&.first
+				margin-top 62px
+
+			&.second
+				margin-top 38px
+
+			&.first
+			&.second
+				line-height $text_paragraph_line_height
+				padding-bottom 36px
+
+		.reason-break
+			width 225px
+			border-bottom 1px solid $color_gray_light
+
+	.section-videos
+		background $color_green
+		padding-top 100px
+		padding-bottom 100px
+
+		.site-container
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+
+		.video-container
+			background: $color_white
+			padding-top: 25px
+			margin: 20px
+			width: 360px
+			height: 550px
+
+			.video-frame
+				margin 0 30px
+				height 280px
+				overflow hidden
+				background-position center center
+				background-size cover
+				background-repeat no-repeat
+
+				&.guidebot
+					background-image url('../img/rd/guidebot_m.jpg')
+
+				&.air-drone
+					background-image url('../img/rd/air_drone_m.jpg')
+
+				&.gecko
+					background-image url('../img/rd/gecko_m.jpg')
+
+				&.smart-card
+					background-image: url('../img/rd/smart-card.jpg')
+
+			.heading
+				margin-top 55px
+				font-size 18px
+
+			.explain
+				margin-top 10px
+				line-height $text_paragraph_line_height
+				padding 0 20px
+
+	.section-crazy
+		background $color_white
+		padding-top 170px
+		padding-bottom 170px
+
+		.heading
+			font-size $text_main_heading_size
+
+		.explain
+			font-size 30px
+			margin-top 65px
+
+		.team-picture
+			vertical-align middle
+			max-width 100%
+
+	.section-contact
+		background $color_blue
+		padding-top 100px
+		padding-bottom 90px
+
+		.intro
+			font-size 30px
+			line-height 36px
+
+		.contact
+			margin-top 50px
+
+			a
+				display inline-block
+				border-radius 3px
+				background $color_white
+				font-family 'Raleway'
+				font-weight bold
+				padding 0 22px
+				line-height 70px
+				font-size 30px
+
+				.icon-see-more
+					margin-left 10px

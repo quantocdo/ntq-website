@@ -1,0 +1,49 @@
+@import '../main'
+
+.page-header
+	background-image url('../img/bg/download.jpg')
+
+.page-content
+	background $color_white
+	padding-bottom 100px
+
+	.section-batch-download
+		.explain
+			margin-top 15px
+			line-height $text_paragraph_line_height
+
+	.section-links
+		margin-top 100px
+
+		.folders
+			background $color_white
+
+			.folder
+				padding-top 65px
+				min-height 600px
+
+				&.even
+					background $color_blue
+
+					color $color_white
+
+					.file
+						a:hover
+							color $color_yellow
+
+				&.odd
+					background $color_white
+
+					.file
+						a:hover
+							color $color_blue
+
+				.heading
+					font-size 30px
+					height 115px
+
+				.files
+					padding 0 20px
+
+					.file
+						margin-top 30px

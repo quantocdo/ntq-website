@@ -1,0 +1,95 @@
+@import '../main'
+
+.site-content
+	background $color_white
+	padding-top 30px
+	padding-bottom 100px
+
+	.avatar
+		margin-left -999px
+		margin-right -999px
+		text-align center
+
+		img
+			vertical-align middle
+			height 100%
+
+	.main-article
+		.avatar-container
+			.avatar
+				height 400px
+
+		.heading
+			margin-top 30px
+			font-size 30px
+
+		.bulletin
+			margin-top 40px
+			line-height $text_paragraph_line_height
+
+		.extracts
+			margin-top 40px
+
+			.extract
+				padding-bottom 30px
+
+				.text
+					line-height $text_paragraph_line_height
+
+				.image
+					text-align center
+
+					img
+						max-width 100%
+						vertical-align middle
+
+				.text-image
+				.image-text
+					.image
+						width 200px
+
+				.text-image
+					.text
+						margin-right 220px
+
+				.image-text
+					.text
+						margin-left 220px
+
+	.related-articles
+		.heading
+			font-size 30px
+
+		.articles
+			margin-top 20px
+
+			.article
+				padding-bottom 15px
+
+				.avatar-container
+					width 80px
+					overflow hidden
+
+					.avatar
+						height 80px
+
+				.article-info
+					margin-left 100px
+
+					.heading
+						font-size $text_base_size
+						line-height $text_paragraph_line_height
+						max-height ($text_paragraph_line_height * 2)
+						overflow hidden
+						text-overflow ellipsis
+						vendor('line-clamp', 2, prefixes: webkit moz ms o)
+						vendor('box-orient', vertical, prefixes: webkit moz ms o)
+						display -webkit-box
+						display -moz-box
+						display -ms-box
+						display -o-box
+
+					.date
+						margin-top 10px
+						font-size 12px
+						color $color_gray_dark

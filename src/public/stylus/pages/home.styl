@@ -1,0 +1,402 @@
+@import '../main'
+
+.icon-see-more
+	padding-left: 10px
+
+.section-landing
+	.landing-background
+		position absolute
+		overflow hidden
+		top 0
+		left 0
+		right 0
+		bottom 0
+		z-index 0
+
+		.video-background
+			min-width 100%
+			min-height 100%
+
+	.landing-mark
+		position absolute
+		overflow hidden
+		top 0
+		left 0
+		right 0
+		bottom 0
+		z-index 0
+		background $color_black
+		opacity .4
+
+	.landing-overlay
+		position absolute
+		left 0
+		right 0
+		bottom 130px
+		z-index 2
+		text-align center
+		color $color_white
+
+		.heading
+			font-size 72px
+			line-height 80px
+			letter-spacing 5px
+
+		.sub-heading
+			margin-top 50px
+			font-size 50px
+
+.section-whois
+	background $color_white
+
+	.heading
+		font-size 42px
+		text-transform uppercase
+
+	.paragraph
+		margin-top 25px
+		line-height 24px
+
+	.about-us
+		margin-top 50px
+
+		a
+			display inline-block
+			border-radius 3px
+			background $color_green
+			padding 0 22px
+			line-height 45px
+			font-family 'Raleway'
+			font-weight bold
+
+	.video-container
+		background url('~img/frames/frame_imac.png') no-repeat center center
+		width 567px
+		height 447px
+		padding 19px
+
+		.video
+			height 296px
+
+.section-domains
+	background $color_blue
+
+	.heading
+		font-size 42px
+
+	.sub-heading
+		font-size 18px
+		margin-top 20px
+
+	.services
+		.row
+			margin-top 40px
+
+			&.domains
+				margin-top 60px
+
+		.logo-container
+			border-radius 50%
+			overflow hidden
+			border 1px solid $color_white
+			background $color_blue_light
+			width 80px
+			height 80px
+			line-height 80px
+
+			&.large
+				width 140px
+				height 140px
+				line-height 140px
+
+			img
+				vertical-align middle
+
+		.logo-description
+			margin-left 100px
+			margin-right 20px
+			height 80px
+			font-size 18px
+
+		.service-heading
+			font-size 18px
+			margin-top 30px
+
+		.service-description
+			margin-top 20px
+			line-height 24px
+
+		.service-learn-more
+			margin-top 18px
+
+.section-reviews
+	background $color_green
+
+	.heading
+		font-size 42px
+
+	.customers
+		margin-top 60px
+
+		.customer-pic-container
+			width 134px
+			border-radius 50%
+			overflow hidden
+			border 1px solid $color_white
+			background $color_blue
+			overflow hidden
+
+			.customer-pic
+				margin-left -999px
+				margin-right -999px
+				text-align center
+				height 134px
+
+				img
+					vertical-align middle
+					height 100%
+
+		.customer-name
+			font-size 20px
+
+		.customer-position
+			font-size 18px
+
+		.customer-review
+			margin-top 25px
+			line-height 22px
+
+.section-tech
+	background $color_blue
+
+	.heading
+		font-size 42px
+
+	.sub-heading
+		font-size 18px
+		margin-top 20px
+
+	.description
+		margin-top 25px
+
+	.tech-logo
+		background $color_white
+		line-height 126px
+		height 126px
+		overflow hidden
+
+		img
+			vertical-align middle
+
+	.first-line
+		margin-top 126px
+
+	.second-line
+		margin-top 22px
+
+	.see-more-tech
+		margin-top 78px
+
+		a
+			border-radius 3px
+			display inline-block
+			background $color_white
+			padding 0 22px
+			line-height 45px
+			font-family 'Raleway'
+			font-weight bold
+
+.section-why-ntq
+	background $color_white
+
+	.image-container
+		height 565px
+		// background url('../img/frames/frame_iphone.png') no-repeat center center
+
+		img
+			vertical-align middle
+			max-width 100%
+
+	.heading
+		font-size 42px
+
+	.reason
+		&.first-reason
+			margin-top 62px
+
+		&.first-reason
+		&.second-reason
+			padding-bottom 36px
+
+		&.second-reason
+		&.third-reason
+			margin-top 38px
+
+		.reason-heading
+			font-size 18px
+			line-height 24px
+
+		.reason-explain
+			line-height 24px
+
+	.reason-break
+		width 225px
+		border-bottom 1px solid $color_gray_light
+
+.section-partners
+	background $color_blue
+
+	.site-container
+		height 100%
+		padding-top 78px
+		position relative
+
+		.heading
+			font-size 42px
+
+		.sub-heading
+			margin-top 20px
+			font-size 18px
+
+		.partner-map
+			position absolute
+			top 180px
+			bottom 50px
+			left 0
+			right 0
+			background-image: url('~img/partner_map_jp.png')
+			background-repeat no-repeat
+			background-position center center
+			background-size contain
+
+.en .section-partners .site-container .partner-map
+	background-image: url('~img/partner_map_en.png')
+
+.section-rd
+	background $color_green
+
+	.heading
+		font-size 42px
+
+	.description
+		font-size 20px
+		margin-top 25px
+		line-height 24px
+
+	.rd-film
+		margin-top 112px
+		padding-top 38px
+		padding-bottom 42px
+		background url('~img/frames/frame_film.png') repeat-x center center
+
+		.rd-block
+			border-radius 8px
+			overflow hidden
+			background $color_green
+
+			.thumb
+				height 130px
+				text-align center
+				margin-left -999px
+				margin-right -999px
+
+				img
+					vertical-align middle
+					height 100%
+
+	.rd-how-it-work
+		margin-top 52px
+
+		a
+			display inline-block
+			line-height 45px
+			padding 0 22px
+			border-radius 3px
+			background $color_white
+			font-family 'Raleway'
+			font-weight bold
+
+.section-articles
+	background $color_white
+
+	.article
+		position relative
+		width 33.33%
+		height 50%
+		overflow hidden
+		background-size cover
+		background-position center center
+		background-repeat no-repeat
+
+		.article-overlay
+			position absolute
+			left 0
+			right 0
+			bottom 0
+			top 0
+			opacity 0
+			transition opacity .2s
+
+			&.background
+				background $color_black
+				z-index 0
+
+			&.info
+				padding 100px 110px 0 20px
+				font-size 20px
+				z-index 1
+
+				.article-heading
+					font-size 20px
+
+				.article-brief
+					font-size 16px
+					margin-top 25px
+					line-height 24px
+
+				.article-readmore
+					font-size 16px
+					margin-top 25px
+
+					a
+						display inline-block
+						border 1px solid $color_white
+						padding 0 16px
+						line-height 38px
+
+		&:hover
+			.article-overlay
+				&.background
+					opacity .4
+
+				&.info
+					opacity 1
+
+.section-offer
+	background $color_blue
+	padding 92px 70px 82px
+
+	.offer
+	.offer-explain
+		font-size 30px
+		line-height 42px
+
+	.offer-explain
+		margin-top 41px
+
+	.contact-us
+		margin-top 64px
+
+		a
+			display inline-block
+			border-radius 3px
+			background $color_white
+			font-family 'Raleway'
+			font-weight bold
+			padding 0 22px
+			line-height 70px
+			font-size 30px
+
+	.download-materials
+		margin-top 20px
+		font-size 25px
