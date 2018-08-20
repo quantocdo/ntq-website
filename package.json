@@ -22,7 +22,8 @@
     "i18n": "0.8.3",
     "mongoose": "5.2.9",
     "nodemailer": "4.6.8",
-    "nodemailer-ses-transport": "1.5.1"
+    "nodemailer-ses-transport": "1.5.1",
+    "serialize-error": "2.1.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
