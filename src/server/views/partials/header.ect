@@ -1,0 +1,54 @@
+<div class="site-header">
+	<div class="site-container fluid cf">
+		<div class="company-logo pull-left">
+			<a href="<%= @_url('home') %>">
+				<img src="<%= @__assets.img('/logo/logo_s.png') %>" alt="NTQ Solution" width="129" height="57">
+			</a>
+		</div>
+		<div class="top-nav <%= @_locale %>">
+			<ul class="top-menu">
+				<li class="nav-item dropdown-menu">
+					<a href="#"><%- @__('BUSINESS') %>&nbsp;<i class="fa fa-angle-down fw"></i></a>
+					<div class="dropdown">
+						<div class="arrow-up"></div>
+						<ul>
+							<li class="dropdown-item first">
+								<a href="<%= @_url('services') %>"><%- @__('SERVICES') %></a>
+							</li>
+							<li class="dropdown-item">
+								<a href="<%= @_url('domains') %>"><%- @__('DEVELOPMENT_DOMAINS') %></a>
+							</li>
+							<li class="dropdown-item">
+								<a href="<%= @_url('contract-models') %>"><%- @__('CONTRACT_MODELS') %></a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a href="<%= @_url('success-stories') %>"><%- @__('SUCCESS_STORIES') %></a>
+				</li>
+				<li class="nav-item">
+					<a href="<%= @_url('rd') %>"><%- @__('R&D') %></a>
+				</li>
+				<li class="nav-item">
+					<a href="<%= @_url('articles') %>"><%- @__('NEWS') %></a>
+				</li>
+				<!--
+				<li class="nav-item">
+					<a href="<%= @_url('career') %>"><%- @__('CAREER') %></a>
+				</li>
+				-->
+				<li class="nav-item">
+					<a href="<%= @_url('download') %>"><%- @__('DOWNLOADS') %></a>
+				</li>
+				<li class="nav-item">
+					<a href="<%= @_url('about') %>"><%- @__('ABOUT_US') %></a>
+				</li>
+			</ul>
+			<div class="top-actions clearfix">
+				<a href="<%= @_profile.domain.protocol %>://<%= @_anotherLocaleDomain %>" class="language-switch pull-right <%= @_anotherLocale %>" title="<%= @__('TO_' + @_anotherLocale.toUpperCase() + '_VERSION') %>"></a>
+				<a href="<%= @_url('contact') %>" class="contact pull-right"><%- @__('CONTACT') %></a>
+			</div>
+		</div>
+	</div>
+</div>

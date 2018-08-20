@@ -1,0 +1,14 @@
+version: '3'
+services:
+  ntq-website:
+    image: node:carbon
+    container_name: ntq.website
+    command: bash -c "tail -f /dev/null"
+    working_dir: /usr/src
+    ports:
+      - "3100:3100"
+    volumes:
+      - .:/usr/src
+      - /usr/src/node_modules
+    environment:
+      NODE_ENV: development

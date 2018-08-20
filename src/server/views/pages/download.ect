@@ -1,0 +1,62 @@
+<% extend '_flow' %>
+
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__assets.css('/download.page.css') %>">
+
+<% end %>
+
+<% block 'page_flow': %>
+
+<div class="page-title text-center text-upper">
+	<span><%- @__('DOWNLOADS') %></span>
+</div>
+
+<div class="section-batch-download">
+	<div class="site-container fluid">
+		<div class="explain text-center">
+			<p><%- @__('DOWNLOADS_HEADING') %></p>
+		</div>
+	</div>
+</div>
+
+<div class="section-links">
+	<div class="site-container fluid">
+		<div class="gs">
+			<div class="row folders">
+				<% for folder, index in @_folders: %>
+				<div class="col-4">
+					<div class="folder <% if (index % 2 == 0): %>even<% else: %>odd<% end %>">
+						<div class="heading text-upper text-center">
+							<span><%= folder.name[@_locale] %></span>
+						</div>
+						<ul class="files">
+							<% for file in folder.files: %>
+							<li class="file">
+								<% switch file.type: %>
+									<% when 'pdf': %>
+									<i class="fa fa-fw fa-file-pdf-o"></i>
+									<% end %>
+									<% when 'doc': %>
+									<i class="fa fa-fw fa-file-word-o"></i>
+									<% end %>
+									<% else: %>
+									<i class="fa fa-fw fa-file-archive-o"></i>
+									<% end %>
+								<% end %>
+								<a href="<%= @_url('download.file', {
+									folderId: folder.id,
+									fileId: file.id
+								}) %>"><%= file.name[@_locale] %></a>
+							</li>
+							<% end %>
+						</ul>
+					</div>
+				</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>
+
+<% end %>

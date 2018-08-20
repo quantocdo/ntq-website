@@ -1,0 +1,108 @@
+<% extend '_base' %>
+
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__assets.css('/articles.page.css') %>">
+
+<% end %>
+
+<body>
+	<% include 'partials/header' %>
+
+	<div class="site-content page-flow">
+		<div class="site-container fluid highlighted-articles">
+			<div class="gs">
+				<div class="row">
+					<div class="col-7">
+						<% mainArticle = @_highlightedArticles.shift() %>
+						<div class="main-article">
+							<div class="avatar-container">
+								<div class="avatar">
+									<img src="<%= @__assets.cdn('/upload/img/' + mainArticle.avatar) %>?w=692&h=410&m=crop" alt="<%= mainArticle.heading %>">
+								</div>
+							</div>
+							<div class="heading">
+								<a href="<%= @_url('articles.detail', {
+									id: mainArticle._id
+								}) %>"><%= mainArticle.heading %></a>
+							</div>
+							<div class="bulletin">
+								<p><%= mainArticle.bulletin %></p>
+							</div>
+							<div class="date">
+								<span><%= mainArticle.date %></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-2">
+						<% for article in @_highlightedArticles: %>
+							<div class="recent-article">
+								<div class="avatar-container">
+									<div class="avatar">
+										<img src="<%= @__assets.cdn('/upload/img/' + article.avatar) %>?w=183&h=135&m=crop" alt="<%= article.heading %>">
+									</div>
+								</div>
+							</div>
+						<% end %>
+					</div>
+					<div class="col-3">
+						<% for article in @_highlightedArticles: %>
+						<div class="recent-article">
+							<div class="heading">
+								<a href="<%= @_url('articles.detail', {
+									id: article._id
+								}) %>"><%= article.heading %></a>
+							</div>
+							<p class="bulletin"><%= article.bulletin %></p>
+							<div class="date">
+								<span><%= article.date %></span>
+							</div>
+						</div>
+						<% end %>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="articles"></div>
+	</div>
+
+	<% include 'partials/footer' %>
+
+	<script id="articles-tpl" type="text/ractive">
+		<div class="site-container fluid">
+			<div class="articles">
+				{{#rows}}
+				<div class="gs">
+					<div class="row">
+						{{#articles}}
+							<div class="col-4">
+								<div class="article">
+									<div class="avatar-container">
+										<div class="avatar">
+											<img src="<%= @__assets.cdn('') %>/upload/img/{{avatar}}?w=387&h=340&m=crop" alt="{{heading}}">
+										</div>
+									</div>
+									<div class="heading">
+										<a href="/articles/{{_id}}">{{heading}}</a>
+									</div>
+									<p class="bulletin">{{bulletin}}</p>
+									<div class="date">
+										<span>{{date}}</span>
+									</div>
+								</div>
+							</div>
+						{{/articles}}
+					</div>
+				</div>
+				{{/rows}}
+			</div>
+			<div class="load-more text-upper">
+				<a href="#" on-click="articles.loadmore"><i class="fa fa-angle-left icon"></i><%- @__('OLDER_POSTS') %></a>
+			</div>
+		</div>
+	</script>
+	<% scripts = @__assets.scripts('/articles.js') %>
+	<% for file in scripts: %>
+	<script src="<%= @__assets.js(file) %>" <% if scripts.length == 1: %>async<% end %>></script>
+	<% end %>
+</body>
