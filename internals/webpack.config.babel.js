@@ -15,12 +15,14 @@ export default {
   entry: {
     static: staticFiles,
     lp: [
-      './src/public/stylus/pages/home.styl'
+      './src/public/stylus/pages/home.styl',
+      './src/public/js/lp/index.js'
     ]
   },
   output: {
     path: outDir,
-    publicPath: '/assets'
+    publicPath: '/assets',
+    filename: 'js/[name].[hash:5].js'
   },
   plugins: [
     new CleanWebpackPlugin([ outDir ], {
