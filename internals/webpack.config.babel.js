@@ -19,7 +19,7 @@ export default {
     ],
     lp: [
       './src/public/stylus/pages/lp.styl',
-      './src/public/js/lp/index.js'
+      './src/public/js/lp'
     ],
     contact: [
       './src/public/stylus/pages/contact.styl'
@@ -29,6 +29,13 @@ export default {
     ],
     domains: [
       './src/public/stylus/pages/domains.styl'
+    ],
+    post: [
+      './src/public/stylus/pages/post.styl',
+    ],
+    posts: [
+      './src/public/stylus/pages/posts.styl',
+      './src/public/js/posts'
     ],
     rd: [
       './src/public/stylus/pages/rd.styl'

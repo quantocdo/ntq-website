@@ -28,12 +28,12 @@ export const routes = [ {
 }, {
   path: '/posts/:page([0-9])?',
   methods: {
-    get: dummy
+    get: controllers.posts.get
   }
 }, {
-  path: '/posts/:slug',
+  path: '/p/:slug',
   methods: {
-    get: dummy
+    get: [ controllers.posts.single, dummy ]
   }
 }, {
   path: '/download',

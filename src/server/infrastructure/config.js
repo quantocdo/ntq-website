@@ -3,5 +3,9 @@ import path from 'path'
 export default {
   _root: path.resolve(__dirname, '..'),
   port: process.env.PORT,
-  cms: process.env.CMS
+  cms: {
+    url: process.env.CMS_URL,
+    clientId: process.env.CMS_CLIENT_ID,
+    clientSecret: process.env.CMS_CLIENT_SECRET
+  }
 }

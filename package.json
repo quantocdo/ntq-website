@@ -16,6 +16,7 @@
   "homepage": "https://github.com/ntq-lab/ntq-website#readme",
   "dependencies": {
     "body-parser": "1.18.3",
+    "debounce": "1.2.0",
     "ect": "0.5.9",
     "express": "4.16.3",
     "express-slash": "2.0.1",
@@ -23,10 +24,12 @@
     "i18n": "0.8.3",
     "kouto-swiss": "0.12.0",
     "mongoose": "5.2.9",
+    "node-fetch": "2.2.0",
     "nodemailer": "4.6.8",
     "nodemailer-ses-transport": "1.5.1",
     "serialize-error": "2.1.0",
-    "stylus": "0.54.5"
+    "stylus": "0.54.5",
+    "truncatise": "0.0.7"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",

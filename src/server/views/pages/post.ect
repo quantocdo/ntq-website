@@ -1,0 +1,30 @@
+<% extend '_base' %>
+
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__asset('post.css') %>">
+
+<% end %>
+
+<body>
+  <% include 'partials/header' %>
+
+  <div class="site-content page-flow">
+    <div class="post">
+      <div class="title" style="background-image: url('<%= @post.feature_image %>');">
+        <div class="overlay"></div>
+        <div class="site-container fluid heading">
+          <h1><%= @post.title %></h1>
+        </div>
+      </div>
+      <div class="site-container fluid">
+        <div class="content">
+          <%- @post.html %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <% include 'partials/footer' %>
+
+</body>

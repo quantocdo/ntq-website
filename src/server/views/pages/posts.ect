@@ -1,0 +1,42 @@
+<% extend '_base' %>
+
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__asset('posts.css') %>">
+
+<% end %>
+
+<body>
+	<% include 'partials/header' %>
+
+	<div class="site-content page-flow">
+		<div class="site-container fluid">
+			<div class="posts">
+				<% for post in @posts: %>
+					<div class="post" id="<%= post.slug %>">
+						<a class="content"
+							href="/p/<%= post.slug %>">
+							<% if post.feature_image: %>
+								<div class="feature-image">
+									<img
+										src="<%= post.feature_image %>"
+										alt="<%= post.title %>" />
+								</div>
+							<% end %>
+							<h2 class="title">
+								<%= post.title %>
+							</h2>
+							<p class="truncated">
+								<%= post.truncated %>
+							</p>
+						</a>
+					</div>
+				<% end %>
+			</div>
+		</div>
+	</div>
+
+	<% include 'partials/footer' %>
+
+	<script src="<%= @__asset('posts.js') %>"></script>
+</body>
