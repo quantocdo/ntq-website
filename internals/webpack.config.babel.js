@@ -14,6 +14,9 @@ export default {
   context: path.resolve(__dirname, '..'),
   entry: {
     static: staticFiles,
+    '404': [
+      './src/public/stylus/pages/404.styl'
+    ],
     about: [
       './src/public/stylus/pages/about.styl'
     ],

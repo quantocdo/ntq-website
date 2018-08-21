@@ -3,23 +3,6 @@ import serialize from 'serialize-error'
 
 import * as controllers from '../controllers'
 
-const dummy = (req, res, next) => {
-  res.json({
-    url: req.url,
-    params: req.params,
-    query: req.query
-  })
-}
-
-const notFound = (req, res, next) => {
-  res.set('content-type', 'text/plain')
-  res.status(404).send('not found')
-}
-
-const error = (error, req, res, next) => {
-  res.status(500).json(serialize(error))
-}
-
 export const routes = [ {
   path: '/',
   methods: {
@@ -33,29 +16,28 @@ export const routes = [ {
 }, {
   path: '/p/:slug',
   methods: {
-    get: [ controllers.cms.get, dummy ]
+    get: controllers.cms.get
   }
 }, {
   path: '/download',
   methods: {
-    get: dummy
+    // get: dummy
   }
 }, {
   path: '/download/:folderId/:fileId',
   methods: {
-    get: dummy
+    // get: dummy
   }
 }, {
   path: '/contact',
   methods: {
     get: controllers.contact.get,
-    post: dummy
+    // post: dummy
   }
 }, {
   path: '/domains',
   methods: {
-    get: controllers.domains.get,
-    post: dummy
+    get: controllers.domains.get
   }
 }, {
   path: '/about',
@@ -66,11 +48,6 @@ export const routes = [ {
   path: '/contract-models',
   methods: {
     get: controllers.contractModels.get
-  }
-}, {
-  path: '/development-domains',
-  methods: {
-    get: dummy
   }
 }, {
   path: '/research-development',
@@ -88,6 +65,15 @@ export const routes = [ {
     get: controllers.successStories.get
   }
 } ]
+
+const notFound = (req, res, next) => {
+  res.status(404).render('errors/404')
+}
+
+const error = (error, req, res, next) => {
+  res.status(404).render('errors/404')
+  // res.status(500).json(serialize(error))
+}
 
 export default app => {
   // load routes

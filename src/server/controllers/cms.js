@@ -18,7 +18,7 @@ const buildUrl = (path, params) => {
   return [
     `${ config.cms.url }/ghost/api/v0.1${ path }`,
     Object.entries(params)
-      .map(args => args.join('='))
+      .map(([ k, v ]) => `${ k }=${ encodeURIComponent(v) }`)
       .join('&')
   ].join('?')
 }
@@ -30,7 +30,7 @@ export default {
     const url = buildUrl('/posts', {
       client_id: config.cms.clientId,
       client_secret: config.cms.clientSecret,
-      filter: `tags:[news_${ _locale }]`
+      filter: `tags:[news,news_${ _locale }]`
     })
 
     const response = await fetch(url)
@@ -56,23 +56,29 @@ export default {
   },
   async get(req, res, next) {
     const { slug } = req.params
+    const { _locale } = res.locals
 
-    const url = buildUrl(`/posts/slug/${ slug }`, {
+    const url = buildUrl('/posts', {
       client_id: config.cms.clientId,
-      client_secret: config.cms.clientSecret
+      client_secret: config.cms.clientSecret,
+      filter: `tags:[news,news_${ _locale }]+slug:${ slug }`
     })
 
-    const response = await fetch(url)
-    const { posts } = await response.json()
+    try {
+      const response = await fetch(url)
+      const { posts } = await response.json()
 
-    if (!posts.length) {
-      return next(404)
+      if (!posts.length) {
+        throw new Error(404)
+      }
+
+      const post = posts.shift()
+
+      res.render('pages/post', {
+        post: transform(post)
+      })
+    } catch (e) {
+      next(404)
     }
-
-    const post = posts.shift()
-
-    res.render('pages/post', {
-      post: transform(post)
-    })
   }
 }
