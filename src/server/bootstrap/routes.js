@@ -9,7 +9,7 @@ export const routes = [ {
     get: controllers.lp.get
   }
 }, {
-  path: '/news/:page([0-9])?',
+  path: '/news/:page([0-9]+)?',
   methods: {
     get: controllers.cms.fetchNews
   }

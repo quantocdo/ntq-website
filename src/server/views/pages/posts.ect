@@ -36,8 +36,19 @@
 					</div>
 				<% end %>
 			</div>
+			<% if (@prev || @next): %>
+				<div class="pagination clearfix">
+					<% if @prev: %>
+						<a href="<%= @prev %>" class="prev"><i class="fa fa-angle-left icon"></i></a>
+					<% end %>
+					<% if @next: %>
+						<a href="<%= @next %>" class="next"><i class="fa fa-angle-right icon"></i></a>
+					<% end %>
+				</div>
+			<% end %>
 		</div>
 	</div>
+
 
 	<% include 'partials/footer' %>
 

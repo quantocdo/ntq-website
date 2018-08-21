@@ -25,34 +25,51 @@ const buildUrl = (path, params) => {
 
 export default {
   async fetchNews(req, res, next) {
-    const { _locale } = res.locals
+    try {
+      const { _locale } = res.locals
+      const { page } = req.params
 
-    const url = buildUrl('/posts', {
-      client_id: config.cms.clientId,
-      client_secret: config.cms.clientSecret,
-      filter: `tags:[news,news_${ _locale }]`
-    })
+      if (page && parseInt(page, 10) < 2) {
+        return res.redirect('/news')
+      }
 
-    const response = await fetch(url)
-    const { posts } = await response.json()
+      const url = buildUrl('/posts', {
+        client_id: config.cms.clientId,
+        client_secret: config.cms.clientSecret,
+        filter: `tags:[news,news_${ _locale }]`,
+        limit: 6,
+        page: page || 1
+      })
 
-    // return res.json(posts)
+      const response = await fetch(url)
+      const { posts, meta: { pagination } } = await response.json()
 
-    res.render('pages/posts', {
-      posts: posts
-        .map(transform)
-        .map(
-          post => ({
-            ...post,
-            truncated: truncatise(post.html, {
-              StripHTML: true,
-              TruncateBy: 'words',
-              TruncateLength: 30,
-              Suffix: '...'
+      if (pagination.page > pagination.pages) {
+        return res.redirect('/news')
+      }
+
+      res.render('pages/posts', {
+        prev: pagination.prev &&
+          (pagination.prev < 2 ? '/news' : `/news/${ pagination.prev }`),
+        next: pagination.next &&
+          `/news/${ pagination.next }`,
+        posts: posts
+          .map(transform)
+          .map(
+            post => ({
+              ...post,
+              truncated: truncatise(post.html, {
+                StripHTML: true,
+                TruncateBy: 'words',
+                TruncateLength: 30,
+                Suffix: '...'
+              })
             })
-          })
-        )
-    })
+          )
+      })
+    } catch (e) {
+      next(500)
+    }
   },
   async get(req, res, next) {
     const { slug } = req.params
