@@ -12,7 +12,7 @@ export default {
       const url = u.build(`${ config.cms.url }/posts`, {
         client_id: config.cms.clientId,
         client_secret: config.cms.clientSecret,
-        filter: `tags:[news,news_${ _locale }]`,
+        filter: `tags:[news,news_${ _locale }]+featured:true`,
         limit: 6
       })
 
