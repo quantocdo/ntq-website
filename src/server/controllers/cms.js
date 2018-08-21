@@ -1,27 +1,8 @@
 import fetch from 'node-fetch'
-import truncatise from 'truncatise'
-import { URL } from 'url'
 
 import config from 'infrastructure/config'
-
-const transform = post => ({
-  ...post,
-  feature_image:  post.feature_image ?
-    new URL(
-      post.feature_image,
-      config.cdn.url
-    ).toString() :
-    null
-})
-
-const buildUrl = (path, params) => {
-  return [
-    `${ config.cms.url }/ghost/api/v0.1${ path }`,
-    Object.entries(params)
-      .map(([ k, v ]) => `${ k }=${ encodeURIComponent(v) }`)
-      .join('&')
-  ].join('?')
-}
+import post from 'services/post'
+import u from 'services/url'
 
 export default {
   async fetchNews(req, res, next) {
@@ -33,7 +14,7 @@ export default {
         return res.redirect('/news')
       }
 
-      const url = buildUrl('/posts', {
+      const url = u.build(`${ config.cms.url }/posts`, {
         client_id: config.cms.clientId,
         client_secret: config.cms.clientSecret,
         filter: `tags:[news,news_${ _locale }]`,
@@ -54,28 +35,18 @@ export default {
         next: pagination.next &&
           `/news/${ pagination.next }`,
         posts: posts
-          .map(transform)
-          .map(
-            post => ({
-              ...post,
-              truncated: truncatise(post.html, {
-                StripHTML: true,
-                TruncateBy: 'words',
-                TruncateLength: 30,
-                Suffix: '...'
-              })
-            })
-          )
+          .map(post.featureImage)
+          .map(post.truncated)
       })
     } catch (e) {
-      next(500)
+      next(e)
     }
   },
   async get(req, res, next) {
     const { slug } = req.params
     const { _locale } = res.locals
 
-    const url = buildUrl('/posts', {
+    const url = u.build(`${ config.cms.url }/posts`, {
       client_id: config.cms.clientId,
       client_secret: config.cms.clientSecret,
       filter: `tags:[news,news_${ _locale }]+slug:${ slug }`
@@ -92,7 +63,7 @@ export default {
       const post = posts.shift()
 
       res.render('pages/post', {
-        post: transform(post)
+        post: post.featureImage(post)
       })
     } catch (e) {
       next(404)

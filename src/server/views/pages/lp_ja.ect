@@ -417,17 +417,17 @@
 					<div class="row">
 						<div class="col-2 rd-block">
 							<div class="thumb">
-								<img src="<%= @__asset('img/rd/air_drone_s.jpg') %>" alt="R&D Team" width="200" height="130">
+								<img src="<%= @__asset('img/rd/air_drone_s.jpg') %>" alt="R&amp;D Team" width="200" height="130">
 							</div>
 						</div>
 						<div class="col-2 rd-block">
 							<div class="thumb">
-								<img src="<%= @__asset('img/rd/rd_room_s.jpg') %>" alt="R&D Team" width="200" height="130">
+								<img src="<%= @__asset('img/rd/rd_room_s.jpg') %>" alt="R&amp;D Team" width="200" height="130">
 							</div>
 						</div>
 						<div class="col-2 rd-block">
 							<div class="thumb">
-								<img src="<%= @__asset('img/rd/gecko_s.jpg') %>" alt="R&D Team" width="200" height="130">
+								<img src="<%= @__asset('img/rd/gecko_s.jpg') %>" alt="R&amp;D Team" width="200" height="130">
 							</div>
 						</div>
 						<div class="col-2 rd-block">
@@ -437,12 +437,12 @@
 						</div>
 						<div class="col-2 rd-block">
 							<div class="thumb">
-								<img src="<%= @__asset('img/rd/rd_team_s.jpg') %>" alt="R&D Team" width="200" height="130">
+								<img src="<%= @__asset('img/rd/rd_team_s.jpg') %>" alt="R&amp;D Team" width="200" height="130">
 							</div>
 						</div>
 						<div class="col-2 rd-block">
 							<div class="thumb">
-								<img src="<%= @__asset('img/rd/rd_workbench_s.jpg') %>" alt="R&D Team" width="200" height="130">
+								<img src="<%= @__asset('img/rd/rd_workbench_s.jpg') %>" alt="R&amp;D Team" width="200" height="130">
 							</div>
 						</div>
 					</div>
@@ -459,21 +459,19 @@
 
 <div class="page-section section-articles" data-title="<%- @__('NEWS') %>">
 	<div class="articles clearfix full-height">
-	<% for article in @_highlightedArticles: %>
-		<div class="article pull-left"
-			style="background-image: url('<%= @__assets.cdn('/upload/img/' + article.avatar) %>?w=634');">
-			<div class="article-overlay background"></div>
-			<div class="article-overlay info text-white">
-				<div class="article-heading"><%= article.heading %></div>
-				<div class="article-brief"><%= article.bulletin %></div>
-				<div class="article-readmore">
-					<a href="<%= @_url('articles.detail', {
-						id: article._id
-					}) %>" class="text-upper"><%- @__('READ_MORE') %></a>
+		<% for post in @posts: %>
+			<div class="article pull-left"
+				style="background-image: url('<%= post.feature_image %>?w=634');">
+				<div class="article-overlay background"></div>
+				<div class="article-overlay info text-white">
+					<div class="article-heading"><%= post.title %></div>
+					<div class="article-brief"><%= post.truncated %></div>
+					<div class="article-readmore">
+						<a href="/p/<%= post.slug %>" class="text-upper"><%- @__('READ_MORE') %></a>
+					</div>
 				</div>
 			</div>
-		</div>
-	<% end %>
+		<% end %>
 	</div>
 </div>
 
