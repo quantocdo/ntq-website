@@ -1,8 +1,8 @@
 import fetch from 'node-fetch'
 
 import config from 'infrastructure/config'
-import post from 'services/post'
-import u from 'services/url'
+import postService from 'services/post'
+import urlService from 'services/url'
 
 export default {
   async fetchNews(req, res, next) {
@@ -14,7 +14,7 @@ export default {
         return res.redirect('/news')
       }
 
-      const url = u.build(`${ config.cms.url }/posts`, {
+      const url = urlService.build(`${ config.cms.url }/posts`, {
         client_id: config.cms.clientId,
         client_secret: config.cms.clientSecret,
         filter: `tags:[news,news_${ _locale }]`,
@@ -35,8 +35,8 @@ export default {
         next: pagination.next &&
           `/news/${ pagination.next }`,
         posts: posts
-          .map(post.featureImage)
-          .map(post.truncated)
+          .map(postService.featureImage)
+          .map(postService.truncated)
       })
     } catch (e) {
       next(e)
@@ -46,7 +46,7 @@ export default {
     const { slug } = req.params
     const { _locale } = res.locals
 
-    const url = u.build(`${ config.cms.url }/posts`, {
+    const url = urlService.build(`${ config.cms.url }/posts`, {
       client_id: config.cms.clientId,
       client_secret: config.cms.clientSecret,
       filter: `tags:[news,news_${ _locale }]+slug:${ slug }`
@@ -63,10 +63,10 @@ export default {
       const post = posts.shift()
 
       res.render('pages/post', {
-        post: post.featureImage(post)
+        post: postService.featureImage(post)
       })
     } catch (e) {
-      next(404)
+      next(e)
     }
   }
 }
