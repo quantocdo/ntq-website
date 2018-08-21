@@ -32,7 +32,7 @@ export const routes = [ {
   path: '/contact',
   methods: {
     get: controllers.contact.get,
-    // post: dummy
+    post: controllers.contact.post
   }
 }, {
   path: '/domains',

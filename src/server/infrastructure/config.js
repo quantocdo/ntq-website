@@ -15,5 +15,12 @@ export default {
     protocol: process.env.BASE_URL_PROTOCOL,
     en: process.env.BASE_URL_EN,
     ja: process.env.BASE_URL_JA
+  },
+  ses: {
+    receiver: process.env.SES_RECEIVER,
+    sender: process.env.SES_SENDER,
+    region: process.env.SES_REGION,
+    accessKeyId: process.env.SES_ACCESS_KEY_ID,
+    secretAccessKey: process.env.SES_SECRET_ACCESS_KEY
   }
 }

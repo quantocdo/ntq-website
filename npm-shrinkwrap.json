@@ -512,9 +512,9 @@
       "dev": true
     },
     "aws-sdk": {
-      "version": "2.296.0",
-      "resolved": "https://registry.npmjs.org/aws-sdk/-/aws-sdk-2.296.0.tgz",
-      "integrity": "sha512-Ko76U9N7cr4B4IDUuBqnnH6r+t2WkzydrN0ja8fge+asvuJYavEj/jVq8jjq+yOXfW2KgZ+1uaUDjoV33FAfMQ==",
+      "version": "2.297.0",
+      "resolved": "https://registry.npmjs.org/aws-sdk/-/aws-sdk-2.297.0.tgz",
+      "integrity": "sha512-dFflQRkGi8oVMWhAx2kGc8+Sa1VYDK4j2tFTDV09jwtW2xRmBT1xOUtjl3cWFFRArWL0lo/U6W2G+712Tr8V5A==",
       "requires": {
         "buffer": "4.9.1",
         "events": "1.1.1",
@@ -5436,19 +5436,6 @@
           "integrity": "sha1-wNWmOycYgArY4esPpSachN1BhF4=",
           "dev": true
         }
-      }
-    },
-    "nodemailer": {
-      "version": "4.6.8",
-      "resolved": "https://registry.npmjs.org/nodemailer/-/nodemailer-4.6.8.tgz",
-      "integrity": "sha512-A3s7EM/426OBIZbLHXq2KkgvmKbn2Xga4m4G+ZUA4IaZvG8PcZXrFh+2E4VaS2o+emhuUVRnzKN2YmpkXQ9qwA=="
-    },
-    "nodemailer-ses-transport": {
-      "version": "1.5.1",
-      "resolved": "https://registry.npmjs.org/nodemailer-ses-transport/-/nodemailer-ses-transport-1.5.1.tgz",
-      "integrity": "sha1-3AWYwb9T6GUuYy6PMWks4CLX3qk=",
-      "requires": {
-        "aws-sdk": "2.296.0"
       }
     },
     "nodemon": {
