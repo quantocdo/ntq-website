@@ -9,7 +9,7 @@ const transform = post => ({
   feature_image:  post.feature_image ?
     new URL(
       post.feature_image,
-      'http://d-14:2368'
+      config.cdn.url
     ).toString() :
     null
 })
