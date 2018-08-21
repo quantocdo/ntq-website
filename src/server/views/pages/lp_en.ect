@@ -2,7 +2,7 @@
 
 <% block 'head_end': %>
 
-<link rel="stylesheet" href="<%= @__assets.css('/home.page.css') %>">
+<link rel="stylesheet" href="<%= @__asset('lp.css') %>">
 
 <% end %>
 
@@ -17,9 +17,9 @@
 		{{/each}}
 	</div>
 </script>
-<% scripts = @__assets.scripts('/home.js') %>
-<% for file in scripts: %>
-<script src="<%= @__assets.js(file) %>" <% if scripts.length == 1: %>async<% end %>></script>
+
+<script src="<%= @__asset('lp.js') %>"></script>
+
 <% end %>
 
 <% block 'page_full': %>
@@ -27,8 +27,7 @@
 <div class="page-section section-landing" data-title="NTQ Solution">
 	<div class="landing-background full-height">
 		<video autoplay loop muted class="video-background vertical-middle">
-			<source src="//d3rmt8j6qo1pgl.cloudfront.net/bg_home.972ce979.mp4" type="video/mp4">
-			<source src="<%= @__assets.video('/bg_home.mp4') %>" type="video/mp4">
+			<source src="<%= @__asset('video/bg_home.mp4') %>" type="video/mp4">
 		</video>
 	</div>
 	<div class="landing-mark">
@@ -55,13 +54,13 @@
 						<p><%- @__('WHO_IS_NTQ_DESC') %></p>
 					</div>
 					<div class="about-us">
-						<a href="<%= @_url('about') %>" class="text-white text-upper"><%- @__('ABOUT_US') %><i class="fa fa-arrow-right icon-see-more"></i></a>
+						<a href="/about" class="text-white text-upper"><%- @__('ABOUT_US') %><i class="fa fa-arrow-right icon-see-more"></i></a>
 					</div>
 				</div>
 				<div class="col-6-offset-1">
 					<div class="video-container">
 						<div class="video">
-							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/MUKe3LByRg8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/qOVTouFSJEs?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 						</div>
 
 					</div>
@@ -83,7 +82,7 @@
 			<div class="row">
 				<div class="col-4">
 					<div class="logo-container large horizontal-center text-center">
-						<img src="<%= @__assets.img('/services/outsource.png') %>" alt="<%- @__('SOFTWARE_OUTSOURCING') %>" width="61" height="61">
+						<img src="<%= @__asset('img/services/outsource.png') %>" alt="<%- @__('SOFTWARE_OUTSOURCING') %>" width="61" height="61">
 					</div>
 					<div class="service-heading text-white text-center text-upper">
 						<span><%- @__('SOFTWARE_OUTSOURCING') %></span>
@@ -92,12 +91,12 @@
 						<span><%- @__('SOFTWARE_OUTSOURCING_DESC') %></span>
 					</div>
 					<div class="service-learn-more text-center text-yellow">
-						<a href="<%= @_url('services') %>#out-source"><%- @__('LEARN_MORE') %><i class="fa fa-angle-right icon-see-more"></i></a>
+						<a href="/services#out-source"><%- @__('LEARN_MORE') %><i class="fa fa-angle-right icon-see-more"></i></a>
 					</div>
 				</div>
 				<div class="col-4">
 					<div class="logo-container large horizontal-center text-center">
-						<img src="<%= @__assets.img('/services/consultancy.png') %>" alt="<%- @__('SOLUTIONS_CONSULTANCY') %>" width="77" height="76">
+						<img src="<%= @__asset('img/services/consultancy.png') %>" alt="<%- @__('SOLUTIONS_CONSULTANCY') %>" width="77" height="76">
 					</div>
 					<div class="service-heading text-white text-center text-upper">
 						<span><%- @__('SOLUTIONS_CONSULTANCY') %></span>
@@ -106,12 +105,12 @@
 						<span><%- @__('SOLUTIONS_CONSULTANCY_DESC') %></span>
 					</div>
 					<div class="service-learn-more text-center text-yellow">
-						<a href="<%= @_url('services') %>#solution-consultancy"><%- @__('LEARN_MORE') %><i class="fa fa-angle-right icon-see-more"></i></a>
+						<a href="/services#solution-consultancy"><%- @__('LEARN_MORE') %><i class="fa fa-angle-right icon-see-more"></i></a>
 					</div>
 				</div>
 				<div class="col-4">
 					<div class="logo-container large horizontal-center text-center">
-						<img src="<%= @__assets.img('/services/graphical_design.png') %>" alt="<%- @__('GRAPHIC_DESIGN') %>" width="70" height="67">
+						<img src="<%= @__asset('img/services/graphical_design.png') %>" alt="<%- @__('GRAPHIC_DESIGN') %>" width="70" height="67">
 					</div>
 					<div class="service-heading text-white text-center text-upper">
 						<span><%- @__('GRAPHIC_DESIGN') %></span>
@@ -120,7 +119,7 @@
 						<span><%- @__('GRAPHIC_DESIGN_DESC') %></span>
 					</div>
 					<div class="service-learn-more text-center text-yellow">
-						<a href="<%= @_url('services') %>#graphic-design"><%- @__('LEARN_MORE') %><i class="fa fa-angle-right icon-see-more"></i></a>
+						<a href="/services#graphic-design"><%- @__('LEARN_MORE') %><i class="fa fa-angle-right icon-see-more"></i></a>
 					</div>
 				</div>
 			</div>
@@ -128,7 +127,7 @@
 				<div class="col-3">
 					<div class="clearfix">
 						<div class="logo-container pull-left text-center">
-							<img src="<%= @__assets.img('/domains/mobile.png') %>" alt="<%- @__('MOBILE_APP') %>" width="22" height="42">
+							<img src="<%= @__asset('img/domains/mobile.png') %>" alt="<%- @__('MOBILE_APP') %>" width="22" height="42">
 						</div>
 						<div class="logo-description text-white text-upper">
 							<div class="vertical-middle"><%- @__('MOBILE_APP') %></div>
@@ -138,7 +137,7 @@
 				<div class="col-3">
 					<div class="clearfix">
 						<div class="logo-container pull-left text-center">
-							<img src="<%= @__assets.img('/domains/web.png') %>" alt="<%- @__('WEB_APP') %>" width="41" height="31">
+							<img src="<%= @__asset('img/domains/web.png') %>" alt="<%- @__('WEB_APP') %>" width="41" height="31">
 						</div>
 						<div class="logo-description text-white text-upper">
 							<div class="vertical-middle"><%- @__('WEB_APP') %></div>
@@ -148,7 +147,7 @@
 				<div class="col-3">
 					<div class="clearfix">
 						<div class="logo-container pull-left text-center">
-							<img src="<%= @__assets.img('/domains/cloud.png') %>" alt="<%- @__('CLOUDBASED_SOFTWARE') %>" width="44" height="34">
+							<img src="<%= @__asset('img/domains/cloud.png') %>" alt="<%- @__('CLOUDBASED_SOFTWARE') %>" width="44" height="34">
 						</div>
 						<div class="logo-description text-white text-upper">
 							<div class="vertical-middle"><%- @__('CLOUDBASED_SOFTWARE') %></div>
@@ -158,7 +157,7 @@
 				<div class="col-3">
 					<div class="clearfix">
 						<div class="logo-container pull-left text-center">
-							<img src="<%= @__assets.img('/domains/healthcare.png') %>" alt="<%- @__('HEALTHCARE_SOFTWARE') %>" width="31" height="32">
+							<img src="<%= @__asset('img/domains/healthcare.png') %>" alt="<%- @__('HEALTHCARE_SOFTWARE') %>" width="31" height="32">
 						</div>
 						<div class="logo-description text-white text-upper">
 							<div class="vertical-middle"><%- @__('HEALTHCARE_SOFTWARE') %></div>
@@ -170,7 +169,7 @@
 				<div class="col-3">
 					<div class="clearfix">
 						<div class="logo-container pull-left text-center">
-							<img src="<%= @__assets.img('/domains/integration.png') %>" alt="<%- @__('SYSTEM_INTEGRATION') %>" width="35" height="35">
+							<img src="<%= @__asset('img/domains/integration.png') %>" alt="<%- @__('SYSTEM_INTEGRATION') %>" width="35" height="35">
 						</div>
 						<div class="logo-description text-white text-upper">
 							<div class="vertical-middle"><%- @__('SYSTEM_INTEGRATION') %></div>
@@ -180,7 +179,7 @@
 				<div class="col-3">
 					<div class="clearfix">
 						<div class="logo-container pull-left text-center">
-							<img src="<%= @__assets.img('/domains/enterprise.png') %>" alt="<%- @__('ENTERPRISE_APPLICATION') %>" width="38" height="38">
+							<img src="<%= @__asset('img/domains/enterprise.png') %>" alt="<%- @__('ENTERPRISE_APPLICATION') %>" width="38" height="38">
 						</div>
 						<div class="logo-description text-white text-upper">
 							<div class="vertical-middle"><%- @__('ENTERPRISE_APPLICATION') %></div>
@@ -190,7 +189,7 @@
 				<div class="col-3">
 					<div class="clearfix">
 						<div class="logo-container pull-left text-center">
-							<img src="<%= @__assets.img('/domains/embed.png') %>" alt="<%- @__('EMBEDDED_SOFTWARE') %>" width="30" height="34">
+							<img src="<%= @__asset('img/domains/embed.png') %>" alt="<%- @__('EMBEDDED_SOFTWARE') %>" width="30" height="34">
 						</div>
 						<div class="logo-description text-white text-upper">
 							<div class="vertical-middle"><%- @__('EMBEDDED_SOFTWARE') %></div>
@@ -200,7 +199,7 @@
 				<div class="col-3">
 					<div class="clearfix">
 						<div class="logo-container pull-left text-center">
-							<img src="<%= @__assets.img('/domains/ecommerce.png') %>" alt="<%- @__('ECOMMERCE_SOFTWARE') %>" width="37" height="35">
+							<img src="<%= @__asset('img/domains/ecommerce.png') %>" alt="<%- @__('ECOMMERCE_SOFTWARE') %>" width="37" height="35">
 						</div>
 						<div class="logo-description text-white text-upper">
 							<div class="vertical-middle"><%- @__('ECOMMERCE_SOFTWARE') %></div>
@@ -222,37 +221,37 @@
 				<div class="col-2 clearfix">
 					<div class="customer-pic-container pull-right">
 						<div class="customer-pic">
-							<img src="<%= @__assets.img('/customers/systena.jpg') %>" alt="<%- @__('SYSTENA_CUSTOMER_NAME') %>" width="134" height="134">
+							<img src="<%= @__asset('img/customers/marinax.jpg') %>" alt="<%- @__('MARINAX_CUSTOMER_NAME') %>" width="134" height="134">
 						</div>
 					</div>
 				</div>
 				<div class="col-4 text-white">
 					<div class="customer-name">
-						<span><%- @__('SYSTENA_CUSTOMER_NAME') %></span>
+						<span><%- @__('MARINAX_CUSTOMER_NAME') %></span>
 					</div>
 					<div class="customer-position">
-						<span class="text-italic"><%- @__('SYSTENA_CUSTOMER_POSITION') %></span>
+						<span class="text-italic"><%- @__('MARINAX_CUSTOMER_POSITION') %></span>
 					</div>
 					<div class="customer-review">
-						<p class="text-justify"><%- @__('SYSTENA_CUSTOMER_REVIEW') %></p>
+						<p class="text-justify"><%- @__('MARINAX_CUSTOMER_REVIEW') %></p>
 					</div>
 				</div>
 				<div class="col-2 clearfix">
 					<div class="customer-pic-container pull-right">
 						<div class="customer-pic">
-							<img src="<%= @__assets.img('/customers/ilovex.jpg') %>" alt="<%- @__('ILOVEX_CUSTOMER_NAME') %>" width="134" height="134">
+							<img src="<%= @__asset('img/customers/roi.jpg') %>" alt="<%- @__('ROI_CUSTOMER_NAME') %>" width="134" height="134">
 						</div>
 					</div>
 				</div>
 				<div class="col-4 text-white">
 					<div class="customer-name">
-						<span><%- @__('ILOVEX_CUSTOMER_NAME') %></span>
+						<span><%- @__('ROI_CUSTOMER_NAME') %></span>
 					</div>
 					<div class="customer-position">
-						<span class="text-italic"><%- @__('ILOVEX_CUSTOMER_POSITION') %></span>
+						<span class="text-italic"><%- @__('ROI_CUSTOMER_POSITION') %></span>
 					</div>
 					<div class="customer-review">
-						<p class="text-justify"><%- @__('ILOVEX_CUSTOMER_REVIEW') %></p>
+						<p class="text-justify"><%- @__('ROI_CUSTOMER_REVIEW') %></p>
 					</div>
 				</div>
 			</div>
@@ -260,25 +259,25 @@
 				<div class="col-2 clearfix">
 					<div class="customer-pic-container pull-right">
 						<div class="customer-pic">
-							<img src="<%= @__assets.img('/customers/imyvenue.jpg') %>" alt="<%- @__('IMYVENUE_CUSTOMER_NAME') %>" width="134" height="134">
+							<img src="<%= @__asset('img/customers/itsherpa.jpg') %>" alt="<%- @__('ITSHERPA_CUSTOMER_NAME') %>" width="134" height="134">
 						</div>
 					</div>
 				</div>
 				<div class="col-4 text-white">
 					<div class="customer-name">
-						<span><%- @__('IMYVENUE_CUSTOMER_NAME') %></span>
+						<span><%- @__('ITSHERPA_CUSTOMER_NAME') %></span>
 					</div>
 					<div class="customer-position">
-						<span class="text-italic"><%- @__('IMYVENUE_CUSTOMER_POSITION') %></span>
+						<span class="text-italic"><%- @__('ITSHERPA_CUSTOMER_POSITION') %></span>
 					</div>
 					<div class="customer-review">
-						<p class="text-justify"><%- @__('IMYVENUE_CUSTOMER_REVIEW') %></p>
+						<p class="text-justify"><%- @__('ITSHERPA_CUSTOMER_REVIEW') %></p>
 					</div>
 				</div>
 				<div class="col-2 clearfix">
 					<div class="customer-pic-container pull-right">
 						<div class="customer-pic">
-							<img src="<%= @__assets.img('/customers/bit2byte.jpg') %>" alt="<%- @__('BIT2BYTE_CUSTOMER_NAME') %>" width="134" height="134">
+							<img src="<%= @__asset('img/customers/bit2byte.jpg') %>" alt="<%- @__('BIT2BYTE_CUSTOMER_NAME') %>" width="134" height="134">
 						</div>
 					</div>
 				</div>
@@ -306,44 +305,47 @@
 		<div class="sub-heading text-center text-upper text-white">
 			<span><%- @__('TECHNOLOGIES_HEADING') %></span>
 		</div>
+		<div class="description text-center text-white">
+			<span><%- @__('TECHNOLOGIES_SUB_HEADING') %></span>
+		</div>
 		<div class="gs">
 			<div class="row first-line">
 				<div class="col-2-offset-1 tech-logo text-center">
-					<img src="<%= @__assets.img('/tech/mysql.png') %>" width="148" height="77">
+					<img src="<%= @__asset('img/tech/mysql.png') %>" width="148" height="77">
 				</div>
 				<div class="col-2 tech-logo text-center">
-					<img src="<%= @__assets.img('/tech/java.png') %>" width="156" height="109">
+					<img src="<%= @__asset('img/tech/java.png') %>" width="156" height="109">
 				</div>
 				<div class="col-2 tech-logo text-center">
-					<img src="<%= @__assets.img('/tech/dotnet.png') %>" width="166" height="88">
+					<img src="<%= @__asset('img/tech/dotnet.png') %>" width="166" height="88">
 				</div>
 				<div class="col-2 tech-logo text-center">
-					<img src="<%= @__assets.img('/tech/aws.png') %>" width="160" height="58">
+					<img src="<%= @__asset('img/tech/aws.png') %>" width="160" height="58">
 				</div>
 				<div class="col-2 tech-logo text-center">
-					<img src="<%= @__assets.img('/tech/mongodb.png') %>" width="106" height="93">
+					<img src="<%= @__asset('img/tech/mongodb.png') %>" width="106" height="93">
 				</div>
 			</div>
 			<div class="row second-line">
 				<div class="col-2-offset-1 tech-logo text-center">
-					<img src="<%= @__assets.img('/tech/android.png') %>" width="110" height="101">
+					<img src="<%= @__asset('img/tech/android.png') %>" width="110" height="101">
 				</div>
 				<div class="col-2 tech-logo text-center">
-					<img src="<%= @__assets.img('/tech/ios.png') %>" width="134" height="78">
+					<img src="<%= @__asset('img/tech/ios.png') %>" width="134" height="78">
 				</div>
 				<div class="col-2 tech-logo text-center">
-					<img src="<%= @__assets.img('/tech/gae.png') %>" width="126" height="126">
+					<img src="<%= @__asset('img/tech/gae.png') %>" width="126" height="126">
 				</div>
 				<div class="col-2 tech-logo text-center">
-					<img src="<%= @__assets.img('/tech/php.png') %>" width="140" height="90">
+					<img src="<%= @__asset('img/tech/php.png') %>" width="140" height="90">
 				</div>
 				<div class="col-2 tech-logo text-center">
-					<img src="<%= @__assets.img('/tech/html5.png') %>" width="160" height="100">
+					<img src="<%= @__asset('img/tech/html5.png') %>" width="160" height="100">
 				</div>
 			</div>
 		</div>
 		<div class="see-more-tech text-center">
-			<a href="<%= @_url('download') %>" class="text-blue text-upper"><%- @__('SEE_MORE_TECHNOLOGIES') %><i class="fa fa-arrow-right icon-see-more"></i></a>
+			<a href="/download" class="text-blue text-upper"><%- @__('SEE_MORE_TECHNOLOGIES') %><i class="fa fa-arrow-right icon-see-more"></i></a>
 		</div>
 	</div>
 </div>
@@ -354,7 +356,7 @@
 			<div class="row">
 				<div class="col-3-offset-1">
 					<div class="image-container">
-						<img src="<%= @__assets.img('/home_why_ntq_' + @_locale + '.png') %>" alt="Global NTQ" width="278" height="565">
+						<img src="<%= @__asset('img/home_why_ntq_en.png') %>" alt="Global NTQ" width="278" height="565">
 					</div>
 				</div>
 				<div class="col-7-offset-1">
@@ -421,32 +423,32 @@
 					<div class="row">
 						<div class="col-2 rd-block">
 							<div class="thumb">
-								<img src="<%= @__assets.img('/rd/air_drone_s.jpg') %>" alt="R&D Team" width="200" height="130">
+								<img src="<%= @__asset('img/rd/air_drone_s.jpg') %>" alt="R&D Team" width="200" height="130">
 							</div>
 						</div>
 						<div class="col-2 rd-block">
 							<div class="thumb">
-								<img src="<%= @__assets.img('/rd/rd_room_s.jpg') %>" alt="R&D Team" width="200" height="130">
+								<img src="<%= @__asset('img/rd/rd_room_s.jpg') %>" alt="R&D Team" width="200" height="130">
 							</div>
 						</div>
 						<div class="col-2 rd-block">
 							<div class="thumb">
-								<img src="<%= @__assets.img('/rd/gecko_s.jpg') %>" alt="R&D Team" width="200" height="130">
+								<img src="<%= @__asset('img/rd/gecko_s.jpg') %>" alt="R&D Team" width="200" height="130">
 							</div>
 						</div>
 						<div class="col-2 rd-block">
 							<div class="thumb">
-								<img src="<%= @__assets.img('/rd/guidebot_skeleton_s.jpg') %>" alt="Guidebot" width="200" height="130">
+								<img src="<%= @__asset('img/rd/guidebot_skeleton_s.jpg') %>" alt="Guidebot" width="200" height="130">
 							</div>
 						</div>
 						<div class="col-2 rd-block">
 							<div class="thumb">
-								<img src="<%= @__assets.img('/rd/rd_team_s.jpg') %>" alt="R&D Team" width="200" height="130">
+								<img src="<%= @__asset('img/rd/rd_team_s.jpg') %>" alt="R&D Team" width="200" height="130">
 							</div>
 						</div>
 						<div class="col-2 rd-block">
 							<div class="thumb">
-								<img src="<%= @__assets.img('/rd/rd_workbench_s.jpg') %>" alt="R&D Team" width="200" height="130">
+								<img src="<%= @__asset('img/rd/rd_workbench_s.jpg') %>" alt="R&D Team" width="200" height="130">
 							</div>
 						</div>
 					</div>
@@ -455,7 +457,7 @@
 		</div>
 		<div class="site-container fluid">
 			<div class="rd-how-it-work text-center">
-				<a href="<%= @_url('rd') %>" class="text-green text-upper"><%- @__('SEE_HOW_THEY_WORK') %><i class="fa fa-arrow-right icon-see-more"></i></a>
+				<a href="/research-development" class="text-green text-upper"><%- @__('SEE_HOW_THEY_WORK') %><i class="fa fa-arrow-right icon-see-more"></i></a>
 			</div>
 		</div>
 	</div>
@@ -493,10 +495,10 @@
 			<span><%- @__('OFFER_MESSAGE_2') %></span>
 		</div>
 		<div class="contact-us text-center">
-			<a href="<%= @_url('contact') %>" class="text-blue text-upper"><%- @__('CONTACT_US') %><i class="fa fa-arrow-right icon-see-more"></i></a>
+			<a href="/contact" class="text-blue text-upper"><%- @__('CONTACT_US') %><i class="fa fa-arrow-right icon-see-more"></i></a>
 		</div>
 		<div class="download-materials text-center">
-			<a href="<%= @_url('download') %>" class="text-white text-underline"><%- @__('DOWNLOAD_MATERIALS') %></a>
+			<a href="/download" class="text-white text-underline"><%- @__('DOWNLOAD_MATERIALS') %></a>
 		</div>
 	</div>
 </div>

@@ -18,7 +18,7 @@ export default {
       './src/public/stylus/pages/about.styl'
     ],
     lp: [
-      './src/public/stylus/pages/home.styl',
+      './src/public/stylus/pages/lp.styl',
       './src/public/js/lp/index.js'
     ],
     contact: [

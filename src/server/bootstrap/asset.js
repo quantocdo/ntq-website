@@ -13,10 +13,4 @@ export default app => {
 
     next()
   })
-
-  app.use((req, res, next) => {
-    res.locals._url = url => url
-
-    next()
-  })
 }

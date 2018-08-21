@@ -16,10 +16,10 @@ export default app => {
   app.use(i18n.init)
 
   app.use((req, res, next) => {
-    i18n.setLocale('en')
-    req.setLocale('en')
-    res.setLocale('en')
-    res.locals._locale = 'en'
+    i18n.setLocale('ja')
+    req.setLocale('ja')
+    res.setLocale('ja')
+    res.locals._locale = 'ja'
 
     const __ = res.locals.__
 

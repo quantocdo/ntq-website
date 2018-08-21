@@ -1,6 +1,8 @@
 export default {
   get(req, res, next) {
-    res.render('pages/home_en', {
+    const { _locale } = res.locals
+
+    res.render(`pages/lp_${ _locale }`, {
       _highlightedArticles: []
     })
   }
