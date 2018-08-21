@@ -1,11 +1,22 @@
 import fetch from 'node-fetch'
 import truncatise from 'truncatise'
+import { URL } from 'url'
 
 import config from 'infrastructure/config'
 
-const buildUrl = (url, params) => {
+const transform = post => ({
+  ...post,
+  feature_image:  post.feature_image ?
+    new URL(
+      post.feature_image,
+      'http://d-14:2368'
+    ).toString() :
+    null
+})
+
+const buildUrl = (path, params) => {
   return [
-    url,
+    `${ config.cms.url }/ghost/api/v0.1${ path }`,
     Object.entries(params)
       .map(args => args.join('='))
       .join('&')
@@ -14,7 +25,7 @@ const buildUrl = (url, params) => {
 
 export default {
   async get(req, res, next) {
-    const url = buildUrl(`${ config.cms.url }/posts`, {
+    const url = buildUrl('/posts', {
       client_id: config.cms.clientId,
       client_secret: config.cms.clientSecret
     })
@@ -23,17 +34,19 @@ export default {
     const { posts } = await response.json()
 
     res.render('pages/posts', {
-      posts: posts.map(
-        post => ({
-          ...post,
-          truncated: truncatise(post.html, {
-            StripHTML: true,
-            TruncateBy: 'paragraphs',
-            TruncateLength: 2,
-            Suffix: ''
+      posts: posts
+        .map(transform)
+        .map(
+          post => ({
+            ...post,
+            truncated: truncatise(post.html, {
+              StripHTML: true,
+              TruncateBy: 'words',
+              TruncateLength: 30,
+              Suffix: '...'
+            })
           })
-        })
-      )
+        )
     })
   },
   async single(req, res, next) {
@@ -55,7 +68,7 @@ export default {
     const post = posts.shift()
 
     res.render('pages/post', {
-      post
+      post: transform(post)
     })
   }
 }
