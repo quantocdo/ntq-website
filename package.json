@@ -16,6 +16,7 @@
   "homepage": "https://github.com/ntq-lab/ntq-website#readme",
   "dependencies": {
     "body-parser": "1.18.3",
+    "dateformat": "3.0.3",
     "debounce": "1.2.0",
     "ect": "0.5.9",
     "express": "4.16.3",

@@ -26,6 +26,9 @@
 							<h2 class="title">
 								<%= post.title %>
 							</h2>
+							<p class="publish-date">
+								<%= @_date(post.published_at) %>
+							</p>
 							<p class="truncated">
 								<%= post.truncated %>
 							</p>

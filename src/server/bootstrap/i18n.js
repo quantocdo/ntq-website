@@ -1,3 +1,4 @@
+import dateFormat from 'dateformat'
 import i18n from 'i18n'
 import path from 'path'
 
@@ -36,6 +37,11 @@ export default app => {
 
       return translate ? translate.trim() : ''
     }
+
+    res.locals._date = isoText => dateFormat(
+      isoText,
+      _locale === 'en' ? 'mmm dS, yyyy' : 'm月 d日, yyyy'
+    )
 
     next()
   })

@@ -24,14 +24,19 @@ const buildUrl = (path, params) => {
 }
 
 export default {
-  async get(req, res, next) {
+  async fetchNews(req, res, next) {
+    const { _locale } = res.locals
+
     const url = buildUrl('/posts', {
       client_id: config.cms.clientId,
-      client_secret: config.cms.clientSecret
+      client_secret: config.cms.clientSecret,
+      filter: `tags:[news_${ _locale }]`
     })
 
     const response = await fetch(url)
     const { posts } = await response.json()
+
+    // return res.json(posts)
 
     res.render('pages/posts', {
       posts: posts
@@ -49,13 +54,12 @@ export default {
         )
     })
   },
-  async single(req, res, next) {
+  async get(req, res, next) {
     const { slug } = req.params
 
-    const url = buildUrl(`${ config.cms.url }/posts`, {
+    const url = buildUrl(`/posts/slug/${ slug }`, {
       client_id: config.cms.clientId,
-      client_secret: config.cms.clientSecret,
-      filter: `slug:${ slug }`
+      client_secret: config.cms.clientSecret
     })
 
     const response = await fetch(url)

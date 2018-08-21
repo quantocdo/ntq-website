@@ -26,14 +26,14 @@ export const routes = [ {
     get: controllers.lp.get
   }
 }, {
-  path: '/posts/:page([0-9])?',
+  path: '/news/:page([0-9])?',
   methods: {
-    get: controllers.posts.get
+    get: controllers.cms.fetchNews
   }
 }, {
   path: '/p/:slug',
   methods: {
-    get: [ controllers.posts.single, dummy ]
+    get: [ controllers.cms.get, dummy ]
   }
 }, {
   path: '/download',
