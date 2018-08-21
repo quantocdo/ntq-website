@@ -1,6 +1,7 @@
 import dateFormat from 'dateformat'
 import i18n from 'i18n'
 import path from 'path'
+import url from 'url'
 
 import config from 'infrastructure/config'
 
@@ -17,8 +18,19 @@ export default app => {
   app.use(i18n.init)
 
   app.use((req, res, next) => {
-    // detect locale
-    res.locals._locale = 'en'
+    const fullUrl = url.format({
+      protocol: config.baseUrl.protocol || req.protocol,
+      host: req.get('host'),
+      pathname: req.originalUrl
+    })
+
+    res.locals_fullUrl = fullUrl
+
+    if (fullUrl.indexOf(config.baseUrl.ja) === 0) {
+      res.locals._locale = 'ja'
+    } else {
+      res.locals._locale = 'en'
+    }
 
     next()
   })

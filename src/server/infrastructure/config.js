@@ -10,5 +10,10 @@ export default {
   },
   cdn: {
     url: process.env.CDN_URL
+  },
+  baseUrl: {
+    protocol: process.env.BASE_URL_PROTOCOL,
+    en: process.env.BASE_URL_EN,
+    ja: process.env.BASE_URL_JA
   }
 }

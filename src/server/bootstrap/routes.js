@@ -18,16 +18,16 @@ export const routes = [ {
   methods: {
     get: controllers.cms.get
   }
-}, {
-  path: '/download',
-  methods: {
-    // get: dummy
-  }
-}, {
-  path: '/download/:folderId/:fileId',
-  methods: {
-    // get: dummy
-  }
+// }, {
+//   path: '/download',
+//   methods: {
+//     // get: dummy
+//   }
+// }, {
+//   path: '/download/:folderId/:fileId',
+//   methods: {
+//     // get: dummy
+//   }
 }, {
   path: '/contact',
   methods: {
