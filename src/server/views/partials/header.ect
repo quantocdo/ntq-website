@@ -1,7 +1,7 @@
 <div class="site-header">
 	<div class="site-container fluid cf">
 		<div class="company-logo pull-left">
-			<a href="<%= @_url('home') %>">
+			<a href="/">
 				<img src="<%= @__asset('img/logo/logo_s.png') %>" alt="NTQ Solution" width="129" height="57">
 			</a>
 		</div>
@@ -13,25 +13,25 @@
 						<div class="arrow-up"></div>
 						<ul>
 							<li class="dropdown-item first">
-								<a href="<%= @_url('services') %>"><%- @__('SERVICES') %></a>
+								<a href="/services"><%- @__('SERVICES') %></a>
 							</li>
 							<li class="dropdown-item">
-								<a href="<%= @_url('domains') %>"><%- @__('DEVELOPMENT_DOMAINS') %></a>
+								<a href="/domains"><%- @__('DEVELOPMENT_DOMAINS') %></a>
 							</li>
 							<li class="dropdown-item">
-								<a href="<%= @_url('contract-models') %>"><%- @__('CONTRACT_MODELS') %></a>
+								<a href="/contract-models"><%- @__('CONTRACT_MODELS') %></a>
 							</li>
 						</ul>
 					</div>
 				</li>
 				<li class="nav-item">
-					<a href="<%= @_url('success-stories') %>"><%- @__('SUCCESS_STORIES') %></a>
+					<a href="/success-stories"><%- @__('SUCCESS_STORIES') %></a>
 				</li>
 				<li class="nav-item">
-					<a href="<%= @_url('rd') %>"><%- @__('R&D') %></a>
+					<a href="/research-development"><%- @__('R&D') %></a>
 				</li>
 				<li class="nav-item">
-					<a href="<%= @_url('articles') %>"><%- @__('NEWS') %></a>
+					<a href="/posts"><%- @__('NEWS') %></a>
 				</li>
 				<!--
 				<li class="nav-item">
@@ -39,14 +39,14 @@
 				</li>
 				-->
 				<li class="nav-item">
-					<a href="<%= @_url('download') %>"><%- @__('DOWNLOADS') %></a>
+					<a href="/download"><%- @__('DOWNLOADS') %></a>
 				</li>
 				<li class="nav-item">
-					<a href="<%= @_url('about') %>"><%- @__('ABOUT_US') %></a>
+					<a href="/about"><%- @__('ABOUT_US') %></a>
 				</li>
 			</ul>
 			<div class="top-actions clearfix">
-				<a href="<%= @_url('contact') %>" class="contact pull-right"><%- @__('CONTACT') %></a>
+				<a href="/contact" class="contact pull-right"><%- @__('CONTACT') %></a>
 			</div>
 		</div>
 	</div>

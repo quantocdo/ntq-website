@@ -2,7 +2,7 @@
 
 <% block 'head_end': %>
 
-<link rel="stylesheet" href="<%= @__assets.css('/contract-models.page.css') %>">
+<link rel="stylesheet" href="<%= @__asset('contract-models.css') %>">
 
 <% end %>
 
@@ -16,7 +16,7 @@
 	<div class="gs">
 		<div class="row contract">
 			<div class="col-5">
-				<img class="contract-illu" src="<%= @__assets.img('/cm_odc.jpg') %>" alt="<%- @__('ODC') %>">
+				<img class="contract-illu" src="<%= @__asset('img/cm_odc.jpg') %>" alt="<%- @__('ODC') %>">
 			</div>
 			<div class="col-7">
 				<div class="heading text-blue">
@@ -41,7 +41,7 @@
 		</div>
 		<div class="row contract">
 			<div class="col-5">
-				<img class="contract-illu" src="<%= @__assets.img('/cm_project_based.jpg') %>" alt="<%- @__('PROJECT_BASED') %>">
+				<img class="contract-illu" src="<%= @__asset('img/cm_project_based.jpg') %>" alt="<%- @__('PROJECT_BASED') %>">
 			</div>
 			<div class="col-7">
 				<div class="heading text-blue">

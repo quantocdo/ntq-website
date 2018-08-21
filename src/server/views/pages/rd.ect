@@ -2,7 +2,7 @@
 
 <% block 'head_end': %>
 
-<link rel="stylesheet" href="<%= @__assets.css('/research-and-development.page.css') %>">
+<link rel="stylesheet" href="<%= @__asset('rd.css') %>">
 
 <% end %>
 
@@ -16,11 +16,7 @@
 		<div class="gs">
 			<div class="row">
 				<div class="col-6 picture-container">
-					<img src="<%= @__assets.img('/rd/rd_room.png') %>" alt="<%- @__('RESEARCH_AND_DEVELOPMENT') %>" width="543" height="492">
-					<!-- <div class="picture-frame"></div>
-					<div class="picture">
-						<img src="<%= @__assets.img('/rd/rd_room.jpg') %>" alt="<%- @__('RESEARCH_AND_DEVELOPMENT') %>" width="700" height="420">
-					</div> -->
+					<img src="<%= @__asset('img/rd/rd_room.png') %>" alt="<%- @__('RESEARCH_AND_DEVELOPMENT') %>" width="543" height="492">
 				</div>
 				<div class="col-5-offset-1">
 					<div class="heading text-upper">
@@ -101,7 +97,7 @@
 					<p class="explain"><%- @__('CRAZY_TEAM_DESC') %></p>
 				</div>
 				<div class="col-6">
-					<img class="team-picture" src="<%= @__assets.img('/rd_team.png') %>" alt="<%- @__('CRAZY_TEAM') %>">
+					<img class="team-picture" src="<%= @__asset('img/rd_team.png') %>" alt="<%- @__('CRAZY_TEAM') %>">
 				</div>
 			</div>
 		</div>
@@ -114,7 +110,7 @@
 			<p><%- @__('R&D_OFFER') %></p>
 		</div>
 		<div class="contact text-center">
-			<a href="<%= @_url('contact') %>" class="text-blue text-upper">
+			<a href="/contact" class="text-blue text-upper">
 				<span><%- @__('CONTACT_US') %></span>
 				<i class="fa fa-arrow-right icon-see-more"></i>
 			</a>

@@ -14,9 +14,30 @@ export default {
   context: path.resolve(__dirname, '..'),
   entry: {
     static: staticFiles,
+    about: [
+      './src/public/stylus/pages/about.styl'
+    ],
     lp: [
       './src/public/stylus/pages/home.styl',
       './src/public/js/lp/index.js'
+    ],
+    contact: [
+      './src/public/stylus/pages/contact.styl'
+    ],
+    'contract-models': [
+      './src/public/stylus/pages/contract-models.styl'
+    ],
+    domains: [
+      './src/public/stylus/pages/domains.styl'
+    ],
+    rd: [
+      './src/public/stylus/pages/rd.styl'
+    ],
+    'services': [
+      './src/public/stylus/pages/services.styl'
+    ],
+    'success-stories': [
+      './src/public/stylus/pages/success-stories.styl'
     ]
   },
   output: {
@@ -72,7 +93,8 @@ export default {
         {
           loader: 'file-loader',
           options: {
-            name: 'fonts/[name].[hash:5].[ext]',
+            name: '[path][name].[hash:5].[ext]',
+            context: 'src/public',
             publicPath: '/assets/',
             emitFile: true
           }

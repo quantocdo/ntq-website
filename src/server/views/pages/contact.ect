@@ -2,7 +2,7 @@
 
 <% block 'head_end': %>
 
-<link rel="stylesheet" href="<%= @__assets.css('/contact.page.css') %>">
+<link rel="stylesheet" href="<%= @__asset('contact.css') %>">
 
 <% end %>
 
@@ -19,7 +19,7 @@
 		<div class="gs">
 			<div class="row">
 				<div class="col-10-offset-1">
-					<form class="form" method="post" action="<%= @_url('contact') %>">
+					<form class="form" method="post" action="/contact">
 						<div class="line">
 							<input type="text" placeholder="<%- @__('NAME') %>" name="name" required>
 						</div>

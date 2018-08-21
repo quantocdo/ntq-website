@@ -1,7 +1,7 @@
 import express from 'express'
 import serialize from 'serialize-error'
 
-import lp from 'controllers/lp'
+import * as controllers from '../controllers'
 
 const dummy = (req, res, next) => {
   res.json({
@@ -23,7 +23,7 @@ const error = (error, req, res, next) => {
 export const routes = [ {
   path: '/',
   methods: {
-    get: lp.get
+    get: controllers.lp.get
   }
 }, {
   path: '/posts/:page([0-9])?',
@@ -48,18 +48,24 @@ export const routes = [ {
 }, {
   path: '/contact',
   methods: {
-    get: dummy,
+    get: controllers.contact.get,
+    post: dummy
+  }
+}, {
+  path: '/domains',
+  methods: {
+    get: controllers.domains.get,
     post: dummy
   }
 }, {
   path: '/about',
   methods: {
-    get: dummy
+    get: controllers.about.get
   }
 }, {
   path: '/contract-models',
   methods: {
-    get: dummy
+    get: controllers.contractModels.get
   }
 }, {
   path: '/development-domains',
@@ -67,19 +73,19 @@ export const routes = [ {
     get: dummy
   }
 }, {
-  path: '/rd',
+  path: '/research-development',
   methods: {
-    get: dummy
+    get: controllers.rd.get
   }
 }, {
   path: '/services',
   methods: {
-    get: dummy
+    get: controllers.services.get
   }
 }, {
   path: '/success-stories',
   methods: {
-    get: dummy
+    get: controllers.successStories.get
   }
 } ]
 
