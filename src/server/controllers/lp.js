@@ -20,7 +20,6 @@ export default {
       const { posts } = await response.json()
 
       res.render(`pages/lp_${ _locale }`, {
-        _highlightedArticles: [],
         posts: posts
           .map(post.featureImage)
           .map(post.truncated)

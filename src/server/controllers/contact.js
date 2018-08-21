@@ -15,7 +15,9 @@ export default {
     res.render('pages/contact')
   },
   post: [
-    bodyParser.urlencoded(),
+    bodyParser.urlencoded({
+      extended: true
+    }),
     async (req, res, next) => {
       try {
         const { name, email, subject, body } = req.body
