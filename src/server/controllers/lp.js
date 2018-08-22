@@ -22,7 +22,7 @@ export default {
       res.render(`pages/lp_${ _locale }`, {
         posts: posts
           .map(post.featureImage)
-          .map(post.truncated)
+          .map(post.truncated(_locale))
       })
     } catch (e) {
       next(e)

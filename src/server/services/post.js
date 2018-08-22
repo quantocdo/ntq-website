@@ -36,15 +36,15 @@ export default {
         null
     }
   },
-  truncated(post) {
-    return {
+  truncated(locale) {
+    return (post) => ({
       ...post,
       truncated: truncatise(post.html, {
         StripHTML: true,
-        TruncateBy: 'words',
-        TruncateLength: 30,
+        TruncateBy: locale === 'ja' ? 'characters' : 'words',
+        TruncateLength: locale === 'ja' ? 100 : 30,
         Suffix: '...'
       })
-    }
+    })
   }
 }

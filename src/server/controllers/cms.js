@@ -18,7 +18,7 @@ export default {
         client_id: config.cms.clientId,
         client_secret: config.cms.clientSecret,
         filter: `tags:[news_${ _locale }]`,
-        limit: 6,
+        limit: 10,
         page: page || 1
       })
 
@@ -36,7 +36,7 @@ export default {
           `/news/${ pagination.next }`,
         posts: posts
           .map(postService.featureImage)
-          .map(postService.truncated)
+          .map(postService.truncated(_locale))
       })
     } catch (e) {
       next(e)
@@ -73,7 +73,7 @@ export default {
           `/recruitment/${ pagination.next }`,
         posts: posts
           .map(postService.featureImage)
-          .map(postService.truncated)
+          .map(postService.truncated(_locale))
       })
     } catch (e) {
       next(e)
