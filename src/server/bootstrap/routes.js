@@ -14,6 +14,11 @@ export const routes = [ {
     get: controllers.cms.fetchNews
   }
 }, {
+  path: '/recruitment/:page([0-9]+)?',
+  methods: {
+    get: controllers.cms.fetchRecruitment
+  }
+}, {
   path: '/p/:slug',
   methods: {
     get: controllers.cms.get
