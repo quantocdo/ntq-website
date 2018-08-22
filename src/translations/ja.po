@@ -25,7 +25,7 @@ msgstr "ニュース"
 
 #:
 msgid "RECRUITMENT"
-msgstr "徴兵"
+msgstr "採用情報"
 
 #:
 msgid "R&D"
