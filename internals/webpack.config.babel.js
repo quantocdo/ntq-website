@@ -2,6 +2,7 @@ import glob from 'glob'
 import path from 'path'
 import CleanWebpackPlugin from 'clean-webpack-plugin'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
+import OptimizeCssAssetsPlugin from 'optimize-css-assets-webpack-plugin'
 import WebpackAssetsManifest from 'webpack-assets-manifest'
 
 const publicDir = path.resolve(__dirname, '../src/public')
@@ -10,7 +11,8 @@ const pattern = `${ publicDir }/+(img|video)/**/*.*`
 const staticFiles = glob.sync(pattern)
 
 export default {
-  mode: 'development',
+  mode: process.env.NODE_ENV === 'production' ?
+    'production' : 'development',
   context: path.resolve(__dirname, '..'),
   entry: {
     static: staticFiles,
@@ -62,6 +64,7 @@ export default {
       allowExternal: true
     }),
     new ExtractTextPlugin('css/[name].[hash:5].css'),
+    new OptimizeCssAssetsPlugin(),
     new WebpackAssetsManifest({
       output: path.resolve(__dirname, '../dist/manifest.json'),
       publicPath: 'http://d-14:3101/assets/',
@@ -74,6 +77,9 @@ export default {
       use: ExtractTextPlugin.extract({
         use: [ {
           loader: 'css-loader',
+          options: {
+            minimize: true
+          }
         }, {
           loader: 'stylus-loader',
           options: {
