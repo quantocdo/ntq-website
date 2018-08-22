@@ -2,6 +2,7 @@ import path from 'path'
 
 export default {
   _root: path.resolve(__dirname, '..'),
+  production: process.env.NODE_ENV === 'production',
   port: process.env.PORT,
   cms: {
     url: process.env.CMS_URL,
