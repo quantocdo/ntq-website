@@ -63,7 +63,10 @@ export default {
       const post = posts.shift()
 
       res.render('pages/post', {
-        post: postService.featureImage(post)
+        post: [ post ]
+          .map(postService.featureImage)
+          .map(postService.html)
+          .shift()
       })
     } catch (e) {
       next(e)

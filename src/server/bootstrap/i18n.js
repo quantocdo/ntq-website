@@ -24,7 +24,7 @@ export default app => {
       pathname: req.originalUrl
     })
 
-    res.locals_fullUrl = fullUrl
+    res.locals._fullUrl = fullUrl
 
     if (fullUrl.indexOf(config.baseUrl.ja) === 0) {
       res.locals._locale = 'ja'
