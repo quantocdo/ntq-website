@@ -23,11 +23,11 @@ export const routes = [ {
   methods: {
     get: controllers.cms.get
   }
-// }, {
-//   path: '/download',
-//   methods: {
-//     // get: dummy
-//   }
+}, {
+  path: '/download',
+  methods: {
+    get: controllers.download.get
+  }
 // }, {
 //   path: '/download/:folderId/:fileId',
 //   methods: {
@@ -76,8 +76,8 @@ const notFound = (req, res, next) => {
 }
 
 const error = (error, req, res, next) => {
-  res.status(404).render('errors/404')
-  // res.status(500).json(serialize(error))
+  // res.status(404).render('errors/404')
+  res.status(500).json(serialize(error))
 }
 
 export default app => {

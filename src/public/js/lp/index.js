@@ -1,6 +1,6 @@
 const MIN_HEIGHT = 775
 
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('.site-header')
 
   const headerHeight = header.getBoundingClientRect().height
@@ -16,7 +16,7 @@ window.addEventListener('load', () => {
     return
   }
 
-  Array.from(document.querySelectorAll('.page-section'))
+  Array.from(document.querySelectorAll('.site-content.page-full .page-section'))
     .forEach(
       node => node.style.height = `${ contentHeight }px`
     )

@@ -35,6 +35,9 @@ export default {
     domains: [
       './src/public/stylus/pages/domains.styl'
     ],
+    download: [
+      './src/public/stylus/pages/download.styl'
+    ],
     post: [
       './src/public/stylus/pages/post.styl',
     ],
