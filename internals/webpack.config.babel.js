@@ -16,11 +16,13 @@ const pattern = `${ publicDir }/+(img|video)/**/*.*`
 const staticFiles = glob.sync(pattern)
 
 export default {
-  mode: process.env.NODE_ENV === 'production' ?
-    'production' : 'development',
+  mode,
   context: path.resolve(__dirname, '..'),
   entry: {
     static: staticFiles,
+    layout: [
+      './src/public/js/layout'
+    ],
     '404': [
       './src/public/stylus/pages/404.styl'
     ],
@@ -81,6 +83,27 @@ export default {
   ],
   module: {
     rules: [ {
+      test: /\.js$/,
+      exclude: /node_modules/,
+      use: [
+        {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              [ 'env', {
+                target: {
+                  browser: [ 'last 2 versions', 'safari >= 7' ]
+                }
+              } ],
+              'stage-2'
+            ],
+            plugins: [
+              'transform-runtime'
+            ]
+          }
+        }
+      ]
+    }, {
       test: /.styl$/,
       use: ExtractTextPlugin.extract({
         use: [ {

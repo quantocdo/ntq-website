@@ -2,124 +2,131 @@ $_border_width = 1px
 $_line_height = $layout_header_h - $_border_width
 
 .site-header
-	position fixed
-	top 0
-	left 0
-	right 0
-	height $layout_header_h
-	z-index $zindex_topmost
-	background $color_white
-	// border-bottom $_border_width solid $color_gray
-	box-shadow 0 0 5px 1px $color_gray_light
+  position fixed
+  top 0
+  left 0
+  right 0
+  height $layout_header_h
+  z-index $zindex_topmost
+  background: transparent
+  color: $color_white
+  border-bottom: $_border_width solid transparent
 
-	.company-logo
-		line-height $_line_height
-		background $color_white
-		width 100px
+  &.float {
+    background: $color_white
+    color: $color_black
+    border-bottom: $_border_width solid $color_gray
+    // transition:
+    //   background .2s,
+    //   color .2s,
+    //   border-bottom .2s;
+  }
 
-		img
-			vertical-align middle
+  .company-logo
+    line-height $_line_height
 
-	.top-actions
-		text-align right
-		// width 145px
-		display inline-block
-		background $color_white
-		line-height $_line_height
+    img
+      vertical-align middle
 
-		.language-switch
-			display block
-			border-radius 3px
-			border 1px solid $color_gray_light
-			margin-left 15px
-			size 34px
-			margin-top (($layout_header_h - 34px) / 2)
-			background-position center center
-			background-repeat no-repeat
+  .top-actions
+    text-align right
+    // width 145px
+    display inline-block
+    line-height $_line_height
 
-			&.ja
-				background-image url('~img/flags/ja.png')
+    .language-switch
+      background: $color_white
+      display block
+      border-radius 3px
+      border 1px solid $color_gray_light
+      margin-left 15px
+      size 34px
+      margin-top (($layout_header_h - 34px) / 2)
+      background-position center center
+      background-repeat no-repeat
 
-			&.en
-				background-image url('~img/flags/en.png')
+      &.ja
+        background-image url('~img/flags/ja.png')
 
-		.contact
-			display block
-			height 34px
-			line-height 34px
-			border-radius 3px
-			background $color_blue
-			color $color_white
-			margin-top (($layout_header_h - 34px) / 2)
-			padding 0 12px
-			margin-left 10px
-			transition background .2s
+      &.en
+        background-image url('~img/flags/en.png')
 
-			&:hover
-				background $color_blue_light
+    .contact
+      display block
+      height 34px
+      line-height 34px
+      border-radius 3px
+      background $color_blue
+      color $color_white
+      margin-top (($layout_header_h - 34px) / 2)
+      padding 0 12px
+      margin-left 10px
+      transition background .2s
 
-	.top-nav
-		white-space nowrap
-		text-align right
-		margin-left 130px
-		// margin-right 140px
-		background $color_white
+      &:hover
+        background $color_blue_light
 
-		&.en
-			.top-menu
-				.nav-item
-					a
-						font-weight bold
+  .top-nav
+    white-space nowrap
+    text-align right
+    margin-left 130px
 
-		.top-menu
-			display inline-block
-			height $_line_height
-			vertical-align top
+    &.en
+      .top-menu
+        .nav-item
+          a
+            font-weight bold
 
-			.nav-item
-				display inline-block
+    .top-menu
+      display inline-block
+      height $_line_height
+      vertical-align top
 
-				a
-					display block
-					line-height $_line_height
-					padding 0 20px
-					transition color .2s
+      .nav-item
+        display inline-block
 
-					&:hover
-						color $color_blue
+        a
+          display block
+          line-height $_line_height
+          padding 0 20px
+          transition color .2s
 
-				&.dropdown-menu
-					position relative
+          &:hover
+            color $color_blue
 
-					&:hover
-						.dropdown
-							display block
+        &.dropdown-menu
+          position relative
 
-					.dropdown
-						position absolute
-						background $color_white
-						border-radius 5px
-						border 1px solid $color_gray_light
-						padding 10px 22px 0
-						width 250px
-						top ($layout_header_h - 10px)
-						left 0
-						display none
+          &:hover
+            .dropdown
+              display block
 
-						.arrow-up
-							width 20px
-							height 10px
-							background url('~img/icons/arrow_dropdown_menu.png') no-repeat center center
-							margin-top -20px
-							margin-left 5px
+          .dropdown
+            position absolute
+            background: $color_white
+            color: $color_black
+            border-radius 5px
+            border 1px solid $color_gray_light
+            padding 10px 22px 0
+            width 250px
+            top ($layout_header_h - 10px)
+            left 0
+            display none
 
-						.dropdown-item
-							border-top 1px solid $color_gray_light
-							text-align left
+            .arrow-up
+              width 20px
+              height 10px
+              background url('~img/icons/arrow_dropdown_menu.png') no-repeat center center
+              margin-top -20px
+              margin-left 5px
 
-							&.first
-								border-top none
+            .dropdown-item
+              border-top 1px solid $color_gray_light
+              text-align left
 
-							a
-								padding 0
-								line-height 52px
+              &.first
+                border-top none
+
+              a
+                padding 0
+                line-height 52px

@@ -1,8 +1,6 @@
 import debounce from 'debounce'
 
 const arrangePosts = () => {
-  console.log('loaded')
-
   const wrapper = document.querySelector('.posts')
   const computedStyle = window.getComputedStyle(wrapper)
 

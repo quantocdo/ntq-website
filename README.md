@@ -2,9 +2,10 @@
 Source code for ntq-solution.com.vn
 
 ```
-grunt translate
+$ docker-compose up
+$ docker exec -it ntq.website bash
 ```
 
 ```
-grunt build
+$ npm start
 ```
