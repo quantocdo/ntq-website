@@ -8,7 +8,7 @@ import WebpackAssetsManifest from 'webpack-assets-manifest'
 // env
 const mode = process.env.NODE_ENV === 'production' ?
   'production' : 'development'
-const cdn = process.env.CDN_URL || ''
+const cdn = process.env.WP_CDN_URL || process.env.CDN_URL || ''
 
 const publicDir = path.resolve(__dirname, '../src/public')
 const outDir = path.resolve(__dirname, '../dist/assets')
