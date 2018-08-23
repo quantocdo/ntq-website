@@ -5,6 +5,11 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin'
 import OptimizeCssAssetsPlugin from 'optimize-css-assets-webpack-plugin'
 import WebpackAssetsManifest from 'webpack-assets-manifest'
 
+// env
+const mode = process.env.NODE_ENV === 'production' ?
+  'production' : 'development'
+const cdn = process.env.CDN_URL || ''
+
 const publicDir = path.resolve(__dirname, '../src/public')
 const outDir = path.resolve(__dirname, '../dist/assets')
 const pattern = `${ publicDir }/+(img|video)/**/*.*`
@@ -57,7 +62,7 @@ export default {
   },
   output: {
     path: outDir,
-    publicPath: '/assets',
+    publicPath: `${ cdn }/assets`,
     filename: 'js/[name].[hash:5].js'
   },
   plugins: [
@@ -70,7 +75,7 @@ export default {
     new OptimizeCssAssetsPlugin(),
     new WebpackAssetsManifest({
       output: path.resolve(__dirname, '../dist/manifest.json'),
-      publicPath: 'http://d-14:3101/assets/',
+      publicPath: `${ cdn }/assets/`,
       writeToDisk: true
     })
   ],
@@ -100,7 +105,7 @@ export default {
           options: {
             name: '[path][name].[hash:5].[ext]',
             context: 'src/public',
-            publicPath: '/assets',
+            publicPath: `${ cdn }/assets`,
             emitFile: true
           }
         }
@@ -114,7 +119,7 @@ export default {
           options: {
             name: '[path][name].[hash:5].[ext]',
             context: 'src/public',
-            publicPath: '/assets/',
+            publicPath: `${ cdn }/assets`,
             emitFile: true
           }
         }

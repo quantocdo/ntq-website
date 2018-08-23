@@ -10,13 +10,13 @@ export default {
 
     dom('img').each(function() {
       const img = dom(this)
+      const src = img.attr('src')
 
       img.attr(
         'src',
-        new URL(
-          img.attr('src'),
-          config.cdn.url
-        ).toString()
+        (src && src.indexOf('/') === 0) ?
+          `${ config.cdn.url }${ src }` :
+          src
       )
     })
 
@@ -26,14 +26,13 @@ export default {
     }
   },
   featureImage(post) {
+    const src = (post.feature_image && post.feature_image.indexOf('/') === 0) ?
+        `${ config.cdn.url }${ post.feature_image }` :
+        post.feature_image
+
     return {
       ...post,
-      feature_image: post.feature_image ?
-        new URL(
-          post.feature_image,
-          config.cdn.url
-        ).toString() :
-        null
+      feature_image: src
     }
   },
   truncated(locale) {
