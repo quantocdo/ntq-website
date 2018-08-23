@@ -1,4 +1,4 @@
-const MIN_HEIGHT = 775
+const MIN_HEIGHT = 500
 
 document.addEventListener('DOMContentLoaded', () => {
   const viewportHeight = Math.max(
@@ -10,8 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
     return
   }
 
-  Array.from(document.querySelectorAll('.site-content.page-full .page-section'))
-    .forEach(
-      node => node.style.height = `${ viewportHeight }px`
-    )
+  document.querySelector('.section-landing').style.height = `${ viewportHeight }px`
+
+  // Array.from(document.querySelectorAll('.site-content.page-full .page-section'))
+  //   .forEach(
+  //     node => node.style.height = `${ viewportHeight }px`
+  //   )
 })
