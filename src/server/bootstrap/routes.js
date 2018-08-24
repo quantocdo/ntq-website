@@ -1,6 +1,7 @@
 import express from 'express'
 import serialize from 'serialize-error'
 
+import config from 'infrastructure/config'
 import * as controllers from '../controllers'
 
 export const routes = [ {
@@ -76,7 +77,10 @@ const notFound = (req, res, next) => {
 }
 
 const error = (error, req, res, next) => {
-  // res.status(404).render('errors/404')
+  if (config.production) {
+    return notFound(req, res, next)
+  }
+
   res.status(500).json(serialize(error))
 }
 
