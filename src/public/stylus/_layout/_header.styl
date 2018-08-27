@@ -51,20 +51,9 @@ $_line_height = $layout_header_h - $_border_width
       &.en
         background-image url('~img/flags/en.png')
 
-    .contact
-      display block
-      height 34px
-      line-height 34px
-      border-radius 3px
-      background $color_blue
-      color $color_white
-      margin-top (($layout_header_h - 34px) / 2)
-      padding 0 12px
-      margin-left 10px
-      transition background .2s
-
-      &:hover
-        background $color_blue_light
+    .menu
+      display: block
+      size: 34px
 
   .top-nav
     white-space nowrap
@@ -93,6 +82,19 @@ $_line_height = $layout_header_h - $_border_width
 
           &:hover
             color $color_blue
+
+          &.contact
+            display block
+            height 34px
+            line-height 34px
+            border-radius 3px
+            background $color_blue
+            color $color_white
+            transition background .2s
+
+            &:hover
+              background $color_blue_light
+              color $color_white
 
         &.dropdown-menu
           position relative

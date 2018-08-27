@@ -1,0 +1,105 @@
+.site-header
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: $zindex_topmost
+  background: transparent
+  color: $color_white
+  border-bottom: 1px solid transparent
+
+  &.float
+    background: $color_white
+    color: $color_black
+    border-bottom: 1px solid $color_gray
+
+  .content
+    display: flex
+    align-items: center
+
+    .company-logo
+      flex-grow: 0
+      flex-shrink: 0
+      padding: 10px 0
+
+    .top-nav
+      flex-grow: 1
+      text-align: right
+      padding-left: 10px
+      white-space: nowrap
+      flex-shrink: 1
+      overflow: hidden
+
+
+
+      .top-menu
+        display: none
+
+        @media (min-width: 1200px)
+          display: block
+
+      .nav-item
+        display: inline-block
+        position: relative
+        line-height: 32px
+        border: 1px solid transparent
+
+        a
+          padding: 0 20px
+          display: block
+
+        &:hover
+          color: $color_blue
+
+        .dropdown
+          position: absolute
+          display: none
+
+        &:hover .dropdown
+          display: block
+
+        &.contact
+          border: 1px solid $color_gray_light
+          border-radius: 3px
+          background: $color_blue
+          color: $color_white
+
+          &:hover
+            background: $color_blue_light
+            color: $color_white
+
+    .top-actions
+      flex-grow: 0
+      flex-shrink: 0
+      white-space: nowrap
+      font-size: 0
+
+      .language-switch
+      .menu
+        text-align: center
+        display: inline-block
+        display: inline-flex
+        size: 34px
+        line-height: 34px
+        margin-left: 10px
+        align-items: center
+
+      .language-switch
+        background: $color_white
+        border-radius 3px
+        border 1px solid $color_gray_light
+        overflow: hidden
+        background-position: center center
+        background-repeat: no-repeat
+
+        &.ja
+          background-image url('~img/flags/ja.png')
+
+        &.en
+          background-image url('~img/flags/en.png')
+
+      .menu
+        font-size: 24px
+
+        @media (min-width: 1200px)
+          display: none
