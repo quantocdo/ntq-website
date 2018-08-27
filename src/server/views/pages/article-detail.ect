@@ -1,0 +1,105 @@
+<% extend '_base' %>
+
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__assets.css('/article-detail.page.css') %>">
+
+<% end %>
+
+<body>
+	<% include 'partials/header' %>
+
+	<div class="site-content page-flow">
+		<div class="site-container fluid">
+			<div class="gs">
+				<div class="row">
+					<div class="col-9 main-article">
+						<div class="avatar-container">
+							<div class="avatar">
+								<img src="<%= @__assets.cdn('/upload/img/' + @_article.avatar) %>?w=900&h=400&m=crop" alt="<%= @_article.heading %>">
+							</div>
+							<div class="heading">
+								<span><%= @_article.heading %></span>
+							</div>
+							<div class="bulletin text-bold text-gray-dark">
+								<p><%= @_article.bulletin %></p>
+							</div>
+							<div class="extracts">
+								<% for extract in @_article.extracts: %>
+									<div class="extract">
+									<% switch extract.style: %>
+
+										<% when 1: %>
+										<div class="text">
+											<p><%= extract.text %></p>
+										</div>
+										<% end %>
+
+										<% when 2: %>
+										<div class="text-image clearfix">
+											<div class="image pull-right">
+												<img src="<%= @__assets.cdn('/upload/img/' + extract.image) %>?w=200" alt="<% @_article.heading %>">
+											</div>
+											<div class="text">
+												<p><%= extract.text %></p>
+											</div>
+										</div>
+										<% end %>
+
+										<% when 3: %>
+										<div class="image-text clearfix">
+											<div class="image pull-left">
+												<img src="<%= @__assets.cdn('/upload/img/' + extract.image) %>?w=200" alt="<% @_article.heading %>">
+											</div>
+											<div class="text">
+												<p><%= extract.text %></p>
+											</div>
+										</div>
+										<% end %>
+
+										<% when 4: %>
+										<div class="image">
+											<img src="<%= @__assets.cdn('/upload/img/' + extract.image) %>?w=900" alt="<% @_article.heading %>">
+										</div>
+										<% end %>
+									<% end %>
+									</div>
+								<% end %>
+							</div>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="related-articles">
+							<div class="heading">
+								<span><%- @__('RELATED_NEWS') %></span>
+							</div>
+							<div class="articles">
+								<% for article in @_relatedArticles: %>
+								<div class="article clearfix">
+									<div class="avatar-container pull-left">
+										<div class="avatar">
+											<img src="<%= @__assets.cdn('/upload/img/' + article.avatar) %>?w=80&h=80&m=crop" alt="<%= article.heading %>">
+										</div>
+									</div>
+									<div class="article-info">
+										<div class="heading text-bold">
+											<a href="<%= @_url('articles.detail', {
+												id: article._id
+											}) %>"><%= article.heading %></a><br>
+										</div>
+										<div class="date">
+											<span><%= article.date %></span>
+										</div>
+									</div>
+								</div>
+								<% end %>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<% include 'partials/footer' %>
+</body>

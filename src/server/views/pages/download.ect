@@ -1,0 +1,25 @@
+<% extend '_flow' %>
+
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__asset('download.css') %>">
+
+<% end %>
+
+<% block 'page_flow': %>
+
+<div class="page-title text-center text-upper">
+  <span><%- @__('DOWNLOADS') %></span>
+</div>
+
+<div class="section-batch-download">
+  <div class="site-container fluid">
+    <div class="explain text-center">
+      <p><%- @__('DOWNLOADS_HEADING') %></p>
+    </div>
+  </div>
+</div>
+
+<%- @content %>
+
+<% end %>

@@ -1,0 +1,222 @@
+<% extend '_flow' %>
+
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__asset('domains.css') %>">
+
+<% end %>
+
+<% block 'page_flow': %>
+
+<div class="page-title text-center text-upper">
+	<span><%- @__('DEVELOPMENT_DOMAINS') %></span>
+</div>
+<div class="site-container fluid">
+	<div class="domain">
+		<div class="heading text-upper text-blue">
+			<span><%- @__('MOBILE_APPLICATION_DEVELOPMENT') %></span>
+		</div>
+		<div class="sub-heading text-blue">
+			<span><%- @__('MOBILE_APPLICATION_DEVELOPMENT_DESC') %></span>
+		</div>
+		<div class="explain">
+			<p><%- @__('MOBILE_APPLICATION_DEVELOPMENT_EXPLAIN') %></p>
+			<div class="gs">
+				<div class="row download-promotions">
+					<div class="col-6 text-right text-upper">
+						<div class="promotion text-center text-white text-bold">
+							<a href="/download">
+								<img src="<%= @__asset('img/icons/apple.png') %>" alt="iOS" width="43" height="52">
+								<span><%- @__('DOWNLOAD_IOS_PROFILE') %></span>
+							</a>
+						</div>
+					</div>
+					<div class="col-6 text-left text-upper">
+						<div class="promotion text-center text-white text-bold">
+							<a href="/download">
+								<img src="<%= @__asset('img/icons/android.png') %>" alt="android" width="48" height="57">
+								<span><%- @__('DOWNLOAD_ANDROID_PROFILE') %></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sub-heading text-blue">
+			<span><%- @__('MOBILE_APPLICATION_DEVELOPMENT_IOS_HEADING') %></span>
+		</div>
+		<div class="explain">
+			<p><%- @__('MOBILE_APPLICATION_DEVELOPMENT_IOS_DESC') %></p>
+			<br>
+			<p><%- @__('MOBILE_APPLICATION_DEVELOPMENT_TECH') %></p>
+			<ul>
+				<li>
+					<i class="fa fa-fw fa-caret-right text-blue"></i>
+					<span>Cocoa Touch</span>
+				</li>
+				<li>
+					<i class="fa fa-fw fa-caret-right text-blue"></i>
+					<span>Objective-C</span>
+				</li>
+				<li>
+					<i class="fa fa-fw fa-caret-right text-blue"></i>
+					<span>iOS SDK</span>
+				</li>
+				<li>
+					<i class="fa fa-fw fa-caret-right text-blue"></i>
+					<span>xCode IDE</span>
+				</li>
+			</ul>
+		</div>
+		<div class="sub-heading text-blue">
+			<span><%- @__('MOBILE_APPLICATION_DEVELOPMENT_ANDROID_HEADING') %></span>
+		</div>
+		<div class="explain">
+			<p><%- @__('MOBILE_APPLICATION_DEVELOPMENT_ANDROID_DESC') %></p>
+			<br>
+			<p><%- @__('MOBILE_APPLICATION_DEVELOPMENT_ANDROID_TECH') %></p>
+			<ul>
+				<li>
+					<i class="fa fa-fw fa-caret-right text-blue"></i>
+					<span>Android Studio</span>
+				</li>
+				<li>
+					<i class="fa fa-fw fa-caret-right text-blue"></i>
+					<span>Eclipse ADT</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="domain">
+		<div class="heading text-upper text-blue">
+			<span><%- @__('WEB_APPLICATION_DEVELOPMENT') %></span>
+		</div>
+		<div class="sub-heading text-blue">
+			<span><%- @__('WEB_APPLICATION_DEVELOPMENT_DESC') %></span>
+		</div>
+		<div class="explain">
+			<p><%- @__('WEB_APPLICATION_DEVELOPMENT_EXPLAIN') %></p>
+			<br>
+			<p><%- @__('WEB_APPLICATION_DEVELOPMENT_LANGUAGES') %></p>
+			<div class="gs">
+				<div class="row tech-icons">
+					<div class="col-2 text-center tech-icon">
+						<img src="<%= @__asset('img/tech/java.png') %>" alt="java" width="156" height="109">
+					</div>
+					<div class="col-2 text-center tech-icon">
+						<img src="<%= @__asset('img/tech/js.png') %>" alt="javascript" width="137" height="113">
+					</div>
+					<div class="col-2 text-center tech-icon">
+						<img src="<%= @__asset('img/tech/php.png') %>" alt="php" width="140" height="90">
+					</div>
+					<div class="col-2 text-center tech-icon">
+						<img src="<%= @__asset('img/tech/dotnet.png') %>" alt="dotnet" width="166" height="88">
+					</div>
+					<div class="col-2 text-center tech-icon">
+						<img src="<%= @__asset('img/tech/asp.png') %>" alt="asp" width="157" height="55">
+					</div>
+					<div class="col-2 text-center tech-icon">
+						<img src="<%= @__asset('img/tech/dart.png') %>" alt="dart" width="151" height="76">
+					</div>
+				</div>
+			</div>
+			<br>
+			<p><%- @__('WEB_APPLICATION_DEVELOPMENT_TECH') %></p>
+			<div class="gs">
+				<div class="row tech-icons">
+					<div class="col-2-offset-1 text-center tech-icon">
+						<img src="<%= @__asset('img/tech/css3_html5.png') %>" alt="css3_html5" width="123" height="84">
+					</div>
+					<div class="col-2 text-center tech-icon">
+						<img src="<%= @__asset('img/tech/jquery.png') %>" alt="jquery" width="149" height="36">
+					</div>
+					<div class="col-2 text-center tech-icon">
+						<img src="<%= @__asset('img/tech/silverlight.png') %>" alt="silverlight" width="156" height="74">
+					</div>
+					<div class="col-2 text-center tech-icon">
+						<img src="<%= @__asset('img/tech/angularjs.png') %>" alt="angularjs" width="155" height="40">
+					</div>
+					<div class="col-2 text-center tech-icon">
+						<img src="<%= @__asset('img/tech/bootstrap.png') %>" alt="bootstrap" width="153" height="77">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="domain">
+		<div class="heading text-upper text-blue">
+			<span><%- @__('CLOUDBASED_SOFTWARE_DEVELOPMENT') %></span>
+		</div>
+		<div class="sub-heading text-blue">
+			<span><%- @__('CLOUDBASED_SOFTWARE_DEVELOPMENT_DESC') %></span>
+		</div>
+		<div class="explain">
+			<p><%- @__('CLOUDBASED_SOFTWARE_DEVELOPMENT_EXPLAIN') %></p>
+		</div>
+	</div>
+	<div class="domain">
+		<div class="heading text-upper text-blue">
+			<span><%- @__('ENTERPRISE_APPLICATION_DEVELOPMENT') %></span>
+		</div>
+		<div class="sub-heading text-blue">
+			<span><%- @__('ENTERPRISE_APPLICATION_DEVELOPMENT_DESC') %></span>
+		</div>
+		<div class="explain">
+			<p><%- @__('ENTERPRISE_APPLICATION_DEVELOPMENT_EXPLAIN') %></p>
+		</div>
+	</div>
+	<div class="domain">
+		<div class="heading text-upper text-blue">
+			<span><%- @__('ECOMMERCE_SOFTWARE_DEVELOPMENT') %></span>
+		</div>
+		<div class="sub-heading text-blue">
+			<span><%- @__('ECOMMERCE_SOFTWARE_DEVELOPMENT_DESC') %></span>
+		</div>
+		<div class="explain">
+			<p><%- @__('ECOMMERCE_SOFTWARE_DEVELOPMENT_EXPLAIN') %></p>
+		</div>
+	</div>
+	<div class="domain">
+		<div class="heading text-upper text-blue">
+			<span><%- @__('HEALTHCARE_SOFTWARE_DEVELOPMENT') %></span>
+		</div>
+		<div class="sub-heading text-blue">
+			<span><%- @__('HEALTHCARE_SOFTWARE_DEVELOPMENT_DESC') %></span>
+		</div>
+		<div class="explain">
+			<div class="gs">
+				<div class="row">
+					<div class="col-8">
+						<p><%- @__('HEALTHCARE_SOFTWARE_DEVELOPMENT_EXPLAIN') %></p>
+					</div>
+					<div class="col-4 text-center">
+						<img src="<%= @__asset('img/domains_healthcare_illu.jpg') %>" alt="<%- @__('HEALTHCARE_SOFTWARE_DEVELOPMENT') %>" width="388" height="238" class="domain-illu">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="domain">
+		<div class="heading text-upper text-blue">
+			<span><%- @__('EMBEDDED_SOFTWARE_DEVELOPMENT') %></span>
+		</div>
+		<div class="sub-heading text-blue">
+			<span><%- @__('EMBEDDED_SOFTWARE_DEVELOPMENT_DESC') %></span>
+		</div>
+		<div class="explain">
+			<p><%- @__('EMBEDDED_SOFTWARE_DEVELOPMENT_EXPLAIN') %></p>
+		</div>
+	</div>
+	<div class="domain">
+		<div class="heading text-upper text-blue">
+			<span><%- @__('SYSTEM_INTEGRATION') %></span>
+		</div>
+		<div class="sub-heading text-blue">
+			<span><%- @__('SYSTEM_INTEGRATION_DESC') %></span>
+		</div>
+		<div class="explain">
+			<p><%- @__('SYSTEM_INTEGRATION_EXPLAIN') %></p>
+		</div>
+	</div>
+</div>
+<% end %>

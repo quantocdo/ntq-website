@@ -1,0 +1,17 @@
+<% extend '_base' %>
+
+<body class="scroll-y page-full-disabled <%= @_locale %>">
+	<% include 'partials/header' %>
+
+	<div class="site-content page-full">
+		<% content 'page_full' %>
+	</div>
+	<div class="site-content page-remain hidden">
+		<% content 'page_remain' %>
+		<% include 'partials/footer' %>
+	</div>
+
+	<!-- script imports -->
+	<% content 'body_end' %>
+	<% include 'partials/service-worker' %>
+</body>

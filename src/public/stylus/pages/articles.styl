@@ -1,0 +1,101 @@
+@import '../main'
+
+.site-content
+	background $color_white
+	padding-top 30px
+	padding-bottom 100px
+
+	.highlighted-articles
+		.avatar-container
+			overflow hidden
+
+			.avatar
+				margin-left -999px
+				margin-right -999px
+				text-align center
+
+				img
+					height 100%
+					vertical-align middle
+
+		.bulletin
+			line-height $text_paragraph_line_height
+
+		.date
+			margin-top 10px
+			font-size 12px
+			color $color_gray_dark
+
+		.main-article
+			.avatar
+				height 410px
+
+			.heading
+				margin-top 32px
+				font-size 30px
+				line-height 34px
+
+			.bulletin
+				margin-top 25px
+
+		.recent-article
+			height 135px
+			margin-bottom 20px
+
+			.avatar
+				height 135px
+
+			.heading
+				line-height $text_paragraph_line_height
+				font-weight bold
+
+			.bulletin
+				max-height ($text_paragraph_line_height * 3)
+				overflow hidden
+				text-overflow ellipsis
+				vendor('line-clamp', 2, prefixes: webkit moz ms o)
+				vendor('box-orient', vertical, prefixes: webkit moz ms o)
+				display -webkit-box
+				display -moz-box
+				display -ms-box
+				display -o-box
+
+	.articles
+		margin-top 100px
+
+		.article
+			margin-top 75px
+
+			.avatar-container
+				overflow hidden
+
+				.avatar
+					margin-left -999px
+					margin-right -999px
+					text-align center
+					height 340px
+
+					img
+						height 100%
+
+			.heading
+				margin-top 30px
+				font-size 18px
+
+			.bulletin
+				margin-top 16px
+				line-height $text_paragraph_line_height
+
+			.date
+				margin-top 10px
+				font-size 12px
+				color $color_gray_dark
+
+	.load-more
+		margin-top 70px
+		border-top 1px solid $color_gray
+		border-bottom 1px solid $color_gray
+		padding 30px 0
+
+		.icon
+			margin-right 10px

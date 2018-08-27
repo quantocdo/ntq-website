@@ -1,0 +1,21 @@
+<% extend '_base' %>
+
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__asset('404.css') %>">
+
+<% end %>
+
+<body class="full-height">
+	<div class="warning">
+		<div class="picture">
+			<img src="<%= @__asset('img/404/404.png') %>" alt="404" width="519" height="215">
+		</div>
+		<div class="message">
+			<span><%- @__('404_INFORM') %></span>
+		</div>
+		<div class="button text-upper text-white">
+			<a href="/"><%- @__('TO_HOMEPAGE') %></a>
+		</div>
+	</div>
+</body>

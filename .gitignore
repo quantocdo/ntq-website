@@ -26,7 +26,8 @@ build/Release
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 bower_components
-build/.tmp
-build/out
+/build
 /app/server/config/translations/ja.json
 /app/server/config/translations/en.json
+/dist
+/cms

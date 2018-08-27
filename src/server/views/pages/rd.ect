@@ -1,0 +1,121 @@
+<% extend '_flow' %>
+
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__asset('rd.css') %>">
+
+<% end %>
+
+<% block 'page_flow': %>
+
+<div class="page-title text-center text-upper">
+	<span><%- @__('RESEARCH_AND_DEVELOPMENT') %></span>
+</div>
+<div class="section-intro">
+	<div class="site-container fluid">
+		<div class="gs">
+			<div class="row">
+				<div class="col-6 picture-container">
+					<img src="<%= @__asset('img/rd/rd_room.png') %>" alt="<%- @__('RESEARCH_AND_DEVELOPMENT') %>" width="543" height="492">
+				</div>
+				<div class="col-5-offset-1">
+					<div class="heading text-upper">
+						<span><%- @__('WHY_R&D') %></span>
+					</div>
+					<div class="explain">
+						<p class="text-justify"><%- @__('WHY_R&D_EXPLAIN') %></p>
+					</div>
+					<div class="reason first">
+						<span class="text-upper"><%- @__('WHY_R&D_REASON_1') %></span>
+						<p class="text-gray-dark text-justify"><%- @__('WHY_R&D_REASON_1_EXPLAIN') %></p>
+					</div>
+					<div class="reason-break"></div>
+					<div class="reason second">
+						<span class="text-upper"><%- @__('WHY_R&D_REASON_2') %></span>
+						<p class="text-gray-dark text-justify"><%- @__('WHY_R&D_REASON_2_EXPLAIN') %></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="section-videos">
+	<div class="site-container fluid">
+		<div class="video-container">
+			<div class="video-frame air-drone">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/uceRruHvlUk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="heading text-upper text-center">
+				<span><%- @__('AIR_DRONE') %></span>
+			</div>
+			<p class="explain text-center"><%- @__('AIR_DRONE_DESC') %></p>
+		</div>
+		<div class="video-container">
+			<div class="video-frame gecko">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/zEtfTiVfth8?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="heading text-upper text-center">
+				<span><%- @__('GECKO') %></span>
+			</div>
+			<p class="explain text-center"><%- @__('GECKO_DESC') %></p>
+		</div>
+		<div class="video-container">
+			<div class="video-frame guidebot"></div>
+			<div class="heading text-upper text-center">
+				<span><%- @__('GUIDEBOT') %></span>
+			</div>
+			<p class="explain text-center"><%- @__('GUIDEBOT_DESC') %></p>
+		</div>
+		<div class="video-container">
+			<div class="video-frame light-control">
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/tbnz6oWMJmY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="heading text-upper text-center">
+				<span><%- @__('RD_LIGHT_CONTROL') %></span>
+			</div>
+			<p class="explain text-center"><%- @__('RD_LIGHT_CONTROL_DESC') %></p>
+		</div>
+		<div class="video-container">
+			<div class="video-frame smart-card"></div>
+			<div class="heading text-upper text-center">
+				<span><%- @__('RD_SMART_CARD') %></span>
+			</div>
+			<p class="explain text-center"><%- @__('RD_SMART_CARD_DESC') %></p>
+		</div>
+	</div>
+</div>
+
+<div class="section-crazy">
+	<div class="site-container fluid">
+		<div class="gs">
+			<div class="row">
+				<div class="col-6">
+					<div class="heading text-upper">
+						<span><%- @__('CRAZY_TEAM') %></span>
+					</div>
+					<p class="explain"><%- @__('CRAZY_TEAM_DESC') %></p>
+				</div>
+				<div class="col-6">
+					<img class="team-picture" src="<%= @__asset('img/rd_team.png') %>" alt="<%- @__('CRAZY_TEAM') %>">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="section-contact">
+	<div class="site-container fluid">
+		<div class="intro text-white text-center">
+			<p><%- @__('R&D_OFFER') %></p>
+		</div>
+		<div class="contact text-center">
+			<a href="/contact" class="text-blue text-upper">
+				<span><%- @__('CONTACT_US') %></span>
+				<i class="fa fa-arrow-right icon-see-more"></i>
+			</a>
+		</div>
+	</div>
+</div>
+
+<% end %>
