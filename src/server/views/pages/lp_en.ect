@@ -59,10 +59,10 @@
 	<div class="container">
 		<div class="content">
 			<div class="heading text-center text-white text-upper">
-				<span><%- @__('DOMAINS') %></span>
+				<h2><%- @__('DOMAINS') %></h2>
 			</div>
 			<div class="sub-heading text-center text-white text-upper">
-				<span><%- @__('DOMAINS_SLOGAN') %></span>
+				<h3><%- @__('DOMAINS_SLOGAN') %></h3>
 			</div>
 
 			<div class="services">
@@ -225,91 +225,89 @@
 	</div>
 </section>
 
-<div class="page-section section-reviews" data-title="<%- @__('CUSTOMER_REVIEWS') %>">
-	<div class="site-container full vertical-middle">
-		<div class="heading text-center text-white text-upper">
-			<span><%- @__('CUSTOMER_REVIEWS') %></span>
-		</div>
-		<div class="gs">
-			<div class="row customers">
-				<div class="col-2 clearfix">
-					<div class="customer-pic-container pull-right">
-						<div class="customer-pic">
-							<img src="<%= @__asset('img/customers/marinax.jpg') %>" alt="<%- @__('MARINAX_CUSTOMER_NAME') %>" width="134" height="134">
-						</div>
-					</div>
-				</div>
-				<div class="col-4 text-white">
-					<div class="customer-name">
-						<span><%- @__('MARINAX_CUSTOMER_NAME') %></span>
-					</div>
-					<div class="customer-position">
-						<span class="text-italic"><%- @__('MARINAX_CUSTOMER_POSITION') %></span>
-					</div>
-					<div class="customer-review">
-						<p class="text-justify"><%- @__('MARINAX_CUSTOMER_REVIEW') %></p>
-					</div>
-				</div>
-				<div class="col-2 clearfix">
-					<div class="customer-pic-container pull-right">
-						<div class="customer-pic">
-							<img src="<%= @__asset('img/customers/roi.jpg') %>" alt="<%- @__('ROI_CUSTOMER_NAME') %>" width="134" height="134">
-						</div>
-					</div>
-				</div>
-				<div class="col-4 text-white">
-					<div class="customer-name">
-						<span><%- @__('ROI_CUSTOMER_NAME') %></span>
-					</div>
-					<div class="customer-position">
-						<span class="text-italic"><%- @__('ROI_CUSTOMER_POSITION') %></span>
-					</div>
-					<div class="customer-review">
-						<p class="text-justify"><%- @__('ROI_CUSTOMER_REVIEW') %></p>
-					</div>
-				</div>
+<section class="page-section section-reviews" data-title="<%- @__('CUSTOMER_REVIEWS') %>">
+	<div class="container">
+		<div class="content">
+			<div class="heading text-center text-white text-upper">
+				<h2><%- @__('CUSTOMER_REVIEWS') %></h2>
 			</div>
-			<div class="row customers">
-				<div class="col-2 clearfix">
-					<div class="customer-pic-container pull-right">
+			<div class="reviews">
+				<div class="group">
+					<div class="review">
 						<div class="customer-pic">
-							<img src="<%= @__asset('img/customers/itsherpa.jpg') %>" alt="<%- @__('ITSHERPA_CUSTOMER_NAME') %>" width="134" height="134">
+							<div class="placeholder"></div>
+							<div class="img">
+								<img src="<%= @__asset('img/customers/marinax.jpg') %>" alt="<%- @__('MARINAX_CUSTOMER_NAME') %>" width="134" height="134">
+							</div>
+						</div>
+						<div class="customer-name">
+							<span><%- @__('MARINAX_CUSTOMER_NAME') %></span>
+						</div>
+						<div class="customer-position">
+							<span class="text-italic"><%- @__('MARINAX_CUSTOMER_POSITION') %></span>
+						</div>
+						<div class="customer-review">
+							<p><%- @__('MARINAX_CUSTOMER_REVIEW') %></p>
+						</div>
+					</div>
+					<div class="review">
+						<div class="customer-pic">
+							<div class="placeholder"></div>
+							<div class="img">
+								<img src="<%= @__asset('img/customers/roi.jpg') %>" alt="<%- @__('ROI_CUSTOMER_NAME') %>" width="134" height="134">
+							</div>
+						</div>
+						<div class="customer-name">
+							<span><%- @__('ROI_CUSTOMER_NAME') %></span>
+						</div>
+						<div class="customer-position">
+							<span class="text-italic"><%- @__('ROI_CUSTOMER_POSITION') %></span>
+						</div>
+						<div class="customer-review">
+							<p><%- @__('ROI_CUSTOMER_REVIEW') %></p>
 						</div>
 					</div>
 				</div>
-				<div class="col-4 text-white">
-					<div class="customer-name">
-						<span><%- @__('ITSHERPA_CUSTOMER_NAME') %></span>
-					</div>
-					<div class="customer-position">
-						<span class="text-italic"><%- @__('ITSHERPA_CUSTOMER_POSITION') %></span>
-					</div>
-					<div class="customer-review">
-						<p class="text-justify"><%- @__('ITSHERPA_CUSTOMER_REVIEW') %></p>
-					</div>
-				</div>
-				<div class="col-2 clearfix">
-					<div class="customer-pic-container pull-right">
+				<div class="group">
+					<div class="review">
 						<div class="customer-pic">
-							<img src="<%= @__asset('img/customers/bit2byte.jpg') %>" alt="<%- @__('BIT2BYTE_CUSTOMER_NAME') %>" width="134" height="134">
+							<div class="placeholder"></div>
+							<div class="img">
+								<img src="<%= @__asset('img/customers/itsherpa.jpg') %>" alt="<%- @__('ITSHERPA_CUSTOMER_NAME') %>" width="134" height="134">
+							</div>
+						</div>
+						<div class="customer-name">
+							<span><%- @__('ITSHERPA_CUSTOMER_NAME') %></span>
+						</div>
+						<div class="customer-position">
+							<span class="text-italic"><%- @__('ITSHERPA_CUSTOMER_POSITION') %></span>
+						</div>
+						<div class="customer-review">
+							<p><%- @__('ITSHERPA_CUSTOMER_REVIEW') %></p>
 						</div>
 					</div>
-				</div>
-				<div class="col-4 text-white">
-					<div class="customer-name">
-						<span><%- @__('BIT2BYTE_CUSTOMER_NAME') %></span>
-					</div>
-					<div class="customer-position">
-						<span class="text-italic"><%- @__('BIT2BYTE_CUSTOMER_POSITION') %></span>
-					</div>
-					<div class="customer-review">
-						<p class="text-justify"><%- @__('BIT2BYTE_CUSTOMER_REVIEW') %></p>
+					<div class="review">
+						<div class="customer-pic">
+							<div class="placeholder"></div>
+							<div class="img">
+								<img src="<%= @__asset('img/customers/bit2byte.jpg') %>" alt="<%- @__('BIT2BYTE_CUSTOMER_NAME') %>" width="134" height="134">
+							</div>
+						</div>
+						<div class="customer-name">
+							<span><%- @__('BIT2BYTE_CUSTOMER_NAME') %></span>
+						</div>
+						<div class="customer-position">
+							<span class="text-italic"><%- @__('BIT2BYTE_CUSTOMER_POSITION') %></span>
+						</div>
+						<div class="customer-review">
+							<p><%- @__('BIT2BYTE_CUSTOMER_REVIEW') %></p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
 <div class="page-section section-tech" data-title="<%- @__('TECHNOLOGIES') %>">
 	<div class="site-container fluid vertical-middle">

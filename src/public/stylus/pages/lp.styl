@@ -46,7 +46,7 @@
     display: flex
     flex-wrap: wrap
     padding-top: 100px
-    padding-bottom: 100px
+    padding-bottom: 50px
 
     .description
       text-align: center
@@ -104,7 +104,7 @@
 
   .content
     padding-top: 100px
-    padding-bottom: 100px
+    padding-bottom: 50px
 
     .heading
       font-size 42px
@@ -114,26 +114,37 @@
       margin-top 20px
 
     .services
-      padding-top: 30px
+      padding-top: 50px
 
       .service
-        padding-top: 20px
+        padding-top: 30px
+
+        .service-heading
+          font-size 18px
+          margin-top 30px
+
+        .service-description
+          margin-top 20px
+          line-height 24px
+
+        .service-learn-more
+          margin-top 18px
 
     .domains
-      padding-top: 30px
+      padding-top: 50px
 
       .domain
-        padding-top: 20px
+        padding-top: 30px
         text-align: center
 
         .logo-description
-          padding-top: 10px
+          padding: 20px 10px 0
 
     .logo
       margin: 0 auto
       max-width: 140px
       border-radius: 50%
-      overlfow: hidden
+      overflow: hidden
       border: 1px solid $color_white
       background: $color_blue_light
       position: relative
@@ -154,7 +165,7 @@
         justify-content: center
         align-items: center
 
-    @media (min-width: 420px)
+    @media (min-width: 425px)
       .domains
         .sub-group
           display: flex
@@ -163,7 +174,7 @@
             flex-grow: 1
             flex-basis: 0
 
-    @media (min-width: 750px)
+    @media (min-width: 768px)
       .services
         display: flex
 
@@ -179,83 +190,64 @@
           flex-grow: 1
           flex-basis: 0
 
-  .services
-    .row
-      margin-top 40px
-
-      &.domains
-        margin-top 60px
-
-    .logo-container
-      border-radius 50%
-      overflow hidden
-      border 1px solid $color_white
-      background $color_blue_light
-      width 80px
-      height 80px
-      line-height 80px
-
-      &.large
-        width 140px
-        height 140px
-        line-height 140px
-
-      img
-        vertical-align middle
-
-    .logo-description
-      margin-left 100px
-      margin-right 20px
-      height 80px
-      font-size 18px
-
-    .service-heading
-      font-size 18px
-      margin-top 30px
-
-    .service-description
-      margin-top 20px
-      line-height 24px
-
-    .service-learn-more
-      margin-top 18px
-
 .section-reviews
   background $color_green
+  padding-top: 100px
+  padding-bottom: 50px
 
   .heading
-    font-size 42px
+    font-size 40px
 
-  .customers
-    margin-top 60px
+  .reviews
+    padding-top: 50px
 
-    .customer-pic-container
-      width 134px
-      border-radius 50%
-      overflow hidden
-      border 1px solid $color_white
-      background $color_blue
-      overflow hidden
+    .review
+      padding-top: 30px
+      text-align: center
+      color: $color_white
 
       .customer-pic
-        margin-left -999px
-        margin-right -999px
-        text-align center
-        height 134px
+        margin: 0 auto
+        max-width: 140px
+        border-radius: 50%
+        overflow: hidden
+        border: 1px solid $color_white
+        background: $color_blue_light
+        position: relative
 
-        img
-          vertical-align middle
-          height 100%
+        .placeholder
+          padding-top: 100%
 
-    .customer-name
-      font-size 20px
+        .img
+          position: absolute
+          top: 0
+          left: 0
+          right: 0
+          bottom: 0
+          display: flex
+          justify-content: center
+          align-items: center
 
-    .customer-position
-      font-size 18px
+      .customer-name
+        padding-top: 20px
+        font-size: 20px
+        line-height: 1.2em
 
-    .customer-review
-      margin-top 25px
-      line-height 22px
+      .customer-position
+        font-size: 18px
+
+      .customer-review
+        padding: 10px 10px 0
+        line-height: 22px
+
+    @media (min-width: 768px)
+      .group
+        display: flex
+
+        .review
+          flex-grow: 1
+          flex-basis: 0
+
 
 .section-tech
   background $color_blue
