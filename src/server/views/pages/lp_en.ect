@@ -416,7 +416,7 @@
   </div>
 </section>
 
-<div class="page-section section-partners" data-title="<%- @__('OUR_PARTERNS') %>">
+<section class="page-section section-partners" data-title="<%- @__('OUR_PARTERNS') %>">
   <div class="container">
     <div class="content">
       <div class="heading text-center text-white text-upper">
@@ -430,63 +430,61 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
-<div class="page-section section-rd" data-title="Research & Developement">
-  <div class="vertical-middle">
-    <div class="site-container fluid">
+<section class="page-section section-rd" data-title="Research&amp;Developement">
+  <div class="container">
+    <div class="content">
       <div class="heading text-center text-upper text-white">
-        <span><%- @__('R&D_HEADING') %></span>
+        <h2><%- @__('R&D_HEADING') %></h2>
       </div>
       <div class="description text-center text-white">
         <p><%- @__('R&D_SUB_HEADING') %></p>
       </div>
     </div>
-    <div class="rd-film">
-      <div class="site-container fluid">
-        <div class="gs">
-          <div class="row">
-            <div class="col-2 rd-block">
-              <div class="thumb">
-                <img src="<%= @__asset('img/rd/air_drone_s.jpg') %>" alt="R&amp;D Team" width="200" height="130">
-              </div>
-            </div>
-            <div class="col-2 rd-block">
-              <div class="thumb">
-                <img src="<%= @__asset('img/rd/rd_room_s.jpg') %>" alt="R&amp;D Team" width="200" height="130">
-              </div>
-            </div>
-            <div class="col-2 rd-block">
-              <div class="thumb">
-                <img src="<%= @__asset('img/rd/gecko_s.jpg') %>" alt="R&amp;D Team" width="200" height="130">
-              </div>
-            </div>
-            <div class="col-2 rd-block">
-              <div class="thumb">
-                <img src="<%= @__asset('img/rd/guidebot_skeleton_s.jpg') %>" alt="Guidebot" width="200" height="130">
-              </div>
-            </div>
-            <div class="col-2 rd-block">
-              <div class="thumb">
-                <img src="<%= @__asset('img/rd/rd_team_s.jpg') %>" alt="R&amp;D Team" width="200" height="130">
-              </div>
-            </div>
-            <div class="col-2 rd-block">
-              <div class="thumb">
-                <img src="<%= @__asset('img/rd/rd_workbench_s.jpg') %>" alt="R&amp;D Team" width="200" height="130">
-              </div>
-            </div>
-          </div>
+  </div>
+  <div class="rd-film">
+    <div class="thumbs">
+      <div class="empty thumb"></div>
+      <div class="thumb">
+        <div class="img">
+          <img src="<%= @__asset('img/rd/air_drone_s.jpg') %>" alt="R&amp;D Team" width="200" height="130">
         </div>
       </div>
-    </div>
-    <div class="site-container fluid">
-      <div class="rd-how-it-work text-center">
-        <a href="/research-development" class="text-green text-upper"><%- @__('SEE_HOW_THEY_WORK') %><i class="fa fa-arrow-right icon-see-more"></i></a>
+      <div class="thumb">
+        <div class="img">
+          <img src="<%= @__asset('img/rd/rd_room_s.jpg') %>" alt="R&amp;D Team" width="200" height="130">
+        </div>
       </div>
+      <div class="thumb">
+        <div class="img">
+          <img src="<%= @__asset('img/rd/gecko_s.jpg') %>" alt="R&amp;D Team" width="200" height="130">
+        </div>
+      </div>
+      <div class="thumb">
+        <div class="img">
+          <img src="<%= @__asset('img/rd/guidebot_skeleton_s.jpg') %>" alt="Guidebot" width="200" height="130">
+        </div>
+      </div>
+      <div class="thumb">
+        <div class="img">
+          <img src="<%= @__asset('img/rd/rd_team_s.jpg') %>" alt="R&amp;D Team" width="200" height="130">
+        </div>
+      </div>
+      <div class="thumb">
+        <div class="img">
+          <img src="<%= @__asset('img/rd/rd_workbench_s.jpg') %>" alt="R&amp;D Team" width="200" height="130">
+        </div>
+      </div>
+      <div class="empty thumb"></div>
     </div>
   </div>
-</div>
+  <div class="container">
+    <div class="rd-how-it-work text-center">
+      <a href="/research-development" class="text-green text-upper"><%- @__('SEE_HOW_THEY_WORK') %><i class="fa fa-arrow-right icon-see-more"></i></a>
+    </div>
+  </div>
+</section>
 
 <div class="page-section section-articles" data-title="<%- @__('NEWS') %>">
   <div class="articles clearfix full-height">
