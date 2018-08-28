@@ -1,6 +1,13 @@
 body
 	background $color_white
 
+.container
+	padding-left: 20px
+	padding-right: 20px
+
+	&.left
+		padding-left: 0
+
 .page-full-disabled
 	.site-content
 		&.page-full
@@ -9,7 +16,6 @@ body
 			.page-section
 				position relative
 				display block
-				height 775px
 				transition: height .2s
 
 		&.page-remain

@@ -5,83 +5,99 @@
 
 .section-landing
   .landing-background
-    position: absolute
-    overflow: hidden
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-    z-index: 0
+    position: relative
 
     .video-background
-      min-width 100%
-      min-height 100%
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      min-width: 100%
+      min-height: 100%
 
   .landing-heading
     position: absolute
+    top: 100px
     left: 0
     right: 0
     bottom: 20px
-    z-index: 2
     color $color_white
     text-align: center
+    display: flex
+    align-items: center
 
-    .heading
-      font-size: 40px
+    .container
+      flex-grow: 1
 
-    .sub-heading
-      font-size: 30px
-      padding-top: 20px
+      .heading
+        font-size: 50px
+        line-height: 1.1em
 
-  .landing-overlay
-    position absolute
-    left 0
-    right 0
-    bottom 130px
-    z-index 2
-    text-align center
-    color $color_white
-
-    .heading
-      font-size 72px
-      line-height 80px
-      letter-spacing 5px
-
-    .sub-heading
-      margin-top 50px
-      font-size 50px
+      .sub-heading
+        font-size: 30px
+        line-height: 1.1em
+        padding-top: 20px
 
 .section-whois
   background $color_white
 
-  .heading
-    font-size 42px
-    text-transform uppercase
+  .content
+    display: flex
+    flex-wrap: wrap
+    padding-top: 100px
+    padding-bottom: 100px
 
-  .paragraph
-    margin-top 25px
-    line-height 24px
+    .description
+      text-align: center
 
-  .about-us
-    margin-top 50px
+      .heading
+        font-size: 40px
+        text-transform: uppercase
 
-    a
-      display inline-block
-      border-radius 3px
-      background $color_green
-      padding 0 22px
-      line-height 45px
-      font-family 'Raleway'
-      font-weight bold
+      .paragraph
+        margin-top: 25px
+        line-height: 24px
 
-  .video-container
-    background url('~img/frames/frame_imac.png') no-repeat center center
-    width 567px
-    height 447px
-    padding 19px
+      .about-us
+        margin-top: 20px
 
-    .video
-      height 296px
+        a
+          display: inline-block
+          border-radius: 3px
+          background: $color_green
+          padding: 0 22px
+          line-height: 45px
+          font-family: 'Raleway'
+          font-weight: bold
+
+    .video-container
+      display: none
+      padding-top: 20px
+      flex-shrink: 0
+
+      .video
+        background url('~img/frames/frame_imac.png') no-repeat center center
+        margin: 0 auto
+        width: 567px
+        height: 447px
+        padding: 19px
+
+    @media (min-width: 610px)
+      .video-container
+        display: block
+        flex-grow: 1
+
+    @media (min-width: 1100px)
+      flex-wrap: nowrap
+
+      .description
+        text-align: left
+        padding-right: 20px
+
+      .video-container
+        flex-grow: 0
+        padding-top: 0
 
 .section-domains
   background $color_blue
