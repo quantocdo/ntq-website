@@ -117,10 +117,12 @@
 
     .services
       padding-top: 50px
+      display: grid
+      grid-column-gap: 20px
+      grid-row-gap: 50px
+      grid-template-columns: 1fr
 
       .service
-        padding-top: 30px
-
         .service-heading
           font-size 18px
           margin-top 30px
@@ -134,9 +136,12 @@
 
     .domains
       padding-top: 50px
+      display: grid
+      grid-column-gap: 20px
+      grid-row-gap: 50px
+      grid-template-columns: 1fr
 
       .domain
-        padding-top: 30px
         text-align: center
 
         .logo-description
@@ -169,28 +174,18 @@
 
     @media (min-width: 425px)
       .domains
-        .sub-group
-          display: flex
-
-          .domain
-            flex-grow: 1
-            flex-basis: 0
+        grid-template-columns: repeat(2, 1fr)
 
     @media (min-width: 768px)
       .services
-        display: flex
+        grid-template-columns: repeat(3, 1fr)
 
         .service
           flex-grow: 1
           flex-basis: 0
 
       .domains
-        .group
-          display: flex
-
-        .sub-group
-          flex-grow: 1
-          flex-basis: 0
+        grid-template-columns: repeat(4, 1fr)
 
 .section-reviews
   background $color_green
@@ -203,9 +198,12 @@
 
   .reviews
     padding-top: 50px
+    display: grid
+    grid-column-gap: 20px
+    grid-row-gap: 50px
+    grid-template-columns: 1fr
 
     .review
-      padding-top: 30px
       text-align: center
 
       .customer-pic
@@ -239,17 +237,12 @@
         font-size: 18px
 
       .customer-review
-        padding: 10px 10px 0
+        padding-top: 10px
         line-height: 22px
 
-    @media (min-width: 768px)
-      .group
-        display: flex
-
-        .review
-          flex-grow: 1
-          flex-basis: 0
-
+  @media (min-width: 768px)
+    .reviews
+       grid-template-columns: repeat(2, 1fr)
 
 .section-tech
   background $color_blue
