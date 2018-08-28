@@ -294,50 +294,71 @@
     padding-top 50px
 
     a
-      border-radius 3px
-      display inline-block
-      background $color_white
-      padding 0 22px
-      line-height 45px
-      font-family 'Raleway'
-      font-weight bold
+      border-radius: 3px
+      display: inline-block
+      background: $color_white
+      padding: 0 22px
+      line-height: 45px
+      font-family: 'Raleway'
+      font-weight: bold
 
 .section-why-ntq
-  background $color_white
+  background: $color_white
+  color: $color_black
+  padding-top: 100px
+  padding-bottom: 50px
 
-  .image-container
-    height 565px
-    // background url('../img/frames/frame_iphone.png') no-repeat center center
+  .content
+    display: grid
+    grid-column-gap: 20px
+    grid-row-gap: 20px
+    grid-template-columns: 1fr
 
-    img
-      vertical-align middle
-      max-width 100%
+    .img
+      display: none
 
-  .heading
-    font-size 42px
+    .reasons
+      text-align: center
 
-  .reason
-    &.first-reason
-      margin-top 62px
+      .heading
+        font-size: 40px
 
-    &.first-reason
-    &.second-reason
-      padding-bottom 36px
+      .reason
+        &.first-reason
+          margin-top 62px
 
-    &.second-reason
-    &.third-reason
-      margin-top 38px
+        &.first-reason
+        &.second-reason
+          padding-bottom 36px
 
-    .reason-heading
-      font-size 18px
-      line-height 24px
+        &.second-reason
+        &.third-reason
+          margin-top 38px
 
-    .reason-explain
-      line-height 24px
+        .reason-heading
+          font-size 18px
+          line-height 24px
 
-  .reason-break
-    width 225px
-    border-bottom 1px solid $color_gray_light
+        .reason-explain
+          line-height 24px
+
+      .reason-break
+        width: 225px
+        margin: 0 auto
+        border-bottom: 1px solid $color_gray_light
+
+  @media (min-width: 768px)
+    .content
+      grid-template-columns: 278px 1fr
+
+      .img
+        display: block
+
+      .reasons
+        text-align: left
+
+        .reason-break
+          margin: 0
 
 .section-partners
   background $color_blue
