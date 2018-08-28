@@ -47,8 +47,10 @@
   padding-bottom: 50px
 
   .content
-    display: flex
-    flex-wrap: wrap
+    display: grid
+    grid-column-gap: 20px
+    grid-row-gap: 20px
+    grid-template-columns: 1fr
 
     .description
       text-align: center
@@ -75,7 +77,6 @@
 
     .video-container
       display: none
-      padding-top: 20px
       flex-shrink: 0
 
       .video
@@ -85,21 +86,17 @@
         height: 447px
         padding: 19px
 
-    @media (min-width: 610px)
+  @media (min-width: 610px)
+    .content
       .video-container
         display: block
-        flex-grow: 1
 
-    @media (min-width: 1100px)
-      flex-wrap: nowrap
+  @media (min-width: 1100px)
+    .content
+      grid-template-columns: 1fr 567px
 
       .description
         text-align: left
-        padding-right: 20px
-
-      .video-container
-        flex-grow: 0
-        padding-top: 0
 
 .section-domains
   background $color_blue
