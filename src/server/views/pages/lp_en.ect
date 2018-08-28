@@ -489,7 +489,7 @@
 <section class="page-section section-articles" data-title="<%- @__('NEWS') %>">
   <div class="articles">
     <% for post in @posts: %>
-      <div class="article"
+      <article class="article"
         style="background-image: url('<%= post.feature_image %>?w=634');">
         <div class="article-overlay">
           <div class="content container text-white">
@@ -500,7 +500,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </article>
     <% end %>
   </div>
 </section>
@@ -508,20 +508,20 @@
 <% end %>
 
 <% block 'page_remain': %>
-<div class="page-section section-offer">
-  <div class="site-container fluid">
-    <div class="offer text-center text-white">
-      <span><%- @__('OFFER_MESSAGE_1') %></span>
+  <section class="page-section section-offer">
+    <div class="container">
+      <div class="offer text-center text-white">
+        <h2><%- @__('OFFER_MESSAGE_1') %></h2>
+      </div>
+      <div class="offer-explain text-center text-white">
+        <h3><%- @__('OFFER_MESSAGE_2') %></h3>
+      </div>
+      <div class="contact-us text-center">
+        <a href="/contact" class="text-blue text-upper"><%- @__('CONTACT_US') %><i class="fa fa-arrow-right icon-see-more"></i></a>
+      </div>
+      <div class="download-materials text-center">
+        <a href="/download" class="text-white text-underline"><%- @__('DOWNLOAD_MATERIALS') %></a>
+      </div>
     </div>
-    <div class="offer-explain text-center text-white">
-      <span><%- @__('OFFER_MESSAGE_2') %></span>
-    </div>
-    <div class="contact-us text-center">
-      <a href="/contact" class="text-blue text-upper"><%- @__('CONTACT_US') %><i class="fa fa-arrow-right icon-see-more"></i></a>
-    </div>
-    <div class="download-materials text-center">
-      <a href="/download" class="text-white text-underline"><%- @__('DOWNLOAD_MATERIALS') %></a>
-    </div>
-  </div>
-</div>
+  </section>
 <% end %>
