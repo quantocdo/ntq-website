@@ -4,6 +4,8 @@
   padding-left: 10px
 
 .section-landing
+  color $color_white
+
   .landing-background
     position: relative
 
@@ -22,7 +24,6 @@
     left: 0
     right: 0
     bottom: 20px
-    color $color_white
     text-align: center
     display: flex
     align-items: center
@@ -41,12 +42,13 @@
 
 .section-whois
   background $color_white
+  color: $color_black
+  padding-top: 100px
+  padding-bottom: 50px
 
   .content
     display: flex
     flex-wrap: wrap
-    padding-top: 100px
-    padding-bottom: 50px
 
     .description
       text-align: center
@@ -101,11 +103,11 @@
 
 .section-domains
   background $color_blue
+  color: $color_white
+  padding-top: 100px
+  padding-bottom: 50px
 
   .content
-    padding-top: 100px
-    padding-bottom: 50px
-
     .heading
       font-size 42px
 
@@ -192,6 +194,7 @@
 
 .section-reviews
   background $color_green
+  color: $color_white
   padding-top: 100px
   padding-bottom: 50px
 
@@ -204,7 +207,6 @@
     .review
       padding-top: 30px
       text-align: center
-      color: $color_white
 
       .customer-pic
         margin: 0 auto
@@ -251,9 +253,12 @@
 
 .section-tech
   background $color_blue
+  color: $color_white
+  padding-top: 100px
+  padding-bottom: 50px
 
   .heading
-    font-size 42px
+    font-size 40px
 
   .sub-heading
     font-size 18px
@@ -262,23 +267,41 @@
   .description
     margin-top 25px
 
-  .tech-logo
-    background $color_white
-    line-height 126px
-    height 126px
-    overflow hidden
+  .technologies
+    padding-top: 50px
+    display: grid
+    grid-column-gap: 20px
+    grid-row-gap: 20px
+    grid-template-columns: repeat(2, 1fr)
 
-    img
-      vertical-align middle
+    .tech
+      position: relative
+      background $color_white
+      overflow: hidden
 
-  .first-line
-    margin-top 126px
+      .placeholder
+        padding-top: 50%
 
-  .second-line
-    margin-top 22px
+      .img
+        position: absolute
+        top: 5px
+        left: 5px
+        right: 5px
+        bottom: 5px
+        display: flex
+        justify-content: center
+        align-items: center
+
+        img
+          max-width: 100%
+          max-height: 100%
+
+  @media (min-width: 768px)
+    .technologies
+      grid-template-columns: repeat(5, 1fr)
 
   .see-more-tech
-    margin-top 78px
+    padding-top 50px
 
     a
       border-radius 3px
