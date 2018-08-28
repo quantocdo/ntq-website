@@ -375,7 +375,7 @@
   </div>
 </section>
 
-<div class="page-section section-why-ntq" data-title="<%- @__('WHY_NTQ_PLAIN') %>">
+<section class="page-section section-why-ntq" data-title="<%- @__('WHY_NTQ_PLAIN') %>">
   <div class="container">
     <div class="content">
       <div class="img">
@@ -383,11 +383,11 @@
       </div>
       <div class="reasons">
         <div class="heading text-upper">
-          <span><%- @__('WHY_NTQ') %></span>
+          <h2><%- @__('WHY_NTQ') %></h2>
         </div>
         <div class="reason first-reason">
           <div class="reason-heading">
-            <span class="text-upper"><%- @__('TECHNICAL_CAPABILITIES') %></span>
+            <h3 class="text-upper"><%- @__('TECHNICAL_CAPABILITIES') %></h3>
           </div>
           <div class="reason-explain">
             <p class="text-gray-dark"><%- @__('TECHNICAL_CAPABILITIES_DESC') %></p>
@@ -396,7 +396,7 @@
         <div class="reason-break"></div>
         <div class="reason second-reason">
           <div class="reason-heading">
-            <span class="text-upper"><%- @__('STRONG_RELATIONSHIPS') %></span>
+            <h3 class="text-upper"><%- @__('STRONG_RELATIONSHIPS') %></h3>
           </div>
           <div class="reason-explain">
             <p class="text-gray-dark"><%- @__('STRONG_RELATIONSHIPS_DESC') %></p>
@@ -405,7 +405,7 @@
         <div class="reason-break"></div>
         <div class="reason third-reason">
           <div class="reason-heading">
-            <span class="text-upper"><%- @__('GLOBAL_PORTFOLIO') %></span>
+            <h3 class="text-upper"><%- @__('GLOBAL_PORTFOLIO') %></h3>
           </div>
           <div class="reason-explain">
             <p class="text-gray-dark"><%- @__('GLOBAL_PORTFOLIO_DESC') %></p>
@@ -414,17 +414,21 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <div class="page-section section-partners" data-title="<%- @__('OUR_PARTERNS') %>">
-  <div class="site-container fluid">
-    <div class="heading text-center text-white text-upper">
-      <span><%- @__('OUR_PARTERNS') %></span>
+  <div class="container">
+    <div class="content">
+      <div class="heading text-center text-white text-upper">
+        <h2><%- @__('OUR_PARTERNS') %></h2>
+      </div>
+      <div class="sub-heading text-center text-white text-upper">
+        <h3><%- @__('OUR_PARTNERS_SLOGAN') %></h3>
+      </div>
+      <div class="partner-map">
+        <img src="<%= @__asset('img/partner_map_en.png') %>">
+      </div>
     </div>
-    <div class="sub-heading text-center text-white text-upper">
-      <span><%- @__('OUR_PARTNERS_SLOGAN') %></span>
-    </div>
-    <div class="partner-map"></div>
   </div>
 </div>
 
