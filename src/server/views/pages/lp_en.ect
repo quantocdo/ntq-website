@@ -486,23 +486,24 @@
   </div>
 </section>
 
-<div class="page-section section-articles" data-title="<%- @__('NEWS') %>">
-  <div class="articles clearfix full-height">
+<section class="page-section section-articles" data-title="<%- @__('NEWS') %>">
+  <div class="articles">
     <% for post in @posts: %>
-      <div class="article pull-left"
+      <div class="article"
         style="background-image: url('<%= post.feature_image %>?w=634');">
-        <div class="article-overlay background"></div>
-        <div class="article-overlay info text-white">
-          <div class="article-heading"><%= post.title %></div>
-          <div class="article-brief"><%= post.truncated %></div>
-          <div class="article-readmore">
-            <a href="/p/<%= post.slug %>" class="text-upper"><%- @__('READ_MORE') %></a>
+        <div class="article-overlay">
+          <div class="content container text-white">
+            <h2 class="article-heading"><%= post.title %></h2>
+            <p class="article-truncated"><%= post.truncated %></p>
+            <div class="article-readmore">
+              <a href="/p/<%= post.slug %>" class="text-upper"><%- @__('READ_MORE') %></a>
+            </div>
           </div>
         </div>
       </div>
     <% end %>
   </div>
-</div>
+</section>
 
 <% end %>
 

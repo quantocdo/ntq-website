@@ -23,7 +23,7 @@
     top: 100px
     left: 0
     right: 0
-    bottom: 20px
+    bottom: 0
     text-align: center
     display: flex
     align-items: center
@@ -436,58 +436,56 @@
 .section-articles
   background-color: $color_black
 
+  .articles
+    display: grid
+
   .article
     position relative
-    width 33.33%
-    height 50%
+    height: 300px
     overflow hidden
     background-size cover
     background-position center center
     background-repeat no-repeat
 
     .article-overlay
+      background rgba(0, 0, 0, .6)
       position absolute
       left 0
       right 0
       bottom 0
       top 0
-      opacity 0
-      transition opacity .2s
 
-      &.background
-        background $color_black
-        z-index 0
-
-      &.info
-        padding 100px 20px 0
-        font-size 20px
-        z-index 1
+      .content
+        padding: 20px
+        text-align: center
+        height: 100%
+        display: grid
+        grid-row-gap: 20px
+        grid-template-rows: min-content 1fr min-content
 
         .article-heading
-          font-size 20px
+          font-size: 20px
 
-        .article-brief
-          font-size 16px
-          margin-top 25px
-          line-height 24px
+        .article-truncated
+          font-size: 16px
+          line-height: 1.2em
 
         .article-readmore
-          font-size 16px
-          margin-top 25px
+          font-size: 16px
 
           a
-            display inline-block
-            border 1px solid $color_white
-            padding 0 16px
-            line-height 38px
+            display: inline-block
+            border: 1px solid $color_white
+            padding: 0 16px
+            line-height: 38px
 
-    &:hover
-      .article-overlay
-        &.background
-          opacity .4
+  @media (min-width: 768px)
+    .articles
+      grid-template-columns: repeat(2, 1fr)
 
-        &.info
-          opacity 1
+  @media (min-width: 1440px)
+    .articles
+      grid-template-columns: repeat(3, 1fr)
 
 .section-offer
   background $color_blue
