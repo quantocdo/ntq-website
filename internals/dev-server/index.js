@@ -2,7 +2,6 @@ import express from 'express'
 import path from 'path'
 import webpack from 'webpack'
 import webpackDevMiddleware from 'webpack-dev-middleware'
-import webpackHotMiddleware from 'webpack-hot-middleware'
 
 import webpackConfig from '../webpack.config.babel'
 
@@ -20,9 +19,6 @@ app.use(
     },
     logLevel: 'warn'
   })
-)
-app.use(
-  webpackHotMiddleware(compiler)
 )
 
 app.get('/alive', (req, res, next) => res.sendStatus(200))

@@ -1,36 +1,41 @@
 .site-footer
-	// height $layout_footer_h
+  background: $color_black
+  color: $color_white
+  padding-top: 50px
+  padding-bottom: 30px
 
-	background $color_black
-	color $color_white
+  .footer-break
+    border-bottom: 1px solid $color_gray_light
+    margin: 20px 0
 
-	.first-part
-		padding-top 56px
-		padding-bottom 65px
+  .contact
+    display: grid
+    grid-column-gap: 20px
+    grid-row-gap: 10px
+    padding-bottom: 30px
 
-		.footer-links
-			.footer-link
-				margin-top 17px
+  .content
+    display: grid
+    grid-column-gap: 20px
+    grid-row-gap: 20px
+    text-align: center
 
-		.contact-address
-			margin-top 23px
-			line-height 21px
-			height 130px
+    .socials
+      font-size: 28px
+      white-space: nowrap
 
-		.contact-person
-			line-height 21px
+      a:not(:last-child)
+        margin-right: 10px
 
-	.footer-break
-		border-bottom 1px solid $color_gray_dark
+  @media (min-width: 768px)
+    .contact
+      grid-template-columns: 1fr 1fr
 
-	.second-part
-		padding-top 40px
-		padding-bottom 50px
+    .content
+      grid-template-columns: min-content 1fr min-content
 
-		.copyright
-			margin-left 23px
-			line-height 57px
-
-		.socials
-			font-size 28px
-			line-height 57px
+      .socials
+      .copyright
+        display: flex
+        align-items: center
+        text-align: left
