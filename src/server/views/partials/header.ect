@@ -9,42 +9,46 @@
       <nav class="top-nav <%= @_locale %>">
         <ul class="top-menu">
           <li class="nav-item dropdown-menu">
-            <a href="#"><%- @__('BUSINESS') %>&nbsp;<i class="fa fa-angle-down fw"></i></a>
-            <div class="dropdown">
-              <!-- <div class="arrow-up"></div> -->
-              <ul>
-                <li class="dropdown-item first">
-                  <a href="/services"><%- @__('SERVICES') %></a>
-                </li>
-                <li class="dropdown-item">
-                  <a href="/domains"><%- @__('DEVELOPMENT_DOMAINS') %></a>
-                </li>
-                <li class="dropdown-item">
-                  <a href="/contract-models"><%- @__('CONTRACT_MODELS') %></a>
-                </li>
-              </ul>
-            </div>
+            <label class="nav-link" for="dropdown">
+              <span><%- @__('BUSINESS') %>&nbsp;<i class="fa fa-angle-down fw"></i></span>
+              <input type="checkbox" class="checkbox" id="dropdown">
+              <div class="dropdown">
+                <!-- <div class="arrow-up"></div> -->
+                <ul>
+                  <li class="dropdown-item first">
+                    <a class="nav-link" href="/services"><%- @__('SERVICES') %></a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="nav-link" href="/domains"><%- @__('DEVELOPMENT_DOMAINS') %></a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="nav-link" href="/contract-models"><%- @__('CONTRACT_MODELS') %></a>
+                  </li>
+                </ul>
+              </div>
+            </label>
+
           </li>
           <li class="nav-item">
-            <a href="/success-stories"><%- @__('SUCCESS_STORIES') %></a>
+            <a class="nav-link" href="/success-stories"><%- @__('SUCCESS_STORIES') %></a>
           </li>
           <li class="nav-item">
-            <a href="/research-development"><%- @__('R&D') %></a>
+            <a class="nav-link" href="/research-development"><%- @__('R&D') %></a>
           </li>
           <li class="nav-item">
-            <a href="/news"><%- @__('NEWS') %></a>
+            <a class="nav-link" href="/news"><%- @__('NEWS') %></a>
           </li>
           <li class="nav-item">
-            <a href="/recruitment"><%- @__('RECRUITMENT') %></a>
+            <a class="nav-link" href="/recruitment"><%- @__('RECRUITMENT') %></a>
           </li>
           <li class="nav-item">
-            <a href="/download"><%- @__('DOWNLOADS') %></a>
+            <a class="nav-link" href="/download"><%- @__('DOWNLOADS') %></a>
           </li>
           <li class="nav-item">
-            <a href="/about"><%- @__('ABOUT_US') %></a>
+            <a class="nav-link" href="/about"><%- @__('ABOUT_US') %></a>
           </li>
           <li class="nav-item contact">
-            <a href="/contact"><%- @__('CONTACT') %></a>
+            <a class="nav-link" href="/contact"><%- @__('CONTACT') %></a>
           </li>
         </ul>
       </nav>
@@ -53,41 +57,41 @@
         </a>
         <a href="<%= @_config.baseUrl.ja %>" class="language-switch ja" title="<%= @__('TO_JA_VERSION') %>">
         </a>
-        <label href="#" class="menu" for="menu">
+        <label class="nav-link menu" for="menu">
           <i class="fas fa-bars"></i>
           <input type="checkbox" class="checkbox" id="menu">
           <label class="menu-overlay" for="menu">
-            <div class="menu-content" onclick="arguments[0].preventDefault();">
+            <div class="menu-content" id="fullscreen-menu">
               <ul class="nav-menu">
                 <li class="nav-item">
-                  <a href="/services"><%- @__('SERVICES') %></a>
+                  <a class="nav-link" href="/services"><%- @__('SERVICES') %></a>
                 </li>
                 <li class="nav-item">
-                  <a href="/domains"><%- @__('DEVELOPMENT_DOMAINS') %></a>
+                  <a class="nav-link" href="/domains"><%- @__('DEVELOPMENT_DOMAINS') %></a>
                 </li>
                 <li class="nav-item">
-                  <a href="/contract-models"><%- @__('CONTRACT_MODELS') %></a>
+                  <a class="nav-link" href="/contract-models"><%- @__('CONTRACT_MODELS') %></a>
                 </li>
                 <li class="nav-item">
-                  <a href="/success-stories"><%- @__('SUCCESS_STORIES') %></a>
+                  <a class="nav-link" href="/success-stories"><%- @__('SUCCESS_STORIES') %></a>
                 </li>
                 <li class="nav-item">
-                  <a href="/research-development"><%- @__('R&D') %></a>
+                  <a class="nav-link" href="/research-development"><%- @__('R&D') %></a>
                 </li>
                 <li class="nav-item">
-                  <a href="/news"><%- @__('NEWS') %></a>
+                  <a class="nav-link" href="/news"><%- @__('NEWS') %></a>
                 </li>
                 <li class="nav-item">
-                  <a href="/recruitment"><%- @__('RECRUITMENT') %></a>
+                  <a class="nav-link" href="/recruitment"><%- @__('RECRUITMENT') %></a>
                 </li>
                 <li class="nav-item">
-                  <a href="/download"><%- @__('DOWNLOADS') %></a>
+                  <a class="nav-link" href="/download"><%- @__('DOWNLOADS') %></a>
                 </li>
                 <li class="nav-item">
-                  <a href="/about"><%- @__('ABOUT_US') %></a>
+                  <a class="nav-link" href="/about"><%- @__('ABOUT_US') %></a>
                 </li>
                 <li class="nav-item contact">
-                  <a href="/contact"><%- @__('CONTACT') %></a>
+                  <a class="nav-link" href="/contact"><%- @__('CONTACT') %></a>
                 </li>
               </ul>
             </div>

@@ -8,6 +8,12 @@
   color: $color_white
   border-bottom: 1px solid transparent
 
+  .nav-link
+    cursor: pointer
+
+    &:hover
+      color: $color_blue
+
   &.float
     background: $color_white
     color: $color_black
@@ -42,18 +48,31 @@
         line-height: 32px
         border: 1px solid transparent
 
-        a
+        .nav-link
           padding: 0 20px
           display: block
 
-        &:hover
-          color: $color_blue
-
-        .dropdown
-          position: absolute
+        .checkbox
           display: none
 
-        &:hover .dropdown
+        .dropdown
+          position: fixed
+          top: 70px
+          display: none
+          border-radius: 8px
+          border: 1px solid $color_gray_light
+          background-color: $color_white
+          color: $color_black
+          padding: 0 20px
+          text-align: left
+
+          .dropdown-item
+            padding: 10px 0
+
+            &:not(:last-child)
+              border-bottom: 1px solid $color_gray_light
+
+        .checkbox:checked + .dropdown
           display: block
 
         &.contact
@@ -120,7 +139,6 @@
             top: 90px
             left: 10px
             right: 10px
-            bottom: 10px
             background-color: $color_white
             background-image: url('~img/bg/menu-corner.png')
             background-position: left bottom
@@ -128,16 +146,16 @@
             background-repeat: no-repeat
             border-radius: 8px
             border 1px solid $color_gray_light
+            padding: 20px
+            overflow-x: hidden
+            overflow-y: auto
             display: flex
             justify-content: center
-            align-items: center
-            overflow: hidden
 
             .nav-menu
               display: grid
               grid-row-gap: 10px
               font-size: 20px
-              padding: 20px 0
 
               .nav-item
                 padding: 0 20px

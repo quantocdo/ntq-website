@@ -1,32 +1,47 @@
 <!doctype html>
 <html lang="<%= @_locale %>">
-	<head>
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-			<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-			<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-		<title><%= @__('WEBSITE_TITLE') %></title>
+  <head>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <title><%= @__('WEBSITE_TITLE') %></title>
 
-		<% include 'partials/meta' %>
-		<% include 'partials/favicon' %>
+    <% include 'partials/meta' %>
+    <% include 'partials/favicon' %>
 
-		<!-- stylesheet imports -->
-		<link rel='stylesheet' href='//fonts.googleapis.com/css?family=Raleway'>
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-		<% content 'head_end' %>
+    <!-- stylesheet imports -->
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Raleway'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <% content 'head_end' %>
 
-		<% if @_locale == 'ja': %>
-		<style>
-			body {
-				font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-			}
-		</style>
-		<% end %>
+    <% if @_locale == 'ja': %>
+    <style>
+      body {
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+      }
+    </style>
+    <% end %>
 
-		<% include 'partials/ga' %>
-	</head>
-	<% content %>
-	<script src="<%= @__asset('layout.js') %>"></script>
+    <% include 'partials/ga' %>
+  </head>
+  <% content %>
+  <script src="<%= @__asset('layout.js') %>"></script>
+  <script>
+    ;(function() {
+      var menu = document.getElementById('fullscreen-menu')
+
+      if (!menu) return;
+
+      var prevent = function(event) {
+        if (event.target === menu) {
+          event.preventDefault()
+        }
+      }
+
+      menu.addEventListener('click', prevent)
+    })();
+  </script>
 </html>
