@@ -20,20 +20,20 @@
     border-bottom: 1px solid $color_gray
 
   .content
-    display: flex
     align-items: center
+    display: grid
+    grid-template-columns: min-content 1fr repeat(3, min-content)
+    grid-column-gap: 10px
+
+    @media (min-width: 1200px)
+      grid-template-columns: min-content 1fr repeat(2, min-content)
 
     .company-logo
-      flex-grow: 0
-      flex-shrink: 0
       padding: 20px 0
 
     .top-nav
-      flex-grow: 1
       text-align: right
-      padding-left: 10px
       white-space: nowrap
-      flex-shrink: 1
       overflow: hidden
 
       .top-menu
@@ -85,87 +85,79 @@
             background: $color_blue_light
             color: $color_white
 
-    .top-actions
-      flex-grow: 0
-      flex-shrink: 0
-      white-space: nowrap
-      font-size: 0
+    .language-switch
+    .menu
+      text-align: center
+      display: inline-block
+      display: inline-flex
+      size: 34px
+      line-height: 34px
+      align-items: center
+      justify-content: center
 
-      .language-switch
-      .menu
-        text-align: center
-        display: inline-block
-        display: inline-flex
-        size: 34px
-        line-height: 34px
-        margin-left: 10px
-        align-items: center
-        justify-content: center
+    .language-switch
+      background: $color_white
+      border-radius 4px
+      border 1px solid $color_gray_light
+      overflow: hidden
+      background-position: center center
+      background-repeat: no-repeat
 
-      .language-switch
-        background: $color_white
-        border-radius 4px
-        border 1px solid $color_gray_light
-        overflow: hidden
-        background-position: center center
-        background-repeat: no-repeat
+      &.ja
+        background-image url('~img/flags/ja.png')
 
-        &.ja
-          background-image url('~img/flags/ja.png')
+      &.en
+        background-image: url('~img/flags/en.png')
 
-        &.en
-          background-image: url('~img/flags/en.png')
+    .menu
+      font-size: 24px
+      text-align: center
+      cursor: pointer
 
-      .menu
-        font-size: 24px
-        text-align: center
-        vertical-align: top
-        cursor: pointer
+      .checkbox
+        display: none
 
-        .checkbox
-          display: none
+      .menu-overlay
+        position: fixed
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background: rgba(0, 0, 0, .6)
+        display: none
 
-        .menu-overlay
+        .menu-content
           position: fixed
-          top: 0
-          right: 0
-          bottom: 0
-          left: 0
-          background: rgba(0, 0, 0, .6)
-          display: none
+          top: 90px
+          left: 10px
+          right: 10px
+          background-color: $color_white
+          background-image: url('~img/bg/menu-corner.png')
+          background-position: left bottom
+          background-size: contain
+          background-repeat: no-repeat
+          border-radius: 8px
+          border 1px solid $color_gray_light
+          padding: 20px
+          overflow-x: hidden
+          overflow-y: auto
+          display: flex
+          justify-content: center
 
-          .menu-content
-            position: fixed
-            top: 90px
-            left: 10px
-            right: 10px
-            background-color: $color_white
-            background-image: url('~img/bg/menu-corner.png')
-            background-position: left bottom
-            background-size: contain
-            background-repeat: no-repeat
-            border-radius: 8px
-            border 1px solid $color_gray_light
-            padding: 20px
-            overflow-x: hidden
-            overflow-y: auto
-            display: flex
-            justify-content: center
+          .nav-menu
+            display: grid
+            grid-row-gap: 10px
+            font-size: 20px
 
-            .nav-menu
-              display: grid
-              grid-row-gap: 10px
-              font-size: 20px
+            .nav-item
+              padding: 0 20px
+              background-color: rgba(255, 255, 255, .8)
+              color: $color_black
+              border-radius: 4px
 
-              .nav-item
-                padding: 0 20px
-                background-color: rgba(255, 255, 255, .8)
-                color: $color_black
-                border-radius: 4px
+      .checkbox:checked + .menu-overlay
+        display: block
 
-        .checkbox:checked + .menu-overlay
-          display: block
-
-      @media (min-width: 1200px)
-        .menu
-          display: none
+    @media (min-width: 1200px)
+      .menu
+        display: none

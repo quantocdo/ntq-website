@@ -52,52 +52,50 @@
           </li>
         </ul>
       </nav>
-      <div class="top-actions">
-        <a href="<%= @_config.baseUrl.en %>" class="language-switch en" title="<%= @__('TO_EN_VERSION') %>">
-        </a>
-        <a href="<%= @_config.baseUrl.ja %>" class="language-switch ja" title="<%= @__('TO_JA_VERSION') %>">
-        </a>
-        <label class="nav-link menu" for="menu">
-          <i class="fas fa-bars"></i>
-          <input type="checkbox" class="checkbox" id="menu">
-          <label class="menu-overlay" for="menu">
-            <div class="menu-content" id="fullscreen-menu">
-              <ul class="nav-menu">
-                <li class="nav-item">
-                  <a class="nav-link" href="/services"><%- @__('SERVICES') %></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/domains"><%- @__('DEVELOPMENT_DOMAINS') %></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/contract-models"><%- @__('CONTRACT_MODELS') %></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/success-stories"><%- @__('SUCCESS_STORIES') %></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/research-development"><%- @__('R&D') %></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/news"><%- @__('NEWS') %></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/recruitment"><%- @__('RECRUITMENT') %></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/download"><%- @__('DOWNLOADS') %></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/about"><%- @__('ABOUT_US') %></a>
-                </li>
-                <li class="nav-item contact">
-                  <a class="nav-link" href="/contact"><%- @__('CONTACT') %></a>
-                </li>
-              </ul>
-            </div>
-          </label>
+      <a href="<%= @_config.baseUrl.en %>" class="language-switch en" title="<%= @__('TO_EN_VERSION') %>">
+      </a>
+      <a href="<%= @_config.baseUrl.ja %>" class="language-switch ja" title="<%= @__('TO_JA_VERSION') %>">
+      </a>
+      <label class="nav-link menu" for="menu">
+        <i class="fas fa-bars"></i>
+        <input type="checkbox" class="checkbox" id="menu">
+        <label class="menu-overlay" for="menu">
+          <div class="menu-content" id="fullscreen-menu">
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="/services"><%- @__('SERVICES') %></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/domains"><%- @__('DEVELOPMENT_DOMAINS') %></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contract-models"><%- @__('CONTRACT_MODELS') %></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/success-stories"><%- @__('SUCCESS_STORIES') %></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/research-development"><%- @__('R&D') %></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/news"><%- @__('NEWS') %></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/recruitment"><%- @__('RECRUITMENT') %></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/download"><%- @__('DOWNLOADS') %></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about"><%- @__('ABOUT_US') %></a>
+              </li>
+              <li class="nav-item contact">
+                <a class="nav-link" href="/contact"><%- @__('CONTACT') %></a>
+              </li>
+            </ul>
+          </div>
         </label>
-      </div>
+      </label>
     </div>
   </div>
 </div>
