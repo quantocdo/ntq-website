@@ -8,11 +8,13 @@
 
 <% block 'page_flow': %>
 
-<div class="page-title text-center text-upper text-blue">
-	<span><%- @__('CONTACT') %></span>
+<div class="container">
+	<div class="page-title text-center text-upper text-blue">
+		<h1><%- @__('CONTACT') %></h1>
+	</div>
 </div>
 <div class="section-form">
-	<div class="site-container fluid">
+	<div class="container">
 		<div class="explain text-center">
 			<p><%- @__('CONTACT_DESC') %></p>
 		</div>
@@ -42,36 +44,4 @@
 	</div>
 </div>
 
-<div class="section-address">
-	<div class="site-container fluid">
-		<div class="gs">
-			<div class="row">
-				<div class="col-6">
-					<div class="heading">
-						<span><%- @__('CONTACT_IN_HANOI') %></span>
-					</div>
-					<div class="address">
-						<p><%- @__('CONTACT_IN_HANOI_ADDRESS') %></p>
-						<span class="text-blue text-bold"><%- @__('HANOI_REPRESENTATIVE') %></span>
-						<div><%- @__('HANOI_REPRESENTATIVE_POSITION') %></div>
-						<div><%- @__('HANOI_REPRESENTATIVE_TEL') %></div>
-						<div><%- @__('HANOI_REPRESENTATIVE_EMAIL') %></div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="heading">
-						<span><%- @__('CONTACT_IN_JAPAN') %></span>
-					</div>
-					<div class="address">
-						<p><%- @__('CONTACT_IN_JAPAN_ADDRESS') %></p>
-						<span class="text-blue text-bold"><%- @__('JAPAN_REPRESENTATIVE') %></span>
-						<div><%- @__('JAPAN_REPRESENTATIVE_POSITION') %></div>
-						<div><%- @__('JAPAN_REPRESENTATIVE_TEL') %></div>
-						<div><%- @__('JAPAN_REPRESENTATIVE_EMAIL') %></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
 <% end %>
