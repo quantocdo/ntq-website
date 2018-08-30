@@ -1,5 +1,24 @@
 @import '../main'
 
+.kg-card-markdown
+  .site-container.fluid
+    max-width: none
+    padding: 0 20px
+
+    .row.folders
+      display: grid
+      grid-template-columns: 100%
+
+      .folder
+        .heading
+          padding: 0 20px
+
+
+    @media (min-width: 768px)
+      .row.folders
+        display: grid
+        grid-template-columns: repeat(3, 33.33%)
+
 .page-header
   background-image url('~img/bg/download.jpg')
 
@@ -13,18 +32,18 @@
       line-height $text_paragraph_line_height
 
   .section-links
-    margin-top 100px
+    padding-top: 50px
 
     .folders
       background $color_white
 
       .folder
-        padding-top 65px
-        min-height 600px
+        padding-top: 50px
+        padding-bottom: 30px
+        height: 100%
 
         &.even
           background $color_blue
-
           color $color_white
 
           .file
@@ -39,14 +58,14 @@
               color $color_blue
 
         .heading
-          font-size 30px
-          height 115px
+          font-size: 20px
+          min-height: 50px
 
         .files
           padding 0 20px
 
           .file
-            margin-top 30px
+            padding-top 20px
             white-space: nowrap
             overflow: hidden
             text-overflow: ellipsis
