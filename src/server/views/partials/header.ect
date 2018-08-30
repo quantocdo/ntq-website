@@ -1,62 +1,99 @@
 <div class="site-header">
-	<div class="container">
-		<div class="content">
-			<div class="company-logo">
-				<a href="/">
-					<img src="<%= @__asset('img/logo/logo_s.png') %>" alt="NTQ Solution" width="129" height="57">
-				</a>
-			</div>
-			<nav class="top-nav <%= @_locale %>">
-				<ul class="top-menu">
-					<li class="nav-item dropdown-menu">
-						<a href="#"><%- @__('BUSINESS') %>&nbsp;<i class="fa fa-angle-down fw"></i></a>
-						<div class="dropdown">
-							<!-- <div class="arrow-up"></div> -->
-							<ul>
-								<li class="dropdown-item first">
-									<a href="/services"><%- @__('SERVICES') %></a>
-								</li>
-								<li class="dropdown-item">
-									<a href="/domains"><%- @__('DEVELOPMENT_DOMAINS') %></a>
-								</li>
-								<li class="dropdown-item">
-									<a href="/contract-models"><%- @__('CONTRACT_MODELS') %></a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a href="/success-stories"><%- @__('SUCCESS_STORIES') %></a>
-					</li>
-					<li class="nav-item">
-						<a href="/research-development"><%- @__('R&D') %></a>
-					</li>
-					<li class="nav-item">
-						<a href="/news"><%- @__('NEWS') %></a>
-					</li>
-					<li class="nav-item">
-						<a href="/recruitment"><%- @__('RECRUITMENT') %></a>
-					</li>
-					<li class="nav-item">
-						<a href="/download"><%- @__('DOWNLOADS') %></a>
-					</li>
-					<li class="nav-item">
-						<a href="/about"><%- @__('ABOUT_US') %></a>
-					</li>
-					<li class="nav-item contact">
-						<a href="/contact"><%- @__('CONTACT') %></a>
-					</li>
-				</ul>
-			</nav>
-			<div class="top-actions">
-				<a href="<%= @_config.baseUrl.en %>" class="language-switch en" title="<%= @__('TO_EN_VERSION') %>">
-				</a>
-				<a href="<%= @_config.baseUrl.ja %>" class="language-switch ja" title="<%= @__('TO_JA_VERSION') %>">
-				</a>
-				<a href="#" class="menu pull-right">
-					<i class="fas fa-bars"></i>
-				</a>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="content">
+      <div class="company-logo">
+        <a href="/">
+          <img src="<%= @__asset('img/logo/logo_s.png') %>" alt="NTQ Solution" width="129" height="57">
+        </a>
+      </div>
+      <nav class="top-nav <%= @_locale %>">
+        <ul class="top-menu">
+          <li class="nav-item dropdown-menu">
+            <a href="#"><%- @__('BUSINESS') %>&nbsp;<i class="fa fa-angle-down fw"></i></a>
+            <div class="dropdown">
+              <!-- <div class="arrow-up"></div> -->
+              <ul>
+                <li class="dropdown-item first">
+                  <a href="/services"><%- @__('SERVICES') %></a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="/domains"><%- @__('DEVELOPMENT_DOMAINS') %></a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="/contract-models"><%- @__('CONTRACT_MODELS') %></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="/success-stories"><%- @__('SUCCESS_STORIES') %></a>
+          </li>
+          <li class="nav-item">
+            <a href="/research-development"><%- @__('R&D') %></a>
+          </li>
+          <li class="nav-item">
+            <a href="/news"><%- @__('NEWS') %></a>
+          </li>
+          <li class="nav-item">
+            <a href="/recruitment"><%- @__('RECRUITMENT') %></a>
+          </li>
+          <li class="nav-item">
+            <a href="/download"><%- @__('DOWNLOADS') %></a>
+          </li>
+          <li class="nav-item">
+            <a href="/about"><%- @__('ABOUT_US') %></a>
+          </li>
+          <li class="nav-item contact">
+            <a href="/contact"><%- @__('CONTACT') %></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="top-actions">
+        <a href="<%= @_config.baseUrl.en %>" class="language-switch en" title="<%= @__('TO_EN_VERSION') %>">
+        </a>
+        <a href="<%= @_config.baseUrl.ja %>" class="language-switch ja" title="<%= @__('TO_JA_VERSION') %>">
+        </a>
+        <label href="#" class="menu" for="menu">
+          <i class="fas fa-bars"></i>
+          <input type="checkbox" class="checkbox" id="menu">
+          <label class="menu-overlay" for="menu">
+            <div class="menu-content" onclick="arguments[0].preventDefault();">
+              <ul class="nav-menu">
+                <li class="nav-item">
+                  <a href="/services"><%- @__('SERVICES') %></a>
+                </li>
+                <li class="nav-item">
+                  <a href="/domains"><%- @__('DEVELOPMENT_DOMAINS') %></a>
+                </li>
+                <li class="nav-item">
+                  <a href="/contract-models"><%- @__('CONTRACT_MODELS') %></a>
+                </li>
+                <li class="nav-item">
+                  <a href="/success-stories"><%- @__('SUCCESS_STORIES') %></a>
+                </li>
+                <li class="nav-item">
+                  <a href="/research-development"><%- @__('R&D') %></a>
+                </li>
+                <li class="nav-item">
+                  <a href="/news"><%- @__('NEWS') %></a>
+                </li>
+                <li class="nav-item">
+                  <a href="/recruitment"><%- @__('RECRUITMENT') %></a>
+                </li>
+                <li class="nav-item">
+                  <a href="/download"><%- @__('DOWNLOADS') %></a>
+                </li>
+                <li class="nav-item">
+                  <a href="/about"><%- @__('ABOUT_US') %></a>
+                </li>
+                <li class="nav-item contact">
+                  <a href="/contact"><%- @__('CONTACT') %></a>
+                </li>
+              </ul>
+            </div>
+          </label>
+        </label>
+      </div>
+    </div>
+  </div>
 </div>

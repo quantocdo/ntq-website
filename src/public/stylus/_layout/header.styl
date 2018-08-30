@@ -30,8 +30,6 @@
       flex-shrink: 1
       overflow: hidden
 
-
-
       .top-menu
         display: none
 
@@ -60,7 +58,7 @@
 
         &.contact
           border: 1px solid $color_gray_light
-          border-radius: 3px
+          border-radius: 4px
           background: $color_blue
           color: $color_white
 
@@ -87,7 +85,7 @@
 
       .language-switch
         background: $color_white
-        border-radius 3px
+        border-radius 4px
         border 1px solid $color_gray_light
         overflow: hidden
         background-position: center center
@@ -97,11 +95,59 @@
           background-image url('~img/flags/ja.png')
 
         &.en
-          background-image url('~img/flags/en.png')
+          background-image: url('~img/flags/en.png')
 
       .menu
         font-size: 24px
         text-align: center
+        vertical-align: top
+        cursor: pointer
 
-        @media (min-width: 1200px)
+        .checkbox
+          display: none
+
+        .menu-overlay
+          position: fixed
+          top: 0
+          right: 0
+          bottom: 0
+          left: 0
+          background: rgba(0, 0, 0, .6)
+          display: none
+
+          .menu-content
+            position: fixed
+            top: 90px
+            left: 10px
+            right: 10px
+            bottom: 10px
+            background-color: $color_white
+            background-image: url('~img/bg/menu-corner.png')
+            background-position: left bottom
+            background-size: contain
+            background-repeat: no-repeat
+            border-radius: 8px
+            border 1px solid $color_gray_light
+            display: flex
+            justify-content: center
+            align-items: center
+            overflow: hidden
+
+            .nav-menu
+              display: grid
+              grid-row-gap: 10px
+              font-size: 20px
+              padding: 20px 0
+
+              .nav-item
+                padding: 0 20px
+                background-color: rgba(255, 255, 255, .8)
+                color: $color_black
+                border-radius: 4px
+
+        .checkbox:checked + .menu-overlay
+          display: block
+
+      @media (min-width: 1200px)
+        .menu
           display: none
