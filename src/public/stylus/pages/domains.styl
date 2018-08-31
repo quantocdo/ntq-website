@@ -1,57 +1,106 @@
 @import '../main'
 
 .page-header
-	background-image url('~img/bg/development_domains.jpg')
+  background-image url('~img/bg/development_domains.jpg')
 
 .page-content
-	background $color_white
-	padding-bottom 70px
+  background $color_white
 
-	.domain
-		margin-top 100px
+  .domain
+    padding-top: 50px
+    padding-bottom: 30px
 
-		.heading
-			font-size 30px
+    .heading
+      font-size: 30px
 
-		.sub-heading
-			margin-top 10px
-			font-size 18px
+    .sub-heading
+      padding-top: 10px
+      padding-bottom: 10px
+      font-size: 18px
 
-		.explain
-			margin-top 20px
-			line-height $text_paragraph_line_height
-			padding-bottom 10px
+    .explain
+      padding-top: 20px
+      line-height: $text_paragraph_line_height
 
-			.download-promotions
-				margin-top 35px
-				padding-bottom 50px
+      .download-promotions
+        padding-top: 50px
+        padding-bottom: 30px
+        display: grid
+        grid-gap: 20px
+        grid-template-columns: minmax(auto, 320px)
+        justify-content: center
 
-				.promotion
-					display inline-block
-					background $color_blue
-					border-radius 5px
-					line-height 68px
-					width 320px
+        @media (min-width: 768px)
+          grid-template-columns: repeat(2, minmax(auto, 320px))
 
-					img
-						vertical-align middle
-						margin-right 10px
+        .promotion
+          background: $color_blue
+          border-radius: 4px
 
-			.tech-icons
-				margin-top 18px
+          a
+            padding: 10px
+            display: grid
+            grid-template-columns: 50px 1fr
+            grid-gap: 10px
+            align-items: center
+            grid-auto-rows: 60px
 
-				.tech-icon
-					line-height 126px
-					border 1px solid $color_gray_light
+      .tech-icons
+        margin-top 18px
 
-					img
-						max-width 100%
-						max-height 100%
-						vertical-align middle
+        .tech-icon
+          line-height 126px
+          border 1px solid $color_gray_light
 
+          img
+            max-width 100%
+            max-height 100%
+            vertical-align middle
 
+    &.web
+      .technologies
+        padding-top: 20px
+        display: grid
+        grid-gap: 20px
+        grid-template-columns: repeat(2, 1fr)
 
-			.domain-illu
-				max-width 100%
-				max-height 100%
-				vertical-align middle
+        @media (min-width: 768px)
+          grid-template-columns: repeat(5, 1fr)
+
+        .tech
+          border 1px solid $color_gray_light
+          border-radius: 4px
+          position: relative
+          overflow: hidden
+
+          .placeholder
+            padding-top: 50%
+
+          .img
+            position: absolute
+            top: 5px
+            left: 5px
+            right: 5px
+            bottom: 5px
+            display: flex
+            justify-content: center
+            align-items: center
+
+            img
+              max-width: 100%
+              max-height: 100%
+
+    &.healthcare
+      .content
+        display: grid
+        grid-gap: 20px
+        grid-template-columns: 100%
+
+        @media (min-width: 768px)
+          grid-template-columns: 1fr 388px
+
+        .domain-illu
+          max-width 100%
+          max-height 100%
+          display: block
+          margin: 0 auto
