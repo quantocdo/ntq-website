@@ -1,127 +1,149 @@
 @import '../main'
 
 .page-header
-	background-image url('~img/bg/rd.jpg')
-	background-position center center!important
+  background-image url('~img/bg/rd.jpg')
 
 .page-content
-	background $color_white
+  background $color_white
 
-	.section-intro
-		padding-top 85px
-		padding-bottom 110px
+  .section-intro
+    padding-top: 100px
+    padding-bottom: 50px
 
-		.heading
-			font-size $text_main_heading_size
+    .content
+      display: grid
+      grid-gap: 20px
+      grid-template-columns: 100%
 
-		.picture-container
-			img
-				width auto
-				height auto
-				max-width 100%
+      @media (min-width: 1440px)
+        grid-template-columns: auto 1fr
 
-		.explain
-			line-height $text_paragraph_line_height
+      .img
+        text-align: center
 
-		.reason
-			&.first
-				margin-top 62px
+        img
+          max-width: 100%
 
-			&.second
-				margin-top 38px
+      .heading
+        font-size: 40px
 
-			&.first
-			&.second
-				line-height $text_paragraph_line_height
-				padding-bottom 36px
+      .explain
+        padding-top: 20px
 
-		.reason-break
-			width 225px
-			border-bottom 1px solid $color_gray_light
+      .reason
+        &.first
+          margin-top 62px
 
-	.section-videos
-		background $color_green
-		padding-top 100px
-		padding-bottom 100px
+        &.second
+          margin-top 38px
 
-		.site-container
-			display: flex
-			flex-wrap: wrap
-			justify-content: center
+        &.first
+        &.second
+          line-height $text_paragraph_line_height
+          padding-bottom 36px
 
-		.video-container
-			background: $color_white
-			padding-top: 25px
-			margin: 20px
-			width: 360px
-			height: 550px
+      .reason-break
+        width 225px
+        border-bottom 1px solid $color_gray_light
 
-			.video-frame
-				margin 0 30px
-				height 280px
-				overflow hidden
-				background-position center center
-				background-size cover
-				background-repeat no-repeat
+  .section-videos
+    background: $color_green
+    padding-top: 100px
+    padding-bottom: 50px
 
-				&.guidebot
-					background-image url('~img/rd/guidebot_m.jpg')
+    .content
+      display: grid
+      grid-gap: 20px
+      grid-template-columns: 100%
 
-				&.air-drone
-					background-image url('~img/rd/air_drone_m.jpg')
+      @media (min-width: 768px)
+        grid-template-columns: repeat(2, 1fr)
 
-				&.gecko
-					background-image url('~img/rd/gecko_m.jpg')
+      @media (min-width: 1440px)
+        grid-template-columns: repeat(4, 1fr)
 
-				&.smart-card
-					background-image: url('~img/rd/smart-card.jpg')
+    .video-container
+      background: $color_white
+      border-radius: 4px
+      overflow: hidden
 
-			.heading
-				margin-top 55px
-				font-size 18px
+      .video-frame
+        height: 280px
+        overflow: hidden
+        background-position: center center
+        background-size: cover
+        background-repeat: no-repeat
 
-			.explain
-				margin-top 10px
-				line-height $text_paragraph_line_height
-				padding 0 20px
+        &.guidebot
+          background-image url('~img/rd/guidebot_m.jpg')
 
-	.section-crazy
-		background $color_white
-		padding-top 170px
-		padding-bottom 170px
+        &.air-drone
+          background-image url('~img/rd/air_drone_m.jpg')
 
-		.heading
-			font-size $text_main_heading_size
+        &.gecko
+          background-image url('~img/rd/gecko_m.jpg')
 
-		.explain
-			font-size 30px
-			margin-top 65px
+        &.smart-card
+          background-image: url('~img/rd/smart-card.jpg')
 
-		.team-picture
-			vertical-align middle
-			max-width 100%
+      .description
 
-	.section-contact
-		background $color_blue
-		padding-top 100px
-		padding-bottom 90px
+        .heading
+          padding: 20px
+          font-size: 18px
+          font-weight: 700
 
-		.intro
-			font-size 30px
-			line-height 36px
+        .explain
+          padding: 0 20px 20px
+          line-height: $text_paragraph_line_height
 
-		.contact
-			margin-top 50px
+  .section-crazy
+    background: $color_white
+    padding-top: 100px
+    padding-bottom: 50px
 
-			a
-				display inline-block
-				border-radius 3px
-				background $color_white
-				font-family 'Raleway'
-				font-weight bold
-				padding 0 22px
-				line-height 70px
-				font-size 30px
+    .content
+      display: grid
+      grid-gap: 20px
+      grid-template-columns: 100%
 
-				.icon-see-more
-					margin-left 10px
+      @media (min-width: 1440px)
+        grid-template-columns: 1fr auto
+
+      .heading
+        font-size: 40px
+
+      .explain
+        font-size: 30px
+        padding-top: 30px
+
+      .team-picture
+        text-align: center
+
+        img
+          max-width 100%
+
+  .section-contact
+    background $color_blue
+    padding-top: 100px
+    padding-bottom: 50px
+
+    .intro
+      font-size: 30px
+      line-height: 36px
+
+    .contact
+      padding-top: 50px
+
+      a
+        display: inline-block
+        border-radius: 4px
+        background: $color_white
+        font-family: 'Raleway'
+        font-weight: bold
+        padding: 0 22px
+        line-height: 70px
+        font-size: 30px
+
+        .icon-see-more
+          margin-left: 10px
