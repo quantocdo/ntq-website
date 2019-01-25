@@ -60,6 +60,9 @@ export default {
     ],
     'success-stories': [
       './src/public/stylus/pages/success-stories.styl'
+    ],
+    'project': [
+      './src/public/stylus/pages/project.styl'
     ]
   },
   output: {
