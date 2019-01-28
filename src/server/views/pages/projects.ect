@@ -1,0 +1,390 @@
+<% extend '_flow-no-banner' %>
+
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__asset('projects.css') %>">
+
+<% end %>
+
+<% block 'page_flow': %>
+
+<section class="section project">
+  <div class="masthead project__banner bg-gradient">
+    <div class="masthead-wrapper container project__banner-title">開発事例</div>
+  </div>
+  <div class="container">
+    <div class="project__description">
+      <div class="project__description-title">お客様の声</div>
+      <div class="project__content">
+        <div class="row project__content--wrapper">
+          <div class="col-sm-2">
+            <div class="project__content--logo">
+              <img src="<%= @__asset('img/logo-act.png') %>" alt="/">
+            </div>
+          </div>
+          <div class="col-sm-10 project__content-detail">
+            NTQには日本に長く滞在したという経験を持っている社員も多く、日本式の仕事のやり方や細やかな気配りが出来る会社だと感じております。また代表のSon社長は大きな夢を持っていて、その夢に共感出来る社員がどんどん集まってきています。凄いスピードで成長する会社であっても芯は変わらない。ベトナムの中でもオススメできる会社の一つです。
+          </div>
+        </div>
+        <div class="row project__content--wrapper">
+          <div class="col-sm-2">
+            <div class="project__content--logo">
+              <img src="<%= @__asset('img/logo-ilovex.png') %>" alt="/">
+            </div>
+          </div>
+          <div class="col-sm-10 project__content-detail">
+            実装前の仕様確認や実装後のテストを特に徹底しておられ、技術力、言語能力の高さも相まって、ミスの発生率が非常に低かったです。また、こちらの困っていることは何でも相談に乗っていただき、技術的に難しい場合でも代替案を必ず提示してくれる。このような働きかけはNTQならではだと思います。
+          </div>
+        </div>
+        <div class="row project__content--wrapper">
+          <div class="col-sm-2">
+            <div class="project__content--logo">
+              <img src="<%= @__asset('img/logo-bit2byte.png') %>" alt="/">
+            </div>
+          </div>
+          <div class="col-sm-10 project__content-detail">
+            海外との取引は初めてで不安もありましたが、毎度納得するものをスピーディに提供していただく事で徐々に信頼度が増していきました。日本人独特の感覚にも合わせていただき、コミュニケーションでも不満を感じた事は一度もありません。コストも安く成果物には後々運用で苦労しないような細かな気配りが見えとても満足しています。
+          </div>
+        </div>
+        <div class="row project__content--wrapper">
+          <div class="col-sm-2">
+            <div class="project__content--logo">
+              <img src="<%= @__asset('img/logo-netreqs.png') %>" alt="/">
+            </div>
+          </div>
+          <div class="col-sm-10 project__content-detail">
+            NTQ Solutionの高い技術力は評判通りで、品質はオーストラリアの開発会社に劣らず、我々の期待を裏切りませんでした。いくつかの案件をお願いしましたが、どれも低コストかつ効果的なソリューションに大変満足しております。
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="project__achievement">
+      <div class="project__achievement-title">
+        アプリ・システム開発の実績
+      </div>
+      <div class="project__content">
+
+        <div class="project__achievement-subtitle">Co-Lab</div>
+        <div class="project__achievement-content">
+          <div class="row project__achievement--wrapper">
+            <div class="col-sm-5">
+              <div class="project__achievement-name">Glasプロジェクト</div>
+              <div class="project__achievement-list-img">
+                  <img src="<%= @__asset('img/banner-glass.png') %>" class="border-blue" alt="/">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="project__achievement-name">背景</div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  顧客は１０種類以上の出会い系SNSのサービスを運営している。
+                </li>
+                <li class="project__achievement-list-item">
+                  NSのユーザーの人数は２百万人に達している。 
+                </li>
+                <li class="project__achievement-list-item">
+                  顧客の目標は、システム開発を委託できる信頼パートナーを探し、ビジネス開 発に取り組むことである。
+                </li>
+              </ul>
+              <div class="project__achievement-name">結果</div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  協力してから5年目になった。
+                </li>
+                <li class="project__achievement-list-item">
+                  NTQは５種類のサービスの維持・開発を担当する。
+                </li>
+                <li class="project__achievement-list-item">
+                  サービスの拡大規模に合わせて現行のシステムの再構成をする。
+                </li>
+                <li class="project__achievement-list-item">
+                  現在のチーム：100名（毎月)
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row project__achievement--wrapper">
+            <div class="col-sm-5">
+              <div class="project__achievement-name">
+                クラウドステップシステムのメンテナンス
+              </div>
+              <div class="project__achievement-list-img">
+                  <img src="<%= @__asset('img/banner-1.png') %>" class="border-blue" alt="/">
+                  <img src="<%= @__asset('img/banner-2.png') %>" class="border-blue" alt="/">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="project__achievement-name">背景</div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  顧客の要望は、企業向けの内部情報管理システムを含むグループウェアシステムをメンテナンスし、開発することである。
+                </li>
+                <li class="project__achievement-list-item">
+                  主なシステムとして、ワークフロー管理システム、個人/部門カレンダー管理システム、連絡先管理システム、内部情報共有システムなどがあります。
+                </li>
+                <li class="project__achievement-list-item">
+                  長年にわたって開発されたシステムは様々な技術プラットフォームを使用している。 さらに、各システムは相互及び、Google App Businessと緊密に統合されている。
+                </li>
+              </ul>
+              <div class="project__achievement-name">結果</div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  顧客は、グループウェアのシステムのメンテナンスと開発のために5人のチームを長期的に依頼した。
+                </li>
+                <li class="project__achievement-list-item">
+                  開始に当たって、開発チームに業務と技術特徴を教訓するために、顧客の担当者は2週間来越した。
+                </li>
+                <li class="project__achievement-list-item">
+                  プロジェクト規模：5人月/月
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="project__achievement-subtitle">Ope-Labの</div>
+        <div class="project__achievement-content">
+          <div class="row project__achievement--wrapper">
+            <div class="col-sm-5">
+              <div class="project__achievement-name">DQS Labo案件</div>
+              <div class="project__achievement-list-img">
+                  <img src="<%= @__asset('img/banner-dqs2.png') %>" class="border-red" alt="/">
+                  <img src="<%= @__asset('img/banner-dqs1.png') %>" class="border-red" alt="/">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="project__achievement-name">背景</div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  お客様は、東南アジアの販売店向けに見積書作成を支援するシステムを開発 したかった。
+                </li>
+                <li class="project__achievement-list-item">
+                  弊社がその開発を受託した。展開後、お客様は本システムが旨くいけるように、モニタリング・メテンナスのチームが必要である。
+                </li>
+                <li class="project__achievement-list-item">
+                  使用中でも実際の状況に合わせてアップグレード、機能の変更等の対応が求 められる。
+                </li>
+              </ul>
+              <div class="project__achievement-name">結果</div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  システムのメテンナスのため、お客様は2人月/月でOp-Laｂの案件を発注した。
+                </li>
+                <li class="project__achievement-list-item">
+                  オフショアチームはサーバーの動作を追跡し、発生問題を処理する。
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row project__achievement--wrapper">
+            <div class="col-sm-5">
+              <div class="project__achievement-name">Community案件 </div>
+              <div class="project__achievement-list-img">
+                  <img src="<%= @__asset('img/banner-community1.png') %>" class="border-red" alt="/">
+                  <img src="<%= @__asset('img/banner-community2.png') %>" class="border-red" alt="/">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="project__achievement-name">背景</div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  お客様は、他の6社にWebベースのデートサービスを提供している。弊社にこの6つのWebサイトのメンテナンスを担当してほしい。
+                </li>
+                <li class="project__achievement-list-item">
+                  メンテナンスの業務内容
+                  <ul>
+                    <li class="project__achievement-sublist-item">
+                      システム内のサーバー、サービスの状態をモニタリングする。問題が発生する場合、高速対応を行う
+                    </li>
+                    <li class="project__achievement-sublist-item">
+                      バックアップ、ログの削除等、メンテナンス業務を実施する
+                    </li>
+                    <li class="project__achievement-sublist-item">
+                      Eメール、広告、請求などのサービスプロバイダを変更する場合、システム構成を変更する
+                    </li>
+                    <li class="project__achievement-sublist-item">
+                      カタログの変更（カテゴリ、Eメールテンプレートなどの編集・追加・削除）など、システム管理者の業務を一部担当する。
+                    </li>
+                    <li class="project__achievement-sublist-item">
+                      リケストに合わせてサイトのテキスト、画像、バナー、URLの編集・変更を行う（システムコードの修正で、仕様変更として別途料金がかかる）
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="project__achievement-name">結果</div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  メンテナンスチーム（開発者：1名+ コミュニケーター：0.5名）をアサインとした
+                </li>
+                <li class="project__achievement-list-item">
+                  本チームは3年以上活躍してきた
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="project__achievement-subtitle">S-Lab</div>
+        <div class="project__achievement-content">
+          <div class="row project__achievement--wrapper">
+            <div class="col-sm-5">
+              <div class="project__achievement-name">Trb Labo</div>
+              <div class="project__achievement-list-img">
+                  <img src="<%= @__asset('img/banner-labo1.png') %>" class="border-orange" alt="/">
+                  <img src="<%= @__asset('img/banner-labo2.png') %>" class="border-orange" alt="/">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="project__achievement-name">背景</div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  お客様は、デジタルコンテンツマーケティングを専攻するシンガポールのデジ タル代理店である。
+                </li>
+                <li class="project__achievement-list-item">
+                  ウェブサイト、ホームページ、プロモーションの電子メールなどの事業を持って いるが、ユーザーに深い印象を与えるため、デザインへの要求が高い。
+                </li>
+                <li class="project__achievement-list-item">
+                  上記の条件が満たせる開発パートナーを探す。
+                </li>
+              </ul>
+              <div class="project__achievement-name">結果</div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  最初開発チームは2名でスタートし、6ヵ月後7名に増員した。
+                </li>
+                <li class="project__achievement-list-item">
+                  オフショア開発チームは、デザイン通りにHTML / CSSを処理する他に、要求に応じてアニメーション作成も担当する
+                </li>
+                <li class="project__achievement-list-item">
+                  これからバックエンド側の処理も弊社に任せることになる。
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row project__achievement--wrapper">
+            <div class="col-sm-5">
+              <div class="project__achievement-name">
+                MM Labo
+              </div>
+              <div class="project__achievement-list-img">
+                  <img src="<%= @__asset('img/banner-mmlabo2.png') %>" class="border-orange" alt="/">
+                  <img src="<%= @__asset('img/banner-mmlabo1.png') %>" class="border-orange" alt="/">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="project__achievement-name">背景</div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  お客様は、他の6社にWebベースのデートサービスを提供している。弊社にこの6つのWebサイトのメンテナンスを担当してほしい。
+                </li>
+                <li class="project__achievement-list-item">
+                  事業拡大のニーズがあるが、日本では人材確保の費用及び他の費用が高いた め、実施が難しい。
+                </li>
+                <li class="project__achievement-list-item">
+                  拡大ニーズを満たすリソースを提供してほしい
+                </li>
+              </ul>
+              <div class="project__achievement-name">結果</div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  宣伝ウェブサイトに関する客の品質基準を理解するに3ヶ月かかった。
+                </li>
+                <li class="project__achievement-list-item">
+                  お客さんは開発チームのサイズを2名から5名に増員した。
+                </li>
+                <li class="project__achievement-list-item">
+                  場合によっては、UI・UXでもNTQのチームに任せる。
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="project__achievement-subtitle">PoC-Lab</div>
+        <div class="project__achievement-content">
+          <div class="row project__achievement--wrapper">
+            <div class="col-sm-5">
+              <div class="project__achievement-name">SSO</div>
+              <div class="project__achievement-list-img">
+                  <img src="<%= @__asset('img/banner-SSO.png') %>" class="border-violet" alt="/">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="project__achievement-name">背景</div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  お客さんは従業員が約3万人いる大手電気機器メーカーである。 各従業員は、様々な社内業務システムを使用して作業を行う。
+                </li>
+                <li class="project__achievement-list-item">
+                  無駄時間の削減できるように、各業務システムに自動的にログインできるシス テムを開発してほしい
+                </li>
+                <li class="project__achievement-list-item">
+                  技術的な実現可能性が懸念される。
+                </li>
+              </ul>
+              <div class="project__achievement-name">結果</div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  0人月ｘ2ヶ月で、弊社はブラウザの  extension/pluginを通じる自動ログインのデモ版ができた。
+                </li>
+                <li class="project__achievement-list-item">
+                  次のフェーズとしてのプロジェクトは36人月で実施された。
+                </li>
+                <li class="project__achievement-list-item">
+                  お客様の全従業員がこのシステムを使用している。
+                </li>
+                <li class="project__achievement-list-item">
+                  弊社は運営中の本システムのメンテナスを担当している。
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row project__achievement--wrapper">
+            <div class="col-sm-5">
+              <div class="project__achievement-name">
+                Syminar
+              </div>
+              <div class="project__achievement-list-img">
+                  <img src="<%= @__asset('img/banner-siminar2.png') %>" class="border-violet" alt="/">
+                  <img src="<%= @__asset('img/banner-siminar1.png') %>" class="border-violet" alt="/">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="project__achievement-name">背景</div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  顧客さんはライブストリーミングでオンライ教育システムを構築することで起 業する会社。
+                </li>
+                <li class="project__achievement-list-item">
+                  エンドユーザー及び投資者に紹介するために、基本的な機能のデモ版を作成 する必要がある。
+                </li>
+                <li class="project__achievement-list-item">
+                  ライブストリーミングは、オーペンソースのフラットフォームをベースとして構築する必要がある。但し、開発期間を短縮するために、デモ版の開発階段では有料フラットフォームを使う。
+                </li>
+              </ul>
+              <div class="project__achievement-name">結果</div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  2ヶ月以内でNTQはTokBoxという有料のライブストリーミングのプラットフォー ムでデモ用のシステムを構築した。
+                </li>
+                <li class="project__achievement-list-item">
+                  このシステムは、TokBoxプラットフォームから無料プラットフォームに簡単に 移行できるようにオープン的に設計されている。
+                </li>
+                <li class="project__achievement-list-item">
+                  顧客さんは2つの取引先に本サービスを販売した。
+                </li>
+                <li class="project__achievement-list-item">
+                  現在、Co-lab 型開発として5名で本システムの拡大に開発する。
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<% end %>

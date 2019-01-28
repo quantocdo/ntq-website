@@ -1,0 +1,108 @@
+html, body
+  width: 100%
+  height: 100%
+  margin: 0 auto
+  position: relative
+
+main
+  margin-top: 111px
+
+*
+  box-sizing: border-box
+
+a
+  text-decoration: none
+  transition: .3s
+  color: #003663
+
+ul
+  padding: 0
+  margin: 0
+
+table
+  max-width: 100% !important
+  overflow: auto
+  display: block
+  border: none
+
+.bg-gradient
+  background-image: linear-gradient(to right, #11bdbd, #b0e04e 85%)
+
+.masthead
+  width: 100%
+  height: 254px
+  color: #fff
+  text-transform: uppercase
+  font-weight: 700
+  line-height: 254px
+
+.btn
+  display: inline-block
+  background-image: linear-gradient(to right, #11bdbd, #b0e04e 85%)
+  font-size: 24px
+  padding: 13px 13px 10px
+  text-align: center
+  color: #fff
+  text-decoration: none
+  text-transform: uppercase
+  border: none
+  outline: none
+  text-shadow: 0 0 1px rgba(#128c87, 0.3)
+  font-family: robotoRegular
+
+  &--japan
+    letter-spacing: 1.5px
+    font-family: kozukaGothicBold
+
+  &--square
+    border-radius: 12px
+
+  &--circle
+    border-radius: 50px
+    font-family: kozukaGothicRegular
+
+  &:hover
+    color: #003663
+
+.list-square
+  list-style-type: square
+
+.list-number
+  list-style: none
+  counter-reset: number
+
+  li
+    margin-left: 80px
+    position: relative
+
+    &:before
+      counter-increment: number
+      content: counter(number, decimal-leading-zero)
+      font-size: 30px
+      font-family: kozukaGothicBold
+      color: #fff
+      background-image: linear-gradient(to right, #11bdbd, #b0e04e 85%)
+      border-radius: 50%
+      display: inline-block
+      padding: 4px 13px 0
+      line-height: 56px
+      margin-top: 6px
+      margin-left: -80px
+      margin-right: 20px
+      position: absolute
+      top: 43%
+      transform: translateY(-50%)
+
+  &-smaller
+    li
+      &:before
+        font-size: 24px
+        padding: 9px 10.5px
+
+.equal-height
+  display: flex
+  flex-wrap: wrap
+
+@media (max-width: 767px)
+  .btn
+    padding: 12px 12px 9px

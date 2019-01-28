@@ -1,0 +1,180 @@
+@import '../main'
+
+.project__banner-title
+	padding-left: 15px
+	font-size: 72px
+	color: #FFFFFF
+	font-family: kozukaGothicBold
+			
+.project__description
+	padding-top: 50px
+
+.project__description-title
+	font-size: 30px
+	font-family: kozukaGothicBold
+	color: #003663
+
+.project__content
+	padding: 30px 60px
+
+.project__content--wrapper
+	margin-bottom: 30px
+	display: flex
+	align-items: center
+
+.project__contetnt--logo
+	width: 100px
+	height: 100px
+	border: 3px solid #ebebeb
+	border-radius: 50%
+	display: flex
+	justify-content: center
+	align-items: center
+
+	&.img
+		max-width: 80px
+
+.project__content-detail
+	font-size: 16px
+	padding-left: 0
+	color: #003663
+	font-family: kozukaGothicRegular
+
+.project__achievement-title
+	font-size: 30px
+	font-family: kozukaGothicBold
+	color: #003663
+
+.project__achievement-subtitle
+	font-size: 24px
+	color: #003663
+	font-family: kozukaGothicRegular
+	margin-bottom: 12px
+
+.project__achievement-list
+	margin: 0
+	padding: 0
+	list-style: none
+
+.project__achievement--wrapper
+	background: #ebebeb
+	margin-bottom: 20px
+	margin-left: 0
+	margin-right: 0
+	padding: 40px 15px
+
+	&.img
+		width: 100%
+
+.project__achievement-list-img img:nth-child(2)
+	margin-top: 20px
+
+.project__achievement-name
+	font-family: kozukaGothicRegular
+	font-size: 24px
+	color: #003663
+	height: 70px
+	line-height: 30px
+
+	&:nth-child(3)
+		height: auto
+		padding: 30px 0 20px 0
+
+.project__achievement-list-item
+	font-family: kozukaGothicRegular
+	font-size: 18px
+	line-height: 26px
+	margin-bottom: 10px
+	margin-left: 20px
+
+	&:before
+		content: ""
+		width: 10px
+		height: 10px
+		display: inline-block
+		background: black
+		margin-right: 10px
+		margin-left: -20px
+
+.project__achievement-sublist-item
+	font-size: 14px
+	list-style-type: none
+	padding-left: 30px
+	margin-left: 25px
+
+	&:before
+		content: ""
+		display: inline-block
+		width: 15px
+		height: 12px
+		background-image: url('../../../public/img/icon-like.png')
+		margin-right: 10px
+		margin-left: -25px
+
+.border-blue
+	border: 3px solid #52c5d0
+	border-radius: 3px
+
+.border-red
+	border: 3px solid #f16365
+	border-radius: 3px
+
+.border-orange
+	border: 3px solid #fbc03e
+	border-radius: 3px
+
+.border-violet
+	border: 3px solid #a48d9b
+	border-radius: 3px
+
+@media (min-width: 768px) and (max-width: 991px)
+	.project__banner-title
+		font-size: 60px
+		text-align: center
+
+	.project__content
+		padding: 0
+
+	.project__content-detail
+		padding-left: 15px
+
+@media (max-width: 767px)
+	.project__banner-title
+		text-align: center
+		font-size: 36px
+			
+	.project__description
+		padding-top: 25px
+		
+	.project__description-title
+		margin-bottom: 15px
+			
+	.project__content
+		padding: 0
+		
+	.project__content--logo
+		margin: 0 auto
+		margin-bottom: 15px
+			
+	.project__content-detail
+		adding-left: 15px
+			
+	.project__content--wrapper
+		display: block
+			
+	.project__achievement--wrapper
+		padding: 15px 0
+			
+	.project__achievement-list-img img:nth-child(2)
+		margin-top: 15px
+				
+	.project__achievement-name
+		height: auto
+		margin-bottom: 15px
+		line-height: 30px
+			
+		&:nth-child(1)
+			margin-top: 15px
+				
+		&:nth-child(3)
+			padding: 20px 0 0 0
