@@ -70,6 +70,11 @@ export const routes = [ {
   methods: {
     get: controllers.successStories.get
   }
+}, {
+  path: '/projects',
+  methods: {
+    get: controllers.projects.get
+  }
 } ]
 
 const notFound = (req, res, next) => {

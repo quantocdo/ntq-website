@@ -61,8 +61,8 @@ export default {
     'success-stories': [
       './src/public/stylus/pages/success-stories.styl'
     ],
-    'project': [
-      './src/public/stylus/pages/project.styl'
+    'projects': [
+      './src/public/stylus/pages/projects.styl'
     ]
   },
   output: {
@@ -138,7 +138,7 @@ export default {
       ]
     },
     {
-      test: /\.(ttf|eot|woff|woff2)$/,
+      test: /\.(ttf|otf|eot|woff|woff2)$/,
       use: [
         {
           loader: 'file-loader',
