@@ -1,41 +1,157 @@
-.site-footer
-  background: $color_black
-  color: $color_white
-  padding-top: 50px
+.footer
+  background-color: #252525
+  padding-top: 30px
+  padding-bottom: 40px
+
+.footer li
+  list-style-type: none
+
+.footer__link
+  position: relative
+
+  &:after
+    content: ''
+    display: block
+    clear: both
+
+.footer__link-link
+  float: right
+  text-transform: uppercase
+
+  li
+    float: left
+    padding: 15px
+
+    a
+      color: #fff
+      line-height: 20px
+      font-size: 15px
+      font-family: robotoRegular
+
+    &:last-child
+      padding-right: 0
+
+.footer__link-home
+  color: #fff
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  text-transform: uppercase
+  font-size: 24px
+  font-family: robotoMedium
+
+.footer__contact
+  border-bottom: 1px solid #423535
+  margin-top: 30px
+
+.footer__contact-title
+  color: #fff
+  text-transform: uppercase
+  font-size: 30px
+  font-family: robotoMedium
+
+.footer__contact--padding
+  padding: 20px 0
+
+.footer__item
+  padding-top: 20px
   padding-bottom: 30px
+  height: 160px
+  padding-left: 75px
 
-  .footer-break
-    border-bottom: 1px solid $color_gray_light
-    margin: 20px 0
+.footer__item-title
+  color: #16beb9
+  font-size: 18px
+  font-family: kozukaGothicBold
 
-  .contact
-    display: grid
-    grid-column-gap: 20px
-    grid-row-gap: 10px
-    padding-bottom: 30px
+.footer__item-address
+  color: #fff
+  font-size: 14px
+  font-family: kozukaGothicRegular
+  padding: 5px 0
 
-  .content
-    display: grid
-    grid-column-gap: 20px
-    grid-row-gap: 20px
+.footer__item-contact
+  color: #fff
+  font-size: 14px
+  font-family: robotoBold
+
+.footer__contact
+  border-bottom: 1px solid #363636
+
+.footer__contact--padding
+  padding: 20px 0
+
+.footer__container
+  display: grid
+  grid-template-columns: 50% 50%
+  align-items: center
+  padding: 40px 0
+
+.footer__copyright
+  display: block
+  color: #fff
+  font-size: 12px
+  margin-top: 5px
+  font-family: robotoRegular
+
+.footer__socials
+  text-align: right
+
+  a
+    padding: 0 20px
+
+@media (max-width: 767px)
+  .footer__mobile
+    .footer__mobile-dropdown
+      color: #fff
+      font-size: 24px
+      text-transform: uppercase
+      font-family: kozukaGothicBold
+
+      .caret
+        border-right: 8px solid transparent
+        border-left: 8px solid transparent
+        border-top: 8px dashed
+        margin-top: -4px
+        margin-left: 10px
+
+  .footer__mobile-link
+    text-transform: uppercase
+    font-family: kozukaGothicRegular
+
+  .footer__contact
+    margin-top: 20px
+
+  .footer__contact-title
+    font-size: 25px
+
+  .footer__item
+    padding: 15px 15px
+    height: auto
+
+  .footer__container
+    display: block
+
+  .footer__container-logo
     text-align: center
 
-    .socials
-      font-size: 28px
-      white-space: nowrap
+  .footer__socials
+    text-align: center
 
-      a:not(:last-child)
-        margin-right: 10px
+  .footer__copyright
+    margin-top: 20px
+    margin-bottom: 24px
+    font-size: 16px
 
-  @media (min-width: 768px)
-    .contact
-      grid-template-columns: 1fr 1fr
+@media (min-width: 768px) and (min-width: 991px)
+  .footer__link-link
+    li
+      float: left
+      padding: 0 6px
 
-    .content
-      grid-template-columns: min-content 1fr min-content
+      a
+        color: #fff
+        line-height: 20px
 
-      .socials
-      .copyright
-        display: flex
-        align-items: center
-        text-align: left
+  .footer__item
+    height: 190px

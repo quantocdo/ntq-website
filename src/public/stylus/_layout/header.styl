@@ -1,163 +1,167 @@
-.site-header
+.header
+  padding: 20px 0
+  background-color: #fff
+  border-bottom: 1px solid #128c87
+  font-family: kozukaGothicRegular
   position: fixed
   top: 0
   left: 0
-  right: 0
-  z-index: $zindex_topmost
-  background: transparent
-  color: $color_white
-  border-bottom: 1px solid transparent
+  width: 100%
+  z-index: 9999
+  transition: .2s
 
-  .nav-link
-    cursor: pointer
+.header__content
+  margin-bottom: 0 !important
+  border: none
 
-    &:hover
-      color: $color_blue
+  .navbar-collapse
+    padding-right: 0
 
-  &.float
-    background: $color_white
-    color: $color_black
-    border-bottom: 1px solid $color_gray
+.header__logo
+  line-height: 10px
 
-  .content
-    align-items: center
-    display: grid
-    grid-template-columns: min-content 1fr repeat(3, min-content)
-    grid-column-gap: 10px
+  img
+    width: 100%
+    height: 100%
 
-    @media (min-width: 1200px)
-      grid-template-columns: min-content 1fr repeat(2, min-content)
+.header__logo-mobile
+  display: none
 
-    .company-logo
-      padding: 20px 0
+.header__nav
+  float: right
 
-    .top-nav
-      text-align: right
-      white-space: nowrap
-      overflow: hidden
+  li
+    a
+      text-decoration: none
+      font-size: 16px
+      color: #2a75b9
+      text-transform: uppercase
+      padding: 0 15px
+      height: 70px
+      line-height: 70px
 
-      .top-menu
-        display: none
+      &:hover
+        color: #003663 !important
+        background-color: transparent !important
 
-        @media (min-width: 1200px)
-          display: block
+    &.dropdown:not(.header__language)
+      .dropdown-menu
+        a
+          color: #1668b2
+          height: 40px
+          line-height: 40px
+          text-transform: initial
 
-      .nav-item
+    &.open
+      a
+        background-color: transparent
+
+        &:hover, &:focus
+          background-color: transparent
+
+.header__language
+  .dropdown-toggle
+    .caret
+      &.icon-dropdown
         display: inline-block
-        position: relative
-        line-height: 32px
-        border: 1px solid transparent
+        color: #1668b2
 
-        .nav-link
-          padding: 0 20px
-          display: block
+  img
+    margin-right: 10px
 
-        .checkbox
-          display: none
+.header__language-item
+  display: flex
+  align-items: center
+  padding-right: 0
 
-        .dropdown
-          position: fixed
-          top: 70px
-          display: none
-          border-radius: 8px
-          border: 1px solid $color_gray_light
-          background-color: $color_white
-          color: $color_black
-          padding: 0 20px
-          text-align: left
+.header__language-text
+  margin-right: 10px
+  color: #1668b2
+  font-size: 12px
 
-          .dropdown-item
-            padding: 10px 0
+.header__language-english
+  font-size: 12px
 
-            &:not(:last-child)
-              border-bottom: 1px solid $color_gray_light
+.header__language-select
+  background-color: transparent
 
-        .checkbox:checked + .dropdown
-          display: block
+  a
+    height: 32px
+    line-height: 32px
 
-        &.contact
-          border: 1px solid $color_gray_light
-          border-radius: 4px
-          background: $color_blue
-          color: $color_white
+    img
+      width: 38px
+      height: 22px
 
-          &:hover
-            background: $color_blue_light
-            color: $color_white
+  .navbar-nav > li > .dropdown-menu
+    padding: 13px 25px
+    border-radius: 8px
+    top: 60px
+    left: 50%
+    transform: translateX(-50%)
+    box-shadow: 0px 2px 6.72px 0.28px rgba(15, 15, 15, 0.44)
 
-    .language-switch
-    .menu
-      text-align: center
-      display: inline-block
-      display: inline-flex
-      size: 34px
-      line-height: 34px
-      align-items: center
-      justify-content: center
+    .caret
+      color: #1668b2
+      margin-right: 10px
+      transform: rotate(-90deg)
+      border-right: 5px solid transparent
+      border-left: 5px solid transparent
+      border-top: 5px dashed
+      margin-bottom: 5px
 
-    .language-switch
-      background: $color_white
-      border-radius 4px
-      border 1px solid $color_gray_light
-      overflow: hidden
-      background-position: center center
-      background-repeat: no-repeat
+    li
+      a
+        padding: 0
+        padding-bottom: 20px
+        margin-top: 0
 
-      &.ja
-        background-image url('~img/flags/ja.png')
+    &:before
+      content: ''
+      position: absolute
+      top: -6px
+      left: 50%
+      transform: translate(-50%) rotate(45deg)
+      width: 13px
+      height: 13px
+      background-color: #fff
+      box-shadow: -1px -1px 1px rgba(15, 15, 15, 0.44)
 
-      &.en
-        background-image: url('~img/flags/en.png')
+    &.header__language-select
+      padding: 0
+      box-shadow: none
+      border: none
+      left: 2px
+      transform: none
 
-    .menu
-      font-size: 24px
-      text-align: center
-      cursor: pointer
+      &:before
+        content: none
 
-      .checkbox
-        display: none
+      .header__language-item
+        margin-top: -7px
 
-      .menu-overlay
-        position: fixed
-        top: 0
-        right: 0
-        bottom: 0
-        left: 0
-        background: rgba(0, 0, 0, .6)
-        display: none
+  .dropdown-toggle
+    .caret
+      display: none
 
-        .menu-content
-          position: fixed
-          top: 90px
-          left: 10px
-          right: 10px
-          background-color: $color_white
-          background-image: url('~img/bg/menu-corner.png')
-          background-position: left bottom
-          background-size: contain
-          background-repeat: no-repeat
-          border-radius: 8px
-          border 1px solid $color_gray_light
-          padding: 20px
-          overflow-x: hidden
-          overflow-y: auto
-          display: flex
-          justify-content: center
+  .dropdown-backdrop
+    display: none
 
-          .nav-menu
-            display: grid
-            grid-row-gap: 10px
-            font-size: 20px
+.disable-scroll
+  overflow: hidden
 
-            .nav-item
-              padding: 0 20px
-              background-color: rgba(255, 255, 255, .8)
-              color: $color_black
-              border-radius: 4px
+.bg-transparent
+  background-color: transparent
+  border-bottom: 1px solid #464646
 
-      .checkbox:checked + .menu-overlay
-        display: block
+  .header__nav
+    li
+      a
+        color: #fff
 
-    @media (min-width: 1200px)
-      .menu
-        display: none
+    .header__language
+      .caret
+        color: #fff !important
+
+  .header__language-text
+    color: #fff

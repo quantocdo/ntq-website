@@ -63,6 +63,9 @@ export default {
     ],
     'projects': [
       './src/public/stylus/pages/projects.styl'
+    ],
+    'index': [
+      './src/public/stylus/pages/index.styl'
     ]
   },
   output: {

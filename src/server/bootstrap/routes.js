@@ -7,7 +7,7 @@ import * as controllers from '../controllers'
 export const routes = [ {
   path: '/',
   methods: {
-    get: controllers.lp.get
+    get: controllers.home.get
   }
 }, {
   path: '/news/:page([0-9]+)?',

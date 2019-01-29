@@ -43,4 +43,8 @@
 		]
 	});
 
+	alert('abc');
+
 })(__('ntq'));
+
+alert('abc');
