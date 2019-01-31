@@ -3,469 +3,803 @@
 .home
   color: #003663
   margin-top: -111px
-	background-color green
 
-.home__banner
-	position: relative
-	height: 100vh
-	
-.home__banner-background
-	filter: brightness(85%)
-	-ms-filter: brightness(85%)
-	height: 100%
-	
-	video
-		width: 100%
-		height: 100%
-		object-fit: cover
-		
-.home__banner-content
-	width: 1000px
-	position: absolute
-	bottom: 90px
-	left: 50%
-	transform: translateX(-50%)
-	color: #fff
+  &__banner
+    position: relative
+    height: 100vh
 
-	h3
-		text-transform: uppercase
-		font-family: robotoMedium
-		font-weight: 400
-		letter-spacing: 1.5px
-		margin: 20px 0
-		font-size: 40px
+    &-background
+      filter: brightness(85%)
+      -ms-filter: brightness(85%)
+      height: 100%
 
-	h4
-		font-family: robotoLight
-		font-weight: 300
-		letter-spacing: 3px
-		margin: 20px 0
-		font-size: 46px
-		
-.home__heading
-	margin-bottom: 40px
-	width: 85%
+      video
+        width: 100%
+        height: 100%
+        object-fit: cover
+      
+    &-content
+      width: 1000px
+      position: absolute
+      bottom: 90px
+      left: 50%
+      transform: translateX(-50%)
+      color: #fff
 
-	h3
-		font-family: kozukaGothicBold
-		font-size: 30px
-		text-transform: uppercase
+      h3
+        text-transform: uppercase
+        font-family: robotoMedium
+        font-weight: 400
+        letter-spacing: 1.5px
+        margin: 20px 0
+        font-size: 40px
 
-	p
-		font-family: kozukaGothicRegular
-		font-size: 18px
+      h4
+        font-family: robotoLight
+        font-weight: 300
+        letter-spacing: 3px
+        margin: 20px 0
+        font-size: 46px
 
-.home__intro
-	background: url("../images/bg-intro.png") no-repeat right center
-	background-size: contain
-	margin-top: -6px
-	padding: 60px 0 70px
+  &__heading
+    margin-bottom: 40px
+    width: 85%
 
-	.home__heading
-		p
-			width: 800px
+    h3
+      font-family: kozukaGothicBold
+      font-size: 30px
+      text-transform: uppercase
 
-	.row
-		margin-top: 60px
+    p
+      font-family: kozukaGothicRegular
+      font-size: 18px
 
-	iframe
-		width: 100%
-		height: 444px
-		border: 20px solid #000
-		border-radius: 8px
-		box-shadow: 15px 0 20px rgba(black, 0.5), 30px 20px 30px rgba(black, 0.2)
+  &__intro
+    background: url('../../../public/img/bg-intro.png') no-repeat right center
+    background-size: contain
+    margin-top: -3px
+    padding: 60px 0 70px
 
-	.btn
-		width: 225px
-		margin-top: 140px
-		margin-left: 40px
+    .home__heading
+      p
+        width: 800px
 
-.home__intro-video img
-  width: 100%
+				h3
+					margin-bottom: 20px
 
-.home__box
-	background: url("../images/bg-earth.png") no-repeat right 400px
-	padding: 60px 0
+    .row
+      margin-top: 60px
 
-.home__reason
-	margin-bottom: 60px
+    &-video
+      img
+        width: 100%
 
-.home__reason-list
-	list-style: none
+    iframe
+      width: 100%
+      height: 444px
+      border: 20px solid #000
+      border-radius: 8px
+      box-shadow: 15px 0 20px rgba(#000, 0.5), 30px 20px 30px rgba(#000, 0.2)
 
-.home__reason-item
-	display: flex
-	align-items: center
-	border-bottom: 1px solid #acacac
-	padding: 40px 0
+    .btn
+      width: 225px
+      margin-top: 140px
+      margin-left: 40px
 
-	&:first-child
-		padding: 0 0 40px
+  &__box
+    background: url('../../../public/img/bg-earth.png') no-repeat right 400px
+    padding: 60px 0
 
-	&:last-child
-		border-bottom: none
+  &__reason
+    margin-bottom: 60px
 
-	a
-		width: 55%
-		font-family: kozukaGothicRegular
-		font-size: 18px
-		transition: none
+    &-list
+      list-style: none
 
-		&:hover
-			font-weight: 600
+    &-item
+      display: flex
+      align-items: center
+      border-bottom: 1px solid #acacac
+      padding: 40px 0
 
-.home__reason-img-wrapper
-	width: 35%
-	text-align: center
-	margin-right: 10%
+      &:first-child
+        padding: 0 0 40px
+      
 
-.home__reason-slide
-	a
-		display: block
-		width: 100%
-		height: 600px
-		background-repeat: no-repeat
-		background-position: center center
-		background-size: cover
+      &:last-child
+        border-bottom: none
 
-	.slick-dots
-		bottom: -35px
+      a
+        width: 55%
+        font-family: kozukaGothicRegular
+        font-size: 18px
+        transition: none
 
-		li
-			margin: 0
+        &:hover
+          font-weight: 600
 
-			button:before
-				font-size: 11px
+    &-img-wrapper
+      width: 35%
+      text-align: center
+      margin-right: 10%
+    
+    &-slide
+      a
+        display: block
+        width: 100%
+        height: 600px
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
+      
+      .slick-dots
+        bottom: -35px
 
-			&.slick-active
-				button:before
-					color: #003663
-					opacity: 1
+        li
+          margin: 0
 
-.home__service
-	margin-bottom: 60px
+          button:before
+            font-size: 11px
 
-	.row
-		margin-left: 0
-		margin-right: 0
+          &.slick-active
+            button:before
+              color: #003663
+              opacity: 1
 
-.home__service-items
-	margin-bottom: 40px
+  &__service
+    margin-bottom: 60px
 
-.home__service-item
-	text-align: center
-	padding: 20px 15px
+    .row
+      margin-left: 0
+      margin-right: 0
 
-	.home__service-img-wrapper
-		width: 100%
-		height: 260px
-		background-repeat: no-repeat
-		background-position: center center
-		background-size: contain
+    &-items
+      margin-bottom: 40px
 
-	h4
-		font-family: kozukaGothicRegular
-		font-size: 18px
-		font-weight: 600
-		margin: 25px 0 5px
-		letter-spacing: 1.5px
+    &-item
+      text-align: center
+      padding: 20px 15px
 
-	p
-		font-family: kozukaGothicRegular
-		font-size: 14px
-		margin: 5px 0
+      .home__service-img-wrapper
+        width: 100%
+        height: 260px
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: contain
+      
+      h4
+        font-family: kozukaGothicRegular
+        font-size: 18px
+        font-weight: 600
+        margin: 25px 0 5px
+        letter-spacing: 1.5px
 
-	a
-		font-family: kozukaGothicRegular
-		font-size: 16px
-		text-decoration: underline
-		display: inline-block
-		margin-top: 10px
+      p
+        font-family: kozukaGothicRegular
+        font-size: 14px
+        margin: 5px 0
 
-.home__service-icon
-	text-align: center
-	padding: 15px
+      a
+        font-family: kozukaGothicRegular
+        font-size: 16px
+        text-decoration: underline
+        display: inline-block
+        margin-top: 10px
+      
+    
 
-	.home__service-img-wrapper
-		background-color: #003663
-		border-radius: 50%
-		width: 100px
-		height: 100px
-		margin: 0 auto
-		position: relative
+    &-icon
+      text-align: center
+      padding: 15px
 
-		img
-			position: absolute
-			top: 50%
-			left: 50%
-			transform: translate(-50%, -50%)
+      .home__service-img-wrapper
+        background-color: #003663
+        border-radius: 50%
+        width: 100px
+        height: 100px
+        margin: 0 auto
+        position: relative
 
-	p
-		font-family: kozukaGothicRegular
-		font-size: 14px
-		margin-top: 20px
+        img
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%,-50%)
 
-.home__customer
-	margin-bottom: 40px
+      p
+        font-family: kozukaGothicRegular
+        font-size: 14px
+        margin-top: 20px
 
-	.home__heading
-		text-align: center
-		margin: 0 auto 50px
+  &__customer
+    margin-bottom: 40px
 
-	.row
-		margin-left: 0
-		margin-right: 0
+    .home__heading
+      text-align: center
+      margin: 0 auto 50px
 
-.home__customer-item
-	text-align: center
-	padding: 30px 50px
+    .row
+      margin-left: 0
+      margin-right: 0
+    
+    &-item
+      text-align: center
+      padding: 30px 50px
 
-	&:nth-child(2), &:nth-child(3)
-		background-color: #f4f4f4
+      &:nth-child(2), &:nth-child(3)
+        background-color: #f4f4f4
 
-	h4
-		font-family: kozukaGothicRegular
-		font-size: 18px
-		margin-bottom: 0
+      h4
+        font-family: kozukaGothicRegular
+        font-size: 18px
+        margin-bottom: 0
 
-	p
-		font-family: kozukaGothicRegular
-		font-weight: 500
+      p
+        font-family: kozukaGothicRegular
+        font-weight: 500
 
-		&:first-of-type
-			font-size: 16px
-			font-style: italic
-			margin: 10px 0 30px
+        &:first-of-type
+          font-size: 16px
+          font-style: italic
+          margin: 10px 0 30px
 
-		&:last-of-type
-			font-size: 14px
-			text-align: left
+        &:last-of-type
+          font-size: 14px
+          text-align: left
 
-.home__customer-img-wrapper
-	border-radius: 50%
-	width: 200px
-	height: 200px
-	margin: 0 auto
-	overflow: hidden
+    &-img-wrapper
+      border-radius: 50%
+      width: 200px
+      height: 200px
+      margin: 0 auto
+      overflow: hidden
 
-.home__tech
-	text-align: center
-	background: url("../images/bg-technology.png") no-repeat center center
-	background-size: cover
-	padding: 40px 0 50px
+  &__tech
+    text-align: center
+    background: url('../../../public/img/bg-technology.png') no-repeat center center
+    background-size: cover
+    padding: 40px 0 50px
 
-	.home__heading
-		margin: 0 auto 60px
+    .home__heading
+      margin: 0 auto 60px
 
-		h3
-			margin: 20px 0
+      h3
+        margin: 20px 0
 
-	.btn
-		width: 330px
+    .btn
+      width: 330px
+    
 
-.home__tech-list
-	list-style: none
-	margin-top: 60px
-	display: flex
-	flex-wrap: wrap
-	align-items: center
-	justify-content: space-around
+    &-list
+      list-style: none
+      margin-top: 60px
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      justify-content: space-around
 
-	li
-		filter: grayscale(100%)
-		-ms-filter: grayscale(100%)
-		transition: .3s
-		width: 17%
-		padding: 20px 50px
+      li
+        filter: grayscale(100%)
+        -ms-filter: grayscale(100%)
+        transition: .3s
+        width: 17%
+        padding: 20px 50px
 
-		img
-			width: 100%
+        img
+          width: 100%
 
-		&:nth-child(5)
-			img
-				width: 60%
+        &:nth-child(5)
+          img
+            width: 60%
 
-		&:hover
-			filter: none
-			-ms-filter: none
+        &:hover
+          filter: none
+          -ms-filter: none
 
-.home__suppliers
-	text-align: center
-	padding-top: 40px
+  &__suppliers
+    text-align: center
+    padding-top: 40px
 
-	.home__heading
-		margin: 0 auto 60px
+    .home__heading
+      margin: 0 auto 60px
 
-		h3
-			margin: 20px 0
+      h3
+        margin: 20px 0
 
-	img
-		width: 100%
+    img
+      width: 100%
 
-.home__rnd
-	text-align: center
-	padding: 50px 0 70px
-	position: relative
+  &__rnd
+    text-align: center
+    padding: 50px 0 70px
+    position: relative
 
-	.home__heading
-		margin: 0 auto 160px
-		color: #fff
+    &-background
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-image: url('../../../public/img/item-rnd-2.png')
+      background-repeat: no-repeat
+      background-position: center 56%
+      background-size: cover
+      filter: brightness(45%)
+      -ms-filter: brightness(45%)
+      z-index: -1
 
-		h3
-			margin: 20px 0
+    .home__heading
+      margin: 0 auto 160px
+      color: #fff
+
+      h3
+        margin: 20px 0
 
     .btn
       width: 355px
+    
 
-.home__rnd-background
-	position: absolute
-	top: 0
-	left: 0
-	width: 100%
-	height: 100%
-	background-image: url("../images/item-rnd-2.png")
-	background-repeat: no-repeat
-	background-position: center 56%
-	background-size: cover
-	filter: brightness(45%)
-	-ms-filter: brightness(45%)
-	z-index: -1
+    &-slide
+      margin-top: 180px
 
-.home__rnd-slide
-	margin-top: 180px
+      a
+        display: inline-block
+        width: 180px
+        height: 120px
+        margin: 0 20px
+        background-repeat: no-repeat
+        background-position: center 56%
+        background-size: cover
 
-	a
-		display: inline-block
-		width: 180px
-		height: 120px
-		margin: 0 20px
-		background-repeat: no-repeat
-		background-position: center 56%
-		background-size: cover
+  &__news
+    padding: 30px 0 60px
 
-.home__news
-	padding: 30px 0 60px
+    .container
+      position: relative
 
-	.container
-		position: relative
+    .home__btn-view-more
+      position: absolute
+      top: 40px
+      right: 15px
+      color: #003663
+      font-family: kozukaGothicMedium
+      font-size: 16px
+      text-transform: uppercase
 
-	.home__btn-view-more
-		position: absolute
-		top: 40px
-		right: 15px
-		color: #003663
-		font-family: kozukaGothicMedium
-		font-size: 16px
-		text-transform: uppercase
+    &-item
+      display: flex
+      border-bottom: 1px dashed #003663
+      font-size: 14px
+      font-family: robotoRegular
+      color: #003663
 
-.home__news-item
-	display: flex
-	border-bottom: 1px dashed #003663
-	font-size: 14px
-	font-family: robotoRegular
-	color: #003663
+      p
+        margin: 17px 0
+        width: 15%
 
-	p
-		margin: 17px 0
-		width: 15%
+      a
+        display: inline-block
+        margin: 17px 0
+        transition: none
+        width: 85%
 
-	a
-		display: inline-block
-		margin: 17px 0
-		transition: none
-		width: 85%
+        &:hover
+          font-weight: 600
 
-		&:hover
-			font-weight: 600
+      &:first-child
+        border-top: 1px dashed #003663
 
-	&:first-child
-		border-top: 1px dashed #003663
+    &-img-wrapper
+      height: 263px
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+  
 
-.home__news-img-wrapper
-	height: 263px
-	background-repeat: no-repeat
-	background-size: cover
-	background-position: center
+  @media screen and (min-width: 992px) and (max-width: 1199px)
+    &__banner
+      &-content
+        width: 880px
 
-@media (min-width: 992px) and (max-width: 1199px)
-	.home__banner-content
-		width: 880px
+        h3
+          font-size: 36px
 
-		h3
-			font-size: 36px
+        h4
+          font-size: 42px
 
-		h4
-			font-size: 42px
+    &__intro
+      background-size: cover
+      padding: 40px 0 60px
 
-	.home__intro
-		background-size: cover
-		padding: 40px 0 60px
+      .home__heading
+        p
+          width: 600px
 
-		.home__heading
-			p
-				width: 600px
+      iframe
+        height: 370px
 
-		iframe
-			height: 370px
+      .btn
+        margin-top: 110px
+        margin-left: 30px
 
-		.btn
-			margin-top: 110px
-			margin-left: 30px
+    &__box
+      padding: 50px 0
 
-	.home__box
-  padding: 50px 0
+    &__reason
+      margin-bottom: 50px
 
-	.home__reason
-		margin-bottom: 50px
+      &-item
+        padding: 30px 0
 
-  .home__reason-item
-    padding: 30px 0
+        &:first-child
+          padding: 0 0 30px
 
-    &:first-child
-      padding: 0 0 30px
+      &-slide
+        a
+          height: 550px
 
-  .home__reason-slide
-		a
-    	height: 550px
+        .slick-dots
+          width: 94%
 
-    .slick-dots
-      width: 94%
+    &__service
+      margin-bottom: 50px
 
-	.home__service
-		margin-bottom: 50px
+      &-items
+        margin-bottom: 30px
 
-  .home__service-items
-    margin-bottom: 30px
+    &__tech
+      .btn
+        width: 330px
 
-	.home__tech .btn
-		width: 330px
+      &-list
+        li
+          padding: 20px 40px
 
-  .home__tech-list li
-    padding: 20px 40px
+    &__rnd
+      padding: 40px 0 60px
 
-	.home__rnd
-		padding: 40px 0 60px
+      .home__heading
+        margin: 0 auto 130px
 
-		.home__heading
-			margin: 0 auto 130px
+      &-slide
+        margin-top: 150px
 
-  .home__rnd-slide
-    margin-top: 150px
+        a
+          width: 150px
+          height: 90px
+          margin: 0 10px
 
-    a
-      width: 150px
-      height: 90px
-      margin: 0 10px
+    &__news
+      &-item
+        p
+          margin: 12px 0
+          width: 15%
 
-	.home__news-item
-    p
-      margin: 12px 0
-      width: 15%
+        a
+          display: inline-block
+          margin: 12px 0
+          width: 85%
 
-    a
-      display: inline-block
-      margin: 12px 0
-      width: 85%
+      &-img-wrapper
+        height: 212px
 
-  .home__news-img-wrapper
-    height: 212px
+  @media screen and (min-width: 768px) and (max-width: 991px)
+    &__banner
+      &-content
+        width: 720px
+        bottom: 80px
+
+        h3
+          font-size: 28px
+
+        h4
+          font-size: 32px
+
+    &__intro
+      background-size: cover
+      padding: 40px 0 60px
+
+      .home__heading
+        p
+          width: 450px
+
+      iframe
+        height: 250px
+
+      .btn
+        margin-top: 70px
+        margin-left: 20px
+
+    &__box
+      padding: 50px 0
+
+    &__reason
+      margin-bottom: 50px
+
+      &-item
+        padding: 20px 0
+
+        img
+          width: 90%
+
+        &:first-child
+          padding: 0 0 30px
+
+          img
+            width: 70%
+
+      &-slide
+        a
+          height: 395px
+
+        .slick-dots
+          width: 92%
+
+    &__service
+      margin-bottom: 50px
+
+      &-items
+        margin-bottom: 30px
+
+      &-item
+        padding: 0 20px
+
+      &__img-wrapper
+        height: 220px
+
+    &__customer
+      &-item
+        padding: 25px 25px 10px
+
+    &__tech
+      &-list
+        li
+          padding: 20px 25px
+
+    &__rnd
+      padding: 40px 0 60px
+
+      .home__heading
+        margin: 0 auto 110px
+
+      &-slide
+        margin-top: 130px
+        margin-left: calc(-1/2*(100vw - 720px))
+        margin-right: calc(-1/2*(100vw - 720px))
+
+        a
+          height: 130px
+          margin: 0 15px
+        
+    &__news
+      &-item
+        p
+          margin: 12px 0
+          width: 15%
+
+        a
+          display: inline-block
+          margin: 12px 0
+          width: 85%
+
+      &-img-wrapper
+        height: 212px
+
+  @media screen and (max-width: 767px)
+    &__banner
+      height: 425px
+
+      &-content
+        width: calc(100vw - 30px)
+        bottom: 40px
+
+        h3
+          font-size: 18px
+
+        h4
+          font-size: 22px
+
+    &__heading
+      margin-bottom: 20px
+      width: 100%
+      text-align: center
+
+      h3
+        font-size: 26px
+        margin: 15px 0
+
+      p
+        font-size: 16px
+
+    &__intro
+      background: url('../../../public/img/bg-intro.png') no-repeat right top
+      background-size: contain
+      padding: 40px 0 30px
+      text-align: center
+
+      .home__heading
+        p
+          width: 100%
+
+      .row
+        margin-top: 35px
+      
+
+      &-video
+        img
+          width: 100%
+
+      iframe
+        height: 265px
+        border: 15px solid #000
+
+      .btn
+        width: 215px
+        margin: 40px auto 0
+
+    &__box
+      background: url('../../../public/img/bg-earth.png') no-repeat right 22%
+      padding: 0
+      background-size: 85%
+
+    &__reason
+      margin-bottom: 40px
+
+      &-slide
+        .slick-dots
+          width: 94%
+
+    &__service
+      margin-bottom: 20px
+
+      &-items
+        margin-bottom: 20px
+
+      &-item
+        width: 100%
+        padding: 30px 15px
+
+    &__customer
+      margin-bottom: 40px
+
+      .home__heading
+        text-align: center
+        margin: 0 auto 20px
+
+      &-item
+        padding: 20px 15px 10px
+
+        &:nth-child(even)
+          background-color: #f4f4f4
+
+        &:nth-child(3)
+          background-color: #fff
+
+        p
+          &:first-of-type
+            margin: 0 0 20px
+
+      &-img-wrapper
+        border-radius: 50%
+        width: 200px
+        height: 200px
+        margin: 0 auto
+        overflow: hidden
+
+    &__tech
+      padding: 30px 0 40px
+
+      .home__heading
+        margin: 0 auto 40px
+
+        h3
+          margin: 10px 0
+
+      &-list
+        margin-top: 40px
+
+        li
+          width: 30%
+          padding: 20px
+
+    &__suppliers
+      text-align: center
+      padding: 20px 0
+
+      .home__heading
+        margin: 0 auto 60px
+
+        h3
+          margin: 20px 0
+
+      img
+        width: 100%
+
+    &__rnd
+      padding: 40px 0 50px
+
+      .home__heading
+        margin: 0 auto 30px
+
+        h3
+          margin: 10px 0
+
+        p
+          margin: 10px 0
+
+      &-slide
+        margin-top: 50px
+        margin-left: -15px
+        margin-right: -15px
+
+        a
+          width: 180px
+          height: 100px
+          margin: 0 10px
+
+    &__news
+      padding: 20px 0 80px
+
+      .home__btn-view-more
+        top: initial
+        right: initial
+        left: 50%
+        bottom: -58px
+        transform: translateX(-50%)
+
+      &-item
+        p
+          margin: 20px 0
+          width: 20%
+
+        a
+          margin: 20px 0
+          width: 80%
+
+        &:last-child
+          border-bottom: none
+
+      &-img-wrapper
+        display: none
+
+  @media screen and (max-width: 479px)
+    &__reason
+      text-align: center
+
+      &-item
+        display: block
+
+      &-img-wrapper
+        width: 100%
+        margin: 10px auto
+
+      &-slide
+        a
+          height: 300px
+
+    &__tech, &__rnd
+      .btn
+        width: 240px
+        font-size: 16px
+
+    &__tech
+      .home__heading
+        padding: 0 15px
+
+      &-list
+        li
+          padding: 12px
+
+    &__rnd
+      &-slide
+        a
+          height: 60px
+          margin: 0 5px
+
+    &__news
+      &-item
+        p
+          width: 30%
+
+        a
+          width: 70%

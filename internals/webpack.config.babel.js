@@ -55,17 +55,17 @@ export default {
     rd: [
       './src/public/stylus/pages/rd.styl'
     ],
-    'services': [
+    services: [
       './src/public/stylus/pages/services.styl'
     ],
     'success-stories': [
       './src/public/stylus/pages/success-stories.styl'
     ],
-    'projects': [
+    projects: [
       './src/public/stylus/pages/projects.styl'
     ],
-    'index': [
-      './src/public/stylus/pages/index.styl'
+    home: [
+      './src/public/stylus/pages/home.styl'
     ]
   },
   output: {

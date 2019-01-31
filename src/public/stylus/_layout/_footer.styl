@@ -3,155 +3,156 @@
   padding-top: 30px
   padding-bottom: 40px
 
-.footer li
-  list-style-type: none
-
-.footer__link
-  position: relative
-
-  &:after
-    content: ''
-    display: block
-    clear: both
-
-.footer__link-link
-  float: right
-  text-transform: uppercase
-
   li
-    float: left
-    padding: 15px
+    list-style-type: none
 
-    a
-      color: #fff
-      line-height: 20px
-      font-size: 15px
-      font-family: robotoRegular
+  &__link
+    position: relative
 
-    &:last-child
-      padding-right: 0
+    &::after
+      content: ''
+      display: block
+      clear: both
 
-.footer__link-home
-  color: #fff
-  position: absolute
-  top: 50%
-  transform: translateY(-50%)
-  text-transform: uppercase
-  font-size: 24px
-  font-family: robotoMedium
-
-.footer__contact
-  border-bottom: 1px solid #423535
-  margin-top: 30px
-
-.footer__contact-title
-  color: #fff
-  text-transform: uppercase
-  font-size: 30px
-  font-family: robotoMedium
-
-.footer__contact--padding
-  padding: 20px 0
-
-.footer__item
-  padding-top: 20px
-  padding-bottom: 30px
-  height: 160px
-  padding-left: 75px
-
-.footer__item-title
-  color: #16beb9
-  font-size: 18px
-  font-family: kozukaGothicBold
-
-.footer__item-address
-  color: #fff
-  font-size: 14px
-  font-family: kozukaGothicRegular
-  padding: 5px 0
-
-.footer__item-contact
-  color: #fff
-  font-size: 14px
-  font-family: robotoBold
-
-.footer__contact
-  border-bottom: 1px solid #363636
-
-.footer__contact--padding
-  padding: 20px 0
-
-.footer__container
-  display: grid
-  grid-template-columns: 50% 50%
-  align-items: center
-  padding: 40px 0
-
-.footer__copyright
-  display: block
-  color: #fff
-  font-size: 12px
-  margin-top: 5px
-  font-family: robotoRegular
-
-.footer__socials
-  text-align: right
-
-  a
-    padding: 0 20px
-
-@media (max-width: 767px)
-  .footer__mobile
-    .footer__mobile-dropdown
-      color: #fff
-      font-size: 24px
+    &-link
+      float: right
       text-transform: uppercase
+
+      li
+        float: left
+        padding: 15px
+
+        a
+          color: #fff
+          line-height: 20px
+          font-size: 15px
+          font-family: robotoRegular
+
+        &:last-child
+          padding-right: 0
+
+    &-home
+      color: #fff
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      text-transform: uppercase
+      font-size: 24px
+      font-family: robotoMedium
+
+  &__contact
+    border-bottom: 1px solid #423535
+    margin-top: 30px
+
+    &-title
+      color: #fff
+      text-transform: uppercase
+      font-size: 30px
+      font-family: robotoMedium
+
+    &--padding
+      padding: 20px 0
+
+  &__item
+    padding-top: 20px
+    padding-bottom: 30px
+    height: 160px
+    padding-left: 75px
+
+    &-title
+      color: #16beb9
+      font-size: 18px
       font-family: kozukaGothicBold
 
-      .caret
-        border-right: 8px solid transparent
-        border-left: 8px solid transparent
-        border-top: 8px dashed
-        margin-top: -4px
-        margin-left: 10px
+    &-address
+      color: #fff
+      font-size: 14px
+      font-family: kozukaGothicRegular
+      padding: 5px 0
 
-  .footer__mobile-link
-    text-transform: uppercase
-    font-family: kozukaGothicRegular
+    &-contact
+      color: #fff
+      font-size: 14px
+      font-family: robotoBold
 
-  .footer__contact
-    margin-top: 20px
+  &__contact
+    border-bottom: 1px solid #363636
 
-  .footer__contact-title
-    font-size: 25px
+    &--padding
+      padding: 20px 0
 
-  .footer__item
-    padding: 15px 15px
-    height: auto
+  &__container
+    display: grid
+    grid-template-columns: 50% 50%
+    align-items: center
+    padding: 40px 0
 
-  .footer__container
+  &__copyright
     display: block
+    color: #fff
+    font-size: 12px
+    margin-top: 5px
+    font-family: robotoRegular
 
-  .footer__container-logo
-    text-align: center
+  &__socials
+    text-align: right
 
-  .footer__socials
-    text-align: center
+    a
+      padding: 0 20px
 
-  .footer__copyright
-    margin-top: 20px
-    margin-bottom: 24px
-    font-size: 16px
-
-@media (min-width: 768px) and (min-width: 991px)
-  .footer__link-link
-    li
-      float: left
-      padding: 0 6px
-
-      a
+  @media screen and (max-width: 767px)
+    &__mobile
+      &-dropdown
         color: #fff
-        line-height: 20px
+        font-size: 24px
+        text-transform: uppercase
+        font-family: kozukaGothicBold
 
-  .footer__item
-    height: 190px
+        .caret
+          border-right: 8px solid transparent
+          border-left: 8px solid transparent
+          border-top: 8px dashed
+          margin-top: -4px
+          margin-left: 10px
+
+      &-link
+        text-transform: uppercase
+        font-family: kozukaGothicRegular
+
+    &__contact
+      margin-top: 20px
+
+      &-title
+        font-size: 25px
+
+    &__item
+      padding: 15px 15px
+      height: auto
+
+    &__container
+      display: block
+
+      &-logo
+        text-align: center
+
+    &__socials
+      text-align: center
+
+    &__copyright
+      margin-top: 20px
+      margin-bottom: 24px
+      font-size: 16px
+
+  @media screen and (min-width: 768px) and (max-width: 991px)
+    &__link
+      &-link
+        li
+          float: left
+          padding: 0 6px
+
+          a
+            color: #fff
+            line-height: 20px
+
+    &__item
+      height: 190px
