@@ -23,7 +23,8 @@ $(document).ready(function () {
     arrows: false
   });
 
-  alert('abc');
+	alert('abc');
+	console.log('fwfewf');
 
   $('.js-rnd-slider').slick({
     slidesToShow: 3,

@@ -33,6 +33,7 @@
     "node-fetch": "2.2.0",
     "popper.js": "^1.14.6",
     "serialize-error": "2.1.0",
+    "slick-carousel": "^1.8.1",
     "stylus": "0.54.5",
     "truncatise": "0.0.7"
   },

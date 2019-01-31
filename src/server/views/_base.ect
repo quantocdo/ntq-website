@@ -14,9 +14,8 @@
 
     <!-- stylesheet imports -->
     <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Raleway'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">				
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <% content 'head_end' %>
 
@@ -31,7 +30,11 @@
     <% include 'partials/ga' %>
   </head>
   <% content %>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
   <script src="<%= @__asset('layout.js') %>"></script>
+
   <script>
     ;(function() {
       var menu = document.getElementById('fullscreen-menu')
@@ -44,7 +47,42 @@
         }
       }
 
-      menu.addEventListener('click', prevent)
+      menu.addEventListener('click', prevent)      
     })();
+
+    $(document).ready(function () {
+
+      $('#open-nav').click(function () {
+        $('#content-nav').addClass('is-active');
+        $('html').addClass('disable-scroll');
+      });
+
+      $(document).on('touchstart',function(event){
+        if (event.target == $('#content-nav')[0]) {
+          $('#content-nav').removeClass('is-active');
+          $('html').removeClass('disable-scroll');
+        }
+      });
+
+      $('.js-home').parent('.site-content').siblings('.header').addClass('alter-navbar');
+      $('.alter-navbar').addClass('bg-transparent');
+      $('.alter-navbar').find('.js-logo').attr('src', '<%= @__asset('img/logo-white.png') %>');
+
+      if ( $('.header').hasClass('alter-navbar') ) {
+        $(document).on('scroll', function () {
+          var navbarPosition = $('.alter-navbar').offset().top;
+          var bannerContentPosition = $('.js-banner-content').offset().top;
+
+          if (navbarPosition > (bannerContentPosition - 130)) {
+            $('.alter-navbar').find('.js-logo').attr('src', '<%= @__asset('img/logo.png') %>');
+            $('.alter-navbar').removeClass('bg-transparent');
+          } else {
+            $('.alter-navbar').find('.js-logo').attr('src', '<%= @__asset('img/logo-white.png') %>');
+            $('.alter-navbar').addClass('bg-transparent');
+          }
+        });
+      }
+
+    });
   </script>
 </html>
