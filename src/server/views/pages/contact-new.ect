@@ -1,0 +1,82 @@
+<% extend '_flow-no-banner' %>
+
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__asset('contact-new.css') %>">
+
+<% end %>
+
+<% block 'page_flow': %>
+
+<section class="section contact">
+  <div class="masthead bg-gradient">
+    <div class="masthead-wrapper container">
+      <div class="row contact__banner">
+        <div class="col-md-8 col-xs-12 contact__banner-title">お問い合わせ</div>
+        <div class="col-md-4 col-xs-12">
+          <div class="contact__banner-adress">ベトナム本社</div>
+          <div class="contact__banner-phone">電話番号: (+84) 243 200 8754</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container contact__content">
+    <div class="contact__content-description">
+      <div>弊社に関するご質問、お見積り、全て無料で承っております。<br/>どんなことでも結構ですので、お気軽にご連絡下さい。後日担当者よりご連絡させていただきます。</div>
+    </div>
+    <div class="contact__content-detail">
+      <div class="row">
+        <div class="col-md-10 col-xs-12 col-centered">
+          <div class="contact__inquiry">
+            <div class="contact__inquiry-title">お問い合わせ内容</div>
+            <div class="contact__inquiry-detail">
+
+              <div class=" contact__inquiry-checkbox">
+                <input type="checkbox" id="document-request" />
+                <label for="document-request"><span></span>資料請求</label>
+              </div>
+              <div class=" contact__inquiry-checkbox">
+                <input type="checkbox" id="inquiries-services" />
+                <label for="inquiries-services"><span></span>サービスに関するお問い合わせ</label>
+              </div>
+              <div class=" contact__inquiry-checkbox">
+                <input type="checkbox" id="request-quotation" />
+                <label for="request-quotation"><span></span>見積依頼</label>
+              </div>
+              <div class=" contact__inquiry-checkbox">
+                <input type="checkbox" id="other" />
+                <label for="other"><span></span>その他</label>
+              </div>
+
+            </div>
+          </div>
+          <div class="contact__form">
+            <form action="">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="メールアドレス">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="氏名">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="会社名">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="電話番号">
+              </div>
+              <div class="form-group">
+                <textarea placeholder="内容" class="form-control"></textarea>
+              </div>
+              <div class="contact__form-submit">
+                <a href="#" class="btn btn-send btn--circle">送信</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<% end %>

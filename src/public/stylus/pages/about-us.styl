@@ -1,0 +1,209 @@
+@import '../main'
+
+.about-us
+  & .masthead-wrapper
+    & p
+      color: #fff
+      font-size: 72px
+      line-height: 255px
+      margin: 0
+      font-family: kozukaGothicBold
+
+  &__content
+    padding-left: 60px
+    padding-right: 60px
+
+  & .text-center
+    color: #003663
+    text-align: center
+
+  &__strategic
+    background-color: #f4f4f4
+    padding-top: 65px
+
+    &--title
+      font-size: 36px
+      margin-top: -15px
+      margin-bottom: -35px
+      font-family: kozukaGothicBold
+
+    &--item
+      &-title
+        font-size: 60px
+        font-family: kozukaGothicBold
+
+        &:after
+          content: ""
+          width: 90px
+          height: 3px
+          top: 112px
+          right: 50%
+          transform: translateX(50%)
+          background-color: #003663
+          position: absolute
+
+      &-total
+        font-size: 36px
+        margin-top: 5px
+        margin-bottom: -8px
+        font-family: kozukaGothicBold
+
+      &-policy
+        margin-top: 0
+        font-size: 24px
+
+      &-detail
+        color: #003663
+        position: relative
+        font-size: 18px
+        font-family: kozukaGothicRegular
+
+        &:before
+          content: ""
+          background-image: url(../../../public/img/tick-blue-icon.png)
+          background-repeat: no-repeat
+          left: -30px
+          top: 10px
+          height: 20px
+          width: 20px
+          position: absolute
+
+      &-description
+        // width: 420px
+        margin: auto auto
+        padding-left: 15px
+        padding-right: 15px
+
+  &__introduce-title
+    font-size: 24px
+    color: #003663
+    margin-bottom: -7px
+    font-family: kozukaGothicRegular
+
+  & .address:nth-child(1)
+    background-repeat: no-repeat
+    background-position: right 0
+    background-size: 540px 800px
+
+  & .address:nth-child(2)
+    background-repeat: no-repeat
+    background-position: right center
+    background-size: 540px auto
+
+  &__info
+    &:nth-child(1)
+      margin-top: -96px
+
+      & .about-us__introduce-title
+        padding-top: 100px
+
+    &-item
+      margin: 30px auto
+      display: block
+      font-family: kozukaGothicRegular
+
+    &-name
+      font-weight: 600
+      width: 160px
+      font-size: 16px
+      font-family: kozukaGothicRegular
+
+    &-detail
+      font-size: 16px
+
+  & .icon-sales
+    &:before
+      content: ""
+      background-image: url(../../../public/img/sales-icon.png)
+      background-repeat: no-repeat
+      top: 8px
+      left: 100px
+      width: 65px
+      height: 52px
+      display: inline-block
+      margin-right: 30px
+      vertical-align: -4px
+
+  & .icon-talen
+    &:before
+      content: ""
+      background-image: url(../../../public/img/talen-icon.png)
+      background-repeat: no-repeat
+      top: 8px
+      left: 100px
+      width: 65px
+      height: 52px
+      display: inline-block
+      margin-right: 30px
+      vertical-align: -4px
+
+  @media screen and (min-width: 768px) and (max-width: 991px)
+    & .masthead-wrapper
+      & p
+        font-size: 60px
+        text-align: center
+
+  @media screen and (max-width: 767px)
+    & .masthead-wrapper
+      & p
+        font-size: 36px
+        text-align: center
+
+    &__content
+      padding: 0 30px
+
+  @media screen and (max-width: 479px)
+    &__strategic
+      &--title
+        font-size: 24px
+
+      &--item
+        &-title
+          font-size: 40px
+
+          &:after
+            top: 79px
+
+        &-total
+          font-size: 24px
+
+        &-policy
+          font-size: 16px
+
+        &-detail
+          font-size: 14px
+
+    & .icon-sales
+      &:before
+        content: ""
+        background-image: url(../../../public/img/sales-icon.png)
+        background-repeat: no-repeat
+        top: 8px
+        left: 103px
+        width: 48px
+        background-size: contain
+        display: inline-block
+        margin-right: 20px
+        vertical-align: -18px
+
+    & .icon-talen
+      &:before
+        background-image: url(../../../public/img/talen-icon.png)
+        background-repeat: no-repeat
+        top: 8px
+        left: 103px
+        width: 48px
+        background-size: contain
+        display: inline-block
+        margin-right: 20px
+        vertical-align: -13px
+
+    & .address:nth-child(1)
+      background-image: url(../../../public/img/sudico-building-mobile.png)
+      margin-right: -15px
+      background-size: auto
+
+    & .address:nth-child(2)
+      background-image: url(../../../public/img/vv-building-mobile.jpg)
+      margin-right: -15px
+      background-size: auto

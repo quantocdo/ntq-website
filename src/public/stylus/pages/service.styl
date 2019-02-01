@@ -1,0 +1,522 @@
+@import '../main'
+
+.service
+  .masthead-wrapper
+    & p
+      color: #fff
+      font-size: 72px
+      line-height: 255px
+      margin: 0
+      font-family: kozukaGothicBold
+
+  &__bgr
+    width: 100%
+    background-repeat: no-repeat
+    background-position: right top
+    background-size: 57% auto
+    margin-top: 80px
+
+  &__define
+    padding-left: 60px
+    padding-right: 60px
+
+    &-title
+      margin-top: 0
+
+    &-content
+      p
+        font-family: kozukaGothicRegular
+        font-size: 18px
+        text-align: justify
+
+  &__title
+    font-family: kozukaGothicRegular
+    font-size: 24px
+    text-transform: uppercase
+    color: #003663
+
+  &__offshore
+    padding-left: 60px
+    padding-right: 60px
+
+    &--plan
+      display: flex
+      padding-left: 20px
+      padding-right: 20px
+
+      &-description
+        position: relative
+
+      &-content
+        border: #003663 1px dashed
+        border-right: none
+        width: 160px
+
+      &-content
+        display: flex
+        justify-content: center
+
+        &:last-child
+          border-right: #003663 1px dashed
+
+        & img
+          width: 36px
+          height: auto
+          position: absolute
+          top: 50%
+          transform: translateY(-50%)
+
+      &-item
+        font-size: 14px
+        font-family: kozukaGothicRegular
+        color: #003663
+        margin-bottom: 0
+        margin-left: 45px
+
+      &-detail
+        font-size: 14px
+        font-family: kozukaGothicBold
+        color: #003663
+        font-weight: 600
+        margin-top: -10px
+        margin-left: 45px
+
+    &-detail
+      margin-top: 30px
+      display: flex
+      padding-left: 20px
+      padding-right: 20px
+
+    &-description
+      font-size: 18px
+      font-family: kozukaGothicRegular
+      margin-bottom: 20px
+      list-style: none
+
+    &-swat
+      background-repeat: no-repeat
+      background-size: contain
+
+    &:last-child
+      background-color: red
+
+  &__how
+    position: relative
+
+  &__step
+    display: flex
+    justify-content: space-between
+
+    &-detail
+      background-color: #003663
+      width: 180px
+      color: #fff
+      text-align: center
+      position: relative
+      font-family: kozukaGothicRegular
+      border-radius: 8px
+      cursor: pointer
+
+      &:hover
+        h3
+          color: #e67b20
+
+      &:last-child
+        &:after
+          border: none
+
+      &:after
+        content: ""
+        position: absolute
+        right: -8px
+        top: 50%
+        transform: translateY(-50%)
+        border-top: 8px solid transparent
+        border-bottom: 8px solid transparent
+        border-left: 8px solid #003663
+
+      &:before
+        content: ""
+        width: 50px
+        height: 1px
+        border-bottom: 1px #959595 dashed
+        position: absolute
+        margin-left: 90px
+        top: 50%
+        right: -55px
+        transform: translateY(-50%)
+
+      &:last-child
+        &:before
+          border: none
+
+      & h3
+        font-size: 18px
+        margin-bottom: 0
+        font-weight: 400
+        margin-top: 8px
+        transition: .3s
+
+      & h5
+        font-size: 12px
+        margin-top: 0
+        font-weight: 400
+        margin-bottom: 8px
+
+  &__content
+    display: flex
+    align-items: center
+    margin-bottom: 20px
+
+    &-image
+      img
+        width: 100%
+
+    &-detail
+      & h3
+        font-size: 18px
+        color: #003663
+        margin: 0
+        font-family: kozukaGothicBold
+
+        &:before
+          font-weight: 700
+          color: #fff
+          background-image: linear-gradient(to right, #11bdbd, #b0e04e 85%)
+          border-radius: 50%
+          display: inline-block
+          font-size: 24px
+          width: 46px
+          height: 46px
+          text-align: center
+          line-height: 50px
+          margin-right: 12px
+
+      & h4
+        font-family: kozukaGothicRegular
+        font-size: 14px
+        margin-bottom: 0
+
+    &--country
+      margin-top: 60px
+      margin-bottom: 40px
+      padding-left: 35px
+      padding-right: 35px
+
+      &-item
+        display: flex
+        justify-content: center
+
+        img
+          width: 45px
+          height: auto
+
+      &-detail
+        padding: 0
+
+    &:nth-child(6)
+      & .service__content-detail
+        & h3
+          &:before
+            content: "01"
+
+    &:nth-child(7)
+      & .service__content-detail
+        & h3
+          &:before
+            content: "02"
+
+    &:last-child
+      .service__content-detail
+        & h3
+          &:before
+            content: "03"
+
+  & .content
+    &__title
+      font-family: kozukaGothicBold
+      font-size: 18px
+      color: #003663
+      margin-top: -37px
+      margin-left: 55px
+
+    &__detail
+      font-family: kozukaGothicRegular
+      font-size: 14px
+
+  &__agreement
+    padding-left: 60px
+    padding-right: 60px
+    padding-bottom: 40px
+
+    &--wraper
+      padding-left: 60px
+      padding-right: 60px
+
+      &-item:last-child
+        & .service__agreement--wraper-title
+          background: #e1e1e1
+
+          & h2
+            color: #a1a1a1
+
+            &:after
+              content: ""
+              background-image: url(../../../public/img/icon-circle-arrow-grey.png)
+
+      &-title
+        color: #fff
+        height: 120px
+        line-height: 120px
+        padding-left: 40px
+        padding-right: 40px
+
+        & h2
+          font-size: 24px
+          font-family: kozukaGothicRegular
+          font-weight: 400
+          position: relative
+
+          &:after
+            content: ""
+            background-image: url(../../../public/img/icon-circle-arrow-white.png)
+            background-repeat: no-repeat
+            width: 21px
+            height: 21px
+            position: absolute
+            right: 0
+            top: 40%
+
+      &-content
+        padding-right: 40px
+
+        & li
+          list-style: none
+
+          &:first-child h4
+            margin-left: 0
+
+            &:before
+              background-image: none
+
+          & h3
+            font-size: 16px
+            font-family: kozukaGothicRegular
+            font-weight: 600
+            color: #003663
+            margin-bottom: 0
+
+          & h4
+            font-size: 14px
+            font-family: kozukaGothicRegular
+            margin-top: 0
+            margin-bottom: 0
+            position: relative
+            margin-left: 15px
+            font-weight: 200
+
+            &:before
+              content: ""
+              background-image: url(../../../public/img/icon-note.png)
+              background-repeat: no-repeat
+              width: 10px
+              height: 13px
+              margin-left: -14px
+              position: absolute
+              top: 7px
+
+  &__advisory
+    background-size: cover
+    background-position: center center
+
+    &-content
+      padding: 60px
+
+      p
+        font-size: 23px
+        font-family: kozukaGothicMedium
+        line-height: 48px
+        text-align: center
+        color: #fff
+        margin-top: 0
+
+    &-btn
+      width: 100%
+      text-align: center
+
+      a
+        background-color: #fff
+        color: #003663
+        padding: 10px 55px
+        border-radius: 8px
+        font-family: kozukaGothicBold
+        font-size: 24px
+
+  @media screen and (min-width: 992px) and (max-width: 1199px)
+    &__step
+      &-detail
+        padding-left: 5px
+        padding-right: 5px
+        width: 130px
+
+  @media screen and (max-width: 991px)
+    &__bgr
+      background-position: right -208% top
+      background-size: 89% auto
+
+    &__define,
+    &__offshore,
+    &__agreement
+      padding: 0
+
+    &__agreement
+      &--wraper
+        padding: 0
+        padding-bottom: 45px
+
+    &__offshore
+      &-swat
+        width: 100%
+        height: 240px
+        background-position: center
+
+      &--plan
+        padding: 0
+
+        &-description
+          position: inherit
+          text-align: center
+
+        &-content:last-child
+          img
+            width: 30px
+            margin-top: 15px
+
+        &-content
+          img
+            position: inherit
+            transform: none
+            margin-top: 20px
+
+        &-item,
+        &-detail
+          margin-left: 0
+          margin-bottom: 0
+
+    &__content
+      display: block
+
+      &-detail
+        margin-top: 15px
+
+        h3
+          &:before
+            font-size: 18px
+            width: 35px
+            height: 35px
+            text-align: center
+            line-height: 36px
+
+    &__step
+      flex-wrap: wrap
+      padding-left: 60px
+      padding-right: 60px
+
+      &-detail
+        width: 100%
+        margin-bottom: 60px
+
+        &:before
+          content: ""
+          width: 1px
+          height: 60px
+          border-left: 1px #959595 dashed
+          position: absolute
+          top: 72%
+          margin-right: -2px
+          right: 50%
+          transform: translateY(50%)
+
+        &:after
+          content: ''
+          position: absolute
+          left: 50%
+          transform: translateX(-50%)
+          width: 0
+          height: 0
+          top: 100%
+          border-top: solid 10px #003663
+          border-left: solid 10px transparent
+          border-right: solid 10px transparent
+
+        &:last-child
+          margin-bottom: 0
+
+  @media screen and (min-width: 768px) and (max-width: 991px)
+    & .masthead-wrapper
+      & p
+        font-size: 60px
+        text-align: center
+
+  @media screen and (max-width: 767px)
+    .masthead-wrapper
+      & p
+        font-size: 36px
+        text-align: center
+
+    &__bgr
+      margin-top: 50px
+
+    &__offshore
+      &--wrapper
+        display: inline-block
+
+      &--plan
+        flex-wrap: wrap
+
+        &-description
+          position: inherit
+          text-align: left
+
+          img
+            display: inline-block
+            margin-top: 0
+            margin-right: 40px
+
+        &-content:last-child
+          img
+            width: 30px
+            margin-top: 15px
+
+        &-content
+          border: #003663 1px dashed
+          width: 100%
+          justify-content: inherit
+          padding-left: 40px
+
+          img
+            position: inherit
+            transform: none
+            margin-top: 20px
+
+        &-item,
+        &-detail
+          margin-left: 0
+          margin-bottom: 0
+
+      &-detail
+        display: block
+
+    &__content
+      display: block
+
+    &__advisory
+      &-content
+        padding: 60px 15px
+
+        p
+          font-size: 18px
+
+      &-btn
+        a
+          font-size: 18px

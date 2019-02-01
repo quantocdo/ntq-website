@@ -75,6 +75,36 @@ export const routes = [ {
   methods: {
     get: controllers.projects.get
   }
+}, {
+  path: '/about-us',
+  methods: {
+    get: controllers.aboutUs.get
+  }
+}, {
+  path: '/contact-new',
+  methods: {
+    get: controllers.contactNew.get
+  }
+}, {
+  path: '/service-ai',
+  methods: {
+    get: controllers.serviceAI.get
+  }
+}, {
+  path: '/rnd',
+  methods: {
+    get: controllers.rnd.get
+  }
+}, {
+  path: '/recruitment',
+  methods: {
+    get: controllers.recruitment.get
+  }
+}, {
+  path: '/service',
+  methods: {
+    get: controllers.service.get
+  }
 } ]
 
 const notFound = (req, res, next) => {

@@ -1,0 +1,108 @@
+<% extend '_flow-no-banner' %>
+
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__asset('rnd.css') %>">
+
+<% end %>
+
+<% block 'page_flow': %>
+
+<section class="section research-dev">
+  <div class="masthead research-dev__banner bg-gradient">
+    <div class="masthead-wrapper container research-dev__banner-title">RESEARCH & DEVELOPMENT</div>
+  </div>
+  <div class="research-dev__introduce">
+    <div class="container">
+      <div class="research-dev__introduce-content">
+        <h3 class="research-dev__introduce-title">WHY R&D?</h3>
+        <p class="research-dev__introduce-description">全てを自分たちで開発することで、開発者の夢を追いかけています。</p>
+        <div class="research-dev__introduce-reason">
+          <h3 class="research-dev__introduce-reason__title">技術を勉強することで、より技術に精通するため</h3>
+          <p class="research-dev__introduce-reason__description">NTQとしての技術力をより地盤から固めたい、という思いのもと、R&Dを行っています
+            そのためにNASAの設計図を研究するなど、開発を通してナレッジを蓄えております。</p>
+        </div>
+        <div class="research-dev__introduce-reason">
+          <h3 class="research-dev__introduce-reason__title">開発部門をサポートするため</h3>
+          <p class="research-dev__introduce-reason__description">完全に独立した部署ではなく、時にはR&Dメンバーが開発のサポートに入ることもあります
+            過去には持前の技術力を生かし、難易度の高いご案件を遂行したこともあります。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="research-dev__contact">
+      <h3 class="research-dev__contact__title">共同開発パートナー様募集中</h3>
+      <p class="research-dev__contact__description">開発を通じ技術力を高めあえるパートナー様を募集しております。<br>一緒に夢を追いかけませんか？</p>
+      <div class="research-dev__contact__btn">
+        <a href="">お問い合わせはこちら</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="research-dev__team">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h3 class="research-dev__team-title">CRAZY TEAM</h3>
+          <p class="research-dev__team-description">
+            R&Dのチームは“Crazy team”と社内では呼ばれています。大きな夢を抱き、時には突拍子もない発想で
+            面白いアイディアを出し続けることができるからです。
+          </p>
+          <div class="js-team-thumnail research-dev__team-thumnail">
+            <div class="research-dev__team-thumnail__item">
+              <img src="<%= @__asset('img/crazy-team1.png') %>" alt="">
+            </div>
+            <div class="research-dev__team-thumnail__item">
+              <img src="<%= @__asset('img/crazy-team2.png') %>" alt="">
+            </div>
+            <div class="research-dev__team-thumnail__item">
+              <img src="<%= @__asset('img/crazy-team3.png') %>" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5 research-dev__team-detail js-team-detail">
+          <div class="research-dev__team-detail__item" style="background-image: url('<%= @__asset('img/crazy-team1.png') %>')"></div>
+          <div class="research-dev__team-detail__item" style="background-image: url('<%= @__asset('img/crazy-team2.png') %>')"></div>
+          <div class="research-dev__team-detail__item" style="background-image: url('<%= @__asset('img/crazy-team3.png') %>')"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="research-dev__video">
+    <div class="container">
+      <div class="row">
+        <h3 class="research-dev__video-title">自社開発</h3>
+        <div class="col-sm-6 research-dev__video-item">
+          <iframe width="100%" height="325" src="https://www.youtube.com/embed/zEtfTiVfth8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+        <div class="col-sm-6 research-dev__video-item">
+          <iframe width="100%" height="325" src="https://www.youtube.com/embed/tbnz6oWMJmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+        <div class="col-sm-6 research-dev__video-item">
+          <iframe width="100%" height="325" src="https://www.youtube.com/embed/yw-GEQ6LSQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+        <div class="col-sm-6 research-dev__video-item">
+          <iframe width="100%" height="325" src="https://www.youtube.com/embed/MUKe3LByRg8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+      </div>
+
+      <div class="row">
+        <h3 class="research-dev__video-title research-dev__video-title--own">共同開発</h3>
+        <div class="col-sm-6 research-dev__video-item">
+          <iframe width="100%" height="325" src="https://www.youtube.com/embed/OvNb5EgvdtI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+        <div class="col-sm-6 research-dev__video-item">
+          <iframe width="100%" height="325" src="https://www.youtube.com/embed/6hepHqosztE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<% end %>

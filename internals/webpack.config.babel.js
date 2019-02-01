@@ -66,6 +66,24 @@ export default {
     ],
     home: [
       './src/public/stylus/pages/home.styl'
+    ],
+    'about-us': [
+      './src/public/stylus/pages/about-us.styl'
+    ],
+    'contact-new': [
+      './src/public/stylus/pages/contact-new.styl'
+    ],
+    'service-ai': [
+      './src/public/stylus/pages/service-ai.styl'
+    ],
+    service: [
+      './src/public/stylus/pages/service.styl'
+    ],
+    rnd: [
+      './src/public/stylus/pages/rnd.styl'
+    ],
+    recruitment: [
+      './src/public/stylus/pages/recruitment.styl'
     ]
   },
   output: {

@@ -1,0 +1,329 @@
+@import '../main'
+
+.service-ai
+  &__banner
+    &-title
+      font-size: 72px
+      font-family: kozukaGothicBold
+
+  &__container
+    padding: 100px 60px 40px 60px
+
+  &__introduce
+    background-repeat: no-repeat
+    background-position: 100%
+    background-size: 50%
+
+    &-title,
+    &-description
+      color: #003663
+      text-align: center
+      font-size: 24px
+      font-family: kozukaGothicBold
+
+    &-description
+      font-family: kozukaGothicRegular
+
+    &-detail
+      padding-top: 30px
+      font-size: 18px
+      font-family: kozukaGothicRegular
+
+    &-achievement
+      margin-top: 60px
+
+    &-item:nth-child(2)
+      padding-right: 10px
+      padding-left: 10px
+
+    &-model
+      height: 85px
+      display: flex
+      width: 100%
+      border-radius: 6px
+      align-items: center
+      background-image: linear-gradient(to right, #11bdbd, #b0e04e 85%)
+      color: #003663
+      font-family: kozukaGothicMedium
+
+      img
+        margin-left: 30px
+        margin-bottom: 40px
+        margin-right: 15px
+
+  &__feature-bg
+    background-color: #e1e1e1
+    border-radius: 5px
+    margin-bottom: 25px
+    padding: 20px 20px
+
+  &__feature
+    &-container
+      padding: 0 60px
+
+    &-title
+      color: #003663
+      font-size: 24px
+      font-family: kozukaGothicBold
+      margin-bottom: 15px
+
+    &-list
+      font-size: 18px
+      color: #003663
+      margin: 0
+      padding: 0
+      font-family: kozukaGothicRegular
+
+    &-item
+      list-style-type: none
+      line-height: 40px
+
+      &:before
+        content: " "
+        display: inline-block
+        width: 24px
+        height: 21px
+        background-image: url('../../../public/img/icon-like-blue.png')
+        margin-right: 10px
+
+    &-descriptions
+      font-family: kozukaGothicRegular
+      font-size: 16px
+
+    &__accuracy
+      &-img
+        width: 100%
+
+      &-descriptions
+        margin-top: 20px
+
+    &__camera-system
+      display: flex
+      padding: 0 40px
+
+      &-list
+        width: 60%
+
+      &-img
+        width: 40%
+        margin-top: -60px
+        text-align: right
+
+    &__analysis-text
+      &-img
+        margin-top: -60px
+        width: 100%
+
+    &__mosaic,
+    &__analysis
+      display: flex
+      align-items: center
+      justify-content: space-between
+
+      &-list
+        padding-left: 40px
+        padding-top: 5px
+
+      &-img
+        margin-top: -60px
+        padding-right: 40px 
+
+    &__orc
+      padding: 0 40px
+
+      &-img
+        img
+          width: 100%
+          margin-top: -60px
+
+  &__advisory
+    background-size: cover
+    background-position: center center
+
+    &-content
+      padding: 60px
+
+      p
+        font-size: 23px
+        font-family: kozukaGothicMedium
+        line-height: 48px
+        text-align: center
+        color: #fff
+        margin-top: 0
+
+    &-btn
+      width: 100%
+      text-align: center
+
+      a
+        background-color: #fff
+        color: #003663
+        padding: 10px 55px
+        border-radius: 8px
+        font-family: kozukaGothicBold
+        font-size: 24px
+
+  @media screen and (min-width: 1200px) and (max-width: 1399px)
+    &__feature
+      &__accuracy
+        &-img
+          width: auto
+
+  @media screen and (min-width: 992px) and (max-width: 1199px)
+    &__feature
+      &__orc
+        &-img
+          img
+            margin-top: 0
+
+      &__analysis-text
+        &-list
+          margin-top: -60px
+
+  @media screen and (min-width: 768px) and (max-width: 991px)
+    &__banner
+      &-title
+        font-size: 60px
+        text-align: center
+
+    &__container
+      padding: 50px 15px
+
+    &__introduce
+      background-position: 130% 50%
+      background-size: 50%
+
+      &-detail
+        width: 75%
+
+      &-model
+        display: block
+        text-align: center
+
+        img
+          margin-left: 0
+          margin-top: -55px
+          margin-bottom: 0
+          margin-right: 0
+          height: 86px
+
+    &__feature
+      &-container
+        padding: 0 15px
+
+      &-descriptions
+        width: 90%
+
+      &__accuracy
+        &-list
+          margin-top: 20px
+
+      &__camera-system
+        padding: 0
+
+      &__analysis-text
+        &-list
+          margin-top: 20px
+
+      &__analysis,
+      &__mosaic
+        &-list
+          padding-left: 0
+
+        &-img
+          padding-right: 0
+
+          img
+            width: auto
+
+      &__orc
+        padding: 0
+
+        &-img
+          img
+            margin-top: 0
+
+  @media screen and (max-width: 767px)
+    &__container
+      padding: 30px 15px 0
+
+    &__introduce
+      background-position: top 200px right
+      background-size: contain
+
+      &-item
+        margin-bottom: 30px
+
+        &:nth-child(2)
+          padding-right: 15px
+          padding-left: 15px
+
+      &-model
+        img
+          margin-left: 10px
+
+    &__feature
+      &-container
+        padding: 0 15px
+
+      &-bg
+        padding: 15px
+
+      &-descriptions
+        margin-top: 15px
+
+      &-list
+        margin-top: 15px
+
+      &__analysis,
+      &__mosaic
+        flex-direction: column-reverse
+
+        &-list
+          padding-left: 0
+
+        &-img
+          margin-top: 0
+          padding-right: 0
+          text-align: center
+
+          img
+            width: auto
+
+      &__camera-system
+        flex-direction: column-reverse
+        padding: 0
+
+        &-list
+          width: 100%
+
+        &-img
+          margin-top: 0
+          width: 100%
+
+      &__analysis-text
+        &-img
+          margin-top: 0
+
+      &__orc
+        padding: 0
+
+        img
+          margin-top: 0
+
+    .img-center
+      text-align: center
+
+      img
+        width: auto
+
+    &__advisory
+      &-content
+        padding: 60px 15px
+
+        p
+          font-size: 18px
+
+      &-btn
+        a
+          font-size: 18px
