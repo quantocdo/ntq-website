@@ -76,9 +76,11 @@
           if (navbarPosition > (bannerContentPosition - 130)) {
             $('.alter-navbar').find('.js-logo').attr('src', '<%= @__asset('img/logo.png') %>');
             $('.alter-navbar').removeClass('bg-transparent');
+            $('.header .navbar-toggle .icon-bar').css('background-color','#1668b2');
           } else {
             $('.alter-navbar').find('.js-logo').attr('src', '<%= @__asset('img/logo-white.png') %>');
             $('.alter-navbar').addClass('bg-transparent');
+            $('.header .navbar-toggle .icon-bar').css('background-color','#fff');
           }
         });
       }

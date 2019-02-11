@@ -6,7 +6,8 @@
 
   &__banner
     position: relative
-    height: 100vh
+    height: 102vh
+    overflow: hidden
 
     &-background
       filter: brightness(85%)
@@ -29,14 +30,13 @@
       h3
         text-transform: uppercase
         font-family: robotoMedium
-        font-weight: 400
+        font-weight: 600
         letter-spacing: 1.5px
         margin: 20px 0
         font-size: 40px
 
       h4
         font-family: robotoLight
-        font-weight: 300
         letter-spacing: 3px
         margin: 20px 0
         font-size: 46px
@@ -49,6 +49,7 @@
       font-family: kozukaGothicBold
       font-size: 30px
       text-transform: uppercase
+      font-weight: 600
 
     p
       font-family: kozukaGothicRegular
@@ -171,7 +172,7 @@
         font-family: kozukaGothicRegular
         font-size: 18px
         font-weight: 600
-        margin: 25px 0 5px
+        margin: 30px 0 10px
         letter-spacing: 1.5px
 
       p
@@ -224,7 +225,7 @@
     
     &-item
       text-align: center
-      padding: 30px 50px
+      padding: 35px 50px
 
       &:nth-child(2), &:nth-child(3)
         background-color: #f4f4f4
@@ -232,6 +233,7 @@
       h4
         font-family: kozukaGothicRegular
         font-size: 18px
+        margin-top: 30px
         margin-bottom: 0
 
       p
@@ -352,14 +354,14 @@
         background-size: cover
 
   &__news
-    padding: 30px 0 60px
+    padding: 50px 0 60px
 
     .container
       position: relative
 
     .home__btn-view-more
       position: absolute
-      top: 40px
+      top: 10px
       right: 15px
       color: #003663
       font-family: kozukaGothicMedium
@@ -368,6 +370,7 @@
 
     &-item
       display: flex
+      align-items: center
       border-bottom: 1px dashed #003663
       font-size: 14px
       font-family: robotoRegular
@@ -390,7 +393,7 @@
         border-top: 1px dashed #003663
 
     &-img-wrapper
-      height: 263px
+      height: 305px
       background-repeat: no-repeat
       background-size: cover
       background-position: center
@@ -481,7 +484,7 @@
           width: 85%
 
       &-img-wrapper
-        height: 212px
+        height: 256px
 
   @media screen and (min-width: 768px) and (max-width: 991px)
     &__banner
@@ -574,7 +577,7 @@
     &__news
       &-item
         p
-          margin: 12px 0
+          margin: 10px 0
           width: 15%
 
         a
@@ -583,21 +586,22 @@
           width: 85%
 
       &-img-wrapper
-        height: 212px
+        height: 235px
 
   @media screen and (max-width: 767px)
     &__banner
       height: 425px
 
       &-content
-        width: calc(100vw - 30px)
-        bottom: 40px
+        width: 100%
+        padding: 0 20px
+        bottom: 20px
 
         h3
           font-size: 18px
 
         h4
-          font-size: 22px
+          font-size: 18px
 
     &__heading
       margin-bottom: 20px
@@ -618,12 +622,13 @@
       text-align: center
 
       .home__heading
+        text-shadow: 0 0 1px #fff
+        
         p
           width: 100%
 
       .row
-        margin-top: 35px
-      
+        margin-top: 50px
 
       &-video
         img
@@ -738,13 +743,13 @@
           margin: 0 10px
 
     &__news
-      padding: 20px 0 80px
+      padding: 20px 0 60px
 
       .home__btn-view-more
         top: initial
         right: initial
         left: 50%
-        bottom: -58px
+        bottom: -30px
         transform: translateX(-50%)
 
       &-item

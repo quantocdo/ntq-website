@@ -71,37 +71,37 @@ export const routes = [ {
     get: controllers.successStories.get
   }
 }, {
-  path: '/projects',
+  path: '/projects.html',
   methods: {
     get: controllers.projects.get
   }
 }, {
-  path: '/about-us',
+  path: '/about-us.html',
   methods: {
     get: controllers.aboutUs.get
   }
 }, {
-  path: '/contact-new',
+  path: '/contact-new.html',
   methods: {
     get: controllers.contactNew.get
   }
 }, {
-  path: '/service-ai',
+  path: '/service-ai.html',
   methods: {
     get: controllers.serviceAI.get
   }
 }, {
-  path: '/rnd',
+  path: '/rnd.html',
   methods: {
     get: controllers.rnd.get
   }
 }, {
-  path: '/recruitment',
+  path: '/recruitment.html',
   methods: {
     get: controllers.recruitment.get
   }
 }, {
-  path: '/service',
+  path: '/service.html',
   methods: {
     get: controllers.service.get
   }

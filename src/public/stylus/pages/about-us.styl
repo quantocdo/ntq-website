@@ -5,7 +5,7 @@
     & p
       color: #fff
       font-size: 72px
-      line-height: 255px
+      line-height: 254px
       margin: 0
       font-family: kozukaGothicBold
 
@@ -19,12 +19,12 @@
 
   &__strategic
     background-color: #f4f4f4
-    padding-top: 65px
+    padding: 60px 0 30px;
 
     &--title
       font-size: 36px
       margin-top: -15px
-      margin-bottom: -35px
+      margin-bottom: 0
       font-family: kozukaGothicBold
 
     &--item
@@ -44,12 +44,13 @@
 
       &-total
         font-size: 36px
-        margin-top: 5px
-        margin-bottom: -8px
+        margin-top: 100px
+        margin-bottom: 20px
         font-family: kozukaGothicBold
 
       &-policy
         margin-top: 0
+        margin-bottom: 40px
         font-size: 24px
 
       &-detail
@@ -57,6 +58,8 @@
         position: relative
         font-size: 18px
         font-family: kozukaGothicRegular
+        padding: 8px 0
+        line-height: 26px
 
         &:before
           content: ""
@@ -73,6 +76,9 @@
         margin: auto auto
         padding-left: 15px
         padding-right: 15px
+      
+  &__introduce
+    padding: 50px 0 20px
 
   &__introduce-title
     font-size: 24px
@@ -98,9 +104,10 @@
         padding-top: 100px
 
     &-item
-      margin: 30px auto
+      margin: 22px auto
       display: block
       font-family: kozukaGothicRegular
+      line-height: 24px
 
     &-name
       font-weight: 600
@@ -144,6 +151,10 @@
         text-align: center
 
   @media screen and (max-width: 767px)
+    & .masthead-wrapper
+      & p
+        line-height: 154px
+
     & .masthead-wrapper
       & p
         font-size: 36px
