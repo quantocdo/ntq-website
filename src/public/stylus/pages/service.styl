@@ -7,7 +7,6 @@
       font-size: 72px
       line-height: 255px
       margin: 0
-      font-family: kozukaGothicBold
 
   &__bgr
     width: 100%
@@ -21,23 +20,28 @@
     padding-right: 60px
 
     &-title
-      margin-top: 0
+      margin-bottom: 50px
 
     &-content
+      margin-bottom: 50px
+
       p
-        font-family: kozukaGothicRegular
         font-size: 18px
         text-align: justify
 
   &__title
-    font-family: kozukaGothicRegular
     font-size: 24px
     text-transform: uppercase
     color: #003663
+    margin-top: 30px
+    margin-bottom: 20px
 
   &__offshore
     padding-left: 60px
     padding-right: 60px
+
+    &--wrapper
+      line-height: 20px
 
     &--plan
       display: flex
@@ -48,19 +52,17 @@
         position: relative
 
       &-content
-        border: #003663 1px dashed
+        border: 1px dashed #003663
         border-right: none
-        width: 160px
-
-      &-content
+        padding: 18px
         display: flex
         justify-content: center
 
         &:last-child
-          border-right: #003663 1px dashed
+          border-right: 1px dashed #003663
 
         & img
-          width: 36px
+          width: 30px
           height: auto
           position: absolute
           top: 50%
@@ -68,18 +70,15 @@
 
       &-item
         font-size: 14px
-        font-family: kozukaGothicRegular
         color: #003663
         margin-bottom: 0
-        margin-left: 45px
+        margin-left: 40px
 
       &-detail
         font-size: 14px
-        font-family: kozukaGothicBold
         color: #003663
         font-weight: 600
-        margin-top: -10px
-        margin-left: 45px
+        margin-left: 40px
 
     &-detail
       margin-top: 30px
@@ -89,9 +88,12 @@
 
     &-description
       font-size: 18px
-      font-family: kozukaGothicRegular
       margin-bottom: 20px
       list-style: none
+      line-height: 28px
+
+      &:first-child:before
+        padding: 1px 14px 3px
 
     &-swat
       background-repeat: no-repeat
@@ -113,9 +115,10 @@
       color: #fff
       text-align: center
       position: relative
-      font-family: kozukaGothicRegular
       border-radius: 8px
       cursor: pointer
+      padding: 15px 0
+      line-height: 26px
 
       &:hover
         h3
@@ -153,15 +156,10 @@
       & h3
         font-size: 18px
         margin-bottom: 0
-        font-weight: 400
-        margin-top: 8px
         transition: .3s
 
       & h5
         font-size: 12px
-        margin-top: 0
-        font-weight: 400
-        margin-bottom: 8px
 
   &__content
     display: flex
@@ -177,10 +175,8 @@
         font-size: 18px
         color: #003663
         margin: 0
-        font-family: kozukaGothicBold
 
         &:before
-          font-weight: 700
           color: #fff
           background-image: linear-gradient(to right, #11bdbd, #b0e04e 85%)
           border-radius: 50%
@@ -189,17 +185,17 @@
           width: 46px
           height: 46px
           text-align: center
-          line-height: 50px
+          line-height: 46px
           margin-right: 12px
 
       & h4
-        font-family: kozukaGothicRegular
         font-size: 14px
-        margin-bottom: 0
+        margin-top: 15px
+        line-height: 22px
 
     &--country
-      margin-top: 60px
-      margin-bottom: 40px
+      margin-top: 35px
+      margin-bottom: 20px
       padding-left: 35px
       padding-right: 35px
 
@@ -234,14 +230,12 @@
 
   & .content
     &__title
-      font-family: kozukaGothicBold
       font-size: 18px
       color: #003663
       margin-top: -37px
       margin-left: 55px
 
     &__detail
-      font-family: kozukaGothicRegular
       font-size: 14px
 
   &__agreement
@@ -273,7 +267,6 @@
 
         & h2
           font-size: 24px
-          font-family: kozukaGothicRegular
           font-weight: 400
           position: relative
 
@@ -288,10 +281,12 @@
             top: 40%
 
       &-content
-        padding-right: 40px
+        padding: 20px 40px 0
+        line-height: 26px
 
         & li
           list-style: none
+          margin-bottom: 10px
 
           &:first-child h4
             margin-left: 0
@@ -300,15 +295,17 @@
               background-image: none
 
           & h3
-            font-size: 16px
-            font-family: kozukaGothicRegular
+            font-size: 18px
             font-weight: 600
-            color: #003663
+            color: #000
             margin-bottom: 0
+            transition: .3s
+
+            &:hover
+              color: #003663
 
           & h4
             font-size: 14px
-            font-family: kozukaGothicRegular
             margin-top: 0
             margin-bottom: 0
             position: relative
@@ -334,7 +331,6 @@
 
       p
         font-size: 23px
-        font-family: kozukaGothicMedium
         line-height: 48px
         text-align: center
         color: #fff
@@ -349,8 +345,8 @@
         color: #003663
         padding: 10px 55px
         border-radius: 8px
-        font-family: kozukaGothicBold
         font-size: 24px
+        display: inline-block
 
   @media screen and (min-width: 992px) and (max-width: 1199px)
     &__step

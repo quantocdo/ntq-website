@@ -13,8 +13,10 @@
     <% include 'partials/favicon' %>
 
     <!-- stylesheet imports -->
-    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Raleway'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">				
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <% content 'head_end' %>
@@ -32,6 +34,7 @@
   <% content %>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
   <script src="<%= @__asset('layout.js') %>"></script>
 
@@ -62,6 +65,59 @@
           $('#content-nav').removeClass('is-active');
           $('html').removeClass('disable-scroll');
         }
+      });
+
+      if ( $(window).width() >= 768 ) {
+        $('.js-dropdown').on('mouseover', function() {
+          $(this).find('.js-dropdown-menu').show();
+        }).on('mouseout', function() {
+          $(this).find('.js-dropdown-menu').hide();
+        });
+      }
+
+      $('.js-reason-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false
+      });
+
+      $('.js-rnd-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        centerMode: true,
+        mobileFirst: true,
+        responsive: [{
+          breakpoint: 991,
+          settings: "unslick"
+        }]
+      });
+
+      $('.js-team-detail').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        infinite: true,
+        fade: true,
+        asNavFor: '.js-team-thumnail'
+      });
+
+      $('.js-team-thumnail').slick({
+        slidesToShow: 2,
+        infinite: true,
+        slidesToScroll: 1,
+        asNavFor: '.js-team-detail',
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true,
+        arrows: true
+      });
+
+      $('.js-rnd-item').on('click', function () {
+        var bg = $(this).data('background');
+        $('.js-rnd-background').css('background-image', 'url(' + bg + ')');
       });
 
       $('.js-home').parent('.site-content').siblings('.header').addClass('alter-navbar');

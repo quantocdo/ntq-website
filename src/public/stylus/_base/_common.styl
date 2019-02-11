@@ -16,6 +16,9 @@ a
   transition: .3s
   color: #003663
 
+  &:hover
+    text-decoration: none
+
 p
   line-height: 26px
 
@@ -52,11 +55,9 @@ table
   border: none
   outline: none
   text-shadow: 0 0 1px rgba(#128c87, 0.3)
-  font-family: robotoRegular
 
   &--japan
     letter-spacing: 1.5px
-    font-family: kozukaGothicBold
   
 
   &--square
@@ -64,7 +65,6 @@ table
 
   &--circle
     border-radius: 50px
-    font-family: kozukaGothicRegular
 
   &:hover
     color: #003663
@@ -84,12 +84,11 @@ table
       counter-increment: number
       content: counter(number, decimal-leading-zero)
       font-size: 30px
-      font-family: kozukaGothicBold
       color: #fff
       background-image: linear-gradient(to right, #11bdbd, #b0e04e 85%)
       border-radius: 50%
       display: inline-block
-      padding: 4px 13px 0
+      padding: 1px 13px 3px
       line-height: 56px
       margin-top: 6px
       margin-left: -80px
@@ -108,12 +107,14 @@ table
   display: flex
   flex-wrap: wrap
 
+@media screen and (max-width: 991px)
+  .btn
+    padding: 12px 12px 10px
+    font-size: 20px
+
 @media screen and (max-width: 767px)
   .masthead
     height: 154px
     line-height: 154px
-    
-  .btn
-    padding: 12px 12px 9px
   
 

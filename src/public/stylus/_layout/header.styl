@@ -2,7 +2,6 @@
   padding: 20px 0
   background-color: #fff
   border-bottom: 1px solid #128c87
-  font-family: kozukaGothicRegular
   position: fixed
   top: 0
   left: 0
@@ -44,6 +43,9 @@
           color: #003663 !important
           background-color: transparent
 
+        &:focus
+          background-color: transparent
+
       &.dropdown:not(.header__language)
         .dropdown-menu
           a
@@ -59,6 +61,10 @@
           &:hover,
           &:focus
             background-color: transparent
+
+    .dropdown-toggle
+      &:hover
+        color: #1668b2 !important
 
     .header__language
       &-item
@@ -120,13 +126,13 @@
     &:before
       content: ''
       position: absolute
-      top: -6px
+      top: -6.5px
       left: 50%
       transform: translate(-50%) rotate(45deg)
       width: 13px
       height: 13px
       background-color: #fff
-      box-shadow: -1px -1px 1px rgba(15, 15, 15, 0.44)
+      box-shadow: -1px -1px 0 rgba(15, 15, 15, 0.25)
 
     &.header__language-select
       padding: 0
@@ -135,28 +141,26 @@
       left: 2px
       transform: none
 
-      &::before
+      &:before
         content: none
 
       .header__language-item
         margin-top: -7px
 
-  .dropdown-toggle
-    .caret
-      display: none
-
   .dropdown-backdrop
     display: none
 
   @media screen and (max-width: 767px)
-    padding: 28px 0 20px
+    padding: 20px 0 12px
 
     .navbar-toggle
       padding-right: 0
       padding-left: 0
+      margin-top: 5px
+      margin-bottom: 5px
 
       .icon-bar
-        background-color: #1668b2
+        background-color: #fff
 
     .navbar-header
       display: flex
@@ -197,7 +201,6 @@
       left: 0
       transform: none
       padding-left: 25px
-      margin-top: 10px
 
       &:before
         content: none
@@ -210,7 +213,7 @@
       li
         a
           padding-left: 0
-          margin-top: 10px
+          margin-top: 15px
           height: 40px
           line-height: 40px
           color: #2a75b9 !important
@@ -224,16 +227,12 @@
         a
           font-size: 18px
 
-          &.dropdown-active
-            font-size: 24px
-            font-weight: 600
-
     .dropdown-toggle
       .caret
         display: inline-block
-        border-right: 7px solid transparent
-        border-left: 7px solid transparent
-        border-top: 7px dashed
+        border-right: 6px solid transparent
+        border-left: 6px solid transparent
+        border-top: 6px dashed
 
     &__sub-menu
       li
@@ -271,7 +270,7 @@
     &__nav
       li
         a
-          padding: 0 6px
+          padding: 0 4px
           font-size: 13px
           height: 50px
           line-height: 50px
@@ -303,6 +302,11 @@
     li
       a
         color: #fff
+
+    @media screen and (min-width: 768px)
+      .dropdown-toggle
+          &:hover
+            color: #fff !important
 
     .header__language
       .caret
