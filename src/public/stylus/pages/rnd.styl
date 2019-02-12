@@ -7,7 +7,6 @@
       font-size: 60px
       color: #ffffff
       text-transform: uppercase
-      font-family: kozukaGothicRegular
 
   &__introduce
     height: 975px
@@ -23,11 +22,9 @@
       float: right
       color: #003663
       font-size: 18px
-      font-family: kozukaGothicRegular
 
     &-title
       font-size: 60px
-      font-family: robotoRegular
       margin: 0
 
     &-description
@@ -37,9 +34,9 @@
       margin-top: 35px
 
       &__title
-        font-family: kozukaGothicBold
         font-size: 24px
-        margin: 0
+        margin: 10px 0
+        font-weight: 600
 
       &__description
         margin: 0
@@ -51,47 +48,44 @@
     background: #003663
     color: #ffffff
     text-align: center
-    font-size: 32px
-    padding: 0 20px 75px
+    font-size: 30px
+    padding: 40px 20px 60px
     border-radius: 10px
     position: relative
 
     &__title
-      font-family: kozukaGothicBold
       margin-bottom: 0
 
     &__description
-      font-family: kozukaGothicRegular
       line-height: 48px
       margin-top: 20px
 
     &__btn
       position: absolute
       bottom: -30px
-      font-family: kozukaGothicBold
       padding-right: 20px
       width: 100%
 
       a
         background-image: linear-gradient(to right, #11bdbd, #b0e04e 85%)
-        color: #ffffff
+        color: #fff
         display: inline-block
-        padding: 5px 32px
+        padding: 14px 32px
         border-radius: 10px
 
   &__team
     padding: 50px 0
 
     &-title
-      font-size: 60px
-      font-family: robotoBold
+      font-size: 48px
+      font-weight: 600
       color: #003663
       margin-bottom: 0
       margin-top: 75px
+      margin-bottom: 15px
 
     &-description
       font-size: 18px
-      font-family: kozukaGothicRegular
       color: #003663
       margin: 0
       margin-bottom: 115px
@@ -101,11 +95,10 @@
       margin-left: -10px
 
       &__item
-        &.slick-slide
-          height: 165px
-          outline: none
-          padding-right: 10px
-          padding-left: 10px
+        height: 165px
+        outline: none
+        padding-right: 10px
+        padding-left: 10px
 
         img
           width: 100%
@@ -124,7 +117,7 @@
 
     & .slick-prev
       top: -25px
-      right: 40px
+      right: 30px
       left: initial
 
       &:before
@@ -132,7 +125,7 @@
 
     & .slick-next
       top: -25px
-      right: 10px
+      right: 0
 
       &:before
         content: url('../../../public/img/icon-arrow-right.png')
@@ -141,10 +134,9 @@
     background-color: #f1f1f3
 
     &-title
-      padding: 5px 15px 0
+      margin: 30px 12px
       color: #003663
       font-size: 24px
-      font-family: kozukaGothicBold
 
       &--own
         padding-top: 0
@@ -176,12 +168,19 @@
           &.slick-slide
             height: 535px
 
+      & .slick-prev
+        right: 35px
+
+      & .slick-next
+        right: 5px
+
   @media screen and (min-width: 768px) and (max-width: 991px)
     &__banner
       &-title
         font-size: 60px
         text-align: center
-        line-height: initial
+        line-height: 66px;
+        padding: 60px 0;
 
     &__introduce
       background-size: auto
@@ -189,11 +188,12 @@
       &-content
         text-shadow: 0 0 10px #000
         width: 100%
-        color: #FFFFFF
+        color: #fff
         padding-top: 40px
 
       &-title
         font-size: 36px
+        margin-bottom: 15px
 
       &-reason
         margin-top: 0
@@ -254,12 +254,14 @@
 
       &-title
         font-size: 36px
+        margin-bottom: 15px
 
       &-reason
         margin-top: 0
 
         &__title
           font-size: 18px
+          line-height: 26px
 
         &__description
           font-size: 16px
@@ -271,10 +273,16 @@
       width: 100%
       font-size: 18px
       margin-top: 0
-      padding: 0 20px 20px
+      padding: 30px 20px
+
+      &__description
+        line-height: 36px
 
       &__btn
         bottom: -20px
+        padding-right: 0
+        left: 50%
+        transform: translateX(-50%)
 
     &__team
       &-title
@@ -298,13 +306,15 @@
 
       & .slick-next
         top: 0
+        right: 5px
 
       & .slick-prev
         top: 0
+        right: 35px
 
     &__video
       iframe
-        height: 250px
+        height: 158px
 
       &-item
         margin-bottom: 25px

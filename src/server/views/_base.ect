@@ -141,6 +141,25 @@
         });
       }
 
+      var breakpoint = 1262;
+      var introContent = $('.js-introduce-content');
+
+      var fullContent = introContent.html();
+      var shortContent = introContent.html().slice(0, breakpoint);
+
+      introContent.html(shortContent);
+
+      $('.js-see-more').on('click', function() {
+        introContent.toggleClass('open');
+        $('.js-text-see-more').toggleClass('rotate');
+
+        if (introContent.hasClass('open')) {
+          introContent.html(fullContent);
+        } else {
+          introContent.html(shortContent);
+        }
+      });
+
     });
   </script>
 </html>

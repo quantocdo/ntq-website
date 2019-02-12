@@ -6,14 +6,12 @@
       padding-left: 15px
       font-size: 72px
       color: #FFFFFF
-      font-family: kozukaGothicBold
 
   &__description
     padding-top: 50px
 
     &-title
       font-size: 30px
-      font-family: kozukaGothicBold
       color: #003663
 
   &__content
@@ -40,19 +38,17 @@
       font-size: 16px
       padding-left: 0
       color: #003663
-      font-family: kozukaGothicRegular
+      line-height: 22px
 
   &__achievement
     &-title
       font-size: 30px
-      font-family: kozukaGothicBold
       color: #003663
 
     &-subtitle
       font-size: 24px
       color: #003663
-      font-family: kozukaGothicRegular
-      margin-bottom: 12px
+      margin-bottom: 15px
 
     &-list
       margin: 0
@@ -74,7 +70,6 @@
         margin-top: 20px
 
     &-name
-      font-family: kozukaGothicRegular
       font-size: 24px
       color: #003663
       height: 70px
@@ -85,7 +80,6 @@
         padding: 30px 0 20px 0
 
     &-list-item
-      font-family: kozukaGothicRegular
       font-size: 18px
       line-height: 26px
       margin-bottom: 10px
@@ -137,6 +131,10 @@
         font-size: 60px
         text-align: center
 
+    &__description, &__achievement
+      &-title
+        margin-bottom: 20px
+
     &__content
       padding: 0
 
@@ -153,7 +151,7 @@
       padding-top: 25px
 
       &-title
-        margin-bottom: 15px
+        margin-bottom: 20px
 
     &__content
       padding: 0
@@ -169,12 +167,18 @@
         display: block
 
     &__achievement
+      &-title
+        margin-bottom: 20px
+
       &--wrapper
         padding: 15px 0
 
       &-list-img
         & img:nth-child(2)
           margin-top: 15px
+
+      &-sublist-item
+        margin-left: 2px
 
       &-name
         height: auto

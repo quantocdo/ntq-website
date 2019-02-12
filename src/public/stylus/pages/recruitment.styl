@@ -11,7 +11,6 @@
 
   &__introduce
     &-title
-      font-family: robotoRegular
       font-size: 24px
       text-transform: uppercase
       text-align: center
@@ -20,7 +19,6 @@
       font-weight: 400
 
     &-content
-      font-family: robotoRegular
       font-size: 18px
 
       span
@@ -28,12 +26,12 @@
 
   &__see-more
     cursor: pointer
+    margin-top: 20px
 
     h3
       height: 35px
       width: 100%
       text-align: center
-      font-family: robotoRegular
       font-size: 18px
       color: #fff
       line-height: 35px
@@ -63,7 +61,6 @@
 
     &-title
       font-size: 24px
-      font-family: robotoRegular
       color: #003663
       text-align: center
       text-transform: uppercase
@@ -95,21 +92,20 @@
     &-name
       text-align: center
       font-size: 16px
-      font-family: robotoBold
       text-transform: uppercase
+      font-weight: 600
+      margin: 10px 0
 
     &-job
       text-align: center
       color: #c1c1c1
       font-size: 14px
-      font-family: robotoRegular
-      font-weight: 200
+      font-weight: 300
+      margin-bottom: 10px;
 
     &-detail
-      padding-right: 15px
-      padding-left: 15px
+      padding: 0 15px 15px
       font-size: 18px
-      font-family: robotoRegular
       font-weight: 200
       text-align: justify
       margin-bottom: 30px
@@ -120,7 +116,6 @@
 
     &-title
       font-size: 24px
-      font-family: robotoRegular
       color: #003663
       text-align: center
       text-transform: uppercase
@@ -138,31 +133,31 @@
 
       &-title
         font-size: 16px
-        font-family: robotoBold
         text-transform: uppercase
         margin-top: 0
 
       &-time
         color: #b3b3b3
-        font-family: robotoRegular
         font-size: 14px
+        margin: 10px 0
 
       &-description
-        font-family: robotoRegular
         font-size: 18px
 
     & .btn
       font-size: 18px
       padding: 9px 59px
       font-weight: 200
-      margin-top: 3px
+      margin-top: 10px
 
   & .news,
   & .oll-news
     color: #b3b3b3
-    font-family: robotoRegular
     font-size: 16px
     text-transform: uppercase
+
+  &__footer
+    padding: 30px 0
 
   & .news
     h3
@@ -170,6 +165,7 @@
       position: relative
       padding-right: 20px
       cursor: pointer
+      font-weight: 600
 
       &:after
         content: ""
@@ -178,31 +174,27 @@
         background-size: contain
         width: 15px
         height: 15px
-        display: block
-        margin-top: -16px
-        margin-left: 77px
-        position: absolute
-        right: 0
+        display: inline-block
+        vertical-align: -5px
+        margin-left: 10px
 
   & .oll-news
     h3
       position: relative
       padding-right: 20px
-      margin-left: 9px
       cursor: pointer
+      font-weight: 600
 
       &::before
         content: ""
         background-image: url(../../../public/img/arrow-grey.png)
         background-repeat: no-repeat
         background-size: contain
-        position: absolute
-        top: 23px
         width: 15px
         height: 15px
-        display: block
-        margin-top: -16px
-        margin-left: -23px
+        display: inline-block
+        vertical-align: -5px
+        margin-right: 10px
 
   @media screen and (max-width: 991px)
     &__baner
@@ -218,8 +210,8 @@
 
     &__news
       & .btn
-        padding: 0px 35px
-        margin-top: 0
+        padding: 5px 35px
+        margin-top: 10px
 
       &--item
         background-origin: content-box
@@ -272,6 +264,7 @@
         font-size: 18px
 
       & .btn
-        padding: 5px 0
+        margin-top: 10px
+        padding: 10px
         width: 100%
         font-size: 16px

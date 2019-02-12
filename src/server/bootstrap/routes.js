@@ -91,7 +91,7 @@ export const routes = [ {
     get: controllers.serviceAI.get
   }
 }, {
-  path: '/rnd.html',
+  path: '/research-and-development.html',
   methods: {
     get: controllers.rnd.get
   }
@@ -104,6 +104,11 @@ export const routes = [ {
   path: '/service.html',
   methods: {
     get: controllers.service.get
+  }
+}, {
+  path: '/shoptify-partner.html',
+  methods: {
+    get: controllers.shoptifyPartner.get
   }
 } ]
 

@@ -4,7 +4,6 @@
   &__banner
     &-title
       font-size: 72px
-      font-family: kozukaGothicBold
 
   &__container
     padding: 100px 60px 40px 60px
@@ -19,15 +18,14 @@
       color: #003663
       text-align: center
       font-size: 24px
-      font-family: kozukaGothicBold
 
-    &-description
-      font-family: kozukaGothicRegular
+    &-title
+      font-weight: 600
 
     &-detail
       padding-top: 30px
       font-size: 18px
-      font-family: kozukaGothicRegular
+      line-height: 26px
 
     &-achievement
       margin-top: 60px
@@ -44,7 +42,6 @@
       align-items: center
       background-image: linear-gradient(to right, #11bdbd, #b0e04e 85%)
       color: #003663
-      font-family: kozukaGothicMedium
 
       img
         margin-left: 30px
@@ -64,15 +61,15 @@
     &-title
       color: #003663
       font-size: 24px
-      font-family: kozukaGothicBold
-      margin-bottom: 15px
+      margin-bottom: 20px
+      font-weight: 600
+      line-height: 26px
 
     &-list
       font-size: 18px
       color: #003663
       margin: 0
       padding: 0
-      font-family: kozukaGothicRegular
 
     &-item
       list-style-type: none
@@ -87,7 +84,6 @@
         margin-right: 10px
 
     &-descriptions
-      font-family: kozukaGothicRegular
       font-size: 16px
 
     &__accuracy
@@ -111,7 +107,7 @@
 
     &__analysis-text
       &-img
-        margin-top: -60px
+        margin-top: -35px
         width: 100%
 
     &__mosaic,
@@ -145,11 +141,23 @@
 
       p
         font-size: 23px
-        font-family: kozukaGothicMedium
         line-height: 48px
         text-align: center
         color: #fff
         margin-top: 0
+
+    &-btn
+      width: 100%
+      text-align: center
+      margin-top: 40px
+
+      a
+        background-color: #fff
+        color: #003663
+        padding: 10px 55px
+        border-radius: 8px
+        font-size: 24px
+        display: inline-block
 
     &-btn
       width: 100%
@@ -160,7 +168,6 @@
         color: #003663
         padding: 10px 55px
         border-radius: 8px
-        font-family: kozukaGothicBold
         font-size: 24px
 
   @media screen and (min-width: 1200px) and (max-width: 1399px)
@@ -170,6 +177,13 @@
           width: auto
 
   @media screen and (min-width: 992px) and (max-width: 1199px)
+    &__introduce
+      &-model
+        padding: 5px
+
+        img
+          margin-left: 0
+
     &__feature
       &__orc
         &-img
@@ -193,6 +207,9 @@
       background-position: 130% 50%
       background-size: 50%
 
+      &-title
+        margin-bottom: 20px
+
       &-detail
         width: 75%
 
@@ -213,6 +230,7 @@
 
       &-descriptions
         width: 90%
+        line-height: 22px
 
       &__accuracy
         &-list
@@ -243,13 +261,27 @@
           img
             margin-top: 0
 
+    &__advisory
+      &-content
+        padding: 40px
+
+      &-btn
+        margin-top: 25px 
+
   @media screen and (max-width: 767px)
+    &__banner
+      &-title
+        font-size: 36px
+        text-align: center
     &__container
       padding: 30px 15px 0
 
     &__introduce
       background-position: top 200px right
       background-size: contain
+
+      &-title
+        margin-bottom: 20px
 
       &-item
         margin-bottom: 30px
@@ -319,11 +351,14 @@
 
     &__advisory
       &-content
-        padding: 60px 15px
+        padding: 35px 15px
 
         p
           font-size: 18px
+          line-height: 32px
 
       &-btn
+        margin-top: 25px
+
         a
           font-size: 18px

@@ -11,12 +11,10 @@
 
     &-title
       font-size: 72px
-      font-family: kozukaGothicBold
 
     &-adress,
     &-phone
       font-size: 24px
-      font-family: robotoBold
 
     &-adress
       margin-bottom: 40px
@@ -27,7 +25,7 @@
       padding: 50px 0
       color: #003663
       font-size: 24px
-      font-family: kozukaGothicMedium
+      line-height: 36px
 
   .col-centered
     float: none
@@ -40,14 +38,13 @@
 
     &-title
       padding-bottom: 15px
-      font-family: kozukaGothicBold
 
     &-detail
-      font-family: kozukaGothicRegular
       padding-left: 10px
       clear: both
 
     &-checkbox
+      margin: 6px 0
 
       &:nth-child(odd)
         width: 35%
@@ -76,7 +73,6 @@
         font-size: 18px
         color: #003663
         cursor: pointer
-        font-family: kozukaGothicRegular
         font-weight: 400
 
   &__form
@@ -89,7 +85,6 @@
 
     input,
     textarea
-      font-family: kozukaGothicRegular
       height: 50px
       background: #ebebeb
       border-radius: 8px
@@ -109,7 +104,6 @@
       text-align: center
 
     .btn-send
-      font-family: kozukaGothicLight
       font-size: 16.5px
       padding: 10px 52px
       border-radius: 32px
@@ -126,9 +120,10 @@
 
       &-title
         font-size: 60px
+        margin-top: 20px
 
       &-adress
-        margin-bottom: 25px
+        margin-bottom: 15px
 
     &__content
       &-description
@@ -156,13 +151,21 @@
       display: block
       text-align: center
       margin-right: 0
-      padding: 40px 0
+      padding: 23px 0
+      height: auto
+      width: 100vw
+      margin-left: -20px
 
       &-title
-        font-size: 36px
+        font-size: 30px
+        margin-bottom: 10px
 
       &-adress
-        margin-bottom: 10px
+        margin-bottom: 0
+        font-size: 20px
+
+      &-phone
+        font-size: 20px
 
     &__content
       &-description
@@ -174,6 +177,9 @@
 
     &__inquiry
       padding: 0
+
+      &-detail
+        padding-left: 0
 
       &-checkbox
         &:nth-child(odd)

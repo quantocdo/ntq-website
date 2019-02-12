@@ -7,7 +7,6 @@
       font-size: 72px
       line-height: 254px
       margin: 0
-      font-family: kozukaGothicBold
 
   &__content
     padding-left: 60px
@@ -25,12 +24,10 @@
       font-size: 36px
       margin-top: -15px
       margin-bottom: 0
-      font-family: kozukaGothicBold
 
     &--item
       &-title
         font-size: 60px
-        font-family: kozukaGothicBold
 
         &:after
           content: ""
@@ -46,7 +43,6 @@
         font-size: 36px
         margin-top: 100px
         margin-bottom: 20px
-        font-family: kozukaGothicBold
 
       &-policy
         margin-top: 0
@@ -57,7 +53,6 @@
         color: #003663
         position: relative
         font-size: 18px
-        font-family: kozukaGothicRegular
         padding: 8px 0
         line-height: 26px
 
@@ -72,21 +67,19 @@
           position: absolute
 
       &-description
-        // width: 420px
         margin: auto auto
         padding-left: 15px
         padding-right: 15px
       
   &__introduce
-    padding: 50px 0 20px
+    padding-top: 50px
 
   &__introduce-title
     font-size: 24px
     color: #003663
-    margin-bottom: -7px
-    font-family: kozukaGothicRegular
+    margin-bottom: 10px
 
-  & .address:nth-child(1)
+  & .address:first-child
     background-repeat: no-repeat
     background-position: right 0
     background-size: 540px 800px
@@ -97,7 +90,7 @@
     background-size: 540px auto
 
   &__info
-    &:nth-child(1)
+    &:first-child
       margin-top: -96px
 
       & .about-us__introduce-title
@@ -106,17 +99,20 @@
     &-item
       margin: 22px auto
       display: block
-      font-family: kozukaGothicRegular
       line-height: 24px
 
     &-name
       font-weight: 600
       width: 160px
       font-size: 16px
-      font-family: kozukaGothicRegular
+      text-shadow: 0 0 1px #fff
 
     &-detail
       font-size: 16px
+      text-shadow: 0 0 1px #fff
+
+    table
+      margin-bottom: 20px
 
   & .icon-sales
     &:before
@@ -150,7 +146,26 @@
         font-size: 60px
         text-align: center
 
+    &__info
+      background: none !important
+
   @media screen and (max-width: 767px)
+    &__info
+      background: none !important
+
+      tr
+        margin: 15px auto
+
+      &-name
+        display: none
+
+      &-detail:before
+        content: attr(data-title)
+        font-size: 16px
+        font-weight: 600
+        display: block
+        margin-bottom: 3px
+
     & .masthead-wrapper
       & p
         line-height: 154px
@@ -162,6 +177,17 @@
 
     &__content
       padding: 0 30px
+
+    &__strategic
+      .col-sm-6:last-child
+        .about-us__strategic--item-title
+          margin-top: 45px
+
+          &:after
+            top: 124px
+
+      &--item-total
+        margin-top: 80px
 
   @media screen and (max-width: 479px)
     &__strategic

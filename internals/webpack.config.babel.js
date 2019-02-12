@@ -84,6 +84,9 @@ export default {
     ],
     recruitment: [
       './src/public/stylus/pages/recruitment.styl'
+    ],
+    'shoptify-partner': [
+      './src/public/stylus/pages/shoptify-partner.styl'
     ]
   },
   output: {
