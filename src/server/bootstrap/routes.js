@@ -106,9 +106,9 @@ export const routes = [ {
     get: controllers.service.get
   }
 }, {
-  path: '/shoptify-partner.html',
+  path: '/shopify-partner.html',
   methods: {
-    get: controllers.shoptifyPartner.get
+    get: controllers.shopifyPartner.get
   }
 } ]
 

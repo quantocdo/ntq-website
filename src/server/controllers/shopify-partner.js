@@ -2,6 +2,6 @@ export default {
   get(req, res, next) {
     const { _locale } = res.locals
 
-    res.render(`pages/shoptify-partner`)
+    res.render(`pages/shopify-partner`)
   }
 }
