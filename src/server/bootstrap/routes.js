@@ -110,6 +110,11 @@ export const routes = [ {
   methods: {
     get: controllers.shopifyPartner.get
   }
+}, {
+  path: '/download-new.html',
+  methods: {
+    get: controllers.downloadNew.get
+  }
 } ]
 
 const notFound = (req, res, next) => {

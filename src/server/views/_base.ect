@@ -1,165 +1,190 @@
 <!doctype html>
 <html lang="<%= @_locale %>">
-  <head>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <title><%= @__('WEBSITE_TITLE') %></title>
+	<head>
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<title><%= @__('WEBSITE_TITLE') %></title>
 
-    <% include 'partials/meta' %>
-    <% include 'partials/favicon' %>
+		<% include 'partials/meta' %>
+		<% include 'partials/favicon' %>
 
-    <!-- stylesheet imports -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+		<!-- stylesheet imports -->
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <% content 'head_end' %>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<% content 'head_end' %>
 
-    <% if @_locale == 'ja': %>
-    <style>
-      body {
-        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-      }
-    </style>
-    <% end %>
+		<% if @_locale == 'ja': %>
+		<style>
+			body {
+				font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+			}
+		</style>
+		<% end %>
 
-    <% include 'partials/ga' %>
-  </head>
-  <% content %>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+		<% include 'partials/ga' %>
+	</head>
+	<% content %>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.min.js"></script>
 
-  <script src="<%= @__asset('layout.js') %>"></script>
+	<script src="<%= @__asset('layout.js') %>"></script>
 
-  <script>
-    ;(function() {
-      var menu = document.getElementById('fullscreen-menu')
+	<script>
+		;(function() {
+			var menu = document.getElementById('fullscreen-menu')
 
-      if (!menu) return;
+			if (!menu) return;
 
-      var prevent = function(event) {
-        if (event.target === menu) {
-          event.preventDefault()
-        }
-      }
+			var prevent = function(event) {
+				if (event.target === menu) {
+					event.preventDefault()
+				}
+			}
 
-      menu.addEventListener('click', prevent)      
-    })();
+			menu.addEventListener('click', prevent)      
+		})();
 
-    $(document).ready(function () {
+		$(document).ready(function () {
 
-      $('#open-nav').click(function () {
-        $('#content-nav').addClass('is-active');
-        $('html').addClass('disable-scroll');
-      });
+			$('#open-nav').click(function () {
+				$('#content-nav').addClass('is-active');
+				$('html').addClass('disable-scroll');
+			});
 
-      $(document).on('touchstart',function(event){
-        if (event.target == $('#content-nav')[0]) {
-          $('#content-nav').removeClass('is-active');
-          $('html').removeClass('disable-scroll');
-        }
-      });
+			$(document).on('touchstart',function(event){
+				if (event.target == $('#content-nav')[0]) {
+					$('#content-nav').removeClass('is-active');
+					$('html').removeClass('disable-scroll');
+				}
+			});
 
-      if ( $(window).width() >= 768 ) {
-        $('.js-dropdown').on('mouseover', function() {
-          $(this).find('.js-dropdown-menu').show();
-        }).on('mouseout', function() {
-          $(this).find('.js-dropdown-menu').hide();
-        });
-      }
+			if ( $(window).width() >= 768 ) {
+				$('.js-dropdown').on('mouseover', function() {
+					$(this).find('.js-dropdown-menu').show();					
+				}).on('mouseout', function() {
+					$(this).find('.js-dropdown-menu').hide();					
+				});
+			}
 
-      $('.js-reason-slider').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        arrows: false
-      });
+			$('.download__item').on('mouseover', function() {
+				$(this).parent().css('list-style','inside url(<%= @__asset('img/icon-note-blue.png') %>)');
+			}).on('mouseout', function() {
+				$(this).parent().css('list-style','inside url(<%= @__asset('img/icon-note.png') %>)');
+			});
 
-      $('.js-rnd-slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: false,
-        centerMode: true,
-        mobileFirst: true,
-        responsive: [{
-          breakpoint: 991,
-          settings: "unslick"
-        }]
-      });
+			$('.js-reason-slider').slick({
+				infinite: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: true,
+				arrows: false
+			});
 
-      $('.js-team-detail').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        infinite: true,
-        fade: true,
-        asNavFor: '.js-team-thumnail'
-      });
+			$('.js-rnd-slider').slick({
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				arrows: false,
+				centerMode: true,
+				mobileFirst: true,
+				responsive: [{
+					breakpoint: 991,
+					settings: "unslick"
+				}]
+			});
 
-      $('.js-team-thumnail').slick({
-        slidesToShow: 2,
-        infinite: true,
-        slidesToScroll: 1,
-        asNavFor: '.js-team-detail',
-        dots: false,
-        centerMode: false,
-        focusOnSelect: true,
-        arrows: true
-      });
+			$('.js-team-detail').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: false,
+				infinite: true,
+				fade: true,
+				asNavFor: '.js-team-thumnail'
+			});
 
-      $('.js-rnd-item').on('click', function () {
-        var bg = $(this).data('background');
-        $('.js-rnd-background').css('background-image', 'url(' + bg + ')');
-      });
+			$('.js-team-thumnail').slick({
+				slidesToShow: 2,
+				infinite: true,
+				slidesToScroll: 1,
+				asNavFor: '.js-team-detail',
+				dots: false,
+				centerMode: false,
+				focusOnSelect: true,
+				arrows: true
+			});
 
-      $('.js-home').parent('.site-content').siblings('.header').addClass('alter-navbar');
-      $('.alter-navbar').addClass('bg-transparent');
-      $('.alter-navbar').find('.js-logo').attr('src', '<%= @__asset('img/logo-white.png') %>');
+			$('.js-rnd-item').on('click', function () {
+				var bg = $(this).data('background');
+				$('.js-rnd-background').css('background-image', 'url(' + bg + ')');
+			});
 
-      if ( $('.header').hasClass('alter-navbar') ) {
-        $(document).on('scroll', function () {
-          var navbarPosition = $('.alter-navbar').offset().top;
-          var bannerContentPosition = $('.js-banner-content').offset().top;
+			$('.js-home').parent('.site-content').siblings('.header').addClass('alter-navbar');
+			$('.alter-navbar').addClass('bg-transparent');
+			$('.alter-navbar').find('.js-logo').attr('src', '<%= @__asset('img/logo-white.png') %>');
 
-          if (navbarPosition > (bannerContentPosition - 130)) {
-            $('.alter-navbar').find('.js-logo').attr('src', '<%= @__asset('img/logo.png') %>');
-            $('.alter-navbar').removeClass('bg-transparent');
-            $('.header .navbar-toggle .icon-bar').css('background-color','#1668b2');
-          } else {
-            $('.alter-navbar').find('.js-logo').attr('src', '<%= @__asset('img/logo-white.png') %>');
-            $('.alter-navbar').addClass('bg-transparent');
-            $('.header .navbar-toggle .icon-bar').css('background-color','#fff');
-          }
-        });
-      }
+			if ( $('.header').hasClass('alter-navbar') ) {
+				$(document).on('scroll', function () {
+					var navbarPosition = $('.alter-navbar').offset().top;
+					var bannerContentPosition = $('.js-banner-content').offset().top;
 
-      var breakpoint = 1262;
-      var introContent = $('.js-introduce-content');
+					if (navbarPosition > (bannerContentPosition - 130)) {
+						$('.alter-navbar').find('.js-logo').attr('src', '<%= @__asset('img/logo.png') %>');
+						$('.alter-navbar').removeClass('bg-transparent');
+						$('.header .navbar-toggle .icon-bar').css('background-color','#1668b2');
+					} else {
+						$('.alter-navbar').find('.js-logo').attr('src', '<%= @__asset('img/logo-white.png') %>');
+						$('.alter-navbar').addClass('bg-transparent');
+						$('.header .navbar-toggle .icon-bar').css('background-color','#fff');
+					}
+				});
+			}
 
-      var fullContent = introContent.html();
-      var shortContent = introContent.html().slice(0, breakpoint);
+			var breakpoint = 1262;
+			var introContent = $('.js-introduce-content');
 
-      introContent.html(shortContent);
+			var fullContent = introContent.html();
+			var shortContent = introContent.html().slice(0, breakpoint);
 
-      $('.js-see-more').on('click', function() {
-        introContent.toggleClass('open');
-        $('.js-text-see-more').toggleClass('rotate');
+			introContent.html(shortContent);
 
-        if (introContent.hasClass('open')) {
-          introContent.html(fullContent);
-        } else {
-          introContent.html(shortContent);
-        }
-      });
+			$('.js-see-more').on('click', function() {
+				introContent.toggleClass('open');
+				$('.js-text-see-more').toggleClass('rotate');
 
-    });
-  </script>
+				if (introContent.hasClass('open')) {
+					introContent.html(fullContent);
+				} else {
+					introContent.html(shortContent);
+				}
+			});
+
+			$('#download-form').validate({
+				rules: {
+					email: {
+						required: true,
+						email: true
+					},
+					name: {
+						required: true,
+					},
+					company: {
+						required: true,
+					},
+					deploy: {
+						required: true,
+					}
+				},
+			})
+
+		});
+	</script>
 </html>

@@ -107,6 +107,51 @@ table
   display: flex
   flex-wrap: wrap
 
+.bg-blue
+  background-color: #52c5d0 !important
+
+.bg-red
+  background-color: #f16365 !important
+
+.bg-orange
+  background-color: #fbc03e !important
+
+.bg-violet
+  background-color: #a48d9b !important
+
+.square
+  &:before
+    content: ''
+    width: 17px
+    height: 17px
+    margin-right: 15px
+    display: inline-block
+    vertical-align: -1px
+
+  &-blue
+    color: #52c5d0 !important
+
+    &:before
+      background-color: #52c5d0
+
+  &-red
+    color: #f16365 !important
+
+    &:before
+      background-color: #f16365
+
+  &-orange
+    color: #fbc03e !important
+
+    &:before
+      background-color: #fbc03e
+
+  &-violet
+    color: #a48d9b !important
+
+    &:before
+      background-color: #a48d9b    
+
 @media screen and (max-width: 991px)
   .btn
     padding: 12px 12px 10px

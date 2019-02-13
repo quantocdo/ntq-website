@@ -2,7 +2,7 @@
 
 .landing
 	background-color: #f6f6f6
-	margin-top: -101px
+	margin-top: -100px
 
 	&__baner
 		background-image: url(../../../public/img/landingpage-baner.jpg)
@@ -153,10 +153,12 @@
 		&-detail
 			font-size: 18px
 			margin-top: 25px
+			line-height: 22px
 
 		&-title
 			font-size: 35px
 			margin-bottom: 25px
+			line-height: 34px
 
 		&-btn
 			cursor: pointer
@@ -354,13 +356,12 @@
 			margin-top: 0
 
 			&-item
-				height: 170px
+				height: 300px
 
 				&--content
-					margin-top: 30px
+					margin-top: 20px
 					margin-bottom: 30px
-					padding-left: 40px
-					padding-right: 40px
+					padding: 0
 					text-align: center
 
 			&-title
@@ -381,11 +382,17 @@
 
 			&-btn
 				width: auto
+				margin-top: 30px
 
 				a
 					padding: 10px 40px
 
 		.overlay
-			left: 0
-			right: 0
-			height: 170px
+			height: 300px
+
+	@media screen and (max-width: 479px)
+		&__service-item
+			height: 200px
+
+			.overlay
+				height: 200px

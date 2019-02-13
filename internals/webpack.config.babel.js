@@ -87,6 +87,9 @@ export default {
     ],
     'shopify-partner': [
       './src/public/stylus/pages/shopify-partner.styl'
+    ],
+    'download-new': [
+      './src/public/stylus/pages/download-new.styl'
     ]
   },
   output: {

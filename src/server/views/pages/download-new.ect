@@ -1,0 +1,201 @@
+<% extend '_flow-no-banner' %>
+
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__asset('download-new.css') %>">
+
+<% end %>
+
+<% block 'page_flow': %>
+
+<section class="section">
+	<div class="download">
+		<div class="bg-gradient masthead">
+			<div class="container masthead-wrapper">
+				<p>ダウンロード</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="download__content">
+				<h3 class="download__description">登録不要でダウンロードいただけます。</h3>
+				<h3 class="download__description">プロファイルや過去の開発案件など、お気軽にご覧ください。</h3>
+
+				<div class="row download__detail">
+					<div class="download__content--item col-md-6">
+						<div class="download__content--item-title bg-gradient">
+							<h3>会社プロファイル及び実績資料</h3>
+						</div>
+						<div class="download__content--item-detail">
+							<ul>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_.NET Project Portfolio</span>
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_Web Project Portfolio</span>
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_iOS Project Portfolio</span>
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_Company Portfolio</span>
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_Company Profile</span>
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_Company Profile (Korean)</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="download__content--item col-md-6">
+						<div class="download__content--item-title bg-gradient">
+							<h3>契約サンプル</h3>
+						</div>
+						<div class="download__content--item-detail">
+							<ul>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									NTQ-Solution_NDA_ENG_Sample
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									NTQ-Solution_Contract_EN_Sample
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									NTQ-Solution_WorkOrder_EN_Sample
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="download__content--item col-md-6">
+						<div class="download__content--item-title bg-gradient">
+							<h3>会社プロファイル及び実績資料（日本語版)</h3>
+						</div>
+						<div class="download__content--item-detail">
+							<ul>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_.NETプロジェクト実績資料</span>
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_ウェブプロジェクト実績資料</span>
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_iOSプロジェクト実績資料</span>
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_Androidプロジェクト実績資料</span>
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_開発事例資料</span>
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_会社プロファイル資料</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="download__content--item col-md-6">
+						<div class="download__content--item-title bg-gradient">
+							<h3>契約サンプル（日本語版）</h3>
+						</div>
+						<div class="download__content--item-detail">
+							<ul>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_機密保持契約書</span>
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_業務委託基本契約書</span>
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_ラボ契約_業務委託基本契約書</span>
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_請負契約_業務委託基本契約書</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="download__content--item col-md-6">
+						<div class="download__content--item-title bg-gradient">
+							<h3>会社プロファイル及び実績資料（KOR ver）</h3>
+						</div>
+						<div class="download__content--item-detail">
+							<ul>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_.NETプロジェクト実績資料</span>
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_ウェブプロジェクト実績資料</span>
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_iOSプロジェクト実績資料</span>
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_Androidプロジェクト実績資料</span>
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_開発事例資料</span>
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_会社プロファイル資料</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="download__content--item col-md-6">
+						<div class="download__content--item-title bg-gradient">
+							<h3>契約サンプル（KOR ver）</h3>
+						</div>
+						<div class="download__content--item-detail">
+							<ul>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_機密保持契約書</span>
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_業務委託基本契約書</span>
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_ラボ契約_業務委託基本契約書</span>
+								</li>
+								<li class="download__item" data-toggle="modal" data-target="#exampleModalCenter">
+									<span class="download__item-content">NTQ-Solution_請負契約_業務委託基本契約書</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="download__modal modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content bg-gradient">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3 class="download__modal-title">Type your E-mail to download</h3>
+					</div>
+					<form id="download-form">
+						<div class="modal-body">
+							<input type="email" id="download-email" name="email" class="download__modal-input" placeholder="メール">
+							<input type="text" id="download-name" name="name" class="download__modal-input" placeholder="氏名">
+							<input type="text" id="download-name-company" name="company" class="download__modal-input" placeholder="会社名">
+							<input type="text" id="download-name-deploy" name="deploy" class="download__modal-input" placeholder="部署">
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="download__btn">Download</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<%- @content %>
+
+<% end %>

@@ -64,13 +64,13 @@
       </div>
       <div class="project__content">
 
-        <div class="project__achievement-subtitle">Co-Lab</div>
+        <div class="project__achievement-subtitle square square-blue">Co-Lab</div>
         <div class="project__achievement-content">
-          <div class="row project__achievement--wrapper">
+          <div class="row project__achievement--wrapper bg-blue">
             <div class="col-sm-5">
               <div class="project__achievement-name">Glasプロジェクト</div>
               <div class="project__achievement-list-img">
-                  <img src="<%= @__asset('img/banner-glass.png') %>" class="border-blue" alt="/">
+                  <img src="<%= @__asset('img/banner-glass.png') %>" alt="/">
               </div>
             </div>
             <div class="col-sm-7">
@@ -103,53 +103,78 @@
               </ul>
             </div>
           </div>
-          <div class="row project__achievement--wrapper">
+          <div class="row project__achievement--wrapper bg-blue">
             <div class="col-sm-5">
               <div class="project__achievement-name">
-                クラウドステップシステムのメンテナンス
+                Canbusシステム
               </div>
               <div class="project__achievement-list-img">
-                  <img src="<%= @__asset('img/banner-1.png') %>" class="border-blue" alt="/">
-                  <img src="<%= @__asset('img/banner-2.png') %>" class="border-blue" alt="/">
+                <img src="<%= @__asset('img/banner-1.png') %>" alt="/">
               </div>
             </div>
             <div class="col-sm-7">
               <div class="project__achievement-name">背景</div>
+              <p>エンタープライズ顧客向けのマルチテナントモデルに基づき、クラウドベースのオンラインデータ管理システムを構築する。<br/>本システムは、データベースとしての機能を提供し、ユーザーにデータの管理・共有・分析の権限を与える。</p>
+              <div class="project__achievement-name">主な機能</div>
               <ul class="project__achievement-list">
                 <li class="project__achievement-list-item">
-                  顧客の要望は、企業向けの内部情報管理システムを含むグループウェアシステムをメンテナンスし、開発することである。
+                  ユーザーはアプリを通じてデータを定義する
+                  <ul>
+                    <li class="project__achievement-sublist-item">
+                      ユーザーはデータ構造を定義する。
+                    </li>
+                    <li class="project__achievement-sublist-item">
+                      ユーザーはデータ入力フォームを設計する
+                    </li>
+                    <li class="project__achievement-sublist-item">
+                      ユーザーはデータ表示モードを定義する
+                    </li>
+                  </ul>
                 </li>
                 <li class="project__achievement-list-item">
-                  主なシステムとして、ワークフロー管理システム、個人/部門カレンダー管理システム、連絡先管理システム、内部情報共有システムなどがあります。
+                  アプリの処理フローのデータを管理する
+                  <ul>
+                    <li class="project__achievement-sublist-item">
+                      ユーザーは、データ処理フローを定義し、データ処理を割り当て、許可することができます。
+                    </li>
+                    <li class="project__achievement-sublist-item">
+                      ユーザーはデータ処理フローを自動化できる
+                    </li>
+                  </ul>
                 </li>
                 <li class="project__achievement-list-item">
-                  長年にわたって開発されたシステムは様々な技術プラットフォームを使用している。 さらに、各システムは相互及び、Google App Businessと緊密に統合されている。
+                  アプリの処理フローのデータを管理する
+                  <ul>
+                    <li class="project__achievement-sublist-item">
+                      ワークスペース機能により、複数ユーザーは1つのチームとして共同作業できる。
+                    </li>
+                    <li class="project__achievement-sublist-item">
+                      チーム間でメッセージングとフォーラムの機能を提供する
+                    </li>
+                  </ul>
                 </li>
               </ul>
               <div class="project__achievement-name">結果</div>
               <ul class="project__achievement-list">
                 <li class="project__achievement-list-item">
-                  顧客は、グループウェアのシステムのメンテナンスと開発のために5人のチームを長期的に依頼した。
+                  プロジェクト規模：200人月
                 </li>
                 <li class="project__achievement-list-item">
-                  開始に当たって、開発チームに業務と技術特徴を教訓するために、顧客の担当者は2週間来越した。
-                </li>
-                <li class="project__achievement-list-item">
-                  プロジェクト規模：5人月/月
+                  弊社の作業範囲： 仕様定義 → コーディング → 統合テスト
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div class="project__achievement-subtitle">Ope-Labの</div>
+        <div class="project__achievement-subtitle square square-red">Ope-Labの</div>
         <div class="project__achievement-content">
-          <div class="row project__achievement--wrapper">
+          <div class="row project__achievement--wrapper bg-red">
             <div class="col-sm-5">
               <div class="project__achievement-name">DQS Labo案件</div>
               <div class="project__achievement-list-img">
-                  <img src="<%= @__asset('img/banner-dqs2.png') %>" class="border-red" alt="/">
-                  <img src="<%= @__asset('img/banner-dqs1.png') %>" class="border-red" alt="/">
+                  <img src="<%= @__asset('img/banner-dqs2.png') %>" alt="/">
+                  <img src="<%= @__asset('img/banner-dqs1.png') %>" alt="/">
               </div>
             </div>
             <div class="col-sm-7">
@@ -176,12 +201,12 @@
               </ul>
             </div>
           </div>
-          <div class="row project__achievement--wrapper">
+          <div class="row project__achievement--wrapper bg-red">
             <div class="col-sm-5">
               <div class="project__achievement-name">Community案件 </div>
               <div class="project__achievement-list-img">
-                  <img src="<%= @__asset('img/banner-community1.png') %>" class="border-red" alt="/">
-                  <img src="<%= @__asset('img/banner-community2.png') %>" class="border-red" alt="/">
+                  <img src="<%= @__asset('img/banner-community1.png') %>" alt="/">
+                  <img src="<%= @__asset('img/banner-community2.png') %>" alt="/">
               </div>
             </div>
             <div class="col-sm-7">
@@ -224,14 +249,14 @@
           </div>
         </div>
 
-        <div class="project__achievement-subtitle">S-Lab</div>
+        <div class="project__achievement-subtitle square square-orange">S-Lab</div>
         <div class="project__achievement-content">
-          <div class="row project__achievement--wrapper">
+          <div class="row project__achievement--wrapper bg-orange">
             <div class="col-sm-5">
               <div class="project__achievement-name">Trb Labo</div>
               <div class="project__achievement-list-img">
-                  <img src="<%= @__asset('img/banner-labo1.png') %>" class="border-orange" alt="/">
-                  <img src="<%= @__asset('img/banner-labo2.png') %>" class="border-orange" alt="/">
+                  <img src="<%= @__asset('img/banner-labo1.png') %>" alt="/">
+                  <img src="<%= @__asset('img/banner-labo2.png') %>" alt="/">
               </div>
             </div>
             <div class="col-sm-7">
@@ -261,14 +286,14 @@
               </ul>
             </div>
           </div>
-          <div class="row project__achievement--wrapper">
+          <div class="row project__achievement--wrapper bg-orange">
             <div class="col-sm-5">
               <div class="project__achievement-name">
                 MM Labo
               </div>
               <div class="project__achievement-list-img">
-                  <img src="<%= @__asset('img/banner-mmlabo2.png') %>" class="border-orange" alt="/">
-                  <img src="<%= @__asset('img/banner-mmlabo1.png') %>" class="border-orange" alt="/">
+                  <img src="<%= @__asset('img/banner-mmlabo2.png') %>" alt="/">
+                  <img src="<%= @__asset('img/banner-mmlabo1.png') %>" alt="/">
               </div>
             </div>
             <div class="col-sm-7">
@@ -300,13 +325,13 @@
           </div>
         </div>
 
-        <div class="project__achievement-subtitle">PoC-Lab</div>
+        <div class="project__achievement-subtitle square square-violet">PoC-Lab</div>
         <div class="project__achievement-content">
-          <div class="row project__achievement--wrapper">
+          <div class="row project__achievement--wrapper bg-violet">
             <div class="col-sm-5">
               <div class="project__achievement-name">SSO</div>
               <div class="project__achievement-list-img">
-                  <img src="<%= @__asset('img/banner-SSO.png') %>" class="border-violet" alt="/">
+                  <img src="<%= @__asset('img/banner-SSO.png') %>" alt="/">
               </div>
             </div>
             <div class="col-sm-7">
@@ -339,14 +364,14 @@
               </ul>
             </div>
           </div>
-          <div class="row project__achievement--wrapper">
+          <div class="row project__achievement--wrapper bg-violet">
             <div class="col-sm-5">
               <div class="project__achievement-name">
                 Syminar
               </div>
               <div class="project__achievement-list-img">
-                  <img src="<%= @__asset('img/banner-siminar2.png') %>" class="border-violet" alt="/">
-                  <img src="<%= @__asset('img/banner-siminar1.png') %>" class="border-violet" alt="/">
+                  <img src="<%= @__asset('img/banner-siminar2.png') %>" alt="/">
+                  <img src="<%= @__asset('img/banner-siminar1.png') %>" alt="/">
               </div>
             </div>
             <div class="col-sm-7">

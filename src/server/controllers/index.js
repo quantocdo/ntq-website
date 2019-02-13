@@ -17,3 +17,5 @@ export { default as service } from './service'
 export { default as rnd } from './rnd'
 export { default as recruitment } from './recruitment'
 export { default as shopifyPartner } from './shopify-partner'
+export { default as downloadNew } from './download-new'
+
