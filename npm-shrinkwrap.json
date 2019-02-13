@@ -6343,21 +6343,21 @@
       }
     },
     "nodemon": {
-      "version": "1.18.3",
-      "resolved": "https://registry.npmjs.org/nodemon/-/nodemon-1.18.3.tgz",
-      "integrity": "sha512-XdVfAjGlDKU2nqoGgycxTndkJ5fdwvWJ/tlMGk2vHxMZBrSPVh86OM6z7viAv8BBJWjMgeuYQBofzr6LUoi+7g==",
+      "version": "1.18.10",
+      "resolved": "https://registry.npmjs.org/nodemon/-/nodemon-1.18.10.tgz",
+      "integrity": "sha512-we51yBb1TfEvZamFchRgcfLbVYgg0xlGbyXmOtbBzDwxwgewYS/YbZ5tnlnsH51+AoSTTsT3A2E/FloUbtH8cQ==",
       "dev": true,
       "requires": {
-        "chokidar": "^2.0.2",
+        "chokidar": "^2.1.0",
         "debug": "^3.1.0",
         "ignore-by-default": "^1.0.1",
         "minimatch": "^3.0.4",
-        "pstree.remy": "^1.1.0",
+        "pstree.remy": "^1.1.6",
         "semver": "^5.5.0",
         "supports-color": "^5.2.0",
         "touch": "^3.1.0",
         "undefsafe": "^2.0.2",
-        "update-notifier": "^2.3.0"
+        "update-notifier": "^2.5.0"
       },
       "dependencies": {
         "anymatch": {

@@ -50,7 +50,7 @@
     "extract-text-webpack-plugin": "4.0.0-beta.0",
     "file-loader": "1.1.11",
     "glob": "7.1.2",
-    "nodemon": "1.18.3",
+    "nodemon": "1.18.10",
     "optimize-css-assets-webpack-plugin": "5.0.0",
     "run.env": "1.0.2",
     "style-loader": "0.22.1",
@@ -64,8 +64,8 @@
   },
   "scripts": {
     "start": "concurrently --raw \"npm run dev-server\" \"wait-on http://localhost:3101/alive && npm run server\"",
-    "server": "run.env nodemon ./src/index.js --exec babel-node --watch ./src/server --watch ./dist/manifest.json",
-    "dev-server": "run.env nodemon ./internals/dev-server --exec babel-node --watch ./internals/dev-server --watch ./internals/webpack.config.babel.js",
+    "server": "run.env nodemon ./src/index.js --exec babel-node --watch ./src/server --watch ./dist",
+    "dev-server": "run.env nodemon ./internals/dev-server --exec babel-node --watch ./internals",
     "webpack": "webpack --config internals/webpack.config.babel.js",
     "build": "rm -rf ./build/* && babel ./src -d ./build && cp -r ./src/translations ./build && cp -r ./src/server/views ./build/server"
   }
