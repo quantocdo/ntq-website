@@ -76,12 +76,6 @@
 				});
 			}
 
-			$('.download__item').on('mouseover', function() {
-				$(this).parent().css('list-style','inside url(<%= @__asset('img/icon-note-blue.png') %>)');
-			}).on('mouseout', function() {
-				$(this).parent().css('list-style','inside url(<%= @__asset('img/icon-note.png') %>)');
-			});
-
 			$('.js-reason-slider').slick({
 				infinite: true,
 				slidesToShow: 1,
