@@ -96,24 +96,19 @@
 				}]
 			});
 
-			$('.js-team-detail').slick({
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				arrows: false,
-				infinite: true,
-				fade: true,
-				asNavFor: '.js-team-thumnail'
-			});
-
 			$('.js-team-thumnail').slick({
 				slidesToShow: 2,
 				infinite: true,
 				slidesToScroll: 1,
-				asNavFor: '.js-team-detail',
 				dots: false,
 				centerMode: false,
 				focusOnSelect: true,
 				arrows: true
+			});
+
+			$('.slick-arrow').on('click', function() {
+				var imgCurrent = $('.slick-current img').attr('src');
+				$('.js-team-detail').css('background-image','url(' + imgCurrent + ')');
 			});
 
 			$('.js-rnd-item').on('click', function () {
