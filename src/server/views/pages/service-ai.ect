@@ -10,38 +10,36 @@
 
 <section class="section service-ai">
   <div class="masthead service-ai__banner bg-gradient">
-    <div class="masthead-wrapper container service-ai__banner-title">AI研究・開発</div>
+    <div class="masthead-wrapper container service-ai__banner-title"><%- @__('service-ai_title') %></div>
   </div>
   <div class="service-ai__introduce" style="background-image: url(<%= @__asset('img/banner-brain.png') %>)">
     <div class="container service-ai__container">
       <div class="row">
         <div class="col-md-8">
-          <div class="service-ai__introduce-title">新しい扉を開くAIの活用方法</div>
-          <div class="service-ai__introduce-description">～ベトナムオフショアで小さいチャレンジから大きい成果を～</div>
-          <div class="service-ai__introduce-detail">最先端技術であるAIにつきましては、もう理論上の研究結果ではなく、
-            実務のビジネスを効率化させる不可欠な要素として取り入れられております。様々な分野においてAI開発実績を数多く持つ弊社はいつもお客様の開発
-            パートナーとしてサポートさせて頂きます。また、ややこしい数字は苦手というお客様に対して「オフショア研究・開発　</div>
+          <div class="service-ai__introduce-title"><%- @__('service-ai_intro_title') %></div>
+          <div class="service-ai__introduce-description"><%- @__('service-ai_intro_desc') %></div>
+          <div class="service-ai__introduce-detail"><%- @__('service-ai_intro_detail') %></div>
         </div>
       </div>
       <div class="row service-ai__introduce-achievement">
         <div class="col-sm-4 service-ai__introduce-item">
           <div class="service-ai__introduce-model">
             <img src="<%= @__asset('img/icon-cost-reduction.png') %>" alt="">
-            <div class="service-ai__introduce-model__text">さらなるコスト削減</div>
+            <div class="service-ai__introduce-model__text"><%- @__('service-ai_achievement_1') %></div>
           </div>
         </div>
 
         <div class="col-sm-4 service-ai__introduce-item">
           <div class="service-ai__introduce-model">
             <img src="<%= @__asset('img/icon-hight-chart.png') %>" alt="">
-            <div class="service-ai__introduce-model__text">顕著な業務効率UP</div>
+            <div class="service-ai__introduce-model__text"><%- @__('service-ai_achievement_2') %></div>
           </div>
         </div>
 
         <div class="col-sm-4 service-ai__introduce-item">
           <div class="service-ai__introduce-model">
             <img src="<%= @__asset('img/icon-service-funny.png') %>" alt="">
-            <div class="service-ai__introduce-model__text">抜群な面白いサービス</div>
+            <div class="service-ai__introduce-model__text"><%- @__('service-ai_achievement_3') %></div>
           </div>
         </div>
       </div>
@@ -51,9 +49,9 @@
   <div class="service-ai__feature">
     <div class="container service-ai__feature-container">
 
-      <div class="service-ai__feature-title">自社開発 AI</div>
+      <div class="service-ai__feature-title"><%- @__('service-ai_feature_title_1') %></div>
       <div class="service-ai__feature__accuracy service-ai__feature-bg">
-        <div class="service-ai__feature-title">画像の仕分け</div>
+        <div class="service-ai__feature-title"><%- @__('service-ai_feature_subtitle_1') %></div>
         <div class="row">
           <div class="col-md-6 col-sm-12">
             <div class="row">
@@ -67,22 +65,22 @@
           </div>
           <div class="col-md-6 col-sm-12">
             <ul class="service-ai__feature-list service-ai__feature__accuracy-list">
-              <li class="service-ai__feature-item">精度：98%（日本企業の事例</li>
-              <li class="service-ai__feature-item">業務効率の向上：400％</li>
-              <li class="service-ai__feature-item">導入分野：事故発見（火事、渋滞）、不良品の発見</li>
+              <li class="service-ai__feature-item"><%- @__('service-ai_feature_item_1_1') %></li>
+              <li class="service-ai__feature-item"><%- @__('service-ai_feature_item_1_2') %></li>
+              <li class="service-ai__feature-item"><%- @__('service-ai_feature_item_1_3') %></li>
             </ul>
           </div>
         </div>
-        <div class="service-ai__feature-descriptions service-ai__feature__accuracy-descriptions">人物画像認証の成功の結果、動画認証やライブストリーミングの監視にも活用されました。</div>
+        <div class="service-ai__feature-descriptions service-ai__feature__accuracy-descriptions"><%- @__('service-ai_feature_desc_1') %></div>
       </div>
 
       <div class="service-ai__feature-bg">
-        <div class="service-ai__feature-title">セキュリティ監視カメラシステム</div>
+        <div class="service-ai__feature-title"><%- @__('service-ai_feature_subtitle_2') %></div>
         <div class="service-ai__feature__camera-system">
           <ul class="service-ai__feature-list service-ai__feature__camera-system-list">
-            <li class="service-ai__feature-item">入退室の人数カウント</li>
-            <li class="service-ai__feature-item">怪しい人物の検出</li>
-            <li class="service-ai__feature-item">登録済み人間の認証</li>
+            <li class="service-ai__feature-item"><%- @__('service-ai_feature_item_2_1') %></li>
+            <li class="service-ai__feature-item"><%- @__('service-ai_feature_item_2_2') %></li>
+            <li class="service-ai__feature-item"><%- @__('service-ai_feature_item_2_3') %></li>
           </ul>
           <div class="service-ai__feature__camera-system-img img-center">
             <img src="<%= @__asset('img/icon-camera-system.png') %>" alt="">
@@ -91,33 +89,32 @@
       </div>
 
       <div class="service-ai__feature__analysis-text service-ai__feature-bg">
-        <div class="service-ai__feature-title">テキストの内容分析</div>
+        <div class="service-ai__feature-title"><%- @__('service-ai_feature_subtitle_3') %></div>
         <div class="row">
           <div class="col-md-7 col-sm-12">
             <img src="<%= @__asset('img/image-analysis.png') %>" class="service-ai__feature__analysis-text-img" alt="">
           </div>
           <div class="col-md-5 col-sm-12">
             <ul class="service-ai__feature-list service-ai__feature__analysis-text-list">
-              <li class="service-ai__feature-item">内容を判断して資料を分類する</li>
-              <li class="service-ai__feature-item">関連資料の検出</li>
-              <li class="service-ai__feature-item">チャット内容のチェック</li>
-              <li class="service-ai__feature-item">スパムメールの検出</li>
+              <li class="service-ai__feature-item"><%- @__('service-ai_feature_item_3_1') %></li>
+              <li class="service-ai__feature-item"><%- @__('service-ai_feature_item_3_2') %></li>
+              <li class="service-ai__feature-item"><%- @__('service-ai_feature_item_3_3') %></li>
+              <li class="service-ai__feature-item"><%- @__('service-ai_feature_item_3_4') %></li>
             </ul>
           </div>
         </div>
       </div>
 
       <div class="service-ai__feature-bg">
-        <div class="service-ai__feature-title">AI モザイク AI mosaic</div>
+        <div class="service-ai__feature-title"><%- @__('service-ai_feature_subtitle_4') %></div>
         <div class="service-ai__feature__mosaic">
           <div>
-            <div class="service-ai__feature-descriptions">今まで手動で表示したくない部分を選び、処理を行いますので、
-              時間と工数がたくさんかかっています。</div>
+            <div class="service-ai__feature-descriptions"><%- @__('service-ai_feature_desc_2') %></div>
             <ul class="service-ai__feature-list service-ai__feature__mosaic-list">
-              <li class="service-ai__feature-item">内容を判断して資料を分類する</li>
-              <li class="service-ai__feature-item">関連資料の検出</li>
-              <li class="service-ai__feature-item">チャット内容のチェック</li>
-              <li class="service-ai__feature-item">スパムメールの検出</li>
+              <li class="service-ai__feature-item"><%- @__('service-ai_feature_item_4_1') %></li>
+              <li class="service-ai__feature-item"><%- @__('service-ai_feature_item_4_2') %></li>
+              <li class="service-ai__feature-item"><%- @__('service-ai_feature_item_4_3') %></li>
+              <li class="service-ai__feature-item"><%- @__('service-ai_feature_item_4_4') %></li>
             </ul>
           </div>
           <div class="service-ai__feature__mosaic-img">
@@ -126,17 +123,17 @@
         </div>
       </div>
 
-      <div class="service-ai__feature-title">共同開発</div>
+      <div class="service-ai__feature-title"><%- @__('service-ai_feature_title_2') %></div>
 
       <div class="service-ai__feature-bg">
-        <div class="service-ai__feature-title">分析とレコメンデーション</div>
+        <div class="service-ai__feature-title"><%- @__('service-ai_feature_subtitle_5') %></div>
         <div class="service-ai__feature__analysis">
           <div>
-            <div class="service-ai__feature-descriptions">お客様の嗜好に合う商品をおススメに表示してコンバージョン率を向上させます。</div>
+            <div class="service-ai__feature-descriptions"><%- @__('service-ai_feature_desc_3') %></div>
             <ul class="service-ai__feature-list service-ai__feature__analysis-list">
-              <li class="service-ai__feature-item">わずか4～5クリック後、効果が出ます</li>
-              <li class="service-ai__feature-item">売上：30%向上</li>
-              <li class="service-ai__feature-item">導入分野：Eコマース、求人、不動産、物流、マッチングサイト</li>
+              <li class="service-ai__feature-item"><%- @__('service-ai_feature_item_5_1') %></li>
+              <li class="service-ai__feature-item"><%- @__('service-ai_feature_item_5_2') %></li>
+              <li class="service-ai__feature-item"><%- @__('service-ai_feature_item_5_3') %></li>
             </ul>
           </div>
           <div class="service-ai__feature__analysis-img">
@@ -146,11 +143,11 @@
       </div>
 
       <div class="service-ai__feature-bg">
-        <div class="service-ai__feature-title">AI-OCR</div>
+        <div class="service-ai__feature-title"><%- @__('service-ai_feature_subtitle_6') %></div>
         <div class=" service-ai__feature__orc">
           <ul class="service-ai__feature-list service-ai__feature__orc-list">
-            <li class="service-ai__feature-item">日本語手書き文字も対応可能</li>
-            <li class="service-ai__feature-item">導入済みのBPO会社に高評価頂いております。</li>
+            <li class="service-ai__feature-item"><%- @__('service-ai_feature_item_6_1') %></li>
+            <li class="service-ai__feature-item"><%- @__('service-ai_feature_item_6_2') %></li>
           </ul>
           <div class="service-ai__feature__orc-img">
             <img src="<%= @__asset('img/ai-ocr-progress.png') %>" alt="">
@@ -162,9 +159,9 @@
 
   <div class="service-ai__advisory" style="background-image:url(<%= @__asset('img/footer-baner.jpg') %>)">
     <div class="service-ai__advisory-content container">
-      <p>各種AIのデモを用意しておりますので、お気軽にご連絡ください。</p>
+      <p><%- @__('service-ai_advisory') %></p>
       <div class="service-ai__advisory-btn">
-        <a href="contact-new.html">お問い合わせ</a>
+        <a href="contact-new.html"><%- @__('service-ai_btn_contact') %></a>
       </div>
     </div>
   </div>

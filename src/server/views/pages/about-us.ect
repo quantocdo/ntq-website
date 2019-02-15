@@ -9,140 +9,223 @@
 <% block 'page_flow': %>
 
 <section class="section">
-  <div class="about-us">
-    <div class="bg-gradient masthead">
-      <div class="container masthead-wrapper">
-        <p>会社概要</p>
-      </div>
-    </div>
+	<div class="about-us">
 
-    <div class="about-us__introduce">
-      <div class="container">
+		<div class="bg-gradient masthead">
+			<div class="container masthead-wrapper">
+				<p><%- @__('about_title') %></p>
+			</div>
+		</div>
 
-        <div class="about-us__info address" style="background-image: url(<%= @__asset('img/sudico-building.png') %>)">
-          <h3 class="about-us__introduce-title">株式会社NTQ Solution</h3>
-          <table>
-            <tr class="about-us__info-item">
-              <td class="about-us__info-name">会社名</td>
-              <td class="about-us__info-detail" data-title="会社名">株式会社NTQ Solution</td>
-            </tr>
-            <tr class="about-us__info-item">
-              <td class="about-us__info-name">所在地</td>
-              <td class="about-us__info-detail" data-title="所在地">6F, Sudico Building, Me Tri Street, Nam Tu Liem District,<br/>Ha Noi
-                City</td>
-            </tr>
-            <tr class="about-us__info-item">
-              <td class="about-us__info-name">電話</td>
-              <td class="about-us__info-detail" data-title="電話">(+84) 243 200 8754</td>
-            </tr>
-            <tr class="about-us__info-item">
-              <td class="about-us__info-name">設立</td>
-              <td class="about-us__info-detail" data-title="設立">2011年6 月13日</td>
-            </tr>
-            <tr class="about-us__info-item">
-              <td class="about-us__info-name">代表取締役社長</td>
-              <td class="about-us__info-detail" data-title="代表取締役社長">ファム・タイ・ソン</td>
-            </tr>
-            <tr class="about-us__info-item">
-              <td class="about-us__info-name">資本金</td>
-              <td class="about-us__info-detail" data-title="資本金">2500万円</td>
-            </tr>
-            <tr class="about-us__info-item">
-              <td class="about-us__info-name">事業内容</td>
-              <td class="about-us__info-detail" data-title="事業内容">ソフトウェア開発、AI開発、R&D、技術コンサルタント</td>
-            </tr>
-            <tr class="about-us__info-item">
-              <td class="about-us__info-name">社員数</td>
-              <td class="about-us__info-detail" data-title="社員数">402名 (2019年1月1月現在)</td>
-            </tr>
-            <tr class="about-us__info-item">
-              <td class="about-us__info-name">認証</td>
-              <td class="about-us__info-detail" data-title="認証">SO/IEC 27001<br>(ISMS：情報セキュリティマネジメントシステム</td>
-            </tr>
-          </table>
-        </div>
+		<div class="about-us__introduce">
+			<div class="container">
 
-        <div class="about-us__info address" style="background-image: url(%= @__asset('img/vv-building.jpg') %>)">
-          <h3 class="about-us__introduce-title">日本法人 株式会社 NTQジャパン</h3>
-          <table>
-            <tr class="about-us__info-item">
-              <td class="about-us__info-name">会社名</td>
-              <td class="about-us__info-detail" data-title="会社名">株式会社NTQジャパン</td>
-            </tr>
-            <tr class="about-us__info-item">
-              <td class="about-us__info-name">所在地</td>
-              <td class="about-us__info-detail" data-title="所在地">〒231-0001 横浜市中区新港2-2-1 横浜ワールドポーターズ 6階 <br> (ワールドビジネスサポートセンター内)</td>
-            </tr>
-            <tr class="about-us__info-item">
-              <td class="about-us__info-name">電話</td>
-              <td class="about-us__info-detail" data-title="電話">(+81) 45-228-9010</td>
-            </tr>
-            <tr class="about-us__info-item">
-              <td class="about-us__info-name">FAX</td>
-              <td class="about-us__info-detail" data-title="FAX">(+81) 45-228-9010</td>
-            </tr>
-            <tr class="about-us__info-item">
-              <td class="about-us__info-name">設立</td>
-              <td class="about-us__info-detail" data-title="設立">2016年2月8日</td>
-            </tr>
-            <tr class="about-us__info-item">
-              <td class="about-us__info-name">代表取締役</td>
-              <td class="about-us__info-detail" data-title="代表取締役">小川 義輝</td>
-            </tr>
-            <tr class="about-us__info-item">
-              <td class="about-us__info-name">資本金</td>
-              <td class="about-us__info-detail" data-title="資本金">500万円</td>
-            </tr>
-            <tr class="about-us__info-item">
-              <td class="about-us__info-name">従業員数</td>
-              <td class="about-us__info-detail" data-title="従業員数">30名</td>
-            </tr>
-            <tr class="about-us__info-item">
-              <td class="about-us__info-name">事業内容</td>
-              <td class="about-us__info-detail" data-title="事業内容">オフショア開発<br>SES事業</td>
-            </tr>
-            <tr class="about-us__info-item">
-              <td class="about-us__info-name">参加協会</td>
-              <td class="about-us__info-detail" data-title="参加協会">神奈川県情報サービス産業協会（KIA）</td>
-            </tr>
-          </table>
-        </div>
+				<div class="about-us__info address" style="background-image: url(<%= @__asset('img/sudico-building.png') %>)">
+					<h3 class="about-us__introduce-title"><%- @__('ntqvn_table_title') %></h3>
+					<table>
+						<tr class="about-us__info-item">
+							<td class="about-us__info-name"><%- @__('ntqvn_label_1') %></td>
+							<td class="about-us__info-detail" data-title="<%- @__('ntqvn_label_1') %>"><%- @__('ntqvn_content_1') %></td>
+						</tr>
+						<tr class="about-us__info-item">
+							<td class="about-us__info-name"><%- @__('ntqvn_label_2') %></td>
+							<td class="about-us__info-detail" data-title="<%- @__('ntqvn_label_2') %>"><%- @__('ntqvn_content_2') %></td>
+						</tr>
+						<tr class="about-us__info-item">
+							<td class="about-us__info-name"><%- @__('ntqvn_label_3') %></td>
+							<td class="about-us__info-detail" data-title="<%- @__('ntqvn_label_3') %>">(<%- @__('ntqvn_content_3') %></td>
+						</tr>
+						<tr class="about-us__info-item">
+							<td class="about-us__info-name"><%- @__('ntqvn_label_4') %></td>
+							<td class="about-us__info-detail" data-title="<%- @__('ntqvn_label_4') %>"><%- @__('ntqvn_content_4') %>
+						</tr>
+						<tr class="about-us__info-item">
+							<td class="about-us__info-name"><%- @__('ntqvn_label_5') %></td>
+							<td class="about-us__info-detail" data-title="<%- @__('ntqvn_label_5') %>"><%- @__('ntqvn_content_5') %></td>
+						</tr>
+						<tr class="about-us__info-item">
+							<td class="about-us__info-name"><%- @__('ntqvn_label_6') %></td>
+							<td class="about-us__info-detail" data-title="<%- @__('ntqvn_label_6') %>"><%- @__('ntqvn_content_6') %></td>
+						</tr>
+						<tr class="about-us__info-item">
+							<td class="about-us__info-name"><%- @__('ntqvn_label_7') %></td>
+							<td class="about-us__info-detail" data-title="<%- @__('ntqvn_label_7') %>"><%- @__('ntqvn_content_7') %></td>
+						</tr>
+						<tr class="about-us__info-item">
+							<td class="about-us__info-name"><%- @__('ntqvn_label_8') %></td>
+							<td class="about-us__info-detail" data-title="<%- @__('ntqvn_label_8') %>"><%- @__('ntqvn_content_8') %></td>
+						</tr>
+						<tr class="about-us__info-item">
+							<td class="about-us__info-name"><%- @__('ntqvn_label_9') %></td>
+							<td class="about-us__info-detail" data-title="<%- @__('ntqvn_label_9') %>">S<%- @__('ntqvn_content_9') %></td>
+						</tr>
+					</table>
+				</div>
 
-      </div>
-    </div>
+			 <div class="about-us__info address" style="background-image: url(<%= @__asset('img/vv-building.jpg') %>)">
+					<h3 class="about-us__introduce-title"><%- @__('ntqjp_table_title') %></h3>
+					<table>
+						<tr class="about-us__info-item">
+							<td class="about-us__info-name"><%- @__('ntqjp_label_1') %></td>
+							<td class="about-us__info-detail" data-title="<%- @__('ntqjp_label_1') %>"><%- @__('ntqjp_content_1') %></td>
+						</tr>
+						<tr class="about-us__info-item">
+							<td class="about-us__info-name"><%- @__('ntqjp_label_2') %></td>
+							<td class="about-us__info-detail" data-title="<%- @__('ntqjp_label_2') %>"><%- @__('ntqjp_content_2') %></td>
+						</tr>
+						<tr class="about-us__info-item">
+							<td class="about-us__info-name"><%- @__('ntqjp_label_3') %></td>
+							<td class="about-us__info-detail" data-title="<%- @__('ntqjp_label_3') %>">(<%- @__('ntqjp_content_3') %></td>
+						</tr>
+						<tr class="about-us__info-item">
+							<td class="about-us__info-name"><%- @__('ntqjp_label_4') %></td>
+							<td class="about-us__info-detail" data-title="<%- @__('ntqjp_label_4') %>"><%- @__('ntqjp_content_4') %>
+						</tr>
+						<tr class="about-us__info-item">
+							<td class="about-us__info-name"><%- @__('ntqjp_label_5') %></td>
+							<td class="about-us__info-detail" data-title="<%- @__('ntqjp_label_5') %>"><%- @__('ntqjp_content_5') %></td>
+						</tr>
+						<tr class="about-us__info-item">
+							<td class="about-us__info-name"><%- @__('ntqjp_label_6') %></td>
+							<td class="about-us__info-detail" data-title="<%- @__('ntqjp_label_6') %>"><%- @__('ntqjp_content_6') %></td>
+						</tr>
+						<tr class="about-us__info-item">
+							<td class="about-us__info-name"><%- @__('ntqjp_label_7') %></td>
+							<td class="about-us__info-detail" data-title="<%- @__('ntqjp_label_7') %>"><%- @__('ntqjp_content_7') %></td>
+						</tr>
+						<tr class="about-us__info-item">
+							<td class="about-us__info-name"><%- @__('ntqjp_label_8') %></td>
+							<td class="about-us__info-detail" data-title="<%- @__('ntqjp_label_8') %>"><%- @__('ntqjp_content_8') %></td>
+						</tr>
+						<tr class="about-us__info-item">
+							<td class="about-us__info-name"><%- @__('ntqjp_label_9') %></td>
+							<td class="about-us__info-detail" data-title="<%- @__('ntqjp_label_9') %>">S<%- @__('ntqjp_content_9') %></td>
+						</tr>
+						<tr class="about-us__info-item">
+							<td class="about-us__info-name"><%- @__('ntqjp_label_10') %></td>
+							<td class="about-us__info-detail" data-title="<%- @__('ntqjp_label_10') %>">S<%- @__('ntqjp_content_10') %></td>
+						</tr>
+					</table>
+				</div>
 
-    <div class="about-us__strategic">
-      <div class="container about-us__content">
-        <h3 class="about-us__strategic--title text-center">2021年度末までの戦略的目標</h3>
-        <div class="about-us__strategic row">
-          <div class="col-sm-6">
-            <div class="about-us__strategic--item-title text-center icon-sales">売上</div>
-            <h3 class="about-us__strategic--item-total text-center">20億円超</h3>
-            <h5 class="about-us__strategic--item-policy text-center">ポリシー</h5>
-            <div class="about-us__strategic--item-description">
-              <div class="about-us__strategic--item-content">
-                <h5 class="about-us__strategic--item-detail">家族の立場で、我々は「団結」します。</h5>
-                <h5 class="about-us__strategic--item-detail">技術者の立場で、我々は「情熱」を持ち続けます</h5>
-                <h5 class="about-us__strategic--item-detail">パートナーの立場で、我々は「相互理解」を深めます。</h5>
-              </div>
-            </div>
-          </div>
+			</div>
+		</div>
 
-          <div class="col-sm-6">
-            <div class="about-us__strategic--item-title text-center icon-talen">人材</div>
-            <h3 class="about-us__strategic--item-total text-center">1000名超</h3>
-            <h5 class="about-us__strategic--item-policy text-center">ミッション</h5>
-            <div class="about-us__strategic--item-description">
-              <div class="about-us__strategic--item-content">
-                <h5 class="about-us__strategic--item-detail">お客様満足のために、高品質の製品およびサービスを提供し、継続的に改善することをお約束します。</h5>
-                <h5 class="about-us__strategic--item-detail">情熱を持って仕事に向き合うメンバーたちを、世界で通用するレベルの開発者へ育てるトレーニングを実施します。</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+		<div class="about-us__strategic">
+			<div class="container about-us__content">
+				<h3 class="about-us__strategic--title text-center"><%- @__('about_strategic') %></h3>
+				<div class="about-us__strategic row">
+					<div class="col-sm-6">
+						<div class="about-us__strategic--item-title text-center icon-sales"><%- @__('strategic_1_title') %></div>
+						<h3 class="about-us__strategic--item-total text-center"><%- @__('strategic_1_total') %></h3>
+						<h5 class="about-us__strategic--item-policy text-center"><%- @__('strategic_1_policy') %></h5>
+						<div class="about-us__strategic--item-description">
+							<div class="about-us__strategic--item-content">
+								<h5 class="about-us__strategic--item-detail"><%- @__('strategic_1_detail_1') %></h5>
+								<h5 class="about-us__strategic--item-detail"><%- @__('strategic_1_detail_2') %></h5>
+								<h5 class="about-us__strategic--item-detail"><%- @__('strategic_1_detail_3') %></h5>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="about-us__strategic--item-title text-center icon-sales"><%- @__('strategic_2_title') %></div>
+						<h3 class="about-us__strategic--item-total text-center"><%- @__('strategic_2_total') %></h3>
+						<h5 class="about-us__strategic--item-policy text-center"><%- @__('strategic_2_policy') %></h5>
+						<div class="about-us__strategic--item-description">
+							<div class="about-us__strategic--item-content">
+								<h5 class="about-us__strategic--item-detail"><%- @__('strategic_2_detail_1') %></h5>
+								<h5 class="about-us__strategic--item-detail"><%- @__('strategic_2_detail_2') %></h5>
+								<h5 class="about-us__strategic--item-detail"><%- @__('strategic_2_detail_3') %></h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="about-us__means container">
+			<div class="about-us__means-title">創業の思いが込められた2つの意味を持つ"NTQ"</div>
+			<div class="about-us__means-detail">
+				<div class="about-us__means-logo">
+					<img src="<%= @__asset('img/logo.png') %>" alt="">
+				</div>
+				<div class="about-us__means-description">
+					<p>NTQはベトナム語で「家族」を意味する “NHA TOI QUAN”
+						の略語です。これは、弊社のメンバーに心地よく過ごし、仕事をしてもらうために、メンバーを「家族の一員」として接したい、という思いが込められています。この理念が浸透している弊社では、ベトナムにおける1年の離職率が20%を超えている現状の中、嬉しいことに
+						<span>離職率を5%前後におさえることができました</span>。この家族の絆が目指すものこそが、もう一つの意味、”Next Top Quality”なのです。</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="about-us__admin container">
+			<h3 class="about-us__admin-title">コアメンバー紹介</h3>
+			<div class="about-us__admin--wrapper">
+				
+				<div class="about-us__admin-item" style="background-image: url(<%= @__asset('img/HoangTV.png') %>);">
+					<div class="about-us__admin-content">
+						<h4>Tran Van Hoang</h4>
+						<p>NWB部 課長</p>
+					</div>
+				</div>
+				<div class="about-us__admin-item" style="background-image: url(<%= @__asset('img/SonTH.png') %>);">
+					<div class="about-us__admin-content">
+						<h4>To Hai Son</h4>
+						<p>CCO</p>
+					</div>
+				</div>
+				<div class="about-us__admin-item" style="background-image: url(<%= @__asset('img/SonPT.png') %>);">
+					<div class="about-us__admin-content">
+						<h4>Pham Thai Son</h4>
+						<p>CEO</p>
+					</div>
+				</div>
+				<div class="about-us__admin-item" style="background-image: url(<%= @__asset('img/SoanNK.png') %>);">
+					<div class="about-us__admin-content">
+						<h4>Nguyen Kim Soan</h4>
+						<p>CCO</p>
+					</div>
+				</div>
+				<div class="about-us__admin-item" style="background-image: url(<%= @__asset('img/DuongTD.png') %>);">
+					<div class="about-us__admin-content">
+						<h4>Truong Dao Quy Duong</h4>
+						<p>営業推進部 課長</p>
+					</div>
+				</div>
+				<div class="about-us__admin-item" style="background-image: url(<%= @__asset('img/ChuongBD.png') %>);">
+					<div class="about-us__admin-content">
+						<h4>Bui Duc Chuong</h4>
+						<p>R&Dマネージャ</p>
+					</div>
+				</div>
+				<div class="about-us__admin-item" style="background-image: url(<%= @__asset('img/HienTT.png') %>);">
+					<div class="about-us__admin-content">
+						<h4>Trinh Thi Thu Hien</h4>
+						<p>シニアマネージャー</p>
+					</div>
+				</div>
+				<div class="about-us__admin-item" style="background-image: url(<%= @__asset('img/PhuongTH.png') %>);">
+					<div class="about-us__admin-content">
+						<h4>Tran Ho Phuong</h4>
+						<p>副社長</p>
+					</div>
+				</div>
+				<div class="about-us__admin-item" style="background-image: url(<%= @__asset('img/yoshi-ogawa.png') %>);">
+					<div class="about-us__admin-content">
+						<h4>Ogawa Yoshimitsu</h4>
+						<p>戦略顧問 / NTQジャパン</p>
+					</div>
+				</div>
+				<div class="about-us__admin-item" style="background-image: url(<%= @__asset('img/NamPT.png') %>);">
+					<div class="about-us__admin-content">
+						<h4>Pham Thanh Nam</h4>
+						<p>副社長 / NTQジャパン</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
 </section>
 
 <% end %>
