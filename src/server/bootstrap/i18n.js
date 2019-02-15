@@ -8,7 +8,7 @@ import config from 'infrastructure/config'
 export default app => {
   i18n.configure({
     locales: [ 'en', 'ja' ],
-    defaultLocale: 'en',
+    defaultLocale: 'ja',
     cookie: 'al',
     directory: path.resolve(config._root, '../translations'),
     updateFiles: false,
