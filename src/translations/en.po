@@ -2019,8 +2019,7 @@ msgstr "Director, A.C.T Co, Japan"
 
 #:
 msgid "home-customer-item3"
-msgstr "NTQ has many staffs with experience living and working in Japan, they have adopted the Japanese working style and always pay attention to every details, even the minor ones. Mr. Son – the CEO holds big dreams, and he always transmit that energy to set and achieve continuous success with NTQ members.
-"
+msgstr "NTQ has many staffs with experience living and working in Japan, they have adopted the Japanese working style and always pay attention to every details, even the minor ones. Mr. Son – the CEO holds big dreams, and he always transmit that energy to set and achieve continuous success with NTQ members."
 
 #:
 msgid "home-customer-item4"
@@ -2032,9 +2031,7 @@ msgstr "Manager, ilovex Co, Ltd, Japan"
 
 #:
 msgid "home-customer-item6"
-msgstr "Developers at NTQ are careful in verifying spec in the initial phase of each project and testing after implementation with high accuracy. I have also found them great at technique and communication on individual level, thus, there is not much unpredictable workload. Furthermore, we can discuss any issues and concern with them, and they are very responsive to provide alternative solutions even for projects that we consider as tough in technical aspect. This is the working style of NTQ.
-
-"
+msgstr "Developers at NTQ are careful in verifying spec in the initial phase of each project and testing after implementation with high accuracy. I have also found them great at technique and communication on individual level, thus, there is not much unpredictable workload. Furthermore, we can discuss any issues and concern with them, and they are very responsive to provide alternative solutions even for projects that we consider as tough in technical aspect. This is the working style of NTQ."
 
 #:
 msgid "home-customer-item7"

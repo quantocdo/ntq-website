@@ -8,8 +8,6 @@
   .posts
     display: grid
     grid-gap: 20px
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
-    grid-auto-rows: 20px;
 
     .post
       overflow: hidden
@@ -22,7 +20,8 @@
         line-height: 1.5em
 
         .feature-image
-
+          display: none
+          
           img
             max-width: 100%
 
@@ -55,3 +54,8 @@
 
     .next
       float: right
+
+  @media screen and (min-width: 768px)
+    .posts
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+      grid-auto-rows: 20px

@@ -13,12 +13,12 @@
     <div class="post">
       <div class="title" style="background-image: url('<%= @post.feature_image %>');">
         <div class="overlay"></div>
-        <div class="site-container fluid heading">
+        <div class="container heading">
           <h1><%= @post.title %></h1>
           <p class="publish-date"><%= @_date(@post.published_at) %></p>
         </div>
       </div>
-      <div class="site-container fluid">
+      <div class="container">
         <div class="content">
           <%- @post.html %>
         </div>
