@@ -193,7 +193,7 @@
 			position: relative
 			background-repeat: no-repeat
 			background-size: 70%
-			background-position: center 35px
+			background-position: center 32px
 			border-radius: 16px
 			background-color: #f4f4f4
 			margin: 10px
@@ -216,6 +216,10 @@
 				font-size: 12px
 				line-height: 22px
 
+	@media screen and (min-width: 992px) and (max-width: 1199px)
+		&__admin-item
+			width: 22%
+
 	@media screen and (min-width: 768px) and (max-width: 991px)
 		& .masthead-wrapper
 			& p
@@ -224,6 +228,10 @@
 
 		&__info
 			background: none !important
+
+		&__admin-item
+			width: 30%
+			height: 280px
 
 	@media screen and (max-width: 767px)
 		&__info
@@ -264,6 +272,21 @@
 
 			&--item-total
 				margin-top: 80px
+
+		&__means
+			&-detail
+				display: block
+				padding: 0
+
+			&-logo
+				margin: 0 auto
+
+			&-description
+				padding-left: 0
+
+		&__admin-item
+			width: 45%
+			height: 310px
 
 	@media screen and (max-width: 479px)
 		&__strategic
@@ -320,3 +343,7 @@
 			background-image: url(../../../public/img/vv-building-mobile.jpg)
 			margin-right: -15px
 			background-size: auto
+
+		&__admin-item
+			width: 100%
+			height: 350px

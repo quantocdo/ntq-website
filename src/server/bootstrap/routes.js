@@ -25,7 +25,7 @@ export const routes = [ {
     get: controllers.cms.get
   }
 }, {
-  path: '/download',
+  path: '/download-old',
   methods: {
     get: controllers.download.get
   }
@@ -35,7 +35,7 @@ export const routes = [ {
 //     // get: dummy
 //   }
 }, {
-  path: '/contact',
+  path: '/contact-old',
   methods: {
     get: controllers.contact.get,
     post: controllers.contact.post
@@ -56,7 +56,7 @@ export const routes = [ {
     get: controllers.contractModels.get
   }
 }, {
-  path: '/research-development',
+  path: '/research-development-old',
   methods: {
     get: controllers.rd.get
   }
@@ -71,47 +71,47 @@ export const routes = [ {
     get: controllers.successStories.get
   }
 }, {
-  path: '/projects.html',
+  path: '/projects',
   methods: {
     get: controllers.projects.get
   }
 }, {
-  path: '/about-us.html',
+  path: '/about-us',
   methods: {
     get: controllers.aboutUs.get
   }
 }, {
-  path: '/contact-new.html',
+  path: '/contact',
   methods: {
     get: controllers.contactNew.get
   }
 }, {
-  path: '/service-ai.html',
+  path: '/service-ai',
   methods: {
     get: controllers.serviceAI.get
   }
 }, {
-  path: '/research-and-development.html',
+  path: '/research-development',
   methods: {
     get: controllers.rnd.get
   }
 }, {
-  path: '/recruitment.html',
+  path: '/recruitment',
   methods: {
     get: controllers.recruitment.get
   }
 }, {
-  path: '/service.html',
+  path: '/service-offshore',
   methods: {
     get: controllers.service.get
   }
 }, {
-  path: '/shopify-partner.html',
+  path: '/shopify-partner',
   methods: {
     get: controllers.shopifyPartner.get
   }
 }, {
-  path: '/download-new.html',
+  path: '/download',
   methods: {
     get: controllers.downloadNew.get
   }

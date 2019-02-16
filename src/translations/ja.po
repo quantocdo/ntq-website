@@ -1481,7 +1481,7 @@ msgstr "設立"
 
 #:
 msgid "service-offshore_plan_desc_1"
-msgstr 2011年
+msgstr "2011年"
 
 #:
 msgid "service-offshore_plan_label_2"
@@ -1492,7 +1492,7 @@ msgid "service-offshore_plan_desc_2"
 msgstr "402名"
 
 #:
-msgid "ervice-offshore_plan_label_3"
+msgid "service-offshore_plan_label_3"
 msgstr "プロジェクト数"
 
 #:
@@ -1500,7 +1500,7 @@ msgid "service-offshore_plan_desc_3"
 msgstr "400案件以上"
 
 #:
-msgid "ervice-offshore_plan_label_4"
+msgid "service-offshore_plan_label_4"
 msgstr "成長率"
 
 #:
@@ -1508,7 +1508,7 @@ msgid "service-offshore_plan_desc_4"
 msgstr "40％以上"
 
 #:
-msgid "ervice-offshore_plan_label_5"
+msgid "service-offshore_plan_label_5"
 msgstr "日本のお客様"
 
 #:
