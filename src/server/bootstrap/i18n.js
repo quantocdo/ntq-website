@@ -32,7 +32,7 @@ export default app => {
       res.locals._locale = 'en'
     }
 
-    res.locals._locale = 'en'
+    res.locals._locale = 'ja'
 
     next()
   })
