@@ -13,62 +13,29 @@
   <div class="container">
 
     <div class="recruitment__introduce">
-      <h3 class="recruitment__introduce-title">Recruitment</h3>
-      <p class="recruitment__introduce-content">NTQ Solution là Công ty hoạt động trong lĩnh vực gia công phần mềm
-        cho các thị trường Nhật Bản (với tỷ trọng hơn 80%) , Hàn Quốc, Singapore, Úc, Phần Lan... với quy mô hiện tại
-        là gần 300 thành viên<br>Một trong các mục tiêu của NTQ trong thời gian tới là trở thành Công ty toàn cầu
-        và tăng thị phần tại thị trường Nhật Bản, mục tiêu đạt con số 1000 member vào năm 2021.
-        <br>Hiện tại chúng tôi đang tuyển dụng những vị trí sau</p>
+      <h3 class="recruitment__introduce-title"><%- @__('recruitment-introduce-title1') %></h3>
+      <p class="recruitment__introduce-content"><%- @__('recruitment-introduce-content1') %></p>
     </div>
 
     <div class="recruitment__introduce">
-      <h3 class="recruitment__introduce-title">Chính sách tuyển dụng</h3>
+      <h3 class="recruitment__introduce-title"><%- @__('recruitment-introduce-title2') %></h3>
       <p class="recruitment__introduce-content js-introduce-content">
-        Với sự cạnh tranh ngày càng khốc liệt của thị trường lao động ngành CNTT,
-        để có thể tạo lập giá trị và sự tin tưởng tuyệt đối vào công ty, NTQ Solution chú trọng việc xây dựng,
-        triển khai chính sách để đảm bảo xây dựng một nội bộ vững chắc, chuyên nghiệp và mang lại nhiều lợi ích
-        cho thành viên công ty – được coi là yếu tố hàng đầu trong tổ chức. Chính sách rõ ràng không chỉ giúp tăng
-        năng suất và hiệu quả làm việc của nhân viên mà còn làm tăng mức độ gắn kết nhân viên, giúp họ gắn bó lâu dài
-        với tổ chức. Dưới đây là một số chính sách nổi bật mà NTQ đang áp dụng cho toàn thể các thành viên trong công
-        ty:<br /><br />1/ Khuyến khích học tập và đào tạo:
-        “Học, học nữa, học mãi”, học để không ngừng phát triển và đi đến thành công.
-        NTQ Solution chú trọng tổ chức các chương trình training on job, seminar thường xuyên về chuyên môn,
-        cập nhật các kiến thức công nghệ mới nhất. Có Chính sách phát triển năng lực quản lý, xây dựng đội ngũ
-        kế thừa, đào tạo các kỹ năng làm việc nhằm nâng cao kiến thức, kỹ năng, xây dựng đội ngũ ngày càng lớn mạnh.
-        <br>Đồng thời thúc đẩy năng lực tự học và rèn luyện theo định hướng nghề nghiệp và phù hợp với sở trường
-        của từng thành viên. Tiến hành khen thưởng, tăng lương và hoàn tiền thi chứng chỉ chuyên môn, ngoại ngữ.
-        <br />1/ Khuyến khích học tập và đào tạo: “Học, học nữa, học mãi”, học để không ngừng phát triển và đi đến
-        thành công. NTQ Solution chú trọng tổ chức các chương trình training on job, seminar thường xuyên về chuyên
-        môn, cập nhật các kiến thức công nghệ mới nhất. Có Chính sách phát triển năng lực quản lý, xây dựng đội ngũ
-        kế thừa, đào tạo các kỹ năng làm việc nhằm nâng cao kiến thức, kỹ năng, xây dựng đội ngũ ngày càng lớn mạnh.
-        <br>Đồng thời thúc đẩy năng lực tự học và rèn luyện theo định hướng nghề nghiệp và phù hợp với sở trường của
-        từng thành viên. Tiến hành khen thưởng, tăng lương và hoàn tiền thi chứng chỉ chuyên môn, ngoại ngữ.
-        <br />1/ Khuyến khích học tập và đào tạo: “Học, học nữa, học mãi”, học để không ngừng phát triển và đi đến
-        thành công. NTQ Solution chú trọng tổ chức các chương trình training on job, seminar thường xuyên về chuyên
-        môn, cập nhật các kiến thức công nghệ mới nhất. Có Chính sách phát triển năng lực quản lý, xây dựng đội ngũ
-        kế thừa, đào tạo các kỹ năng làm việc nhằm nâng cao kiến thức, kỹ năng, xây dựng đội ngũ ngày càng lớn mạnh.
-        <br>Đồng thời thúc đẩy năng lực tự học và rèn luyện theo định hướng nghề nghiệp và phù hợp với sở trường của
-        từng thành viên.
-        Tiến hành khen thưởng, tăng lương và hoàn tiền thi chứng chỉ chuyên môn, ngoại ngữ.
+        <%- @__('recruitment-introduce-content2') %>
       </p>
       <div class="recruitment__see-more bg-gradient js-see-more" onclick="viewMore()">
-        <h3 class="js-text-see-more">Xem thêm</h3>
+        <h3 class="js-text-see-more"><%- @__('recruitment-see-more') %></h3>
       </div>
     </div>
 
-    <h3 class="row recruitment__feel-title">Cảm nhận của NTQER</h3>
+    <h3 class="row recruitment__feel-title"><%- @__('recruitment-feel-title') %></h3>
     <div class="row recruitment__feel">
       <div class="recruitment__feel-item col-md-4 col-sm-6">
         <div class="recruitment__feel-avt" style="background-image: url(<%= @__asset('img/avt-quyen.jpg') %>)">
         </div>
         <div class="recruitment__feel-content">
-          <h3 class="recruitment__feel-name">Nguyễn Thị Quyên</h3>
-          <h3 class="recruitment__feel-job">Tester</h3>
-          <p class="recruitment__feel-detail">NTQ là một môi trường năng động,
-            trẻ trung và tạo dựng cho mình một phong cách làm việc mới, một lối tư duy mới.
-            Không những thế, với phong trào học tập - tự học tập vô cùng mạnh mẽ, tại đây mình đã có cơ hội học hỏi
-            thêm rất nhiều kiến thức mới. NTQ đã giúp mình nhận ra được giá trị thực sự của bản thân và tạo được động
-            lực để mình cố gắng hơn mỗi ngày, cuộc sống vì thế sẽ trở nên hấp dẫn và thú vị, ý nghĩa hơn rất nhiều.</p>
+          <h3 class="recruitment__feel-name"><%- @__('recruitment-feel-name1') %></h3>
+          <h3 class="recruitment__feel-job"><%- @__('recruitment-feel-job1') %></h3>
+          <p class="recruitment__feel-detail"><%- @__('recruitment-feel-detail1') %></p>
         </div>
       </div>
 
@@ -76,14 +43,9 @@
         <div class="recruitment__feel-avt" style="background-image: url(<%= @__asset('img/avt-huong.jpg') %>)">
         </div>
         <div class="recruitment__feel-content">
-          <h3 class="recruitment__feel-name">Phạm Thị Hường</h3>
-          <h3 class="recruitment__feel-job">Tester</h3>
-          <p class="recruitment__feel-detail">Điều khiến mình quyết định gắn bó với NTQ đó chính là môi trường
-            chuyên nghiệp, đặc biệt có rất nhiều anh chị giàu kinh nghiệm và luôn sẵn sàng giúp đỡ.
-            Tại đây, mình đã học hỏi được về quy trình làm việc chuyên nghiệp, học hỏi được cách sắp xếp công
-            việc cũng như phân bố thời gian hợp lí, đưa ra công việc cần làm và cố gắng hoàn thành nó thật tốt.
-            Bên cạnh đó, NTQ cũng thường xuyên có những hoạt động văn hóa tinh thần khác, rất phù hợp với một con
-            người năng động, hướng ngoại và thích tham gia hoạt động như mình.</p>
+          <h3 class="recruitment__feel-name"><%- @__('recruitment-feel-name2') %></h3>
+          <h3 class="recruitment__feel-job"><%- @__('recruitment-feel-job2') %></h3>
+          <p class="recruitment__feel-detail"><%- @__('recruitment-feel-detail2') %></p>
         </div>
       </div>
 
@@ -91,13 +53,9 @@
         <div class="recruitment__feel-avt" style="background-image: url(<%= @__asset('img/avt-anh.jpg') %>)">
         </div>
         <div class="recruitment__feel-content">
-          <h3 class="recruitment__feel-name">Lưu thị diệu ánh</h3>
-          <h3 class="recruitment__feel-job">Đào tạo</h3>
-          <p class="recruitment__feel-detail">Môi trường trẻ và vô cùng vui vẻ. Từ các sếp cho đến nhân viên,
-            mọi người đều rất vui vẻ và thân thiện. Không chỉ được làm đúng công việc, chuyên môn mình mong muốn,
-            tại đây, mình còn được thỏa sức sáng tạo để giải quyết các vấn đề, thiết kế và làm quen với các vấn đề
-            chiến lược nên học được cách làm việc độc lập, làm việc nhóm và cách tư duy logic để giải quyết các vấn đề.
-            Mình nghĩ đây là một môi trường rất phù hợp để phát triển, đặc biệt là các bạn trẻ tuổi như mình.</p>
+          <h3 class="recruitment__feel-name"><%- @__('recruitment-feel-name3') %></h3>
+          <h3 class="recruitment__feel-job"><%- @__('recruitment-feel-job3') %></h3>
+          <p class="recruitment__feel-detail"><%- @__('recruitment-feel-detail3') %></p>
         </div>
       </div>
 
@@ -105,12 +63,9 @@
         <div class="recruitment__feel-avt" style="background-image: url(<%= @__asset('img/avt-binh-minh.jpg') %>)">
         </div>
         <div class="recruitment__feel-content">
-          <h3 class="recruitment__feel-name">Từ bình minh</h3>
-          <h3 class="recruitment__feel-job">Dev</h3>
-          <p class="recruitment__feel-detail">Mỗi ngày trôi qua là 1 ngày mình lại có thêm những bài học, những kiến
-            thức mới. Đó không chỉ là kỹ năng nghề nghiệp mà còn là kinh nghiệm sống và làm việc. Ở NTQ ai cũng có thể
-            là người thầy của bạn dưới 1 góc độ nào đó. Có thể không cùng dự án, không cùng đơn vị, miễn là bản thân
-            chịu học hỏi, chịu cố gắng thì bất kể ai cũng sẽ sẵn sàng giúp đỡ bạn.</p>
+          <h3 class="recruitment__feel-name"><%- @__('recruitment-feel-name4') %></h3>
+          <h3 class="recruitment__feel-job"><%- @__('recruitment-feel-job4') %></h3>
+          <p class="recruitment__feel-detail"><%- @__('recruitment-feel-detail4') %></p>
         </div>
       </div>
 
@@ -118,12 +73,9 @@
         <div class="recruitment__feel-avt" style="background-image: url(<%= @__asset('img/avt-huy.jpg') %>)">
         </div>
         <div class="recruitment__feel-content">
-          <h3 class="recruitment__feel-name">Trần Đức Huy</h3>
-          <h3 class="recruitment__feel-job">Comtor</h3>
-          <p class="recruitment__feel-detail">NTQ luôn chào đón và tạo điều kiện cho các thành viên trẻ tuổi,
-            ngay cả những thành viên chưa ra trường. Chỉ cần có đam mê, chăm chỉ và cầu tiến, các bạn hoàn toàn
-            có thể trở thành một nhân viên chính thức và không thua kém ai cả. Đó chính là động lực và cũng là
-            niềm tin để mình tiếp tục cố gắng phát triển bản thân nhiều hơn nữa.</p>
+          <h3 class="recruitment__feel-name"><%- @__('recruitment-feel-name5') %></h3>
+          <h3 class="recruitment__feel-job"><%- @__('recruitment-feel-job5') %></h3>
+          <p class="recruitment__feel-detail"><%- @__('recruitment-feel-detail5') %></p>
         </div>
       </div>
 
@@ -131,74 +83,61 @@
         <div class="recruitment__feel-avt" style="background-image: url(<%= @__asset('img/avt-tung.jpg') %>)">
         </div>
         <div class="recruitment__feel-content">
-          <h3 class="recruitment__feel-name">Nguyễn Duy Tùng</h3>
-          <h3 class="recruitment__feel-job">Dev</h3>
-          <p class="recruitment__feel-detail">Môi trường thân thiện, chuyên nghiệp và các sếp luôn tạo điều
-            kiện để cho thành viên được phát triển là điều đã giữ chân mình tại NTQ. Hơn nữa, điều mình thấy
-            ấn tượng nhất sau một thời gian làm việc đó là sự chủ động trong công việc của các nhóm dự án.
-            Không chỉ thực hiện theo đúng yêu cầu của khách hàng mà còn thường xuyên đề xuất phương án cải
-            thiện sản phẩm một cách tốt nhất. Chính điều này đã khiến khách hàng rất tin tưởng với đội ngũ của
-            công ty.</p>
+          <h3 class="recruitment__feel-name"><%- @__('recruitment-feel-name6') %></h3>
+          <h3 class="recruitment__feel-job"><%- @__('recruitment-feel-job6') %></h3>
+          <p class="recruitment__feel-detail"><%- @__('recruitment-feel-detail6') %></p>
         </div>
       </div>
     </div>
 
-    <h3 class="recruitment__news-title">Bản tin tuyển dụng</h3>
+    <h3 class="recruitment__news-title"><%- @__('recruitment-news-title') %></h3>
 
     <div class="row recruitment__news">
       <div class="recruitment__news--item col-md-3 col-sm-4 col-sx-12" style="background-image: url(<%= @__asset('img/recruitment-fullstack.jpg') %>)"></div>
       <div class="recruitment__news--item-content col-md-9 col-sm-8 col-sx-12">
-        <h3 class="recruitment__news--item-title">Tuyển dụng web developer fullstack</h3>
-        <h3 class="recruitment__news--item-time">18/7/2018</h3>
-        <p class="recruitment__news--item-description">Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam,</p>
-        <a class="btn" href="#">Xem tin</a>
+        <h3 class="recruitment__news--item-title"><%- @__('recruitment-news_item-title1') %></h3>
+        <h3 class="recruitment__news--item-time"><%- @__('recruitment-news_item-time1') %></h3>
+        <p class="recruitment__news--item-description"><%- @__('recruitment-news_item-description1') %></p>
+        <a class="btn" href="#"><%- @__('btn-loadmore') %></a>
       </div>
     </div>
 
     <div class="row recruitment__news">
       <div class="recruitment__news--item col-md-3 col-sm-4 col-sx-12" style="background-image: url(<%= @__asset('img/recruitment-c.jpg') %>)"></div>
       <div class="recruitment__news--item-content col-md-9 col-sm-8 col-sx-12">
-        <h3 class="recruitment__news--item-title">Tuyển dụng C++, C#</h3>
-        <h3 class="recruitment__news--item-time">18/7/2018</h3>
-        <p class="recruitment__news--item-description">Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam,</p>
-        <a class="btn" href="#">Xem tin</a>
+        <h3 class="recruitment__news--item-title"><%- @__('recruitment-news_item-title2') %></h3>
+        <h3 class="recruitment__news--item-time"><%- @__('recruitment-news_item-time2') %></h3>
+        <p class="recruitment__news--item-description"><%- @__('recruitment-news_item-description2') %></p>
+        <a class="btn" href="#"><%- @__('btn-loadmore') %></a>
       </div>
     </div>
 
     <div class="row recruitment__news">
       <div class="recruitment__news--item col-md-3 col-sm-4 col-sx-12" style="background-image: url(<%= @__asset('img/recruitment-java.jpg') %>)"></div>
       <div class="recruitment__news--item-content col-md-9 col-sm-8 col-sx-12">
-        <h3 class="recruitment__news--item-title">Tuyển dụng Java developer</h3>
-        <h3 class="recruitment__news--item-time">18/7/2018</h3>
-        <p class="recruitment__news--item-description">Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam,</p>
-        <a class="btn" href="#">Xem tin</a>
+        <h3 class="recruitment__news--item-title"><%- @__('recruitment-news_item-title3') %></h3>
+        <h3 class="recruitment__news--item-time"><%- @__('recruitment-news_item-time3') %></h3>
+        <p class="recruitment__news--item-description"><%- @__('recruitment-news_item-description3') %></p>
+        <a class="btn" href="#"><%- @__('btn-loadmore') %></a>
       </div>
     </div>
 
     <div class="row recruitment__news">
       <div class="recruitment__news--item col-md-3 col-sm-4 col-sx-12" style="background-image: url(<%= @__asset('img/recruitment-c.jpg') %>)"></div>
       <div class="recruitment__news--item-content col-md-9 col-sm-8 col-sx-12">
-        <h3 class="recruitment__news--item-title">Tuyển dụng C++, C#</h3>
-        <h3 class="recruitment__news--item-time">18/7/2018</h3>
-        <p class="recruitment__news--item-description">Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam,</p>
-        <a class="btn" href="#">Xem tin</a>
+        <h3 class="recruitment__news--item-title"><%- @__('recruitment-news_item-title4') %></h3>
+        <h3 class="recruitment__news--item-time"><%- @__('recruitment-news_item-time4') %></h3>
+        <p class="recruitment__news--item-description"><%- @__('recruitment-news_item-description4') %></p>
+        <a class="btn" href="#"><%- @__('btn-loadmore') %></a>
       </div>
     </div>
 
     <div class="row recruitment__footer">
       <div class="oll-news col-xs-6">
-        <h3>tin cũ</h3>
+        <h3><%- @__('oll-news') %></h3>
       </div>
       <div class="news col-xs-6">
-        <h3>tin mới</h3>
+        <h3><%- @__('news') %></h3>
       </div>
     </div>
   </div>

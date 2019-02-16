@@ -15,27 +15,22 @@
         <img src="<%= @__asset('img/logo-shopify.png') %>" alt="">
       </div>
       <p class="landing__baner-detail">
-        At NTQ Solution, our dedicated team of Shopify designers and developers build customised, enterprise solutions
-        for fast growing, high volume merchants. With offices in Sydney and Melbourne, we specialise in multi-channel
-        retail and work with some of Australias leading brands. WithShopify Plus, your business is guaranteed seamless
-        growth and scalability.
+        <%- @__('landing-baner_detail') %>
       </p>
-      <p class="landing__baner-detail">
-        Our core value is to create profitable eCommerce business for our clients. Whether you’re starting small or
-        scaling up, we provide strategy, design and growth services to maximise your commerce.
+      <p class="landing-baner_detail">
+        <%- @__('landing-baner_detail1') %>
       </p>
     </div>
   </div>
 
-  <h3 class="landing__why-shopify--title">Why shopify</h3>
+  <h3 class="landing__why-shopify--title"><%- @__('landing-why_shopify_title') %></h3>
   <div class="landing__why-shopify">
     <div class="landing__why-shopify--content">
       <div class="landing__why-shopify--avata" style="background-image: url(<%= @__asset('img/everything-handled.jpg') %>);"></div>
       <div class="landing__why-shopify--wrapper">
         <div class="landing__why-shopify--text">
-          <h3 class="landing__why-shopify--title-detail">Everything's handled</h3>
-          <p class="landing__why-shopify--detail">Concentrate on growing your business. Shopify has everyhing built-in
-            and taken care of by professionals. Your store will be fast, secure, and taken care of.</p>
+          <h3 class="landing__why-shopify--title-detail"><%- @__('landing-why-shopify_title_detail') %></h3>
+          <p class="landing__why-shopify--detail"><%- @__('landing-why-shopify_detail') %></p>
         </div>
       </div>
     </div>
@@ -44,9 +39,8 @@
       <div class="landing__why-shopify--avata" style="background-image: url(<%= @__asset('img/mobile-app.jpg') %>);"></div>
       <div class="landing__why-shopify--wrapper">
         <div class="landing__why-shopify--text">
-          <h3 class="landing__why-shopify--title-detail">Mobile app and shopify Pos</h3>
-          <p class="landing__why-shopify--detail">Take your business everywhere with the mobile app, or seamlessly grow
-            into a robust point of sale system to power your retail locations.</p>
+          <h3 class="landing__why-shopify--title-detail"><%- @__('landing-why-shopify_title_detail1') %></h3>
+          <p class="landing__why-shopify--detail"><%- @__('landing-why-shopify_detail1') %></p>
         </div>
 
       </div>
@@ -56,10 +50,8 @@
       <div class="landing__why-shopify--avata" style="background-image: url(<%= @__asset('img/robuss-app.jpg') %>);"></div>
       <div class="landing__why-shopify--wrapper">
         <div class="landing__why-shopify--text">
-          <h3 class="landing__why-shopify--title-detail">robust app marketplace</h3>
-          <p class="landing__why-shopify--detail">There's always an app for that. With over 1,800 apps in the App
-            Store,
-            we use them to power everything from email marketing to accounting integration.</p>
+          <h3 class="landing__why-shopify--title-detail"><%- @__('landing-why-shopify_title_detail2') %></h3>
+          <p class="landing__why-shopify--detail"><%- @__('landing-why-shopify_detail2') %></p>
         </div>
 
       </div>
@@ -69,10 +61,8 @@
       <div class="landing__why-shopify--avata" style="background-image: url(<%= @__asset('img/cross-channel.jpg') %>);"></div>
       <div class="landing__why-shopify--wrapper">
         <div class="landing__why-shopify--text">
-          <h3 class="landing__why-shopify--title-detail">cross channel selling</h3>
-          <p class="landing__why-shopify--detail">Your online store is only one of the channels available for you to
-            sell
-            on. Sell on Facebook, Amazon, Ebay, and Buzzfeed ? with more channels being added all of the time.</p>
+          <h3 class="landing__why-shopify--title-detail"><%- @__('landing-why-shopify_title_detail3') %></h3>
+          <p class="landing__why-shopify--detail"><%- @__('landing-why-shopify_detail3') %></p>
         </div>
       </div>
     </div>
@@ -81,9 +71,8 @@
       <div class="landing__why-shopify--avata" style="background-image: url(<%= @__asset('img/endless.jpg') %>);"></div>
       <div class="landing__why-shopify--wrapper">
         <div class="landing__why-shopify--text">
-          <h3 class="landing__why-shopify--title-detail">endless customization</h3>
-          <p class="landing__why-shopify--detail">If you can think it, we can build it. Shopify's liquid language lets
-            us create beautiful responsive websites that will create a lasting impression.</p>
+          <h3 class="landing__why-shopify--title-detail"><%- @__('landing-why-shopify_title_detail4') %></h3>
+          <p class="landing__why-shopify--detail"><%- @__('landing-why-shopify_detail4') %></p>
         </div>
 
       </div>
@@ -91,34 +80,29 @@
   </div>
 
   <div class="landing__service container">
-    <h3 class="landing__service-title">Our Shopify Service</h3>
+    <h3 class="landing__service-title"><%- @__('landing-service-title') %></h3>
     <div class="landing__service-content">
       <div class="row">
         <div class="col-sm-4">
           <div class="landing__service-item--app landing__service-item">
-            <p class="landing__service-item--title">Platform migration</p>
+            <p class="landing__service-item--title"><%- @__('landing-service-item--title1') %></p>
             <div class="overlay"></div>
           </div>
-          <p class="landing__service-item--content">Take your performance to the next level with our re-platform
-            services to Shopify and Shopify Plus.</p>
+          <p class="landing__service-item--content"><%- @__('landing-service-item-content1') %></p>
         </div>
         <div class="col-sm-4">
           <div class="landing__service-item landing__service-item--business">
-            <p class="landing__service-item--title">Start a store</p>
+            <p class="landing__service-item--title"><%- @__('landing-service-item--title2') %></p>
             <div class="overlay"></div>
           </div>
-          <p class="landing__service-item--content">We take care of everything from start to launch so you can focus on
-            building your business. Our Shopify developers take the beautiful work done by our designers and bring it
-            to life. It's our job to build dazzling sites without sacrificing functionality or speed.</p>
+          <p class="landing__service-item--content"><%- @__('landing-service-item-content2') %></p>
         </div>
         <div class="col-sm-4">
           <div class="landing__service-item landing__service-item--service">
-            <p class="landing__service-item--title">Managed services</p>
+            <p class="landing__service-item--title"><%- @__('landing-service-item--title3') %></p>
             <div class="overlay"></div>
           </div>
-          <p class="landing__service-item--content">Regardless of the size of your project, whether it be small design
-            work or an ongoing project that requires monthly support, NTQ can shape up your venture to make it a
-            fruitful experience that will improve your eCommerce business.</p>
+          <p class="landing__service-item--content"><%- @__('landing-service-item-content3') %></p>
         </div>
       </div>
     </div>
@@ -128,11 +112,11 @@
     <div class="container">
       <div class="landing__ready-content">
         <div class="landing__ready-text">
-          <h3 class="landing__ready-title">Ready to get your Shopify store?</h3>
-          <h4 class="landing__ready-detail">Send us a message and we'll get back to you as soon as possible</h4>
+          <h3 class="landing__ready-title"><%- @__('landing-ready-title') %></h3>
+          <h4 class="landing__ready-detail"><%- @__('landing-ready-detail') %></h4>
         </div>
         <div class="landing__ready-btn">
-          <a href="#">Get in touch</a>
+          <a href="#"><%- @__('landing-ready-btn') %></a>
         </div>
       </div>
     </div>

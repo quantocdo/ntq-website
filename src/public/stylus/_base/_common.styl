@@ -9,7 +9,6 @@ main
 
 *
   box-sizing: border-box
-  font-family: kozukaGothicRegular !important
 
 a
   text-decoration: none
@@ -92,7 +91,7 @@ table
       background-image: linear-gradient(to right, #11bdbd, #b0e04e 85%)
       border-radius: 50%
       display: inline-block
-      padding: 2px 11px
+      padding: 2px 14px
       line-height: 56px
       margin-top: 6px
       margin-left: -80px
@@ -157,6 +156,10 @@ table
       background-color: #a48d9b    
 
 @media screen and (max-width: 991px)
+  .masthead
+    p
+      height: 154px
+
   .btn
     padding: 12px 12px 10px
     font-size: 20px
@@ -168,5 +171,19 @@ table
   .masthead
     height: 154px
     line-height: 154px
+
+@media screen and (max-width: 479px)
+  .masthead
+      position: relative
+      
+      &-wrapper
+        & p
+          width: 100%
+          height: auto !important
+          line-height: 42px !important
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%,-50%)
   
 

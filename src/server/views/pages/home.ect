@@ -17,16 +17,16 @@
 			</video>
 		</div>
 		<div class="home__banner-content js-banner-content">
-			<h3>Delivering<br/>the Next Top Quality Solution</h3>
-			<h4>Vietnam Software Outsourcing Company</h4>
+			<h3><%- @__('home-banner-content1') %></h3>
+			<h4><%- @__('home-banner-content2') %></h4>
 		</div>
 	</div>
 
 	<div class="home__intro">
 		<div class="container">
 			<div class="home__heading">
-				<h3>NTQ SOLUTIONとは？</h3>
-				<p>NTQ Solutionは、モバイルアプリやWebアプリなどのオフショア開発サービスを提供しているベトナムのソフトウェアアウトソーシング会社です。</p>
+				<h3><%- @__('home-heading1') %></h3>
+				<p><%- @__('home-heading2') %></p>
 			</div>
 			<div class="row">
 				<div class="col-sm-7 col-md-8 home__intro-video">
@@ -34,8 +34,8 @@
 						allowfullscreen></iframe>
 				</div>
 				<div class="col-sm-5 col-md-4">
-					<a href="about-us" class="btn btn--square btn--japan">
-						企業情報
+					<a href="about-us.html" class="btn btn--square btn--japan">
+						<%- @__('btn-japan') %>
 					</a>
 				</div>
 			</div>
@@ -46,7 +46,7 @@
 		<div class="container">
 			<div class="home__reason">
 				<div class="home__heading">
-					<h3>NTQが選ばれる理由</h3>
+					<h3><%- @__('home-heading3') %></h3>
 				</div>
 				<div class="row">
 					<ul class="col-sm-6 home__reason-list">
@@ -54,19 +54,19 @@
 							<div class="home__reason-img-wrapper">
 								<img src="<%= @__asset('img/icon-reason-1.png') %>" alt="/">
 							</div>
-							<a href="#">完全日本語対応</a>
+							<a href="#"><%- @__('home-reason-item1') %></a>
 						</li>
 						<li class="home__reason-item">
 							<div class="home__reason-img-wrapper">
 								<img src="<%= @__asset('img/icon-reason-2.png') %>" alt="/">
 							</div>
-							<a href="#">400以上の案件実績</a>
+							<a href="#"><%- @__('home-reason-item2') %></a>
 						</li>
 						<li class="home__reason-item">
 							<div class="home__reason-img-wrapper">
 								<img src="<%= @__asset('img/icon-reason-3.png') %>" alt="/">
 							</div>
-							<a href="#">NTQジャパンの迅速な対応</a>
+							<a href="#"><%- @__('home-reason-item3') %></a>
 						</li>
 					</ul>
 					<div class="col-sm-6 home__reason-slide js-reason-slider">
@@ -79,29 +79,29 @@
 
 			<div class="home__service">
 				<div class="home__heading">
-					<h3>サービス</h3>
+					<h3><%- @__('home-heading5') %></h3>
 				</div>
 				<div class="row home__service-items equal-height">
 					<div class="col-sm-4 home__service-item">
 						<div class="home__service-img-wrapper" style="background-image: url('<%= @__asset('img/item-service-1.png') %>');">
 						</div>
-						<h4>ソフトウェアアウトソーシング</h4>
-						<p>コストが低いは当たり前。NTQは品質で勝負しています。</p>
-						<a href="#">詳しくはこちら</a>
+						<h4><%- @__('home-service-item1') %></h4>
+						<p><%- @__('home-service-item2') %></p>
+						<a href="#"><%- @__('home-service-item3') %></a>
 					</div>
 					<div class="col-sm-4 home__service-item">
 						<div class="home__service-img-wrapper" style="background-image: url('<%= @__asset('img/item-service-2.png') %>');">
 						</div>
-						<h4>AI研究・開発</h4>
-						<p>様々な分野においてAI開発実績を数多く持つ弊社はお客様のアイディアを実現します。</p>
-						<a href="service-ai">詳しくはこちら</a>
+						<h4><%- @__('home-service-item4') %></h4>
+						<p><%- @__('home-service-item5') %></p>
+						<a href="service-ai.html"><%- @__('home-service-item6') %></a>
 					</div>
 					<div class="col-sm-4 home__service-item">
 						<div class="home__service-img-wrapper" style="background-image: url('<%= @__asset('img/item-service-3.png') %>');">
 						</div>
-						<h4>Shopify Partner</h4>
-						<p>Shopifyのデザイナーと開発者の専門チームが、貴社Shopifyストアの構築と最適化を支援いたします。</p>
-						<a href="#">詳しくはこちら</a>
+						<h4><%- @__('home-service-item7') %></h4>
+						<p><%- @__('home-service-item8') %></p>
+						<a href="#"><%- @__('home-service-item9') %></a>
 					</div>
 				</div>
 				<div class="row home__service-icons equal-height">
@@ -109,123 +109,123 @@
 						<div class="home__service-img-wrapper">
 							<img src="<%= @__asset('img/icon-service-1.png') %>" alt="/">
 						</div>
-						<p>モバイルアプリ</p>
+						<p><%- @__('home-service-icon1') %></p>
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
 						<div class="home__service-img-wrapper">
 							<img src="<%= @__asset('img/icon-service-2.png') %>" alt="/">
 						</div>
-						<p>モバイルアプリ</p>
+						<p><%- @__('home-service-icon2') %></p>
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
 						<div class="home__service-img-wrapper">
 							<img src="<%= @__asset('img/icon-service-3.png') %>" alt="/">
 						</div>
-						<p>クラウドベースソフトウェア</p>
+						<p><%- @__('home-service-icon3') %></p>
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
 						<div class="home__service-img-wrapper">
 							<img src="<%= @__asset('img/icon-service-4.png') %>" alt="/">
 						</div>
-						<p>クラウドベースソフトウェア</p>
+						<p><%- @__('home-service-icon4') %></p>
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
 						<div class="home__service-img-wrapper">
 							<img src="<%= @__asset('img/icon-service-5.png') %>" alt="/">
 						</div>
-						<p>システムインテグレーション</p>
+						<p><%- @__('home-service-icon5') %></p>
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
 						<div class="home__service-img-wrapper">
 							<img src="<%= @__asset('img/icon-service-6.png') %>" alt="/">
 						</div>
-						<p>業務系アプリ</p>
+						<p><%- @__('home-service-icon6') %></p>
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
 						<div class="home__service-img-wrapper">
 							<img src="<%= @__asset('img/icon-service-7.png') %>" alt="/">
 						</div>
-						<p>組み込みソフトウェア</p>
+						<p><%- @__('home-service-icon7') %></p>
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
 						<div class="home__service-img-wrapper">
 							<img src="<%= @__asset('img/icon-service-8.png') %>" alt="/">
 						</div>
-						<p>Eコマースソフトウェア</p>
+						<p><%- @__('home-service-icon8') %></p>
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
 						<div class="home__service-img-wrapper">
 							<img src="<%= @__asset('img/icon-service-9.png') %>" alt="/">
 						</div>
-						<p>AIレコメンドシステム、</p>
+						<p><%- @__('home-service-icon9') %></p>
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
 						<div class="home__service-img-wrapper">
 							<img src="<%= @__asset('img/icon-service-10.png') %>" alt="/">
 						</div>
-						<p>AI画像認識</p>
+						<p><%- @__('home-service-icon10') %></p>
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
 						<div class="home__service-img-wrapper">
 							<img src="<%= @__asset('img/icon-service-11.png') %>" alt="/">
 						</div>
-						<p>AI-OCR</p>
+						<p><%- @__('home-service-icon11') %></p>
 					</div>
 					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
 						<div class="home__service-img-wrapper">
 							<img src="<%= @__asset('img/icon-service-12.png') %>" alt="/">
 						</div>
-						<p>RPA</p>
+						<p><%- @__('home-service-icon12') %></p>
 					</div>
 				</div>
 			</div>
 
 			<div class="home__customer">
 				<div class="home__heading">
-					<h3>お客様の声</h3>
+					<h3><%- @__('home-heading8') %></h3>
 				</div>
 				<div class="row equal-height">
 					<div class="col-sm-6 home__customer-item">
 						<div class="home__customer-img-wrapper">
 							<img src="<%= @__asset('img/customer-1.png') %>" alt="/">
 						</div>
-						<h4>増田 紀之</h4>
-						<p>取締役</p>
-						<p>NTQには日本に長く滞在したという経験を持っている社員も多く、日本式の仕事のやり方や細やかな気配りが出来る会社だと感じております。また代表のSon社長は大きな夢を持っていて、その夢に共感出来る社員がどんどん集まってきています。凄いスピードで成長する会社であっても芯は変わらない。ベトナムの中でもオススメできる会社の一つです。</p>
+						<h4><%- @__('home-customer-item1') %></h4>
+						<p><%- @__('home-customer-item2') %></p>
+						<p><%- @__('home-customer-item3') %></p>
 					</div>
 					<div class="col-sm-6 home__customer-item">
 						<div class="home__customer-img-wrapper">
 							<img src="<%= @__asset('img/customer-2.png') %>" alt="/">
 						</div>
-						<h4>Masahiro Okabe</h4>
-						<p>Manager, ilovex Co, Ltd, Japan</p>
-						<p>実装前の仕様確認や実装後のテストを特に徹底しておられ、技術力、言語能力の高さも相まって、ミスの発生率が非常に低かったです。また、こちらの困っていることは何でも相談に乗っていただき、技術的に難しい場合でも代替案を必ず提示してくれる。このような働きかけはNTQならではだと思います。</p>
+						<h4><%- @__('home-customer-item4') %></h4>
+						<p><%- @__('home-customer-item5') %></p>
+						<p><%- @__('home-customer-item6') %></p>
 					</div>
 					<div class="col-sm-6 home__customer-item">
 						<div class="home__customer-img-wrapper">
 							<img src="<%= @__asset('img/customer-3.png') %>" alt="/">
 						</div>
-						<h4>Dean Sutcliffe</h4>
-						<p>CIO, iMyVenue, Australia</p>
-						<p>NTQ Solutionの高い技術力は評判通りで、品質はオーストラリアの開発会社に劣らず、我々の期待を裏切りませんでした。いくつかの案件をお願いしましたが、どれも低コストかつ効果的なソリューションに大変満足しております。</p>
+						<h4><%- @__('home-customer-item7') %></h4>
+						<p><%- @__('home-customer-item8') %></p>
+						<p><%- @__('home-customer-item9') %></p>
 					</div>
 					<div class="col-sm-6 home__customer-item">
 						<div class="home__customer-img-wrapper">
 							<img src="<%= @__asset('img/customer-4.png') %>" alt="/">
 						</div>
-						<h4>Asuka Inoue</h4>
-						<p>CEO, Bit2Byte Inc, Japan</p>
-						<p>海外との取引は初めてで不安もありましたが、毎度納得するものをスピーディに提供していただく事で徐々に信頼度が増していきました。日本人独特の感覚にも合わせていただき、コミュニケーションでも不満を感じた事は一度もありません。コストも安く成果物には後々運用で苦労しないような細かな気配りが見えとても満足しています。</p>
+						<h4><%- @__('home-customer-item10') %></h4>
+						<p><%- @__('home-customer-item11') %></p>
+						<p><%- @__('home-customer-item12') %></p>
 					</div>
 				</div>
 			</div>
 
 			<div class="home__tech">
 				<div class="home__heading">
-					<h3>技術</h3>
-					<p>お客様の市場競争力向上とビジネス規模拡大を支援するために、常に最新技術をご提供いたします。</p>
+					<h3><%- @__('home-heading9') %></h3>
+					<p><%- @__('home-heading10') %></p>
 				</div>
-				<a href="#" class="btn btn--square">See more technologies</a>
+				<a href="#" class="btn btn--square"><%- @__('btn-square5') %></a>
 				<ul class="home__tech-list">
 					<li>
 						<img src="<%= @__asset('img/icon-tech-1.png') %>" alt="/">
@@ -259,10 +259,10 @@
 
 			<div class="home__suppliers">
 				<div class="home__heading">
-					<h3>お取引先様</h3>
-					<p>NTQは世界に進出しております。</p>
+					<h3><%- @__('home-heading11') %></h3>
+					<p><%- @__('home-heading12') %></p>
 				</div>
-				<img src="<%= @__asset('img/bg-map-suppliers.png') %>" alt="/">
+				<img src="<%= @__asset('img/bg-map-suppliers-jp.png') %>" alt="/">
 			</div>
 		</div>
 	</div>
@@ -271,10 +271,10 @@
 		<div class="home__rnd-background js-rnd-background"></div>
 		<div class="container">
 			<div class="home__heading">
-				<h3>RESEARCH & DEVELOPMENT</h3>
-				<p>アウトソーシングサービスだけでなく、アイディアからの研究開発も行っております。自分の手でお客さんの夢を実現しております。</p>
+				<h3><%- @__('home-heading13') %></h3>
+				<p><%- @__('home-heading14') %></p>
 			</div>
-			<a href="research-development" class="btn btn--square">
+			<a href="research-and-development.html" class="btn btn--square">
 				See how they work
 			</a>
 			<div class="home__rnd-slide js-rnd-slider">
@@ -293,29 +293,29 @@
 				<h3>News</h3>
 			</div>
 			<a href="news" class="home__btn-view-more">
-				続きを見る >>
+				<%- @__('home-btn-view-more') %>
 			</a>
 			<div class="row">
 				<div class="col-sm-8">
 					<div class="home__news-item">
-						<p>2018.8.10</p>
-						<a href="#">GDC Technology様とのご協力</a>
+						<p><%- @__('home-news-item_day1') %></p>
+						<a href="#"><%- @__('home-news-item1') %></a>
 					</div>
 					<div class="home__news-item">
-						<p>2018.8.10</p>
-						<a href="#">3年連続のサミットデー</a>
+						<p><%- @__('home-news-item_day2') %></p>
+						<a href="#"><%- @__('home-news-item2') %></a>
 					</div>
 					<div class="home__news-item">
-						<p>2018.8.10</p>
-						<a href="#">2019年のカレンダー</a>
+						<p><%- @__('home-news-item_day3') %></p>
+						<a href="#"><%- @__('home-news-item3') %></a>
 					</div>
 					<div class="home__news-item">
-						<p>2018.8.10</p>
-						<a href="#">エネルギーアップの秋</a>
+						<p><%- @__('home-news-item_day4') %></p>
+						<a href="#"><%- @__('home-news-item4') %></a>
 					</div>
 					<div class="home__news-item">
-						<p>2018.8.10</p>
-						<a href="#">NTQ主催のAIセミナー</a>
+						<p><%- @__('home-news-item_day5') %></p>
+						<a href="#"><%- @__('home-news-item5') %></a>
 					</div>
 				</div>
 				<div class="col-sm-4">

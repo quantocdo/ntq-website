@@ -33,7 +33,7 @@
 						</tr>
 						<tr class="about-us__info-item">
 							<td class="about-us__info-name"><%- @__('ntqvn_label_3') %></td>
-							<td class="about-us__info-detail" data-title="<%- @__('ntqvn_label_3') %>">(<%- @__('ntqvn_content_3') %></td>
+							<td class="about-us__info-detail" data-title="<%- @__('ntqvn_label_3') %>"><%- @__('ntqvn_content_3') %></td>
 						</tr>
 						<tr class="about-us__info-item">
 							<td class="about-us__info-name"><%- @__('ntqvn_label_4') %></td>
@@ -75,7 +75,7 @@
 						</tr>
 						<tr class="about-us__info-item">
 							<td class="about-us__info-name"><%- @__('ntqjp_label_3') %></td>
-							<td class="about-us__info-detail" data-title="<%- @__('ntqjp_label_3') %>">(<%- @__('ntqjp_content_3') %></td>
+							<td class="about-us__info-detail" data-title="<%- @__('ntqjp_label_3') %>"><%- @__('ntqjp_content_3') %></td>
 						</tr>
 						<tr class="about-us__info-item">
 							<td class="about-us__info-name"><%- @__('ntqjp_label_4') %></td>
@@ -144,81 +144,79 @@
 		</div>
 
 		<div class="about-us__means container">
-			<div class="about-us__means-title">創業の思いが込められた2つの意味を持つ"NTQ"</div>
+			<div class="about-us__means-title"><%- @__('about_means_title') %></div>
 			<div class="about-us__means-detail">
 				<div class="about-us__means-logo">
 					<img src="<%= @__asset('img/logo.png') %>" alt="">
 				</div>
 				<div class="about-us__means-description">
-					<p>NTQはベトナム語で「家族」を意味する “NHA TOI QUAN”
-						の略語です。これは、弊社のメンバーに心地よく過ごし、仕事をしてもらうために、メンバーを「家族の一員」として接したい、という思いが込められています。この理念が浸透している弊社では、ベトナムにおける1年の離職率が20%を超えている現状の中、嬉しいことに
-						<span>離職率を5%前後におさえることができました</span>。この家族の絆が目指すものこそが、もう一つの意味、”Next Top Quality”なのです。</p>
+					<p><%- @__('about_means_desc') %></p>
 				</div>
 			</div>
 		</div>
 
 		<div class="about-us__admin container">
-			<h3 class="about-us__admin-title">コアメンバー紹介</h3>
+			<h3 class="about-us__admin-title"><%- @__('about_core_title') %></h3>
 			<div class="about-us__admin--wrapper">
 				<div class="about-us__admin-item" style="background-image: url(<%= @__asset('img/HoangTV.png') %>);"
 				 data-toggle="modal" data-target="#HoangTV">
 					<div class="about-us__admin-content">
-						<h4>Tran Van Hoang</h4>
-						<p>NWB部 課長</p>
+						<h4><%- @__('about_core_name_1') %></h4>
+						<p><%- @__('about_core_role_1') %></p>
 					</div>
 				</div>
 				<div class="about-us__admin-item" style="background-image: url(<%= @__asset('img/SonTH.png') %>);">
 					<div class="about-us__admin-content">
-						<h4>To Hai Son</h4>
-						<p>CCO</p>
+						<h4><%- @__('about_core_name_2') %></h4>
+						<p><%- @__('about_core_role_2') %></p>
 					</div>
 				</div>
 				<div class="about-us__admin-item" style="background-image: url(<%= @__asset('img/SonPT.png') %>);">
 					<div class="about-us__admin-content">
-						<h4>Pham Thai Son</h4>
-						<p>CEO</p>
+						<h4><%- @__('about_core_name_3') %></h4>
+						<p><%- @__('about_core_role_3') %></p>
 					</div>
 				</div>
 				<div class="about-us__admin-item" style="background-image: url(<%= @__asset('img/SoanNK.png') %>);">
 					<div class="about-us__admin-content">
-						<h4>Nguyen Kim Soan</h4>
-						<p>CCO</p>
+						<h4><%- @__('about_core_name_4') %></h4>
+						<p><%- @__('about_core_role_4') %></p>
 					</div>
 				</div>
 				<div class="about-us__admin-item" style="background-image: url(<%= @__asset('img/DuongTD.png') %>);">
 					<div class="about-us__admin-content">
-						<h4>Truong Dao Quy Duong</h4>
-						<p>営業推進部 課長</p>
+						<h4><%- @__('about_core_name_5') %></h4>
+						<p><%- @__('about_core_role_5') %></p>
 					</div>
 				</div>
 				<div class="about-us__admin-item" style="background-image: url(<%= @__asset('img/ChuongBD.png') %>);">
 					<div class="about-us__admin-content">
-						<h4>Bui Duc Chuong</h4>
-						<p>R&Dマネージャ</p>
+						<h4><%- @__('about_core_name_6') %></h4>
+						<p><%- @__('about_core_role_6') %></p>
 					</div>
 				</div>
 				<div class="about-us__admin-item" style="background-image: url(<%= @__asset('img/HienTT.png') %>);">
 					<div class="about-us__admin-content">
-						<h4>Trinh Thi Thu Hien</h4>
-						<p>シニアマネージャー</p>
+						<h4><%- @__('about_core_name_7') %></h4>
+						<p><%- @__('about_core_role_7') %></p>
 					</div>
 				</div>
 				<div class="about-us__admin-item" style="background-image: url(<%= @__asset('img/PhuongTH.png') %>);">
 					<div class="about-us__admin-content">
-						<h4>Tran Ho Phuong</h4>
-						<p>副社長</p>
+						<h4><%- @__('about_core_name_8') %></h4>
+						<p><%- @__('about_core_role_8') %></p>
 					</div>
 				</div>
 				<div class="about-us__admin-item" style="background-image: url(<%= @__asset('img/yoshi-ogawa.png') %>);">
 					<div class="about-us__admin-content">
-						<h4>Ogawa Yoshimitsu</h4>
-						<p>戦略顧問 / NTQジャパン</p>
+						<h4><%- @__('about_core_name_9') %></h4>
+						<p><%- @__('about_core_role_9') %></p>
 					</div>
 				</div>
 				<div class="about-us__admin-item" style="background-image: url(<%= @__asset('img/NamPT.png') %>);">
 					<div class="about-us__admin-content">
-						<h4>Pham Thanh Nam</h4>
-						<p>副社長 / NTQジャパン</p>
+						<h4><%- @__('about_core_name_10') %></h4>
+						<p><%- @__('about_core_role_10') %></p>
 					</div>
 				</div>
 			</div>

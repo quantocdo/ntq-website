@@ -15,6 +15,7 @@
     background-repeat: no-repeat
     background-size: 100% 100%
     clear: both
+    position: relative
 
     &-content
       padding-top: 110px
@@ -35,6 +36,7 @@
 
       &__title
         font-size: 24px
+        line-height: 30px
         margin: 10px 0
         font-weight: 600
 
@@ -48,7 +50,7 @@
     background: #003663
     color: #ffffff
     text-align: center
-    font-size: 30px
+    font-size: 24px
     padding: 40px 20px 60px
     border-radius: 10px
     position: relative
@@ -65,6 +67,7 @@
       bottom: -30px
       padding-right: 20px
       width: 100%
+      font-size: 30px
 
       a
         background-image: linear-gradient(to right, #11bdbd, #b0e04e 85%)
@@ -171,21 +174,29 @@
         right: 5px
 
   @media screen and (min-width: 768px) and (max-width: 991px)
+    &__bg-grey
+      position: absolute
+      top: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0,0,0,0.6)
+
     &__banner
       &-title
         font-size: 60px
         text-align: center
-        line-height: 66px;
-        padding: 60px 0;
+        line-height: 66px
+        padding: 60px 0
 
     &__introduce
+      height: 847px
       background-size: auto
 
       &-content
-        text-shadow: 0 0 10px #000
         width: 100%
         color: #fff
         padding-top: 40px
+        position: relative
 
       &-title
         font-size: 36px
@@ -206,7 +217,7 @@
     &__contact
       width: 100%
       font-size: 30px
-      margin-top: 0
+      margin-top: -170px
 
     &__team
       &-title
@@ -232,6 +243,13 @@
     .masthead
       line-height: initial
 
+    &__bg-grey
+      position: absolute
+      top: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(0,0,0,0.6)
+
     &__banner
       &-title
         font-size: 36px
@@ -241,13 +259,14 @@
         top: 50%
 
     &__introduce
+      height: 847px
       background-size: auto
 
       &-content
-        text-shadow: 0 0 10px #000
         width: 100%
         color: #FFFFFF
         padding-top: 40px
+        position: relative
 
       &-title
         font-size: 36px
@@ -262,6 +281,8 @@
 
         &__description
           font-size: 16px
+          line-height: 26px
+
 
         &:last-child
           margin-top: 15px
@@ -269,14 +290,19 @@
     &__contact
       width: 100%
       font-size: 18px
-      margin-top: 0
-      padding: 30px 20px
+      margin-top: -170px
+      padding: 20px
+
+      &__title
+        line-height: 26px
 
       &__description
-        line-height: 36px
+        margin: 0 0 20px
+        line-height: 26px
 
       &__btn
-        bottom: -20px
+        font-size: 26px
+        bottom: -25px
         padding-right: 0
         left: 50%
         transform: translateX(-50%)

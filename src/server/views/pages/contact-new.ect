@@ -12,40 +12,40 @@
   <div class="masthead bg-gradient">
     <div class="masthead-wrapper container">
       <div class="row contact__banner">
-        <div class="col-md-8 contact__banner-title">お問い合わせ</div>
+        <div class="col-md-8 contact__banner-title"><%- @__('contact-banner-title') %></div>
         <div class="col-md-4">
-          <div class="contact__banner-adress">ベトナム本社</div>
-          <div class="contact__banner-phone">電話番号: (+84) 243 200 8754</div>
+          <div class="contact__banner-adress"><%- @__('contact-banner-adress') %></div>
+          <div class="contact__banner-phone"><%- @__('contact-banner-phone') %></div>
         </div>
       </div>
     </div>
   </div>
   <div class="container contact__content">
     <div class="contact__content-description">
-      弊社に関するご質問、お見積り、全て無料で承っております。<br/>どんなことでも結構ですので、お気軽にご連絡下さい。後日担当者よりご連絡させていただきます。
+      <%- @__('contact-content-description') %>
     </div>
     <div class="contact__content-detail">
       <div class="row">
         <div class="col-md-10 col-xs-12 col-centered">
           <div class="contact__inquiry">
-            <div class="contact__inquiry-title">お問い合わせ内容</div>
+            <div class="contact__inquiry-title"><%- @__('contact-inquiry-title') %></div>
             <div class="contact__inquiry-detail">
 
               <div class=" contact__inquiry-checkbox">
                 <input type="checkbox" id="document-request" />
-                <label for="document-request"><span></span>資料請求</label>
+                <label for="document-request"><span></span><%- @__('contact-inquiry-checkbox1') %></label>
               </div>
               <div class=" contact__inquiry-checkbox">
                 <input type="checkbox" id="inquiries-services" />
-                <label for="inquiries-services"><span></span>サービスに関するお問い合わせ</label>
+                <label for="inquiries-services"><span></span><%- @__('contact-inquiry-checkbox2') %></label>
               </div>
               <div class=" contact__inquiry-checkbox">
                 <input type="checkbox" id="request-quotation" />
-                <label for="request-quotation"><span></span>見積依頼</label>
+                <label for="request-quotation"><span></span><%- @__('contact-inquiry-checkbox3') %></label>
               </div>
               <div class=" contact__inquiry-checkbox">
                 <input type="checkbox" id="other" />
-                <label for="other"><span></span>その他</label>
+                <label for="other"><span></span><%- @__('contact-inquiry-checkbox4') %></label>
               </div>
 
             </div>
@@ -53,22 +53,22 @@
           <div class="contact__form">
             <form action="">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="メールアドレス">
+                <input type="text" class="form-control" placeholder="<%- @__('contact-placeholder1') %>">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="氏名">
+                <input type="text" class="form-control" placeholder="<%- @__('contact-placeholder2') %>"">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="会社名">
+                <input type="text" class="form-control" placeholder="<%- @__('contact-placeholder3') %>"">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="電話番号">
+                <input type="text" class="form-control" placeholder="<%- @__('contact-placeholder4') %>"">
               </div>
               <div class="form-group">
-                <textarea placeholder="内容" class="form-control"></textarea>
+                <textarea placeholder="<%- @__('contact-placeholder5') %>"" class="form-control"></textarea>
               </div>
               <div class="contact__form-submit">
-                <a href="#" class="btn btn-send btn--circle">送信</a>
+                <a href="#" class="btn btn-send btn--circle"><%- @__('btn-circle') %></a>
               </div>
             </form>
           </div>

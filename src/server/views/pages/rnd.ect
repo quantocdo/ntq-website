@@ -10,22 +10,21 @@
 
 <section class="section research-dev">
   <div class="masthead research-dev__banner bg-gradient">
-    <div class="masthead-wrapper container research-dev__banner-title">RESEARCH & DEVELOPMENT</div>
+    <div class="masthead-wrapper container research-dev__banner-title"><%- @__('research-dev_banner-title') %></div>
   </div>
   <div class="research-dev__introduce">
+    <div class="research-dev__bg-grey"></div>
     <div class="container">
       <div class="research-dev__introduce-content">
-        <h3 class="research-dev__introduce-title">WHY R&D?</h3>
-        <p class="research-dev__introduce-description">全てを自分たちで開発することで、開発者の夢を追いかけています。</p>
+        <h3 class="research-dev__introduce-title"><%- @__('research-dev_introduce-title') %></h3>
+        <p class="research-dev__introduce-description"><%- @__('research-dev_introduce-description') %></p>
         <div class="research-dev__introduce-reason">
-          <h3 class="research-dev__introduce-reason__title">1. 技術を勉強することで、より技術に精通するため</h3>
-          <p class="research-dev__introduce-reason__description">NTQとしての技術力をより地盤から固めたい、という思いのもと、R&Dを行っています
-            そのためにNASAの設計図を研究するなど、開発を通してナレッジを蓄えております。</p>
+          <h3 class="research-dev__introduce-reason__title"><%- @__('research-dev_introduce-reason__title1') %></h3>
+          <p class="research-dev__introduce-reason__description"><%- @__('research-dev_introduce-reason_description1') %></p>
         </div>
         <div class="research-dev__introduce-reason">
-          <h3 class="research-dev__introduce-reason__title">2. 開発部門をサポートするため</h3>
-          <p class="research-dev__introduce-reason__description">完全に独立した部署ではなく、時にはR&Dメンバーが開発のサポートに入ることもあります
-            過去には持前の技術力を生かし、難易度の高いご案件を遂行したこともあります。</p>
+          <h3 class="research-dev__introduce-reason__title"><%- @__('research-dev_introduce-reason__title2') %></h3>
+          <p class="research-dev__introduce-reason__description"><%- @__('research-dev_introduce-reason_description2') %></p>
         </div>
       </div>
     </div>
@@ -33,10 +32,10 @@
 
   <div class="container">
     <div class="research-dev__contact">
-      <h3 class="research-dev__contact__title">共同開発パートナー様募集中</h3>
-      <p class="research-dev__contact__description">開発を通じ技術力を高めあえるパートナー様を募集しております。<br>一緒に夢を追いかけませんか？</p>
+      <h3 class="research-dev__contact__title"><%- @__('research-dev_contact_title') %></h3>
+      <p class="research-dev__contact__description"><%- @__('research-dev_contact_description') %></p>
       <div class="research-dev__contact__btn">
-        <a href="">お問い合わせはこちら</a>
+        <a href=""><%- @__('research-dev_contact__btn') %></a>
       </div>
     </div>
   </div>
@@ -45,10 +44,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-7">
-          <h3 class="research-dev__team-title">CRAZY TEAM</h3>
+          <h3 class="research-dev__team-title"><%- @__('research-dev_team-title') %></h3>
           <p class="research-dev__team-description">
-            R&Dのチームは“Crazy team”と社内では呼ばれています。大きな夢を抱き、時には突拍子もない発想で
-            面白いアイディアを出し続けることができるからです。
+            <%- @__('research-dev_team-description') %>
           </p>
           <div class="js-team-thumnail research-dev__team-thumnail">
             <div class="research-dev__team-thumnail__item js-team-item">
@@ -74,7 +72,7 @@
   <div class="research-dev__video">
     <div class="container">
       <div class="row">
-        <h3 class="research-dev__video-title">共同開発</h3>
+        <h3 class="research-dev__video-title"><%- @__('research-dev_video-title1') %></h3>
         <div class="col-sm-6 research-dev__video-item">
           <iframe width="100%" height="325" src="https://www.youtube.com/embed/QhBBzaVN-Ds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
         </div>
@@ -83,7 +81,7 @@
         </div>
       </div>
       <div class="row">
-        <h3 class="research-dev__video-title">自社開発</h3>
+        <h3 class="research-dev__video-title"><%- @__('research-dev_video-title2') %></h3>
         <div class="col-sm-6 research-dev__video-item">
           <iframe width="100%" height="325" src="https://www.youtube.com/embed/zEtfTiVfth8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
         </div>
