@@ -66,12 +66,12 @@ export const routes = [ {
     get: controllers.services.get
   }
 }, {
-  path: '/success-stories',
+  path: '/success-stories-old',
   methods: {
     get: controllers.successStories.get
   }
 }, {
-  path: '/projects',
+  path: '/success-stories',
   methods: {
     get: controllers.projects.get
   }

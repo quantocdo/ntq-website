@@ -25,23 +25,18 @@
 			margin-top: -15px
 			margin-bottom: 0
 
+		.line
+			height: 3px
+			width: 25%
+			background-color: #003663
+			margin: 60px auto
+
 		&--item
 			&-title
 				font-size: 50px
 
-				&:after
-					content: ""
-					width: 90px
-					height: 3px
-					top: 112px
-					right: 50%
-					transform: translateX(50%)
-					background-color: #003663
-					position: absolute
-
 			&-total
 				font-size: 36px
-				margin-top: 100px
 				margin-bottom: 20px
 
 			&-policy
@@ -78,6 +73,7 @@
 		font-size: 24px
 		color: #003663
 		margin-bottom: 10px
+		line-height: 26px
 
 	&__info
 		background-repeat: no-repeat
@@ -220,6 +216,10 @@
 				font-size: 60px
 				text-align: center
 
+		&__strategic
+			.line
+				margin: 50px 0
+
 		&__info
 			background: none !important
 
@@ -261,11 +261,10 @@
 				.about-us__strategic--item-title
 					margin-top: 45px
 
-					&:after
-						top: 124px
-
-			&--item-total
-				margin-top: 80px
+			.line
+				width: 30px
+				margin-top: 30px
+				margin-bottom: 30px
 
 		&__means
 			&-detail
@@ -277,6 +276,7 @@
 
 			&-description
 				padding-left: 0
+				margin-top: 30px
 
 		&__admin-item
 			width: 45%
@@ -290,9 +290,6 @@
 			&--item
 				&-title
 					font-size: 40px
-
-					&:after
-						top: 79px
 
 				&-total
 					font-size: 24px
