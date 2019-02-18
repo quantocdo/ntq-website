@@ -12,13 +12,13 @@ export default {
       const url = u.build(`${ config.cms.url }/posts`, {
         client_id: config.cms.clientId,
         client_secret: config.cms.clientSecret,
-        filter: `tags:[news,news_${ _locale }]+featured:true`,
+        filter: `tags:[recruitment,recruitment_${ _locale }]`,
         limit: 4
       })
 
       const response = await fetch(url)
       const { posts } = await response.json()
-
+      
       res.render(`pages/recruitment`, {
         posts: posts
           .map(post.featureImage)

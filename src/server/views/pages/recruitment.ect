@@ -98,7 +98,7 @@
         <div class="recruitment__news--item-content col-md-9 col-sm-8 col-sx-12">
           <h3 class="recruitment__news--item-title"><%= post.title %></h3>
           <h3 class="recruitment__news--item-time"><%= @_date(post.published_at) %></h3>
-          <p class="recruitment__news--item-description"><%- @__('recruitment-news_item-description1') %></p>
+          <p class="recruitment__news--item-description"><%= post.truncated %></p>
           <a class="btn" href="/p/<%= post.slug %>"><%- @__('btn-loadmore') %></a>
         </div>
       </div>
@@ -106,10 +106,10 @@
 
     <div class="row recruitment__footer">
       <div class="oll-news col-xs-6">
-        <h3><%- @__('oll-news') %></h3>
+        <h3><a href="<%= @prev %>"><%- @__('oll-news') %></a></h3>
       </div>
       <div class="news col-xs-6">
-        <h3><%- @__('news') %></h3>
+        <h3><a href="<%= @next %>"><%- @__('news') %></a></h3>
       </div>
     </div>
   </div>
