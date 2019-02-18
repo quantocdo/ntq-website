@@ -1,0 +1,431 @@
+.header
+  padding: 20px 0
+  background-color: #fff
+  border-bottom: 1px solid #128c87
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 9999
+  transition: .2s
+
+  &__content
+    margin-bottom: 0
+    border: none
+
+    .navbar-collapse
+      padding-right: 0
+    
+  &__logo
+    line-height: 10px
+
+    img
+      width: 100%
+      height: 100%
+
+    &-mobile
+      display: none
+
+  &__nav
+    float: right
+
+    li
+      a
+        text-decoration: none
+        font-size: 16px
+        color: #2a75b9
+        text-transform: uppercase
+        padding: 0 10px
+        height: 70px
+        line-height: 70px
+
+        &:hover
+          color: #003663 !important
+          background-color: transparent
+
+        &:focus
+          background-color: transparent
+
+      &.dropdown:not(.header__language)
+        .dropdown-menu
+          a
+            color: #1668b2
+            height: 40px
+            line-height: 40px
+            text-transform: initial
+
+      &.open
+        a
+          background-color: transparent
+
+          &:hover,
+          &:focus
+            background-color: transparent
+
+    .dropdown-toggle
+      &:hover
+        color: #1668b2 !important
+
+    .header__language
+      &-item
+        display: flex
+        align-items: center
+        padding-right: 0
+
+      .dropdown-toggle
+        .caret
+          &.icon-dropdown
+            display: inline-block
+            color: #1668b2
+
+      img
+        margin-right: 10px
+
+      &-text
+        margin-right: 10px
+        color: #1668b2
+        font-size: 12px
+
+      &-english
+        font-size: 12px
+
+      &-select
+        background-color: transparent
+
+        a
+          height: 32px
+          line-height: 32px
+
+          img
+            width: 38px
+            height: 22px
+
+  .navbar-nav>li>.dropdown-menu
+    padding: 13px 25px
+    border-radius: 8px
+    top: 60px
+    left: 50%
+    transform: translateX(-50%)
+    box-shadow: 1px 2px 5px 0.3px rgba(15, 15, 15, 0.2)
+
+    .caret
+      color: #1668b2
+      margin-right: 10px
+      transform: rotate(-90deg)
+      border-right: 5px solid transparent
+      border-left: 5px solid transparent
+      border-top: 5px dashed
+      margin-bottom: 5px
+
+    li
+      a
+        padding: 0
+        padding-bottom: 20px
+        margin-top: 0
+
+    &:before
+      content: ''
+      position: absolute
+      top: -6.5px
+      left: 50%
+      transform: translate(-50%) rotate(45deg)
+      width: 13px
+      height: 13px
+      background-color: #fff
+      box-shadow: -1px -1px 0 rgba(15, 15, 15, 0.25)
+
+    &.header__language-select
+      padding: 0
+      box-shadow: none
+      border: none
+      left: 2px
+      transform: none
+
+      &:before
+        content: none
+
+      .header__language-item
+        margin-top: -7px
+
+  .dropdown-backdrop
+    display: none
+
+  @media screen and (max-width: 767px)
+    padding: 20px 0 12px
+
+    .navbar-toggle
+      padding-right: 0
+      padding-left: 0
+      margin-top: 5px
+      margin-bottom: 5px
+
+      .icon-bar
+        background-color: #1668b2
+
+    .navbar-header
+      display: flex
+      position: relative
+
+      &.is-active
+        display: none
+
+    &__list
+      position: relative
+      top: 0
+      left: 0
+      width: 80%
+      background-color: #fff
+      padding: 30px
+      box-shadow: 0px 0px 6.72px 0.28px rgba(15, 15, 15, 0.44)
+      z-index: 100
+
+    .navbar-collapse
+      padding: 0
+      display: block
+      transform: translate(-110%, 0)
+      transition: transform 0.3s ease-in-out
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      z-index: 99
+
+      &.is-active
+        transform: translate(0, 0)
+        overflow-y: scroll
+
+    .navbar-nav>li>.dropdown-menu
+      padding: 0
+      box-shadow: none
+      left: 0
+      transform: none
+      padding-left: 25px
+
+      &:before
+        content: none
+
+      &.header__language-select
+        padding-left: 3px
+        margin-top: 10px
+
+    .nav
+      li
+        a
+          padding-left: 0
+          margin-top: 10px
+          height: 40px
+          line-height: 40px
+          color: #2a75b9 !important
+
+    &__nav
+      float: none
+      margin: 0
+      margin-top: 20px
+
+      li
+        a
+          font-size: 18px
+
+    .dropdown-toggle
+      .caret
+        display: inline-block
+        border-right: 5px solid transparent
+        border-left: 5px solid transparent
+        border-top: 5px dashed
+
+    &__sub-menu
+      li
+        a
+          font-size: 16px
+
+    &__logo
+      width: 100px
+      height: auto
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+
+      &-mobile
+        display: block
+        width: 100px
+
+        & img
+          width: 100px
+          height: auto
+
+    &__language-text
+      color: #1668b2 !important
+
+  @media screen and (min-width: 768px) and (max-width: 991px)
+    padding: 28px 0 20px
+
+    .navbar-toggle
+      padding-right: 0
+      padding-left: 0
+      display: block
+
+      .icon-bar
+        background-color: #1668b2
+
+    .navbar-header
+      display: flex
+      position: relative
+      float: none
+
+      &.is-active
+        display: none
+
+    &__list
+      position: relative
+      top: 0
+      left: 0
+      width: 80%
+      background-color: #fff
+      padding: 30px 0 70px 30px
+      box-shadow: 0px 0px 6.72px 0.28px rgba(15, 15, 15, 0.44)
+      z-index: 100
+
+    .navbar-collapse
+      padding: 0
+      display: block
+      transform: translate(-110%, 0)
+      transition: transform 0.3s ease-in-out
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      z-index: 99
+
+      &.is-active
+        transform: translate(0, 0)
+        overflow-y: scroll
+
+    .navbar-nav>li>.dropdown-menu
+      padding: 0
+      box-shadow: none
+      left: 0
+      transform: none
+      padding-left: 25px
+
+      &:before
+        content: none
+
+      &.header__language-select
+        padding-left: 3px
+        margin-top: 10px
+
+        .header__language-item
+          margin-top: -20px
+
+    .nav
+      li
+        a
+          padding: 0 3px
+          height: 50px
+          line-height: 50px
+          color: #1668b2 !important
+
+    &__nav
+      float: none
+      margin: 0
+      margin-top: 20px
+
+      li
+        a
+          font-size: 18px
+
+    .dropdown-toggle
+      .caret
+        display: inline-block
+        border-right: 5px solid transparent
+        border-left: 5px solid transparent
+        border-top: 5px dashed
+
+    &__logo
+      width: 100px
+      height: auto
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+
+      &-mobile
+        display: block
+        width: 100px
+
+        & img
+          width: 100px
+          height: auto
+
+    .navbar-nav>li
+      float: none
+
+    .navbar-nav>li>.dropdown-menu
+      position: static
+      float: none
+      width: auto
+      background-color: transparent
+      border: 0
+      box-shadow: none
+
+      li
+        a
+          font-size: 16px
+
+    &__nav
+      li
+        a
+          padding: 0 6px
+          font-size: 18px
+          height: 50px
+          line-height: 50px
+
+    &__language-text
+      color: #1668b2 !important
+
+  @media screen and (min-width: 992px) and (max-width: 1199px)
+    padding: 28px 0 20px
+
+    &__logo
+      width: 100px
+
+    .navbar-nav>li>.dropdown-menu
+      top: 45px
+
+    &__nav
+      li
+        a
+          padding: 0 5px
+          height: 40px
+          line-height: 43px
+
+.disable-scroll
+  overflow: hidden
+
+.bg-transparent
+  background-color: transparent
+  border-bottom: 1px solid #464646
+
+  .header__nav
+    li
+      a
+        color: #fff
+
+    @media screen and (min-width: 992px)
+      .dropdown-toggle
+          &:hover
+            color: #fff !important
+
+      .header__language
+        .caret
+          color: #fff !important
+
+  .header__language-text
+    color: #fff
+
+  @media screen and (max-width: 991px)
+    .navbar-toggle
+      .icon-bar
+        background-color: #fff
+  

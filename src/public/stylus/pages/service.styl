@@ -1,0 +1,510 @@
+@import '../main'
+
+.service
+  .masthead-wrapper
+    & p
+      color: #fff
+      font-size: 72px
+      line-height: 255px
+      margin: 0
+
+  &__bgr
+    width: 100%
+    background-repeat: no-repeat
+    background-position: right top
+    background-size: 57% auto
+    margin-top: 80px
+
+  &__define
+    padding-left: 60px
+    padding-right: 60px
+
+    &-title
+      margin-bottom: 50px
+
+    &-content
+      margin-bottom: 50px
+
+      p
+        font-size: 18px
+        text-align: justify
+
+  &__title
+    font-size: 24px
+    text-transform: uppercase
+    color: #003663
+    margin-top: 35px
+    margin-bottom: 20px
+
+  &__offshore
+    padding-left: 60px
+    padding-right: 60px
+
+    &--wrapper
+      line-height: 20px
+
+    &--plan
+      display: flex
+      padding-left: 20px
+      padding-right: 20px
+
+      &-description
+        position: relative
+
+      &-content
+        border: 1px dashed #003663
+        border-right: none
+        padding: 18px
+        display: flex
+        justify-content: center
+
+        &:last-child
+          border-right: 1px dashed #003663
+
+        & img
+          width: 30px
+          height: auto
+          position: absolute
+          top: 50%
+          transform: translateY(-50%)
+
+      &-item
+        font-size: 14px
+        color: #003663
+        margin-bottom: 0
+        margin-left: 40px
+
+      &-detail
+        font-size: 14px
+        color: #003663
+        font-weight: 600
+        margin-left: 40px
+
+    &-detail
+      margin-top: 30px
+      display: flex
+      padding-left: 20px
+      padding-right: 20px
+
+    &-description
+      font-size: 18px
+      margin-bottom: 20px
+      list-style: none
+      line-height: 28px
+
+    &-swat
+      background-repeat: no-repeat
+      background-size: contain
+
+  &__how
+    position: relative
+
+  &__step
+    display: flex
+    justify-content: space-between
+
+    &-detail
+      background-color: #003663
+      width: 180px
+      height: 100px
+      color: #fff
+      text-align: center
+      position: relative
+      border-radius: 8px
+      cursor: pointer
+      padding: 15px 0
+      line-height: 26px
+      position: relative
+
+      &:hover
+        h3
+          color: #e67b20
+
+      &:last-child
+        &:after
+          border: none
+
+      &:after
+        content: ""
+        position: absolute
+        right: -8px
+        top: 50%
+        transform: translateY(-50%)
+        border-top: 8px solid transparent
+        border-bottom: 8px solid transparent
+        border-left: 8px solid #003663
+
+      &:before
+        content: ""
+        width: 50px
+        height: 1px
+        border-bottom: 1px #959595 dashed
+        position: absolute
+        margin-left: 90px
+        top: 50%
+        right: -55px
+        transform: translateY(-50%)
+
+      &:last-child
+        &:before
+          border: none
+
+      & h3
+        font-size: 18px
+        margin-bottom: 0
+        transition: .3s
+
+      & h5
+        font-size: 12px
+
+    &--wrapper
+      position: absolute
+      width: 100%
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+
+  &__content
+    display: flex
+    align-items: center
+    margin-bottom: 20px
+
+    &-image
+      img
+        width: 100%
+
+    &-detail
+      & h3
+        font-size: 18px
+        color: #003663
+        margin: 0
+
+        &:before
+          color: #fff
+          background-image: linear-gradient(to right, #11bdbd, #b0e04e 85%)
+          border-radius: 50%
+          display: inline-block
+          font-size: 24px
+          width: 46px
+          height: 46px
+          text-align: center
+          line-height: 46px
+          margin-right: 12px
+
+      & h4
+        font-size: 14px
+        margin-top: 15px
+        line-height: 22px
+
+    &--country
+      margin-top: 35px
+      margin-bottom: 20px
+      padding-left: 35px
+      padding-right: 35px
+
+      &-item
+        display: flex
+        justify-content: center
+
+        img
+          width: 45px
+          height: auto
+
+      &-detail
+        padding: 0
+
+    &:nth-child(7)
+      & .service__content-detail
+        & h3
+          &:before
+            content: "01"
+
+    &:nth-child(8)
+      & .service__content-detail
+        & h3
+          &:before
+            content: "02"
+
+    &:last-child
+      .service__content-detail
+        & h3
+          &:before
+            content: "03"
+
+  & .content
+    &__title
+      font-size: 18px
+      color: #003663
+      margin-top: -37px
+      margin-left: 55px
+
+    &__detail
+      font-size: 14px
+
+  &__advisory
+    background-size: cover
+    background-position: center center
+
+    &-content
+      padding: 60px
+
+      p
+        font-size: 23px
+        line-height: 48px
+        text-align: center
+        color: #fff
+        margin-top: 0
+
+    &-btn
+      width: 100%
+      text-align: center
+      margin-top: 40px
+
+      a
+        background-color: #fff
+        color: #003663
+        padding: 10px 55px
+        border-radius: 8px
+        font-size: 24px
+        display: inline-block
+
+  @media screen and (min-width: 992px) and (max-width: 1199px)
+    &__step
+      &-detail
+        padding-left: 5px
+        padding-right: 5px
+        width: 145px
+        height: 90px
+
+        h3
+          font-size: 15px
+          line-height: 22px
+
+        h5
+          font-size: 10px
+
+  @media screen and (max-width: 991px)
+    &__bgr
+      background-position: right -208% top
+      background-size: 89% auto
+
+    &__define,
+    &__offshore,
+    &__agreement
+      padding: 0
+
+    &__offshore
+      &-swat
+        width: 100%
+        height: 240px
+        background-position: center
+
+      &--plan
+        padding: 0
+
+        &-description
+          position: inherit
+          text-align: center
+
+        &-content:last-child
+          img
+            width: 30px
+            margin-top: 15px
+
+        &-content
+          img
+            position: inherit
+            transform: none
+            margin-top: 20px
+
+        &-item,
+        &-detail
+          margin-left: 0
+          margin-bottom: 0
+
+    &__content
+      display: block
+
+      &-detail
+        margin-top: 15px
+
+        h3
+          &:before
+            font-size: 18px
+            width: 35px
+            height: 35px
+            text-align: center
+            line-height: 36px
+
+    &__step
+      flex-wrap: wrap
+      padding-left: 100px
+      padding-right: 100px
+
+      &-detail
+        width: 100%
+        height: auto
+        padding: 20px 0
+        margin-bottom: 50px
+
+        &:before
+          content: ""
+          width: 1px
+          height: 60px
+          border-left: 1px dashed #959595
+          position: absolute
+          top: 72%
+          margin-right: -2px
+          right: 50%
+          transform: translateY(50%)
+
+        &:after
+          content: ''
+          position: absolute
+          left: 50%
+          transform: translateX(-50%)
+          width: 0
+          height: 0
+          top: 100%
+          border-top: solid 10px #003663
+          border-left: solid 10px transparent
+          border-right: solid 10px transparent
+
+        &:last-child
+          margin-bottom: 0
+
+      &--wrapper
+        position: static
+        transform: none
+
+  @media screen and (min-width: 768px) and (max-width: 991px)
+    &__bgr
+      margin-top: 40px
+
+    &__offshore
+      &--plan
+        width: 100%
+
+        &-content
+          width: 20%
+          padding: 0 12px 12px
+
+      &--wrapper
+        margin-top: 5px
+
+    &__step
+      &-detail:before
+        margin-right: -1px
+
+    &__advisory
+      &-content
+        padding: 40px
+
+      &-btn
+        margin-top: 25px
+
+    & .masthead-wrapper
+      & p
+        font-size: 60px
+        text-align: center
+
+  @media screen and (max-width: 767px)
+    .masthead-wrapper
+      & p
+        font-size: 36px
+        text-align: center
+        line-height: 154px
+
+    &__bgr
+      margin-top: 30px
+
+    &__offshore
+      &--wrapper
+        display: inline-block
+
+      &--plan
+        flex-wrap: wrap
+
+        &-description
+          position: inherit
+          text-align: left
+
+          img
+            display: inline-block
+            margin-top: 0 !important
+            margin-right: 36px
+
+        &-content:last-child
+          img
+            width: 30px
+            margin-top: 0
+
+        &-content
+          border: 1px dashed #003663
+          border-bottom: none
+          width: 100%
+          justify-content: inherit
+          padding-left: 40px
+
+          &:last-child
+            border-bottom: 1px dashed #003663
+
+          img
+            position: inherit
+            transform: none
+            margin-top: 20px
+
+        &-item,
+        &-detail
+          margin-left: 0
+          margin-bottom: 0
+
+      &-detail
+        display: block
+        padding: 0
+
+        &--wrapper
+          padding: 0
+
+          &.list-number li
+            &:before
+              margin-left: -60px
+              padding: 0 11px 1px
+
+            &:first-child:before
+              padding: 0 12px
+
+      &-description
+        margin-left: 75px
+
+    &__step
+      padding-left: 60px
+      padding-right: 60px
+
+      &-detail:before
+        margin-right: -1px
+
+    &__content
+      display: block
+
+    &__advisory
+      &-content
+        padding: 35px 15px
+
+        p
+          font-size: 18px
+          line-height: 32px
+
+      &-btn
+        margin-top: 25px
+
+        a
+          font-size: 18px
+
+  @media screen and (max-width: 479px)
+    &__step
+      padding-left: 0
+      padding-right: 0
+
+      &-detail
+        margin-bottom: 40px

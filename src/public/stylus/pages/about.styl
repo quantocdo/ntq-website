@@ -1,206 +1,230 @@
 @import '../main'
 
 .page-header
-	background-image url('~img/bg/about.jpg')
+  background-image url('~img/bg/about.jpg')
 
 .page-content
-	background $color_white
+  background $color_white
 
-	.section-introduction
-		margin-top 90px
+  .section-introduction
+    padding-top: 50px
 
-		.ntq-info-container
-			margin-top 80px
+    .heading
+      display: grid
+      grid-template-columns: min-content 1fr
+      align-items: center
+      font-size: 18px
 
-			.ntq-info-icon
-				width 45px
-				height 100px
-				background-repeat no-repeat
-				background-position left top
+      .ntq-info-icon
+        width: 50px
+        height: 41px
+        background-repeat: no-repeat
+        background-position: left center
 
-				&.icon-who
-					background-image url('~img/icons/anonymous_actor.png')
+        &.icon-who
+          background-image url('~img/icons/anonymous_actor.png')
 
-				&.icon-what
-					background-image url('~img/icons/male.png')
+        &.icon-what
+          background-image url('~img/icons/male.png')
 
-				&.icon-why
-					background-image url('~img/icons/globe_pin.png')
+        &.icon-why
+          background-image url('~img/icons/globe_pin.png')
 
-			.ntq-info
-				margin-left 45px
 
-				.heading
-					font-size 18px
+    .ntq-info-paragraph
+      padding-top: 20px
+      padding-bottom: 50px
+      line-height: 1.5em
 
-				.ntq-info-paragraph
-					margin-top 35px
-					line-height 22px
+  .section-ntq-members
+    padding-top: 50px
+    display: none
 
-	.section-ntq-members
-		margin-top 130px
+    @media (min-width: 1440px)
+      display: block
 
-		.heading
-			font-size 42px
+    .heading
+      font-size: 40px
 
-		.member-container
-			position relative
-			height 580px
+    .member-container
+      display: grid
+      grid-template-columns: repeat(5, 1fr)
+      grid-column-gap: 20px
 
-			.member
-				position absolute
-				width 240px
-				text-align center
-				bottom 0
+      .member
+        position: relative
+        height: 580px
+        display: flex
+        align-items: flex-end
+        justify-content: center
 
-				&.first
-					left 0
+        .biography
+          opacity: 1
+          position: absolute
+          bottom: 35px
+          background: color-fallback(rgba(0, 0, 0, .6))
+          padding: 10px
+          border-radius: 4px
 
-				&.second
-					left 25%
-					margin-left -60px
+          .name
+            font-size: 20px
 
-				&.third
-					left 50%
-					margin-left -120px
+          .position
+            padding-top: 10px
 
-				&.fourth
-					right 25%
-					margin-right -60px
+          .intro
+            margin-top: 20px
+            line-height: 1.3em
+            font-size: 14px
 
-				&.fifth
-					right 0
+        &:hover
+          .biography
+            opacity 1
 
-				.member-picture
-					vertical-align middle
+  .section-video
+    background: $color_green
+    color: $color_white
+    padding-top: 100px
+    padding-bottom: 50px
 
-				.biography
-					transition opacity .2s
-					opacity 0
-					position absolute
-					bottom 35px
-					background color-fallback(rgba(0, 0, 0, .7))
-					padding 15px
-					border-radius 5px
+    .content
+      display: grid
+      grid-column-gap: 20px
+      grid-row-gap: 20px
+      grid-template-columns: 100%
 
-					.name
-						font-size 20px
+      @media (min-width: 1024px)
+        grid-template-columns: 1fr 567px
 
-					.position
-						margin-top 5px
+      .info
+        .heading
+          font-size: 40px
 
-					.intro
-						margin-top 25px
-						line-height 18px
-						font-size 14px
+        .explain
+          padding-top: 20px
+          font-size: 18px
+          line-height: 40px
 
-				&:hover
-					.biography
-						opacity 1
+      .video-container
+        background: none
 
-	.section-video
-		background $color_green
-		padding-top 135px
-		padding-bottom 120px
+        .video
+          height: 296px
 
-		.heading
-			font-size 42px
+        @media (min-width: 768px)
+          background: url('~img/frames/frame_imac.png') no-repeat center center
+          width: 567px
+          height: 447px
+          padding: 19px
+          margin: 0 auto
 
-		.explain
-			margin-top 50px
-			font-size 25px
-			line-height 40px
+  .section-goals
+    padding-top: 100px
+    padding-bottom: 50px
 
-		.video-container
-			background url('~img/frames/frame_imac.png') no-repeat center center
-			width 567px
-			height 447px
-			padding 19px
+    .heading
+      font-size: 40px
 
-			.video
-				height 296px
+    .sub-heading
+      font-size: 18px
+      padding-top: 15px
 
-	.section-goals
-		padding-top 100px
-		padding-bottom 95px
+    .goals
+      padding-top: 50px
+      display: grid
+      grid-template-columns: 100%
+      grid-column-gap: 20px
+      grid-row-gap: 20px
 
-		.heading
-			font-size 42px
+      @media (min-width: 768px)
+        grid-template-columns: 1fr 1fr
 
-		.sub-heading
-			font-size 18px
-			margin-top 15px
+      .goal
+        padding-top: 50px
+        text-align: center
 
-		.goals
-			margin-top 120px
+        .goal-icon
+          margin-top: 50px
+          background: $color_blue
+          overflow: hidden
+          border-radius: 50%
+          background-repeat: no-repeat
+          background-position: center center
+          width: 116px
+          height: 116px
+          margin: 0 auto
 
-			.goal-icon
-				background $color_blue
-				overflow hidden
-				border-radius 50%
-				background-repeat no-repeat
-				background-position center center
-				width 116px
-				height 116px
+          &.revenue
+            background-image: url('~img/icons/money_bag.png')
 
-				&.revenue
-					background-image url('~img/icons/money_bag.png')
+          &.human-resource
+            background-image: url('~img/icons/group.png')
 
-				&.human-resource
-					background-image url('~img/icons/group.png')
+        .target-name
+          padding-top: 20px
+          font-size: 30px
 
-			.goal-explain
-				margin-left 135px
+        .target
+          padding-top: 10px
+          font-size: 40px
 
-				.target-name
-					margin-top 20px
-					font-size 30px
+    .principles
+      padding-top: 20px
+      display: grid
+      grid-template-columns: 100%
+      grid-column-gap: 20px
+      grid-row-gap: 20px
 
-				.target
-					margin-top 10px
-					font-size 40px
+      @media (min-width: 768px)
+        grid-template-columns: 1fr 1fr
 
-		.sub-goals
-			margin-top 60px
+      .principle
+        padding-top: 30px
 
-			.heading
-				margin-top 30px
-				font-size 30px
+      .heading
+        font-size: 30px
+        text-align: center
 
-			.items
-				li
-					margin-top 22px
+      .items
+        li
+          display: grid
+          grid-template-columns: min-content minmax(auto, 350px)
+          grid-column-gap: 20px
+          padding-top: 10px
+          justify-content: center
 
-					.fa
-						line-height 22px
+          p
+            line-height: 1.3em
 
-					p
-						line-height 22px
-						display block
-						margin-left 25px
+  .section-press-releases
+    background: $color_blue
+    color: $color_white
+    padding-top: 100px
+    padding-bottom: 50px
 
-	.section-press-releases
-		background $color_blue
-		padding-top 90px
-		padding-bottom 100px
+    .content
+      text-align: center
 
-		.heading
-			font-size 42px
+      .heading
+        font-size: 40px
 
-		.sub-heading
-			font-size 20px
-			margin-top 10px
+      .sub-heading
+        padding-top: 10px
+        font-size: 20px
 
-		.description
-			line-height 22px
-			margin-top 60px
+      .description
+        padding-top: 20px
+        padding-bottom: 50px
+        line-height: 1.3em
 
-		.video-container
-			background url('~img/frames/frame_macbook.png') no-repeat center center
-			margin 100px auto 0
-			width 626px
-			height 369px
-			padding 24px 81px
+      .video-container
+        margin: 0 auto
 
-			.video
-				height 290px
+        @media (min-width: 768px)
+          background url('~img/frames/frame_macbook.png') no-repeat center center
+          width: 626px
+          height: 369px
+          padding: 24px 81px
+
+        .video
+          height 290px

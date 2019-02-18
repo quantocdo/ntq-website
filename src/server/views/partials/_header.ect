@@ -1,0 +1,60 @@
+<div class="site-header">
+	<div class="site-container fluid cf">
+		<div class="company-logo pull-left">
+			<a href="/">
+				<img src="<%= @__asset('img/logo/logo_s.png') %>" alt="NTQ Solution" width="129" height="57">
+			</a>
+		</div>
+		<div class="top-nav <%= @_locale %>">
+			<ul class="top-menu">
+				<li class="nav-item dropdown-menu">
+					<a href="#"><%- @__('BUSINESS') %>&nbsp;<i class="fa fa-angle-down fw"></i></a>
+					<div class="dropdown">
+						<!-- <div class="arrow-up"></div> -->
+						<ul>
+							<li class="dropdown-item first">
+								<a href="/services"><%- @__('SERVICES') %></a>
+							</li>
+							<li class="dropdown-item">
+								<a href="/domains"><%- @__('DEVELOPMENT_DOMAINS') %></a>
+							</li>
+							<li class="dropdown-item">
+								<a href="/contract-models"><%- @__('CONTRACT_MODELS') %></a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a href="/success-stories"><%- @__('SUCCESS_STORIES') %></a>
+				</li>
+				<li class="nav-item">
+					<a href="/research-development"><%- @__('R&D') %></a>
+				</li>
+				<li class="nav-item">
+					<a href="/news"><%- @__('NEWS') %></a>
+				</li>
+				<!-- <li class="nav-item">
+					<a href="/recruitment"><%- @__('RECRUITMENT') %></a>
+				</li> -->
+				<li class="nav-item">
+					<a href="/download"><%- @__('DOWNLOADS') %></a>
+				</li>
+				<li class="nav-item">
+					<a href="/about"><%- @__('ABOUT_US') %></a>
+				</li>
+				<li class="nav-item">
+					<a href="/contact" class="contact"><%- @__('CONTACT') %></a>
+				</li>
+			</ul>
+			<div class="top-actions clearfix">
+				<a href="<%= @_config.baseUrl.en %>" class="language-switch pull-right en" title="<%= @__('TO_EN_VERSION') %>"></a>
+				<a href="<%= @_config.baseUrl.ja %>" class="language-switch pull-right ja" title="<%= @__('TO_JA_VERSION') %>"></a>
+			</div>
+			<div class="top-actions clearfix">
+				<a href="#" class="menu pull-right">
+					<i class="fas fa-bars"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

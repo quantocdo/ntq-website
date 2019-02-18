@@ -1,6 +1,8 @@
+import debounce from 'debounce'
+
 const MIN_HEIGHT = 500
 
-document.addEventListener('DOMContentLoaded', () => {
+const goFullscreen = () => {
   const viewportHeight = Math.max(
     document.documentElement.clientHeight,
     window.innerHeight || 0
@@ -11,9 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   document.querySelector('.section-landing').style.height = `${ viewportHeight }px`
+}
 
-  // Array.from(document.querySelectorAll('.site-content.page-full .page-section'))
-  //   .forEach(
-  //     node => node.style.height = `${ viewportHeight }px`
-  //   )
-})
+document.addEventListener('DOMContentLoaded', goFullscreen)
+window.addEventListener('resize', debounce(goFullscreen, 200))

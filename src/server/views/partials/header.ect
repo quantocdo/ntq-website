@@ -1,53 +1,103 @@
-<div class="site-header">
-	<div class="site-container fluid cf">
-		<div class="company-logo pull-left">
-			<a href="/">
-				<img src="<%= @__asset('img/logo/logo_s.png') %>" alt="NTQ Solution" width="129" height="57">
-			</a>
-		</div>
-		<div class="top-nav <%= @_locale %>">
-			<ul class="top-menu">
-				<li class="nav-item dropdown-menu">
-					<a href="#"><%- @__('BUSINESS') %>&nbsp;<i class="fa fa-angle-down fw"></i></a>
-					<div class="dropdown">
-						<!-- <div class="arrow-up"></div> -->
-						<ul>
-							<li class="dropdown-item first">
-								<a href="/services"><%- @__('SERVICES') %></a>
-							</li>
-							<li class="dropdown-item">
-								<a href="/domains"><%- @__('DEVELOPMENT_DOMAINS') %></a>
-							</li>
-							<li class="dropdown-item">
-								<a href="/contract-models"><%- @__('CONTRACT_MODELS') %></a>
-							</li>
-						</ul>
-					</div>
-				</li>
-				<li class="nav-item">
-					<a href="/success-stories"><%- @__('SUCCESS_STORIES') %></a>
-				</li>
-				<li class="nav-item">
-					<a href="/research-development"><%- @__('R&D') %></a>
-				</li>
-				<li class="nav-item">
-					<a href="/news"><%- @__('NEWS') %></a>
-				</li>
-				<!-- <li class="nav-item">
-					<a href="/recruitment"><%- @__('RECRUITMENT') %></a>
-				</li> -->
-				<li class="nav-item">
-					<a href="/download"><%- @__('DOWNLOADS') %></a>
-				</li>
-				<li class="nav-item">
-					<a href="/about"><%- @__('ABOUT_US') %></a>
-				</li>
-			</ul>
-			<div class="top-actions clearfix">
-				<a href="<%= @_config.baseUrl.en %>" class="language-switch pull-right en" title="<%= @__('TO_EN_VERSION') %>"></a>
-				<a href="<%= @_config.baseUrl.ja %>" class="language-switch pull-right ja" title="<%= @__('TO_JA_VERSION') %>"></a>
-				<a href="/contact" class="contact pull-right"><%- @__('CONTACT') %></a>
+<header class="header">
+	<div class="container">
+		<nav class="navbar header--background header__content">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" id="open-nav">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="header__logo">
+					<a href="/">
+						<img class="js-logo" src="<%= @__asset('img/logo.png') %>" alt="NTQ-Solution">
+					</a>
+				</div>
 			</div>
-		</div>
+			<div class="navbar-collapse" id="content-nav">
+				<div class="header__list">
+					<div class="header__logo-mobile">
+						<a href="/">
+							<img src="<%= @__asset('img/logo.png') %>" alt="NTQ-Solution">
+						</a>
+					</div>
+					<ul class="nav navbar-nav header__nav">
+						<li class="dropdown js-dropdown">
+							<a href="javascript:void(0)" class="dropdown-toggle dropdown-active js-dropdown-toggle" data-toggle="dropdown">
+								<%- @__('navbar_service') %>
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu header__sub-menu js-dropdown-menu">
+								<li>
+									<a href="/service-offshore">
+										<span class="caret"></span><%- @__('navbar_service-offshore') %>
+									</a>
+								</li>
+								<li>
+									<a href="/service-ai">
+										<span class="caret"></span><%- @__('navbar_service-ai') %>
+									</a>
+								</li>
+								<li>
+									<a href="/shopify-partner">
+										<span class="caret"></span><%- @__('navbar_shopify') %>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="/success-stories">
+								<%- @__('navbar_projects') %>
+							</a>
+						</li>
+						<li>
+							<a href="/research-development">
+								<%- @__('navbar_rnd') %>
+							</a>
+						</li>
+						<li>
+							<a href="/news">
+								<%- @__('navbar_news') %>
+							</a>
+						</li>
+						<li>
+							<a href="/recruitment">
+								<%- @__('navbar_recruitment') %>
+							</a>
+						</li>
+						<li>
+							<a href="/about-us">
+								<%- @__('navbar_about') %>
+							</a>
+						</li>
+						<li>
+							<a href="/contact">
+								<%- @__('navbar_contact') %>
+							</a>
+						</li>
+						<li>
+							<a href="/download">
+								<%- @__('navbar_download') %>
+							</a>
+						</li>
+
+						<li class="dropdown header__language">
+							<a href="#" class="dropdown-toggle header__language-item" data-toggle="dropdown">
+								<img src="<%= @__asset('img/language-japan.png') %>" alt="日本語">
+								<span class="header__language-text"><%- @__('lang_jp') %></span>
+								<span class="caret icon-dropdown"></span>
+							</a>
+							<div class="dropdown-menu header__language-select">
+								<a href="#" class="header__language-item">
+									<img src="<%= @__asset('img/language-english.png') %>" alt="Go to English site">
+									<span class="header__language-english">
+										<%- @__('lang_en') %>
+									</span>
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 	</div>
-</div>
+</header>

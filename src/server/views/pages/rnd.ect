@@ -1,0 +1,102 @@
+<% extend '_flow-no-banner' %>
+
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__asset('rnd.css') %>">
+
+<% end %>
+
+<% block 'page_flow': %>
+
+<section class="section research-dev">
+  <div class="masthead research-dev__banner bg-gradient">
+    <div class="masthead-wrapper container research-dev__banner-title"><%- @__('research-dev_banner-title') %></div>
+  </div>
+  <div class="research-dev__introduce">
+    <div class="research-dev__bg-grey"></div>
+    <div class="container">
+      <div class="research-dev__introduce-content">
+        <h3 class="research-dev__introduce-title"><%- @__('research-dev_introduce-title') %></h3>
+        <p class="research-dev__introduce-description"><%- @__('research-dev_introduce-description') %></p>
+        <div class="research-dev__introduce-reason">
+          <h3 class="research-dev__introduce-reason__title"><%- @__('research-dev_introduce-reason__title1') %></h3>
+          <p class="research-dev__introduce-reason__description"><%- @__('research-dev_introduce-reason_description1') %></p>
+        </div>
+        <div class="research-dev__introduce-reason">
+          <h3 class="research-dev__introduce-reason__title"><%- @__('research-dev_introduce-reason__title2') %></h3>
+          <p class="research-dev__introduce-reason__description"><%- @__('research-dev_introduce-reason_description2') %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="research-dev__contact">
+      <h3 class="research-dev__contact__title"><%- @__('research-dev_contact_title') %></h3>
+      <p class="research-dev__contact__description"><%- @__('research-dev_contact_description') %></p>
+      <div class="research-dev__contact__btn">
+        <a href=""><%- @__('research-dev_contact__btn') %></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="research-dev__team">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h3 class="research-dev__team-title"><%- @__('research-dev_team-title') %></h3>
+          <p class="research-dev__team-description">
+            <%- @__('research-dev_team-description') %>
+          </p>
+          <div class="js-team-thumnail research-dev__team-thumnail">
+            <div class="research-dev__team-thumnail__item js-team-item">
+              <img class="js-team-img" src="<%= @__asset('img/crazy-team1.png') %>" alt="">
+            </div>
+            <div class="research-dev__team-thumnail__item js-team-item">
+              <img class="js-team-img" src="<%= @__asset('img/crazy-team2.png') %>" alt="">
+            </div>
+            <div class="research-dev__team-thumnail__item js-team-item">
+              <img class="js-team-img" src="<%= @__asset('img/crazy-team3.png') %>" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5 research-dev__team-detail js-team-detail">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="research-dev__video">
+    <div class="container">
+      <div class="row">
+        <h3 class="research-dev__video-title"><%- @__('research-dev_video-title1') %></h3>
+        <div class="col-sm-6 research-dev__video-item">
+          <iframe width="100%" height="325" src="https://www.youtube.com/embed/QhBBzaVN-Ds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+        <div class="col-sm-6 research-dev__video-item">
+          <iframe width="100%" height="325" src="https://www.youtube.com/embed/xmnB5FSrGas" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+      </div>
+      <div class="row">
+        <h3 class="research-dev__video-title"><%- @__('research-dev_video-title2') %></h3>
+        <div class="col-sm-6 research-dev__video-item">
+          <iframe width="100%" height="325" src="https://www.youtube.com/embed/zEtfTiVfth8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+        <div class="col-sm-6 research-dev__video-item">
+          <iframe width="100%" height="325" src="https://www.youtube.com/embed/tbnz6oWMJmY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+        <div class="col-sm-6 research-dev__video-item">
+          <iframe width="100%" height="325" src="https://www.youtube.com/embed/VIQ5xi8lIqg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+        <div class="col-sm-6 research-dev__video-item">
+          <iframe width="100%" height="325" src="https://www.youtube.com/embed/MhaW0LoYNt8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<% end %>

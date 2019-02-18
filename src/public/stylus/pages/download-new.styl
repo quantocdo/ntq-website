@@ -1,0 +1,256 @@
+@import '../main'
+
+.download
+	& .masthead-wrapper
+		& p
+			color: #fff
+			font-size: 72px
+			line-height: 255px
+			margin: 0
+
+	&__detail
+		display: flex
+		flex-wrap: wrap
+
+	&__item
+		&-content
+			width: 85%
+			display: inline-flex
+			line-height: 22px
+	
+	&__content
+		padding-left: 60px
+		padding-right: 60px
+
+		&--item
+			&-title
+				height: 115px
+				display: flex
+				align-items: center
+				color: #fff
+				padding-left: 40px
+				padding-right: 40px
+
+				h3
+					font-size: 20px
+					letter-spacing: 1.2px
+					line-height: 28px
+
+			&-detail
+				ul
+					margin-top: 30px
+					margin-bottom: 30px
+
+					li
+						padding: 0 40px
+						margin: 15px 0
+						font-size: 16px
+						cursor: pointer
+						position: relative
+
+						&:before
+							content: ''
+							display: inline-block
+							width: 10px
+							height: 14px
+							background: url(../../../public/img/icon-note.png) no-repeat center center
+							background-size: 100%
+							vertical-align: -1px
+							margin-right: 5px
+
+							& .download__item-content
+								width: 85%
+								display: inline-flex
+
+	&__description
+		color: #13416a
+		font-size: 18px
+		line-height: 26px
+
+		&:first-child
+			margin: 50px 0 30px
+
+		&:nth-child(2)
+			margin: 30px 0 50px
+
+	.modal-dialog
+		top: 20%
+
+	&__modal
+		background-color: rgba(0,0,0,0.5)
+		
+		&-title
+			color: #fff
+			margin-bottom: 0
+			font-size: 30px
+			margin-top: 50px
+			font-weight: 300
+
+		&-input
+			display: block
+			height: 55px
+			width: 100%
+			border-radius: 5px
+			border: none
+			margin-top: 15px
+			padding-left: 20px
+			padding-right: 20px
+			background-color: #e1e1e1
+
+		.modal-body
+			padding-left: 30px
+			padding-right: 30px
+			padding-bottom: 15px
+
+	.modal-footer
+		padding-left: 30px
+		padding-right: 30px
+		padding-top: 0
+		padding-bottom: 40px
+		border: none
+
+	.modal-body
+		label
+			font-weight: 400
+			color: red
+			margin-top: 10px
+
+	&__btn
+		padding: 15px 60px
+		border-radius: 5px
+		border: none
+		color: #949494
+		font-size: 20px
+		cursor: pointer
+		transition: .3
+
+		&:hover
+			background: #11bdbd
+			color: #fff
+
+	.modal-header
+		border: none
+		padding-left: 30px
+		padding-right: 30px
+
+		& .close
+			padding: 0
+			cursor: pointer
+			background: 0 0
+			border: 0
+			float: right
+			opacity: 0.5
+			font-size: 42px
+			font-weight: 400
+			outline: none
+
+	.border-error
+		border: 1px solid red
+
+	@media screen and (min-width: 992px)
+		&__item
+			&:hover
+				color: #13416a
+				font-weight: 700
+
+				&:before
+					background: url(../../../public/img/icon-note-blue.png) no-repeat center center
+
+				&:after
+					content: ''
+					position: absolute
+					top: 50%
+					right: 40px
+					transform: translateY(-50%)
+					background: url(../../../public/img/arrow-blue.png) no-repeat center center
+					background-size: 100%
+					height: 20px
+					width: 20px
+					display: block
+					cursor: pointer
+
+	@media screen and (min-width: 768px) and (max-width: 991px)
+		.masthead-wrapper p
+			font-size: 60px
+			text-align: center
+
+		&__content
+			padding: 0
+
+			&--item-title
+				padding: 30px
+
+		&__item
+			padding: 0 30px !important
+
+		&__description
+			&:first-child
+				margin: 40px 0 20px
+
+			&:nth-child(2)
+				margin: 20px 0 40px
+
+	@media screen and (max-width: 767px)
+		.masthead-wrapper p
+			font-size: 36px
+			height: 154px
+			line-height: 154px
+			text-align: center
+
+		&__description
+			&:first-child
+				margin: 25px 0 15px
+
+			&:nth-child(2)
+				margin: 15px 0 25px
+
+		&__detail
+			margin: 0
+
+		&__content
+			padding: 0
+
+			&--item
+				padding: 0
+
+				&-title
+					padding-left: 20px
+					padding-right: 20px
+					margin-left: -20px
+					margin-right: -20px
+
+				&-detail
+					ul li
+						padding: 0
+
+		&__modal
+			z-index: 9999
+
+			.modal-body
+				padding-left: 10px
+				padding-right: 10px
+
+			&-title
+				font-size: 26px
+				margin-top: 60px
+
+		&__btn
+			width: 100%
+
+		.modal-header
+			padding-left: 10px
+			padding-right: 10px
+
+		.modal-footer
+			padding-top: 25px
+			padding-left: 10px
+			padding-right: 10px
+
+		.modal-dialog
+			top: 0
+			margin: 0
+			height: 100vh
+
+		.modal-content
+			border-radius: 0
+			height: 100%

@@ -1,0 +1,398 @@
+@import '../main'
+
+.landing
+	background-color: #f6f6f6
+	margin-top: -100px
+
+	&__baner
+		background-image: url(../../../public/img/landingpage-baner.jpg)
+		height: 1240px
+		width: 100%
+		position: relative
+		background-position: top center
+
+	&__baner-content
+		top: 64%
+		left: 50%
+		position: absolute
+		transform: translateX(-50%)
+
+	&__logo-shopify
+		margin-bottom: 60px
+		display: flex
+		justify-content: center
+
+	&__baner-detail
+		font-size: 16px
+		color: #222
+		text-align: justify
+
+	&__why-shopify
+		background-color: #fff
+
+		&--title
+			color: #222
+			font-size: 36px
+			background-color: #f6f6f6
+			text-align: center
+			margin-bottom: 60px
+
+			&-detail
+				margin: 15px 0
+				font-size: 22px
+
+		&--content
+			display: flex
+			align-items: center
+
+		&--content:nth-child(odd)
+			.landing__why-shopify--avata
+				order: 2
+
+			.landing__why-shopify--wrapper
+				order: 1
+				width: 50%
+				padding-right: 25px
+
+		&--content:nth-child(even)
+			.landing__why-shopify--avata
+				margin-right: 25px
+
+		&--wrapper
+			width: 500px
+			color: #222
+			text-align: justify
+
+		&--text
+			width: 500px
+			float: right
+
+		&--avata
+			background-size: 100%
+			background-repeat: no-repeat
+			background-position-y: center
+			background-size: cover
+			height: 350px
+			width: 50%
+
+		&--title-detail
+			text-transform: uppercase
+			text-align: left
+			line-height: 28px
+
+	&__service
+		background: #f6f6f6
+		margin-top: 40px
+		padding-bottom: 60px
+
+		&-title
+			font-size: 36px
+			text-align: center
+			margin: 30px 0 50px
+			color: #222
+
+		&-item
+			text-align: center
+			height: 270px
+			display: flex
+			justify-content: center
+			align-items: center
+			color: #fff
+			text-transform: uppercase
+			background-repeat: no-repeat
+			background-size: cover
+
+			&--app
+				background-image: url('../../../public/img/app-browser.png')
+				background-repeat: no-repeat
+
+			&--business
+				background-image: url('../../../public/img/bussiness.png')
+				background-repeat: no-repeat
+
+			&--service
+				background-image: url('../../../public/img/mashroom.png')
+
+			&--title
+				color: #fff
+				z-index: 2
+				letter-spacing: 1px
+
+			&--content
+				text-align: justify
+				font-size: 16px
+				color: #000
+				margin-top: 40px
+				padding: 0 15px
+
+	.overlay
+		background-color: #222
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 15px
+		right: 15px
+		opacity: 0.8
+		height: 270px
+
+	&__ready
+		background-image: url(../../../public/img/bg-landingpage-ready.jpg)
+		background-repeat: no-repeat
+		background-size: 100% 100%
+		height: 383px
+		width: 100%
+		color: #fff
+		display: flex
+		align-items: center
+
+		&-content
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+		&-detail
+			font-size: 18px
+			margin-top: 25px
+			line-height: 22px
+
+		&-title
+			font-size: 35px
+			margin-bottom: 25px
+			line-height: 34px
+
+		&-btn
+			cursor: pointer
+			display: flex
+			justify-content: center
+			align-items: center
+
+			a
+				color: #fff
+				background-color: #99c572
+				padding: 20px 50px
+				border-radius: 50px
+				font-size: 24px
+				font-weight: 300
+				letter-spacing: 1px
+				box-shadow: inset -10px -24px 40px #214e0e, 0 25px 60px rgba(#000, 0.3)
+			
+			&:hover
+				a
+					color: #003663
+
+	@media screen and (min-width: 992px) and (max-width: 1199px)
+		&__why-shopify
+			&--content:nth-child(odd)
+				.landing__why-shopify--wrapper
+					padding-left: 60px
+					padding-right: 20px
+
+			&--content:nth-child(even)
+				.landing__why-shopify--avata
+					margin-right: 0
+
+			&--text
+				width: 100%
+
+			&--wrapper
+				padding-right: 60px
+				text-align: justify
+				padding-left: 20px
+
+			&--avata
+				height: 225px
+
+		&__service-item
+			height: 210px
+
+			&--business
+				background-size: cover
+
+		&__ready
+			height: 280px
+
+			&-btn a
+				padding: 15px 40px
+
+		.overlay
+			height: 210px
+
+	@media screen and (min-width: 768px) and (max-width: 991px)
+		&__logo
+			&-shopify
+				height: 125px
+				display: flex
+				justify-content: center
+
+				img
+					height: 100%
+					width: auto
+
+		&__baner
+			&-content
+				top: auto
+				bottom: 30px
+
+		&__why-shopify
+			&--content:nth-child(odd)
+				.landing__why-shopify--wrapper
+					order: 1
+					width: 50%
+					padding-right: 20px
+					padding-left: 50px
+					padding-right: 20px
+
+			&--content:nth-child(even)
+				.landing__why-shopify--avata
+					margin-right: 0
+			
+			&--text
+				width: 100%
+
+			&--avata
+				height: 240px
+
+			&--wrapper
+				width: 50%
+				padding-right: 50px
+				padding-left: 20px
+
+		&__service
+			&-item
+				height: 170px
+
+				&--content
+					margin-top: 20px
+					padding: 0
+
+		&__ready
+			height: 230px
+
+			&-content
+				display: block
+				text-align: center
+
+			&-title
+				font-size: 30px
+
+			&-detail
+				font-size: 16px
+
+			&-btn
+				width: auto
+				margin-top: 30px
+
+				a
+					padding: 10px 40px
+		
+		.overlay
+			height: 170px
+
+	@media screen and (max-width: 767px)
+		&__baner
+			height: 950px
+			background-size: cover
+			overflow: hidden
+
+			&-content
+				top: auto
+				bottom: 20px
+				width: 100%
+
+		&__logo-shopify
+			height: 70px
+			margin-bottom: 20px
+			display: flex
+			justify-content: center
+
+			img
+				height: 100%
+				width: auto
+
+		&__why-shopify
+			&--content
+				display: block
+				padding-right: 15px
+				padding-left: 15px
+				background-color: #fff
+
+			&--content:first-child
+				padding-top: 30px
+
+			&--content:last-child
+				padding-bottom: 30px
+
+			&--content:nth-child(odd)
+				.landing__why-shopify--wrapper
+					width: 100%
+					padding-right: 0
+
+			&--content:nth-child(even)
+				.landing__why-shopify--avata
+					margin-right: 0
+
+			&--title
+				margin-bottom: 40px
+
+			&--detail
+				text-align: left
+
+			&--avata
+				width: 100%
+				height: 225px
+
+			&--wrapper
+				text-align: center
+				width: 100%
+				margin-top: 30px
+				margin-bottom: 30px
+
+			&--text
+				float:none
+				width: 100%
+
+		&__service
+			padding-bottom: 0
+			margin-top: 0
+
+			&-item
+				height: 300px
+
+				&--content
+					margin-top: 20px
+					margin-bottom: 30px
+					padding: 0
+					text-align: center
+
+			&-title
+				margin-top: 40px
+
+		&__ready
+			height: 300px
+
+			&-content
+				display: block
+				text-align: center
+
+			&-title
+				font-size: 30px
+
+			&-detail
+				font-size: 16px
+
+			&-btn
+				width: auto
+				margin-top: 30px
+
+				a
+					padding: 10px 40px
+
+		.overlay
+			height: 300px
+
+	@media screen and (max-width: 479px)
+		&__service-item
+			height: 200px
+
+			.overlay
+				height: 200px

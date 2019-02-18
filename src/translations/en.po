@@ -1131,3 +1131,1897 @@ msgstr "SmartCard"
 msgid "RD_SMART_CARD_DESC"
 msgstr "NTQ Solution JSC and ACT Ltd have collaborated in developing a product call \"ILUTon\", which uses employees' IC cards to check their entrance & exit. It is also used to lock PCs' screens."
 
+#:
+msgid "navbar_service"
+msgstr "Services"
+
+#:
+msgid "navbar_service-offshore"
+msgstr "Service offshore"
+
+#:
+msgid "navbar_service-ai"
+msgstr "Service AI"
+
+#:
+msgid "navbar_shopify"
+msgstr "Shopify partner"
+
+#:
+msgid "navbar_projects"
+msgstr "Success stories"
+
+#:
+msgid "navbar_rnd"
+msgstr "R&D"
+
+#:
+msgid "navbar_recruitment"
+msgstr "Recruitment"
+
+#:
+msgid "navbar_news"
+msgstr "News"
+
+#:
+msgid "navbar_about"
+msgstr "About us"
+
+#:
+msgid "navbar_contact"
+msgstr "Contact"
+
+#:
+msgid "navbar_download"
+msgstr "Downloads"
+
+#:
+msgid "lang_jp"
+msgstr "Jp"
+
+#:
+msgid "lang_en"
+msgstr "En"
+
+#:
+msgid "company_name"
+msgstr "NTQ Solution"
+
+#:
+msgid "contact_title"
+msgstr "CONTACT US"
+
+#:
+msgid "footer_item_title_1"
+msgstr "Head office in Hanoi"
+
+#:
+msgid "footer_item_address_1"
+msgstr "6th Floor, Sudico Building (HH3), Me Tri Street, Nam Tu Liem District, Hanoi City, Vietnam"
+
+#:
+msgid "footer_item_contact_1"
+msgstr "Tel: (+84) 243 200 8754"
+
+#:
+msgid "footer_item_title_2"
+msgstr "Pham Thai Son"
+
+#:
+msgid "footer_item_address_2"
+msgstr "Chief Executive Officer"
+
+#:
+msgid "footer_item_contact_2"
+msgstr "Email: son.pham@ntq-solution.com.vn"
+
+#:
+msgid "footer_item_title_3"
+msgstr "NTQ Japan"
+
+#:
+msgid "footer_item_address_3"
+msgstr "〒231-0001 6F, Yokohama World Posters Building 2 Chome-2-1 Shinko, Naka Ward, Yokohama, Kanagawa Prefecture, Japan"
+
+#:
+msgid "footer_item_contact_3"
+msgstr "Tel:（+81）45 228 9010"
+
+#:
+msgid "footer_item_title_4"
+msgstr "Ogawa Yoshimitsu"
+
+#:
+msgid "footer_item_address_4"
+msgstr "NTQ Japan CEO"
+
+#:
+msgid "footer_item_contact_4"
+msgstr "Email: yoshi.ogawa@ntq-solution.com.vn"
+
+#:
+msgid "copyright"
+msgstr "Copyright © NTQ Solution 2018"
+
+#:
+msgid "about_title"
+msgstr "About us"
+
+#:
+msgid "ntqvn_table_title"
+msgstr "NTQ Solution.,JSC"
+
+#:
+msgid "ntqvn_label_1"
+msgstr "Company name"
+
+#:
+msgid "ntqvn_content_1"
+msgstr "NTQ Solution.,JSC"
+
+#:
+msgid "ntqvn_label_2"
+msgstr "Head Office"
+
+#:
+msgid "ntqvn_content_2"
+msgstr "6F, Sudico Building, Me Tri Street, Nam Tu Liem District,<br/>Ha Noi City"
+
+#:
+msgid "ntqvn_label_3"
+msgstr "Phone Number"
+
+#:
+msgid "ntqvn_content_3"
+msgstr "(+84) 243 200 8754"
+
+#:
+msgid "ntqvn_label_4"
+msgstr "Founded"
+
+#:
+msgid "ntqvn_content_4"
+msgstr "June 13, 2011"
+
+#:
+msgid "ntqvn_label_5"
+msgstr "Representative and President"
+
+#:
+msgid "ntqvn_content_5"
+msgstr "Pham Thai Son"
+
+#:
+msgid "ntqvn_label_6"
+msgstr "Capitalization"
+
+#:
+msgid "ntqvn_content_6"
+msgstr "25 million JPY"
+
+#:
+msgid "ntqvn_label_7"
+msgstr "Services"
+
+#:
+msgid "ntqvn_content_7"
+msgstr "Software development, AI development, R & D, technical consultant"
+
+#:
+msgid "ntqvn_label_8"
+msgstr "Number of Employees"
+
+#:
+msgid "ntqvn_content_8"
+msgstr "402 members (by 1/1/2019)"
+
+#:
+msgid "ntqvn_label_9"
+msgstr "Certification"
+
+#:
+msgid "ntqvn_content_9"
+msgstr "ISO/IEC 27001（ISMS：information security management system)"
+
+#:
+msgid "ntqjp_table_title"
+msgstr "Japanese legal entity, NTQ Japan.,JSC"
+
+#:
+msgid "ntqjp_label_1"
+msgstr "Company name"
+
+#:
+msgid "ntqjp_content_1"
+msgstr "NTQ Japan .,JSC"
+
+#:
+msgid "ntqjp_label_2"
+msgstr "Yokohama Office"
+
+#:
+msgid "ntqjp_content_2"
+msgstr "〒231-0001　 6F, Yokohama World Posters Building<br/>2 Chome-2-1 Shinko, Naka Ward, Yokohama, Kanagawa Prefecture, Japan"
+
+#:
+msgid "ntqjp_label_3"
+msgstr "Phone number"
+
+#:
+msgid "ntqjp_content_3"
+msgstr "(+81) 45-228-9010"
+
+#:
+msgid "ntqjp_label_4"
+msgstr "FAX"
+
+#:
+msgid "ntqjp_content_4"
+msgstr "045-228-9010"
+
+#:
+msgid "ntqjp_label_5"
+msgstr "Founded"
+
+#:
+msgid "ntqjp_content_5"
+msgstr "February 8th, 2016"
+
+#:
+msgid "ntqjp_label_6"
+msgstr "Representative"
+
+#:
+msgid "ntqjp_content_6"
+msgstr "Ogawa Yoshimitsu"
+
+#:
+msgid "ntqjp_label_7"
+msgstr "Capitalization"
+
+#:
+msgid "ntqjp_content_7"
+msgstr "5 million JPY"
+
+#:
+msgid "ntqjp_label_8"
+msgstr "Number of Employees"
+
+#:
+msgid "ntqjp_content_8"
+msgstr "30 members"
+
+#:
+msgid "ntqjp_label_9"
+msgstr "Services"
+
+#:
+msgid "ntqjp_content_9"
+msgstr "Offshore development, SES business"
+
+#:
+msgid "ntqjp_label_10"
+msgstr "Participating Association"
+
+#:
+msgid "ntqjp_content_10"
+msgstr "Kanagawa Information services industry Association（KIA)"
+
+#:
+msgid "about_means_title"
+msgstr "WHO ARE WE?"
+
+#:
+msgid "about_means_desc"
+msgstr "We were labeled 'crazy' when we decided to separate from a bigger firm to form NTQ Solution.<br/>With a clear vision and passionate young workforce we have created a family atmosphere at NTQ which fosters innovation and allows us to strive for technological perfection.<br/>The name NTQ Solution is a result of hours of deliberation:<br/>To our honorable customers NTQ stands for 'Next Top Quality' because providing customers with perfection is our company belief.<br/>To our workforce NTQ means 'Nha Toi Quan' which literally means 'My Family' because we are not just a company, we are one BIG family."
+
+#:
+msgid "about_core_title"
+msgstr "Introduction of core members"
+
+#:
+msgid "about_core_name_1"
+msgstr "Tran Van Hoang"
+
+#:
+msgid "about_core_role_1"
+msgstr "Sales Manager"
+
+#:
+msgid "about_core_name_2"
+msgstr "To Hai Son"
+
+#:
+msgid "about_core_role_2"
+msgstr "COO"
+
+#:
+msgid "about_core_name_3"
+msgstr "Pham Thai Son"
+
+#:
+msgid "about_core_role_3"
+msgstr "CEO"
+
+#:
+msgid "about_core_name_4"
+msgstr "Nguyen Kim Soan"
+
+#:
+msgid "about_core_role_4"
+msgstr "CCO"
+
+#:
+msgid "about_core_name_5"
+msgstr "Truong Dao Quy Duong"
+
+#:
+msgid "about_core_role_5"
+msgstr "Sales Manager"
+
+#:
+msgid "about_core_name_6"
+msgstr "Bui Duc Chuong"
+
+#:
+msgid "about_core_role_6"
+msgstr "R&D Manager"
+
+#:
+msgid "about_core_name_7"
+msgstr "Trinh Thi Thu Hien"
+
+#:
+msgid "about_core_role_7"
+msgstr "Senior Manager"
+
+#:
+msgid "about_core_name_8"
+msgstr "Tran Ho Phuong"
+
+#:
+msgid "about_core_role_8"
+msgstr "Vice President"
+
+#:
+msgid "about_core_name_9"
+msgstr "Ogawa Yoshimitsu"
+
+#:
+msgid "about_core_role_9"
+msgstr "Director, Strategic Planning"
+
+#:
+msgid "about_core_name_10"
+msgstr "Pham Thanh Nam"
+
+#:
+msgid "about_core_role_10"
+msgstr "Vice president/NTQ Japan"
+
+#:
+msgid "about_strategic"
+msgstr "2021 Goal"
+
+#:
+msgid "strategic_1_title"
+msgstr "Total revenue"
+
+#:
+msgid "strategic_1_total"
+msgstr "Over $20 Millions"
+
+#:
+msgid "strategic_1_policy"
+msgstr "Policy"
+
+#:
+msgid "strategic_1_detail_1"
+msgstr "Being a family means 'Solidarity'"
+
+#:
+msgid "strategic_1_detail_2"
+msgstr "Being engineers, we are 'Passionate'"
+
+#:
+msgid "strategic_1_detail_3"
+msgstr "Being partners, we always 'Share'"
+
+#:
+msgid "strategic_2_title"
+msgstr "Human resources"
+
+#:
+msgid "strategic_2_total"
+msgstr "Over 800 staff"
+
+#:
+msgid "strategic_2_policy"
+msgstr "Mission"
+
+#:
+msgid "strategic_2_detail_1"
+msgstr "We are committed to always providing high quality products and services, and are continuously improving to bring satisfaction to our customers"
+
+#:
+msgid "strategic_2_detail_2"
+msgstr "We evoke passion and train programmers to a world class level"
+
+#:
+msgid "strategic_2_detail_3"
+msgstr "As a partner, we deepen mutual understanding."
+
+#:
+msgid "service-offshore_title"
+msgstr "Service Offshore"
+
+#:
+msgid "service-offshore_define_title"
+msgstr "What is Offshore development?"
+
+#:
+msgid "service-offshore_define_desc"
+msgstr "Offshore is combined by 2 word “off” and “shore” which is used to describe an outsourcing method for taking over in software development, web system, and smartphone app in development and management for a foreign developed company or a foreign subsidiary. In addition, since the factors such as preferential government policy, diverse IT resources, and technical skill, Vietnam has become a rising star in this field."
+
+#:
+msgid "service-offshore_plan_title"
+msgstr "About offshore development of NTQ"
+
+#:
+msgid "service-offshore_plan_label_1"
+msgstr "Establishment"
+
+#:
+msgid "service-offshore_plan_desc_1"
+msgstr "2011"
+
+#:
+msgid "service-offshore_plan_label_2"
+msgstr "Human resources"
+
+#:
+msgid "service-offshore_plan_desc_2"
+msgstr "402"
+
+#:
+msgid "service-offshore_plan_label_3"
+msgstr "Project number"
+
+#:
+msgid "service-offshore_plan_desc_3"
+msgstr "400+ projects"
+
+#:
+msgid "service-offshore_plan_label_4"
+msgstr "YoY growth"
+
+#:
+msgid "service-offshore_plan_desc_4"
+msgstr "Over 40%"
+
+#:
+msgid "service-offshore_plan_label_5"
+msgstr "Japanese customers"
+
+#:
+msgid "service-offshore_plan_desc_5"
+msgstr "Over 50 companies"
+
+#:
+msgid "service-offshore_about_item_1"
+msgstr "NTQ does not only provides solutions but also apply many years of experience to offer consultancy and alternatives following customer requirement."
+
+#:
+msgid "service-offshore_about_item_2"
+msgstr "NTQ does not only stop at providing outsourcing service but also adapt to fulfill more and more complex requests of the market."
+
+#:
+msgid "service-offshore_about_item_3"
+msgstr "Especially, to provide the best service suitable for each customers, we have summarized our experience from more than 400 projects into our working model, NTQ – Way."
+
+#:
+msgid "service-offshore_how_title"
+msgstr "Work flow"
+
+#:
+msgid "service-offshore_step_title_1"
+msgstr "Requirement discussion"
+
+#:
+msgid "service-offshore_step_notice_1"
+msgstr "(Customer）（Our company)"
+
+#:
+msgid "service-offshore_step_title_2"
+msgstr "Proposal/Quotation"
+
+#:
+msgid "service-offshore_step_notice_2"
+msgstr "(Customer）（Our company)"
+
+#:
+msgid "service-offshore_step_title_3"
+msgstr "Choosing model"
+
+#:
+msgid "service-offshore_step_notice_3"
+msgstr "(Customer）（Our company)"
+
+#:
+msgid "service-offshore_step_title_4"
+msgstr "Signing contract"
+
+#:
+msgid "service-offshore_step_notice_4"
+msgstr "(Customer）（Our company)"
+
+#:
+msgid "service-offshore_step_title_5"
+msgstr "Starting project"
+
+#:
+msgid "service-offshore_step_notice_5"
+msgstr "(Customer）（Our company)"
+
+#:
+msgid "service-offshore_model_title"
+msgstr "Development model"
+
+#:
+msgid "service-offshore_model_item_1"
+msgstr "Onsite"
+
+#:
+msgid "service-offshore_model_desc_1"
+msgstr "Technical persons will be dispatched to customers, and Vietnamese side will also create a team in charge."
+
+#:
+msgid "service-offshore_model_item_2"
+msgstr "100% Offshore"
+
+#:
+msgid "service-offshore_model_desc_2"
+msgstr "The development team provides services on the Vietnamese side. BrSE plays an important role as a communicator."
+
+#:
+msgid "service-offshore_model_item_3"
+msgstr "Customer offshore"
+
+#:
+msgid "service-offshore_model_desc_3"
+msgstr "All development teams will provide services on the Vietnamese side, we will dispatch personnel from Vietnam from our customers and will work together."
+
+#:
+msgid "service-offshore_advisory"
+msgstr "We always offer free quotes and consultation.<br/>Contact us today with any questions you may have."
+
+#:
+msgid "service-offshore_btn_contact"
+msgstr "Contact us"
+
+#:
+msgid "service-ai_title"
+msgstr "Service AI"
+
+#:
+msgid "service-ai_intro_title"
+msgstr "Effective AI application in business"
+
+#:
+msgid "service-ai_intro_desc"
+msgstr "~ Great results from small challenges in Vietnam Offshore ~"
+
+#:
+msgid "service-ai_intro_detail"
+msgstr "AI, one of the emerging technology in today, has surpassed the researching phase and has been adopted in many businesses to increase productivity.<br/>NTQ is proud to be a company that holds realistic achievement in developing AI for many sectors, and we always support the clients as a reliable partner. To clients who are not specialized in technical domain, we always provide service following the model “offshore research and development + professional expertise” in order to develop customized AI for clients’ business."
+
+#:
+msgid "service-ai_achievement_1"
+msgstr "Cost efficiency"
+
+#:
+msgid "service-ai_achievement_2"
+msgstr "Improve productivity"
+
+#:
+msgid "service-ai_achievement_3"
+msgstr "Extraordinary funny service"
+
+#:
+msgid "service-ai_feature_title_1"
+msgstr "The AI we developed ourselves:"
+
+#:
+msgid "service-ai_feature_subtitle_1"
+msgstr "Image recognition:"
+
+#:
+msgid "service-ai_feature_item_1_1"
+msgstr "Accuracy: 98%"
+
+#:
+msgid "service-ai_feature_item_1_2"
+msgstr "Increase in productivity: 400%"
+
+#:
+msgid "service-ai_feature_item_1_3"
+msgstr "Use: Detecting issues such as error in products."
+
+#:
+msgid "service-ai_feature_desc_1"
+msgstr "In addition, the image recognition AI can also be used to monitor video and live streaming."
+
+#:
+msgid "service-ai_feature_subtitle_2"
+msgstr "Security monitoring camera system:"
+
+#:
+msgid "service-ai_feature_item_2_1"
+msgstr "Doing head count"
+
+#:
+msgid "service-ai_feature_item_2_2"
+msgstr "Detect suspicious action"
+
+#:
+msgid "service-ai_feature_item_2_3"
+msgstr "Recognize registered people"
+
+#:
+msgid "service-ai_feature_subtitle_3"
+msgstr "Classify documents’ content:"
+
+#:
+msgid "service-ai_feature_item_3_1"
+msgstr "Detect the content to classify the documents."
+
+#:
+msgid "service-ai_feature_item_3_2"
+msgstr "Find related documents"
+
+#:
+msgid "service-ai_feature_item_3_3"
+msgstr "Check chat content"
+
+#:
+msgid "service-ai_feature_item_3_4"
+msgstr "Detect mail spam"
+
+#:
+msgid "service-ai_feature_subtitle_4"
+msgstr "AI Mosaic"
+
+#:
+msgid "service-ai_feature_desc_2"
+msgstr "Before AI, the execution to blur and process image, video classification is done manually which is very time-consuming with low productivity."
+
+#:
+msgid "service-ai_feature_item_4_1"
+msgstr "Massively increase productivity and cost-efficiency"
+
+#:
+msgid "service-ai_feature_item_4_2"
+msgstr "Easy to blur many parts on demand"
+
+#:
+msgid "service-ai_feature_item_4_3"
+msgstr "Easy to implement"
+
+#:
+msgid "service-ai_feature_title_2"
+msgstr "Joint Development"
+
+#:
+msgid "service-ai_feature_subtitle_5"
+msgstr "Analyze and recommend:"
+
+#:
+msgid "service-ai_feature_desc_3"
+msgstr "Show the products in recommended sector to increase conversion rate:"
+
+#:
+msgid "service-ai_feature_item_5_1"
+msgstr "Effective after 4-5 clicks"
+
+#:
+msgid "service-ai_feature_item_5_2"
+msgstr "Increase in conversion and revenue."
+
+#:
+msgid "service-ai_feature_item_5_3"
+msgstr "Industrial domains: eCommerce, recruitment, real estates, logistics, matching site."
+
+#:
+msgid "service-ai_feature_subtitle_6"
+msgstr "AI-OCR"
+
+#:
+msgid "service-ai_feature_item_6_1"
+msgstr "Can recognize Japanese hand-writing"
+
+#:
+msgid "service-ai_feature_item_6_2"
+msgstr "Has high review from BPO companies"
+
+#:
+msgid "service-ai_advisory"
+msgstr "Should there be a need of available AI demos, please don't hestitate to contact us."
+
+#:
+msgid "service-ai_btn_contact"
+msgstr "Contact us"
+
+#:
+msgid "contact-banner-title"
+msgstr "CONTACT"
+
+#:
+msgid "contact-banner-adress"
+msgstr "Head office in Hanoi"
+
+#:
+msgid "contact-banner-phone"
+msgstr "Phone: (+84) 243 200 8754"
+
+#:
+msgid "contact-content-description"
+msgstr "If you have any questions regarding any of our services then please feel free to contact us. We offer a consultancy service and are eagerly awaiting any questions, estimations or propositions that you may have."
+
+#:
+msgid "contact-inquiry-title"
+msgstr "Contact us"
+
+#:
+msgid "contact-inquiry-checkbox1"
+msgstr "Download documents"
+
+#:
+msgid "contact-inquiry-checkbox2"
+msgstr "Services"
+
+#:
+msgid "contact-inquiry-checkbox3"
+msgstr "RFI"
+
+#:
+msgid "contact-inquiry-checkbox4"
+msgstr "Other"
+
+#:
+msgid "contact-placeholder1"
+msgstr "Email address"
+
+#:
+msgid "contact-placeholder2"
+msgstr "Name"
+
+#:
+msgid "contact-placeholder3"
+msgstr "Company name"
+
+#:
+msgid "contact-placeholder4"
+msgstr "Phone number"
+
+
+#:
+msgid "contact-placeholder5"
+msgstr "Contents"
+
+#:
+msgid "btn-circle"
+msgstr "Send"
+
+#:
+msgid "home-banner-content1"
+msgstr "Delivering<br/>the Next Top Quality Solution"
+
+#:
+msgid "home-banner-content2"
+msgstr "Vietnam Software Outsourcing Company"
+
+#:
+msgid "home-heading1"
+msgstr "Who is NTQ Solution"
+
+#:
+msgid "home-heading2"
+msgstr "NTQ Solution is a Vietnamese software development company providing offshore development services such as mobile and web applications as well as other essential software services for businesses."
+
+#:
+msgid "btn-japan"
+msgstr "About us"
+s
+#:
+msgid "home-heading3"
+msgstr "Why NTQ?"
+
+#:
+msgid "home-reason-item1"
+msgstr "Dedicated team including foreign developer"
+
+#:
+msgid "home-reason-item2"
+msgstr "400+ Projects"
+
+#:
+msgid "home-reason-item3"
+msgstr "24/7 Quick Response "
+
+#:
+msgid "home-heading5"
+msgstr "SERVICES"
+
+#:
+msgid "home-service-item1"
+msgstr "Software Outsoucing"
+
+#:
+msgid "home-service-item2"
+msgstr "Besides cost-efficiency, NTQ also takes pride in making a difference in the quality of service."
+
+#:
+msgid "home-service-item3"
+msgstr "Detail"
+
+#:
+msgid "home-service-item4"
+msgstr "AI research & development"
+
+#:
+msgid "home-service-item5"
+msgstr "NTQ has experience in developing AI in many sectors, our capability is ready to transform ideas into seamless products."
+
+#:
+msgid "home-service-item6"
+msgstr "Detail"
+
+#:
+msgid "home-service-item7"
+msgstr "Shopify Partner"
+
+#:
+msgid "home-service-item8"
+msgstr "Our dedicated team of Shopify designers and developers help you build and optimize your Shopify store."
+
+#:
+msgid "home-service-item9"
+msgstr "Detail"
+
+#:
+msgid "home-service-icon1"
+msgstr "Mobile App"
+
+#:
+msgid "home-service-icon2"
+msgstr "Web App"
+
+#:
+msgid "home-service-icon3"
+msgstr "Cloud base software"
+
+#:
+msgid "home-service-icon4"
+msgstr "Medical Software"
+
+#:
+msgid "home-service-icon5"
+msgstr "System Integration"
+
+#:
+msgid "home-service-icon6"
+msgstr "Custom Enterprise Software"
+
+#:
+msgid "home-service-icon7"
+msgstr "Embedded System"
+
+#:
+msgid "home-service-icon8"
+msgstr "E Commerce"
+
+#:
+msgid "home-service-icon9"
+msgstr "AI Recommendation System"
+
+#:
+msgid "home-service-icon10"
+msgstr "AI Image Recognition"
+
+#:
+msgid "home-service-icon11"
+msgstr "AI Optical Character Recognition"
+
+#:
+msgid "home-service-icon12"
+msgstr "RPA"
+
+#:
+msgid "home-heading8"
+msgstr "Testimonial"
+
+#:
+msgid "home-customer-item1"
+msgstr "Masuda Noriyuki"
+
+#:
+msgid "home-customer-item2"
+msgstr "Director, A.C.T Co, Japan"
+
+#:
+msgid "home-customer-item3"
+msgstr "NTQ has many staffs with experience living and working in Japan, they have adopted the Japanese working style and always pay attention to every details, even the minor ones. Mr. Son – the CEO holds big dreams, and he always transmit that energy to set and achieve continuous success with NTQ members."
+
+#:
+msgid "home-customer-item4"
+msgstr "Masahiro Okabe"
+
+#:
+msgid "home-customer-item5"
+msgstr "Manager, ilovex Co, Ltd, Japan"
+
+#:
+msgid "home-customer-item6"
+msgstr "Developers at NTQ are careful in verifying spec in the initial phase of each project and testing after implementation with high accuracy. I have also found them great at technique and communication on individual level, thus, there is not much unpredictable workload. Furthermore, we can discuss any issues and concern with them, and they are very responsive to provide alternative solutions even for projects that we consider as tough in technical aspect. This is the working style of NTQ."
+
+#:
+msgid "home-customer-item7"
+msgstr "Dean Sutcliffe"
+
+#:
+msgid "home-customer-item8"
+msgstr "CIO, iMyVenue, Australia"
+
+#:
+msgid "home-customer-item9"
+msgstr "iMyVenue has worked with NTQ on some projects. I have found NTQ technically sound and reliable. The quality of work is of a standard that matches our expectation, an is equal to that of local developers in Australia. They are cost effective and provide smooth solutions for our needs."
+
+#:
+msgid "home-customer-item10"
+msgstr "Asuka Inoue"
+
+#:
+msgid "home-customer-item11"
+msgstr "CEO, Bit2Byte Inc, Japan"
+
+#:
+msgid "home-customer-item12"
+msgstr "Before doing business with NTQ I felt very worried. However, they have proven to us that they can deliver our specifications to a high standard and NTQ has now become a reliable partner of ours. I have never had a problem with communication with NTQ because they understand the Japanese language and characteristics. I am very glad to have NTQ as a partner as they can provide easy to manage services at reasonable prices."
+
+#:
+msgid "home-heading9"
+msgstr "Technical Capabilities"
+
+#:
+msgid "home-heading10"
+msgstr "In order to elevate the comprehensive competitiveness for our clients, we always provide the newest and cutting-edge technology."
+
+#:
+msgid "btn-square5"
+msgstr "See more technologies"
+
+#:
+msgid "home-heading11"
+msgstr "CLIENTS UNDER TRANSACTION"
+
+#:
+msgid "home-heading12"
+msgstr "NTQ is on a journey around the world"
+
+#:
+msgid "home-heading13"
+msgstr "RESEARCH & DEVELOPMENT"
+
+#:
+msgid "home-heading14"
+msgstr "In addition of providing outsourcing service, we also do research & development for products. We will transform your dream into reality with execution."
+
+#:
+msgid "home-btn-view-more"
+msgstr "続きを見る >>"
+
+#:
+msgid "home-news-item_day1"
+msgstr "2018.8.10"
+
+#:
+msgid "home-news-item1"
+msgstr "GDC Technology様とのご協力"
+
+#:
+msgid "home-news-item_day2"
+msgstr "2018.8.10"
+
+#:
+msgid "home-news-item2"
+msgstr "3年連続のサミットデー"
+
+#:
+msgid "home-news-item_day3"
+msgstr "2018.8.10"
+
+#:
+msgid "home-news-item3"
+msgstr "2019年のカレンダー"
+
+#:
+msgid "home-news-item_day4"
+msgstr "2018.8.10"
+
+#:
+msgid "home-news-item4"
+msgstr "エネルギーアップの秋"
+
+#:
+msgid "home-news-item_day5"
+msgstr "2018.8.10"
+
+#:
+msgid "home-news-item5"
+msgstr "NTQ主催のAIセミナー"
+
+#:
+msgid "recruitment-introduce-title1"
+msgstr "Recruitment"
+
+#:
+msgid "recruitment-introduce-content1"
+msgstr "NTQ Solution là Công ty hoạt động trong lĩnh vực gia công phần mềm cho các thị trường Nhật Bản (với tỷ trọng hơn 80%) , Hàn Quốc, Singapore, Úc, Phần Lan... với quy mô hiện tại là gần 300 thành viên<br>Một trong các mục tiêu của NTQ trong thời gian tới là trở thành Công ty toàn cầu và tăng thị phần tại thị trường Nhật Bản, mục tiêu đạt con số 1000 member vào năm 2021.<br>Hiện tại chúng tôi đang tuyển dụng những vị trí sau"
+
+#:
+msgid "recruitment-introduce-title2"
+msgstr "Chính sách tuyển dụng"
+
+#:
+msgid "recruitment-introduce-content2"
+msgstr "Với sự cạnh tranh ngày càng khốc liệt của thị trường lao động ngành CNTT, để có thể tạo lập giá trị và sự tin tưởng tuyệt đối vào công ty, NTQ Solution chú trọng việc xây dựng, triển khai chính sách để đảm bảo xây dựng một nội bộ vững chắc, chuyên nghiệp và mang lại nhiều lợi ích cho thành viên công ty – được coi là yếu tố hàng đầu trong tổ chức. Chính sách rõ ràng không chỉ giúp tăng năng suất và hiệu quả làm việc của nhân viên mà còn làm tăng mức độ gắn kết nhân viên, giúp họ gắn bó lâu dài với tổ chức. Dưới đây là một số chính sách nổi bật mà NTQ đang áp dụng cho toàn thể các thành viên trong công ty:<br /><br />1/ Khuyến khích học tập và đào tạo: “Học, học nữa, học mãi”, học để không ngừng phát triển và đi đến thành công. NTQ Solution chú trọng tổ chức các chương trình training on job, seminar thường xuyên về chuyên môn, cập nhật các kiến thức công nghệ mới nhất. Có Chính sách phát triển năng lực quản lý, xây dựng đội ngũ kế thừa, đào tạo các kỹ năng làm việc nhằm nâng cao kiến thức, kỹ năng, xây dựng đội ngũ ngày càng lớn mạnh.<br>Đồng thời thúc đẩy năng lực tự học và rèn luyện theo định hướng nghề nghiệp và phù hợp với sở trường của từng thành viên. Tiến hành khen thưởng, tăng lương và hoàn tiền thi chứng chỉ chuyên môn, ngoại ngữ.<br />1/ Khuyến khích học tập và đào tạo: “Học, học nữa, học mãi”, học để không ngừng phát triển và đi đến thành công. NTQ Solution chú trọng tổ chức các chương trình training on job, seminar thường xuyên về chuyên môn, cập nhật các kiến thức công nghệ mới nhất. Có Chính sách phát triển năng lực quản lý, xây dựng đội ngũ kế thừa, đào tạo các kỹ năng làm việc nhằm nâng cao kiến thức, kỹ năng, xây dựng đội ngũ ngày càng lớn mạnh.<br>Đồng thời thúc đẩy năng lực tự học và rèn luyện theo định hướng nghề nghiệp và phù hợp với sở trường của từng thành viên. Tiến hành khen thưởng, tăng lương và hoàn tiền thi chứng chỉ chuyên môn, ngoại ngữ.<br />1/ Khuyến khích học tập và đào tạo: “Học, học nữa, học mãi”, học để không ngừng phát triển và đi đến thành công. NTQ Solution chú trọng tổ chức các chương trình training on job, seminar thường xuyên về chuyên môn, cập nhật các kiến thức công nghệ mới nhất. Có Chính sách phát triển năng lực quản lý, xây dựng đội ngũ kế thừa, đào tạo các kỹ năng làm việc nhằm nâng cao kiến thức, kỹ năng, xây dựng đội ngũ ngày càng lớn mạnh.<br>Đồng thời thúc đẩy năng lực tự học và rèn luyện theo định hướng nghề nghiệp và phù hợp với sở trường của từng thành viên. Tiến hành khen thưởng, tăng lương và hoàn tiền thi chứng chỉ chuyên môn, ngoại ngữ."
+
+#:
+msgid "recruitment-see-more"
+msgstr "Xem thêm"
+
+#:
+msgid "recruitment-feel-title"
+msgstr "Cảm nhận của NTQER"
+
+#:
+msgid "recruitment-feel-name1"
+msgstr "Nguyễn Thị Quyên"
+
+#:
+msgid "recruitment-feel-job1"
+msgstr "Tester"
+
+#:
+msgid "recruitment-feel-detail1"
+msgstr "NTQ là một môi trường năng động, trẻ trung và tạo dựng cho mình một phong cách làm việc mới, một lối tư duy mới. Không những thế, với phong trào học tập - tự học tập vô cùng mạnh mẽ, tại đây mình đã có cơ hội học hỏi thêm rất nhiều kiến thức mới. NTQ đã giúp mình nhận ra được giá trị thực sự của bản thân và tạo được động lực để mình cố gắng hơn mỗi ngày, cuộc sống vì thế sẽ trở nên hấp dẫn và thú vị, ý nghĩa hơn rất nhiều."
+
+#:
+msgid "recruitment-feel-name2"
+msgstr "Phạm Thị Hường"
+
+#:
+msgid "recruitment-feel-job2"
+msgstr "Tester"
+
+#:
+msgid "recruitment-feel-detail2"
+msgstr "Điều khiến mình quyết định gắn bó với NTQ đó chính là môi trường chuyên nghiệp, đặc biệt có rất nhiều anh chị giàu kinh nghiệm và luôn sẵn sàng giúp đỡ. Tại đây, mình đã học hỏi được về quy trình làm việc chuyên nghiệp, học hỏi được cách sắp xếp công việc cũng như phân bố thời gian hợp lí, đưa ra công việc cần làm và cố gắng hoàn thành nó thật tốt. Bên cạnh đó, NTQ cũng thường xuyên có những hoạt động văn hóa tinh thần khác, rất phù hợp với một con người năng động, hướng ngoại và thích tham gia hoạt động như mình."
+
+#:
+msgid "recruitment-feel-name3"
+msgstr "Lưu thị diệu ánh"
+
+#:
+msgid "recruitment-feel-job3"
+msgstr "Đào tạo"
+
+#:
+msgid "recruitment-feel-detail3"
+msgstr "Môi trường trẻ và vô cùng vui vẻ. Từ các sếp cho đến nhân viên, mọi người đều rất vui vẻ và thân thiện. Không chỉ được làm đúng công việc, chuyên môn mình mong muốn, tại đây, mình còn được thỏa sức sáng tạo để giải quyết các vấn đề, thiết kế và làm quen với các vấn đề chiến lược nên học được cách làm việc độc lập, làm việc nhóm và cách tư duy logic để giải quyết các vấn đề. Mình nghĩ đây là một môi trường rất phù hợp để phát triển, đặc biệt là các bạn trẻ tuổi như mình."
+
+#:
+msgid "recruitment-feel-name4"
+msgstr "Trần Đức Huy"
+
+#:
+msgid "recruitment-feel-job4"
+msgstr "Dev"
+
+#:
+msgid "recruitment-feel-detail4"
+msgstr "Mỗi ngày trôi qua là 1 ngày mình lại có thêm những bài học, những kiến thức mới. Đó không chỉ là kỹ năng nghề nghiệp mà còn là kinh nghiệm sống và làm việc. Ở NTQ ai cũng có thể là người thầy của bạn dưới 1 góc độ nào đó. Có thể không cùng dự án, không cùng đơn vị, miễn là bản thân chịu học hỏi, chịu cố gắng thì bất kể ai cũng sẽ sẵn sàng giúp đỡ bạn."
+
+#:
+msgid "recruitment-feel-name5"
+msgstr "Từ bình minh"
+
+#:
+msgid "recruitment-feel-job5"
+msgstr "Comtor"
+
+#:
+msgid "recruitment-feel-detail5"
+msgstr "NTQ luôn chào đón và tạo điều kiện cho các thành viên trẻ tuổi, ngay cả những thành viên chưa ra trường. Chỉ cần có đam mê, chăm chỉ và cầu tiến, các bạn hoàn toàn có thể trở thành một nhân viên chính thức và không thua kém ai cả. Đó chính là động lực và cũng là niềm tin để mình tiếp tục cố gắng phát triển bản thân nhiều hơn nữa."
+
+#:
+msgid "recruitment-feel-name6"
+msgstr "Nguyễn Duy Tùng"
+
+#:
+msgid "recruitment-feel-job6"
+msgstr "Dev"
+
+#:
+msgid "recruitment-feel-detail6"
+msgstr "Môi trường thân thiện, chuyên nghiệp và các sếp luôn tạo điều kiện để cho thành viên được phát triển là điều đã giữ chân mình tại NTQ. Hơn nữa, điều mình thấy ấn tượng nhất sau một thời gian làm việc đó là sự chủ động trong công việc của các nhóm dự án. Không chỉ thực hiện theo đúng yêu cầu của khách hàng mà còn thường xuyên đề xuất phương án cải thiện sản phẩm một cách tốt nhất. Chính điều này đã khiến khách hàng rất tin tưởng với đội ngũ của công ty."
+
+#:
+msgid "recruitment-news-title"
+msgstr "Bản tin tuyển dụng"
+
+#:
+msgid "recruitment-news_item-title1"
+msgstr "Tuyển dụng web developer fullstack"
+
+#:
+msgid "recruitment-news_item-time1"
+msgstr "18/7/2018"
+
+#:
+msgid "recruitment-news_item-description1"
+msgstr "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+
+#:
+msgid "btn-loadmore"
+msgstr "Xem tin"
+
+#:
+msgid "recruitment-news_item-title2"
+msgstr "Tuyển dụng C++, C#"
+
+#:
+msgid "recruitment-news_item-time2"
+msgstr "18/7/2018"
+
+#:
+msgid "recruitment-news_item-description2"
+msgstr "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+
+#:
+msgid "recruitment-news_item-title3"
+msgstr "Tuyển dụng Java developer"
+
+#:
+msgid "recruitment-news_item-time3"
+msgstr "18/7/2018"
+
+#:
+msgid "recruitment-news_item-description3"
+msgstr "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+
+#:
+msgid "recruitment-news_item-title4"
+msgstr "Tuyển dụng C++, C#"
+
+#:
+msgid "recruitment-news_item-time4"
+msgstr "18/7/2018"
+
+#:
+msgid "recruitment-news_item-time4"
+msgstr "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+
+#:
+msgid "oll-news"
+msgstr "tin cũ"
+
+#:
+msgid "news"
+msgstr "tin mới"
+
+#:
+msgid "research-dev_banner-title"
+msgstr "RESEARCH & DEVELOPMENT"
+
+#:
+msgid "research-dev_introduce-title"
+msgstr "WHY R&D?"
+
+#:
+msgid "research-dev_introduce-description"
+msgstr "We develop by ourselves to pursuit the dream."
+
+#:
+msgid "research-dev_introduce-reason__title1"
+msgstr "1. TO GAIN FURTHER INSIGHT INTO THE TECHNOLOGIES WE USE"
+
+#:
+msgid "research-dev_introduce-reason_description1"
+msgstr "Our R&D department aim to learn more about the technology NTQ operates with in order to enhance our technological capabilities."
+
+#:
+msgid "research-dev_introduce-reason__title2"
+msgstr "2. TO SUPPORT DEVELOPMENT TEAMS"
+
+#:
+msgid "research-dev_introduce-reason_description2"
+msgstr "Our R&D department is not an independent department. The R&D team members are often asked to support our client’s projects. Their technological capabilities and knowledge have proven vital in the successful completion of some difficult projects."
+
+#:
+msgid "research-dev_contact_title"
+msgstr "For those interested in our R&D, feel free to contact us."
+
+#:
+msgid "research-dev_contact_description"
+msgstr "We are currently looking for partner in joint venture who can collaborate and support us with our present, and future, projects."
+
+#:
+msgid "research-dev_contact__btn"
+msgstr "Contact Us"
+
+#:
+msgid "research-dev_team-title"
+msgstr "CRAZY TEAM"
+
+#:
+msgid "research-dev_team-description"
+msgstr "Our R&D employees are labeled the ‘Crazy Team’ due to their ability to think of innovative ideas for projects."
+
+#:
+msgid "research-dev_video-title1"
+msgstr "Joint Development"
+
+#:
+msgid "research-dev_video-title2"
+msgstr "Own development"
+
+#:
+msgid "project-banner-title"
+msgstr "SUCCESS STORIES"
+
+#:
+msgid "project-description-title"
+msgstr "お客様の声"
+
+#:
+msgid "project-content-detail1"
+msgstr "The staff at NTQ are very dynamic as shown in their ability to simultaneously create a fun atmosphere while being productive. In terms of quality, they have captured the Japanese psyche and have produced good software products. Our company has luckily found a good partner in NTQ Solution."
+
+#:
+msgid "project-content-detail2"
+msgstr "Sometimes our projects require us to create deliverables and produce documents written in English. In Japan it is hard to find engineers who can understand English, making it difficult to control costs and the speed at which a project is completed. NTQ Solution solved this problem for us through their excellent communication skills."
+
+#:
+msgid "project-content-detail3"
+msgstr "Before doing business with NTQ I felt very worried. However, they have proven to us that they can deliver our specifications to a high standard and NTQ has now become a reliable partner of ours. I have never had a problem with communication with NTQ because they understand the Japanese language and characteristics. I am very glad to have NTQ as a partner as they can provide easy to manage services at reasonable prices."
+
+#:
+msgid "project-content-detail4"
+msgstr "NTQ has a team of engineers and technology experts who have many working experience in Japan that bring customers reliable feeling because of Japan working style and care about each small thing.<br/>Pham Thai Son – CEO is a people who have huge passion about technology and he recruits plenty of talented and passionate employees. In fact, although NTQ is developing with fast speech, but the company is still maintain core value.<br/>NTQ is a reputable company that I want introduce in Vietnam."
+
+#:
+msgid "project-achievement-title"
+msgstr "Example about App – Implement projects"
+
+#:
+msgid "project-achievement-subtitle1"
+msgstr "Co-Lab"
+
+#:
+msgid "project-achievement-name1"
+msgstr "Glas"
+
+#:
+msgid "project-achievement-name2"
+msgstr "Framework"
+
+#:
+msgid "project-achievement_list-item1"
+msgstr "The client is building more than 10 types of SNS dating services."
+
+#:
+msgid "project-achievement_list-item2"
+msgstr "The number of users has reached 2 million users."
+
+#:
+msgid "project-achievement_list-item3"
+msgstr "The goal is to seek out a reliable partner to delegate the development of system in order to focus on other business’ aspects."
+
+#:
+msgid "project-achievement-name3"
+msgstr "Result"
+
+#:
+msgid "project-achievement_list-item4"
+msgstr "Glas and NTQ has collaborated for 5 years."
+
+#:
+msgid "project-achievement_list-item5"
+msgstr "NTQ takes responsibilities in development and maintenance for 5 types of services."
+
+#:
+msgid "project-achievement_list-item6"
+msgstr "Reconstruct the system to adapt with the need of expanding service."
+
+#:
+msgid "project-achievement_list-item7"
+msgstr "Current team size: 100 Man month"
+
+#:
+msgid "project-achievement-name4"
+msgstr "Canbus System"
+
+#:
+msgid "project-achievement-name5"
+msgstr "Framework"
+
+#:
+msgid "project-achievement-name_p1"
+msgstr "Building a cloud-based online data management system based on multi-tenant model for enterprise customers."
+
+#:
+msgid "project-achievement-name_p2"
+msgstr "This system provides functions as a database and gives users authority to manage, share and analyze data."
+
+#:
+msgid "project-achievement-name6"
+msgstr "Main functions"
+
+#:
+msgid "project-achievement_list-item8"
+msgstr "User defines data through application"
+
+#:
+msgid "project-achievement_sublist-item1"
+msgstr "The user defines the data structure"
+
+#:
+msgid "project-achievement_sublist-item2"
+msgstr "The user designs the data input form"
+
+#:
+msgid "project-achievement_sublist-item3"
+msgstr "The user defines the data display mode"
+
+#:
+msgid "project-achievement_list-item9"
+msgstr "Manage data of application processing flow"
+
+#:
+msgid "project-achievement_sublist-item4"
+msgstr "Users can define data processing flows and assign and authorize data processing"
+
+#:
+msgid "project-achievement_sublist-item5"
+msgstr "Users can automate data processing flow"
+
+#:
+msgid "project-achievement_list-item10"
+msgstr "Collaborative functions"
+
+#:
+msgid "project-achievement_sublist-item6"
+msgstr "With the workspace function, multiple users can collaborate as one team."
+
+#:
+msgid "project-achievement_sublist-item7"
+msgstr "Provide messaging and forum functions between teams"
+
+#:
+msgid "project-achievement-name7"
+msgstr "Result"
+
+#:
+msgid "project-achievement_list-item11"
+msgstr "Project size: 200 Man month"
+
+#:
+msgid "project-achievement_list-item12"
+msgstr "Our scope of work: specification definition → coding → integration test"
+
+#:
+msgid "project-achievement-subtitle2"
+msgstr "Ope-Lab"
+
+#:
+msgid "project-achievement-name8"
+msgstr "DQS Labo"
+
+#:
+msgid "project-achievement-name9"
+msgstr "Framework"
+
+#:
+msgid "project-achievement_list-item13"
+msgstr "Client want to develop a system to support creating proposals for stores in ASEAN."
+
+#:
+msgid "project-achievement_list-item14"
+msgstr "NTQ was assigned to develop and maintain the system, as well as handling upgrade, function change request throughout operating."
+
+#:
+msgid "project-achievement_list-item15"
+msgstr "Even while in use it is required to respond to the actual situation by upgrading, changing functions, etc."
+
+#:
+msgid "project-achievement-name10"
+msgstr "Result"
+
+#:
+msgid "project-achievement_list-item16"
+msgstr "To maintain the system, the client ordered a Ope Lab with 2 Man per month."
+
+#:
+msgid "project-achievement_list-item17"
+msgstr "The offshore team has been supervising the server and handling occurring issues."
+
+#:
+msgid "project-achievement-name11"
+msgstr "Community"
+
+#:
+msgid "project-achievement-name12"
+msgstr "Framework"
+
+#:
+msgid "project-achievement_list-item18"
+msgstr "Client has been providing dating service based on web for 6 companies and expect NTQ to take care of all of the workload."
+
+#:
+msgid "project-achievement_list-item19"
+msgstr "Maintaining content:"
+
+#:
+msgid "project-achievement_sublist-item8"
+msgstr "Monitor the condition of the service and service in the system. Fast responsive for any arising issues."
+
+#:
+msgid "project-achievement_sublist-item9"
+msgstr "Proceed the maintenance such as backup, log removal, etc…"
+
+#:
+msgid "project-achievement_sublist-item10"
+msgstr "Taking care of the change when the system updates service provider such as Email, advertisement, invoice, etc…"
+
+#:
+msgid "project-achievement_sublist-item11"
+msgstr "In charge of some tasks in system management such as change in catalogue (edit/add/delete catalogue, email template), etc…"
+
+#:
+msgid "project-achievement_sublist-item12"
+msgstr "Edit/update text, image, banner, URL for website according to client’s request."
+
+#:
+msgid "project-achievement-name13"
+msgstr "Result"
+
+#:
+msgid "project-achievement_list-item20"
+msgstr "Allocate a maintenance team (dev + comtor)"
+
+#:
+msgid "project-achievement_list-item21"
+msgstr "The team has been operating for more than 3 years."
+
+#:
+msgid "project-achievement-subtitle3"
+msgstr "S-Lab"
+
+#:
+msgid "project-achievement-name14"
+msgstr "Trb Labo"
+
+#:
+msgid "project-achievement-name15"
+msgstr "Framework"
+
+#:
+msgid "project-achievement_list-item22"
+msgstr "Client is a digital agency from Singapore with expertise in Digital Content Marketing"
+
+#:
+msgid "project-achievement_list-item23"
+msgstr "The client is doing business in website development so that they have high requirement for design for impression to users."
+
+#:
+msgid "project-achievement_list-item24"
+msgstr "Client wants to find a reliable partner that fits these conditions. "
+
+#:
+msgid "project-achievement-name16"
+msgstr "Result"
+
+#:
+msgid "project-achievement_list-item25"
+msgstr "The original development team started off with 2 members and increased to 7 members in 6 months."
+
+#:
+msgid "project-achievement_list-item26"
+msgstr "The offshore development team has been in charge of processing HTML/CSS and creating animation following client’s requests."
+
+#:
+msgid "project-achievement_list-item27"
+msgstr "In addition, NTQ has also been in charge of the backend."
+
+#:
+msgid "project-achievement-name17"
+msgstr "MM Labo"
+
+#:
+msgid "project-achievement-name18"
+msgstr "Framework"
+
+#:
+msgid "project-achievement_list-item28"
+msgstr "Client is in Japan and want to provide advertising website for end-users."
+
+#:
+msgid "project-achievement_list-item29"
+msgstr "Despite their desire to expand business, client face difficulty in recruitment as the salary rate in Japan is fairly high."
+
+#:
+msgid "project-achievement_list-item30"
+msgstr "Client wants to seek suitable resource for business expansion."
+
+#:
+msgid "project-achievement-name19"
+msgstr "Result"
+
+#:
+msgid "project-achievement_list-item31"
+msgstr "The development team took 3 months to adopt the service quality for advertising website."
+
+#:
+msgid "project-achievement_list-item32"
+msgstr "The team has increased from 2 members to 5 members."
+
+#:
+msgid "project-achievement_list-item33"
+msgstr "Client also delegate UI/UX task for NTQ. "
+
+#:
+msgid "project-achievement-subtitle4"
+msgstr "PoC-Lab"
+
+#:
+msgid "project-achievement-name20"
+msgstr "SSO"
+
+#:
+msgid "project-achievement-name21"
+msgstr "Framework"
+
+#:
+msgid "project-achievement_list-item34"
+msgstr "Client is an enormous electronic manufacturer with approximately 30.000 employees. They usually use many internal enterprise systems."
+
+#:
+msgid "project-achievement_list-item35"
+msgstr "Client wants to develop a system that can automatically login into every systems to save time."
+
+#:
+msgid "project-achievement_list-item36"
+msgstr "Client worries about technical aspect of this project."
+
+#:
+msgid "project-achievement-name22"
+msgstr "Result"
+
+#:
+msgid "project-achievement_list-item37"
+msgstr "NTQ completed a demo for this system through extension/plugin of browser (20 Man Month effort)"
+
+#:
+msgid "project-achievement_list-item38"
+msgstr "The project continues into the next phase with 36 Man month"
+
+#:
+msgid "project-achievement_list-item39"
+msgstr "All staff have been using this system after complete development."
+
+#:
+msgid "project-achievement_list-item40"
+msgstr "NTQ continues to maintain this system."
+
+#:
+msgid "project-achievement-name23"
+msgstr "Syminar"
+
+#:
+msgid "project-achievement-name24"
+msgstr "Framework"
+
+#:
+msgid "project-achievement_list-item41"
+msgstr "Client is a start-up company in building online LMS using live streaming."
+
+#:
+msgid "project-achievement_list-item42"
+msgstr "In order to attract end-users and investors, client needs a demo for minimized functions."
+
+#:
+msgid "project-achievement_list-item43"
+msgstr "The live streaming needed to be built on Opensource platform. However, in order to fit the project timeline, we have developed a demo on platform with subscription fee."
+
+#:
+msgid "project-achievement-name25"
+msgstr "Result"
+
+#:
+msgid "project-achievement_list-item44"
+msgstr "In 2 months, NTQ completed the demo for platform livestreaming."
+
+#:
+msgid "project-achievement_list-item45"
+msgstr "The system was designed to fit with Tokbox platform, as well as the paid platform."
+
+#:
+msgid "project-achievement_list-item46"
+msgstr "The client has sold this service for 2 businesses."
+
+#:
+msgid "project-achievement_list-item47"
+msgstr "At the moment, the system has been extended into Co-lab with 5 members."
+
+#:
+msgid "project_advisory"
+msgstr "We always offer free quotes and consultation. Contact us today with any questions you may have."
+
+#:
+msgid "project_advisory-btn"
+msgstr "Contact us"
+
+#:
+msgid "landing-baner_detail"
+msgstr "At NTQ Solution, our dedicated team of Shopify designers and developers build customised, enterprise solutions for fast growing, high volume merchants. With offices in Sydney and Melbourne, we specialise in multi-channel retail and work with some of Australias leading brands. WithShopify Plus, your business is guaranteed seamless growth and scalability."
+
+#:
+msgid "landing-baner_detail1"
+msgstr "Our core value is to create profitable eCommerce business for our clients. Whether you’re starting small or scaling up, we provide strategy, design and growth services to maximise your commerce."
+
+#:
+msgid "landing-why_shopify_title"
+msgstr "Why shopify"
+
+#:
+msgid "landing-why-shopify_title_detail"
+msgstr "Everything's handled"
+
+#:
+msgid "landing-why-shopify_title_detail1"
+msgstr "Mobile app and shopify Pos"
+
+#:
+msgid "landing-why-shopify_title_detail2"
+msgstr "robust app marketplace"
+
+#:
+msgid "landing-why-shopify_title_detail3"
+msgstr "cross channel selling"
+
+#:
+msgid "landing-why-shopify_title_detail4"
+msgstr "endless customization"
+
+#:
+msgid "landing-why-shopify_detail"
+msgstr "Concentrate on growing your business. Shopify has everyhing built-in and taken care of by professionals. Your store will be fast, secure, and taken care of."
+
+#:
+msgid "landing-why-shopify_detail1"
+msgstr "Take your business everywhere with the mobile app, or seamlessly grow into a robust point of sale system to power your retail locations."
+
+#:
+msgid "landing-why-shopify_detail2"
+msgstr "There's always an app for that. With over 1,800 apps in the App Store, we use them to power everything from email marketing to accounting integration."
+
+#:
+msgid "landing-why-shopify_detail3"
+msgstr "Your online store is only one of the channels available for you to sell on. Sell on Facebook, Amazon, Ebay, and Buzzfeed ? with more channels being added all of the time."
+
+#:
+msgid "landing-why-shopify_detail4"
+msgstr "If you can think it, we can build it. Shopify's liquid language lets us create beautiful responsive websites that will create a lasting impression."
+
+#:
+msgid "landing-service-title"
+msgstr "Our Shopify Service"
+
+#:
+msgid "landing-service-item--title1"
+msgstr "Platform migration"
+
+#:
+msgid "landing-service-item--title2"
+msgstr "Start a store"
+
+#:
+msgid "landing-service-item--title3"
+msgstr "Managed services"
+
+#:
+msgid "landing-service-item-content1"
+msgstr "Take your performance to the next level with our re-platform services to Shopify and Shopify Plus."
+
+#:
+msgid "landing-service-item-content2"
+msgstr "We take care of everything from start to launch so you can focus on building your business. Our Shopify developers take the beautiful work done by our designers and bring it to life. It's our job to build dazzling sites without sacrificing functionality or speed."
+
+#:
+msgid "landing-service-item-content3"
+msgstr "Regardless of the size of your project, whether it be small design work or an ongoing project that requires monthly support, NTQ can shape up your venture to make it a fruitful experience that will improve your eCommerce business."
+
+#:
+msgid "landing-ready-title"
+msgstr "Ready to get your Shopify store?"
+
+#:
+msgid "landing-ready-detail"
+msgstr "Send us a message and we'll get back to you as soon as possible"
+
+#:
+msgid "landing-ready-btn"
+msgstr "Get in touch"
+
+#:
+msgid "download"
+msgstr "Downloads"
+
+#:
+msgid "download-description1"
+msgstr "To discover more about NTQ Solution please feel free to download the materials listed below."
+
+#:
+msgid "download-description2"
+msgstr "Check out our portfolios to explore the high quality work we have done in the past."
+
+#:
+msgid "download-item-content1"
+msgstr "NTQ-Solution_.NET Project Portfolio"
+
+#:
+msgid "download-item-content2"
+msgstr "NTQ-Solution_Web Project Portfolio"
+
+#:
+msgid "download-item-content3"
+msgstr "NTQ-Solution_iOS Project Portfolio"
+
+#:
+msgid "download-item-content4"
+msgstr "NTQ-Solution_Company Portfolio"
+
+#:
+msgid "download-item-content5"
+msgstr "NTQ-Solution_Company Profile"
+
+#:
+msgid "download-item-content6"
+msgstr "NTQ-Solution_Company Profile (Korean)"
+
+#:
+msgid "download-content_item-title"
+msgstr "Company Profile and Actual Material"
+
+#:
+msgid "download-content-item-title"
+msgstr "Contract sample"
+
+#:
+msgid "download__item-content1"
+msgstr "NTQ-Solution_NDA_ENG_Sample"
+
+#:
+msgid "download__item-content2"
+msgstr "NTQ-Solution_Contract_EN_Sample"
+
+#:
+msgid "download__item-content3"
+msgstr "NTQ-Solution_WorkOrder_EN_Sample"
+
+#:
+msgid "download-content_item-title"
+msgstr "Company Profile and Actual Material (Japanese version)"
+
+#:
+msgid "download-item-content4"
+msgstr "NTQ-Solution_.NETプロジェクト実績資料"
+
+#:
+msgid "download-item-content5"
+msgstr "NTQ-Solution_ウェブプロジェクト実績資料"
+
+#:
+msgid "download-item-content6"
+msgstr "NTQ-Solution_iOSプロジェクト実績資料"
+
+#:
+msgid "download-item-content7"
+msgstr "NTQ-Solution_Androidプロジェクト実績資料"
+
+#:
+msgid "download-item-content8"
+msgstr "NTQ-Solution_開発事例資料"
+
+#:
+msgid "download-item-content9"
+msgstr "NTQ-Solution_会社プロファイル資料"
+
+#:
+msgid "download-content_item-title3"
+msgstr "Contract sample (Japanese version)"
+
+#:
+msgid "download-item-content10"
+msgstr "NTQ-Solution_機密保持契約書"
+
+#:
+msgid "download-item-content11"
+msgstr "NTQ-Solution_業務委託基本契約書"
+
+#:
+msgid "download-item-content12"
+msgstr "NTQ-Solution_ラボ契約_業務委託基本契約書"
+
+#:
+msgid "download-item-content13"
+msgstr "NTQ-Solution_請負契約_業務委託基本契約書"
+
+#:
+msgid "download-content_item-title4"
+msgstr "Company Profile and Actual Material (KOR ver)"
+
+#:
+msgid "download-item-content14"
+msgstr "NTQ-Solution_.NETプロジェクト実績資料"
+
+#:
+msgid "download-item-content15"
+msgstr "NTQ-Solution_ウェブプロジェクト実績資料"
+
+#:
+msgid "download-item-content16"
+msgstr "NTQ-Solution_iOSプロジェクト実績資料"
+
+#:
+msgid "download-item-content17"
+msgstr "NTQ-Solution_Androidプロジェクト実績資料"
+
+#:
+msgid "download-item-content18"
+msgstr "NTQ-Solution_開発事例資料"
+
+#:
+msgid "download-item-content19"
+msgstr "NTQ-Solution_会社プロファイル資料"
+
+#:
+msgid "download-content_item-title5"
+msgstr "Contract sample (KOR ver)"
+
+
+#:
+msgid "download-item-content19"
+msgstr "NTQ-Solution_機密保持契約書"
+
+#:
+msgid "download-item-content19"
+msgstr "NTQ-Solution_業務委託基本契約書"
+
+
+#:
+msgid "download-item-content19"
+msgstr "NTQ-Solution_ラボ契約_業務委託基本契約書"
+
+#:
+msgid "download-item-content19"
+msgstr "NTQ-Solution_請負契約_業務委託基本契約書"
+
+#:
+msgid "download-modal-title"
+msgstr "Type your E-mail to download"
+
+#:
+msgid "download-btn"
+msgstr "Download"

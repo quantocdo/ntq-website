@@ -8,63 +8,54 @@
 
 <% block 'page_flow': %>
 
-<div class="page-title text-center text-upper">
-	<span><%- @__('CONTRACT_MODELS') %></span>
+<div class="container">
+  <h1 class="page-title text-center text-upper"><%- @__('CONTRACT_MODELS') %></h1>
 </div>
 
-<div class="site-container fluid">
-	<div class="gs">
-		<div class="row contract">
-			<div class="col-5">
-				<img class="contract-illu" src="<%= @__asset('img/cm_odc.jpg') %>" alt="<%- @__('ODC') %>">
-			</div>
-			<div class="col-7">
-				<div class="heading text-blue">
-					<span><%- @__('ODC') %></span>
-				</div>
-				<div class="explain">
-					<p><%- @__('ODC_DESC') %></p>
-					<br>
-					<span><%- @__('RECOMMENDED') %></span>
-					<ul>
-						<li><i class="fa fa-fw fa-caret-right text-blue"></i><%- @__('ODC_RECOMMENDED_1') %></li>
-						<li><i class="fa fa-fw fa-caret-right text-blue"></i><%- @__('ODC_RECOMMENDED_2') %></li>
-					</ul>
-					<br>
-					<span class="text-upper text-bold"><%- @__('ADVANTAGES') %></span>
-					<ul>
-						<li><i class="fa fa-fw fa-caret-right text-blue"></i><%- @__('ODC_ADVANTAGE_1') %></li>
-						<li><i class="fa fa-fw fa-caret-right text-blue"></i><%- @__('ODC_ADVANTAGE_2') %></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="row contract">
-			<div class="col-5">
-				<img class="contract-illu" src="<%= @__asset('img/cm_project_based.jpg') %>" alt="<%- @__('PROJECT_BASED') %>">
-			</div>
-			<div class="col-7">
-				<div class="heading text-blue">
-					<span><%- @__('PROJECT_BASED') %></span>
-				</div>
-				<div class="explain">
-					<p><%- @__('PROJECT_BASED_DESC') %></p>
-					<br>
-					<span><%- @__('RECOMMENDED') %></span>
-					<ul>
-						<li><i class="fa fa-fw fa-caret-right text-blue"></i><%- @__('PROJECT_BASED_RECOMMENDED_1') %></li>
-						<li><i class="fa fa-fw fa-caret-right text-blue"></i><%- @__('PROJECT_BASED_RECOMMENDED_2') %></li>
-					</ul>
-					<br>
-					<span class="text-upper text-bold"><%- @__('ADVANTAGES') %></span>
-					<ul>
-						<li><i class="fa fa-fw fa-caret-right text-blue"></i><%- @__('PROJECT_BASED_ADVANTAGE_1') %></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-
+<div class="container">
+  <div class="contracts">
+    <div class="contract-illu">
+      <img src="<%= @__asset('img/cm_odc.jpg') %>" alt="<%- @__('ODC') %>">
+    </div>
+    <div class="contract">
+      <h2 class="heading text-blue"><%- @__('ODC') %></h2>
+      <div class="explain">
+        <p><%- @__('ODC_DESC') %></p>
+        <br>
+        <span><%- @__('RECOMMENDED') %></span>
+        <ul>
+          <li><i class="fa fa-fw fa-caret-right text-blue"></i><%- @__('ODC_RECOMMENDED_1') %></li>
+          <li><i class="fa fa-fw fa-caret-right text-blue"></i><%- @__('ODC_RECOMMENDED_2') %></li>
+        </ul>
+        <br>
+        <span class="text-upper text-bold"><%- @__('ADVANTAGES') %></span>
+        <ul>
+          <li><i class="fa fa-fw fa-caret-right text-blue"></i><%- @__('ODC_ADVANTAGE_1') %></li>
+          <li><i class="fa fa-fw fa-caret-right text-blue"></i><%- @__('ODC_ADVANTAGE_2') %></li>
+        </ul>
+      </div>
+    </div>
+    <div class="contract-illu">
+      <img src="<%= @__asset('img/cm_project_based.jpg') %>" alt="<%- @__('PROJECT_BASED') %>">
+    </div>
+    <div class="contract">
+      <h2 class="heading text-blue"><%- @__('PROJECT_BASED') %></h2>
+      <div class="explain">
+        <p><%- @__('PROJECT_BASED_DESC') %></p>
+        <br>
+        <span><%- @__('RECOMMENDED') %></span>
+        <ul>
+          <li><i class="fa fa-fw fa-caret-right text-blue"></i><%- @__('PROJECT_BASED_RECOMMENDED_1') %></li>
+          <li><i class="fa fa-fw fa-caret-right text-blue"></i><%- @__('PROJECT_BASED_RECOMMENDED_2') %></li>
+        </ul>
+        <br>
+        <span class="text-upper text-bold"><%- @__('ADVANTAGES') %></span>
+        <ul>
+          <li><i class="fa fa-fw fa-caret-right text-blue"></i><%- @__('PROJECT_BASED_ADVANTAGE_1') %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
 
 <% end %>

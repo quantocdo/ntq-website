@@ -17,6 +17,7 @@
   "dependencies": {
     "aws-sdk": "2.297.0",
     "body-parser": "1.18.3",
+    "bootstrap": "^3.4.0",
     "cheerio": "1.0.0-rc.2",
     "dateformat": "3.0.3",
     "debounce": "1.2.0",
@@ -26,10 +27,13 @@
     "express-slash": "2.0.1",
     "fs-extra": "7.0.0",
     "i18n": "0.8.3",
+    "jquery": "^3.3.1",
     "kouto-swiss": "0.12.0",
-    "mongoose": "5.2.9",
+    "mongoose": "^5.4.11",
     "node-fetch": "2.2.0",
+    "popper.js": "^1.14.6",
     "serialize-error": "2.1.0",
+    "slick-carousel": "^1.8.1",
     "stylus": "0.54.5",
     "truncatise": "0.0.7"
   },
@@ -46,7 +50,7 @@
     "extract-text-webpack-plugin": "4.0.0-beta.0",
     "file-loader": "1.1.11",
     "glob": "7.1.2",
-    "nodemon": "1.18.3",
+    "nodemon": "1.18.10",
     "optimize-css-assets-webpack-plugin": "5.0.0",
     "run.env": "1.0.2",
     "style-loader": "0.22.1",
@@ -60,8 +64,8 @@
   },
   "scripts": {
     "start": "concurrently --raw \"npm run dev-server\" \"wait-on http://localhost:3101/alive && npm run server\"",
-    "server": "run.env nodemon ./src/index.js --exec babel-node --watch ./src/server --watch ./dist/manifest.json",
-    "dev-server": "run.env nodemon ./internals/dev-server --exec babel-node --watch ./internals/dev-server --watch ./internals/webpack.config.babel.js",
+    "server": "run.env nodemon ./src/index.js --exec babel-node --watch ./src/server --watch ./dist",
+    "dev-server": "run.env nodemon ./internals/dev-server --exec babel-node --watch ./internals",
     "webpack": "webpack --config internals/webpack.config.babel.js",
     "build": "rm -rf ./build/* && babel ./src -d ./build && cp -r ./src/translations ./build && cp -r ./src/server/views ./build/server"
   }

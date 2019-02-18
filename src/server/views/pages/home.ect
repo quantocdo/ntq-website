@@ -1,0 +1,331 @@
+<% extend '_flow-no-banner' %>
+
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__asset('home.css') %>">
+
+<% end %>
+
+<% block 'page_flow': %>
+
+<section class="section home js-home">
+
+	<div class="home__banner">
+		<div class="home__banner-background">
+			<video autoplay="" loop="" muted="" class="home__banner-video">
+				<source src="https://maximum-tent-36.media-cdn.io/assets/video/bg_home.972ce.mp4" type="video/mp4">
+			</video>
+		</div>
+		<div class="home__banner-content js-banner-content">
+			<h3><%- @__('home-banner-content1') %></h3>
+			<h4><%- @__('home-banner-content2') %></h4>
+		</div>
+	</div>
+
+	<div class="home__intro">
+		<div class="container">
+			<div class="home__heading">
+				<h3><%- @__('home-heading1') %></h3>
+				<p><%- @__('home-heading2') %></p>
+			</div>
+			<div class="row">
+				<div class="col-sm-7 col-md-8 home__intro-video">
+					<iframe src="https://www.youtube.com/embed/qOVTouFSJEs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+				</div>
+				<div class="col-sm-5 col-md-4">
+					<a href="about-us.html" class="btn btn--square btn--japan">
+						<%- @__('btn-japan') %>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="home__box">
+		<div class="container">
+			<div class="home__reason">
+				<div class="home__heading">
+					<h3><%- @__('home-heading3') %></h3>
+				</div>
+				<div class="row">
+					<ul class="col-sm-6 home__reason-list">
+						<li class="home__reason-item">
+							<div class="home__reason-img-wrapper">
+								<img src="<%= @__asset('img/icon-reason-1.png') %>" alt="/">
+							</div>
+							<a href="#"><%- @__('home-reason-item1') %></a>
+						</li>
+						<li class="home__reason-item">
+							<div class="home__reason-img-wrapper">
+								<img src="<%= @__asset('img/icon-reason-2.png') %>" alt="/">
+							</div>
+							<a href="#"><%- @__('home-reason-item2') %></a>
+						</li>
+						<li class="home__reason-item">
+							<div class="home__reason-img-wrapper">
+								<img src="<%= @__asset('img/icon-reason-3.png') %>" alt="/">
+							</div>
+							<a href="#"><%- @__('home-reason-item3') %></a>
+						</li>
+					</ul>
+					<div class="col-sm-6 home__reason-slide js-reason-slider">
+						<a href="#" style="background-image: url('<%= @__asset('img/item-slide-1.png') %>')"></a>
+						<a href="#" style="background-image: url('<%= @__asset('img/item-slide-1.png') %>')"></a>
+						<a href="#" style="background-image: url('<%= @__asset('img/item-slide-1.png') %>')"></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="home__service">
+				<div class="home__heading">
+					<h3><%- @__('home-heading5') %></h3>
+				</div>
+				<div class="row home__service-items equal-height">
+					<div class="col-sm-4 home__service-item">
+						<div class="home__service-img-wrapper" style="background-image: url('<%= @__asset('img/item-service-1.png') %>');">
+						</div>
+						<h4><%- @__('home-service-item1') %></h4>
+						<p><%- @__('home-service-item2') %></p>
+						<a href="/service-offshore"><%- @__('home-service-item3') %></a>
+					</div>
+					<div class="col-sm-4 home__service-item">
+						<div class="home__service-img-wrapper" style="background-image: url('<%= @__asset('img/item-service-2.png') %>');">
+						</div>
+						<h4><%- @__('home-service-item4') %></h4>
+						<p><%- @__('home-service-item5') %></p>
+						<a href="/service-ai"><%- @__('home-service-item6') %></a>
+					</div>
+					<div class="col-sm-4 home__service-item">
+						<div class="home__service-img-wrapper" style="background-image: url('<%= @__asset('img/item-service-3.png') %>');">
+						</div>
+						<h4><%- @__('home-service-item7') %></h4>
+						<p><%- @__('home-service-item8') %></p>
+						<a href="/shopify-partner"><%- @__('home-service-item9') %></a>
+					</div>
+				</div>
+				<div class="row home__service-icons equal-height">
+					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
+						<div class="home__service-img-wrapper">
+							<img src="<%= @__asset('img/icon-service-1.png') %>" alt="/">
+						</div>
+						<p><%- @__('home-service-icon1') %></p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
+						<div class="home__service-img-wrapper">
+							<img src="<%= @__asset('img/icon-service-2.png') %>" alt="/">
+						</div>
+						<p><%- @__('home-service-icon2') %></p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
+						<div class="home__service-img-wrapper">
+							<img src="<%= @__asset('img/icon-service-3.png') %>" alt="/">
+						</div>
+						<p><%- @__('home-service-icon3') %></p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
+						<div class="home__service-img-wrapper">
+							<img src="<%= @__asset('img/icon-service-4.png') %>" alt="/">
+						</div>
+						<p><%- @__('home-service-icon4') %></p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
+						<div class="home__service-img-wrapper">
+							<img src="<%= @__asset('img/icon-service-5.png') %>" alt="/">
+						</div>
+						<p><%- @__('home-service-icon5') %></p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
+						<div class="home__service-img-wrapper">
+							<img src="<%= @__asset('img/icon-service-6.png') %>" alt="/">
+						</div>
+						<p><%- @__('home-service-icon6') %></p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
+						<div class="home__service-img-wrapper">
+							<img src="<%= @__asset('img/icon-service-7.png') %>" alt="/">
+						</div>
+						<p><%- @__('home-service-icon7') %></p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
+						<div class="home__service-img-wrapper">
+							<img src="<%= @__asset('img/icon-service-8.png') %>" alt="/">
+						</div>
+						<p><%- @__('home-service-icon8') %></p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
+						<div class="home__service-img-wrapper">
+							<img src="<%= @__asset('img/icon-service-9.png') %>" alt="/">
+						</div>
+						<p><%- @__('home-service-icon9') %></p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
+						<div class="home__service-img-wrapper">
+							<img src="<%= @__asset('img/icon-service-10.png') %>" alt="/">
+						</div>
+						<p><%- @__('home-service-icon10') %></p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
+						<div class="home__service-img-wrapper">
+							<img src="<%= @__asset('img/icon-service-11.png') %>" alt="/">
+						</div>
+						<p><%- @__('home-service-icon11') %></p>
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3 home__service-icon">
+						<div class="home__service-img-wrapper">
+							<img src="<%= @__asset('img/icon-service-12.png') %>" alt="/">
+						</div>
+						<p><%- @__('home-service-icon12') %></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="home__customer">
+				<div class="home__heading">
+					<h3><%- @__('home-heading8') %></h3>
+				</div>
+				<div class="row equal-height">
+					<div class="col-sm-6 home__customer-item">
+						<div class="home__customer-img-wrapper">
+							<img src="<%= @__asset('img/customer-1.png') %>" alt="/">
+						</div>
+						<h4><%- @__('home-customer-item1') %></h4>
+						<p><%- @__('home-customer-item2') %></p>
+						<p><%- @__('home-customer-item3') %></p>
+					</div>
+					<div class="col-sm-6 home__customer-item">
+						<div class="home__customer-img-wrapper">
+							<img src="<%= @__asset('img/customer-2.png') %>" alt="/">
+						</div>
+						<h4><%- @__('home-customer-item4') %></h4>
+						<p><%- @__('home-customer-item5') %></p>
+						<p><%- @__('home-customer-item6') %></p>
+					</div>
+					<div class="col-sm-6 home__customer-item">
+						<div class="home__customer-img-wrapper">
+							<img src="<%= @__asset('img/customer-3.png') %>" alt="/">
+						</div>
+						<h4><%- @__('home-customer-item7') %></h4>
+						<p><%- @__('home-customer-item8') %></p>
+						<p><%- @__('home-customer-item9') %></p>
+					</div>
+					<div class="col-sm-6 home__customer-item">
+						<div class="home__customer-img-wrapper">
+							<img src="<%= @__asset('img/customer-4.png') %>" alt="/">
+						</div>
+						<h4><%- @__('home-customer-item10') %></h4>
+						<p><%- @__('home-customer-item11') %></p>
+						<p><%- @__('home-customer-item12') %></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="home__tech">
+				<div class="home__heading">
+					<h3><%- @__('home-heading9') %></h3>
+					<p><%- @__('home-heading10') %></p>
+				</div>
+				<a href="#" class="btn btn--square"><%- @__('btn-square5') %></a>
+				<ul class="home__tech-list">
+					<li>
+						<img src="<%= @__asset('img/icon-tech-1.png') %>" alt="/">
+					</li>
+					<li>
+						<img src="<%= @__asset('img/icon-tech-2.png') %>" alt="/">
+					</li>
+					<li>
+						<img src="<%= @__asset('img/icon-tech-3.png') %>" alt="/">
+					</li>
+					<li>
+						<img src="<%= @__asset('img/icon-tech-4.png') %>" alt="/">
+					</li>
+					<li>
+						<img src="<%= @__asset('img/icon-tech-5.png') %>" alt="/">
+					</li>
+					<li>
+						<img src="<%= @__asset('img/icon-tech-6.png') %>" alt="/">
+					</li>
+					<li>
+						<img src="<%= @__asset('img/icon-tech-7.png') %>" alt="/">
+					</li>
+					<li>
+						<img src="<%= @__asset('img/icon-tech-8.png') %>" alt="/">
+					</li>
+					<li>
+						<img src="<%= @__asset('img/icon-tech-9.png') %>" alt="/">
+					</li>
+				</ul>
+			</div>
+
+			<div class="home__suppliers">
+				<div class="home__heading">
+					<h3><%- @__('home-heading11') %></h3>
+					<p><%- @__('home-heading12') %></p>
+				</div>
+				<img src="<%= @__asset('img/bg-map-suppliers.png') %>" alt="/">
+			</div>
+		</div>
+	</div>
+
+	<div class="home__rnd">
+		<div class="home__rnd-background js-rnd-background"></div>
+		<div class="container">
+			<div class="home__heading">
+				<h3><%- @__('home-heading13') %></h3>
+				<p><%- @__('home-heading14') %></p>
+			</div>
+			<a href="research-and-development.html" class="btn btn--square">
+				See how they work
+			</a>
+			<div class="home__rnd-slide js-rnd-slider">
+				<a class="js-rnd-item" data-background="<%= @__asset('img/item-rnd-1.png') %>" style="background-image: url('<%= @__asset('img/item-rnd-1.png') %>')"></a>
+				<a class="js-rnd-item" data-background="<%= @__asset('img/item-rnd-2.png') %>" style="background-image: url('<%= @__asset('img/item-rnd-2.png') %>')"></a>
+				<a class="js-rnd-item" data-background="<%= @__asset('img/item-rnd-3.png') %>" style="background-image: url('<%= @__asset('img/item-rnd-3.png') %>')"></a>
+				<a class="js-rnd-item" data-background="<%= @__asset('img/item-rnd-4.png') %>" style="background-image: url('<%= @__asset('img/item-rnd-4.png') %>')"></a>
+				<a class="js-rnd-item" data-background="<%= @__asset('img/item-rnd-5.png') %>" style="background-image: url('<%= @__asset('img/item-rnd-5.png') %>')"></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="home__news">
+		<div class="container">
+			<div class="home__heading">
+				<h3>News</h3>
+			</div>
+			<a href="news" class="home__btn-view-more">
+				<%- @__('home-btn-view-more') %>
+			</a>
+			<div class="row">
+				<div class="col-sm-8">
+					<div class="home__news-item">
+						<p><%- @__('home-news-item_day1') %></p>
+						<a href="#"><%- @__('home-news-item1') %></a>
+					</div>
+					<div class="home__news-item">
+						<p><%- @__('home-news-item_day2') %></p>
+						<a href="#"><%- @__('home-news-item2') %></a>
+					</div>
+					<div class="home__news-item">
+						<p><%- @__('home-news-item_day3') %></p>
+						<a href="#"><%- @__('home-news-item3') %></a>
+					</div>
+					<div class="home__news-item">
+						<p><%- @__('home-news-item_day4') %></p>
+						<a href="#"><%- @__('home-news-item4') %></a>
+					</div>
+					<div class="home__news-item">
+						<p><%- @__('home-news-item_day5') %></p>
+						<a href="#"><%- @__('home-news-item5') %></a>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="home__news-img-wrapper" style="background-image: url('<%= @__asset('img/item-news.png') %>')">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<% end %>

@@ -1,0 +1,17 @@
+<% extend '_base' %>
+
+<body class="scroll-y">
+	<% include 'partials/header' %>
+
+	<div class="site-content page-flow">
+		<% content 'page_flow' %>
+	</div>
+
+	<% include 'partials/footer' %>
+
+	<!-- script imports -->
+	<% content 'body_end' %>
+	<% include 'partials/service-worker' %>
+</body>
+
+

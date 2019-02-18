@@ -1,36 +1,151 @@
-.site-footer
-	// height $layout_footer_h
+.footer
+  background-color: #252525
+  padding-top: 30px
 
-	background $color_black
-	color $color_white
+  li
+    list-style-type: none
 
-	.first-part
-		padding-top 56px
-		padding-bottom 65px
+  &__link
+    position: relative
 
-		.footer-links
-			.footer-link
-				margin-top 17px
+    &::after
+      content: ''
+      display: block
+      clear: both
 
-		.contact-address
-			margin-top 23px
-			line-height 21px
-			height 130px
+    &-link
+      float: right
+      text-transform: uppercase
 
-		.contact-person
-			line-height 21px
+      li
+        float: left
+        padding: 15px
 
-	.footer-break
-		border-bottom 1px solid $color_gray_dark
+        a
+          color: #fff
+          line-height: 20px
+          font-size: 15px
 
-	.second-part
-		padding-top 40px
-		padding-bottom 50px
+        &:last-child
+          padding-right: 0
 
-		.copyright
-			margin-left 23px
-			line-height 57px
+    &-home
+      color: #fff
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      text-transform: uppercase
+      font-size: 24px
 
-		.socials
-			font-size 28px
-			line-height 57px
+  &__contact
+    border-bottom: 1px solid #423535
+    margin-top: 30px
+
+    &-title
+      color: #fff
+      text-transform: uppercase
+      font-size: 30px
+
+    &--padding
+      padding-top: 20px
+
+  &__item
+    padding-top: 20px
+    padding-bottom: 30px
+    height: 160px
+    line-height: 22px
+    padding-left: 75px
+
+    &-title
+      color: #16beb9
+      font-size: 18px
+      margin-bottom: 10px
+
+    &-address
+      color: #fff
+      font-size: 14px
+      padding: 5px 0
+
+    &-contact
+      color: #fff
+      font-size: 14px
+
+  &__contact
+    border-bottom: 1px solid #363636
+
+    &--padding
+      padding: 20px 0
+
+  &__container
+    display: grid
+    grid-template-columns: 50% 50%
+    align-items: center
+    padding: 40px 0
+
+  &__copyright
+    display: block
+    color: #fff
+    font-size: 12px
+    margin-top: 5px
+
+  &__socials
+    text-align: right
+
+    a
+      padding: 0 20px
+
+  @media screen and (max-width: 767px)
+    &__mobile
+      &-dropdown
+        color: #fff
+        font-size: 24px
+        text-transform: uppercase
+
+        .caret
+          border-right: 8px solid transparent
+          border-left: 8px solid transparent
+          border-top: 8px dashed
+          margin-top: -4px
+          margin-left: 10px
+
+      &-link
+        text-transform: uppercase
+
+    &__contact
+      margin-top: 20px
+
+      &-title
+        font-size: 25px
+
+    &__item
+      padding: 15px 15px
+      height: auto
+
+    &__container
+      display: block
+
+      &-logo
+        text-align: center
+
+    &__socials
+      text-align: center
+
+    &__copyright
+      margin-top: 20px
+      margin-bottom: 24px
+      font-size: 16px
+
+  @media screen and (min-width: 768px) and (max-width: 991px)
+    &__link
+      &-link
+        li
+          float: left
+          padding: 0 4px
+
+          a
+            color: #fff
+            line-height: 20px
+
+    &__item
+      height: 190px
+      padding-left: 65px

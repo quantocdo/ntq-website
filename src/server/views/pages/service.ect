@@ -1,0 +1,184 @@
+<% extend '_flow-no-banner' %>
+
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__asset('service.css') %>">
+
+<% end %>
+
+<% block 'page_flow': %>
+
+<section class="section service">
+  <div class="bg-gradient masthead">
+    <div class="container masthead-wrapper">
+      <p><%- @__('service-offshore_title') %></p>
+    </div>
+  </div>
+  <div class="service__bgr" style="background-image: url(<%= @__asset('img/bgr-world.png') %>)">
+    <div class="container">
+      <div class="service__define">
+        <h3 class="service__title service__define-title"><%- @__('service-offshore_define_title') %></h3>
+        <div class="row service__define-content">
+          <p class="col-md-9 col-sm-8 col-xs-12"><%- @__('service-offshore_define_desc') %></p>
+        </div>
+      </div>
+
+      <div class="service__offshore">
+        <h3 class="service__title"><%- @__('service-offshore_plan_title') %></h3>
+        <div class="service__offshore--plan">
+          <div class="service__offshore--plan-content">
+            <div class="service__offshore--plan-description">
+              <img src="<%= @__asset('img/icon-calendar.png') %>" alt="">
+              <div class="service__offshore--wrapper">
+                <h3 class="service__offshore--plan-item"><%- @__('service-offshore_plan_label_1') %></h3>
+                <h3 class="service__offshore--plan-detail"><%- @__('service-offshore_plan_desc_1') %></h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="service__offshore--plan-content">
+            <div class="service__offshore--plan-description">
+              <img src="<%= @__asset('img/icon-user.png') %>" alt="">
+              <div class="service__offshore--wrapper">
+                <h3 class="service__offshore--plan-item "><%- @__('service-offshore_plan_label_2') %></h3>
+                <h3 class="service__offshore--plan-detail"><%- @__('service-offshore_plan_desc_2') %></h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="service__offshore--plan-content">
+            <div class="service__offshore--plan-description">
+              <img src="<%= @__asset('img/icon-bag.png') %>" alt="">
+              <div class="service__offshore--wrapper">
+                <h3 class="service__offshore--plan-item "><%- @__('service-offshore_plan_label_3') %></h3>
+                <h3 class="service__offshore--plan-detail"><%- @__('service-offshore_plan_desc_3') %></h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="service__offshore--plan-content">
+            <div class="service__offshore--plan-description">
+              <img src="<%= @__asset('img/sales-icon.png') %>" alt="">
+              <div class="service__offshore--wrapper">
+                <h3 class="service__offshore--plan-item "><%- @__('service-offshore_plan_label_4') %></h3>
+                <h3 class="service__offshore--plan-detail"><%- @__('service-offshore_plan_desc_4') %></h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="service__offshore--plan-content">
+            <div class="service__offshore--plan-description">
+              <img src="<%= @__asset('img/icon-build.png') %>" alt="">
+              <div class="service__offshore--wrapper">
+                <h3 class="service__offshore--plan-item "><%- @__('service-offshore_plan_label_5') %></h3>
+                <h3 class="service__offshore--plan-detail"><%- @__('service-offshore_plan_desc_5') %></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service__offshore-detail row">
+          <ul class="service__offshore-detail--wrapper col-md-9 list-number">
+            <li class="service__offshore-description"><%- @__('service-offshore_about_item_1') %></li>
+            <li class="service__offshore-description"><%- @__('service-offshore_about_item_2') %></li>
+            <li class="service__offshore-description"><%- @__('service-offshore_about_item_3') %></li>
+          </ul>
+          <div class="service__offshore-swat col-md-3" style="background-image: url(<%= @__asset('img/circle-swat.png') %>)">
+          </div>
+        </div>
+
+        <div class="service__how">
+          <h3 class="service__title"><%- @__('service-offshore_how_title') %></h3>
+          <div class="service__step">
+            <div class="service__step-detail">
+              <div class="service__step--wrapper">
+                <h3><%- @__('service-offshore_step_title_1') %></h3>
+                <h5><%- @__('service-offshore_step_notice_1') %></h5>
+              </div>
+            </div>
+
+            <div class="service__step-detail">
+              <div class="service__step--wrapper">
+                <h3><%- @__('service-offshore_step_title_2') %></h3>
+                <h5><%- @__('service-offshore_step_notice_2') %></h5>
+              </div>
+            </div>
+
+            <div class="service__step-detail">
+              <div class="service__step--wrapper">
+                <h3><%- @__('service-offshore_step_title_3') %></h3>
+                <h5><%- @__('service-offshore_step_notice_3') %></h5>
+              </div>
+            </div>
+
+            <div class="service__step-detail">
+              <div class="service__step--wrapper">
+                <h3><%- @__('service-offshore_step_title_4') %></h3>
+                <h5><%- @__('service-offshore_step_notice_4') %></h5>
+              </div>
+            </div>
+
+            <div class="service__step-detail">
+              <div class="service__step--wrapper">
+                <h3><%- @__('service-offshore_step_title_5') %></h3>
+                <h5><%- @__('service-offshore_step_notice_5') %></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="service__title"><%- @__('service-offshore_model_title') %></h3>
+        <div class="service__content--country row">
+          <div class="service__content--country-detail col-md-6 row">
+            <div class="service__content--country-item col-xs-6">
+              <img src="<%= @__asset('img/japan.png') %>" alt="">
+            </div>
+            <div class="service__content--country-item col-xs-6">
+              <img src="<%= @__asset('img/vietnam.png') %>" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="service__content row">
+          <div class="service__content-image col-md-6">
+            <img src="<%= @__asset('img/service-1.png') %>" alt="">
+          </div>
+          <div class="service__content-detail col-md-6">
+            <h3><%- @__('service-offshore_model_item_1') %></h3>
+            <h4><%- @__('service-offshore_model_desc_1') %></h4>
+          </div>
+        </div>
+
+        <div class="service__content row">
+          <div class="service__content-image col-md-6">
+            <img src="<%= @__asset('img/service-2.png') %>" alt="">
+          </div>
+          <div class="service__content-detail col-md-6">
+            <h3><%- @__('service-offshore_model_item_2') %></h3>
+            <h4><%- @__('service-offshore_model_desc_2') %></h4>
+          </div>
+        </div>
+
+        <div class="service__content row">
+          <div class="service__content-image col-md-6">
+            <img src="<%= @__asset('img/service-3.png') %>" alt="">
+          </div>
+          <div class="service__content-detail col-md-6">
+            <h3><%- @__('service-offshore_model_item_3') %></h3>
+            <h4><%- @__('service-offshore_model_desc_3') %></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="service__advisory" style="background-image:url(<%= @__asset('img/footer-baner.jpg') %>)">
+    <div class="service__advisory-content container">
+      <p><%- @__('service-offshore_advisory') %></p>
+      <div class="service__advisory-btn">
+        <a href="contact"><%- @__('service-offshore_btn_contact') %></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<% end %>

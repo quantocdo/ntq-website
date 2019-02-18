@@ -1,0 +1,225 @@
+@import '../main'
+
+.project
+  &__banner
+    &-title
+      padding-left: 15px
+      font-size: 72px
+      color: #FFFFFF
+
+  &__description
+    padding-top: 50px
+
+    &-title
+      font-size: 30px
+      color: #003663
+
+  &__content
+    padding: 30px 60px
+
+    &--wrapper
+      margin-bottom: 30px
+      display: flex
+      align-items: center
+
+    &--logo
+      width: 100px
+      height: 100px
+      border: 3px solid #ebebeb
+      border-radius: 50%
+      display: flex
+      justify-content: center
+      align-items: center
+
+      img
+        max-width: 80px
+
+    &-detail
+      font-size: 16px
+      padding-left: 0
+      color: #003663
+      line-height: 26px
+
+  &__achievement
+    &-title
+      font-size: 30px
+      color: #003663
+
+    &-subtitle
+      font-size: 22px
+      color: #003663
+      margin-bottom: 20px
+      font-weight: 700
+      letter-spacing: 2px
+
+    &-list
+      margin: 0
+      padding: 0
+      list-style: none
+
+    &--wrapper
+      background: #ebebeb
+      margin-bottom: 25px
+      margin-left: 0
+      margin-right: 0
+      padding: 40px 15px
+
+      img
+        width: 100%
+
+    &-list-img
+      & img:nth-child(2)
+        margin-top: 20px
+
+    &-name
+      font-size: 24px
+      color: #003663
+      height: 70px
+      line-height: 30px
+
+      &:nth-child(3)
+        height: auto
+        padding: 30px 0 20px 0
+
+    &-list-item
+      font-size: 16px
+      line-height: 26px
+      margin-bottom: 10px
+      margin-left: 20px
+
+      &:before
+        content: ""
+        width: 10px
+        height: 10px
+        display: inline-block
+        background: black
+        margin-right: 10px
+        margin-left: -20px
+
+    &-sublist-item
+      font-size: 14px
+      list-style-type: none
+      padding-left: 30px
+
+      &:before
+        content: " "
+        display: inline-block
+        width: 15px
+        height: 12px
+        background-image: url('../../../public/img/icon-like.png')
+        margin-right: 10px
+        margin-left: -25px
+
+  &__advisory
+    background-size: cover
+    background-position: center center
+
+    &-content
+      padding: 60px
+
+      p
+        font-size: 23px
+        line-height: 48px
+        text-align: center
+        color: #fff
+        margin-top: 0
+
+    &-btn
+      width: 100%
+      text-align: center
+      margin-top: 40px
+
+      a
+        background-color: #fff
+        color: #003663
+        padding: 10px 55px
+        border-radius: 8px
+        font-size: 24px
+        display: inline-block
+
+  @media screen and (min-width: 768px) and (max-width: 991px)
+    &__banner
+      &-title
+        font-size: 60px
+        text-align: center
+
+    &__description, &__achievement
+      &-title
+        margin-bottom: 20px
+
+    &__content
+      padding: 0
+
+      &-detail
+        padding-left: 15px
+
+    &__advisory
+      &-content
+        padding: 40px
+
+      &-btn
+        margin-top: 25px
+
+  @media screen and (max-width: 767px)
+    &__banner
+      &-title
+        text-align: center
+        font-size: 36px
+
+    &__description
+      padding-top: 25px
+
+      &-title
+        margin-bottom: 20px
+
+    &__content
+      padding: 0
+
+      &--logo
+        margin: 0 auto
+        margin-bottom: 15px
+
+      &-detail
+        padding-left: 15px
+
+      &--wrapper
+        display: block
+
+    &__achievement
+      &-title
+        margin-bottom: 20px
+
+      &--wrapper
+        padding: 15px 0
+
+      &-list-img
+        & img:nth-child(2)
+          margin-top: 15px
+
+      &-sublist-item
+        margin-left: 2px
+
+      &-name
+        height: auto
+        margin-bottom: 15px
+        line-height: 30px
+
+        &:nth-child(1)
+          margin-top: 15px
+
+        &:nth-child(3)
+          padding: 20px 0 0 0
+
+    &__advisory
+      &-content
+        padding: 35px 15px
+
+        p
+          font-size: 18px
+          line-height: 32px
+
+      &-btn
+        margin-top: 25px
+
+        a
+          font-size: 18px

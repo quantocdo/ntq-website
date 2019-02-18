@@ -5,57 +5,60 @@
 
 .page-content
 	background $color_white
-	padding-bottom 60px
 
 .section
-	padding-top 80px
-
-	&.first
-		margin-top 100px
+	padding-top: 50px
+	padding-bottom: 30px
 
 	.heading
-		font-size 30px
+		font-size: 30px
 
 	.sub-heading
-		font-size 18px
-		margin-top 5px
+		padding-top: 10px
+		font-size: 18px
 
 	.explain
-		margin-top 30px
-		line-height $text_paragraph_line_height
+		padding-top: 20px
+		line-height: $text_paragraph_line_height
 
 	.detail-info
-		margin-top 40px
-		line-height $text_paragraph_line_height
+		padding-top: 50px
+		line-height: $text_paragraph_line_height
+
+		ul
+			padding-bottom: 20px
+
+		.technologies
+			display: grid
+			grid-column-grap: 20px
+			grid-template-columns: 100%
+
+			@media (min-width: 768px)
+				grid-template-columns: 1fr 1fr
 
 	.result
-		margin-top 30px
-		margin-left 20px
-		border-left 5px solid $color_blue
-		padding 10px 0 10px 20px
-		line-height $text_paragraph_line_height
+		border-left: 4px solid $color_blue
+		padding: 10px 0 10px 10px
+		line-height: $text_paragraph_line_height
 
 .download
-	margin-top 70px
-	background $color_blue
-	padding-top 70px
-	padding-bottom 60px
+	background: $color_blue
 
 	.heading
-		font-size 30px
+		font-size: 30px
 
 	.download-button
-		margin-top 45px
+		padding-top: 30px
 
 		a
-			font-size 30px
-			display inline-block
-			line-height 70px
-			padding 0 27px
-			border-radius 3px
-			background $color_white
-			font-family 'Raleway'
-			font-weight bold
+			font-size: 30px
+			display: inline-block
+			line-height: 70px
+			padding: 0 27px
+			border-radius: 4px
+			background: $color_white
+			font-family: 'Raleway'
+			font-weight: bold
 
 			.icon-see-more
-				padding-left 10px
+				padding-left: 10px

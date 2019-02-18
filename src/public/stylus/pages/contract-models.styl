@@ -1,24 +1,29 @@
 @import '../main'
 
 .page-header
-	background-image url('~img/bg/contract_models.jpg')
-	background-position right center !important
+  background-image url('~img/bg/contract_models.jpg')
+  // background-position right center !important
 
-.page-content
-	background $color_white
-	padding-bottom 100px
+.contracts
+  padding-top: 100px
+  padding-bottom: 50px
+  display: grid
+  grid-gap: 20px
+  grid-template-columns: 100%
 
-	.contract
-		margin-top 90px
-		padding-bottom 30px
+  @media (min-width: 1024px)
+    grid-template-columns: auto 1fr
 
-		.heading
-			font-size 30px
+  .contract
+    .heading
+      font-size: 30px
 
-		.explain
-			margin-top 20px
-			line-height $text_paragraph_line_height
+    .explain
+      padding-top: 20px
+      line-height: $text_paragraph_line_height
 
-		.contract-illu
-			width 100%
-			vertical-align middle
+  .contract-illu
+    text-align: center
+
+    img
+      max-width: 100%

@@ -20,9 +20,6 @@ exports.factory = function(app, shortcut) {
 	app._get('rd', '/research-and-development',
 			render('pages/research-and-development'));
 
-	app._get('services', '/services',
-			render('pages/services', true));
-
 	app._get('success-stories', '/success-stories',
 			render('pages/success-stories', true));
 

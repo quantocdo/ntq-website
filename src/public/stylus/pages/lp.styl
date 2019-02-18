@@ -1,402 +1,530 @@
 @import '../main'
 
 .icon-see-more
-	padding-left: 10px
+  padding-left: 10px
 
 .section-landing
-	.landing-background
-		position: absolute
-		overflow: hidden
-		top: 0
-		left: 0
-		right: 0
-		bottom: 0
-		z-index: 0
+  color $color_white
+  min-height: 500px
 
-		.video-background
-			min-width 100%
-			min-height 100%
+  .landing-background
+    position: relative
+    background: $color_black
 
-	.landing-mark
-		position absolute
-		overflow hidden
-		top 0
-		left 0
-		right 0
-		bottom 0
-		z-index 0
-		background $color_black
-		opacity .4
+    .video-background
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      min-width: 100%
+      min-height: 100%
 
-	.landing-overlay
-		position absolute
-		left 0
-		right 0
-		bottom 130px
-		z-index 2
-		text-align center
-		color $color_white
+  .landing-heading
+    position: absolute
+    top: 100px
+    left: 0
+    right: 0
+    bottom: 0
+    text-align: center
+    display: flex
+    align-items: center
 
-		.heading
-			font-size 72px
-			line-height 80px
-			letter-spacing 5px
+    .container
+      flex-grow: 1
 
-		.sub-heading
-			margin-top 50px
-			font-size 50px
+      .heading
+        font-size: 50px
+        line-height: 1.1em
+
+      .sub-heading
+        font-size: 30px
+        line-height: 1.1em
+        padding-top: 20px
 
 .section-whois
-	background $color_white
+  background $color_white
+  color: $color_black
+  padding-top: 100px
+  padding-bottom: 50px
 
-	.heading
-		font-size 42px
-		text-transform uppercase
+  .content
+    display: grid
+    grid-column-gap: 20px
+    grid-row-gap: 20px
+    grid-template-columns: 1fr
 
-	.paragraph
-		margin-top 25px
-		line-height 24px
+    .description
+      text-align: center
 
-	.about-us
-		margin-top 50px
+      .heading
+        font-size: 40px
+        text-transform: uppercase
 
-		a
-			display inline-block
-			border-radius 3px
-			background $color_green
-			padding 0 22px
-			line-height 45px
-			font-family 'Raleway'
-			font-weight bold
+      .paragraph
+        margin-top: 25px
+        line-height: 24px
 
-	.video-container
-		background url('~img/frames/frame_imac.png') no-repeat center center
-		width 567px
-		height 447px
-		padding 19px
+      .about-us
+        margin-top: 20px
 
-		.video
-			height 296px
+        a
+          display: inline-block
+          border-radius: 3px
+          background: $color_green
+          padding: 0 22px
+          line-height: 45px
+          font-family: 'Raleway'
+          font-weight: bold
+
+    .video-container
+      display: none
+      flex-shrink: 0
+
+      .video
+        background url('~img/frames/frame_imac.png') no-repeat center center
+        margin: 0 auto
+        width: 567px
+        height: 447px
+        padding: 19px
+
+  @media (min-width: 610px)
+    .content
+      .video-container
+        display: block
+
+  @media (min-width: 1100px)
+    .content
+      grid-template-columns: 1fr 567px
+
+      .description
+        text-align: left
 
 .section-domains
-	background $color_blue
+  background $color_blue
+  color: $color_white
+  padding-top: 100px
+  padding-bottom: 50px
 
-	.heading
-		font-size 42px
+  .content
+    .heading
+      font-size 42px
 
-	.sub-heading
-		font-size 18px
-		margin-top 20px
+    .sub-heading
+      font-size 18px
+      margin-top 20px
 
-	.services
-		.row
-			margin-top 40px
+    .services
+      padding-top: 50px
+      display: grid
+      grid-column-gap: 20px
+      grid-row-gap: 50px
+      grid-template-columns: 1fr
 
-			&.domains
-				margin-top 60px
+      .service
+        .service-heading
+          font-size 18px
+          margin-top 30px
 
-		.logo-container
-			border-radius 50%
-			overflow hidden
-			border 1px solid $color_white
-			background $color_blue_light
-			width 80px
-			height 80px
-			line-height 80px
+        .service-description
+          margin-top 20px
+          line-height 24px
 
-			&.large
-				width 140px
-				height 140px
-				line-height 140px
+        .service-learn-more
+          margin-top 18px
 
-			img
-				vertical-align middle
+    .domains
+      padding-top: 50px
+      display: grid
+      grid-column-gap: 20px
+      grid-row-gap: 50px
+      grid-template-columns: repeat(2, 1fr)
 
-		.logo-description
-			margin-left 100px
-			margin-right 20px
-			height 80px
-			font-size 18px
+      .domain
+        text-align: center
 
-		.service-heading
-			font-size 18px
-			margin-top 30px
+        .logo-description
+          padding: 20px 10px 0
 
-		.service-description
-			margin-top 20px
-			line-height 24px
+    .logo
+      margin: 0 auto
+      max-width: 136px
+      border-radius: 50%
+      overflow: hidden
+      border: 1px solid $color_white
+      background: $color_blue_light
+      position: relative
 
-		.service-learn-more
-			margin-top 18px
+      &.small
+        max-width: 80px
+
+      .placeholder
+        padding-top: 100%
+
+      .img
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        display: flex
+        justify-content: center
+        align-items: center
+
+    @media (min-width: 768px)
+      .services
+        grid-template-columns: repeat(3, 1fr)
+
+        .service
+          flex-grow: 1
+          flex-basis: 0
+
+      .domains
+        grid-template-columns: repeat(4, 1fr)
+
+    @media (min-width: 1440px)
+      .domains
+        grid-template-columns: repeat(8, 1fr)
 
 .section-reviews
-	background $color_green
+  background $color_green
+  color: $color_white
+  padding-top: 100px
+  padding-bottom: 50px
 
-	.heading
-		font-size 42px
+  .heading
+    font-size 40px
 
-	.customers
-		margin-top 60px
+  .reviews
+    padding-top: 50px
+    display: grid
+    grid-column-gap: 20px
+    grid-row-gap: 50px
+    grid-template-columns: 1fr
 
-		.customer-pic-container
-			width 134px
-			border-radius 50%
-			overflow hidden
-			border 1px solid $color_white
-			background $color_blue
-			overflow hidden
+    .review
+      text-align: center
 
-			.customer-pic
-				margin-left -999px
-				margin-right -999px
-				text-align center
-				height 134px
+      .customer-pic
+        margin: 0 auto
+        max-width: 136px
+        border-radius: 50%
+        overflow: hidden
+        border: 1px solid $color_white
+        background: $color_blue_light
+        position: relative
 
-				img
-					vertical-align middle
-					height 100%
+        .placeholder
+          padding-top: 100%
 
-		.customer-name
-			font-size 20px
+        .img
+          position: absolute
+          top: 0
+          left: 0
+          right: 0
+          bottom: 0
+          display: flex
+          justify-content: center
+          align-items: center
 
-		.customer-position
-			font-size 18px
+          img
+            width: 100%
+            height: 100%
 
-		.customer-review
-			margin-top 25px
-			line-height 22px
+      .customer-name
+        padding-top: 20px
+        font-size: 20px
+        line-height: 1.2em
+
+      .customer-position
+        font-size: 18px
+
+      .customer-review
+        padding-top: 10px
+        line-height: 22px
+
+  @media (min-width: 768px)
+    .reviews
+       grid-template-columns: repeat(2, 1fr)
 
 .section-tech
-	background $color_blue
+  background $color_blue
+  color: $color_white
+  padding-top: 100px
+  padding-bottom: 50px
 
-	.heading
-		font-size 42px
+  .heading
+    font-size 40px
 
-	.sub-heading
-		font-size 18px
-		margin-top 20px
+  .sub-heading
+    font-size 18px
+    margin-top 20px
 
-	.description
-		margin-top 25px
+  .description
+    margin-top 25px
 
-	.tech-logo
-		background $color_white
-		line-height 126px
-		height 126px
-		overflow hidden
+  .technologies
+    padding-top: 50px
+    display: grid
+    grid-column-gap: 20px
+    grid-row-gap: 20px
+    grid-template-columns: repeat(2, 1fr)
 
-		img
-			vertical-align middle
+    .tech
+      position: relative
+      background $color_white
+      overflow: hidden
 
-	.first-line
-		margin-top 126px
+      .placeholder
+        padding-top: 50%
 
-	.second-line
-		margin-top 22px
+      .img
+        position: absolute
+        top: 5px
+        left: 5px
+        right: 5px
+        bottom: 5px
+        display: flex
+        justify-content: center
+        align-items: center
 
-	.see-more-tech
-		margin-top 78px
+        img
+          max-width: 100%
+          max-height: 100%
 
-		a
-			border-radius 3px
-			display inline-block
-			background $color_white
-			padding 0 22px
-			line-height 45px
-			font-family 'Raleway'
-			font-weight bold
+  @media (min-width: 768px)
+    .technologies
+      grid-template-columns: repeat(5, 1fr)
+
+  @media (min-width: 1440px)
+    .technologies
+      grid-template-columns: repeat(10, 1fr)
+
+  .see-more-tech
+    padding-top 50px
+
+    a
+      border-radius: 3px
+      display: inline-block
+      background: $color_white
+      padding: 0 22px
+      line-height: 45px
+      font-family: 'Raleway'
+      font-weight: bold
 
 .section-why-ntq
-	background $color_white
+  background: $color_white
+  color: $color_black
+  padding-top: 100px
+  padding-bottom: 50px
 
-	.image-container
-		height 565px
-		// background url('../img/frames/frame_iphone.png') no-repeat center center
+  .content
+    display: grid
+    grid-column-gap: 20px
+    grid-row-gap: 20px
+    grid-template-columns: 1fr
 
-		img
-			vertical-align middle
-			max-width 100%
+    .img
+      display: none
 
-	.heading
-		font-size 42px
+    .reasons
+      text-align: center
 
-	.reason
-		&.first-reason
-			margin-top 62px
+      .heading
+        font-size: 40px
 
-		&.first-reason
-		&.second-reason
-			padding-bottom 36px
+      .reason
+        &.first-reason
+          margin-top 62px
 
-		&.second-reason
-		&.third-reason
-			margin-top 38px
+        &.first-reason
+        &.second-reason
+          padding-bottom 36px
 
-		.reason-heading
-			font-size 18px
-			line-height 24px
+        &.second-reason
+        &.third-reason
+          margin-top 38px
 
-		.reason-explain
-			line-height 24px
+        .reason-heading
+          font-size 18px
+          line-height 24px
 
-	.reason-break
-		width 225px
-		border-bottom 1px solid $color_gray_light
+        .reason-explain
+          line-height 24px
+
+      .reason-break
+        width: 225px
+        margin: 0 auto
+        border-bottom: 1px solid $color_gray_light
+
+  @media (min-width: 768px)
+    .content
+      grid-template-columns: 278px 1fr
+
+      .img
+        display: block
+
+      .reasons
+        text-align: left
+
+        .reason-break
+          margin: 0
 
 .section-partners
-	background $color_blue
+  background $color_blue
+  color: $color_white
+  padding-top: 100px
+  padding-bottom: 50px
 
-	.site-container
-		height 100%
-		padding-top 78px
-		position relative
+  .content
 
-		.heading
-			font-size 42px
+    .heading
+      font-size 40px
 
-		.sub-heading
-			margin-top 20px
-			font-size 18px
+    .sub-heading
+      margin-top 20px
+      font-size 18px
 
-		.partner-map
-			position absolute
-			top 180px
-			bottom 50px
-			left 0
-			right 0
-			background-image: url('~img/partner_map_jp.png')
-			background-repeat no-repeat
-			background-position center center
-			background-size contain
+    .partner-map
+      padding-top: 50px
+      text-align: center
 
-.en .section-partners .site-container .partner-map
-	background-image: url('~img/partner_map_en.png')
+      img
+        max-width: 100%
+        max-height: 100%
 
 .section-rd
-	background $color_green
+  background: $color_green
+  color: $color_white
+  padding-top: 100px
+  padding-bottom: 50px
 
-	.heading
-		font-size 42px
+  .heading
+    font-size 40px
 
-	.description
-		font-size 20px
-		margin-top 25px
-		line-height 24px
+  .description
+    font-size 20px
+    margin-top 25px
+    line-height 24px
 
-	.rd-film
-		margin-top 112px
-		padding-top 38px
-		padding-bottom 42px
-		background url('~img/frames/frame_film.png') repeat-x center center
+  .rd-film
+    margin-top 50px
+    padding-top 38px
+    padding-bottom 42px
+    background url('~img/frames/frame_film.png') repeat-x center center
 
-		.rd-block
-			border-radius 8px
-			overflow hidden
-			background $color_green
+    .thumbs
+      display: grid
+      grid-column-gap: 20px
+      grid-template-columns: 1fr repeat(6, fit-content(200px)) 1fr
 
-			.thumb
-				height 130px
-				text-align center
-				margin-left -999px
-				margin-right -999px
+      .thumb
+        overflow: hidden
 
-				img
-					vertical-align middle
-					height 100%
+        .img
+          border-radius: 8px
+          overflow: hidden
+          max-width: 200px
+          margin: 0 auto
+          text-align: center
 
-	.rd-how-it-work
-		margin-top 52px
+          img
+            vertical-align middle
 
-		a
-			display inline-block
-			line-height 45px
-			padding 0 22px
-			border-radius 3px
-			background $color_white
-			font-family 'Raleway'
-			font-weight bold
+  .rd-how-it-work
+    margin-top 50px
+
+    a
+      display inline-block
+      line-height 45px
+      padding 0 22px
+      border-radius 3px
+      background $color_white
+      font-family 'Raleway'
+      font-weight bold
 
 .section-articles
-	background-color: $color_black
+  background-color: $color_black
 
-	.article
-		position relative
-		width 33.33%
-		height 50%
-		overflow hidden
-		background-size cover
-		background-position center center
-		background-repeat no-repeat
+  .articles
+    display: grid
 
-		.article-overlay
-			position absolute
-			left 0
-			right 0
-			bottom 0
-			top 0
-			opacity 0
-			transition opacity .2s
+  .article
+    position relative
+    height: 300px
+    overflow hidden
+    background-size cover
+    background-position center center
+    background-repeat no-repeat
 
-			&.background
-				background $color_black
-				z-index 0
+    .article-overlay
+      background rgba(0, 0, 0, .6)
+      position absolute
+      left 0
+      right 0
+      bottom 0
+      top 0
 
-			&.info
-				padding 100px 20px 0
-				font-size 20px
-				z-index 1
+      .content
+        padding: 20px
+        text-align: center
+        height: 100%
+        display: grid
+        grid-row-gap: 20px
+        grid-template-rows: min-content 1fr min-content
 
-				.article-heading
-					font-size 20px
+        .article-heading
+          font-size: 20px
 
-				.article-brief
-					font-size 16px
-					margin-top 25px
-					line-height 24px
+        .article-truncated
+          font-size: 16px
+          line-height: 1.2em
 
-				.article-readmore
-					font-size 16px
-					margin-top 25px
+        .article-readmore
+          font-size: 16px
 
-					a
-						display inline-block
-						border 1px solid $color_white
-						padding 0 16px
-						line-height 38px
+          a
+            display: inline-block
+            border: 1px solid $color_white
+            padding: 0 16px
+            line-height: 38px
 
-		&:hover
-			.article-overlay
-				&.background
-					opacity .4
+  @media (min-width: 768px)
+    .articles
+      grid-template-columns: repeat(2, 1fr)
 
-				&.info
-					opacity 1
+  @media (min-width: 1440px)
+    .articles
+      grid-template-columns: repeat(3, 1fr)
 
 .section-offer
-	background $color_blue
-	padding 92px 70px 82px
+  background: $color_blue
+  color: $color_white
+  padding-top: 100px
+  padding-bottom: 50px
 
-	.offer
-	.offer-explain
-		font-size 30px
-		line-height 42px
+  .offer
+    font-size: 30px
+    line-height: 1.2em
 
-	.offer-explain
-		margin-top 41px
+  .offer-explain
+    font-size: 25px
+    line-height: 1.2em
+    padding-top: 20px
 
-	.contact-us
-		margin-top 64px
+  .contact-us
+    padding-top 50px
 
-		a
-			display inline-block
-			border-radius 3px
-			background $color_white
-			font-family 'Raleway'
-			font-weight bold
-			padding 0 22px
-			line-height 70px
-			font-size 30px
+    a
+      display inline-block
+      border-radius 3px
+      background $color_white
+      font-family 'Raleway'
+      font-weight bold
+      padding 0 22px
+      line-height 70px
+      font-size 30px
 
-	.download-materials
-		margin-top 20px
-		font-size 25px
+  .download-materials
+    padding-top: 20px
+    font-size: 25px

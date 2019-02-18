@@ -55,11 +55,41 @@ export default {
     rd: [
       './src/public/stylus/pages/rd.styl'
     ],
-    'services': [
+    services: [
       './src/public/stylus/pages/services.styl'
     ],
     'success-stories': [
       './src/public/stylus/pages/success-stories.styl'
+    ],
+    projects: [
+      './src/public/stylus/pages/projects.styl'
+    ],
+    home: [
+      './src/public/stylus/pages/home.styl'
+    ],
+    'about-us': [
+      './src/public/stylus/pages/about-us.styl'
+    ],
+    'contact-new': [
+      './src/public/stylus/pages/contact-new.styl'
+    ],
+    'service-ai': [
+      './src/public/stylus/pages/service-ai.styl'
+    ],
+    service: [
+      './src/public/stylus/pages/service.styl'
+    ],
+    rnd: [
+      './src/public/stylus/pages/rnd.styl'
+    ],
+    recruitment: [
+      './src/public/stylus/pages/recruitment.styl'
+    ],
+    'shopify-partner': [
+      './src/public/stylus/pages/shopify-partner.styl'
+    ],
+    'download-new': [
+      './src/public/stylus/pages/download-new.styl'
     ]
   },
   output: {
@@ -135,7 +165,7 @@ export default {
       ]
     },
     {
-      test: /\.(ttf|eot|woff|woff2)$/,
+      test: /\.(ttf|otf|eot|woff|woff2)$/,
       use: [
         {
           loader: 'file-loader',

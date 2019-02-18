@@ -7,7 +7,7 @@ import * as controllers from '../controllers'
 export const routes = [ {
   path: '/',
   methods: {
-    get: controllers.lp.get
+    get: controllers.home.get
   }
 }, {
   path: '/news/:page([0-9]+)?',
@@ -15,7 +15,7 @@ export const routes = [ {
     get: controllers.cms.fetchNews
   }
 }, {
-  path: '/recruitment/:page([0-9]+)?',
+  path: '/recruitment-old/:page([0-9]+)?',
   methods: {
     get: controllers.cms.fetchRecruitment
   }
@@ -25,7 +25,7 @@ export const routes = [ {
     get: controllers.cms.get
   }
 }, {
-  path: '/download',
+  path: '/download-old',
   methods: {
     get: controllers.download.get
   }
@@ -35,7 +35,7 @@ export const routes = [ {
 //     // get: dummy
 //   }
 }, {
-  path: '/contact',
+  path: '/contact-old',
   methods: {
     get: controllers.contact.get,
     post: controllers.contact.post
@@ -56,7 +56,7 @@ export const routes = [ {
     get: controllers.contractModels.get
   }
 }, {
-  path: '/research-development',
+  path: '/research-development-old',
   methods: {
     get: controllers.rd.get
   }
@@ -66,9 +66,54 @@ export const routes = [ {
     get: controllers.services.get
   }
 }, {
-  path: '/success-stories',
+  path: '/success-stories-old',
   methods: {
     get: controllers.successStories.get
+  }
+}, {
+  path: '/success-stories',
+  methods: {
+    get: controllers.projects.get
+  }
+}, {
+  path: '/about-us',
+  methods: {
+    get: controllers.aboutUs.get
+  }
+}, {
+  path: '/contact',
+  methods: {
+    get: controllers.contactNew.get
+  }
+}, {
+  path: '/service-ai',
+  methods: {
+    get: controllers.serviceAI.get
+  }
+}, {
+  path: '/research-development',
+  methods: {
+    get: controllers.rnd.get
+  }
+}, {
+  path: '/recruitment',
+  methods: {
+    get: controllers.recruitment.get
+  }
+}, {
+  path: '/service-offshore',
+  methods: {
+    get: controllers.service.get
+  }
+}, {
+  path: '/shopify-partner',
+  methods: {
+    get: controllers.shopifyPartner.get
+  }
+}, {
+  path: '/download',
+  methods: {
+    get: controllers.downloadNew.get
   }
 } ]
 

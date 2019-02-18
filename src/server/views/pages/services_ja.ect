@@ -8,107 +8,51 @@
 
 <% block 'page_flow': %>
 
-<div class="page-title text-center text-upper">
-	<span><%- @__('SERVICES') %></span>
+<div class="container">
+  <h1 class="page-title text-center text-upper"><%- @__('SERVICES') %></h1>
 </div>
 
 <div class="section-outsource" id="out-source">
-	<div class="site-container fluid">
-		<div class="gs">
-			<div class="row">
-				<div class="col-8">
-					<div class="heading text-upper text-blue">
-						<span><%- @__('SOFTWARE_OUTSOURCING_SERVICE') %></span>
-					</div>
-					<div class="sub-heading text-blue">
-						<span><%- @__('SOFTWARE_OUTSOURCING_SERVICE_DESC') %></span>
-					</div>
-					<div class="explain">
-						<p><%- @__('SOFTWARE_OUTSOURCING_SERVICE_LIST_TITLE') %></p>
-						<ul class="outsource-list">
-							<li class="clearfix">
-								<div class="order text-bold">1.</div>
-								<div class="item">
-									<p class="text-bold"><%- @__('SOFTWARE_OUTSOURCING_SERVICE_LIST_ITEM_1') %></p>
-									<p><%- @__('SOFTWARE_OUTSOURCING_SERVICE_LIST_ITEM_1_DESC') %></p>
-								</div>
-							</li>
-							<li class="clearfix">
-								<div class="order text-bold">2.</div>
-								<div class="item">
-									<p class="text-bold"><%- @__('SOFTWARE_OUTSOURCING_SERVICE_LIST_ITEM_2') %></p>
-									<p><%- @__('SOFTWARE_OUTSOURCING_SERVICE_LIST_ITEM_2_DESC') %></p>
-								</div>
-							</li>
-							<li class="clearfix last">
-								<div class="order text-bold">3.</div>
-								<div class="item">
-									<p class="text-bold"><%- @__('SOFTWARE_OUTSOURCING_SERVICE_LIST_ITEM_3') %></p>
-									<p><%- @__('SOFTWARE_OUTSOURCING_SERVICE_LIST_ITEM_3_DESC') %></p>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-4">
-					<div class="service-illu">
-						<img src="<%= @__asset('img/services/outsource_illu.png') %>" alt="<%= @__('SOFTWARE_OUTSOURCING_SERVICE') %>" width="403" height="281">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div class="container">
+    <h2 class="heading text-upper text-blue"><%- @__('SOFTWARE_OUTSOURCING_SERVICE') %></h2>
+    <p class="sub-heading text-blue"><%- @__('SOFTWARE_OUTSOURCING_SERVICE_DESC') %></p>
+    <div class="explain">
+    	<p><%- @__('SOFTWARE_OUTSOURCING_SERVICE_LIST_TITLE') %></p>
+    	<ul>
+        <li>
+        	<h3 class="text-bold"><%- @__('SOFTWARE_OUTSOURCING_SERVICE_LIST_ITEM_1') %></h3>
+        	<p><%- @__('SOFTWARE_OUTSOURCING_SERVICE_LIST_ITEM_1_DESC') %></p>
+        </li>
+        <li>
+        	<h3 class="text-bold"><%- @__('SOFTWARE_OUTSOURCING_SERVICE_LIST_ITEM_2') %></h3>
+        	<p><%- @__('SOFTWARE_OUTSOURCING_SERVICE_LIST_ITEM_2_DESC') %></p>
+        </li>
+        <li>
+        	<h3 class="text-bold"><%- @__('SOFTWARE_OUTSOURCING_SERVICE_LIST_ITEM_3') %></h3>
+        	<p><%- @__('SOFTWARE_OUTSOURCING_SERVICE_LIST_ITEM_3_DESC') %></p>
+        </li>
+       </ul>
+    </div>
+  </div>
 </div>
 
 <div class="section-solution text-white" id="solution-consultancy">
-	<div class="site-container fluid">
-		<div class="gs">
-			<div class="row">
-				<div class="col-8">
-					<div class="heading text-upper">
-						<span><%- @__('SOFTWARE_SOLUTIONS_CONSULTANCY_FOR_FREE') %></span>
-					</div>
-					<div class="sub-heading">
-						<span><%- @__('SOFTWARE_SOLUTIONS_CONSULTANCY_FOR_FREE_DESC') %></span>
-					</div>
-					<div class="explain">
-						<p><%- @__('SOFTWARE_SOLUTIONS_CONSULTANCY_FOR_FREE_EXPLAIN') %></p>
-					</div>
-				</div>
-				<div class="col-4">
-					<div class="service-illu">
-						<img src="<%= @__asset('img/services/consultancy_illu.png') %>" alt="<%= @__('SOFTWARE_SOLUTIONS_CONSULTANCY_FOR_FREE') %>" width="371" height="127">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <h2 class="heading text-upper"><%- @__('SOFTWARE_SOLUTIONS_CONSULTANCY_FOR_FREE') %></h2>
+    <p class="sub-heading"><%- @__('SOFTWARE_SOLUTIONS_CONSULTANCY_FOR_FREE_DESC') %></p>
+    <div class="explain">
+      <p><%- @__('SOFTWARE_SOLUTIONS_CONSULTANCY_FOR_FREE_EXPLAIN') %></p>
+    </div>
+  </div>
 </div>
 
 <div class="section-graphic-design" id="graphic-design">
-	<div class="site-container fluid">
-		<div class="gs">
-			<div class="row">
-				<div class="col-8">
-					<div class="heading text-upper text-blue">
-						<span><%- @__('WEB_APP_GRAPHIC_DESIGN') %></span>
-					</div>
-					<div class="sub-heading text-blue">
-						<span><%- @__('WEB_APP_GRAPHIC_DESIGN_DESC') %></span>
-					</div>
-					<div class="explain">
-						<p><%- @__('WEB_APP_GRAPHIC_DESIGN_EXPLAIN') %></p>
-					</div>
-				</div>
-				<div class="col-4">
-					<div class="service-illu">
-						<img src="<%= @__asset('img/services/graphical_design_illu.png') %>" alt="<%= @__('WEB_APP_GRAPHIC_DESIGN') %>" width="349" height="243">
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <h2 class="heading text-upper text-blue"><%- @__('WEB_APP_GRAPHIC_DESIGN') %></h2>
+    <p class="sub-heading text-blue"><%- @__('WEB_APP_GRAPHIC_DESIGN_DESC') %></p>
+    <div class="explain">
+      <p><%- @__('WEB_APP_GRAPHIC_DESIGN_EXPLAIN') %></p>
+  </div>
 </div>
 
 <% end %>

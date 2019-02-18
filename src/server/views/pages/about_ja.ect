@@ -9,220 +9,188 @@
 <% block 'page_flow': %>
 
 <div class="page-title text-center text-upper">
-	<span><%- @__('ABOUT_US_TITLE') %></span>
+  <h1><%- @__('ABOUT_US_TITLE') %></h1>
 </div>
-<div class="site-container fluid section-introduction">
-	<div class="ntq-info-container clearfix">
-		<div class="ntq-info-icon icon-who pull-left"></div>
-		<div class="ntq-info">
-			<div class="heading text-upper">
-				<span><%- @__('ABOUT_US_HEADING_1') %></span>
-			</div>
-			<p class="ntq-info-paragraph"><%- @__('ABOUT_US_EXPLAIN_1') %></p>
-		</div>
-	</div>
-	<div class="ntq-info-container clearfix">
-		<div class="ntq-info-icon icon-what pull-left"></div>
-		<div class="ntq-info">
-			<div class="heading text-upper">
-				<span><%- @__('ABOUT_US_HEADING_2') %></span>
-			</div>
-			<p class="ntq-info-paragraph"><%- @__('ABOUT_US_EXPLAIN_2') %></p>
-		</div>
-	</div>
-	<div class="ntq-info-container clearfix">
-		<div class="ntq-info-icon icon-why pull-left"></div>
-		<div class="ntq-info">
-			<div class="heading text-upper">
-				<span><%- @__('ABOUT_US_HEADING_3') %></span>
-			</div>
-			<p class="ntq-info-paragraph"><%- @__('ABOUT_US_EXPLAIN_3') %></p>
-		</div>
-	</div>
+<div class="section-introduction">
+  <div class="container">
+    <div class="heading">
+      <div class="ntq-info-icon icon-who"></div>
+      <h2 class="text-upper"><%- @__('ABOUT_US_HEADING_1') %></h2>
+    </div>
+    <p class="ntq-info-paragraph"><%- @__('ABOUT_US_EXPLAIN_1') %></p>
+  </div>
+  <div class="container">
+    <div class="heading">
+      <div class="ntq-info-icon icon-what"></div>
+      <h2 class="text-upper"><%- @__('ABOUT_US_HEADING_2') %></h2>
+    </div>
+    <p class="ntq-info-paragraph"><%- @__('ABOUT_US_EXPLAIN_2') %></p>
+  </div>
+  <div class="container">
+    <div class="heading">
+      <div class="ntq-info-icon icon-why"></div>
+      <h2 class="text-upper"><%- @__('ABOUT_US_HEADING_3') %></h2>
+    </div>
+    <p class="ntq-info-paragraph"><%- @__('ABOUT_US_EXPLAIN_3') %></p>
+  </div>
 </div>
-<div class="site-container fluid section-ntq-members">
-	<div class="gs">
-		<div class="row">
-			<div class="col-8-offset-2">
-				<div class="heading text-center">
-					<span><%- @__('NTQ_MEMBER_INTRO') %></span>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="member-container">
-		<div class="member first">
-			<img src="<%= @__asset('img/members/hoangtv.png') %>" alt="<%- @__('TRAN_VAN_HOANG') %>" class="member-picture" width="189" height="441">
-			<div class="biography">
-				<div class="name text-white">
-					<span><%- @__('TRAN_VAN_HOANG') %></span>
-				</div>
-				<div class="position text-green">
-					<span><%- @__('TRAN_VAN_HOANG_POSITION') %></span>
-				</div>
-				<p class="intro text-white text-justify"><%- @__('TRAN_VAN_HOANG_INFO') %></p>
-			</div>
-		</div>
-		<div class="member second">
-			<img src="<%= @__asset('img/members/sonth.png') %>" alt="<%- @__('TO_HAI_SON') %>" class="member-picture" width="156" height="437">
-			<div class="biography">
-				<div class="name text-white">
-					<span><%- @__('TO_HAI_SON') %></span>
-				</div>
-				<div class="position text-green">
-					<span><%- @__('TO_HAI_SON_POSITION') %></span>
-				</div>
-				<p class="intro text-white text-justify"><%- @__('TO_HAI_SON_INFO') %></p>
-			</div>
-		</div>
-		<div class="member third">
-			<img src="<%= @__asset('img/members/sonpt.png') %>" alt="<%- @__('PHAM_THAI_SON') %>" class="member-picture" width="158" height="446">
-			<div class="biography">
-				<div class="name text-white">
-					<span><%- @__('PHAM_THAI_SON') %></span>
-				</div>
-				<div class="position text-green">
-					<span><%- @__('PHAM_THAI_SON_POSITION') %></span>
-				</div>
-				<p class="intro text-white text-justify"><%- @__('PHAM_THAI_SON_INFO') %></p>
-			</div>
-		</div>
-		<div class="member fourth">
-			<img src="<%= @__asset('img/members/soannk.png') %>" alt="<%- @__('NGUYEN_KIM_SOAN') %>" class="member-picture" width="102" height="417">
-			<div class="biography">
-				<div class="name text-white">
-					<span><%- @__('NGUYEN_KIM_SOAN') %></span>
-				</div>
-				<div class="position text-green">
-					<span><%- @__('NGUYEN_KIM_SOAN_POSITION') %></span>
-				</div>
-				<p class="intro text-white text-justify"><%- @__('NGUYEN_KIM_SOAN_INFO') %></p>
-			</div>
-		</div>
-		<div class="member fifth">
-			<img src="<%= @__asset('img/members/duongtdq.png') %>" alt="<%- @__('TRUONG_DAO_QUY_DUONG') %>" class="member-picture" width="143" height="445">
-			<div class="biography">
-				<div class="name text-white">
-					<span><%- @__('TRUONG_DAO_QUY_DUONG') %></span>
-				</div>
-				<div class="position text-green">
-					<span><%- @__('TRUONG_DAO_QUY_DUONG_POSITION') %></span>
-				</div>
-				<p class="intro text-white text-justify"><%- @__('TRUONG_DAO_QUY_DUONG_INFO') %></p>
-			</div>
-		</div>
-	</div>
+<div class="container section-ntq-members">
+  <h2 class="heading text-center"><%- @__('NTQ_MEMBER_INTRO') %></h2>
+  <div class="member-container">
+    <div class="member first">
+      <img src="<%= @__asset('img/members/hoangtv.png') %>" alt="<%- @__('TRAN_VAN_HOANG') %>" class="member-picture" width="189" height="441">
+      <div class="biography">
+        <div class="name text-white">
+          <span><%- @__('TRAN_VAN_HOANG') %></span>
+        </div>
+        <div class="position text-green">
+          <span><%- @__('TRAN_VAN_HOANG_POSITION') %></span>
+        </div>
+        <p class="intro text-white text-justify"><%- @__('TRAN_VAN_HOANG_INFO') %></p>
+      </div>
+    </div>
+    <div class="member second">
+      <img src="<%= @__asset('img/members/sonth.png') %>" alt="<%- @__('TO_HAI_SON') %>" class="member-picture" width="156" height="437">
+      <div class="biography">
+        <div class="name text-white">
+          <span><%- @__('TO_HAI_SON') %></span>
+        </div>
+        <div class="position text-green">
+          <span><%- @__('TO_HAI_SON_POSITION') %></span>
+        </div>
+        <p class="intro text-white text-justify"><%- @__('TO_HAI_SON_INFO') %></p>
+      </div>
+    </div>
+    <div class="member third">
+      <img src="<%= @__asset('img/members/sonpt.png') %>" alt="<%- @__('PHAM_THAI_SON') %>" class="member-picture" width="158" height="446">
+      <div class="biography">
+        <div class="name text-white">
+          <span><%- @__('PHAM_THAI_SON') %></span>
+        </div>
+        <div class="position text-green">
+          <span><%- @__('PHAM_THAI_SON_POSITION') %></span>
+        </div>
+        <p class="intro text-white text-justify"><%- @__('PHAM_THAI_SON_INFO') %></p>
+      </div>
+    </div>
+    <div class="member fourth">
+      <img src="<%= @__asset('img/members/soannk.png') %>" alt="<%- @__('NGUYEN_KIM_SOAN') %>" class="member-picture" width="102" height="417">
+      <div class="biography">
+        <div class="name text-white">
+          <span><%- @__('NGUYEN_KIM_SOAN') %></span>
+        </div>
+        <div class="position text-green">
+          <span><%- @__('NGUYEN_KIM_SOAN_POSITION') %></span>
+        </div>
+        <p class="intro text-white text-justify"><%- @__('NGUYEN_KIM_SOAN_INFO') %></p>
+      </div>
+    </div>
+    <div class="member fifth">
+      <img src="<%= @__asset('img/members/duongtdq.png') %>" alt="<%- @__('TRUONG_DAO_QUY_DUONG') %>" class="member-picture" width="143" height="445">
+      <div class="biography">
+        <div class="name text-white">
+          <span><%- @__('TRUONG_DAO_QUY_DUONG') %></span>
+        </div>
+        <div class="position text-green">
+          <span><%- @__('TRUONG_DAO_QUY_DUONG_POSITION') %></span>
+        </div>
+        <p class="intro text-white text-justify"><%- @__('TRUONG_DAO_QUY_DUONG_INFO') %></p>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="section-video">
-	<div class="site-container fluid">
-		<div class="gs">
-			<div class="row">
-				<div class="col-6">
-					<div class="heading text-upper text-white">
-						<span><%- @__('ABOUT_US_VIDEO_INTRO') %></span>
-					</div>
-					<p class="explain text-white"><%- @__('ABOUT_US_VIDEO_DESC') %></p>
-				</div>
-				<div class="col-6">
-					<div class="video-container">
-						<div class="video">
-							<iframe width="100%" height="100%" src="https://www.youtube.com/embed/7LCjDVLRLwo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="content">
+      <div class="info">
+        <div class="heading text-upper text-white">
+          <h2><%- @__('ABOUT_US_VIDEO_INTRO') %></h2>
+        </div>
+        <p class="explain text-white"><%- @__('ABOUT_US_VIDEO_DESC') %></p>
+      </div>
+      <div class="video-container">
+        <div class="video">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7LCjDVLRLwo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="section-goals">
-	<div class="site-container fluid">
-		<div class="heading text-upper">
-			<span><%- @__('GOALS') %></span>
-		</div>
-		<div class="sub-heading text-upper">
-			<span><%- @__('GOALS_DESC') %></span>
-		</div>
-		<div class="gs">
-			<div class="row goals">
-				<div class="col-6 clearfix">
-					<div class="goal-icon revenue pull-left"></div>
-					<div class="goal-explain">
-						<div class="target-name">
-							<span><%- @__('TOTAL_REVENUE') %></span>
-						</div>
-						<div class="target">
-							<span><%- @__('REVENUE_VALUE') %></span>
-						</div>
-					</div>
-				</div>
-				<div class="col-6 clearfix">
-					<div class="goal-icon human-resource pull-left"></div>
-					<div class="goal-explain">
-						<div class="target-name">
-							<span><%- @__('HUMAN_RESOURCES') %></span>
-						</div>
-						<div class="target">
-							<span><%- @__('HUMAN_RESOURCES_VALUE') %></span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row sub-goals">
-				<div class="col-6">
-					<div class="heading text-upper">
-						<span><%- @__('POLICY') %></span>
-					</div>
-					<ul class="items">
-						<li class="clearfix">
-							<i class="fa fa-check fa-fw pull-left"></i>
-							<p><%- @__('POLICY_1') %></p>
-						</li>
-						<li class="clearfix">
-							<i class="fa fa-check fa-fw pull-left"></i>
-							<p><%- @__('POLICY_2') %></p>
-						</li>
-						<li class="clearfix">
-							<i class="fa fa-check fa-fw pull-left"></i>
-							<p><%- @__('POLICY_3') %></p>
-						</li>
-					</ul>
-				</div>
-				<div class="col-6">
-					<div class="heading text-upper">
-						<span><%- @__('MISSION') %></span>
-					</div>
-					<ul class="items">
-						<li class="clearfix">
-							<i class="fa fa-check fa-fw pull-left"></i>
-							<p><%- @__('MISSION_1') %></p>
-						</li>
-						<li class="clearfix">
-							<i class="fa fa-check fa-fw pull-left"></i>
-							<p><%- @__('MISSION_2') %></p>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <h2 class="heading text-upper text-center"><%- @__('GOALS') %></h2>
+    <h2 class="sub-heading text-upper text-center"><%- @__('GOALS_DESC') %></h3>
+    <div class="goals">
+      <div class="goal">
+        <div class="goal-icon revenue"></div>
+        <div class="target-name">
+          <h2><%- @__('TOTAL_REVENUE') %></h2>
+        </div>
+        <div class="target">
+          <span><%- @__('REVENUE_VALUE') %></span>
+        </div>
+      </div>
+      <div class="goal">
+        <div class="goal-icon human-resource"></div>
+        <div class="target-name">
+          <h2><%- @__('HUMAN_RESOURCES') %></h2>
+        </div>
+        <div class="target">
+          <span><%- @__('HUMAN_RESOURCES_VALUE') %></span>
+        </div>
+      </div>
+    </div>
+    <div class="principles">
+      <div class="principle">
+        <div class="heading text-upper">
+          <h3><%- @__('POLICY') %></h3>
+        </div>
+        <ul class="items">
+          <li>
+            <i class="fa fa-check fa-fw"></i>
+            <p><%- @__('POLICY_1') %></p>
+          </li>
+          <li>
+            <i class="fa fa-check fa-fw"></i>
+            <p><%- @__('POLICY_2') %></p>
+          </li>
+          <li>
+            <i class="fa fa-check fa-fw"></i>
+            <p><%- @__('POLICY_3') %></p>
+          </li>
+        </ul>
+      </div>
+      <div class="principle">
+        <div class="heading text-upper">
+          <h3><%- @__('MISSION') %></h3>
+        </div>
+        <ul class="items">
+          <li>
+            <i class="fa fa-check fa-fw"></i>
+            <p><%- @__('MISSION_1') %></p>
+          </li>
+          <li>
+            <i class="fa fa-check fa-fw"></i>
+            <p><%- @__('MISSION_2') %></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="section-press-releases">
-	<div class="site-container fluid">
-		<div class="heading text-upper text-center text-white">
-			<span><%- @__('PRESS_RELEASES') %></span>
-		</div>
-		<div class="sub-heading text-center text-white">
-			<span><%- @__('PRESS_RELEASES_DESC') %></span>
-		</div>
-		<div class="description text-center text-white">
-			<p><%- @__('PRESS_RELEASES_EXPLAIN') %></p>
-		</div>
-		<div class="video-container">
-			<div class="video">
-				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/6hepHqosztE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="content">
+      <h2 class="heading text-upper"><%- @__('PRESS_RELEASES') %></h2>
+      <p class="sub-heading"><%- @__('PRESS_RELEASES_DESC') %></p>
+      <p class="description"><%- @__('PRESS_RELEASES_EXPLAIN') %></p>
+      <div class="video-container">
+        <div class="video">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6hepHqosztE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <% end %>

@@ -1,0 +1,146 @@
+<% extend '_flow-no-banner' %>
+
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__asset('recruitment.css') %>">
+
+<% end %>
+
+<% block 'page_flow': %>
+
+<section class="section recruitment">
+  <div class="recruitment__baner" style="background-image: url(<%= @__asset('img/recruitment-baner.jpg') %>)"></div>
+  <div class="container">
+
+    <div class="recruitment__introduce">
+      <h3 class="recruitment__introduce-title"><%- @__('recruitment-introduce-title1') %></h3>
+      <p class="recruitment__introduce-content"><%- @__('recruitment-introduce-content1') %></p>
+    </div>
+
+    <div class="recruitment__introduce">
+      <h3 class="recruitment__introduce-title"><%- @__('recruitment-introduce-title2') %></h3>
+      <p class="recruitment__introduce-content js-introduce-content">
+        <%- @__('recruitment-introduce-content2') %>
+      </p>
+      <div class="recruitment__see-more bg-gradient js-see-more" onclick="viewMore()">
+        <h3 class="js-text-see-more"><%- @__('recruitment-see-more') %></h3>
+      </div>
+    </div>
+
+    <h3 class="row recruitment__feel-title"><%- @__('recruitment-feel-title') %></h3>
+    <div class="row recruitment__feel">
+      <div class="recruitment__feel-item col-md-4 col-sm-6">
+        <div class="recruitment__feel-avt" style="background-image: url(<%= @__asset('img/avt-quyen.jpg') %>)">
+        </div>
+        <div class="recruitment__feel-content">
+          <h3 class="recruitment__feel-name"><%- @__('recruitment-feel-name1') %></h3>
+          <h3 class="recruitment__feel-job"><%- @__('recruitment-feel-job1') %></h3>
+          <p class="recruitment__feel-detail"><%- @__('recruitment-feel-detail1') %></p>
+        </div>
+      </div>
+
+      <div class="recruitment__feel-item col-md-4 col-sm-6">
+        <div class="recruitment__feel-avt" style="background-image: url(<%= @__asset('img/avt-huong.jpg') %>)">
+        </div>
+        <div class="recruitment__feel-content">
+          <h3 class="recruitment__feel-name"><%- @__('recruitment-feel-name2') %></h3>
+          <h3 class="recruitment__feel-job"><%- @__('recruitment-feel-job2') %></h3>
+          <p class="recruitment__feel-detail"><%- @__('recruitment-feel-detail2') %></p>
+        </div>
+      </div>
+
+      <div class="recruitment__feel-item col-md-4 col-sm-6">
+        <div class="recruitment__feel-avt" style="background-image: url(<%= @__asset('img/avt-anh.jpg') %>)">
+        </div>
+        <div class="recruitment__feel-content">
+          <h3 class="recruitment__feel-name"><%- @__('recruitment-feel-name3') %></h3>
+          <h3 class="recruitment__feel-job"><%- @__('recruitment-feel-job3') %></h3>
+          <p class="recruitment__feel-detail"><%- @__('recruitment-feel-detail3') %></p>
+        </div>
+      </div>
+
+      <div class="recruitment__feel-item col-md-4 col-sm-6">
+        <div class="recruitment__feel-avt" style="background-image: url(<%= @__asset('img/avt-binh-minh.jpg') %>)">
+        </div>
+        <div class="recruitment__feel-content">
+          <h3 class="recruitment__feel-name"><%- @__('recruitment-feel-name4') %></h3>
+          <h3 class="recruitment__feel-job"><%- @__('recruitment-feel-job4') %></h3>
+          <p class="recruitment__feel-detail"><%- @__('recruitment-feel-detail4') %></p>
+        </div>
+      </div>
+
+      <div class="recruitment__feel-item col-md-4 col-sm-6">
+        <div class="recruitment__feel-avt" style="background-image: url(<%= @__asset('img/avt-huy.jpg') %>)">
+        </div>
+        <div class="recruitment__feel-content">
+          <h3 class="recruitment__feel-name"><%- @__('recruitment-feel-name5') %></h3>
+          <h3 class="recruitment__feel-job"><%- @__('recruitment-feel-job5') %></h3>
+          <p class="recruitment__feel-detail"><%- @__('recruitment-feel-detail5') %></p>
+        </div>
+      </div>
+
+      <div class="recruitment__feel-item col-md-4 col-sm-6">
+        <div class="recruitment__feel-avt" style="background-image: url(<%= @__asset('img/avt-tung.jpg') %>)">
+        </div>
+        <div class="recruitment__feel-content">
+          <h3 class="recruitment__feel-name"><%- @__('recruitment-feel-name6') %></h3>
+          <h3 class="recruitment__feel-job"><%- @__('recruitment-feel-job6') %></h3>
+          <p class="recruitment__feel-detail"><%- @__('recruitment-feel-detail6') %></p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="recruitment__news-title"><%- @__('recruitment-news-title') %></h3>
+
+    <div class="row recruitment__news">
+      <div class="recruitment__news--item col-md-3 col-sm-4 col-sx-12" style="background-image: url(<%= @__asset('img/recruitment-fullstack.jpg') %>)"></div>
+      <div class="recruitment__news--item-content col-md-9 col-sm-8 col-sx-12">
+        <h3 class="recruitment__news--item-title"><%- @__('recruitment-news_item-title1') %></h3>
+        <h3 class="recruitment__news--item-time"><%- @__('recruitment-news_item-time1') %></h3>
+        <p class="recruitment__news--item-description"><%- @__('recruitment-news_item-description1') %></p>
+        <a class="btn" href="#"><%- @__('btn-loadmore') %></a>
+      </div>
+    </div>
+
+    <div class="row recruitment__news">
+      <div class="recruitment__news--item col-md-3 col-sm-4 col-sx-12" style="background-image: url(<%= @__asset('img/recruitment-c.jpg') %>)"></div>
+      <div class="recruitment__news--item-content col-md-9 col-sm-8 col-sx-12">
+        <h3 class="recruitment__news--item-title"><%- @__('recruitment-news_item-title2') %></h3>
+        <h3 class="recruitment__news--item-time"><%- @__('recruitment-news_item-time2') %></h3>
+        <p class="recruitment__news--item-description"><%- @__('recruitment-news_item-description2') %></p>
+        <a class="btn" href="#"><%- @__('btn-loadmore') %></a>
+      </div>
+    </div>
+
+    <div class="row recruitment__news">
+      <div class="recruitment__news--item col-md-3 col-sm-4 col-sx-12" style="background-image: url(<%= @__asset('img/recruitment-java.jpg') %>)"></div>
+      <div class="recruitment__news--item-content col-md-9 col-sm-8 col-sx-12">
+        <h3 class="recruitment__news--item-title"><%- @__('recruitment-news_item-title3') %></h3>
+        <h3 class="recruitment__news--item-time"><%- @__('recruitment-news_item-time3') %></h3>
+        <p class="recruitment__news--item-description"><%- @__('recruitment-news_item-description3') %></p>
+        <a class="btn" href="#"><%- @__('btn-loadmore') %></a>
+      </div>
+    </div>
+
+    <div class="row recruitment__news">
+      <div class="recruitment__news--item col-md-3 col-sm-4 col-sx-12" style="background-image: url(<%= @__asset('img/recruitment-c.jpg') %>)"></div>
+      <div class="recruitment__news--item-content col-md-9 col-sm-8 col-sx-12">
+        <h3 class="recruitment__news--item-title"><%- @__('recruitment-news_item-title4') %></h3>
+        <h3 class="recruitment__news--item-time"><%- @__('recruitment-news_item-time4') %></h3>
+        <p class="recruitment__news--item-description"><%- @__('recruitment-news_item-description4') %></p>
+        <a class="btn" href="#"><%- @__('btn-loadmore') %></a>
+      </div>
+    </div>
+
+    <div class="row recruitment__footer">
+      <div class="oll-news col-xs-6">
+        <h3><%- @__('oll-news') %></h3>
+      </div>
+      <div class="news col-xs-6">
+        <h3><%- @__('news') %></h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<% end %>

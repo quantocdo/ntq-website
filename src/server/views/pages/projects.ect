@@ -1,0 +1,422 @@
+<% extend '_flow-no-banner' %>
+
+<% block 'head_end': %>
+
+<link rel="stylesheet" href="<%= @__asset('projects.css') %>">
+
+<% end %>
+
+<% block 'page_flow': %>
+
+<section class="section project">
+  <div class="masthead project-banner bg-gradient">
+    <div class="masthead-wrapper container project__banner-title"><%- @__('project-banner-title') %></div>
+  </div>
+  <div class="container">
+    <div class="project__description">
+      <div class="project__description-title"><%- @__('project-description-title') %></div>
+      <div class="project__content">
+        <div class="row project__content--wrapper">
+          <div class="col-sm-2">
+            <div class="project__content--logo">
+              <img src="<%= @__asset('img/logo-systena.png') %>" alt="/">
+            </div>
+          </div>
+          <div class="col-sm-10 project__content-detail">
+            <%- @__('project-content-detail1') %>
+          </div>
+        </div>
+        <div class="row project__content--wrapper">
+          <div class="col-sm-2">
+            <div class="project__content--logo">
+              <img src="<%= @__asset('img/logo-ilovex.png') %>" alt="/">
+            </div>
+          </div>
+          <div class="col-sm-10 project__content-detail">
+            <%- @__('project-content-detail2') %>
+          </div>
+        </div>
+        <div class="row project__content--wrapper">
+          <div class="col-sm-2">
+            <div class="project__content--logo">
+              <img src="<%= @__asset('img/logo-bit2byte.png') %>" alt="/">
+            </div>
+          </div>
+          <div class="col-sm-10 project__content-detail">
+            <%- @__('project-content-detail3') %>
+          </div>
+        </div>
+        <div class="row project__content--wrapper">
+          <div class="col-sm-2">
+            <div class="project__content--logo">
+              <img src="<%= @__asset('img/logo-act.png') %>" alt="/">
+            </div>
+          </div>
+          <div class="col-sm-10 project__content-detail">
+            <%- @__('project-content-detail4') %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="project__achievement">
+      <div class="project__achievement-title">
+        <%- @__('project-achievement-title') %>
+      </div>
+      <div class="project__content">
+
+        <div class="project__achievement-subtitle square square-blue"><%- @__('project-achievement-subtitle1') %></div>
+        <div class="project__achievement-content">
+          <div class="row project__achievement--wrapper bg-blue">
+            <div class="col-sm-5">
+              <div class="project__achievement-name"><%- @__('project-achievement-name1') %></div>
+              <div class="project__achievement-list-img">
+                  <img src="<%= @__asset('img/banner-glass.png') %>" alt="/">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="project__achievement-name"><%- @__('project-achievement-name2') %></div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item1') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item2') %> 
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item3') %>
+                </li>
+              </ul>
+              <div class="project__achievement-name"><%- @__('project-achievement-name3') %></div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item4') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item5') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item6') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item7') %>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row project__achievement--wrapper bg-blue">
+            <div class="col-sm-5">
+              <div class="project__achievement-name">
+                <%- @__('project-achievement-name4') %>
+              </div>
+              <div class="project__achievement-list-img">
+                <img src="<%= @__asset('img/banner-1.png') %>" alt="/">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="project__achievement-name"><%- @__('project-achievement-name5') %></div>
+              <p><%- @__('project-achievement-name_p1') %><br/><%- @__('project-achievement-name_p2') %></p>
+              <div class="project__achievement-name"><%- @__('project-achievement-name6') %></div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item8') %>
+                  <ul>
+                    <li class="project__achievement-sublist-item">
+                      <%- @__('project-achievement_sublist-item1') %>
+                    </li>
+                    <li class="project__achievement-sublist-item">
+                      <%- @__('project-achievement_sublist-item2') %>
+                    </li>
+                    <li class="project__achievement-sublist-item">
+                      <%- @__('project-achievement_sublist-item3') %>
+                    </li>
+                  </ul>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item9') %>
+                  <ul>
+                    <li class="project__achievement-sublist-item">
+                      <%- @__('project-achievement_sublist-item4') %>
+                    </li>
+                    <li class="project__achievement-sublist-item">
+                      <%- @__('project-achievement_sublist-item5') %>
+                    </li>
+                  </ul>
+                </li>
+                <li class="project__achievement-list-item">
+                   <%- @__('project-achievement_list-item10') %>
+                  <ul>
+                    <li class="project__achievement-sublist-item">
+                      <%- @__('project-achievement_sublist-item6') %>
+                    </li>
+                    <li class="project__achievement-sublist-item">
+                      <%- @__('project-achievement_sublist-item7') %>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="project__achievement-name"> <%- @__('project-achievement-name7') %></div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item11') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item12') %>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="project__achievement-subtitle square square-red"><%- @__('project-achievement-subtitle2') %></div>
+        <div class="project__achievement-content">
+          <div class="row project__achievement--wrapper bg-red">
+            <div class="col-sm-5">
+              <div class="project__achievement-name"><%- @__('project-achievement-name8') %></div>
+              <div class="project__achievement-list-img">
+                  <img src="<%= @__asset('img/banner-dqs2.png') %>" alt="/">
+                  <img src="<%= @__asset('img/banner-dqs1.png') %>" alt="/">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="project__achievement-name"><%- @__('project-achievement-name9') %></div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item13') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item14') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item15') %>
+                </li>
+              </ul>
+              <div class="project__achievement-name"><%- @__('project-achievement-name10') %></div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item16') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item17') %>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row project__achievement--wrapper bg-red">
+            <div class="col-sm-5">
+              <div class="project__achievement-name"><%- @__('project-achievement-name11') %> </div>
+              <div class="project__achievement-list-img">
+                  <img src="<%= @__asset('img/banner-community1.png') %>" alt="/">
+                  <img src="<%= @__asset('img/banner-community2.png') %>" alt="/">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="project__achievement-name"><%- @__('project-achievement-name12') %> </div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item18') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item19') %>
+                  <ul>
+                    <li class="project__achievement-sublist-item">
+                      <%- @__('project-achievement_sublist-item8') %>
+                    </li>
+                    <li class="project__achievement-sublist-item">
+                      <%- @__('project-achievement_sublist-item9') %>
+                    </li>
+                    <li class="project__achievement-sublist-item">
+                      <%- @__('project-achievement_sublist-item10') %>
+                    </li>
+                    <li class="project__achievement-sublist-item">
+                      <%- @__('project-achievement_sublist-item11') %>
+                    </li>
+                    <li class="project__achievement-sublist-item">
+                      <%- @__('project-achievement_sublist-item12') %>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="project__achievement-name"><%- @__('project-achievement-name13') %></div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item20') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item21') %>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="project__achievement-subtitle square square-orange"><%- @__('project-achievement-subtitle3') %></div>
+        <div class="project__achievement-content">
+          <div class="row project__achievement--wrapper bg-orange">
+            <div class="col-sm-5">
+              <div class="project__achievement-name"><%- @__('project-achievement-name14') %></div>
+              <div class="project__achievement-list-img">
+                  <img src="<%= @__asset('img/banner-labo1.png') %>" alt="/">
+                  <img src="<%= @__asset('img/banner-labo2.png') %>" alt="/">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="project__achievement-name"><%- @__('project-achievement-name15') %></div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item22') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item23') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item24') %>
+                </li>
+              </ul>
+              <div class="project__achievement-name"><%- @__('project-achievement-name16') %></div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item25') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item26') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item27') %>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row project__achievement--wrapper bg-orange">
+            <div class="col-sm-5">
+              <div class="project__achievement-name">
+                <%- @__('project-achievement-name17') %>
+              </div>
+              <div class="project__achievement-list-img">
+                  <img src="<%= @__asset('img/banner-mmlabo2.png') %>" alt="/">
+                  <img src="<%= @__asset('img/banner-mmlabo1.png') %>" alt="/">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="project__achievement-name"> <%- @__('project-achievement-name18') %></div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item28') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item29') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item30') %>
+                </li>
+              </ul>
+              <div class="project__achievement-name"><%- @__('project-achievement-name19') %></div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item31') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item32') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item33') %>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="project__achievement-subtitle square square-violet"><%- @__('project-achievement-subtitle4') %></div>
+        <div class="project__achievement-content">
+          <div class="row project__achievement--wrapper bg-violet">
+            <div class="col-sm-5">
+              <div class="project__achievement-name"><%- @__('project-achievement-name20') %></div>
+              <div class="project__achievement-list-img">
+                  <img src="<%= @__asset('img/banner-SSO.png') %>" alt="/">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="project__achievement-name"><%- @__('project-achievement-name21') %></div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item34') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item35') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item36') %>
+                </li>
+              </ul>
+              <div class="project__achievement-name"><%- @__('project-achievement-name22') %></div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item37') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item38') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item39') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item40') %>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row project__achievement--wrapper bg-violet">
+            <div class="col-sm-5">
+              <div class="project__achievement-name">
+                <%- @__('project-achievement-name23') %>
+              </div>
+              <div class="project__achievement-list-img">
+                  <img src="<%= @__asset('img/banner-siminar2.png') %>" alt="/">
+                  <img src="<%= @__asset('img/banner-siminar1.png') %>" alt="/">
+              </div>
+            </div>
+            <div class="col-sm-7">
+              <div class="project__achievement-name"><%- @__('project-achievement-name24') %></div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item41') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item42') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item43') %>
+                </li>
+              </ul>
+              <div class="project__achievement-name"> <%- @__('project-achievement-name25') %></div>
+              <ul class="project__achievement-list">
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item44') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item45') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item46') %>
+                </li>
+                <li class="project__achievement-list-item">
+                  <%- @__('project-achievement_list-item47') %>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="project__advisory" style="background-image:url(<%= @__asset('img/footer-baner.jpg') %>)">
+    <div class="project__advisory-content container">
+      <p><%- @__('project_advisory') %></p>
+      <div class="project__advisory-btn">
+        <a href="contact"><%- @__('service-offshore_btn_contact') %></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<% end %>
