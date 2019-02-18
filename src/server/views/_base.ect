@@ -40,7 +40,7 @@
 	<script src="<%= @__asset('layout.js') %>"></script>
 
 	<script>
-		;(function() {
+			;(function() {
 			var menu = document.getElementById('fullscreen-menu')
 
 			if (!menu) return;
@@ -55,6 +55,15 @@
 		})();
 
 		$(document).ready(function () {
+			var locale = "<%= @_locale %>";
+
+			if (locale=='ja') {
+				$('.js-lang-en').hide();
+			}
+			
+			if (locale=='en') {
+				$('.js-lang-jp').hide();
+			}
 
 			$('#open-nav').click(function () {
 				$('#content-nav').addClass('is-active');
@@ -134,7 +143,7 @@
 				});
 			}
 
-			var breakpoint = 1262;
+			var breakpoint = 1261;
 			var introContent = $('.js-introduce-content');
 
 			var fullContent = introContent.html();

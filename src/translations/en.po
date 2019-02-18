@@ -2301,6 +2301,10 @@ msgid "recruitment-news_item-description3"
 msgstr "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
 
 #:
+msgid "recruitment-news_item-description4"
+msgstr "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
+
+#:
 msgid "recruitment-news_item-title4"
 msgstr "Tuyển dụng C++, C#"
 
