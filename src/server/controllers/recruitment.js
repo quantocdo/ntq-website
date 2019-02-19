@@ -1,7 +1,31 @@
-export default {
-  get(req, res, next) {
-    const { _locale } = res.locals
+import fetch from 'node-fetch'
 
-    res.render(`pages/recruitment`)
+import config from 'infrastructure/config'
+import post from 'services/post'
+import u from 'services/url'
+
+export default {
+  async get(req, res, next) {
+    try {
+      const { _locale } = res.locals
+
+      const url = u.build(`${ config.cms.url }/posts`, {
+        client_id: config.cms.clientId,
+        client_secret: config.cms.clientSecret,
+        filter: `tags:[recruitment,recruitment_${ _locale }]`,
+        limit: 4
+      })
+
+      const response = await fetch(url)
+      const { posts } = await response.json()
+      
+      res.render(`pages/recruitment`, {
+        posts: posts
+          .map(post.featureImage)
+          .map(post.truncated(_locale))
+      })
+    } catch (e) {
+      next(e)
+    }
   }
 }

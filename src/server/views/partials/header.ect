@@ -80,21 +80,38 @@
 							</a>
 						</li>
 
-						<li class="dropdown header__language">
-							<a href="#" class="dropdown-toggle header__language-item" data-toggle="dropdown">
+						<li class="dropdown header__language js-lang-jp">
+							<a href="<%= @_config.baseUrl.ja %>" class="dropdown-toggle header__language-item" data-toggle="dropdown">
 								<img src="<%= @__asset('img/language-japan.png') %>" alt="日本語">
 								<span class="header__language-text"><%- @__('lang_jp') %></span>
 								<span class="caret icon-dropdown"></span>
 							</a>
 							<div class="dropdown-menu header__language-select">
-								<a href="#" class="header__language-item">
+								<a href="<%= @_config.baseUrl.en %>" class="header__language-item">
 									<img src="<%= @__asset('img/language-english.png') %>" alt="Go to English site">
-									<span class="header__language-english">
+									<span class="header__language-text">
 										<%- @__('lang_en') %>
 									</span>
 								</a>
 							</div>
 						</li>
+
+						<li class="dropdown header__language js-lang-en">
+							<a href="<%= @_config.baseUrl.en %>" class="dropdown-toggle header__language-item" data-toggle="dropdown">
+								<img src="<%= @__asset('img/language-english.png') %>" alt="日本語">
+								<span class="header__language-text"><%- @__('lang_en') %></span>
+								<span class="caret icon-dropdown"></span>
+							</a>
+							<div class="dropdown-menu header__language-select">
+								<a href="<%= @_config.baseUrl.ja %>" class="header__language-item">
+									<img src="<%= @__asset('img/language-japan.png') %>" alt="Go to Japanese site">
+									<span class="header__language-text">
+										<%- @__('lang_jp') %>
+									</span>
+								</a>
+							</div>
+						</li>
+
 					</ul>
 				</div>
 			</div>

@@ -34,7 +34,7 @@
 						allowfullscreen></iframe>
 				</div>
 				<div class="col-sm-5 col-md-4">
-					<a href="about-us.html" class="btn btn--square btn--japan">
+					<a href="about-us" class="btn btn--square btn--japan">
 						<%- @__('btn-japan') %>
 					</a>
 				</div>
@@ -275,14 +275,14 @@
 				<p><%- @__('home-heading14') %></p>
 			</div>
 			<a href="research-and-development.html" class="btn btn--square">
-				See how they work
+				See how they work 
 			</a>
 			<div class="home__rnd-slide js-rnd-slider">
-				<a class="js-rnd-item" data-background="<%= @__asset('img/item-rnd-1.png') %>" style="background-image: url('<%= @__asset('img/item-rnd-1.png') %>')"></a>
+				<a class="js-rnd-item" data-background="<%= @__asset('img/item-rnd-1.jpg') %>" style="background-image: url('<%= @__asset('img/item-rnd-1.jpg') %>')"></a>
 				<a class="js-rnd-item" data-background="<%= @__asset('img/item-rnd-2.png') %>" style="background-image: url('<%= @__asset('img/item-rnd-2.png') %>')"></a>
 				<a class="js-rnd-item" data-background="<%= @__asset('img/item-rnd-3.png') %>" style="background-image: url('<%= @__asset('img/item-rnd-3.png') %>')"></a>
 				<a class="js-rnd-item" data-background="<%= @__asset('img/item-rnd-4.png') %>" style="background-image: url('<%= @__asset('img/item-rnd-4.png') %>')"></a>
-				<a class="js-rnd-item" data-background="<%= @__asset('img/item-rnd-5.png') %>" style="background-image: url('<%= @__asset('img/item-rnd-5.png') %>')"></a>
+				<a class="js-rnd-item" data-background="<%= @__asset('img/item-rnd-5.jpg') %>" style="background-image: url('<%= @__asset('img/item-rnd-5.jpg') %>')"></a>
 			</div>
 		</div>
 	</div>
@@ -296,36 +296,22 @@
 				<%- @__('home-btn-view-more') %>
 			</a>
 			<div class="row">
-				<div class="col-sm-8">
-					<div class="home__news-item">
-						<p><%- @__('home-news-item_day1') %></p>
-						<a href="#"><%- @__('home-news-item1') %></a>
-					</div>
-					<div class="home__news-item">
-						<p><%- @__('home-news-item_day2') %></p>
-						<a href="#"><%- @__('home-news-item2') %></a>
-					</div>
-					<div class="home__news-item">
-						<p><%- @__('home-news-item_day3') %></p>
-						<a href="#"><%- @__('home-news-item3') %></a>
-					</div>
-					<div class="home__news-item">
-						<p><%- @__('home-news-item_day4') %></p>
-						<a href="#"><%- @__('home-news-item4') %></a>
-					</div>
-					<div class="home__news-item">
-						<p><%- @__('home-news-item_day5') %></p>
-						<a href="#"><%- @__('home-news-item5') %></a>
-					</div>
+				<div class="col-md-8">
+					<% for post in @posts: %>
+						<div class="home__news-item">
+							<p><%= @_date(post.published_at) %></p>
+							<a href="/p/<%= post.slug %>"><%= post.title %></a>
+						</div>
+					<% end %>
 				</div>
-				<div class="col-sm-4">
-					<div class="home__news-img-wrapper" style="background-image: url('<%= @__asset('img/item-news.png') %>')">
+				<div class="col-md-4">
+					<div class="home__news-img-wrapper" style="background-image: url('<%= post.feature_image %>')">
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
+	
 </section>
 
 <% end %>
