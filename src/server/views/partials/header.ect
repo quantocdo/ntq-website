@@ -81,13 +81,13 @@
 						</li>
 
 						<li class="dropdown header__language js-lang-jp">
-							<a href="http://jp.ntq.local:3100/" class="dropdown-toggle header__language-item" data-toggle="dropdown">
+							<a href="<%= @_config.baseUrl.ja %>" class="dropdown-toggle header__language-item" data-toggle="dropdown">
 								<img src="<%= @__asset('img/language-japan.png') %>" alt="日本語">
 								<span class="header__language-text"><%- @__('lang_jp') %></span>
 								<span class="caret icon-dropdown"></span>
 							</a>
 							<div class="dropdown-menu header__language-select">
-								<a href="http://en.ntq.local:3100/" class="header__language-item">
+								<a href="<%= @_config.baseUrl.en %>" class="header__language-item">
 									<img src="<%= @__asset('img/language-english.png') %>" alt="Go to English site">
 									<span class="header__language-text">
 										<%- @__('lang_en') %>
@@ -97,13 +97,13 @@
 						</li>
 
 						<li class="dropdown header__language js-lang-en">
-							<a href="http://en.ntq.local:3100/" class="dropdown-toggle header__language-item" data-toggle="dropdown">
+							<a href="<%= @_config.baseUrl.en %>" class="dropdown-toggle header__language-item" data-toggle="dropdown">
 								<img src="<%= @__asset('img/language-english.png') %>" alt="日本語">
 								<span class="header__language-text"><%- @__('lang_en') %></span>
 								<span class="caret icon-dropdown"></span>
 							</a>
 							<div class="dropdown-menu header__language-select">
-								<a href="http://jp.ntq.local:3100/" class="header__language-item">
+								<a href="<%= @_config.baseUrl.ja %>" class="header__language-item">
 									<img src="<%= @__asset('img/language-japan.png') %>" alt="Go to Japanese site">
 									<span class="header__language-text">
 										<%- @__('lang_jp') %>
