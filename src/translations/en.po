@@ -2097,10 +2097,6 @@ msgid "home-heading10"
 msgstr "In order to elevate the comprehensive competitiveness for our clients, we always provide the newest and cutting-edge technology."
 
 #:
-msgid "btn-square5"
-msgstr "See more technologies"
-
-#:
 msgid "home-heading11"
 msgstr "CLIENTS UNDER TRANSACTION"
 
@@ -2118,7 +2114,7 @@ msgstr "In addition of providing outsourcing service, we also do research & deve
 
 #:
 msgid "home-btn-view-more"
-msgstr "続きを見る >>"
+msgstr "Read more >>"
 
 #:
 msgid "home-news-item_day1"

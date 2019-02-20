@@ -13,7 +13,7 @@
 		<% include 'partials/favicon' %>
 
 		<!-- stylesheet imports -->
-		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
@@ -59,10 +59,12 @@
 
 			if (locale=='ja') {
 				$('.js-lang-en').hide();
+				$('.js-bg-map').attr('src','<%= @__asset('img/bg-map-suppliers-jp.png') %>');
 			}
 			
 			if (locale=='en') {
 				$('.js-lang-jp').hide();
+				$('.js-bg-map').attr('src','<%= @__asset('img/bg-map-suppliers-en.png') %>');
 			}
 
 			$('#open-nav').click(function () {

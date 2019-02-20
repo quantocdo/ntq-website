@@ -1921,8 +1921,7 @@ msgstr "Managed services"
 
 #:
 msgid "landing-service-item-content1"
-msgstr "Take your performance to the next level with our re-platform
-services to Shopify and Shopify Plus."
+msgstr "Take your performance to the next level with our re-platform services to Shopify and Shopify Plus."
 
 #:
 msgid "landing-service-item-content2"
@@ -2350,10 +2349,6 @@ msgstr "技術"
 #:
 msgid "home-heading10"
 msgstr "お客様の市場競争力向上とビジネス規模拡大を支援するために、常に最新技術をご提供いたします。"
-
-#:
-msgid "btn-square5"
-msgstr "See more technologies"
 
 #:
 msgid "home-heading11"
