@@ -2487,6 +2487,10 @@ msgid "recruitment-see-more"
 msgstr "Xem thêm"
 
 #:
+msgid "recruitment-see-less"
+msgstr "Rút gọn"
+
+#:
 msgid "recruitment-feel-title"
 msgstr "Cảm nhận của NTQER"
 

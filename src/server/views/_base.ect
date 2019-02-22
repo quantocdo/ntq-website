@@ -146,31 +146,37 @@
 				});
 			}
 
-			var breakpoint = 1265;
-			var introContent = $('.js-introduce-content');
-
-			var fullContent = introContent.html();
-			var shortContent = introContent.html().slice(0, breakpoint);
-
-			introContent.html(shortContent);
+			$('.js-recruitment-last').hide();
 
 			$('.js-see-more').on('click', function() {
-				introContent.toggleClass('open');
 				$('.js-text-see-more').toggleClass('rotate');
+				$('.js-recruitment-last').slideToggle();
 
-				if (introContent.hasClass('open')) {
-					introContent.html(fullContent);
-				} else {
-					introContent.html(shortContent);
+				if ($('.js-text-see-more').hasClass('rotate')) {
+					$('.js-text-see-more').text('<%- @__('recruitment-see-less') %>');
+					return;
 				}
+				$('.js-text-see-more').text('<%- @__('recruitment-see-more') %>');
 			});
 
-			console.log('bbb');
-
 			$('.js-admin-item').on('click', function() {
-				console.log('aaa');
-				var adItemPos = $(this).offset().top;
-				$('.about-us__modal .modal-dialog').css('top', adItemPos + 'px');
+				var adItemPos = $(this).scrollTop();
+				console.log(adItemPos);
+			});
+
+			$('.js-download-item').on('click', function() {
+				var dataLink = $(this).data('link');
+
+				$('#download-form').on('input', function() {
+					var dataEmail = $('#download-email').val();
+					var dataName = $('#download-name').val();
+					var dataCompany = $('#download-name-company').val();
+					var dataDeploy = $('#download-name-deploy').val();
+
+					if (dataEmail && dataName && dataCompany && dataDeploy ) {
+						$('.js-download-btn a').attr('href', dataLink);
+					}
+				});
 			});
 
 			$('#download-form').validate({

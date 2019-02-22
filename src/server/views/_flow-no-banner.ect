@@ -22,13 +22,15 @@
 				</div>
 				<form id="download-form">
 					<div class="modal-body">
-						<input type="email" id="download-email" name="email" class="download__modal-input" placeholder="メール">
-						<input type="text" id="download-name" name="name" class="download__modal-input" placeholder="氏名">
-						<input type="text" id="download-name-company" name="company" class="download__modal-input" placeholder="会社名">
-						<input type="text" id="download-name-deploy" name="deploy" class="download__modal-input" placeholder="部署">
+						<input type="email" id="download-email" name="email" class="download__modal-input" placeholder="<%- @__('download-placeholder-1') %>">
+						<input type="text" id="download-name" name="name" class="download__modal-input" placeholder="<%- @__('download-placeholder-2') %>">
+						<input type="text" id="download-name-company" name="company" class="download__modal-input" placeholder="<%- @__('download-placeholder-3') %>">
+						<input type="text" id="download-name-deploy" name="deploy" class="download__modal-input" placeholder="<%- @__('download-placeholder-4') %>">
 					</div>
 					<div class="modal-footer">
-						<button type="submit" class="download__btn">Download</button>
+						<button type="submit" class="download__btn js-download-btn">
+							<a target="_blank">Download</a>
+						</button>
 					</div>
 				</form>
 			</div>

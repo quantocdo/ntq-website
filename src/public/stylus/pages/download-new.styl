@@ -94,10 +94,10 @@
 
 			& .close
 				cursor: pointer
-				opacity: 0.5
 				font-size: 42px
 				font-weight: 400
 				outline: none
+				transition: .3s
 
 		&-title
 			color: #fff
@@ -133,17 +133,21 @@
 		padding: 14px 60px
 		border-radius: 8px
 		border: none
-		color: #949494
 		background-color: #e1e1e1
 		font-size: 26px
 		cursor: pointer
 		transition: .3s
-		font-weight: 300
 		margin-top: 15px
+
+		a
+			color: #949494
+			font-weight: 300
 
 		&:hover
 			background: #11bdbd
-			color: #fff
+
+			a
+				color: #fff
 
 	.border-error
 		border: 1px solid red
