@@ -160,7 +160,7 @@
 			});
 
 			$('.js-admin-item').on('click', function() {
-				var adItemPos = $(this).scrollTop();
+				var adItemPos = $(this).offset().top;
 				console.log(adItemPos);
 			});
 

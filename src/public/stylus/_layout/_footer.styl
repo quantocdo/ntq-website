@@ -1,151 +1,164 @@
 .footer
-  background-color: #252525
-  padding-top: 30px
+	background-color: #252525
+	padding-top: 30px
 
-  li
-    list-style-type: none
+	li
+		list-style-type: none
 
-  &__link
-    position: relative
+	&__link
+		position: relative
 
-    &::after
-      content: ''
-      display: block
-      clear: both
+		&::after
+			content: ''
+			display: block
+			clear: both
 
-    &-link
-      float: right
-      text-transform: uppercase
+		&-link
+			float: right
+			text-transform: uppercase
 
-      li
-        float: left
-        padding: 15px
+			li
+				float: left
+				padding: 15px
 
-        a
-          color: #fff
-          line-height: 20px
-          font-size: 15px
+				a
+					color: #fff
+					line-height: 20px
+					font-size: 15px
 
-        &:last-child
-          padding-right: 0
+				&:last-child
+					padding-right: 0
 
-    &-home
-      color: #fff
-      position: absolute
-      top: 50%
-      transform: translateY(-50%)
-      text-transform: uppercase
-      font-size: 24px
+		&-home
+			color: #fff
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			text-transform: uppercase
+			font-size: 24px
 
-  &__contact
-    border-bottom: 1px solid #423535
-    margin-top: 30px
+	&__contact
+		border-bottom: 1px solid #423535
+		margin-top: 30px
 
-    &-title
-      color: #fff
-      text-transform: uppercase
-      font-size: 30px
+		&-title
+			color: #fff
+			text-transform: uppercase
+			font-size: 30px
 
-    &--padding
-      padding-top: 20px
+		&--padding
+			padding-top: 20px
 
-  &__item
-    padding-top: 20px
-    padding-bottom: 30px
-    height: 160px
-    line-height: 22px
-    padding-left: 75px
+	&__item
+		padding-top: 20px
+		padding-bottom: 30px
+		height: 160px
+		line-height: 22px
+		padding-left: 75px
 
-    &-title
-      color: #16beb9
-      font-size: 18px
-      margin-bottom: 10px
+		&-title
+			color: #16beb9
+			font-size: 18px
+			margin-bottom: 10px
 
-    &-address
-      color: #fff
-      font-size: 14px
-      padding: 5px 0
+		&-address
+			color: #fff
+			font-size: 14px
+			padding: 5px 0
 
-    &-contact
-      color: #fff
-      font-size: 14px
+		&-contact
+			color: #fff
+			font-size: 14px
 
-  &__contact
-    border-bottom: 1px solid #363636
+	&__contact
+		border-bottom: 1px solid #363636
 
-    &--padding
-      padding: 20px 0
+		&--padding
+			padding: 20px 0
 
-  &__container
-    display: grid
-    grid-template-columns: 50% 50%
-    align-items: center
-    padding: 40px 0
+	&__container
+		display: grid
+		grid-template-columns: 50% 50%
+		align-items: center
+		padding: 40px 0
 
-  &__copyright
-    display: block
-    color: #fff
-    font-size: 12px
-    margin-top: 5px
+	&__copyright
+		display: block
+		color: #fff
+		font-size: 12px
+		margin-top: 5px
 
-  &__socials
-    text-align: right
+	&__socials
+		text-align: right
 
-    a
-      padding: 0 20px
+		a
+			padding: 0 20px
 
-  @media screen and (max-width: 767px)
-    &__mobile
-      &-dropdown
-        color: #fff
-        font-size: 24px
-        text-transform: uppercase
+	@media screen and (max-width: 767px)
+		&__mobile
+			&-dropdown
+				color: #fff
+				font-size: 24px
+				text-transform: uppercase
 
-        .caret
-          border-right: 8px solid transparent
-          border-left: 8px solid transparent
-          border-top: 8px dashed
-          margin-top: -4px
-          margin-left: 10px
+				.caret
+					border-right: 8px solid transparent
+					border-left: 8px solid transparent
+					border-top: 8px dashed
+					margin-top: -4px
+					margin-left: 10px
 
-      &-link
-        text-transform: uppercase
+				&:hover
+					color: #fff
 
-    &__contact
-      margin-top: 20px
+			&-link
+				text-transform: uppercase
 
-      &-title
-        font-size: 25px
+		&__contact
+			margin-top: 20px
 
-    &__item
-      padding: 15px 15px
-      height: auto
+			&-title
+				font-size: 25px
 
-    &__container
-      display: block
+		&__item
+			padding: 15px 15px
+			height: auto
 
-      &-logo
-        text-align: center
+		&__container
+			display: block
 
-    &__socials
-      text-align: center
+			&-logo
+				text-align: center
 
-    &__copyright
-      margin-top: 20px
-      margin-bottom: 24px
-      font-size: 16px
+		&__socials
+			text-align: center
 
-  @media screen and (min-width: 768px) and (max-width: 991px)
-    &__link
-      &-link
-        li
-          float: left
-          padding: 0 4px
+		&__copyright
+			margin-top: 20px
+			margin-bottom: 24px
+			font-size: 16px
 
-          a
-            color: #fff
-            line-height: 20px
+	@media screen and (min-width: 768px) and (max-width: 991px)
+		&__link
+			&-link
+				li
+					float: left
+					padding: 0 6px
 
-    &__item
-      height: 190px
-      padding-left: 65px
+					a
+						color: #fff
+						line-height: 20px
+
+			
+			&-home
+				display: none
+
+		&__item
+			height: 190px
+			padding-left: 65px
+
+	@media screen and (min-width: 992px) and (max-width: 1199px)
+		&__link
+			&-link
+				li
+					padding: 15px 10px
