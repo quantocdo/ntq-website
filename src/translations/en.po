@@ -1133,7 +1133,7 @@ msgstr "NTQ Solution JSC and ACT Ltd have collaborated in developing a product c
 
 #:
 msgid "navbar_service"
-msgstr "Services"
+msgstr "Business"
 
 #:
 msgid "navbar_service-offshore"
@@ -1427,6 +1427,10 @@ msgstr "Tran Van Hoang"
 msgid "about_core_role_1"
 msgstr "Sales Manager"
 
+:
+msgid "about_core_detail_1"
+msgstr "I received 3rd prize in an International Mathematical Olympiad when I was in high school. Due to this success I was sponsored by the government to study Computer Science in Australia. I then worked for Nokia in Finland for 3 years before joining NTQ."
+
 #:
 msgid "about_core_name_2"
 msgstr "To Hai Son"
@@ -1434,6 +1438,10 @@ msgstr "To Hai Son"
 #:
 msgid "about_core_role_2"
 msgstr "COO"
+
+#:
+msgid "about_core_detail_2"
+msgstr "I was sponsored by the Vietnamese government to study Computer Science in Russia. After graduation I worked as a technical leader for FPT Software where I managed projects that were ordered by major Japanese companies. I have over 10 years experience in the Japanese outsourcing market."
 
 #:
 msgid "about_core_name_3"
@@ -1444,12 +1452,20 @@ msgid "about_core_role_3"
 msgstr "CEO"
 
 #:
+msgid "about_core_detail_3"
+msgstr "After graduating from Hanoi National University, one of the most prestigious universities in Vietnam, I joined FPT Software. At FPT I worked as a project manager, managing projects that exceeded 300 man months as ordered by major Japanese firms."
+
+#:
 msgid "about_core_name_4"
 msgstr "Nguyen Kim Soan"
 
 #:
 msgid "about_core_role_4"
 msgstr "CCO"
+
+#:
+msgid "about_core_detail_4"
+msgstr "Having been sponsored by the Vietnamese government I decided to study Computer Science in Russia where I graduated as one of the top ten students on my course before finally gaining my MBA in 2011. I have almost 10 years experience working directly with Western and Japanese customers."
 
 #:
 msgid "about_core_name_5"
@@ -1460,12 +1476,20 @@ msgid "about_core_role_5"
 msgstr "Sales Manager"
 
 #:
+msgid "about_core_detail_5"
+msgstr "I lived in Japan for 11 years where I became fluent in Japanese. I graduated from a Japanese graduate school in Public Regional Management before working for a Japanese logistics company. I then began to work for NTQ where I am heavily involved in sales activities related to the Japanese market."
+
+#:
 msgid "about_core_name_6"
 msgstr "Bui Duc Chuong"
 
 #:
 msgid "about_core_role_6"
 msgstr "R&D Manager"
+
+#:
+msgid "about_core_detail_6"
+msgstr "I was awarded 2nd prize in a National Mathematical Olympiad while I was in college. I am interested in math, and I studied Computer Science in Hanoi University of Science and Technology. At the moment, I am researching and doing projects in AI and IoT."
 
 #:
 msgid "about_core_name_7"
@@ -1476,12 +1500,20 @@ msgid "about_core_role_7"
 msgstr "Senior Manager"
 
 #:
+msgid "about_core_detail_7"
+msgstr "During my master course in Yokohama National University, I received the Otsuka Foundation scholarship. After getting MBA certification there, I worked for a Japanese IT company for 7 years, with 2 years working at the company’s branch office in Singapore. Besides, I have profession and experience in project management from a Japanese company with the biggest share in ERP market."
+
+#:
 msgid "about_core_name_8"
 msgstr "Tran Ho Phuong"
 
 #:
 msgid "about_core_role_8"
 msgstr "Vice President"
+
+#:
+msgid "about_core_detail_8"
+msgstr "I have lived and studied in Russia for 7 years following the Vietnamese government scholarship program. I graduated at Rostov State University with master degree in applied mathematics. Upon returning to Vietnam, I worked for a Russian telecom company and at one time I was the head of the subsidiary.<br/>I am responsive in Russian and English."
 
 #:
 msgid "about_core_name_9"
@@ -1492,12 +1524,20 @@ msgid "about_core_role_9"
 msgstr "Director, Strategic Planning"
 
 #:
+msgid "about_core_detail_9"
+msgstr "With 30 years of experience working for a leading electronic company in Japan, I have a knowledge foundation to implement and manage ICT system.<br/>Afterward, I moved to America to open my own business with specialty in consulting and outsourcing in manufacturing system for 12 years.<br/>In 2017, I took care of NTQ Japan as the company CEO to stabilize and extend the business. At the moment, I am the director in charge of strategic planning."
+
+#:
 msgid "about_core_name_10"
 msgstr "Pham Thanh Nam"
 
 #:
 msgid "about_core_role_10"
 msgstr "Vice president/NTQ Japan"
+
+#:
+msgid "about_core_detail_10"
+msgstr "After graduating FPT University with first class honor, I was assigned to work as BrSE in a 20-member offshore development team for a Japanese client, which is among the best companies in recruitment service. During my time there, I have understood and adopted the culture and working style of the Japanese. Possessing the spirit of youth, energy and dedication, I thrive to be the link in developing the relationship between Vietnam & Japan."
 
 #:
 msgid "about_strategic"
@@ -2162,15 +2202,13 @@ msgstr "Recruitment"
 
 #:
 msgid "recruitment-introduce-content1"
-msgstr "NTQ Solution là Công ty hoạt động trong lĩnh vực gia công phần mềm cho các thị trường Nhật Bản (với tỷ trọng hơn 80%) , Hàn Quốc, Singapore, Úc, Phần Lan... với quy mô hiện tại là gần 300 thành viên<br>Một trong các mục tiêu của NTQ trong thời gian tới là trở thành Công ty toàn cầu và tăng thị phần tại thị trường Nhật Bản, mục tiêu đạt con số 1000 member vào năm 2021.<br>Hiện tại chúng tôi đang tuyển dụng những vị trí sau"
+msgstr "NTQ Solution là Công ty hoạt động trong lĩnh vực gia công phần mềm cho các thị trường Nhật Bản (với tỷ trọng hơn 80%), Hàn Quốc, Singapore, Úc, Phần Lan... với quy mô hiện tại là gần 300 thành viên<br>Một trong các mục tiêu của NTQ trong thời gian tới là trở thành Công ty toàn cầu và tăng thị phần tại thị trường Nhật Bản, mục tiêu đạt con số 1000 member vào năm 2021.<br>Hiện tại chúng tôi đang tuyển dụng những vị trí sau"
 
 #:
 msgid "recruitment-introduce-title2"
 msgstr "Chính sách tuyển dụng"
 
-#:
-msgid "recruitment-introduce-content2"
-msgstr "Với sự cạnh tranh ngày càng khốc liệt của thị trường lao động ngành CNTT, để có thể tạo lập giá trị và sự tin tưởng tuyệt đối vào công ty, NTQ Solution chú trọng việc xây dựng, triển khai chính sách để đảm bảo xây dựng một nội bộ vững chắc, chuyên nghiệp và mang lại nhiều lợi ích cho thành viên công ty – được coi là yếu tố hàng đầu trong tổ chức. Chính sách rõ ràng không chỉ giúp tăng năng suất và hiệu quả làm việc của nhân viên mà còn làm tăng mức độ gắn kết nhân viên, giúp họ gắn bó lâu dài với tổ chức. Dưới đây là một số chính sách nổi bật mà NTQ đang áp dụng cho toàn thể các thành viên trong công ty:<br /><br />1/ Khuyến khích học tập và đào tạo: “Học, học nữa, học mãi”, học để không ngừng phát triển và đi đến thành công. NTQ Solution chú trọng tổ chức các chương trình training on job, seminar thường xuyên về chuyên môn, cập nhật các kiến thức công nghệ mới nhất. Có Chính sách phát triển năng lực quản lý, xây dựng đội ngũ kế thừa, đào tạo các kỹ năng làm việc nhằm nâng cao kiến thức, kỹ năng, xây dựng đội ngũ ngày càng lớn mạnh.<br>Đồng thời thúc đẩy năng lực tự học và rèn luyện theo định hướng nghề nghiệp và phù hợp với sở trường của từng thành viên. Tiến hành khen thưởng, tăng lương và hoàn tiền thi chứng chỉ chuyên môn, ngoại ngữ.<br />1/ Khuyến khích học tập và đào tạo: “Học, học nữa, học mãi”, học để không ngừng phát triển và đi đến thành công. NTQ Solution chú trọng tổ chức các chương trình training on job, seminar thường xuyên về chuyên môn, cập nhật các kiến thức công nghệ mới nhất. Có Chính sách phát triển năng lực quản lý, xây dựng đội ngũ kế thừa, đào tạo các kỹ năng làm việc nhằm nâng cao kiến thức, kỹ năng, xây dựng đội ngũ ngày càng lớn mạnh.<br>Đồng thời thúc đẩy năng lực tự học và rèn luyện theo định hướng nghề nghiệp và phù hợp với sở trường của từng thành viên. Tiến hành khen thưởng, tăng lương và hoàn tiền thi chứng chỉ chuyên môn, ngoại ngữ.<br />1/ Khuyến khích học tập và đào tạo: “Học, học nữa, học mãi”, học để không ngừng phát triển và đi đến thành công. NTQ Solution chú trọng tổ chức các chương trình training on job, seminar thường xuyên về chuyên môn, cập nhật các kiến thức công nghệ mới nhất. Có Chính sách phát triển năng lực quản lý, xây dựng đội ngũ kế thừa, đào tạo các kỹ năng làm việc nhằm nâng cao kiến thức, kỹ năng, xây dựng đội ngũ ngày càng lớn mạnh.<br>Đồng thời thúc đẩy năng lực tự học và rèn luyện theo định hướng nghề nghiệp và phù hợp với sở trường của từng thành viên. Tiến hành khen thưởng, tăng lương và hoàn tiền thi chứng chỉ chuyên môn, ngoại ngữ."
+msgstr "<p class="js-recruitment-first">Với sự cạnh tranh ngày càng khốc liệt của thị trường lao động ngành CNTT, để có thể tạo lập giá trị và sự tin tưởng tuyệt đối vào công ty, NTQ Solution chú trọng việc xây dựng, triển khai chính sách để đảm bảo xây dựng một nội bộ vững chắc, chuyên nghiệp và mang lại nhiều lợi ích cho thành viên công ty – được coi là yếu tố hàng đầu trong tổ chức. Chính sách rõ ràng không chỉ giúp tăng năng suất và hiệu quả làm việc của nhân viên mà còn làm tăng mức độ gắn kết nhân viên, giúp họ gắn bó lâu dài với tổ chức. Dưới đây là một số chính sách nổi bật mà NTQ đang áp dụng cho toàn thể các thành viên trong công ty:<br/><br/>1/ Khuyến khích học tập và đào tạo: "Học, học nữa, học mãi”, học để không ngừng phát triển và đi đến thành công.<br/>NTQ Solution chú trọng tổ chức các chương trình training on job, seminar thường xuyên về chuyên môn, cập nhật các kiến thức công nghệ mới nhất. Có Chính sách phát triển năng lực quản lý, xây dựng đội ngũ kế thừa, đào tạo các kỹ năng làm việc nhằm nâng cao kiến thức, kỹ năng, xây dựng đội ngũ ngày càng lớn mạnh.<br>Đồng thời thúc đẩy năng lực tự học và rèn luyện theo định hướng nghề nghiệp và phù hợp với sở trường của từng thành viên. Tiến hành khen thưởng, tăng lương và hoàn tiền thi chứng chỉ chuyên môn, ngoại ngữ.</p><p class="js-recruitment-last">2/ Chính sách phúc lợi<br/>- Tất cả nhân viên đều được ghi nhận thành tích và khen thưởng xứng đáng. Thực hiện ghi nhận hiệu quả và quản lý nhân sự trên hệ thống Quản trị nhân sự nội bộ, mỗi thành viên đều được tham gia đánh giá hàng tháng công bằng, khách quan và bảo mật.<br/>- Chính sách lương bổng rõ ràng, cạnh tranh, mức lương được review từ 1-2 lần/năm với mức tăng không giới hạn. Chế độ thưởng hàng năm của công ty cũng chia sẻ một phần kết quả kinh doanh của công ty cho từng bộ phận và cá nhân các thành viên vào cuối năm. Ngoài ra, NTQ Solution còn đầu tư vào các phúc lợi lâu dài cho nhân viên thông qua các chương trình như Chăm sóc sức khỏe cho nhân viên hàng năm, thăm hỏi cho người thân ốm đau, quà cho con cái các dịp Tết 1/6, trung thu... Các chương trình dã ngoại, teambuilding hàng quý.<br/>- Chính sách thai sản bên cạnh những chế độ theo quy định của BHXH thì công ty sẽ có kèm những chính sách hỗ trợ thêm, đặc biệt NLĐ nữ sẽ được hưởng 75% mức lương thực nhận và NLĐ nam có vợ sinh sẽ được hưởng nguyên lương 2 ngày nghỉ.<br/>- Về chế độ làm ngoài giờ: Ban lãnh đạo công ty không khuyến khích thành viên làm ngoài giờ. Trong điều kiện không tránh khỏi, bên cạnh quy định của Luật Lao động về làm việc ngoài giờ, công ty sẽ hỗ trợ thêm về đồ ăn cho NLĐ trong quá trình làm việc.<br/><br/>Nguồn nhân lực là yếu tố cốt lõi và là tài sản quý giá của mọi Công ty nói chung và của NTQ Solution nói riêng. Chính vì vây, chủ trương xây dựng chính sách tại Công ty là tạo cơ hội bình đẳng cho mọi cá nhân có năng lực được thăng tiến trong sự nghiệp. Chính sách sẽ thường xuyên được cập nhật theo quy định của Luật, đồng thời đưa ra những chính sách mới để tạo điều kiện tốt nhất cho các thành viên tại NTQ và luôn đồng hành với trách nhiệm và quyền lợi của mỗi thành viên.</p>"
 
 #:
 msgid "recruitment-see-more"
@@ -3021,6 +3059,22 @@ msgstr "NTQ-Solution_請負契約_業務委託基本契約書"
 #:
 msgid "download-modal-title"
 msgstr "Type your E-mail to download"
+
+#:
+msgid "download-placeholder-1"
+msgstr "Email address"
+
+#:
+msgid "download-placeholder-2"
+msgstr "Name"
+
+#:
+msgid "download-placeholder-3"
+msgstr "Company name"
+
+#:
+msgid "download-placeholder-4"
+msgstr "Department"
 
 #:
 msgid "download-btn"

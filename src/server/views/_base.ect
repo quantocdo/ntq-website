@@ -55,6 +55,7 @@
 		})();
 
 		$(document).ready(function () {
+
 			var locale = "<%= @_locale %>";
 
 			if (locale=='ja') {
@@ -145,7 +146,7 @@
 				});
 			}
 
-			var breakpoint = 1261;
+			var breakpoint = 1265;
 			var introContent = $('.js-introduce-content');
 
 			var fullContent = introContent.html();
@@ -162,6 +163,14 @@
 				} else {
 					introContent.html(shortContent);
 				}
+			});
+
+			console.log('bbb');
+
+			$('.js-admin-item').on('click', function() {
+				console.log('aaa');
+				var adItemPos = $(this).offset().top;
+				$('.about-us__modal .modal-dialog').css('top', adItemPos + 'px');
 			});
 
 			$('#download-form').validate({
@@ -181,7 +190,6 @@
 					}
 				},
 			});
-
 		});
 	</script>
 </html>

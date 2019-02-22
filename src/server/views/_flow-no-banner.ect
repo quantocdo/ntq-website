@@ -12,6 +12,250 @@
 	<!-- script imports -->
 	<% content 'body_end' %>
 	<% include 'partials/service-worker' %>
+
+	<div class="download__modal modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content bg-gradient">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3 class="download__modal-title">Type your E-mail to download</h3>
+				</div>
+				<form id="download-form">
+					<div class="modal-body">
+						<input type="email" id="download-email" name="email" class="download__modal-input" placeholder="メール">
+						<input type="text" id="download-name" name="name" class="download__modal-input" placeholder="氏名">
+						<input type="text" id="download-name-company" name="company" class="download__modal-input" placeholder="会社名">
+						<input type="text" id="download-name-deploy" name="deploy" class="download__modal-input" placeholder="部署">
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="download__btn">Download</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="about-us__modal modal fade" id="HoangTV" tabindex="-1" role="dialog" aria-labelledby="HoangTV" aria-hidden="true" data-backdrop="false">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body row">
+					<div class="col-sm-4 col-md-3">
+						<div class="about-us__modal-featured-image" style="background-image: url(<%= @__asset('img/HoangTV.png') %>);">
+						</div>
+					</div>
+					<div class="col-sm-8 xol-md-9">
+						<div class="about-us__modal-details">
+							<h4 class="about-us__modal-name"><%- @__('about_core_name_1') %></h4>
+							<p class="about-us__modal-role"><%- @__('about_core_role_1') %></p>
+							<p class="about-us__modal-desc"><%- @__('about_core_detail_1') %></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="about-us__modal modal fade" id="SonTH" tabindex="-1" role="dialog" aria-labelledby="SonTH" aria-hidden="true" data-backdrop="false">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body row">
+					<div class="col-sm-4 col-md-3">
+						<div class="about-us__modal-featured-image" style="background-image: url(<%= @__asset('img/SonTH.png') %>);">
+						</div>
+					</div>
+					<div class="col-sm-8 xol-md-9">
+						<div class="about-us__modal-details">
+							<h4 class="about-us__modal-name"><%- @__('about_core_name_2') %></h4>
+							<p class="about-us__modal-role"><%- @__('about_core_role_2') %></p>
+							<p class="about-us__modal-desc"><%- @__('about_core_detail_2') %></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="about-us__modal modal fade" id="SonPT" tabindex="-1" role="dialog" aria-labelledby="SonPT" aria-hidden="true" data-backdrop="false">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body row">
+					<div class="col-sm-4 col-md-3">
+						<div class="about-us__modal-featured-image" style="background-image: url(<%= @__asset('img/SonPT.png') %>);">
+						</div>
+					</div>
+					<div class="col-sm-8 xol-md-9">
+						<div class="about-us__modal-details">
+							<h4 class="about-us__modal-name"><%- @__('about_core_name_3') %></h4>
+							<p class="about-us__modal-role"><%- @__('about_core_role_3') %></p>
+							<p class="about-us__modal-desc"><%- @__('about_core_detail_3') %></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="about-us__modal modal fade" id="SoanNK" tabindex="-1" role="dialog" aria-labelledby="SoanNK" aria-hidden="true" data-backdrop="false">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body row">
+					<div class="col-sm-4 col-md-3">
+						<div class="about-us__modal-featured-image" style="background-image: url(<%= @__asset('img/SoanNK.png') %>);">
+						</div>
+					</div>
+					<div class="col-sm-8 xol-md-9">
+						<div class="about-us__modal-details">
+							<h4 class="about-us__modal-name"><%- @__('about_core_name_4') %></h4>
+							<p class="about-us__modal-role"><%- @__('about_core_role_4') %></p>
+							<p class="about-us__modal-desc"><%- @__('about_core_detail_4') %></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="about-us__modal modal fade" id="DuongTD" tabindex="-1" role="dialog" aria-labelledby="DuongTD" aria-hidden="true" data-backdrop="false">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body row">
+					<div class="col-sm-4 col-md-3">
+						<div class="about-us__modal-featured-image" style="background-image: url(<%= @__asset('img/DuongTD.png') %>);">
+						</div>
+					</div>
+					<div class="col-sm-8 xol-md-9">
+						<div class="about-us__modal-details">
+							<h4 class="about-us__modal-name"><%- @__('about_core_name_5') %></h4>
+							<p class="about-us__modal-role"><%- @__('about_core_role_5') %></p>
+							<p class="about-us__modal-desc"><%- @__('about_core_detail_5') %></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="about-us__modal modal fade" id="ChuongBD" tabindex="-1" role="dialog" aria-labelledby="ChuongBD" aria-hidden="true" data-backdrop="false">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body row">
+					<div class="col-sm-4 col-md-3">
+						<div class="about-us__modal-featured-image" style="background-image: url(<%= @__asset('img/ChuongBD.png') %>);">
+						</div>
+					</div>
+					<div class="col-sm-8 xol-md-9">
+						<div class="about-us__modal-details">
+							<h4 class="about-us__modal-name"><%- @__('about_core_name_6') %></h4>
+							<p class="about-us__modal-role"><%- @__('about_core_role_6') %></p>
+							<p class="about-us__modal-desc"><%- @__('about_core_detail_6') %></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="about-us__modal modal fade" id="HienTT" tabindex="-1" role="dialog" aria-labelledby="HienTT" aria-hidden="true" data-backdrop="false">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body row">
+					<div class="col-sm-4 col-md-3">
+						<div class="about-us__modal-featured-image" style="background-image: url(<%= @__asset('img/HienTT.png') %>);">
+						</div>
+					</div>
+					<div class="col-sm-8 xol-md-9">
+						<div class="about-us__modal-details">
+							<h4 class="about-us__modal-name"><%- @__('about_core_name_7') %></h4>
+							<p class="about-us__modal-role"><%- @__('about_core_role_7') %></p>
+							<p class="about-us__modal-desc"><%- @__('about_core_detail_7') %></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="about-us__modal modal fade" id="PhuongTH" tabindex="-1" role="dialog" aria-labelledby="PhuongTH" aria-hidden="true" data-backdrop="false">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body row">
+					<div class="col-sm-4 col-md-3">
+						<div class="about-us__modal-featured-image" style="background-image: url(<%= @__asset('img/PhuongTH.png') %>);">
+						</div>
+					</div>
+					<div class="col-sm-8 xol-md-9">
+						<div class="about-us__modal-details">
+							<h4 class="about-us__modal-name"><%- @__('about_core_name_8') %></h4>
+							<p class="about-us__modal-role"><%- @__('about_core_role_8') %></p>
+							<p class="about-us__modal-desc"><%- @__('about_core_detail_8') %></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="about-us__modal modal fade" id="Ogawa" tabindex="-1" role="dialog" aria-labelledby="Ogawa" aria-hidden="true" data-backdrop="false">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body row">
+					<div class="col-sm-4 col-md-3">
+						<div class="about-us__modal-featured-image" style="background-image: url(<%= @__asset('img/yoshi-ogawa.png') %>);">
+						</div>
+					</div>
+					<div class="col-sm-8 xol-md-9">
+						<div class="about-us__modal-details">
+							<h4 class="about-us__modal-name"><%- @__('about_core_name_9') %></h4>
+							<p class="about-us__modal-role"><%- @__('about_core_role_9') %></p>
+							<p class="about-us__modal-desc"><%- @__('about_core_detail_9') %></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="about-us__modal modal fade" id="NamPT" tabindex="-1" role="dialog" aria-labelledby="NamPT" aria-hidden="true" data-backdrop="false">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+				<div class="modal-body row">
+					<div class="col-sm-4 col-md-3">
+						<div class="about-us__modal-featured-image" style="background-image: url(<%= @__asset('img/NamPT.png') %>);">
+						</div>
+					</div>
+					<div class="col-sm-8 xol-md-9">
+						<div class="about-us__modal-details">
+							<h4 class="about-us__modal-name"><%- @__('about_core_name_10') %></h4>
+							<p class="about-us__modal-role"><%- @__('about_core_role_10') %></p>
+							<p class="about-us__modal-desc"><%- @__('about_core_detail_10') %></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </body>
 
 
