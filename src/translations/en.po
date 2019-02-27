@@ -1427,7 +1427,7 @@ msgstr "Tran Van Hoang"
 msgid "about_core_role_1"
 msgstr "Sales Manager"
 
-:
+#:
 msgid "about_core_detail_1"
 msgstr "I received 3rd prize in an International Mathematical Olympiad when I was in high school. Due to this success I was sponsored by the government to study Computer Science in Australia. I then worked for Nokia in Finland for 3 years before joining NTQ."
 

@@ -1427,7 +1427,7 @@ msgstr "Tran Van Hoang"
 msgid "about_core_role_1"
 msgstr "NWB部 課長"
 
-:
+#:
 msgid "about_core_detail_1"
 msgstr "高校生の頃に国際数学オリンピックで世界3位に入賞。その功績が認められ、オーストラリアの大学へ国費留学した後、フィンランドのNokiaへ就職。その後NTQに入社し、培った高い技術力と持前の英語力で、ソフトウェア開発と英語圏企業の対応を担当している。"
 
