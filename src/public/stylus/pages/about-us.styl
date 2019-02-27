@@ -29,7 +29,7 @@
 			height: 3px
 			width: 25%
 			background-color: #003663
-			margin: 60px auto
+			margin: 40px auto
 
 		&--item
 			&-title
@@ -56,7 +56,7 @@
 					background-image: url(../../../public/img/tick-blue-icon.png)
 					background-repeat: no-repeat
 					left: -30px
-					top: 10px
+					top: 13px
 					height: 20px
 					width: 20px
 					position: absolute
@@ -92,10 +92,11 @@
 			line-height: 24px
 
 		&-name
-			font-weight: 600
+			font-weight: 500
 			width: 160px
 			font-size: 16px
 			text-shadow: 0 0 1px #fff
+			padding-right: 10px
 
 		&-detail
 			font-size: 16px
@@ -187,6 +188,7 @@
 			border-radius: 16px
 			background-color: #f4f4f4
 			margin: 10px
+			cursor: pointer
 
 		&-content
 			position: absolute
@@ -199,16 +201,71 @@
 			line-height: 22px
 
 			h4
-				font-size: 15px
+				font-size: 17px
 				line-height: 26px
 
 			p
-				font-size: 12px
+				font-size: 13px
 				line-height: 22px
+
+	&__modal
+		.modal-dialog
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%) !important
+			margin: 0
+			width: 1130px
+
+		.modal-content
+			width: 100%
+			height: 560px
+			background-color: rgba(#ddd,0.95)
+			border: none
+			box-shadow: none
+			border-radius: 16px
+
+		.modal-header
+			border: none
+
+			.close
+				font-size: 42px
+				line-height: 26px
+				font-weight: 400
+				padding: 10px 10px 0 0
+				transition: .3s
+				outline: none
+
+		.modal-body
+			&.row
+				margin-left: 0
+				margin-right: 0
+
+		&-featured-image
+			background-repeat: no-repeat
+			background-size: contain
+			background-position: center
+			height: 481px
+
+		&-name
+			font-size: 24px
+			font-weight: 500
+			margin: 15px 0
+
+		&-role
+			font-size: 18px
+			margin-bottom: 30px
+
+		&-desc
+			font-size: 18px
 
 	@media screen and (min-width: 992px) and (max-width: 1199px)
 		&__admin-item
 			width: 22%
+
+		&__modal
+			.modal-dialog
+				width: 922px
 
 	@media screen and (min-width: 768px) and (max-width: 991px)
 		& .masthead-wrapper
@@ -218,7 +275,7 @@
 
 		&__strategic
 			.line
-				margin: 50px 0
+				width: 30%
 
 		&__info
 			background: none !important
@@ -226,6 +283,10 @@
 		&__admin-item
 			width: 30%
 			height: 280px
+
+		&__modal
+			.modal-dialog
+				width: 706px
 
 	@media screen and (max-width: 767px)
 		&__info
@@ -240,7 +301,7 @@
 			&-detail:before
 				content: attr(data-title)
 				font-size: 16px
-				font-weight: 600
+				font-weight: 500
 				display: block
 				margin-bottom: 3px
 
@@ -262,9 +323,7 @@
 					margin-top: 45px
 
 			.line
-				width: 30px
-				margin-top: 30px
-				margin-bottom: 30px
+				margin: 30px auto
 
 		&__means
 			&-detail
@@ -278,9 +337,44 @@
 				padding-left: 0
 				margin-top: 30px
 
-		&__admin-item
-			width: 45%
-			height: 310px
+		&__admin
+			&-item
+				width: 47%
+				height: 310px
+				margin: 6px
+
+		&__modal
+			.modal-dialog
+				top: 50%
+				left: 50%
+				transform: translate(-50%,-50%) !important
+				margin: 0
+				width: 100%
+
+			.modal-content
+				width: 100%
+				height: 100vh
+				border-radius: 0
+				overflow: auto
+
+			.modal-body
+				&.row
+					padding: 0
+
+			&-featured-image
+				background-size: 40%
+				background-position: top center
+				height: 300px
+				margin-bottom: 30px
+
+				&:after
+					content: ''
+					position: absolute
+					bottom: 0
+					width: 100%
+					height: 1px
+					background-color: rgba(0,0,0,.1)
+					box-shadow: 0 2px 6px rgba(0,0,0,.2)
 
 	@media screen and (max-width: 479px)
 		&__strategic
@@ -335,6 +429,17 @@
 			margin-right: -15px
 			background-size: auto
 
-		&__admin-item
-			width: 100%
-			height: 350px
+		&__admin
+			&-item
+				width: 100%
+				height: 340px
+
+			&-content
+				h4
+					font-size: 20px
+					line-height: 30px
+
+		&__modal
+			&-featured-image
+				background-size: 50%
+				height: 250px

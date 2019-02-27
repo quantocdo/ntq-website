@@ -23,6 +23,7 @@
 	</div>
 
 	<div class="home__intro">
+		<div class="home__intro-overlay"></div>
 		<div class="container">
 			<div class="home__heading">
 				<h3><%- @__('home-heading1') %></h3>
@@ -34,7 +35,7 @@
 						allowfullscreen></iframe>
 				</div>
 				<div class="col-sm-5 col-md-4">
-					<a href="about-us" class="btn btn--square btn--japan">
+					<a href="/about-us" class="btn btn--square btn--japan">
 						<%- @__('btn-japan') %>
 					</a>
 				</div>
@@ -71,8 +72,8 @@
 					</ul>
 					<div class="col-sm-6 home__reason-slide js-reason-slider">
 						<a href="#" style="background-image: url('<%= @__asset('img/item-slide-1.png') %>')"></a>
-						<a href="#" style="background-image: url('<%= @__asset('img/item-slide-1.png') %>')"></a>
-						<a href="#" style="background-image: url('<%= @__asset('img/item-slide-1.png') %>')"></a>
+						<a href="#" style="background-image: url('<%= @__asset('img/item-slide-2.png') %>')"></a>
+						<a href="#" style="background-image: url('<%= @__asset('img/item-slide-3.png') %>')"></a>
 					</div>
 				</div>
 			</div>
@@ -225,7 +226,7 @@
 					<h3><%- @__('home-heading9') %></h3>
 					<p><%- @__('home-heading10') %></p>
 				</div>
-				<a href="#" class="btn btn--square"><%- @__('btn-square5') %></a>
+				<a href="#" class="btn btn--square">See more technologies</a>
 				<ul class="home__tech-list">
 					<li>
 						<img src="<%= @__asset('img/icon-tech-1.png') %>" alt="/">
@@ -262,7 +263,7 @@
 					<h3><%- @__('home-heading11') %></h3>
 					<p><%- @__('home-heading12') %></p>
 				</div>
-				<img src="<%= @__asset('img/bg-map-suppliers.png') %>" alt="/">
+				<img alt="/" class="js-bg-map">
 			</div>
 		</div>
 	</div>
