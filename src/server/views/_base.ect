@@ -21,14 +21,6 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 		<% content 'head_end' %>
 
-		<% if @_locale == 'jav': %>
-		<style>
-			body {
-				font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-			}
-		</style>
-		<% end %>
-
 		<% include 'partials/ga' %>
 	</head>
 	<% content %>
@@ -160,11 +152,6 @@
 				$('.js-text-see-more').text('<%- @__('recruitment-see-more') %>');
 			});
 
-			$('.js-admin-item').on('click', function() {
-				var adItemPos = $(this).offset().top;
-				console.log(adItemPos);
-			});
-
 			$('.js-download-item').on('click', function() {
 				var dataLink = $(this).data('link');
 
@@ -178,6 +165,13 @@
 						$('.js-download-btn a').attr('href', dataLink);
 					}
 				});
+			});
+
+			$('.js-admin-itema').on('click', function() {
+				var adItemPos = $(this).offset().top;
+				var scrollTop = $(window).scrollTop();
+				disEleFromTop = adItemPos - scrollTop;
+				$('.modal-dialog').css('top', disEleFromTop + 'px');
 			});
 
 			$('#download-form').validate({
