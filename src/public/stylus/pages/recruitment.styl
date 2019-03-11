@@ -44,21 +44,18 @@
         background-image: url(../../../public/img/arrow-white.png)
         background-repeat: no-repeat
         background-size: contain
-        width: 12px
-        height: 7px
-        display: block
-        margin-top: -21px
-        margin-left: 120px
+        width: 14px
+        height: 8px
         transition: .3s
+        display: inline-block
+        vertical-align: middle
+        margin-left: 5px
 
       &.rotate
         &:after
           transform: rotate(180deg)
 
   &__feel
-    display: flex
-    flex-wrap: wrap
-
     &-title
       font-size: 24px
       color: #003663
@@ -82,6 +79,8 @@
     &-item
       position: relative
       margin-top: -70px
+      width: 33.33%
+      padding: 10px
 
     &-content
       background-color: #f4f4f4
@@ -104,7 +103,6 @@
       padding: 0 15px 15px
       font-size: 18px
       text-align: justify
-      margin-bottom: 30px
 
   &__news
     margin-left: 0
@@ -201,8 +199,8 @@
         width: 170px
         height: 170px
 
-      &-content
-        height: calc(100% - 180px)
+      &-item
+        width: 50%
 
     &__news
       & .btn
@@ -233,6 +231,9 @@
           margin-left: 112px
 
     &__feel
+      &-item
+        width: 100%
+
       &-title
         font-size: 18px
 

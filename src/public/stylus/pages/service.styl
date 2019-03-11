@@ -42,43 +42,39 @@
 
     &--wrapper
       line-height: 20px
+      font-size: 14px
+      color: #003663
+      margin-left: 16px
 
     &--plan
       display: flex
       padding-left: 20px
       padding-right: 20px
 
-      &-description
-        position: relative
-
       &-content
         border: 1px dashed #003663
         border-right: none
         padding: 18px
         display: flex
-        justify-content: center
 
         &:last-child
           border-right: 1px dashed #003663
 
-        & img
-          width: 30px
-          height: auto
-          position: absolute
-          top: 50%
-          transform: translateY(-50%)
+          .service__offshore--plan-img-wrapper
+            width: 25px
 
-      &-item
-        font-size: 14px
-        color: #003663
-        margin-bottom: 0
-        margin-left: 40px
+      &-description
+        display: flex
+        align-items: center
+
+        .service__offshore--plan-img-wrapper
+          width: 30px
+
+          img
+            width: 100%
 
       &-detail
-        font-size: 14px
-        color: #003663
         font-weight: 500
-        margin-left: 40px
 
     &-detail
       margin-top: 30px
@@ -269,6 +265,26 @@
         display: inline-block
 
   @media screen and (min-width: 992px) and (max-width: 1199px)
+    &__offshore
+      &--plan
+        &-description
+          display: block
+          text-align: center
+
+          .service__offshore--plan-img-wrapper
+            margin: auto
+            height: 45px
+            position: relative
+
+            img
+              position: absolute
+              top: 50%
+              left: 50%
+              transform: translate(-50%,-50%)
+
+      &--wrapper
+        margin-left: 0
+
     &__step
       &-detail
         padding-left: 5px
@@ -298,29 +314,6 @@
         width: 100%
         height: 240px
         background-position: center
-
-      &--plan
-        padding: 0
-
-        &-description
-          position: inherit
-          text-align: center
-
-        &-content:last-child
-          img
-            width: 30px
-            margin-top: 15px
-
-        &-content
-          img
-            position: inherit
-            transform: none
-            margin-top: 20px
-
-        &-item,
-        &-detail
-          margin-left: 0
-          margin-bottom: 0
 
     &__content
       display: block
@@ -383,14 +376,23 @@
 
     &__offshore
       &--plan
-        width: 100%
+        &-description
+          display: block
+          text-align: center
 
-        &-content
-          width: 20%
-          padding: 0 12px 12px
+          .service__offshore--plan-img-wrapper
+            margin: 0 auto 5px
+            height: 40px
+            position: relative
+
+            img
+              position: absolute
+              top: 50%
+              left: 50%
+              transform: translate(-50%,-50%)
 
       &--wrapper
-        margin-top: 5px
+        margin-left: 0
 
     &__step
       &-detail:before
@@ -421,9 +423,11 @@
     &__offshore
       &--wrapper
         display: inline-block
+        margin-left: 20px
 
       &--plan
         flex-wrap: wrap
+        padding: 0
 
         &-description
           position: inherit
@@ -431,8 +435,6 @@
 
           img
             display: inline-block
-            margin-top: 0 !important
-            margin-right: 36px
 
         &-content:last-child
           img
@@ -443,16 +445,11 @@
           border: 1px dashed #003663
           border-bottom: none
           width: 100%
-          justify-content: inherit
-          padding-left: 40px
+          align-items: center
+          padding-left: 30px
 
           &:last-child
             border-bottom: 1px dashed #003663
-
-          img
-            position: inherit
-            transform: none
-            margin-top: 20px
 
         &-item,
         &-detail
@@ -462,17 +459,24 @@
       &-detail
         display: block
         padding: 0
+        margin-left: 0
+        margin-right: 0
 
         &--wrapper
           padding: 0
+          margin-bottom: 25px
 
-          &.list-number li
-            &:before
-              margin-left: -60px
-              padding: 0 11px 1px
+          &.list-number
+            text-align: center
 
-            &:first-child:before
-              padding: 0 12px
+            li
+              margin: 80px 0 0
+
+              &:before
+                margin: 0
+                top: -66px
+                left: 50%
+                transform: translateX(-50%)
 
       &-description
         margin-left: 75px
