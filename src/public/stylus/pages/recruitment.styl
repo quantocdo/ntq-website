@@ -85,6 +85,8 @@
     &-content
       background-color: #f4f4f4
       padding-top: 105px
+      heightContent = 100%
+      height: "calc(%s - 200px)" % heightContent
 
     &-name
       text-align: center
@@ -117,7 +119,7 @@
       font-weight: 400
 
     &--item
-      height: 180px
+      height: 190px
       background-size: cover
       background-repeat: no-repeat
       margin-top: 40px
@@ -157,7 +159,6 @@
     h3
       text-align: right
       position: relative
-      padding-right: 20px
       cursor: pointer
       font-weight: 500
 
@@ -202,6 +203,10 @@
       &-item
         width: 50%
 
+      &-content
+        heightContent = 100%
+        height: "calc(%s - 170px)" % heightContent
+
     &__news
       & .btn
         padding: 5px 35px
@@ -209,6 +214,7 @@
 
       &--item
         background-origin: content-box
+        height: 220px
 
   @media screen and (max-width: 767px)
     &__baner
@@ -233,6 +239,7 @@
     &__feel
       &-item
         width: 100%
+        padding: 0 15px
 
       &-title
         font-size: 18px
@@ -250,6 +257,7 @@
     &__news
       &--item
         background-origin: content-box
+        padding: 0
 
         &-content
           margin-top: 20px

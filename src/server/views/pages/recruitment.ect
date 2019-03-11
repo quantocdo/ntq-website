@@ -94,8 +94,8 @@
 
 		<% for post in @posts: %>
       <div class="row recruitment__news">
-        <div class="recruitment__news--item col-md-3 col-sm-4 col-sx-12" style="background-image: url(<%= post.feature_image %>)"></div>
-        <div class="recruitment__news--item-content col-md-9 col-sm-8 col-sx-12">
+        <div class="recruitment__news--item col-md-3 col-sm-4" style="background-image: url(<%= post.feature_image %>)"></div>
+        <div class="recruitment__news--item-content col-md-9 col-sm-8">
           <h3 class="recruitment__news--item-title"><%= post.title %></h3>
           <h3 class="recruitment__news--item-time"><%= @_date(post.published_at) %></h3>
           <p class="recruitment__news--item-description"><%= post.truncated %></p>
