@@ -27,33 +27,33 @@
     <div class="contact__content-detail">
       <div class="row">
         <div class="col-md-10 col-xs-12 col-centered">
-          <div class="contact__inquiry">
-            <div class="contact__inquiry-title"><%- @__('contact-inquiry-title') %></div>
-            <div class="contact__inquiry-detail">
+          <form action="/contact" method="post">
+            <div class="contact__inquiry">
+              <div class="contact__inquiry-title"><%- @__('contact-inquiry-title') %></div>
+              <div class="contact__inquiry-detail">
 
-              <div class=" contact__inquiry-checkbox">
-                <input type="checkbox" id="document-request" />
-                <label for="document-request"><span></span><%- @__('contact-inquiry-checkbox1') %></label>
-              </div>
-              <div class=" contact__inquiry-checkbox">
-                <input type="checkbox" id="inquiries-services" />
-                <label for="inquiries-services"><span></span><%- @__('contact-inquiry-checkbox2') %></label>
-              </div>
-              <div class=" contact__inquiry-checkbox">
-                <input type="checkbox" id="request-quotation" />
-                <label for="request-quotation"><span></span><%- @__('contact-inquiry-checkbox3') %></label>
-              </div>
-              <div class=" contact__inquiry-checkbox">
-                <input type="checkbox" id="other" />
-                <label for="other"><span></span><%- @__('contact-inquiry-checkbox4') %></label>
-              </div>
+                <div class=" contact__inquiry-checkbox">
+                  <input name="subject" value="document-request" type="checkbox" id="document-request" />
+                  <label for="document-request"><span></span><%- @__('contact-inquiry-checkbox1') %></label>
+                </div>
+                <div class=" contact__inquiry-checkbox">
+                  <input name="subject" value="inquiries-services" type="checkbox" id="inquiries-services" />
+                  <label for="inquiries-services"><span></span><%- @__('contact-inquiry-checkbox2') %></label>
+                </div>
+                <div class=" contact__inquiry-checkbox">
+                  <input name="subject" value="request-quotation" type="checkbox" id="request-quotation" />
+                  <label for="request-quotation"><span></span><%- @__('contact-inquiry-checkbox3') %></label>
+                </div>
+                <div class=" contact__inquiry-checkbox">
+                  <input name="subject" value="other" type="checkbox" id="other" />
+                  <label for="other"><span></span><%- @__('contact-inquiry-checkbox4') %></label>
+                </div>
 
+              </div>
             </div>
-          </div>
-          <div class="contact__form">
-            <form action="">
+            <div class="contact__form">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="<%- @__('contact-placeholder1') %>">
+                <input name="email" type="text" class="form-control" placeholder="<%- @__('contact-placeholder1') %>">
               </div>
               <div class="form-group">
                 <input name="name" type="text" class="form-control" placeholder="<%- @__('contact-placeholder2') %>">
@@ -68,10 +68,10 @@
                 <textarea name="content" placeholder="<%- @__('contact-placeholder5') %>" class="form-control"></textarea>
               </div>
               <div class="contact__form-submit">
-                <a href="#" class="btn btn-send btn--circle"><%- @__('btn-circle') %></a>
+                <button type="submit" class="btn btn-send btn--circle"><%- @__('btn-circle') %></button>
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
