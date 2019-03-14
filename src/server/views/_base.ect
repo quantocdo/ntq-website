@@ -53,11 +53,15 @@
 			if (locale=='ja') {
 				$('.js-lang-en').hide();
 				$('.js-bg-map').attr('src','<%= @__asset('img/bg-map-suppliers-jp.png') %>');
+				$('.js-flag').attr('src','<%= @__asset('img/japan.png') %>');
+				$('.js-first-service').attr('src','<%= @__asset('img/service-1.png') %>');
 			}
 			
 			if (locale=='en') {
 				$('.js-lang-jp').hide();
 				$('.js-bg-map').attr('src','<%= @__asset('img/bg-map-suppliers-en.png') %>');
+				$('.js-flag').attr('src','<%= @__asset('img/usa.png') %>');
+				$('.js-first-service').attr('src','<%= @__asset('img/service-1-en.png') %>');
 			}
 
 			$('#open-nav').click(function () {

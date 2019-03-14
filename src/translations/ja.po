@@ -1229,15 +1229,15 @@ msgstr "電話番号:（+81）45 228 9010"
 
 #:
 msgid "footer_item_title_4"
-msgstr "小川 義輝"
+msgstr "ファム　タイン　ナム"
 
 #:
 msgid "footer_item_address_4"
-msgstr "代表者"
+msgstr "副社長"
 
 #:
 msgid "footer_item_contact_4"
-msgstr "メール: yoshi.ogawa@ntq-solution.com.vn"
+msgstr "メール：nam.pham@ntq-solution.com.vn"
 
 #:
 msgid "copyright"
@@ -1313,7 +1313,7 @@ msgstr "社員数"
 
 #:
 msgid "ntqvn_content_8"
-msgstr "402名 (2019年1月1月現在)"
+msgstr "420名 (2019年3月1月現在)"
 
 #:
 msgid "ntqvn_label_9"
@@ -1321,7 +1321,7 @@ msgstr "認証"
 
 #:
 msgid "ntqvn_content_9"
-msgstr "SO/IEC 27001<br>(ISMS：情報セキュリティマネジメントシステム"
+msgstr "ISO/IEC 27001 (ISMS：情報セキュリティマネジメントシステム)"
 
 #:
 msgid "ntqjp_table_title"
@@ -1341,7 +1341,7 @@ msgstr "所在地"
 
 #:
 msgid "ntqjp_content_2"
-msgstr "〒231-0001 横浜市中区新港2-2-1 横浜ワールドポーターズ 6階 <br> (ワールドビジネスサポートセンター内)"
+msgstr "〒231-0001　横浜市中区新港2-2-1　横浜ワールドポーターズ6F　WBC内"
 
 #:
 msgid "ntqjp_label_3"
@@ -1369,11 +1369,11 @@ msgstr "2016年2月8日"
 
 #:
 msgid "ntqjp_label_6"
-msgstr "代表取締役"
+msgstr "役員"
 
 #:
 msgid "ntqjp_content_6"
-msgstr "小川 義輝"
+msgstr "代表取締役社長　ファム　タイ　ソン<br/>取締役副社長　　ファム　タイン　ナム"
 
 #:
 msgid "ntqjp_label_7"
@@ -1621,7 +1621,7 @@ msgstr "従業員数"
 
 #:
 msgid "service-offshore_plan_desc_2"
-msgstr "402名"
+msgstr "420名"
 
 #:
 msgid "service-offshore_plan_label_3"
@@ -1669,7 +1669,7 @@ msgstr "ご相談・ヒアリング"
 
 #:
 msgid "service-offshore_step_notice_1"
-msgstr "(お客様）（弊社)"
+msgstr "(お客様)  (弊社)"
 
 #:
 msgid "service-offshore_step_title_2"
@@ -1677,7 +1677,7 @@ msgstr "ご提案・お見積"
 
 #:
 msgid "service-offshore_step_notice_2"
-msgstr "(お客様）（弊社)"
+msgstr "(お客様)  (弊社)"
 
 #:
 msgid "service-offshore_step_title_3"
@@ -1685,7 +1685,7 @@ msgstr "人選（ラボ型のみ)"
 
 #:
 msgid "service-offshore_step_notice_3"
-msgstr "(お客様）（弊社)"
+msgstr "(お客様)  (弊社)"
 
 #:
 msgid "service-offshore_step_title_4"
@@ -1693,7 +1693,7 @@ msgstr "契約締結"
 
 #:
 msgid "service-offshore_step_notice_4"
-msgstr "(お客様）（弊社)"
+msgstr "(お客様)  (弊社)"
 
 #:
 msgid "service-offshore_step_title_5"
@@ -1701,7 +1701,7 @@ msgstr "業務開始"
 
 #:
 msgid "service-offshore_step_notice_5"
-msgstr "(お客様）（弊社)"
+msgstr "(お客様)  (弊社)"
 
 #:
 msgid "service-offshore_model_title"
@@ -2180,7 +2180,6 @@ msgstr "NTQ-Solution_会社プロファイル資料"
 msgid "download-content_item-title5"
 msgstr "契約サンプル(KOR ver)"
 
-
 #:
 msgid "download-item-content19"
 msgstr "NTQ-Solution_機密保持契約書"
@@ -2188,7 +2187,6 @@ msgstr "NTQ-Solution_機密保持契約書"
 #:
 msgid "download-item-content19"
 msgstr "NTQ-Solution_業務委託基本契約書"
-
 
 #:
 msgid "download-item-content19"

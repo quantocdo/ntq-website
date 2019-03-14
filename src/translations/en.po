@@ -1229,15 +1229,15 @@ msgstr "Tel:（+81）45 228 9010"
 
 #:
 msgid "footer_item_title_4"
-msgstr "Ogawa Yoshimitsu"
+msgstr "Pham Thanh Nam"
 
 #:
 msgid "footer_item_address_4"
-msgstr "NTQ Japan CEO"
+msgstr "NTQ Japan Vice President"
 
 #:
 msgid "footer_item_contact_4"
-msgstr "Email: yoshi.ogawa@ntq-solution.com.vn"
+msgstr "Email: nam.pham@ntq-solution.com.vn"
 
 #:
 msgid "copyright"
@@ -1297,7 +1297,7 @@ msgstr "Capitalization"
 
 #:
 msgid "ntqvn_content_6"
-msgstr "25 million JPY"
+msgstr "250,000 USD"
 
 #:
 msgid "ntqvn_label_7"
@@ -1305,7 +1305,7 @@ msgstr "Services"
 
 #:
 msgid "ntqvn_content_7"
-msgstr "Software development, AI development, R & D, technical consultant"
+msgstr "Software development, AI development, R&D, technical consultant"
 
 #:
 msgid "ntqvn_label_8"
@@ -1313,7 +1313,7 @@ msgstr "Number of Employees"
 
 #:
 msgid "ntqvn_content_8"
-msgstr "402 members (by 1/1/2019)"
+msgstr "420 members (by 1/3/2019)"
 
 #:
 msgid "ntqvn_label_9"
@@ -1321,7 +1321,7 @@ msgstr "Certification"
 
 #:
 msgid "ntqvn_content_9"
-msgstr "ISO/IEC 27001（ISMS：information security management system)"
+msgstr "ISO/IEC 27001 (ISMS: Information security management system)"
 
 #:
 msgid "ntqjp_table_title"
@@ -1337,15 +1337,15 @@ msgstr "NTQ Japan .,JSC"
 
 #:
 msgid "ntqjp_label_2"
-msgstr "Yokohama Office"
+msgstr "Head Office"
 
 #:
 msgid "ntqjp_content_2"
-msgstr "〒231-0001　 6F, Yokohama World Posters Building<br/>2 Chome-2-1 Shinko, Naka Ward, Yokohama, Kanagawa Prefecture, Japan"
+msgstr "〒231-0001 6F, Yokohama World Posters Building<br/>2 Chome-2-1 Shinko, Naka Ward, Yokohama, Kanagawa Prefecture, Japan"
 
 #:
 msgid "ntqjp_label_3"
-msgstr "Phone number"
+msgstr "FAX"
 
 #:
 msgid "ntqjp_content_3"
@@ -1353,58 +1353,50 @@ msgstr "(+81) 45-228-9010"
 
 #:
 msgid "ntqjp_label_4"
-msgstr "FAX"
-
-#:
-msgid "ntqjp_content_4"
-msgstr "045-228-9010"
-
-#:
-msgid "ntqjp_label_5"
 msgstr "Founded"
 
 #:
-msgid "ntqjp_content_5"
+msgid "ntqjp_content_4"
 msgstr "February 8th, 2016"
 
 #:
+msgid "ntqjp_label_5"
+msgstr "Director"
+
+#:
+msgid "ntqjp_content_5"
+msgstr "Representative Director and President <br/>Pham Thai Son<br/>Vice President<br/>Pham Thanh Nam"
+
+#:
 msgid "ntqjp_label_6"
-msgstr "Representative"
-
-#:
-msgid "ntqjp_content_6"
-msgstr "Ogawa Yoshimitsu"
-
-#:
-msgid "ntqjp_label_7"
 msgstr "Capitalization"
 
 #:
-msgid "ntqjp_content_7"
-msgstr "5 million JPY"
+msgid "ntqjp_content_6"
+msgstr "5,000,000 JPY (45,000 USD)"
 
 #:
-msgid "ntqjp_label_8"
+msgid "ntqjp_label_7"
 msgstr "Number of Employees"
 
 #:
-msgid "ntqjp_content_8"
+msgid "ntqjp_content_7"
 msgstr "30 members"
 
 #:
-msgid "ntqjp_label_9"
+msgid "ntqjp_label_8"
 msgstr "Services"
 
 #:
-msgid "ntqjp_content_9"
+msgid "ntqjp_content_8"
 msgstr "Offshore development, SES business"
 
 #:
-msgid "ntqjp_label_10"
+msgid "ntqjp_label_9"
 msgstr "Participating Association"
 
 #:
-msgid "ntqjp_content_10"
+msgid "ntqjp_content_9"
 msgstr "Kanagawa Information services industry Association（KIA)"
 
 #:
@@ -1521,11 +1513,11 @@ msgstr "Ogawa Yoshimitsu"
 
 #:
 msgid "about_core_role_9"
-msgstr "Director, Strategic Planning"
+msgstr "Strategic Planning"
 
 #:
 msgid "about_core_detail_9"
-msgstr "With 30 years of experience working for a leading electronic company in Japan, I have a knowledge foundation to implement and manage ICT system.<br/>Afterward, I moved to America to open my own business with specialty in consulting and outsourcing in manufacturing system for 12 years.<br/>In 2017, I took care of NTQ Japan as the company CEO to stabilize and extend the business. At the moment, I am the director in charge of strategic planning."
+msgstr "With 30 years of experience working for a leading electronic company in Japan, I have a knowledge foundation to implement and manage ICT system.<br/>Afterward, I moved to America to open my own business with specialty in consulting and outsourcing in manufacturing system for 12 years.<br/>In 2017, I took care of NTQ Japan as the company CEO to stabilize and extend the business. At the moment, I am the person in charge of strategic planning."
 
 #:
 msgid "about_core_name_10"
@@ -1621,7 +1613,7 @@ msgstr "Human resources"
 
 #:
 msgid "service-offshore_plan_desc_2"
-msgstr "402"
+msgstr "420"
 
 #:
 msgid "service-offshore_plan_label_3"
@@ -1641,7 +1633,7 @@ msgstr "Over 40%"
 
 #:
 msgid "service-offshore_plan_label_5"
-msgstr "Japanese customers"
+msgstr "Market: 12 countries"
 
 #:
 msgid "service-offshore_plan_desc_5"
@@ -1669,7 +1661,7 @@ msgstr "Requirement discussion"
 
 #:
 msgid "service-offshore_step_notice_1"
-msgstr "(Customer）（Our company)"
+msgstr "(Customer)  (Our company)"
 
 #:
 msgid "service-offshore_step_title_2"
@@ -1677,15 +1669,15 @@ msgstr "Proposal/Quotation"
 
 #:
 msgid "service-offshore_step_notice_2"
-msgstr "(Customer）（Our company)"
+msgstr "(Customer)  (Our company)"
 
 #:
 msgid "service-offshore_step_title_3"
-msgstr "Choosing model"
+msgstr "Interviewing Candidates"
 
 #:
 msgid "service-offshore_step_notice_3"
-msgstr "(Customer）（Our company)"
+msgstr "(Customer)  (Our company)"
 
 #:
 msgid "service-offshore_step_title_4"
@@ -1693,7 +1685,7 @@ msgstr "Signing contract"
 
 #:
 msgid "service-offshore_step_notice_4"
-msgstr "(Customer）（Our company)"
+msgstr "(Customer)  (Our company)"
 
 #:
 msgid "service-offshore_step_title_5"
@@ -1701,7 +1693,7 @@ msgstr "Starting project"
 
 #:
 msgid "service-offshore_step_notice_5"
-msgstr "(Customer）（Our company)"
+msgstr "(Customer)  (Our company)"
 
 #:
 msgid "service-offshore_model_title"
@@ -1709,7 +1701,7 @@ msgstr "Development model"
 
 #:
 msgid "service-offshore_model_item_1"
-msgstr "Onsite"
+msgstr "Onsite Offshore"
 
 #:
 msgid "service-offshore_model_desc_1"
@@ -1905,7 +1897,7 @@ msgstr "Phone: (+84) 243 200 8754"
 
 #:
 msgid "contact-content-description"
-msgstr "If you have any questions regarding any of our services then please feel free to contact us. We offer a consultancy service and are eagerly awaiting any questions, estimations or propositions that you may have."
+msgstr "If you have any questions regarding any of our services then please feel free to contact us.<br/>We offer a consultancy service and are eagerly awaiting any questions, estimations or propositions that you may have."
 
 #:
 msgid "contact-inquiry-title"
