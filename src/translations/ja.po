@@ -1345,7 +1345,7 @@ msgstr "〒231-0001　横浜市中区新港2-2-1　横浜ワールドポータ�
 
 #:
 msgid "ntqjp_label_3"
-msgstr "電話"
+msgstr "FAX"
 
 #:
 msgid "ntqjp_content_3"
@@ -1353,58 +1353,50 @@ msgstr "(+81) 45-228-9010"
 
 #:
 msgid "ntqjp_label_4"
-msgstr "FAX"
-
-#:
-msgid "ntqjp_content_4"
-msgstr "(+81) 45-228-9010"
-
-#:
-msgid "ntqjp_label_5"
 msgstr "設立"
 
 #:
-msgid "ntqjp_content_5"
+msgid "ntqjp_content_4"
 msgstr "2016年2月8日"
 
 #:
-msgid "ntqjp_label_6"
+msgid "ntqjp_label_5"
 msgstr "役員"
 
 #:
-msgid "ntqjp_content_6"
+msgid "ntqjp_content_5"
 msgstr "代表取締役社長　ファム　タイ　ソン<br/>取締役副社長　　ファム　タイン　ナム"
 
 #:
-msgid "ntqjp_label_7"
+msgid "ntqjp_label_6"
 msgstr "資本金"
 
 #:
-msgid "ntqjp_content_7"
+msgid "ntqjp_content_6"
 msgstr "500万円"
 
 #:
-msgid "ntqjp_label_8"
+msgid "ntqjp_label_7"
 msgstr "従業員数"
 
 #:
-msgid "ntqjp_content_8"
+msgid "ntqjp_content_7"
 msgstr "30名"
 
 #:
-msgid "ntqjp_label_9"
+msgid "ntqjp_label_8"
 msgstr "事業内容"
 
 #:
-msgid "ntqjp_content_9"
+msgid "ntqjp_content_8"
 msgstr "オフショア開発<br>SES事業"
 
 #:
-msgid "ntqjp_label_10"
+msgid "ntqjp_label_9"
 msgstr "参加協会"
 
 #:
-msgid "ntqjp_content_10"
+msgid "ntqjp_content_9"
 msgstr "神奈川県情報サービス産業協会（KIA)"
 
 #:
@@ -2682,7 +2674,7 @@ msgstr "顧客は１０種類以上の出会い系SNSのサービスを運営し
 
 #:
 msgid "project-achievement_list-item2"
-msgstr "NSのユーザーの人数は２百万人に達している。"
+msgstr "SNSのユーザーの人数は6百万人に達している。"
 
 #:
 msgid "project-achievement_list-item3"

@@ -1365,7 +1365,11 @@ msgstr "Director"
 
 #:
 msgid "ntqjp_content_5"
-msgstr "Representative Director and President <br/>Pham Thai Son<br/>Vice President<br/>Pham Thanh Nam"
+msgstr "Representative Director and President        Pham Thai Son<br/>Vice President                                                  Pham Thanh Nam"
+
+#:
+msgid "ntqjp_content_5_mobile"
+msgstr "Representative Director and President<br/>Pham Thai Son<br/>Vice President<br/>Pham Thanh Nam"
 
 #:
 msgid "ntqjp_label_6"
@@ -1513,7 +1517,7 @@ msgstr "Ogawa Yoshimitsu"
 
 #:
 msgid "about_core_role_9"
-msgstr "Strategic Planning"
+msgstr "Strategic Planning/NTQ Japan"
 
 #:
 msgid "about_core_detail_9"
@@ -2458,7 +2462,7 @@ msgstr "The client is building more than 10 types of SNS dating services."
 
 #:
 msgid "project-achievement_list-item2"
-msgstr "The number of users has reached 2 million users."
+msgstr "The number of users has reached 6 million users."
 
 #:
 msgid "project-achievement_list-item3"

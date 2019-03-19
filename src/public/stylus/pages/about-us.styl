@@ -102,6 +102,12 @@
 			font-size: 16px
 			text-shadow: 0 0 1px #fff
 
+			&.visible-xs
+				display: none
+
+			pre
+				background-color: #fff
+
 		table
 			margin-bottom: 20px
 
@@ -298,12 +304,16 @@
 			&-name
 				display: none
 
-			&-detail:before
-				content: attr(data-title)
-				font-size: 16px
-				font-weight: 500
-				display: block
-				margin-bottom: 3px
+			&-detail
+				&.hidden-xs
+					display: none
+					
+				&:before
+					content: attr(data-title)
+					font-size: 16px
+					font-weight: 500
+					display: block
+					margin-bottom: 3px
 
 		& .masthead-wrapper
 			& p
