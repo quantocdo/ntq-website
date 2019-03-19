@@ -25,7 +25,7 @@
 	</head>
 	<% content %>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
@@ -57,7 +57,7 @@
 				$('.js-first-service').attr('src','<%= @__asset('img/service-1.png') %>');
 				$('.js-second-service').attr('src','<%= @__asset('img/service-2.png') %>');
 			}
-			
+
 			if (locale=='en') {
 				$('.js-lang-jp').hide();
 				$('.js-bg-map').attr('src','<%= @__asset('img/bg-map-suppliers-en.png') %>');

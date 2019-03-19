@@ -12,7 +12,7 @@ const ses = new aws.SES({
 
 export default {
   get(req, res, next) {
-    res.render('pages/contact')
+    res.render('pages/contact-new')
   },
   post: [
     bodyParser.urlencoded({
@@ -20,7 +20,14 @@ export default {
     }),
     async (req, res, next) => {
       try {
-        const { name, email, subject, body } = req.body
+        const {
+          subject,
+          email,
+          name,
+          companyName,
+          phoneNumber,
+          content
+        } = req.body
 
         await ses.sendEmail({
           Destination: {
@@ -33,9 +40,14 @@ export default {
                 Data: `
                   <main>
                     <div>You have a new message, from ${ escape(name) } [${ escape(email) }]</div>
+                    <div>Contact info:</div>
+                    <ul>
+                      <li>Company Name: ${ escape(companyName) }</li>
+                      <li>Phone Number: ${ escape(phoneNumber) }</li>
+                    </ul>
                     <hr>
-                    <h1>${ escape(subject) }</h1>
-                    <p>${ escape(body) }</p>
+                    <div>Contact for: ${ escape(Array.isArray(subject) ? subject.join(', ') : subject) }</div>
+                    <p>${ escape(content) }</p>
                   </main>
                 `
               }

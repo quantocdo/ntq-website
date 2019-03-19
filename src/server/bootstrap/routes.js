@@ -24,22 +24,22 @@ export const routes = [ {
   methods: {
     get: controllers.cms.get
   }
-}, {
-  path: '/download-old',
-  methods: {
-    get: controllers.download.get
-  }
+// }, {
+//   path: '/download-old',
+//   methods: {
+//     get: controllers.download.get
+//   }
 // }, {
 //   path: '/download/:folderId/:fileId',
 //   methods: {
 //     // get: dummy
 //   }
-}, {
-  path: '/contact-old',
-  methods: {
-    get: controllers.contact.get,
-    post: controllers.contact.post
-  }
+// }, {
+//   path: '/contact-old',
+//   methods: {
+//     get: controllers.contact.get,
+//     post: controllers.contact.post
+//   }
 }, {
   path: '/domains',
   methods: {
@@ -55,11 +55,11 @@ export const routes = [ {
   methods: {
     get: controllers.contractModels.get
   }
-}, {
-  path: '/research-development-old',
-  methods: {
-    get: controllers.rd.get
-  }
+// }, {
+//   path: '/research-development-old',
+//   methods: {
+//     get: controllers.rd.get
+//   }
 }, {
   path: '/services',
   methods: {
@@ -83,7 +83,8 @@ export const routes = [ {
 }, {
   path: '/contact',
   methods: {
-    get: controllers.contactNew.get
+    get: controllers.contact.get,
+    post: controllers.contact.post
   }
 }, {
   path: '/service-ai',
