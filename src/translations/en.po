@@ -1637,11 +1637,11 @@ msgstr "Over 40%"
 
 #:
 msgid "service-offshore_plan_label_5"
-msgstr "Market: 12 countries"
+msgstr "Market"
 
 #:
 msgid "service-offshore_plan_desc_5"
-msgstr "Over 50 companies"
+msgstr "12 countries"
 
 #:
 msgid "service-offshore_about_item_1"
